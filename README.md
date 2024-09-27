@@ -4,6 +4,7 @@ Welcome to **PyVerse**, a comprehensive and open-source hub that organizes and s
 
 ---
 
+
 ## :zap: Table of Contents
 
 - [Vision and Mission](#vision-and-mission-🎯)
