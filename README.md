@@ -1,4 +1,20 @@
-# PyVerse - Python Universe of Projects and Tools
+<div align="center">
+  <h1>PyVerse - Python Universe of Projects and Tools 💻🧠</h1>
+</div>
+
+<div align="center">
+
+![GitHub contributors](https://img.shields.io/github/contributors/UTSAVS26/PyVerse?style=for-the-badge&color=blue)
+![GitHub Closed issues](https://img.shields.io/github/issues-closed-raw/UTSAVS26/PyVerse?style=for-the-badge&color=brightgreen)
+![GitHub PR Open](https://img.shields.io/github/issues-pr/UTSAVS26/PyVerse?style=for-the-badge&color=aqua)
+![GitHub PR closed](https://img.shields.io/github/issues-pr-closed-raw/UTSAVS26/PyVerse?style=for-the-badge&color=blue)
+![GitHub language count](https://img.shields.io/github/languages/count/UTSAVS26/PyVerse?style=for-the-badge&color=brightgreen)
+![GitHub top language](https://img.shields.io/github/languages/top/UTSAVS26/PyVerse?style=for-the-badge&color=aqua)
+![GitHub last commit](https://img.shields.io/github/last-commit/UTSAVS26/PyVerse?style=for-the-badge&color=blue)
+![GitHub Maintained](https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?style=for-the-badge)
+![Github Repo Size](https://img.shields.io/github/repo-size/UTSAVS26/PyVerse?style=for-the-badge&color=aqua)
+
+</div>
 
 Welcome to **PyVerse**, a comprehensive and open-source hub that organizes and showcases a diverse array of Python-based projects, tools, libraries, and scripts. Our goal is to provide a well-structured resource for developers of all levels to explore, learn, and contribute to Python projects across various domains.
 
@@ -11,9 +27,6 @@ Welcome to **PyVerse**, a comprehensive and open-source hub that organizes and s
 - [Description and Purpose](#description-and-purpose-📘)
 - [Features](#features-🌟)
 - [Project Structure](#project-structure-📂)
-- [Getting Started](#getting-started-🚀)
-- [Usage Instructions](#usage-instructions-📑)
-- [Contributing Guidelines](#contributing-guidelines-🤝)
 - [Future Scope](#future-scope-🔮)
 - [How to Approach the Project](#how-to-approach-the-project-🌐)
 - [License Information](#license-information-📄)
@@ -87,125 +100,6 @@ PyVerse/
 
 ---
 
-## :zap: Getting Started 🚀
-
-To get started with **PyVerse**, follow these steps:
-
-### Installation Instructions 🛠️
-
-1. **Clone the Repository:**
-
-   ```bash
-   git clone https://github.com/yourusername/PyVerse.git
-   ```
-
-2. **Navigate to the Project Directory:**
-
-   ```bash
-   cd PyVerse
-   ```
-
-3. **Create and Activate a Virtual Environment:**
-
-   ```bash
-   python -m venv env
-   ```
-
-   - On Windows:
-
-     ```bash
-     .\env\Scripts\activate
-     ```
-
-   - On macOS and Linux:
-
-     ```bash
-     source env/bin/activate
-     ```
-
-4. **Install the Required Dependencies:**
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
----
-
-## :zap: Usage Instructions 📑
-
-1. **Explore the Directories:**
-
-   Browse through the various directories (e.g., `Web_Development`, `Machine_Learning`) to find projects of interest.
-
-2. **Follow the README Files:**
-
-   Each directory contains README files with detailed instructions on how to use and contribute to the projects.
-
-3. **Run and Test Code:**
-
-   Execute scripts and test them for functionality:
-
-   ```bash
-   python path/to/your/script.py
-   ```
-
-4. **Identify and Fix Bugs:**
-
-   Report bugs or issues and contribute fixes. Ensure to run the test suite before and after making changes.
-
-5. **Enhance Documentation:**
-
-   Update or add documentation to clarify usage and contribute to better understanding.
-
----
-
-## :zap: Contributing Guidelines 🤝
-
-We welcome contributions from everyone! Here’s how you can contribute:
-
-1. **Fork the Repository:**
-
-   Click the "Fork" button on GitHub to create your own copy.
-
-2. **Clone Your Fork:**
-
-   ```bash
-   git clone https://github.com/yourusername/PyVerse.git
-   ```
-
-3. **Create a New Branch:**
-
-   ```bash
-   git checkout -b your-feature-branch
-   ```
-
-4. **Make Changes:**
-
-   Implement your changes or add new features.
-
-5. **Commit Your Changes:**
-
-   ```bash
-   git add .
-   git commit -m "Description of your changes"
-   ```
-
-6. **Push Your Branch:**
-
-   ```bash
-   git push origin your-feature-branch
-   ```
-
-7. **Open a Pull Request:**
-
-   Submit a pull request to the main repository with a clear description of your changes.
-
-Please refer to our [CONTRIBUTING.md](CONTRIBUTING.md) file for more details and our [Code of Conduct](CODE_OF_CONDUCT.md) before contributing.
-
----
-
-
-
 ## :zap: Future Scope 🔮
 
 **PyVerse** aims to expand in the following areas:
@@ -262,6 +156,35 @@ Please refer to our [CONTRIBUTING.md](CONTRIBUTING.md) file for more details and
    Mentor new contributors, participate in discussions, and help improve the community.
 
 ---
+
+*************************************************************
+
+<h2>✔Project Admin</h2>
+
+<table>
+  <tr>
+<td align="center"><a href="https://github.com/UTSAVS26"><img src="https://github.com/user-attachments/assets/e5808fa8-ed66-4e8f-8187-02d7212243fc" width="80px;" alt=""/><br /><sub><b>Utsav Singhal</b></sub></a></td>
+  </tr>
+</table>
+
+****************************************************************
+<h2>✨Top Contributors</h2>   
+
+Thanks to these wonderful people! Contributions of any kind are welcome! 🚀
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<a href="https://github.com/UTSAVS26/PyVerse/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=UTSAVS26/PyVerse" />
+</a>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+**************************************************************
 
 ## :zap: License Information 📄
 
