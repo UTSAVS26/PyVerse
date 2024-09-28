@@ -1,19 +1,25 @@
-Closes: <!-- #issue number  -->
+# Pull Request for DL-Simplified 💡
 
-- **Title** : 
+
+## Issue Title : <!-- Enter the issue title here -->
+
+- **Info about the related issue (Aim of the project)** : <!-- What's the goal of the project -->
 - **Name:** <!--Mention Your name-->
-- **Idenitfy yourself:** <!-- Mention your role (like GSOC, GSSOC, SSOC, etc. Contributor) -->
+- **GitHub ID:** <!-- Mention your GitHub ID -->
+- **Email ID:** <!--Mention your email ID for further communication. -->
+- **Idenitfy yourself: (Mention in which program you are contributing in. Eg. For a WoB 2024 participant it's, `WoB Participant`)** <!-- Mention in which program you are contributing -->
 
 
 <!-- Mention the following details and these are mandatory -->
+
+Closes: #issue number that will be closed through this PR
 
 ### Describe the add-ons or changes you've made 📃
 
 Give a clear description of what have you added or modifications made
 
+## Type of change ☑️
 
-### Type of change ☑️
-<!-- Please delete options that are not relevant. -->
 What sort of change have you made:
 <!--
 Example how to mark a checkbox:-
@@ -25,27 +31,20 @@ Example how to mark a checkbox:-
 - [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
 - [ ] This change requires a documentation update
 
-### How Has This Been Tested? ⚙️
-<!-- Describe how it has been tested
-Describe how have you verified the changes made -->
+## How Has This Been Tested? ⚙️
 
+Describe how it has been tested
+Describe how have you verified the changes made
 
-
-### Checklist: ☑️
+## Checklist: ☑️
 <!--
 Example how to mark a checkbox:-
 - [x] My code follows the code style of this project.
 -->
-- [ ] My code follows the [Contributing Guidelines](https://github.com/Avdhesh-Varshney/AI-Code/blob/main/README.md) & [Code of Conduct](https://github.com/Avdhesh-Varshney/AI-Code/blob/main/CODE_OF_CONDUCT.md) of this project.
-- [ ] This PR does not contain plagiarized content.
+- [ ] My code follows the guidelines of this project.
 - [ ] I have performed a self-review of my own code.
 - [ ] I have commented my code, particularly wherever it was hard to understand.
+- [ ] I have made corresponding changes to the documentation.
 - [ ] My changes generate no new warnings.
-
-
-### Screenshots 📷
-<!-- Must add the screenshot of the project or your changes for review your pr -->
-
-
-### Note to reviewers 📄
-<!-- Add notes to reviewers if applicable -->
+- [ ] I have added things that prove my fix is effective or that my feature works.
+- [ ] Any dependent changes have been merged and published in downstream modules.

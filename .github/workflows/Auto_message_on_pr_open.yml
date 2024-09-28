@@ -1,4 +1,4 @@
-name: Auto Comment and Add Reviewer on PR
+name: Auto Comment on PR Open
 
 on:
   pull_request_target:
@@ -9,15 +9,15 @@ permissions:
   pull-requests: write
 
 jobs:
-  comment-and-review:
+  comment-on-open:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Add Comment to Pull Request
+    - name: Add Comment to Opened PR
       run: |
         COMMENT=$(cat <<EOF
         {
-          "body": "Thank you for submitting your pull request! We'll review it as soon as possible."
+          "body": "👋 Thank you for opening this pull request! We're excited to review your contribution. Please give us a moment, and we'll get back to you shortly!"
         }
         EOF
         )
@@ -29,9 +29,10 @@ jobs:
           -d "$COMMENT")
         cat response.json
         if [ "$RESPONSE" -ne 201 ]; then
-          echo "Failed to add comment"
+          echo "Failed to add comment on PR open"
           exit 1
         fi
+
     - name: Add Reviewer to Pull Request
       run: |
         REVIEWERS=$(cat <<EOF
