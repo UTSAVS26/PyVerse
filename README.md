@@ -1,6 +1,5 @@
 <div align="center">
-```markdown
-<h1>PyVerse - Python Universe of Projects and Tools 💻🧠</h1>
+  <h1>PyVerse - Python Universe of Projects and Tools 💻🧠</h1>
 </div>
 
 <div align="center">
@@ -21,7 +20,8 @@ Welcome to **PyVerse**, a comprehensive and open-source hub that organizes and s
 
 ---
 
-##  Table of Contents
+
+## :zap: Table of Contents
 
 - [Vision and Mission](#vision-and-mission)
 - [Description and Purpose](#description-and-purpose)
@@ -216,13 +216,13 @@ We extend our gratitude to all contributors and the open-source community for th
 
 ---
 
-##  Vision and Mission 🎯
+## :zap: Vision and Mission 🎯
 
 Our vision is to build a vibrant community and resource hub for Python enthusiasts of all skill levels. We aim to facilitate learning, collaboration, and innovation through a well-organized repository of Python projects and tools. Our mission is to promote open-source development, encourage contributions, and provide a platform for developers to showcase their work.
 
 ---
 
-##  Description and Purpose 📘
+## :zap: Description and Purpose 📘
 
 **PyVerse** serves as a central repository for Python projects, ranging from beginner-friendly scripts to advanced tools and libraries. It includes projects in various domains, such as:
 
@@ -240,7 +240,7 @@ The purpose of PyVerse is to provide a structured and accessible way for develop
 
 ---
 
-##  Features 🌟
+## :zap: Features 🌟
 
 - **Diverse Project Categories**: Explore projects across multiple domains, from web development to deep learning.
 - **Beginner to Advanced**: Projects are organized to cater to different skill levels, making it easier to find something suited to your expertise.
@@ -250,7 +250,7 @@ The purpose of PyVerse is to provide a structured and accessible way for develop
 
 ---
 
-##  Project Structure 📂
+## :zap: Project Structure 📂
 
 The PyVerse repository is organized as follows:
 
@@ -281,7 +281,7 @@ PyVerse/
 
 ---
 
-##  Future Scope 🔮
+## :zap: Future Scope 🔮
 
 **PyVerse** aims to expand in the following areas:
 
@@ -292,7 +292,7 @@ PyVerse/
 
 ---
 
-##  How to Approach the Project 🌐
+## :zap: How to Approach the Project 🌐
 
 ### Beginner Level 🌱
 
@@ -367,19 +367,19 @@ Thanks to these wonderful people! Contributions of any kind are welcome! 🚀
 
 **************************************************************
 
-##  License Information 📄
+## :zap: License Information 📄
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ---
 
-##  Contact Information 📬
+## :zap: Contact Information 📬
 
 For any questions, suggestions, or feedback, please open an issue on GitHub or contact the project maintainers via email [utsavsinghal26@gmail.com](mailto:utsavsinghal26@gmail.com).
 
 ---
 
-##  Acknowledgments 🙏
+## :zap: Acknowledgments 🙏
 
 We extend our gratitude to all contributors and the open-source community for their support and valuable contributions to this project.
 
