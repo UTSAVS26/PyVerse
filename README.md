@@ -74,28 +74,23 @@ The PyVerse repository is organized as follows:
 
 <!-- START_STRUCTURE -->
 ```
-PyVerse/
-│
-├── Web_Development/
-├── Machine_Learning/
-├── Data_Science/
-├── Automation_Tools/
-├── Game_Development/
-├── Deep_Learning/
-│   ├── NLP/
-│   ├── Computer_Vision/
-├── Cybersecurity_Tools/
-├── Algorithms_and_Data_Structures/
-│   ├── Sorting_Algorithms/
-│   ├── Search_Algorithms/
-│   ├── Data_Structures/
-├── Beginner_Projects/
-├── Advanced_Projects/
-├── Tutorials/
-├── CONTRIBUTING.md
-├── README.md
+├── Advanced_Projects
+├── Algorithms_and_Data_Structures
+├── Automation_Tools
+├── Beginner_Projects
+├── Blockchain_Development
 ├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── Cybersecurity_Tools
+├── Data_Science
+├── Deep_Learning
+├── Game_Development
+├── LICENSE
+├── Machine_Learning
 ├── PROJECT-README-TEMPLATE.md
+├── README.md
+├── Tutorials
+└── Web_Development
 ```
 <!-- END_STRUCTURE -->
 
