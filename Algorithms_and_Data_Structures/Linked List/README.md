@@ -59,7 +59,3 @@ In each of these menu-driven linked list codes, you willbe presented with a menu
 
     Note: Replace `filename.py` with the name of the python file which is to be executed.
 
-
-## **Author**
-
-- [Himanshu Agarwal](https://github.com/himanshu-03)
