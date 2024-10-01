@@ -27,11 +27,11 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
       run: |
-        python .github/scripts/update_structure.py
+        python .github/scripts/update_dir_structure.py
 
     - name: Commit and push if changed
       run: |
         git config --local user.email "115717039+yashksaini-coder@users.noreply.github.com"
         git config --local user.name "yashksaini-coder"
-        git add repo_structure.txt README.md
+        git add .
         git diff --quiet && git diff --staged --quiet || (git commit -m "Update repo structure" && git push)
