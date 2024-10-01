@@ -72,6 +72,7 @@ The purpose of PyVerse is to provide a structured and accessible way for develop
 
 The PyVerse repository is organized as follows:
 
+<!-- START_STRUCTURE -->
 ```
 PyVerse/
 │
@@ -96,6 +97,7 @@ PyVerse/
 ├── CODE_OF_CONDUCT.md
 ├── PROJECT-README-TEMPLATE.md
 ```
+<!-- END_STRUCTURE -->
 
 ---
 
