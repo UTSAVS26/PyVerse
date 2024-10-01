@@ -1,4 +1,4 @@
-# Pull Request for DL-Simplified 💡
+# Pull Request for PyVerse 💡
 
 
 ## Issue Title : <!-- Enter the issue title here -->
