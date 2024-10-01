@@ -10,8 +10,8 @@ on:
       - yash/fix-4
 
 jobs:
-  example-job:
-    runs-on: ubuntu-latests
+  detect-and-update-structure:
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -25,6 +25,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install PyGithub
+
       - name: Run update script
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -32,7 +33,7 @@ jobs:
       
       - name: Commit and push if changed
         run: |
-            git config --local user.email "115717039+yashksaini-coder@users.noreply.github.com"
-            git config --local user.name "yashksaini-coder"
-            git add .
-            git diff --quiet && git diff --staged --quiet || (git commit -m "Update repo structure" && git push)
+          git config --local user.email "115717039+yashksaini-coder@users.noreply.github.com"
+          git config --local user.name "yashksaini-coder"
+          git add .
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update repo structure" && git push)
