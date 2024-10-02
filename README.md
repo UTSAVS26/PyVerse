@@ -76,14 +76,17 @@ The PyVerse repository is organized as follows:
 ```
 ├── Advanced_Projects
 ├── Algorithms_and_Data_Structures
-│   └── Linked List
-│       ├── Menu_Driven_Code_for_Circular_Doubly_LinkedList.py
-│       ├── Menu_Driven_Code_for_Circular_LinkedList.py
-│       ├── Menu_Driven_Code_for_Doubly_LinkedList.py
-│       ├── Menu_Driven_Code_for_Dynamic_Linear_Queue_using_LinkedList.py
-│       ├── Menu_Driven_Code_for_Dynamic_Stack_using_LinkedList.py
-│       ├── Menu_Driven_Code_for_Linear_LinkedList.py
-│       └── README.md
+│   ├── Linked List
+│   │   ├── Menu_Driven_Code_for_Circular_Doubly_LinkedList.py
+│   │   ├── Menu_Driven_Code_for_Circular_LinkedList.py
+│   │   ├── Menu_Driven_Code_for_Doubly_LinkedList.py
+│   │   ├── Menu_Driven_Code_for_Dynamic_Linear_Queue_using_LinkedList.py
+│   │   ├── Menu_Driven_Code_for_Dynamic_Stack_using_LinkedList.py
+│   │   ├── Menu_Driven_Code_for_Linear_LinkedList.py
+│   │   └── README.md
+│   └── Stack
+│       ├── README.md
+│       └── stack.py
 ├── Automation_Tools
 ├── Beginner_Projects
 ├── Blockchain_Development
