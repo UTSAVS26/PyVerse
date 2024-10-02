@@ -1,5 +1,13 @@
 ├── Advanced_Projects
 ├── Algorithms_and_Data_Structures
+│   └── Linked List
+│       ├── Menu_Driven_Code_for_Circular_Doubly_LinkedList.py
+│       ├── Menu_Driven_Code_for_Circular_LinkedList.py
+│       ├── Menu_Driven_Code_for_Doubly_LinkedList.py
+│       ├── Menu_Driven_Code_for_Dynamic_Linear_Queue_using_LinkedList.py
+│       ├── Menu_Driven_Code_for_Dynamic_Stack_using_LinkedList.py
+│       ├── Menu_Driven_Code_for_Linear_LinkedList.py
+│       └── README.md
 ├── Automation_Tools
 ├── Beginner_Projects
 ├── Blockchain_Development
@@ -9,9 +17,98 @@
 ├── Data_Science
 │   └── Data-science.md
 ├── Deep_Learning
+│   ├── Face Mask Detection
+│   │   ├── Dataset
+│   │   │   └── Readme.md
+│   │   ├── Images
+│   │   │   ├── Distribution of classes.jpg
+│   │   │   ├── Evaluation.jpg
+│   │   │   ├── Readme.md
+│   │   │   └── Sample Images.jpg
+│   │   ├── Model
+│   │   │   ├── Readme.md
+│   │   │   └── detecting-face-masks-with-5-models.ipynb
+│   │   └── requirements.txt
+│   ├── MNIST Digit Classification using Neural Networks
+│   │   ├── README.md
+│   │   ├── bar graph.png
+│   │   ├── dataset
+│   │   │   └── readme.md
+│   │   ├── histogram.png
+│   │   ├── images
+│   │   │   ├── bar graph.png
+│   │   │   ├── confusion matrix.png
+│   │   │   ├── histogram.png
+│   │   │   ├── input visualisation.png
+│   │   │   ├── pie chart.png
+│   │   │   └── training loss.png
+│   │   ├── input visualisation.png
+│   │   ├── model
+│   │   │   ├── ANN_Handwritten_Digit_Classification.ipynb
+│   │   │   └── CNN_handwritten_digit_recogniser.ipynb
+│   │   ├── pie chart.png
+│   │   └── requirement.txt
+│   └── Spam Vs Ham Mail Classification [With Streamlit GUI]
+│       ├── Dataset
+│       │   ├── newData.csv
+│       │   └── spam-vs-ham-dataset.csv
+│       ├── Image
+│       │   ├── PairPlot_withHue.png
+│       │   ├── Spam-vs-ham-piechart.jpg
+│       │   ├── spam-ham-num_chr.jpg
+│       │   ├── spam-ham-num_sent.jpg
+│       │   └── spam-ham-num_word.jpg
+│       ├── Model
+│       │   ├── README.md
+│       │   ├── app1.py
+│       │   ├── app2.py
+│       │   ├── model1.ipynb
+│       │   └── model2.ipynb
+│       └── requirements.txt
 ├── Game_Development
 ├── LICENSE
 ├── Machine_Learning
+│   ├── Air Quality Prediction
+│   │   ├── Dataset
+│   │   │   └── README.md
+│   │   ├── Images
+│   │   │   ├── Satisfaction_level_of_people_post_covid.jpg
+│   │   │   ├── Satisfaction_level_of_people_pre_covid.jpg
+│   │   │   ├── most_polluted_cities_post_covid.jpg
+│   │   │   └── most_polluted_cities_pre_covid.jpg
+│   │   └── Model
+│   │       ├── README.md
+│   │       └── air-quality-eda-and-classification.ipynb
+│   ├── Automobile Sales Data Analysis and Prediction
+│   │   ├── Dataset
+│   │   │   ├── Auto Sales data.csv
+│   │   │   └── README.md
+│   │   ├── Images
+│   │   │   ├── Dealsize_bar.png
+│   │   │   ├── Dealsize_pie.png
+│   │   │   ├── Productline_bar.png
+│   │   │   ├── Productline_pie.png
+│   │   │   ├── Status_bar.png
+│   │   │   └── Status_pie.png
+│   │   ├── Model
+│   │   │   ├── Automobile_Sales_Prediction.ipynb
+│   │   │   └── README.md
+│   │   └── requirements.txt
+│   └── Bitcoin Price Prediction
+│       ├── Dataset
+│       │   ├── README.md
+│       │   └── bitcoin_dataset.csv
+│       ├── Images
+│       │   ├── image1.png
+│       │   ├── image2.png
+│       │   ├── image4.png
+│       │   ├── image5.png
+│       │   └── images3.png
+│       ├── Model
+│       │   ├── Bitcoin_Price_Prediction.ipynb
+│       │   └── README.md
+│       ├── README.md
+│       └── requirements.txt
 ├── PROJECT-README-TEMPLATE.md
 ├── README.md
 ├── Tutorials
