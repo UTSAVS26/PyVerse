@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %} Home {% endblock title %}
+
+
+
+
+
+
+
+{% block content %}
+
+
+<div class="row">
+    <div class="col-sm text-center">
+            <h3 class="'mb-3">Welcome to my Stock Page</h3>
+            <h5 class='mb-5'>A Quick way to find stock details.</h5>
+    </div>
+
+
+<div class='row mt-5'>
+        <form class="d-flex" method='POST' action='{{url_for('search')}}'>
+                <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search" name='searchticker'>
+       
+                <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+</div>
+
+        
+</div>
+
+
+{% endblock content %}
+
+
+
