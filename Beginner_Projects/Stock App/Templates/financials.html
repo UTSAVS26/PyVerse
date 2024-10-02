@@ -1,0 +1,60 @@
+<h5 class="text-center mt-5">Financials</h5>
+<table class="table">
+    <thead>
+        <tr>
+            
+            <th scope="col">As of </th>
+            <th scope="col">Revenue </th>
+            <th scope="col">Grosss profit </th>
+            <th scope="col">NET income </th>
+            <th scope="col">EPS </th>
+        </tr>
+    </thead>
+    <tbody>
+      
+        {% for f in financials %}
+            <tr>
+                <td scope="row"> {{ f["date"] }} </td>
+                <td scope="row">{{ f['revenue'] }} </td>
+                <td scope="row">{{ f['grossProfit'] }} </td>
+                <td scope="row">{{ f['netIncome'] }} </td>
+                <td scope="row">{{ f['eps'] }} </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+    
+</table>
+
+<div class="row">
+        <img src="https://quickchart.io/chart?width=500&height=200&c={{epsChart}}" alt="chart">
+
+</div>
+
+<div class="row mt-5 mb-5">
+    <h5 class="'mb-2 text-center"> Today's Quotes</h5>
+    {% for item in quotes %}
+    
+    <p> <b>Open</b>: {{item['open']}} |
+        <b>Close</b>: {{item['previousClose']}}</p>
+    <p><b>Price change(%)</b>: {{item['changesPercentage']}} | <b>Price Change($)</b>: {{item['change']}}</p>
+    <p>
+        <b>Today's Low</b>: {{item['dayLow']}} |
+    <b>Today's High</b>: {{item['dayHigh']}}
+    </p>
+    <p>
+        <b>Year's Low</b>: {{item['yearLow']}} |
+        <b>Year's High</b>: {{item['yearHigh']}}
+    </p>
+    <p>
+    <b>Price Average(50 days)</b>: {{item['priceAvg50']}} |
+    <b>Total Volume</b>: {{item['volume']}}
+    </p>
+    <p>
+        <b>Price to Earnings</b>: {{item['pe']}} |
+    <b>Shares outstanding</b>:{{item['sharesOutstanding']}}
+    </p>
+   
+    {% endfor %}
+<hr>
+</div>
+
