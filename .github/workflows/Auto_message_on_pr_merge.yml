@@ -1,20 +1,21 @@
-name: Auto Comment on PR Merge
+name: Auto Comment on Merged PR
 
 on:
   pull_request:
-    types: [closed]
-
-permissions:
-  issues: write
-  pull-requests: write
+    types:
+      - closed
 
 jobs:
   comment-on-merge:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
 
+    permissions:
+      pull-requests: write
+      issues: write
+
     steps:
-    - name: Add Comment to Merged PR
+    - name: Add comment to merged pull request
       run: |
         COMMENT=$(cat <<EOF
         {
@@ -33,5 +34,3 @@ jobs:
           echo "Failed to add comment on merge"
           exit 1
         fi
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
