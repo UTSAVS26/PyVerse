@@ -38,9 +38,9 @@ No machine learning models were implemented in this app. The stock data is purel
 ### ✒️ **Your Signature**
 
 
-`Ananya Gupta
+`Ananya Gupta`
 [GitHub Profile](https://github.com/ananyag309)
-`
+
 
 	
 	
