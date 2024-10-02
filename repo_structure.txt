@@ -18,13 +18,17 @@
 │   │   ├── main.py
 │   │   └── screenshots
 │   │       └── tkinter-working.gif
-│   └── Stock App
+│   ├── Stock App
+│   │   ├── Readme.md
+│   │   ├── Templates
+│   │   │   ├── base.html
+│   │   │   ├── financials.html
+│   │   │   └── index.html
+│   │   └── server.py
+│   └── Turtle
 │       ├── Readme.md
-│       ├── Templates
-│       │   ├── base.html
-│       │   ├── financials.html
-│       │   └── index.html
-│       └── server.py
+│       ├── rainbow_spiral.py
+│       └── turtle_spiral.py
 ├── Blockchain_Development
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
