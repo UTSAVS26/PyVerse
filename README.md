@@ -89,6 +89,11 @@ The PyVerse repository is organized as follows:
 │       └── stack.py
 ├── Automation_Tools
 ├── Beginner_Projects
+│   ├── Morse Code Translator with GUI
+│   │   ├── README.md
+│   │   ├── main.py
+│   │   └── screenshots
+│   │       └── tkinter-working.gif
 │   └── Stock App
 │       ├── Readme.md
 │       ├── Templates
