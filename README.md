@@ -83,6 +83,7 @@ The PyVerse repository is organized as follows:
 ├── CONTRIBUTING.md
 ├── Cybersecurity_Tools
 ├── Data_Science
+│   └── Data-science.md
 ├── Deep_Learning
 ├── Game_Development
 ├── LICENSE
@@ -90,7 +91,8 @@ The PyVerse repository is organized as follows:
 ├── PROJECT-README-TEMPLATE.md
 ├── README.md
 ├── Tutorials
-└── Web_Development
+├── Web_Development
+└── repo_structure.txt
 ```
 <!-- END_STRUCTURE -->
 
