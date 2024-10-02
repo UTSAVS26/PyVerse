@@ -89,6 +89,13 @@ The PyVerse repository is organized as follows:
 │       └── stack.py
 ├── Automation_Tools
 ├── Beginner_Projects
+│   └── Stock App
+│       ├── Readme.md
+│       ├── Templates
+│       │   ├── base.html
+│       │   ├── financials.html
+│       │   └── index.html
+│       └── server.py
 ├── Blockchain_Development
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
