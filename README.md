@@ -84,9 +84,16 @@ The PyVerse repository is organized as follows:
 │   │   ├── Menu_Driven_Code_for_Dynamic_Stack_using_LinkedList.py
 │   │   ├── Menu_Driven_Code_for_Linear_LinkedList.py
 │   │   └── README.md
-│   └── Stack
-│       ├── README.md
-│       └── stack.py
+│   ├── Stack
+│   │   ├── README.md
+│   │   └── stack.py
+│   └── Trees
+│       ├── Menu_Driven_Code_for_Avl_Tree.py
+│       ├── Menu_Driven_Code_for_Binary_Search_Tree.py
+│       ├── Menu_Driven_Code_for_Binary_Tree.py
+│       ├── Menu_Driven_Code_for_DFS.py
+│       ├── Menu_Driven_Code_for_Tree_Traversals.py
+│       └── README.md
 ├── Automation_Tools
 ├── Beginner_Projects
 │   ├── Morse Code Translator with GUI
