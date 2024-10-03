@@ -94,6 +94,9 @@ The PyVerse repository is organized as follows:
 │   │   ├── main.py
 │   │   └── screenshots
 │   │       └── tkinter-working.gif
+│   ├── QR Generator
+│   │   ├── README.md
+│   │   └── generate_qrcode.py
 │   └── Stock App
 │       ├── Readme.md
 │       ├── Templates
