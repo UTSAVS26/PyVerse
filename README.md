@@ -157,6 +157,7 @@ The PyVerse repository is organized as follows:
 │   │   │   ├── sugarcane.h5
 │   │   │   ├── tomato.h5
 │   │   │   └── wheat.h5
+│   │   ├── README.md
 │   │   ├── assets
 │   │   │   └── images
 │   │   │       ├── cotton_result-graph.png
@@ -168,13 +169,15 @@ The PyVerse repository is organized as follows:
 │   │   │       ├── potato_result_graph.png
 │   │   │       ├── sugarcane_result_graph.png
 │   │   │       └── tomato_result_graph.png
-│   │   └── ipynb files
-│   │       ├── Cotton_Classification.ipynb
-│   │       ├── Grapes_Classification.ipynb
-│   │       ├── Guava_Classification.ipynb
-│   │       ├── Potato_Classification.ipynb
-│   │       ├── Sugarcane_Classification.ipynb
-│   │       └── Tomato_Classification.ipynb
+│   │   ├── ipynb files
+│   │   │   ├── Cotton_Classification.ipynb
+│   │   │   ├── Grapes_Classification.ipynb
+│   │   │   ├── Guava_Classification.ipynb
+│   │   │   ├── Potato_Classification.ipynb
+│   │   │   ├── Sugarcane_Classification.ipynb
+│   │   │   ├── Tomato_Classification.ipynb
+│   │   │   └── requirements.txt
+│   │   └── result.md
 │   └── Spam Vs Ham Mail Classification [With Streamlit GUI]
 │       ├── Dataset
 │       │   ├── newData.csv
