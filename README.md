@@ -189,21 +189,35 @@ The PyVerse repository is organized as follows:
 │   │   │   ├── Automobile_Sales_Prediction.ipynb
 │   │   │   └── README.md
 │   │   └── requirements.txt
-│   └── Bitcoin Price Prediction
-│       ├── Dataset
-│       │   ├── README.md
-│       │   └── bitcoin_dataset.csv
-│       ├── Images
-│       │   ├── image1.png
-│       │   ├── image2.png
-│       │   ├── image4.png
-│       │   ├── image5.png
-│       │   └── images3.png
-│       ├── Model
-│       │   ├── Bitcoin_Price_Prediction.ipynb
-│       │   └── README.md
+│   ├── Bitcoin Price Prediction
+│   │   ├── Dataset
+│   │   │   ├── README.md
+│   │   │   └── bitcoin_dataset.csv
+│   │   ├── Images
+│   │   │   ├── image1.png
+│   │   │   ├── image2.png
+│   │   │   ├── image4.png
+│   │   │   ├── image5.png
+│   │   │   └── images3.png
+│   │   ├── Model
+│   │   │   ├── Bitcoin_Price_Prediction.ipynb
+│   │   │   └── README.md
+│   │   ├── README.md
+│   │   └── requirements.txt
+│   └── Twitter Sentiment Analysis
 │       ├── README.md
-│       └── requirements.txt
+│       ├── Twitter Sentiment Analysis.ipynb
+│       ├── Twitter-sentiment-analysis-1.jpg
+│       ├── images
+│       │   ├── Input Data.jpg
+│       │   ├── Model Performance.jpg
+│       │   ├── Negative wordcloud.jpg
+│       │   ├── Positive wordcloud.jpg
+│       │   ├── Sentiment countplot.jpg
+│       │   └── sample.md
+│       ├── images.jpg
+│       ├── train.csv
+│       └── twitter2-720x540.jpg
 ├── PROJECT-README-TEMPLATE.md
 ├── README.md
 ├── Tutorials
