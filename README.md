@@ -146,6 +146,12 @@ The PyVerse repository is organized as follows:
 │   │   │   └── CNN_handwritten_digit_recogniser.ipynb
 │   │   ├── pie chart.png
 │   │   └── requirement.txt
+│   ├── Plant Disease Detection
+│   │   ├── assets
+│   │   │   └── images
+│   │   │       └── potato_result_graph.png
+│   │   └── ipynb files
+│   │       └── Potato_Classification.ipynb
 │   └── Spam Vs Ham Mail Classification [With Streamlit GUI]
 │       ├── Dataset
 │       │   ├── newData.csv
