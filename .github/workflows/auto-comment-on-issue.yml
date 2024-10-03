@@ -31,25 +31,6 @@ jobs:
           echo "Failed to add comment on issue open"
           exit 1
         fi
-
-    - name: Assign Issue to User
-      run: |
-        ASSIGNEES=$(cat <<EOF
-        {
-          "assignees": ["UTSAVS26"]
-        }
-        EOF
-        )
-        RESPONSE=$(curl -s -o response.json -w "%{http_code}" \
-          -X POST \
-          -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-          -H "Accept: application/vnd.github.v3+json" \
-          https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/assignees \
-          -d "$ASSIGNEES")
-        cat response.json
-        if [ "$RESPONSE" -ne 201 ]; then
-          echo "Failed to assign user to issue"
-          exit 1
-        fi
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
