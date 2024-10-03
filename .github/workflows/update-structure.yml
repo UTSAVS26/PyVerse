@@ -7,7 +7,6 @@ on:
   push:
     branches:
       - main
-      - yash/fix-4
 
 jobs:
   detect-and-update-structure:
