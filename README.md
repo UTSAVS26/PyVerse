@@ -146,6 +146,38 @@ The PyVerse repository is organized as follows:
 │   │   │   └── CNN_handwritten_digit_recogniser.ipynb
 │   │   ├── pie chart.png
 │   │   └── requirement.txt
+│   ├── Plant Disease Detection
+│   │   ├── Final tensorflow Models
+│   │   │   ├── cotton.h5
+│   │   │   ├── cucumber.h5
+│   │   │   ├── grapes.h5
+│   │   │   ├── guava.h5
+│   │   │   ├── potato.h5
+│   │   │   ├── rice.h5
+│   │   │   ├── sugarcane.h5
+│   │   │   ├── tomato.h5
+│   │   │   └── wheat.h5
+│   │   ├── README.md
+│   │   ├── assets
+│   │   │   └── images
+│   │   │       ├── cotton_result-graph.png
+│   │   │       ├── cotton_result.png
+│   │   │       ├── grapes_result.png
+│   │   │       ├── grapes_result_graph.png
+│   │   │       ├── guava_result.png
+│   │   │       ├── guava_result_graph.png
+│   │   │       ├── potato_result_graph.png
+│   │   │       ├── sugarcane_result_graph.png
+│   │   │       └── tomato_result_graph.png
+│   │   ├── ipynb files
+│   │   │   ├── Cotton_Classification.ipynb
+│   │   │   ├── Grapes_Classification.ipynb
+│   │   │   ├── Guava_Classification.ipynb
+│   │   │   ├── Potato_Classification.ipynb
+│   │   │   ├── Sugarcane_Classification.ipynb
+│   │   │   ├── Tomato_Classification.ipynb
+│   │   │   └── requirements.txt
+│   │   └── result.md
 │   └── Spam Vs Ham Mail Classification [With Streamlit GUI]
 │       ├── Dataset
 │       │   ├── newData.csv
