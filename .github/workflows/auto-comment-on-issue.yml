@@ -16,7 +16,7 @@ jobs:
       run: |
         COMMENT=$(cat <<EOF
         {
-          "body": "🙌 Thank you for bringing this issue to our attention! We appreciate your input and will investigate it as soon as possible."
+          "body": "🙌 Thank you for bringing this issue to our attention! We appreciate your input and will investigate it as soon as possible. \n\nFeel free to join our community on [Discord](https://discord.gg/9mZnkTRFFe) to discuss more!"
         }
         EOF
         )
@@ -32,11 +32,11 @@ jobs:
           exit 1
         fi
 
-    - name: Add Reviewer to Issue
+    - name: Assign Issue to User
       run: |
-        REVIEWERS=$(cat <<EOF
+        ASSIGNEES=$(cat <<EOF
         {
-          "reviewers": ["UTSAVS26"]
+          "assignees": ["UTSAVS26"]
         }
         EOF
         )
@@ -44,11 +44,11 @@ jobs:
           -X POST \
           -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
           -H "Accept: application/vnd.github.v3+json" \
-          https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/requested_reviewers \
-          -d "$REVIEWERS")
+          https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/assignees \
+          -d "$ASSIGNEES")
         cat response.json
         if [ "$RESPONSE" -ne 201 ]; then
-          echo "Failed to add reviewer"
+          echo "Failed to assign user to issue"
           exit 1
         fi
       env:
