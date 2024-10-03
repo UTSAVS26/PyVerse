@@ -149,8 +149,14 @@ The PyVerse repository is organized as follows:
 │   ├── Plant Disease Detection
 │   │   ├── assets
 │   │   │   └── images
+│   │   │       ├── cotton_result-graph.png
+│   │   │       ├── cotton_result.png
+│   │   │       ├── guava_result.png
+│   │   │       ├── guava_result_graph.png
 │   │   │       └── potato_result_graph.png
 │   │   └── ipynb files
+│   │       ├── Cotton_Classification.ipynb
+│   │       ├── Guava_Classification.ipynb
 │   │       └── Potato_Classification.ipynb
 │   └── Spam Vs Ham Mail Classification [With Streamlit GUI]
 │       ├── Dataset
