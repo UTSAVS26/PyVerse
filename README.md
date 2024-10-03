@@ -119,6 +119,9 @@ The PyVerse repository is organized as follows:
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
 ├── Cybersecurity_Tools
+│   └── CLI-based Port Scanner
+│       ├── port-scanner.py
+│       └── README.md 
 ├── Data_Science
 │   └── Data-science.md
 ├── Deep_Learning
