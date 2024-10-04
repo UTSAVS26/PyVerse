@@ -249,6 +249,18 @@ The PyVerse repository is organized as follows:
 │   │   │   └── README.md
 │   │   ├── README.md
 │   │   └── requirements.txt
+│   ├── Fake News Detection
+│   │   ├── Images
+│   │   │   ├── Dataset.png
+│   │   │   ├── EDA.png
+│   │   │   ├── EDA1.png
+│   │   │   ├── metrics.png
+│   │   │   ├── model.png
+│   │   │   ├── model2.png
+│   │   │   └── model2metrics.png
+│   │   ├── Model
+│   │   │   └── PridictionModel.ipynb
+│   │   └── Readme.md
 │   └── Twitter Sentiment Analysis
 │       ├── README.md
 │       ├── Twitter Sentiment Analysis.ipynb
