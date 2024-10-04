@@ -130,7 +130,18 @@ The PyVerse repository is organized as follows:
 │   ├── DataViz_Snippets.ipynb
 │   └── Readme.md
 ├── Data_Science
-│   └── Data-science.md
+│   ├── Data-science.md
+│   └── time_series_visualization
+│       ├── README.md
+│       ├── Time_Series_Report.pdf
+│       ├── Time_Series_Visualization.ipynb
+│       ├── airline_passengers.csv
+│       ├── autocorrelation_plot.png
+│       ├── eda_plot.png
+│       ├── exponential_smoothing_plot.png
+│       ├── moving_average_plot.png
+│       ├── seasonal_plot.png
+│       └── trend_analysis_plot.png
 ├── Deep_Learning
 │   ├── Bird Species Classification
 │   │   ├── Dataset
