@@ -262,8 +262,8 @@ The PyVerse repository is organized as follows:
 │   │   │   └── PridictionModel.ipynb
 │   │   └── Readme.md
 │   ├── Hand Game Controller
+│   │   ├── "W" Key Binding
 │   │   ├── README.md
-│   │   ├── Screenshot 2024-10-03 183106.png
 │   │   ├── Screenshot 2024-10-03 183129.png
 │   │   ├── Screenshot 2024-10-03 183619.png
 │   │   ├── Screenshot 2024-10-03 183644.png
