@@ -1,31 +1,23 @@
-# Fake News Classification using DL 
+# PROJECT TITLE: Fake News Detector
 
-## PROJECT TITLE
+## 🎯 Goal
+The main goal of this project is to help users determine the authenticity of news articles by leveraging machine learning models. The purpose is to combat misinformation by providing real-time predictions on whether a news article is "Real" or "Fake."
 
-Fake News Detection using Deep Learning 
+## 🧵 Dataset
+The dataset used in this project is sourced from  https://www.kaggle.com/competitions/fake-news/data?select=train.csv. 
 
-## GOAL
+## 🧾 Description
+This web app utilizes machine learning algorithms to analyze news articles and classify them as either "Real" or "Fake." It features a user-friendly interface where users can input text, receive predictions, and provide feedback, contributing to the model's improvement over time.
 
-To identify whether the given news is fake or not. 
+## 🧮 What I had done!
+1. **Data Collection**: Gathered and prepared a dataset of news articles for training the model.
+2. **Model Training**: Developed and trained machine learning models to classify news articles.
+3. **App Development**: Built a Flask web application to facilitate user interaction.
+4. **Text Input**: Created a text input field for users to enter news articles.
+5. **Prediction Mechanism**: Implemented real-time prediction of "Real" or "Fake" based on user input.
+6. **Feedback System**: Enabled a feedback mechanism for users to report the accuracy of predictions.
 
-## DATASET
-
-The link for the dataset used in this project:  https://www.kaggle.com/competitions/fake-news/data?select=train.csv 
-
-
-## DESCRIPTION
-
-This project aims to identify whether the given news is fake or not by extracting meaning and semantics of the given news.
-
-## WHAT I HAD DONE
-
-1. Data collection: From the link of the dataset given above. 
-2. Data preprocessing: Preprocessed the news by combining title and text to create a new feature and did some augementation like tokeinizing and vectorising before passing them to model training
-3. Model selection: Self Designed model having a Embedding Layer followed by Global Pooling Layer and then 2 Dense layers and then output layer.Second model had a Embedding layer followed by a RNN layer and a Dense output layer.
-4. Comparative analysis: Compared the accuracy score of all the models.
-
-## MODELS SUMMARY
-
+## 🚀 Models Implemented
 Model-1: "sequential"
 _________________________________________________________________
  Layer (type)                Output Shape              Param #   
@@ -61,18 +53,17 @@ Total params: 16606621 (63.35 MB)
 Trainable params: 16606621 (63.35 MB)
 Non-trainable params: 0 (0.00 Byte)
 
-## LIBRARIES NEEDED
+## 📚 Libraries Needed
+- Flask
+- Pandas
+- NumPy
+- Scikit-learn
+- TensorFlow or Keras (depending on the model used)
 
-The following libraries are required to run this project:
 
-- nltk
-- pandas
-- matplotlib
-- tensorflow
-- keras
-- sklearn
 
-## EVALUATION METRICS
+## 📈 Performance of the Models based on the Accuracy Scores
+### EVALUATION METRICS
 
 The evaluation metrics I used to assess the models:
 
@@ -81,7 +72,7 @@ The evaluation metrics I used to assess the models:
 
 It is shown using Confusion Matrix in the Images folder
 
-## RESULTS
+### RESULTS
 Results on Val dataset:
 For Model-1:
 Accuracy:96.11%
@@ -91,7 +82,9 @@ For Model-2:
 Accuracy:85.03%
 loss: 0.1439
 
-## CONCLUSION
-Based on results we can draw following conclusions:
 
-1.The model-1 showed high validation accuracy of 96.11% and loss of 0.1350.Thus the model-1 worked fairly well identifying 2874 fake articles from a total of 3044.The first model performed better.The second model had good training accuracy but less test accuracy hinting towards overfitting.Maybe the key reason being in fake news it is important to capture overall sentiment better than individual word sentiment.
+## 📢 Conclusion
+The model-1 showed high validation accuracy of 96.11% and loss of 0.1350.Thus the model-1 worked fairly well identifying 2874 fake articles from a total of 3044.The first model performed better.The second model had good training accuracy but less test accuracy hinting towards overfitting.Maybe the key reason being in fake news it is important to capture overall sentiment better than individual word sentiment.
+
+## ✒️ Your Signature
+Pavitraa G
