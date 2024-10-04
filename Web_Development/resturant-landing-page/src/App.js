@@ -5,6 +5,8 @@ import { Navbar } from './components';
 import './App.css';
 
 const App = () => (
+
+  // The App component renders a div containing all the main sections of the application
   <div>
     <Navbar />
     <Header />

@@ -4,63 +4,65 @@
   justify-content: space-between;
   align-items: center;
   background: var(--color-black);
-
-  padding: 1rem 2rem;
+  padding: 1rem 2rem; /* Navbar padding for spacing */
 }
 
 .app__navbar-logo {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: center; /* Center logo vertically */
 }
 .app__navbar-logo img {
-  width: 150px;
+  width: 150px; /* Logo size */
 }
+
 .app__navbar-links {
-  flex: 1;
+  flex: 1; /* Allows links to grow and take available space */
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Center links horizontally */
   align-items: center;
-  list-style: none;
+  list-style: none; /* Removes bullet points from list */
 }
 .app__navbar-links li {
-  margin: 0 1rem;
-  cursor: pointer;
+  margin: 0 1rem; /* Adds spacing between links */
+  cursor: pointer; /* Changes cursor to pointer on hover */
 }
 .app__navbar-links li:hover {
-  color: var(--color-grey);
+  color: var(--color-grey); /* Changes link color on hover */
 }
+
 .app__navbar-login {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-end; /* Aligns login links to the right */
   align-items: center;
 }
 .app__navbar-login a {
-  margin: 0 1rem;
-  text-decoration: none;
-  transition: 0.5s ease;
+  margin: 0 1rem; /* Spacing between login and register links */
+  text-decoration: none; /* Removes underline from links */
+  transition: 0.5s ease; /* Smooth transition effect */
 }
 .app__navbar-login a:hover {
-  border-bottom: 1px solid var(--color-golden);
+  border-bottom: 1px solid var(--color-golden); /* Underline effect on hover */
 }
 .app__navbar-login div {
   width: 1px;
   height: 30px;
-  background-color: var(--color-grey);
+  background-color: var(--color-grey); /* Divider between login links */
 }
+
 .app__navbar-smallscreen {
-  display: none;
+  display: none; /* Hidden by default, shown only on small screens */
 }
 .app__navbar-smallscreen_overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
-  background-color: var(--color-black);
+  height: 100vh; /* Full viewport height */
+  background-color: var(--color-black); /* Background for overlay menu */
   transition: 0.5s ease;
-  flex-direction: column;
-  z-index: 5;
+  flex-direction: column; /* Vertically stacks items */
+  z-index: 5; /* Places overlay above other content */
 }
 .app__navbar-smallscreen_overlay .overlay__close {
   font-size: 27px;
@@ -68,47 +70,48 @@
   cursor: pointer;
   position: absolute;
   top: 20px;
-  right: 20px;
-}
-.app__navbar-smallscreen_links {
-    list-style: none;
-}
-.app__navbar-smallscreen_links li {
-    margin: 2rem;
-    color: var(--color-golden);
-    cursor: pointer;
-    font-size: 2rem;
-    text-align: center;
-    font-family: var(--font-base);
-}
-.app__navbar-smallscreen_links li:hover {
-    color: var(--color-white);
+  right: 20px; /* Positions close button at top right */
 }
 
+.app__navbar-smallscreen_links {
+  list-style: none; /* Removes bullet points from small screen links */
+}
+.app__navbar-smallscreen_links li {
+  margin: 2rem;
+  color: var(--color-golden); /* Text color for small screen links */
+  cursor: pointer;
+  font-size: 2rem;
+  text-align: center;
+  font-family: var(--font-base); /* Ensures consistent font */
+}
+.app__navbar-smallscreen_links li:hover {
+  color: var(--color-white); /* Hover effect for small screen links */
+}
+
+/* Responsive styling for different screen sizes */
 @media screen and (max-width: 2000px) {
-    .app__navbar-logo img {
-        width: 210px;
-    }
+  .app__navbar-logo img {
+    width: 210px; /* Enlarges logo for larger screens */
+  }
 }
 
 @media screen and (max-width: 1150px) {
   .app__navbar-links {
-    display: none;
+    display: none; /* Hides links on smaller screens */
   }
-
   .app__navbar-smallscreen {
-    display: flex;
+    display: flex; /* Shows small screen menu icon */
   }
 }
 
 @media screen and (max-width: 650px) {
-    .app__navbar {
-        padding: 1rem;
-    }
-    .app__navbar-login {
-        display: none;
-    }
-    .app__navbar-logo img {
-        width: 110px;
-    }
+  .app__navbar {
+    padding: 1rem; /* Reduces padding for very small screens */
+  }
+  .app__navbar-login {
+    display: none; /* Hides login/register links on very small screens */
+  }
+  .app__navbar-logo img {
+    width: 110px; /* Reduces logo size for very small screens */
+  }
 }

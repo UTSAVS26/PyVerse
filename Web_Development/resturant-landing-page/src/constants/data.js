@@ -1,5 +1,6 @@
 import images from './images';
 
+// Array of wine objects, each containing title, price, and tags
 const wines = [
   {
     title: 'Chapel Hill Shiraz',

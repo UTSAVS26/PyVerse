@@ -1,8 +1,8 @@
 import React from "react";
-
 import SubHeading from "../SubHeading/SubHeading";
 import "./Newsletter.css";
 
+// NEWSLETTER SECTION
 const Newsletter = () => (
   <div className="app__newsletter">
     <div className="app__newsletter-heading">
@@ -10,6 +10,8 @@ const Newsletter = () => (
       <h1 className="headtext__cormorant">Subscribe to Our Newsletter</h1>
       <p className="p__opensans">And never miss our latest Updates!</p>
     </div>
+
+    {/* Input area for email subscription */}
     <div className="app__newsletter-input flex__center">
       <input type="email" placeholder="Enter your Email Address" />
       <button className="custom__button">Subscribe</button>

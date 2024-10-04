@@ -1,21 +1,30 @@
+/* Main container for each menu item */
 .app__menuItem {
   width: 100%;
   margin: 1rem 0;
   display: flex;
   flex-direction: column;
 }
+
+/* Header section containing the item name, dash, and price */
 .app__menuItem-head {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+/* Subsection for additional item details or tags */
 .app__menuItem-sub {
   width: 100%;
   margin-top: 0.2rem;
 }
+
+/* Container for the item name */
 .app__menuItem-name {
   flex: 1;
 }
+
+/* Horizontal dash between item name and price */
 .app__menuItem-dash {
   width: 90px;
   height: 1px;

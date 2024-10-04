@@ -2,6 +2,7 @@ import React from 'react';
 
 import './FooterOverlay.css';
 
+// FOOTER OVERLAY COMPONENT
 const FooterOverlay = () => (
   <div className="app__footerOverlay">
     <div className="app__footerOverlay-black" />

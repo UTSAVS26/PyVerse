@@ -1,3 +1,4 @@
+/* Main container for the footer overlay */
 .app__footerOverlay {
     width: 100%;
     height: 100%;
@@ -6,10 +7,14 @@
     flex-direction: column;
     position: absolute;
 }
+
+/* Black overlay section covering the top 25% of the container */
 .app__footerOverlay-black {
     height: 25%;
     background: var(--color-black);
 }
+
+/* Image overlay section covering the remaining 75% of the container */
 .app__footerOverlay-img {
     height: 75%;
 }

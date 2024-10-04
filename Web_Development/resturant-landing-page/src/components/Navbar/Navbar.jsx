@@ -2,10 +2,13 @@ import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
 
+// Importing images and CSS for styling
 import images from "../../constants/images";
 import "./Navbar.css";
 
+// NAVBAR COMPONENT
 const Navbar = () => {
+  // State to track the visibility of the small screen menu
   const [toggleMenu, setToggleMenu] = React.useState(false);
 
   return (
@@ -13,6 +16,8 @@ const Navbar = () => {
       <div className="app__navbar-logo">
         <img src={images.gericht} alt="app-logo" />
       </div>
+
+      {/* Main navigation links */}
       <ul className="app__navbar-links">
         <li className="p__opensans"><a href="#home">Home</a></li>
         <li className="p__opensans"><a href="#about">About</a></li>
@@ -25,6 +30,8 @@ const Navbar = () => {
         <div />
         <a href="/" className="p__opensans">Book Table</a>
       </div>
+
+      {/* Small screen menu toggle (hamburger icon) */}
       <div className="app__navbar-smallscreen">
         <GiHamburgerMenu fontsize={27} color="#fff" onClick={() => setToggleMenu(true)} />
 

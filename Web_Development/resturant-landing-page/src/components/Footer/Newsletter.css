@@ -3,13 +3,19 @@
     border: 1px solid var(--color-golden);
     background: var(--color-black);
 }
+
+/* Center align the heading section within the newsletter */
 .app__newsletter-heading {
     text-align: center;
 }
+
+/* Flexbox row layout for the input section */
 .app__newsletter-input {
     flex-direction: row;
     margin-top: 3rem;
 }
+
+/* Styling for the email input field */
 .app__newsletter-input input {
     width: 620px;
     border: 1px solid var(--color-golden);
@@ -25,11 +31,14 @@
     width: max-content;
 }
 
+/* Media query for very large screens */
 @media screen and (min-width: 2000px) {
     .app__newsletter-input input {
         font-size: 2rem;
     }
 }
+
+/* Media query for medium-sized screens */
 @media screen and (max-width: 990px) {
     .app__newsletter-input {
         flex-direction: column;
@@ -40,12 +49,16 @@
         width: 100%;
     }
 }
+
+/* Media query for smaller screens */
 @media screen and (max-width: 650px) {
     .app__newsletter {
         padding: 2rem 0;
         border: none;
     }
 }
+
+/* Media query for very small screens */
 @media screen and (max-width: 300px) {
     .app__newsletter-heading {
         font-size: 32px;
