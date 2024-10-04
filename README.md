@@ -261,6 +261,11 @@ The PyVerse repository is organized as follows:
 │   │   ├── Model
 │   │   │   └── PridictionModel.ipynb
 │   │   └── Readme.md
+│   ├── Hand Game Controller
+│   │   ├── README.md
+│   │   ├── main-mobile-cam.py
+│   │   ├── main-pc-cam.py
+│   │   └── requirements.txt
 │   └── Twitter Sentiment Analysis
 │       ├── README.md
 │       ├── Twitter Sentiment Analysis.ipynb
