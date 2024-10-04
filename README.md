@@ -53,6 +53,7 @@ Our vision is to build a vibrant community and resource hub for Python enthusias
 - **Cybersecurity**
 - **Blockchain Development**
 - **Algorithms and Data Structures**
+- **Data Visualization**
 
 The purpose of PyVerse is to provide a structured and accessible way for developers to explore existing projects, contribute new ones, and enhance their skills through practical, hands-on experience.
 
@@ -112,6 +113,9 @@ The PyVerse repository is organized as follows:
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
 ├── Cybersecurity_Tools
+├── DataVizLearning
+│   ├── DataViz_Snippets.ipynb
+│   └── README.md
 ├── Data_Science
 │   └── Data-science.md
 ├── Deep_Learning
