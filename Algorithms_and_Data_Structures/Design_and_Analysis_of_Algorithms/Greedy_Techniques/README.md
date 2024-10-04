@@ -108,3 +108,5 @@ The **Traveling Salesman Problem (TSP)** involves finding the shortest possible 
 **Greedy Algorithms** are a powerful technique for solving optimization problems by making locally optimal choices. They provide efficient solutions to a variety of problems, including the **Activity Selection Problem**, **Job Scheduling**, **Fractional Knapsack**, **Optimal Merge Pattern**, **Huffman Coding**, and the **Traveling Salesman Problem**. By understanding the principles and applications of greedy algorithms, developers can tackle real-world problems effectively, maximizing efficiency and optimizing resource usage. 
 
 Mastering greedy algorithms not only enhances problem-solving skills but also lays a solid foundation for further exploration of advanced algorithmic techniques.
+
+---
