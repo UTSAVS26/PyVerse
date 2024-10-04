@@ -289,6 +289,22 @@ The PyVerse repository is organized as follows:
 │       │   └── model2.ipynb
 │       └── requirements.txt
 ├── Game_Development
+│   └── Flappy_Bird
+│       ├── README.md
+│       ├── audio
+│       │   ├── die.wav
+│       │   ├── hit.wav
+│       │   ├── point.wav
+│       │   └── wing.wav
+│       ├── favicon.ico
+│       ├── main.py
+│       └── sprites
+│           ├── background-day.png
+│           ├── base.png
+│           ├── bluebird-downflap.png
+│           ├── bluebird-midflap.png
+│           ├── bluebird-upflap.png
+│           └── pipe-green.png
 ├── LICENSE
 ├── Machine_Learning
 │   ├── Air Quality Prediction
