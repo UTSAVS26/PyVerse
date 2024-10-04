@@ -67,3 +67,5 @@ A **Minimum Spanning Tree (MST)** of a connected, undirected graph is a subset o
 **Minimum Spanning Trees (MST)** are fundamental structures in graph theory with a wide range of applications. **Kruskal's** and **Prim's Algorithms** are two prominent greedy algorithms used to find the MST of a graph efficiently. By mastering these algorithms, developers can address various optimization problems in networking, transportation, and resource allocation effectively.
 
 Understanding MST concepts and their implementations enhances algorithmic thinking and equips practitioners to tackle complex challenges across different domains. Mastering these algorithms lays a robust foundation for further exploration of advanced topics in graph theory and optimization techniques.
+
+---
