@@ -96,6 +96,9 @@ The PyVerse repository is organized as follows:
 │       └── README.md
 ├── Automation_Tools
 ├── Beginner_Projects
+│   ├── Calculator_App
+│   │   ├── README.md
+│   │   └── main.py
 │   ├── Morse Code Translator with GUI
 │   │   ├── README.md
 │   │   ├── main.py
