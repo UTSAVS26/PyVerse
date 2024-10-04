@@ -20,7 +20,7 @@ This web app utilizes machine learning algorithms to analyze news articles and c
 ## 🚀 Models Implemented
 Model-1: "sequential"
 _________________________________________________________________
- Layer (type)                Output Shape              Param #   
+ Layer (type)                Output Shape              Param    
 =================================================================
  embedding (Embedding)       (None, 12140, 182)        30222010  
                                                                  
@@ -40,7 +40,7 @@ Non-trainable params: 0 (0.00 Byte)
 
 Model-2: "sequential_3"
 _________________________________________________________________
- Layer (type)                Output Shape              Param #   
+ Layer (type)                Output Shape              Param   
 =================================================================
  embedding_3 (Embedding)     (None, 12140, 100)        16605500  
                                                                  
