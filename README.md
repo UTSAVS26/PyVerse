@@ -263,6 +263,10 @@ The PyVerse repository is organized as follows:
 │   │   └── Readme.md
 │   ├── Hand Game Controller
 │   │   ├── README.md
+│   │   ├── Screenshot 2024-10-03 183106.png
+│   │   ├── Screenshot 2024-10-03 183129.png
+│   │   ├── Screenshot 2024-10-03 183619.png
+│   │   ├── Screenshot 2024-10-03 183644.png
 │   │   ├── main-mobile-cam.py
 │   │   ├── main-pc-cam.py
 │   │   └── requirements.txt
