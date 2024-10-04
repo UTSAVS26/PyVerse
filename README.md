@@ -128,6 +128,18 @@ The PyVerse repository is organized as follows:
 ├── Data_Science
 │   └── Data-science.md
 ├── Deep_Learning
+│   ├── Bird Species Classification
+│   │   ├── Dataset
+│   │   │   └── Readme.md
+│   │   ├── Images
+│   │   │   ├── InceptionV3.png
+│   │   │   ├── inception_resnet_v2 .png
+│   │   │   ├── masked_image_1.png
+│   │   │   ├── masked_image_2.png
+│   │   │   └── masked_image_3.png
+│   │   ├── Model
+│   │   │   └── bird_species_classification.ipynb
+│   │   └── Readme.md
 │   ├── Face Mask Detection
 │   │   ├── Dataset
 │   │   │   └── Readme.md
