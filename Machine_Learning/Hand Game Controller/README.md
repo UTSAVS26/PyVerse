@@ -21,6 +21,15 @@ This project captures the live feed from a camera (either from your PC or mobile
 
 These gestures are customizable and can be adjusted based on user preferences or the specific game being played.
 
+## Screenshots
+
+![Screenshot 1](https://raw.githubusercontent.com/aviralgarg05/ML-Nexus/f00d9116375685d3ce67852348a2f21d353b56f4/Computer%20Vision/Hand%20Game%20Controller/Screenshot%202024-10-03%20183106.png)
+![Screenshot 2](https://github.com/aviralgarg05/ML-Nexus/blob/f00d9116375685d3ce67852348a2f21d353b56f4/Computer%20Vision/Hand%20Game%20Controller/Screenshot%202024-10-03%20183129.png?raw=true)
+![Screenshot 3](https://github.com/aviralgarg05/ML-Nexus/blob/f00d9116375685d3ce67852348a2f21d353b56f4/Computer%20Vision/Hand%20Game%20Controller/Screenshot%202024-10-03%20183619.png?raw=true)
+![Screenshot 4](https://github.com/aviralgarg05/ML-Nexus/blob/f00d9116375685d3ce67852348a2f21d353b56f4/Computer%20Vision/Hand%20Game%20Controller/Screenshot%202024-10-03%20183644.png?raw=true)
+
+
+
 ## Installation
 
 To get started, clone the repository and install the required dependencies.
