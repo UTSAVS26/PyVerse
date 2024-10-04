@@ -57,3 +57,5 @@ The time complexity of the 8-Puzzle problem using Branch and Bound is generally 
 ## Conclusion
 
 The **8-Puzzle Problem** is a classic example of how **Branch and Bound** can be used to solve optimization problems by pruning non-optimal paths and reducing the solution space. By using heuristics like Manhattan distance, Branch and Bound finds the optimal solution efficiently, making it a powerful tool for solving sliding puzzles and other combinatorial problems.
+
+---
