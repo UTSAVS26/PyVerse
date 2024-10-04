@@ -53,6 +53,7 @@ Our vision is to build a vibrant community and resource hub for Python enthusias
 - **Cybersecurity**
 - **Blockchain Development**
 - **Algorithms and Data Structures**
+- **Data Visualization**
 
 The purpose of PyVerse is to provide a structured and accessible way for developers to explore existing projects, contribute new ones, and enhance their skills through practical, hands-on experience.
 
@@ -96,6 +97,9 @@ The PyVerse repository is organized as follows:
 │       └── README.md
 ├── Automation_Tools
 ├── Beginner_Projects
+│   ├── Calculator_App
+│   │   ├── README.md
+│   │   └── main.py
 │   ├── Morse Code Translator with GUI
 │   │   ├── README.md
 │   │   ├── main.py
@@ -122,9 +126,24 @@ The PyVerse repository is organized as follows:
 │   └── CLI-based Port Scanner
 │       ├── README.md
 │       └── port-scanner.py
+├── DataVizLearnig
+│   ├── DataViz_Snippets.ipynb
+│   └── Readme.md
 ├── Data_Science
 │   └── Data-science.md
 ├── Deep_Learning
+│   ├── Bird Species Classification
+│   │   ├── Dataset
+│   │   │   └── Readme.md
+│   │   ├── Images
+│   │   │   ├── InceptionV3.png
+│   │   │   ├── inception_resnet_v2 .png
+│   │   │   ├── masked_image_1.png
+│   │   │   ├── masked_image_2.png
+│   │   │   └── masked_image_3.png
+│   │   ├── Model
+│   │   │   └── bird_species_classification.ipynb
+│   │   └── Readme.md
 │   ├── Face Mask Detection
 │   │   ├── Dataset
 │   │   │   └── Readme.md

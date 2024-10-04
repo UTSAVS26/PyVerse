@@ -18,7 +18,7 @@ jobs:
       run: |
         COMMENT=$(cat <<EOF
         {
-          "body": "✅ This issue has been closed. Thank you for your contribution! If you have any further questions or issues, feel free to reach out!"
+          "body": "✅ This issue has been closed. Thank you for your contribution! If you have any further questions or issues, feel free to join our community on [Discord](https://discord.gg/9mZnkTRFFe) to discuss more!"
         }
         EOF
         )
