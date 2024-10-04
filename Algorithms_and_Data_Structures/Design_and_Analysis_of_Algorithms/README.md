@@ -36,15 +36,15 @@ Asymptotic notations describe the limiting behavior of algorithms, providing a w
 
 ## Types of Algorithms 🔍
 
-- **Greedy Algorithms**: Make locally optimal choices for global solutions (e.g., coin change, MST).
+- **Greedy Algorithms**: Make locally optimal choices for global solutions (e.g. Activity Selection).
 
-- **Dynamic Programming**: Solve problems by breaking them into simpler subproblems (e.g., Fibonacci, knapsack).
+- **Dynamic Programming**: Solve problems by breaking them into simpler subproblems (e.g., Fibonacci, 0/1 knapsack).
 
 - **Divide and Conquer**: Split problems into smaller parts, solve, and combine results (e.g., Merge Sort, Binary Search).
 
-- **Backtracking**: Build solutions incrementally and abandon if constraints are violated (e.g., N-Queens, Sudoku).
+- **Backtracking**: Build solutions incrementally and abandon if constraints are violated (e.g., N-Queens).
 
-- **Branch and Bound**: Systematic exploration of candidate solutions using a tree structure (e.g., traveling salesman).
+- **Branch and Bound**: Systematic exploration of candidate solutions using a tree structure (e.g., 8 Puzzles).
 
 - **All-Pairs Shortest Path**: Find shortest paths between all vertex pairs (e.g., Floyd-Warshall).
 
