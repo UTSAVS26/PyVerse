@@ -1,31 +1,30 @@
 # Scientific Calculator with Modern GUI
 
-This is a Python-based Scientific Calculator with a graphical user interface (GUI) built using the Tkinter library. It provides basic arithmetic operations as well as scientific functions like sine, cosine, tangent, square root, logarithm, and exponential.
+### 🎯 **Goal**
+To create a user-friendly, visually appealing scientific calculator application with a modern graphical user interface using Python and Tkinter.
 
-## 🧾 Features
+### 🧾 **Description**
+This project implements a Scientific Calculator with a graphical user interface (GUI) built using Python's Tkinter library. It offers basic arithmetic operations and scientific functions in a sleek, modern design. The calculator provides an intuitive interface for performing complex calculations with ease.
 
-- Basic arithmetic operations: addition, subtraction, multiplication, division
-- Scientific functions: sin, cos, tan, sqrt, log, exp
-- User-friendly GUI with a modern, flat design
-- Error handling for invalid inputs
+### 🧮 **What I had done!**
+1. Designed a modern, flat GUI using Tkinter and ttk.
+2. Implemented basic arithmetic operations (addition, subtraction, multiplication, division).
+3. Added scientific functions (sin, cos, tan, sqrt, log, exp).
+4. Created a custom color scheme and styling for better user experience.
+5. Implemented error handling for invalid inputs.
+6. Organized the code into a class-based structure for better maintainability.
 
-## 🎯 Requirements
+### 🚀 **Models Implemented**
+This project doesn't use specific machine learning models. Instead, it implements:
+- Basic arithmetic operations using Python's built-in operators.
+- Scientific functions using Python's `math` library.
+- GUI components using Tkinter and ttk for a modern look and feel.
 
-- Python 3.x
-- Tkinter (usually comes pre-installed with Python)
+### 📚 **Libraries Needed**
+- tkinter
+- math
 
-## 🚀 Installation
-
-1. Ensure you have Python installed on your system.
-2. Clone this repository or download the script file.
-
-```
-git clone https://github.com/UTSAVS26/PyVerse.git
-cd Beginner_Projects/Calculator_App
-```
-
-## 📊 Usage
-
+### 📊 **Usage**
 Run the script using Python:
 
 ```
@@ -34,17 +33,15 @@ python main.py
 
 The calculator window will appear, and you can start performing calculations.
 
-## 📢 How to Use
+How to Use:
+- Click on the number buttons to input numbers.
+- Use the operator buttons (+, -, *, /) for basic arithmetic operations.
+- For scientific functions (sin, cos, tan, sqrt, log, exp), first enter a number and then click the function button.
+- Press '=' to evaluate the expression.
+- Press 'C' to clear the display.
 
-- Click on the number buttons to input numbers
-- Use the operator buttons (+, -, *, /) for basic arithmetic operations
-- For scientific functions (sin, cos, tan, sqrt, log, exp), first enter a number and then click the function button
-- Press '=' to evaluate the expression
-- Press 'C' to clear the display
-
-## 📚 Customization
-
-The calculator uses a custom color scheme and styling. You can modify the colors and styles in the `create_style()` method of the `ScientificCalculatorGUI` class.
+### 📢 **Conclusion**
+This Scientific Calculator with Modern GUI provides a user-friendly interface for performing both basic and advanced mathematical calculations. Its sleek design and error handling make it suitable for students, professionals, and anyone in need of a reliable calculator application. The project demonstrates the capability of Python and Tkinter in creating functional and visually appealing desktop applications.
 
 ### ✒️ **Your Signature**
 
