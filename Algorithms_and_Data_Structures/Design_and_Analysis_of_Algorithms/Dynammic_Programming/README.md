@@ -92,3 +92,4 @@ The **Fibonacci Sequence** is a classic problem where each number in the sequenc
 
 **Dynamic Programming** is a powerful technique for solving optimization problems that have overlapping subproblems and optimal substructure. It significantly reduces the time complexity of recursive solutions by storing intermediate results and avoiding redundant computations. Key applications include the **0/1 Knapsack Problem**, **Longest Common Subsequence (LCS)**, **Matrix Chain Multiplication**, and the **Fibonacci Sequence**. By mastering dynamic programming, developers can tackle complex computational problems more efficiently and effectively.
 
+---
