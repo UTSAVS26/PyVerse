@@ -95,7 +95,7 @@ Don’t forget to use **turtle.done()** to keep the window open after the drawin
 
 ## Example: Spiral Pattern
 
-For refernece, you can check out this [Spiral Patten example](turtle_spiral.py) created using turtle module.
+For reference, you can check out this [Spiral Patten example](turtle_spiral.py) created using turtle module.
 
 ## Further Reading
 For more detailed usage of the Turtle module, visit the official [Python documentation](https://docs.python.org/3/library/turtle.html).

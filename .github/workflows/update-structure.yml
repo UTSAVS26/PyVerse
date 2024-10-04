@@ -32,7 +32,7 @@ jobs:
       
       - name: Commit and push if changed
         run: |
-          git config --local user.email "115717039+yashksaini-coder@users.noreply.github.com"
-          git config --local user.name "yashksaini-coder"
+          git config --local user.email "utsavsinghal26@gmail.com"
+          git config --local user.name "UTSAVS26"
           git add .
           git diff --quiet && git diff --staged --quiet || (git commit -m "Update repo structure" && git push)
