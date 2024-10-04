@@ -280,6 +280,15 @@ The PyVerse repository is organized as follows:
 │   │   ├── Model
 │   │   │   └── PridictionModel.ipynb
 │   │   └── Readme.md
+│   ├── Hand Game Controller
+│   │   ├── "A" Key Binding.png
+│   │   ├── "D" Key Binding.png
+│   │   ├── "S" Key Binding.png
+│   │   ├── "W" Key Binding.png
+│   │   ├── README.md
+│   │   ├── main-mobile-cam.py
+│   │   ├── main-pc-cam.py
+│   │   └── requirements.txt
 │   └── Twitter Sentiment Analysis
 │       ├── README.md
 │       ├── Twitter Sentiment Analysis.ipynb
