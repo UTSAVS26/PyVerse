@@ -1,5 +1,57 @@
 ├── Advanced_Projects
 ├── Algorithms_and_Data_Structures
+│   ├── Design_and_Analysis_of_Algorithms
+│   │   ├── All_Pair_Shortest_path_problems
+│   │   │   ├── README.md
+│   │   │   ├── floyd_warshall.py
+│   │   │   └── johnsons.py
+│   │   ├── Backtracking
+│   │   │   ├── README.md
+│   │   │   ├── graph_coloring.py
+│   │   │   ├── hamiltonian_cycle.py
+│   │   │   ├── knights_tour.py
+│   │   │   ├── maze_solving.py
+│   │   │   └── n_queens.py
+│   │   ├── Branch_and_Bound
+│   │   │   ├── 8_puzzle.py
+│   │   │   └── README.md
+│   │   ├── Divide_and_Conquer
+│   │   │   ├── README.md
+│   │   │   ├── binary_search.py
+│   │   │   ├── merge_sort.py
+│   │   │   ├── min_max.py
+│   │   │   ├── quick_sort.py
+│   │   │   └── tower_of_hanoi.py
+│   │   ├── Dynammic_Programming
+│   │   │   ├── 01_knapsack.py
+│   │   │   ├── README.md
+│   │   │   ├── lcs.py
+│   │   │   ├── matrix_multiplication.py
+│   │   │   └── nth_fibonacci.py
+│   │   ├── Graph_Traversing
+│   │   │   ├── BFS.py
+│   │   │   ├── DFS.py
+│   │   │   └── README.md
+│   │   ├── Greedy_Techniques
+│   │   │   ├── README.md
+│   │   │   ├── activity_selection.py
+│   │   │   ├── fractional_knapsack.py
+│   │   │   ├── huffman_code.py
+│   │   │   ├── job_scheduling.py
+│   │   │   ├── optimal_merge_pattern.py
+│   │   │   └── travel_salesman.py
+│   │   ├── Maximum_Flow
+│   │   │   ├── README.md
+│   │   │   └── ford_fulkenson.py
+│   │   ├── Minimum_spanning_tree
+│   │   │   ├── README.md
+│   │   │   ├── kruskal.py
+│   │   │   └── prim.py
+│   │   ├── README.md
+│   │   └── Single_Source_Shortest_path_problems
+│   │       ├── README.md
+│   │       ├── bellman_ford.py
+│   │       └── dijkstra.py
 │   ├── Linked List
 │   │   ├── Menu_Driven_Code_for_Circular_Doubly_LinkedList.py
 │   │   ├── Menu_Driven_Code_for_Circular_LinkedList.py
