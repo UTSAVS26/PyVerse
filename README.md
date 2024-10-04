@@ -285,7 +285,7 @@ The PyVerse repository is organized as follows:
 │       │   ├── README.md
 │       │   ├── app1.py
 │       │   ├── app2.py
-│       │   ├── model1.ipynb
+│       │   ├── model1_(1) (1).ipynb
 │       │   └── model2.ipynb
 │       └── requirements.txt
 ├── Game_Development
