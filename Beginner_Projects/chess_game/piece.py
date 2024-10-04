@@ -85,7 +85,7 @@ class Rook(Piece):
         row_final ,col_final = end_position[0] ,end_position[1]
         
         # Ensure the move stays on the board
-        if not (0 <= row_final < len(board) and 0 <= col_final < len(board[0])):
+        if not (0 <= row_final < 8 and 0 <= col_final < 8):
             return False
         
         # Rooks only move either horizontally or vertically, not diagonally
@@ -124,24 +124,18 @@ class Knight(Piece):
         row_initial ,col_initial = start_position[0] ,start_position[1]
         row_final ,col_final = end_position[0] ,end_position[1]
         
-        if not (0 <= row_final < len(board)) or (0 <= col_final < len(board[0])):
-            return False
+        #print(f"Knight at {start_position} trying to move to {end_position}")
         
-        """ check for forward movements """
-        if(row_final<row_initial):
-            if row_final == row_initial-1 and (col_final == col_initial-2 or col_final == col_initial+2) and board[row_final][col_final] is None:
+        row_diff = abs(row_final - row_initial)
+        col_diff = abs(col_final - col_initial)
+        print(row_diff,col_diff)
+    # Check for L-shaped movement: (2,1) or (1,2)
+        if (row_diff == 2 and col_diff == 1) or (row_diff == 1 and col_diff == 2):
+            # Check if the destination is empty or occupied by an opponent's piece
+            destination_piece = board[row_final][col_final]
+            if destination_piece is None or destination_piece.color != self.color:
                 return True
-                
-            elif row_final == row_initial-2 and (col_final == col_initial-1 or col_final == col_initial+1) and board[row_final][col_final] is None:
-                    return True
-        else:
-            """ backward movements """
-            if row_final == row_initial+1 and (col_final == col_initial-2 or col_final == col_initial+2) and board[row_final][col_final] is None:
-                return True
-                
-            elif row_final == row_initial+2 and (col_final == col_initial-1 or col_final == col_initial+1) and board[row_final][col_final] is None:
-                return True
-            
+
         return False
 
 class Bishop(Piece):
@@ -157,7 +151,7 @@ class Bishop(Piece):
         row_initial ,col_initial = start_position[0] ,start_position[1]
         row_final ,col_final = end_position[0] ,end_position[1]
         
-        if not (0 <= row_final < len(board)) or (0 <= col_final < len(board[0])):
+        if not (0 <= row_final < 8) or (0 <= col_final < 8):
             return False
          # Check if the move is diagonal
         if abs(row_final - row_initial) != abs(col_final - col_initial):
@@ -192,7 +186,7 @@ class Queen(Piece):
         row_final ,col_final = end_position[0] ,end_position[1]
         
         # Check if the end position is within the board boundaries
-        if not (0 <= row_final < len(board)) or not (0 <= col_final < len(board[0])):
+        if not (0 <= row_final < 8) or not (0 <= col_final < 8):
             return False
         
         # Check for movement in straight lines (row or column) or diagonally
@@ -229,7 +223,7 @@ class King(Piece):
         row_final ,col_final = end_position[0] ,end_position[1]
         
         # Check if the end position is within the board boundaries
-        if not (0 <= row_final < len(board)) or not (0 <= col_final < len(board[0])):
+        if not (0 <= row_final < 8) or not (0 <= col_final < 8):
             return False
         
         # Check if the move is one square away in any direction

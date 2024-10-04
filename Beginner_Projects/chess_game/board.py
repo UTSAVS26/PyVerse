@@ -63,7 +63,6 @@ class Board:
             return False
 
         if piece.is_valid_move(start_position ,end_position ,self.board):
-                
             target_piece = self.board[row_final][col_final]
             
             if target_piece is not None:
@@ -84,17 +83,16 @@ class Board:
             return False
     
     def print_board(self):
-        """text-based representation of the board."""
-        #column label
-        print("  ", end='')
-        for i in range(8):
-            print(i, end=' ')
-        print()  # newline after column labels
-        # printing the board with row numbers
+        print("   ", end='')  # Initial space before column labels
+        for col in range(8):
+            print(f" {col} ", end='')
+        print()  # Newline after column labels
+
+        # Printing the board with row numbers
         for row_idx, row in enumerate(self.board):
-            print(row_idx, end=' ')  # print row numbers (0 ,1, 2, 3, etc.)
-            print(' '.join([piece.symbol() if piece else '.' for piece in row]))
+            print(f"{row_idx}  ", end='')  # Print row numbers with space
+            for piece in row:
+                # Print the symbol for each piece or '.' if the spot is empty, each padded to 3 spaces
+                print(f"{piece.symbol() if piece else '.'}  ", end='')
+            print()  # Newline after each row
 
-
-obj = Board()
-obj.print_board()

@@ -21,7 +21,7 @@ class Game:
         """ finding king's position """
         for i in range(8):
             for j in range(8):
-                piece = self.board[i][j]
+                piece = self.board.board[i][j]
                 if piece is not None and isinstance(piece,King) and piece.color == color:
                     king_position = (i,j)
                     break
@@ -29,7 +29,7 @@ class Game:
         opponent_color = 'black' if color == 'white' else 'white'
         for i in range(8):
             for j in range(8):
-                piece = self.board[i][j]
+                piece = self.board.board[i][j]
                 if piece is not None and piece.color == opponent_color:
                     if piece.is_valid_move((i,j),king_position,self.board):
                         return True # king is in check
@@ -43,6 +43,9 @@ class Game:
             print(f"{self.current_color.capitalize()} is playing")
         
             start_position = self.get_user_input("Enter the start position (row ,col)")
+            if self.board.board[start_position[0]][start_position[1]] is not None:
+                piece = self.board.board[start_position[0]][start_position[1]]
+                print(f"{piece.color} {piece.__class__.__name__} selected")
             end_position = self.get_user_input("Enter the end position (row ,col)")
             
             if self.board.move_pieces(start_position ,end_position):
@@ -75,18 +78,6 @@ class Game:
         return False
         
 
-object = Game(color='white')
-object.play()
-
-""" flow of the program 
-    1. object of Game class is created 
-    2. it will call Board class
-    3. object of Board class is created
-    4. create_board function will be called - list of list 
-    5. setup_pieces method will be called - objects of Rook ,Pawn class will be instantiated
-    6. play function will be called
-    7. print board function will be called 
-    8. user will be asked to input positions
-    9. move_pieces function will be called
-    10. 
-"""
+if __name__ == "__main__":
+    object = Game(color=input('Select color : black or white  '))
+    object.play()
