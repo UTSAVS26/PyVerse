@@ -77,3 +77,5 @@ This problem finds the maximum and minimum elements in an array using the divide
 - Max-Min Problem
 
 Understanding how to implement divide and conquer can significantly improve algorithmic thinking and performance in various domains of computer science.
+
+---
