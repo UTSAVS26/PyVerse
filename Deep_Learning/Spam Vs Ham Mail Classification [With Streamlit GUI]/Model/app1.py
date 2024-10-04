@@ -41,7 +41,7 @@ def transform_text(text):
 # Store the model in your file
 # here we can store the tfidf and model pkl file in a specfic folder and use it.
 tfidf=pickle.load(open('vectorizer.pkl','rb'))
-model=pickle.load(open('bnb.pkl','rb'))
+model=pickle.load(open('best_model.pkl','rb'))
 
 st.title('SMS Spam Classification')
 
