@@ -23,10 +23,10 @@ These gestures are customizable and can be adjusted based on user preferences or
 
 ## Screenshots
 
-![Screenshot 1](https://github.com/aviralgarg05/PyVerse/blob/main/Machine_Learning/Hand%20Game%20Controller/W_Key_Binding.png?raw=true)
-![Screenshot 2](https://github.com/aviralgarg05/PyVerse/blob/main/Machine_Learning/Hand%20Game%20Controller/S_Key_Binding.png?raw=true)
-![Screenshot 3](https://github.com/aviralgarg05/PyVerse/blob/main/Machine_Learning/Hand%20Game%20Controller/A_Key_Binding.png?raw=true)
-![Screenshot 4](https://github.com/aviralgarg05/PyVerse/blob/main/Machine_Learning/Hand%20Game%20Controller/D_Key_Binding.png?raw=true)
+![Screenshot 1](./W_Key_Binding.png?raw=true)
+![Screenshot 2](./S_Key_Binding.png?raw=true)
+![Screenshot 3](./A_Key_Binding.png?raw=true)
+![Screenshot 4](./D_Key_Binding.png?raw=true)
 
 
 
