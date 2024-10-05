@@ -369,6 +369,9 @@ The PyVerse repository is organized as follows:
 │   │   ├── main-mobile-cam.py
 │   │   ├── main-pc-cam.py
 │   │   └── requirements.txt
+│   ├── Multivitamine Prediction
+│   │   ├── multivitamins_data.csv
+│   │   └── scrape.py
 │   └── Twitter Sentiment Analysis
 │       ├── README.md
 │       ├── Twitter Sentiment Analysis.ipynb
