@@ -75,12 +75,14 @@
 │   ├── Calculator_App
 │   │   ├── README.md
 │   │   └── main.py
+│   ├── Egg_Catcher_Game.py
 │   ├── Morse Code Translator with GUI
 │   │   ├── README.md
 │   │   ├── main.py
 │   │   └── screenshots
 │   │       └── tkinter-working.gif
 │   ├── QR Generator
+│   │   ├── QR-code_generator.py
 │   │   ├── README.md
 │   │   └── generate_qrcode.py
 │   ├── Stock App
