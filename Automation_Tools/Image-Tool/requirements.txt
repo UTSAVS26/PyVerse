@@ -1,0 +1,3 @@
+streamlit
+Pillow
+streamlit-cropper
