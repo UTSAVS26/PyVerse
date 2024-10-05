@@ -188,7 +188,7 @@ We extend our gratitude to all contributors and the open-source community for th
 <a href="#top"><img src="https://img.shields.io/badge/-Back%20to%20Top-red?style=for-the-badge" align="right"/></a>
 
 ---
-graph LR
+# graph LR
     A[Start] --> B{Access PyVerse repository}
     B --> C{Choose a domain (web dev, machine learning, etc.)}
     C --> D{Select a skill level (beginner, intermediate, advanced)}
