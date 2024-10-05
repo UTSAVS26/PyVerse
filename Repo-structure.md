@@ -295,11 +295,11 @@
 │   │   │   └── PridictionModel.ipynb
 │   │   └── Readme.md
 │   ├── Hand Game Controller
-│   │   ├── "A" Key Binding.png
-│   │   ├── "D" Key Binding.png
-│   │   ├── "S" Key Binding.png
-│   │   ├── "W" Key Binding.png
+│   │   ├── A Key Binding.png
+│   │   ├── D Key Binding.png
 │   │   ├── README.md
+│   │   ├── S Key Binding.png
+│   │   ├── W Key Binding.png
 │   │   ├── main-mobile-cam.py
 │   │   ├── main-pc-cam.py
 │   │   └── requirements.txt
