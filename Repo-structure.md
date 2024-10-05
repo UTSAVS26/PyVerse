@@ -73,16 +73,26 @@
 │       ├── Menu_Driven_Code_for_Tree_Traversals.py
 │       └── README.md
 ├── Automation_Tools
+│   └── Image-Tool
+│       ├── Image_Tool.py
+│       ├── README.md
+│       └── requirements.txt
 ├── Beginner_Projects
 │   ├── Calculator_App
 │   │   ├── README.md
 │   │   └── main.py
+│   ├── Egg_Catcher_Game.py
 │   ├── Morse Code Translator with GUI
 │   │   ├── README.md
 │   │   ├── main.py
 │   │   └── screenshots
 │   │       └── tkinter-working.gif
+│   ├── Password-Generator
+│   │   ├── README.md
+│   │   ├── passwordGenerator.py
+│   │   └── requirements.txt
 │   ├── QR Generator
+│   │   ├── QR-code_generator.py
 │   │   ├── README.md
 │   │   └── generate_qrcode.py
 │   ├── Stock App
@@ -214,22 +224,25 @@
 │       │   └── model2.ipynb
 │       └── requirements.txt
 ├── Game_Development
-│   └── Flappy_Bird
+│   ├── Flappy_Bird
+│   │   ├── README.md
+│   │   ├── audio
+│   │   │   ├── die.wav
+│   │   │   ├── hit.wav
+│   │   │   ├── point.wav
+│   │   │   └── wing.wav
+│   │   ├── favicon.ico
+│   │   ├── main.py
+│   │   └── sprites
+│   │       ├── background-day.png
+│   │       ├── base.png
+│   │       ├── bluebird-downflap.png
+│   │       ├── bluebird-midflap.png
+│   │       ├── bluebird-upflap.png
+│   │       └── pipe-green.png
+│   └── MasterMind
 │       ├── README.md
-│       ├── audio
-│       │   ├── die.wav
-│       │   ├── hit.wav
-│       │   ├── point.wav
-│       │   └── wing.wav
-│       ├── favicon.ico
-│       ├── main.py
-│       └── sprites
-│           ├── background-day.png
-│           ├── base.png
-│           ├── bluebird-downflap.png
-│           ├── bluebird-midflap.png
-│           ├── bluebird-upflap.png
-│           └── pipe-green.png
+│       └── mastermind.py
 ├── LICENSE
 ├── Machine_Learning
 │   ├── Air Quality Prediction
