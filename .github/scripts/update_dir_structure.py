@@ -22,7 +22,7 @@ def update_structure_file(structure):
         f.write('\n'.join(structure))
 
 def update_readme(structure):
-    with open('README.md', 'r') as f:
+    with open('Repo-structure.md', 'r') as f: # updated file name
         content = f.read()
 
     start_marker = '<!-- START_STRUCTURE -->'
@@ -38,11 +38,11 @@ def update_readme(structure):
             content[end_index:]
         )
         
-        with open('README.md', 'w') as f:
+        with open('Repo-structure.md', 'w') as f:
             f.write(new_content)
-        print("README.md updated with new structure.")
+        print("Repo-structure.md updated with new structure.")
     else:
-        print("Markers not found in README.md. Structure not updated.")
+        print("Markers not found in Repo-structure.md. Structure not updated.")
 
 def main():
     g = Github(os.environ['GH_TOKEN'])

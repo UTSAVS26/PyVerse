@@ -1,3 +1,5 @@
+<!-- START_STRUCTURE -->
+```
 ├── Advanced_Projects
 ├── Algorithms_and_Data_Structures
 │   ├── Design_and_Analysis_of_Algorithms
@@ -315,3 +317,5 @@
 ├── Tutorials
 ├── Web_Development
 └── repo_structure.txt
+```
+<!-- END_STRUCTURE -->
