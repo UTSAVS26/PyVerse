@@ -299,7 +299,7 @@
 │   │   ├── D_Key_Binding.png
 │   │   ├── README.md
 │   │   ├── S_Key_Binding.png
-│   │   ├── W Key Binding.png
+│   │   ├── W_Key_Binding.png
 │   │   ├── main-mobile-cam.py
 │   │   ├── main-pc-cam.py
 │   │   └── requirements.txt
