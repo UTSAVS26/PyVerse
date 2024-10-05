@@ -83,6 +83,10 @@
 │   │   ├── main.py
 │   │   └── screenshots
 │   │       └── tkinter-working.gif
+│   ├── Password-Generator
+│   │   ├── README.md
+│   │   ├── passwordGenerator.py
+│   │   └── requirements.txt
 │   ├── QR Generator
 │   │   ├── QR-code_generator.py
 │   │   ├── README.md
