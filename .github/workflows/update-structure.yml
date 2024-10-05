@@ -29,10 +29,12 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python .github/scripts/update_dir_structure.py
-      
+
       - name: Commit and push if changed
         run: |
           git config --local user.email "utsavsinghal26@gmail.com" 
           git config --local user.name "UTSAVS26"
           git add .
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update repo structure" && git push)
+          # Pull the latest changes to avoid conflicts
+          git pull --rebase origin main
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update repo structure" && git push origin main)
