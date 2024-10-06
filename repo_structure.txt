@@ -80,6 +80,10 @@
 │       ├── README.md
 │       └── requirements.txt
 ├── Beginner_Projects
+│   ├── Bar-Code-Generator
+│   │   ├── README.md
+│   │   ├── barCodeGenerator.py
+│   │   └── requirements.txt
 │   ├── Calculator_App
 │   │   ├── README.md
 │   │   └── main.py
