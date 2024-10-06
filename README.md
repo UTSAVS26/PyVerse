@@ -22,7 +22,7 @@
 
 <div align="center">
    
-  <img src="https://raw.githubusercontent.com/alo7lika/PyVerse/refs/heads/main/DALL%C2%B7E%202024-10-06%2012.14.19%20-%20A%20visual%20workflow%20diagram%20for%20a%20Python%20open-source%20project%20hub%20called%20PyVerse.%20The%20diagram%20should%20show%20a%20step-by-step%20process%20starting%20with%20'Access%20th.webp" alt="Visual Workflow Diagram for PyVerse" width="600"/>
+  <img src=https://raw.githubusercontent.com/alo7lika/PyVerse/refs/heads/main/image.webp>
   
 </div>
 
