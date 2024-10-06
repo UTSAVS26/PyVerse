@@ -9,8 +9,7 @@ class ScientificCalculatorGUI:
         master.geometry("500x600")
         master.configure(bg='#2c3e50')
 
-        self.result_var = tk.StringVar()
-        self.result_var.set("0")
+        self.result_var = tk.StringVar(value="0")
 
         self.create_style()
         self.create_widgets()
@@ -76,15 +75,7 @@ class ScientificCalculatorGUI:
         # Create buttons
         for i, row in enumerate(buttons):
             for j, text in enumerate(row):
-                if text in ['+', '-', '*', '/']:
-                    style = 'Operator.TButton'
-                elif text == '=':
-                    style = 'Equal.TButton'
-                elif text == 'C':
-                    style = 'Clear.TButton'
-                else:
-                    style = 'TButton'
-                
+                style = self.get_button_style(text)
                 button = ttk.Button(button_frame, 
                                     text=text, 
                                     style=style,
@@ -94,41 +85,54 @@ class ScientificCalculatorGUI:
         # Configure grid
         for i in range(5):
             button_frame.grid_rowconfigure(i, weight=1)
-        for i in range(5):
             button_frame.grid_columnconfigure(i, weight=1)
+
+    def get_button_style(self, text):
+        if text in ['+', '-', '*', '/']:
+            return 'Operator.TButton'
+        elif text == '=':
+            return 'Equal.TButton'
+        elif text == 'C':
+            return 'Clear.TButton'
+        return 'TButton'
 
     def on_button_click(self, key):
         if key == '=':
-            try:
-                result = eval(self.result_var.get())
-                self.result_var.set(str(result))
-            except:
-                self.result_var.set("Error")
+            self.calculate_result()
         elif key == 'C':
             self.result_var.set("0")
         elif key in ['sin', 'cos', 'tan', 'sqrt', 'log', 'exp']:
-            try:
-                value = float(self.result_var.get())
-                if key == 'sin':
-                    result = math.sin(math.radians(value))
-                elif key == 'cos':
-                    result = math.cos(math.radians(value))
-                elif key == 'tan':
-                    result = math.tan(math.radians(value))
-                elif key == 'sqrt':
-                    result = math.sqrt(value)
-                elif key == 'log':
-                    result = math.log10(value)
-                elif key == 'exp':
-                    result = math.exp(value)
-                self.result_var.set(str(result))
-            except:
-                self.result_var.set("Error")
+            self.calculate_function(key)
         else:
-            if self.result_var.get() == "0" or self.result_var.get() == "Error":
-                self.result_var.set(key)
-            else:
-                self.result_var.set(self.result_var.get() + key)
+            self.update_display(key)
+
+    def calculate_result(self):
+        try:
+            result = eval(self.result_var.get())
+            self.result_var.set(str(result))
+        except:
+            self.result_var.set("Error")
+
+    def calculate_function(self, func):
+        try:
+            value = float(self.result_var.get())
+            result = {
+                'sin': math.sin(math.radians(value)),
+                'cos': math.cos(math.radians(value)),
+                'tan': math.tan(math.radians(value)),
+                'sqrt': math.sqrt(value),
+                'log': math.log10(value),
+                'exp': math.exp(value)
+            }[func]
+            self.result_var.set(str(result))
+        except:
+            self.result_var.set("Error")
+
+    def update_display(self, key):
+        if self.result_var.get() in ["0", "Error"]:
+            self.result_var.set(key)
+        else:
+            self.result_var.set(self.result_var.get() + key)
 
 if __name__ == "__main__":
     root = tk.Tk()
