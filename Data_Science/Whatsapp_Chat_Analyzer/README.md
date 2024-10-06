@@ -8,6 +8,8 @@ The main goal of this project is to analyze WhatsApp chat data to derive meaning
 
 The dataset is provided by the user in the form of a `.txt` or `.zip` file, which contains WhatsApp chat data exported from the messaging app.
 
+- Sample data has been provided [HERE](./Sample_Data/)
+
 ### 🧾 **Description**
 
 This project allows users to upload WhatsApp chat files, which are then processed to extract useful information, including message counts, emoji usage, and response times. The data is visualized using interactive charts and plots, enabling easy exploration of user behavior in the chat.
