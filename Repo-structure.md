@@ -340,6 +340,7 @@
 ├── Repo-structure.md
 ├── Tutorials
 ├── Web_Development
+├── image.webp
 └── repo_structure.txt
 ```
 <!-- END_STRUCTURE -->
