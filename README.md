@@ -130,13 +130,14 @@ The PyVerse repository structure is designed to provide a clear and organized la
    Mentor new contributors, participate in discussions, and help improve the community.
 
 ---
+<!--
 ### Diagram Section
 
 The diagram illustrates the basic workflow for engaging with the PyVerse repository. It begins with accessing the repository, followed by selecting a specific domain of interest, such as web development or machine learning. Once the domain is chosen, users are prompted to select their skill level, which may range from beginner to advanced. Beginners are encouraged to explore the provided documentation and run simple projects, while more experienced users can contribute code, improve documentation, or mentor others. This process concludes with contributing to the community and completing the cycle of learning and collaboration.
 
 ![Skill Selection Diagram](PyVerse%20-%20Skill%20Selection_page-0001.jpg)
 
-
+-->
 ************************************************************
 
 <h2>✔Project Admin</h2>
