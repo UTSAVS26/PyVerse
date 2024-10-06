@@ -304,11 +304,11 @@
 │   │   │   └── PridictionModel.ipynb
 │   │   └── Readme.md
 │   ├── Hand Game Controller
-│   │   ├── "A" Key Binding.png
-│   │   ├── "D" Key Binding.png
-│   │   ├── "S" Key Binding.png
-│   │   ├── "W" Key Binding.png
+│   │   ├── A_Key_Binding.png
+│   │   ├── D_Key_Binding.png
 │   │   ├── README.md
+│   │   ├── S_Key_Binding.png
+│   │   ├── W_Key_Binding.png
 │   │   ├── main-mobile-cam.py
 │   │   ├── main-pc-cam.py
 │   │   └── requirements.txt
