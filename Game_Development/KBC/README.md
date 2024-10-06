@@ -9,8 +9,8 @@ This Python code creates a quiz game modeled after Kaun Banega Crorepati (KBC), 
 
 **Modules Used**:
 
-* random: For selecting random questions and answers.
-* time: For adding slight delays between actions to make the game experience more dynamic.
+* `random`: For selecting random questions and answers.
+* `time`: For adding slight delays between actions to make the game experience more dynamic.
 
 **Game Introduction**:
 
@@ -18,8 +18,8 @@ This Python code creates a quiz game modeled after Kaun Banega Crorepati (KBC), 
 
 **Questions and Answers**:
 
-* A list of questions and corresponding answers is provided.
-* Each question also has a list of wrong answers (wronganswers) for generating multiple-choice options.
+* A list of `questions` and corresponding `answers` is provided.
+* Each question also has a list of wrong answers (`wronganswers`) for generating multiple-choice options.
 
 **Question Loop**:
 
