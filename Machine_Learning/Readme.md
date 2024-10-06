@@ -1,64 +1,39 @@
-# 🌐 Real-Time Language Translator
+# Translator App
 
-A real-time language translation app built using Streamlit, Google Translate, and speech-to-text technology. This app allows users to speak in one language and get real-time translations in another, along with text-to-speech output for the translated text.
+🎯 **Goal**
+The goal of this project is to provide a real-time language translation system that captures speech, translates it into a chosen language, and plays the translated speech back to the user.
 
-## Features
-- **Speech Recognition:** Capture spoken input using a microphone.
-- **Real-Time Translation:** Translate the captured speech into a chosen language.
-- **Text-to-Speech:** Listen to the translated text in the target language.
-- **Multiple Languages Supported:** Including English, Hindi, Tamil, Telugu, Marathi, Bengali, and more.
+🧵 **Dataset**
+No dataset is required for this project as it uses live speech capture and Google's translation services.
 
-## Project Structure
+🧾 **Description**
+This project allows users to translate spoken language into another language in real time. It captures the user’s voice input, translates it using Google’s translation API, and plays the translation back in audio format using Google Text-to-Speech (gTTS).
 
-streamlit_translation_app/ │ ├── main.py # Main Streamlit app file ├── translation.py # Core logic for speech capture, translation, and TTS ├── utils.py # Utility functions and language mappings ├── requirements.txt # Python dependencies ├── README.md # Project documentation └── assets/ └── styles.css # Custom CSS for UI
+🧮 **What I had done!**
+- Built a user-friendly interface with Streamlit for language selection and speech input.
+- Used the `speech_recognition` library to capture live speech from the microphone.
+- Implemented Google Translate for text translation between languages.
+- Played back translated speech using `gTTS` and `pygame`.
 
+🚀 **Models Implemented**
+No machine learning models were used, but the project leverages Google Translate and Text-to-Speech APIs for translation and speech synthesis.
 
-## Requirements
-- Python 3.x
-- A microphone for speech input
+📚 **Libraries Needed**
+- `streamlit`
+- `speech_recognition`
+- `googletrans`
+- `gtts`
+- `pygame`
 
-## Installation
+📊 **Exploratory Data Analysis Results**
+Not applicable for this project as it doesn’t involve data analysis.
 
-1. Clone the repository:
+📈 **Performance of the Models based on Accuracy Scores**
+Not applicable.
 
-    ```bash
-    git clone https://github.com/770navyasharma/Translator-app.git
-    ```
+📢 **Conclusion**
+The Translator App offers a seamless, real-time translation experience. With a simple UI, users can quickly translate and hear the translated speech in a wide variety of languages.
 
-2. Navigate to the project directory:
-
-    ```bash
-    cd Translator-app
-    ```
-
-3. Install the required dependencies:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-4. Run the app:
-
-    ```bash
-    streamlit run main.py
-    ```
-
-## How to Use
-
-1. Select the source language (the language you will speak).
-2. Select the target language (the language you want to translate to).
-3. Click on **Start Listening** to capture speech.
-4. Listen to the translated speech output and see the text on the screen.
-
-## Customization
-
-- **Language Support:** You can add more languages by updating the `LANGUAGES` dictionary in `utils.py`.
-- **UI Styling:** Modify the `assets/styles.css` file to customize the look and feel of the app.
-
-## Contributing
-
-Feel free to contribute to this project by opening issues or submitting pull requests.
-
-## License
-
-This project is licensed under the MIT License. See `LICENSE` for more details.
+✒️ **Your Signature**
+Navya  
+GitHub: https://github.com/770navyasharma
