@@ -83,7 +83,4 @@ The key features of the project include:
 
 *Vivek Prakash*
 
-![Linkedin](https://www.linkedin.com/in/vivek-prakash-b46830283/)
-
-#### Happy Coding 🧑‍💻
-### Show some &nbsp;❤️&nbsp; by &nbsp;🌟&nbsp; this repository!
+[Linkedin](https://www.linkedin.com/in/vivek-prakash-b46830283/)
