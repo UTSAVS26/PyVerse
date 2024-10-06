@@ -38,6 +38,13 @@ The project follows a structured approach to achieve its objectives:
 
 8. **Analysis of Segment Characteristics**: Analyze and summarize the characteristics of each customer segment to provide insights into customer profiles.
 
+## 🌐 Flowchart
+
+To illustrate the customer segmentation process, here is a flowchart that outlines the different categories and segments:
+
+![Customer Segmentation Flowchart](./Customer%20Segmentation%20Tool/Segmentation%20Solutions%20-%20Customer%20Segmentation%20Flowchart(1)(1).png)
+
+
 ## 📈 Expected Outcomes
 
 The successful implementation of the Customer Clust project is expected to yield the following outcomes:
