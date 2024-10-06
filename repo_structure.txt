@@ -323,6 +323,8 @@
 │       ├── train.csv
 │       └── twitter2-720x540.jpg
 ├── PROJECT-README-TEMPLATE.md
+├── PyVerse - Skill Selection.pdf
+├── PyVerse - Skill Selection_page-0001.jpg
 ├── README.md
 ├── Repo-structure.md
 ├── Tutorials
