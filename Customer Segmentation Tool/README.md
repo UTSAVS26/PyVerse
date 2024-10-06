@@ -42,8 +42,11 @@ The project follows a structured approach to achieve its objectives:
 
 To illustrate the customer segmentation process, here is a flowchart that outlines the different categories and segments:
 
-![Customer Segmentation Flowchart](./Customer%20Segmentation%20Tool/Segmentation%20Solutions%20-%20Customer%20Segmentation%20Flowchart(1)(1).png)
-
+<div align="center">
+  
+  <img src="https://raw.githubusercontent.com/alo7lika/PyVerse/refs/heads/main/Customer%20Segmentation%20Tool/Segmentation%20Solutions%20-%20Customer%20Segmentation%20Flowchart(1)(1).png" alt="Customer Segmentation Flowchart" width="600"/>
+  
+</div>
 
 ## 📈 Expected Outcomes
 
