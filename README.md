@@ -157,9 +157,12 @@ Thanks to these wonderful people! Contributions of any kind are welcome! 🚀
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 
-<a href="https://github.com/UTSAVS26/PyVerse/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=UTSAVS26/PyVerse" />
-</a>
+<div align="center">
+
+  <a href="https://github.com/UTSAVS26/PyVerse">
+    <img src="https://contrib.rocks/image?repo=UTSAVS26/PyVerse&&max=1000" />
+  </a>
+</div>
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
