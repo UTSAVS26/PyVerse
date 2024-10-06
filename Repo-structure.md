@@ -6,6 +6,14 @@
 │       ├── main.py
 │       └── requirements.txt
 ├── Algorithms_and_Data_Structures
+│   ├── BinarySearchTree
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── bst.cpython-312.pyc
+│   │   │   └── bstnode.cpython-312.pyc
+│   │   ├── bst.py
+│   │   ├── bstnode.py
+│   │   └── main.py
 │   ├── Design_and_Analysis_of_Algorithms
 │   │   ├── All_Pair_Shortest_path_problems
 │   │   │   ├── README.md
@@ -111,11 +119,16 @@
 │   │   │   └── index.html
 │   │   └── server.py
 │   ├── Tasker.py
-│   └── Turtle
-│       ├── Readme.md
-│       ├── rainbow_spiral.py
-│       ├── turtle.py
-│       └── turtle_spiral.py
+│   ├── Turtle
+│   │   ├── Readme.md
+│   │   ├── rainbow_spiral.py
+│   │   ├── turtle.py
+│   │   └── turtle_spiral.py
+│   └── chess_game
+│       ├── __init__.py
+│       ├── board.py
+│       ├── game.py
+│       └── piece.py
 ├── Blockchain_Development
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
