@@ -1,0 +1,11 @@
+Modules Used:
+
+random: For selecting random questions and answers.
+time: For adding slight delays between actions to make the game experience more dynamic.
+Game Introduction:
+
+The game starts with a welcome message and prompts the player to enter their name.
+Questions and Answers:
+
+A list of questions and corresponding answers is provided.
+Each question also has a list of wrong answers (wronganswers) for generating multiple-choice options
