@@ -332,6 +332,19 @@
 │   ├── Multivitamine Prediction
 │   │   ├── multivitamins_data.csv
 │   │   └── scrape.py
+│   ├── Predicting Exam Score Using linear Regression
+│   │   ├── Dataset
+│   │   │   ├── README.md
+│   │   │   └── student_exam_data.csv
+│   │   ├── Images
+│   │   │   ├── Applied LR.png
+│   │   │   ├── Correleation.png
+│   │   │   └── README.md
+│   │   ├── Model
+│   │   │   ├── Applying Linear Regression Model to Predict Exam Score.ipynb
+│   │   │   └── README.md
+│   │   ├── README.md
+│   │   └── Requirements.txt
 │   └── Twitter Sentiment Analysis
 │       ├── README.md
 │       ├── Twitter Sentiment Analysis.ipynb
