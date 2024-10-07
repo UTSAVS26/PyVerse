@@ -13,4 +13,4 @@ This script create a digital clock as per the system's current time.
 
 ### Screenshot/GIF showing the sample use of the script
 
-![Digital Clock Output]()
+![Digital Clock Output](Beginner_Projects/Digital Clock/Digital Clock.PNG)
