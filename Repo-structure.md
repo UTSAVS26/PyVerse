@@ -82,6 +82,23 @@
 │   │   ├── Menu_Driven_Code_for_Dynamic_Stack_using_LinkedList.py
 │   │   ├── Menu_Driven_Code_for_Linear_LinkedList.py
 │   │   └── README.md
+│   ├── Pattern Search
+│   │   ├── aho_corasick.py
+│   │   ├── bitap_algorithm.py
+│   │   ├── boyer_moore.py
+│   │   ├── kmp_pattern_search.py
+│   │   ├── naive_pattern_search.py
+│   │   ├── rabin_karp.py
+│   │   └── suffix_array.py
+│   ├── Recurssion
+│   │   ├── Binary_Search.py
+│   │   ├── Check_for_Palindrome.py
+│   │   ├── Count_Vowels_in_a_String.py
+│   │   ├── Factorial.py
+│   │   ├── Fibonacci_Series.py
+│   │   ├── Power_Function.py
+│   │   ├── Reverse_a_String.py
+│   │   └── TowerofHanoi.py
 │   ├── Stack
 │   │   ├── README.md
 │   │   └── stack.py
