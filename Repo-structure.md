@@ -64,6 +64,11 @@
 │   │   │   ├── README.md
 │   │   │   ├── kruskal.py
 │   │   │   └── prim.py
+│   │   ├── N-Queen-Visualiser-main
+│   │   │   ├── README.md
+│   │   │   ├── chess.js
+│   │   │   ├── index.css
+│   │   │   └── index.html
 │   │   ├── README.md
 │   │   └── Single_Source_Shortest_path_problems
 │   │       ├── README.md
@@ -77,16 +82,39 @@
 │   │   ├── Menu_Driven_Code_for_Dynamic_Stack_using_LinkedList.py
 │   │   ├── Menu_Driven_Code_for_Linear_LinkedList.py
 │   │   └── README.md
+│   ├── Pattern Search
+│   │   ├── aho_corasick.py
+│   │   ├── bitap_algorithm.py
+│   │   ├── boyer_moore.py
+│   │   ├── kmp_pattern_search.py
+│   │   ├── naive_pattern_search.py
+│   │   ├── rabin_karp.py
+│   │   └── suffix_array.py
+│   ├── Recurssion
+│   │   ├── Binary_Search.py
+│   │   ├── Check_for_Palindrome.py
+│   │   ├── Count_Vowels_in_a_String.py
+│   │   ├── Factorial.py
+│   │   ├── Fibonacci_Series.py
+│   │   ├── Power_Function.py
+│   │   ├── Reverse_a_String.py
+│   │   └── TowerofHanoi.py
 │   ├── Stack
 │   │   ├── README.md
 │   │   └── stack.py
-│   └── Trees
-│       ├── Menu_Driven_Code_for_Avl_Tree.py
-│       ├── Menu_Driven_Code_for_Binary_Search_Tree.py
-│       ├── Menu_Driven_Code_for_Binary_Tree.py
-│       ├── Menu_Driven_Code_for_DFS.py
-│       ├── Menu_Driven_Code_for_Tree_Traversals.py
-│       └── README.md
+│   ├── Trees
+│   │   ├── Menu_Driven_Code_for_Avl_Tree.py
+│   │   ├── Menu_Driven_Code_for_Binary_Search_Tree.py
+│   │   ├── Menu_Driven_Code_for_Binary_Tree.py
+│   │   ├── Menu_Driven_Code_for_DFS.py
+│   │   ├── Menu_Driven_Code_for_Tree_Traversals.py
+│   │   └── README.md
+│   └── avl_tree_visualizer
+│       ├── README.md
+│       ├── input.txt
+│       ├── main.py
+│       ├── output.txt
+│       └── requirements.txt
 ├── Automation_Tools
 │   ├── Image-Tool
 │   │   ├── Image_Tool.py
@@ -143,6 +171,9 @@
 │   │   ├── rainbow_spiral.py
 │   │   ├── turtle.py
 │   │   └── turtle_spiral.py
+│   ├── URL_Shortener
+│   │   ├── README.md
+│   │   └── url_shortener.py
 │   ├── Web Scraper
 │   │   ├── README.md
 │   │   └── web_scraper.py
@@ -155,9 +186,11 @@
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
 ├── Cybersecurity_Tools
-│   └── CLI-based Port Scanner
-│       ├── README.md
-│       └── port-scanner.py
+│   ├── CLI-based Port Scanner
+│   │   ├── README.md
+│   │   └── port-scanner.py
+│   └── Pixel_Decoder
+│       └── pixel_decoder.py
 ├── Data Analytics
 │   └── IPL Analysis
 │       ├── IPL_Analysis.ipynb
@@ -187,6 +220,18 @@
 │   │   │   ├── top_days_messages.png
 │   │   │   └── word_cloud.png
 │   │   └── main.py
+│   ├── customer_segmentation
+│   │   ├── Customer_Segmentation.ipynb
+│   │   ├── Mall_Customers.csv
+│   │   ├── README.md
+│   │   ├── age_distribution.png
+│   │   ├── age_group_counts.png
+│   │   ├── boxplot_spending_score.png
+│   │   ├── customer_segmentation_2D.png
+│   │   ├── customer_segmentation_3D.png
+│   │   ├── customer_segmentation_statistical_analysis_report.pdf
+│   │   ├── gender_distribution.png
+│   │   └── income_vs_spending_score.png
 │   └── time_series_visualization
 │       ├── README.md
 │       ├── Time_Series_Report.pdf
@@ -235,6 +280,15 @@
 │   │   ├── Model
 │   │   │   ├── Readme.md
 │   │   │   └── detecting-face-masks-with-5-models.ipynb
+│   │   └── requirements.txt
+│   ├── File-Locking-Mechanism
+│   │   ├── Face_Recognition_Script
+│   │   │   ├── Face recognition.py
+│   │   │   ├── FaceDetection.py
+│   │   │   ├── haarcascade_frontalface_alt.xml
+│   │   │   └── lbpcascade_frontalface.xml
+│   │   ├── README.md
+│   │   ├── locker.bat
 │   │   └── requirements.txt
 │   ├── MNIST Digit Classification using Neural Networks
 │   │   ├── README.md
@@ -327,9 +381,15 @@
 │   ├── KBC
 │   │   ├── KBCquiz.py
 │   │   └── README.md
-│   └── MasterMind
+│   ├── MasterMind
+│   │   ├── README.md
+│   │   └── mastermind.py
+│   ├── Number Guessing Game
+│   │   ├── README.md
+│   │   └── main.py
+│   └── Snake_Game
 │       ├── README.md
-│       └── mastermind.py
+│       └── Snake.py
 ├── Image processing
 │   ├── Lane Line Detection [OPEN CV]
 │   │   ├── README.md
@@ -356,6 +416,24 @@
 │       └── requirements.txt
 ├── LICENSE
 ├── Machine_Learning
+│   ├── Absent_Time_prediction_using_HyperParameter_Tuning
+│   │   ├── HyperParameter Tuning.md
+│   │   ├── Model.md
+│   │   ├── absenteeism_at_work_data
+│   │   │   ├── Absenteeism_at_work.arff
+│   │   │   ├── Absenteeism_at_work.csv
+│   │   │   ├── Absenteeism_at_work.xls
+│   │   │   ├── Attribute Information.docx
+│   │   │   ├── UCI_ABS_TEXT.docx
+│   │   │   └── absenteeism_at_work_converted.csv
+│   │   ├── images
+│   │   │   ├── DataSet.png
+│   │   │   ├── pairplot.png
+│   │   │   └── plot.png
+│   │   ├── model
+│   │   │   ├── Absent_time.ipynb
+│   │   │   └── ridge_model.pkl
+│   │   └── requirements.txt
 │   ├── Air Quality Prediction
 │   │   ├── Dataset
 │   │   │   └── README.md
@@ -464,6 +542,11 @@
 │   │   ├── images.jpg
 │   │   ├── train.csv
 │   │   └── twitter2-720x540.jpg
+│   ├── Zomato Restaurant Clustering and Sentiment Analysis
+│   │   ├── Readme.md
+│   │   ├── Zomato Restaurant names and Metadata.csv
+│   │   ├── Zomato Restaurant reviews.csv
+│   │   └── Zomato_Restaurant_Clustering_and_Sentiment_Analysis.ipynb
 │   ├── assets
 │   │   └── styles.css
 │   ├── main.py
