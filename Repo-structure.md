@@ -477,6 +477,41 @@
 ├── Repo-structure.md
 ├── Tutorials
 ├── Web_Development
+│   ├── Advanced-Weather-APP
+│   │   ├── README.md
+│   │   ├── assets
+│   │   │   ├── cloud.png
+│   │   │   ├── favicon.ico
+│   │   │   ├── humidity.png
+│   │   │   ├── loading.gif
+│   │   │   ├── location.png
+│   │   │   ├── not-found.png
+│   │   │   ├── search.png
+│   │   │   └── wind.png
+│   │   ├── index.html
+│   │   ├── index.js
+│   │   └── styles.css
+│   ├── DevDetective
+│   │   ├── README.md
+│   │   ├── assets
+│   │   │   ├── android-chrome-192x192.png
+│   │   │   ├── android-chrome-512x512.png
+│   │   │   ├── apple-touch-icon.png
+│   │   │   ├── favicon-16x16.png
+│   │   │   ├── favicon-32x32.png
+│   │   │   ├── favicon.ico
+│   │   │   ├── images
+│   │   │   │   ├── company-icon.svg
+│   │   │   │   ├── location-icon.svg
+│   │   │   │   ├── moon-icon.svg
+│   │   │   │   ├── search-icon.svg
+│   │   │   │   ├── sun-icon.svg
+│   │   │   │   ├── twitter-icon.svg
+│   │   │   │   └── website-icon.svg
+│   │   │   └── site.webmanifest
+│   │   ├── index.html
+│   │   ├── script.js
+│   │   └── styles.css
 │   ├── Web_Developement_resources
 │   │   ├── 25_Years_of_Model_Driven_Web_ Engineering_What_we_Achieved_What_is_Missing_Author_Gustavo_Rossi_Matias_Urbieta_Damiano_Distante.pdf
 │   │   ├── Best_Practices_in_Designing_Websites.pdf
