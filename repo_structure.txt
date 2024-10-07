@@ -306,6 +306,10 @@
 │   │   │   └── README.md
 │   │   ├── README.md
 │   │   └── requirements.txt
+│   ├── Decision Tree Classifier
+│   │   ├── Decision_Tree_Classifier.ipynb
+│   │   ├── bank-additional.csv
+│   │   └── readme.md
 │   ├── Fake News Detection
 │   │   ├── Images
 │   │   │   ├── Dataset.png
