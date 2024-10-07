@@ -140,6 +140,12 @@
 │   └── CLI-based Port Scanner
 │       ├── README.md
 │       └── port-scanner.py
+├── Data Analytics
+│   └── IPL Analysis
+│       ├── IPL_Analysis.ipynb
+│       ├── README.md
+│       ├── deliveries.csv
+│       └── matches.csv
 ├── DataVizLearnig
 │   ├── DataViz_Snippets.ipynb
 │   └── Readme.md
