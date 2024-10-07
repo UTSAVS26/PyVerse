@@ -64,6 +64,11 @@
 │   │   │   ├── README.md
 │   │   │   ├── kruskal.py
 │   │   │   └── prim.py
+│   │   ├── N-Queen-Visualiser-main
+│   │   │   ├── README.md
+│   │   │   ├── chess.js
+│   │   │   ├── index.css
+│   │   │   └── index.html
 │   │   ├── README.md
 │   │   └── Single_Source_Shortest_path_problems
 │   │       ├── README.md
