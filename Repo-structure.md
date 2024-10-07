@@ -375,9 +375,12 @@
 │   ├── KBC
 │   │   ├── KBCquiz.py
 │   │   └── README.md
-│   └── MasterMind
+│   ├── MasterMind
+│   │   ├── README.md
+│   │   └── mastermind.py
+│   └── Number Guessing Game
 │       ├── README.md
-│       └── mastermind.py
+│       └── main.py
 ├── Image processing
 │   └── Number plate detection
 │       ├── README.md
