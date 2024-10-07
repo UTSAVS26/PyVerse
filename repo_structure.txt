@@ -100,13 +100,19 @@
 │   ├── Stack
 │   │   ├── README.md
 │   │   └── stack.py
-│   └── Trees
-│       ├── Menu_Driven_Code_for_Avl_Tree.py
-│       ├── Menu_Driven_Code_for_Binary_Search_Tree.py
-│       ├── Menu_Driven_Code_for_Binary_Tree.py
-│       ├── Menu_Driven_Code_for_DFS.py
-│       ├── Menu_Driven_Code_for_Tree_Traversals.py
-│       └── README.md
+│   ├── Trees
+│   │   ├── Menu_Driven_Code_for_Avl_Tree.py
+│   │   ├── Menu_Driven_Code_for_Binary_Search_Tree.py
+│   │   ├── Menu_Driven_Code_for_Binary_Tree.py
+│   │   ├── Menu_Driven_Code_for_DFS.py
+│   │   ├── Menu_Driven_Code_for_Tree_Traversals.py
+│   │   └── README.md
+│   └── avl_tree_visualizer
+│       ├── README.md
+│       ├── input.txt
+│       ├── main.py
+│       ├── output.txt
+│       └── requirements.txt
 ├── Automation_Tools
 │   ├── Image-Tool
 │   │   ├── Image_Tool.py
