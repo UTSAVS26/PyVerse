@@ -273,6 +273,15 @@
 │   │   │   ├── Readme.md
 │   │   │   └── detecting-face-masks-with-5-models.ipynb
 │   │   └── requirements.txt
+│   ├── File-Locking-Mechanism
+│   │   ├── Face_Recognition_Script
+│   │   │   ├── Face recognition.py
+│   │   │   ├── FaceDetection.py
+│   │   │   ├── haarcascade_frontalface_alt.xml
+│   │   │   └── lbpcascade_frontalface.xml
+│   │   ├── README.md
+│   │   ├── locker.bat
+│   │   └── requirements.txt
 │   ├── MNIST Digit Classification using Neural Networks
 │   │   ├── README.md
 │   │   ├── bar graph.png
