@@ -103,6 +103,9 @@
 │   │   ├── main.py
 │   │   └── screenshots
 │   │       └── tkinter-working.gif
+│   ├── Number Guessing Game
+│   │   ├── README.md
+│   │   └── number_guessing_game.py
 │   ├── Password-Generator
 │   │   ├── README.md
 │   │   ├── passwordGenerator.py
@@ -124,6 +127,9 @@
 │   │   ├── rainbow_spiral.py
 │   │   ├── turtle.py
 │   │   └── turtle_spiral.py
+│   ├── Web Scraper
+│   │   ├── README.md
+│   │   └── web_scraper.py
 │   └── chess_game
 │       ├── __init__.py
 │       ├── board.py
@@ -136,11 +142,35 @@
 │   └── CLI-based Port Scanner
 │       ├── README.md
 │       └── port-scanner.py
+├── Data Analytics
+│   └── IPL Analysis
+│       ├── IPL_Analysis.ipynb
+│       ├── README.md
+│       ├── deliveries.csv
+│       └── matches.csv
 ├── DataVizLearnig
 │   ├── DataViz_Snippets.ipynb
 │   └── Readme.md
 ├── Data_Science
 │   ├── Data-science.md
+│   ├── Whatsapp_Chat_Analyzer
+│   │   ├── README.md
+│   │   ├── Sample_Data
+│   │   │   ├── sample_data_1.txt
+│   │   │   ├── sample_data_2.txt
+│   │   │   ├── sample_data_3.txt
+│   │   │   ├── sample_data_4.txt
+│   │   │   ├── sample_data_5.txt
+│   │   │   ├── sample_zipped_data_1.zip
+│   │   │   └── sample_zipped_data_2.zip
+│   │   ├── images
+│   │   │   ├── emoji_distribution.png
+│   │   │   ├── emoji_usage_author.png
+│   │   │   ├── message_distribution.png
+│   │   │   ├── sample_messages.png
+│   │   │   ├── top_days_messages.png
+│   │   │   └── word_cloud.png
+│   │   └── main.py
 │   └── time_series_visualization
 │       ├── README.md
 │       ├── Time_Series_Report.pdf
@@ -262,6 +292,9 @@
 │   │       ├── bluebird-midflap.png
 │   │       ├── bluebird-upflap.png
 │   │       └── pipe-green.png
+│   ├── KBC
+│   │   ├── KBCquiz.py
+│   │   └── README.md
 │   └── MasterMind
 │       ├── README.md
 │       └── mastermind.py
@@ -333,6 +366,17 @@
 │   │   ├── main-mobile-cam.py
 │   │   ├── main-pc-cam.py
 │   │   └── requirements.txt
+│   ├── Iris Classification using KNN
+│   │   ├── README.md
+│   │   ├── RESULT.md
+│   │   ├── assets
+│   │   │   └── images
+│   │   │       ├── 1.png
+│   │   │       ├── 2.png
+│   │   │       ├── 3.png
+│   │   │       └── 4.png
+│   │   ├── irisClassifier.ipynb
+│   │   └── requirements.txt.txt
 │   ├── Multivitamine Prediction
 │   │   ├── multivitamins_data.csv
 │   │   └── scrape.py
@@ -349,20 +393,27 @@
 │   │   │   └── README.md
 │   │   ├── README.md
 │   │   └── Requirements.txt
-│   └── Twitter Sentiment Analysis
-│       ├── README.md
-│       ├── Twitter Sentiment Analysis.ipynb
-│       ├── Twitter-sentiment-analysis-1.jpg
-│       ├── images
-│       │   ├── Input Data.jpg
-│       │   ├── Model Performance.jpg
-│       │   ├── Negative wordcloud.jpg
-│       │   ├── Positive wordcloud.jpg
-│       │   ├── Sentiment countplot.jpg
-│       │   └── sample.md
-│       ├── images.jpg
-│       ├── train.csv
-│       └── twitter2-720x540.jpg
+│   ├── Readme.md
+│   ├── Twitter Sentiment Analysis
+│   │   ├── README.md
+│   │   ├── Twitter Sentiment Analysis.ipynb
+│   │   ├── Twitter-sentiment-analysis-1.jpg
+│   │   ├── images
+│   │   │   ├── Input Data.jpg
+│   │   │   ├── Model Performance.jpg
+│   │   │   ├── Negative wordcloud.jpg
+│   │   │   ├── Positive wordcloud.jpg
+│   │   │   ├── Sentiment countplot.jpg
+│   │   │   └── sample.md
+│   │   ├── images.jpg
+│   │   ├── train.csv
+│   │   └── twitter2-720x540.jpg
+│   ├── assets
+│   │   └── styles.css
+│   ├── main.py
+│   ├── requirements.txt
+│   ├── translation.py
+│   └── utils.py
 ├── PROJECT-README-TEMPLATE.md
 ├── PyVerse - Skill Selection.pdf
 ├── PyVerse - Skill Selection_page-0001.jpg
@@ -370,6 +421,26 @@
 ├── Repo-structure.md
 ├── Tutorials
 ├── Web_Development
+│   └── Web_Developement_resources
+│       ├── 25_Years_of_Model_Driven_Web_ Engineering_What_we_Achieved_What_is_Missing_Author_Gustavo_Rossi_Matias_Urbieta_Damiano_Distante.pdf
+│       ├── Best_Practices_in_Designing_Websites.pdf
+│       ├── Building_Blocks_of_Responsive_Web_Design.pdf
+│       ├── Create_Web_Pages_with_HTML_and_CSS.pdf
+│       ├── Factors_to_Consider_When_ Preparing_Graphics_for_Web.pdf
+│       ├── How_to_ Make_a_Simple_Web_Page_Using_HTML.pdf
+│       ├── Introduction_to_Development_ of_Dynamic_Web_Applications.pdf
+│       ├── Introduction_to_Web_Programming_(Presentation).pdf
+│       ├── Modern_Methods_of_Web_Applications_Analysis_and_Design.pdf
+│       ├── Proposed_Methodology_for_Web_Development.pdf
+│       ├── README.md
+│       ├── The_Modern_Web_Design_Process.pdf
+│       ├── The_Principles_of_Beautiful_Web_Design.pdf
+│       ├── Usability_Issues_in_Web_Site_Design.pdf
+│       ├── Web_Design_1.pdf
+│       ├── Web_Design_Basics_1.pdf
+│       ├── Website_Design.pdf
+│       ├── Website_Design_and_Programming.pdf
+│       └── ultimate_full_stack_web_development_with_mern.pdf
 ├── image.webp
 └── repo_structure.txt
 ```
