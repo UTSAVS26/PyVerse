@@ -1,6 +1,6 @@
 # Visualizing tools
 
-🎯 Goal
+# 🎯 Goal
 
 The primary objective of this project is to explain your specific project's goal here. It includes implementing, visualizing, and analyzing relevant key features based on the files and project you shared.
 
@@ -87,6 +87,8 @@ Since the project focuses on algorithms like trees, graphs, or other relevant st
 
 # 📢 Conclusion
 The project effectively demonstrates how to process user inputs and visualize results in real-time. The system allows for dynamic interaction through both manual entry and file upload, offering flexibility in how users interact with the system.
+
+
 # ✒️ Your Signature
-# Benak Deepak
+Benak Deepak
 
