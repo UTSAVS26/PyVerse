@@ -1,5 +1,27 @@
 # 📊 Economic Regime Detection
 
+<p align="center">
+    <img src="https://raw.githubusercontent.com/alo7lika/PyVerse/refs/heads/main/Machine_Learning/Economic%20Regime%20Detection/Generating....png" width="600" />
+</p>
+
+# 📚 Table of Contents
+
+1. [Overview](#overview)
+2. [Problem Statement](#problem-statement)
+3. [Proposed Solution](#proposed-solution)
+   - [Key Components](#key-components)
+4. [Installation & Usage](#installation--usage)
+5. [Data Collection](#data-collection)
+6. [Data Preprocessing](#data-preprocessing)
+7. [Clustering with K-Means](#clustering-with-k-means)
+8. [Analyzing and Labeling Clusters](#analyzing-and-labeling-clusters)
+9. [Model Validation](#model-validation)
+10. [Predicting Market Regimes](#predicting-market-regimes)
+11. [Results](#results)
+12. [Conclusion](#conclusion)
+13. [Acknowledgments](#acknowledgments)
+14. [Contact](#contact)
+
 ## 📖 Overview
 The Economic Regime Detection project aims to identify and classify different market regimes using historical stock price data. By leveraging advanced data analysis techniques, this project provides insights into market behavior, which can be beneficial for traders and investors.
 
