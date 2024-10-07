@@ -116,6 +116,19 @@
 │       ├── output.txt
 │       └── requirements.txt
 ├── Automation_Tools
+│   ├── Autofill personal info using Aadhar Card Image
+│   │   ├── OCR ADHAAR API
+│   │   │   └── app.py
+│   │   ├── README.md
+│   │   ├── RESULT.md
+│   │   ├── assets
+│   │   │   └── images
+│   │   │       ├── Output.png
+│   │   │       ├── api_response.png
+│   │   │       ├── easyocr.png
+│   │   │       └── tesseract.png
+│   │   ├── extract_aadhar_details.ipynb
+│   │   └── requirements.txt
 │   ├── Image-Tool
 │   │   ├── Image_Tool.py
 │   │   ├── README.md
