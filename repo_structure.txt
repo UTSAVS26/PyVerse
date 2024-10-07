@@ -207,6 +207,18 @@
 │   │   │   ├── top_days_messages.png
 │   │   │   └── word_cloud.png
 │   │   └── main.py
+│   ├── customer_segmentation
+│   │   ├── Customer_Segmentation.ipynb
+│   │   ├── Mall_Customers.csv
+│   │   ├── README.md
+│   │   ├── age_distribution.png
+│   │   ├── age_group_counts.png
+│   │   ├── boxplot_spending_score.png
+│   │   ├── customer_segmentation_2D.png
+│   │   ├── customer_segmentation_3D.png
+│   │   ├── customer_segmentation_statistical_analysis_report.pdf
+│   │   ├── gender_distribution.png
+│   │   └── income_vs_spending_score.png
 │   └── time_series_visualization
 │       ├── README.md
 │       ├── Time_Series_Report.pdf
