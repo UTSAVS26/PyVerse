@@ -1,2 +1,2 @@
 # AVL Tree Visualizer
-Mini project for Analysis and Design of Algorithms (BCS401)
+This interactive web app, built with Streamlit, allows users to visualize AVL tree construction in real-time. Users can upload files or manually input numbers to observe step-by-step updates of the tree structure. Features include traversal results, immediate feedback on user inputs, and detailed visualizations, making it an ideal tool for learning and teaching AVL trees interactively.
