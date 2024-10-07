@@ -1,10 +1,13 @@
 <!-- START_STRUCTURE -->
 ```
 ├── Advanced_Projects
-│   └── EDUHELPER
-│       ├── README.md
-│       ├── main.py
-│       └── requirements.txt
+│   ├── EDUHELPER
+│   │   ├── README.md
+│   │   ├── main.py
+│   │   └── requirements.txt
+│   └── GUI Based TaskManager
+│       ├── mang.py
+│       └── readme.md
 ├── Algorithms_and_Data_Structures
 │   ├── BinarySearchTree
 │   │   ├── __init__.py
@@ -94,6 +97,9 @@
 │   │   ├── README.md
 │   │   ├── barCodeGenerator.py
 │   │   └── requirements.txt
+│   ├── Budget-tracker
+│   │   ├── budget.md
+│   │   └── budget.py
 │   ├── Calculator_App
 │   │   ├── README.md
 │   │   └── main.py
