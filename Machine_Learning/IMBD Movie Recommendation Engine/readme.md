@@ -35,7 +35,6 @@ I chose **TF-IDF** because it’s a powerful technique to weigh the importance o
    
 ###  **Exploratory Data Analysis Results**
 In the exploratory data analysis (EDA), we examined the structure of the dataset, identified missing values, and explored the distribution of movie plots. The key insights include:
-
 - **Plot Lengths**: Analyzed the distribution of movie plot lengths.
 - **Word Frequency**: Visualized the most common words in the movie plots after removing stopwords.
   
