@@ -1,0 +1,39 @@
+<div class="app-container">
+  <div class="chat-container">
+    <div class="message-container" *ngIf="contents.length === 0">
+      <p class="message">
+        Welcome to PaLM ChatBot <br />
+        Write a text to start.
+      </p>
+    </div>
+    <div
+      *ngFor="let content of contents"
+      class="chat-message"
+      [ngClass]="content.agent"
+    >
+      <img [src]="'assets/avatar-' + content.agent + '.png'" class="avatar" />
+      <div class="message-details">
+        <p
+          class="message-content"
+          [ngClass]="{ loading: content.loading }"
+          [innerHTML]="content.message | lineBreak"
+        ></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="chat-footer-container">
+    <mat-form-field class="chat-input">
+      <input
+        placeholder="Send a message"
+        matInput
+        #inputMessage
+        [(ngModel)]="message"
+        (keyup.enter)="sendMessage(message)"
+      />
+    </mat-form-field>
+    <button mat-icon-button color="primary" (click)="sendMessage(message)">
+      <mat-icon>send</mat-icon>
+    </button>
+  </div>
+</div>
