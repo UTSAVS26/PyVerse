@@ -350,6 +350,24 @@
 │       └── requirements.txt
 ├── LICENSE
 ├── Machine_Learning
+│   ├── Absent_Time_prediction_using_HyperParameter_Tuning
+│   │   ├── HyperParameter Tuning.md
+│   │   ├── Model.md
+│   │   ├── absenteeism_at_work_data
+│   │   │   ├── Absenteeism_at_work.arff
+│   │   │   ├── Absenteeism_at_work.csv
+│   │   │   ├── Absenteeism_at_work.xls
+│   │   │   ├── Attribute Information.docx
+│   │   │   ├── UCI_ABS_TEXT.docx
+│   │   │   └── absenteeism_at_work_converted.csv
+│   │   ├── images
+│   │   │   ├── DataSet.png
+│   │   │   ├── pairplot.png
+│   │   │   └── plot.png
+│   │   ├── model
+│   │   │   ├── Absent_time.ipynb
+│   │   │   └── ridge_model.pkl
+│   │   └── requirements.txt
 │   ├── Air Quality Prediction
 │   │   ├── Dataset
 │   │   │   └── README.md
