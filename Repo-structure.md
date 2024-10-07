@@ -378,9 +378,12 @@
 │   ├── MasterMind
 │   │   ├── README.md
 │   │   └── mastermind.py
-│   └── Number Guessing Game
+│   ├── Number Guessing Game
+│   │   ├── README.md
+│   │   └── main.py
+│   └── Snake_Game
 │       ├── README.md
-│       └── main.py
+│       └── Snake.py
 ├── Image processing
 │   └── Number plate detection
 │       ├── README.md
