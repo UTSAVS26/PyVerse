@@ -470,5 +470,42 @@
 │       ├── Website_Design.pdf
 │       ├── Website_Design_and_Programming.pdf
 │       └── ultimate_full_stack_web_development_with_mern.pdf
+├── cybersecurity_resources
+│   └── pdf
+│       ├── A_Bug_Bounty_Hunting_Journey.pdf
+│       ├── Advanced_Web_Attacks_and_Exploitation.pdf
+│       ├── Black_hat_Python_ Python_programming_for_hackers.pdf
+│       ├── BruteForcingAndSupplyChainAttacks.pdf
+│       ├── Bug_Bounty_Bootcampth_guide_to_finding_and_reporting_web_vulnerabilities.pdf
+│       ├── CCNA_Routing_and_Switching_Complete_Study_Guide_Exam_100_105_Exam_200_105_Exam_200_125.pdf
+│       ├── CompTIA.pdf
+│       ├── CompTIA_Network_Exam_N10_006.pdf
+│       ├── Computer_Hacking_for_Beginners.pdf
+│       ├── Defense_with_Python.pdf
+│       ├── Gray_Hat Hacking_The_Ethical_Hacker’s_Handbook.pdf
+│       ├── Hacking.pdf
+│       ├── Hacking_API.pdf
+│       ├── Hacking_APIs_1.pdf
+│       ├── Hacking_Practical_Guide_for_Beginners.pdf
+│       ├── Hacking_the_art_of_exploitation.pdf
+│       ├── How_to_Hack_Computers.pdf
+│       ├── Linux_book.pdf
+│       ├── Owasp_Testing.pdf
+│       ├── Penetration_testing.pdf
+│       ├── README.md
+│       ├── Real_World_Bug_Hunting.pdf
+│       ├── Social_Engineering_The_Art_of_Psychological_Warfare_Human_Hacking_Persuasion_Deception.pdf
+│       ├── THE_ADVANCED_PENETRATING_TESTING_Made.pdf
+│       ├── The_Hacker_Playbook 3_ Practical_Guide_To_Penetration_Testing.pdf
+│       ├── The_Hacker_Playbook _Practical_Guide_To_Penetration_Testing.pdf
+│       ├── The_Hacker_Playbook_Practical_Guide_To_Penetration_Testing.pdf
+│       ├── The_Hardware_Hacking_Handbook.pdf
+│       ├── The_Web_Application _Hacker_Handbook.pdf
+│       ├── WiFi_Hacking_for_Beginners_(James Wells)_(Z-Library).pdf
+│       ├── Zed_Attack_Pro_(Z-Library).pdf
+│       ├── breaking_to_infosec .pdf
+│       ├── eLearnSecurity_Junior_Penetration_Testing_Notes_by_Joas.pdf
+│       ├── web_hacking_101.pdf
+│       └── zseanos_bugbounty_methodology.pdf
 ├── image.webp
 └── repo_structure.txt
