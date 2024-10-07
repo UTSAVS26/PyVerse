@@ -1,4 +1,4 @@
-# Real-Time Face Recognition Attendance System
+# Face Recognition Attendance System
 
 ## 🎯 Goal
 The primary goal of this project is to develop an automated attendance system that leverages face detection and facial recognition technologies. The purpose is to simplify the process of marking attendance by automatically identifying individuals from images and recording their presence in a CSV file.
