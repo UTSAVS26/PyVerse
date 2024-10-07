@@ -31,12 +31,19 @@ Face Recognition: The face_recognition library offers a pre-built, highly accura
 
 ## 📚 Libraries Needed
 `face_recognition`
+
 `cv2` (OpenCV)
+
 `numpy`
+
 `csv`
+
 `os`
+
 `streamlit`
+
 `datetime`
+
 `ultralytics`
 
 ## 📊 Exploratory Data Analysis Results
@@ -57,7 +64,7 @@ LinkedIn: www.linkedin.com/in/anirudh248
 
 GitHub: https://github.com/anirudh-248
 
-### Steps to run the project:
+## Steps to run the project:
 
 1) Create a virtual environment.
 2) Before installing the requirements, install dlib separately using `pip install "dlib_file_path"`
