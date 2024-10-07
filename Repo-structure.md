@@ -462,26 +462,47 @@
 ├── Repo-structure.md
 ├── Tutorials
 ├── Web_Development
-│   └── Web_Developement_resources
-│       ├── 25_Years_of_Model_Driven_Web_ Engineering_What_we_Achieved_What_is_Missing_Author_Gustavo_Rossi_Matias_Urbieta_Damiano_Distante.pdf
-│       ├── Best_Practices_in_Designing_Websites.pdf
-│       ├── Building_Blocks_of_Responsive_Web_Design.pdf
-│       ├── Create_Web_Pages_with_HTML_and_CSS.pdf
-│       ├── Factors_to_Consider_When_ Preparing_Graphics_for_Web.pdf
-│       ├── How_to_ Make_a_Simple_Web_Page_Using_HTML.pdf
-│       ├── Introduction_to_Development_ of_Dynamic_Web_Applications.pdf
-│       ├── Introduction_to_Web_Programming_(Presentation).pdf
-│       ├── Modern_Methods_of_Web_Applications_Analysis_and_Design.pdf
-│       ├── Proposed_Methodology_for_Web_Development.pdf
+│   ├── Web_Developement_resources
+│   │   ├── 25_Years_of_Model_Driven_Web_ Engineering_What_we_Achieved_What_is_Missing_Author_Gustavo_Rossi_Matias_Urbieta_Damiano_Distante.pdf
+│   │   ├── Best_Practices_in_Designing_Websites.pdf
+│   │   ├── Building_Blocks_of_Responsive_Web_Design.pdf
+│   │   ├── Create_Web_Pages_with_HTML_and_CSS.pdf
+│   │   ├── Factors_to_Consider_When_ Preparing_Graphics_for_Web.pdf
+│   │   ├── How_to_ Make_a_Simple_Web_Page_Using_HTML.pdf
+│   │   ├── Introduction_to_Development_ of_Dynamic_Web_Applications.pdf
+│   │   ├── Introduction_to_Web_Programming_(Presentation).pdf
+│   │   ├── Modern_Methods_of_Web_Applications_Analysis_and_Design.pdf
+│   │   ├── Proposed_Methodology_for_Web_Development.pdf
+│   │   ├── README.md
+│   │   ├── The_Modern_Web_Design_Process.pdf
+│   │   ├── The_Principles_of_Beautiful_Web_Design.pdf
+│   │   ├── Usability_Issues_in_Web_Site_Design.pdf
+│   │   ├── Web_Design_1.pdf
+│   │   ├── Web_Design_Basics_1.pdf
+│   │   ├── Website_Design.pdf
+│   │   ├── Website_Design_and_Programming.pdf
+│   │   └── ultimate_full_stack_web_development_with_mern.pdf
+│   └── chatbot
 │       ├── README.md
-│       ├── The_Modern_Web_Design_Process.pdf
-│       ├── The_Principles_of_Beautiful_Web_Design.pdf
-│       ├── Usability_Issues_in_Web_Site_Design.pdf
-│       ├── Web_Design_1.pdf
-│       ├── Web_Design_Basics_1.pdf
-│       ├── Website_Design.pdf
-│       ├── Website_Design_and_Programming.pdf
-│       └── ultimate_full_stack_web_development_with_mern.pdf
+│       ├── __pycache__
+│       │   ├── chat.cpython-312.pyc
+│       │   ├── model.cpython-312.pyc
+│       │   └── nltk_utils.cpython-312.pyc
+│       ├── app.py
+│       ├── chat.py
+│       ├── data.pth
+│       ├── intents.json
+│       ├── model.py
+│       ├── nltk_utils.py
+│       ├── static
+│       │   ├── app.js
+│       │   ├── favicon.ico
+│       │   ├── images
+│       │   │   └── chatbox-icon.svg
+│       │   └── style.css
+│       ├── templates
+│       │   └── base.html
+│       └── train.py
 ├── cybersecurity_resources
 │   └── pdf
 │       ├── A_Bug_Bounty_Hunting_Journey.pdf
