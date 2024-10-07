@@ -165,6 +165,9 @@
 │   │   ├── rainbow_spiral.py
 │   │   ├── turtle.py
 │   │   └── turtle_spiral.py
+│   ├── URL_Shortener
+│   │   ├── README.md
+│   │   └── url_shortener.py
 │   ├── Web Scraper
 │   │   ├── README.md
 │   │   └── web_scraper.py
@@ -177,9 +180,11 @@
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
 ├── Cybersecurity_Tools
-│   └── CLI-based Port Scanner
-│       ├── README.md
-│       └── port-scanner.py
+│   ├── CLI-based Port Scanner
+│   │   ├── README.md
+│   │   └── port-scanner.py
+│   └── Pixel_Decoder
+│       └── pixel_decoder.py
 ├── Data Analytics
 │   └── IPL Analysis
 │       ├── IPL_Analysis.ipynb
@@ -209,6 +214,18 @@
 │   │   │   ├── top_days_messages.png
 │   │   │   └── word_cloud.png
 │   │   └── main.py
+│   ├── customer_segmentation
+│   │   ├── Customer_Segmentation.ipynb
+│   │   ├── Mall_Customers.csv
+│   │   ├── README.md
+│   │   ├── age_distribution.png
+│   │   ├── age_group_counts.png
+│   │   ├── boxplot_spending_score.png
+│   │   ├── customer_segmentation_2D.png
+│   │   ├── customer_segmentation_3D.png
+│   │   ├── customer_segmentation_statistical_analysis_report.pdf
+│   │   ├── gender_distribution.png
+│   │   └── income_vs_spending_score.png
 │   └── time_series_visualization
 │       ├── README.md
 │       ├── Time_Series_Report.pdf
@@ -257,6 +274,15 @@
 │   │   ├── Model
 │   │   │   ├── Readme.md
 │   │   │   └── detecting-face-masks-with-5-models.ipynb
+│   │   └── requirements.txt
+│   ├── File-Locking-Mechanism
+│   │   ├── Face_Recognition_Script
+│   │   │   ├── Face recognition.py
+│   │   │   ├── FaceDetection.py
+│   │   │   ├── haarcascade_frontalface_alt.xml
+│   │   │   └── lbpcascade_frontalface.xml
+│   │   ├── README.md
+│   │   ├── locker.bat
 │   │   └── requirements.txt
 │   ├── MNIST Digit Classification using Neural Networks
 │   │   ├── README.md
