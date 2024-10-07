@@ -193,6 +193,19 @@
 │   │   ├── Model
 │   │   │   └── bird_species_classification.ipynb
 │   │   └── Readme.md
+│   ├── Dog Species Classification
+│   │   ├── DataSet
+│   │   │   └── readme.md
+│   │   ├── Images
+│   │   │   ├── Input.png
+│   │   │   ├── dog_2.png
+│   │   │   ├── dog_3.png
+│   │   │   └── dog_image.png
+│   │   ├── Models
+│   │   │   ├── MobileNetV2.ipynb
+│   │   │   ├── ResNet50V2.ipynb
+│   │   │   └── VGG19.ipynb
+│   │   └── Readme.md
 │   ├── Face Mask Detection
 │   │   ├── Dataset
 │   │   │   └── Readme.md
@@ -256,23 +269,26 @@
 │   │   │   ├── Tomato_Classification.ipynb
 │   │   │   └── requirements.txt
 │   │   └── result.md
-│   └── Spam Vs Ham Mail Classification [With Streamlit GUI]
-│       ├── Dataset
-│       │   ├── newData.csv
-│       │   └── spam-vs-ham-dataset.csv
-│       ├── Image
-│       │   ├── PairPlot_withHue.png
-│       │   ├── Spam-vs-ham-piechart.jpg
-│       │   ├── spam-ham-num_chr.jpg
-│       │   ├── spam-ham-num_sent.jpg
-│       │   └── spam-ham-num_word.jpg
-│       ├── Model
-│       │   ├── README.md
-│       │   ├── app1.py
-│       │   ├── app2.py
-│       │   ├── model1_(1) (1).ipynb
-│       │   └── model2.ipynb
-│       └── requirements.txt
+│   ├── Spam Vs Ham Mail Classification [With Streamlit GUI]
+│   │   ├── Dataset
+│   │   │   ├── newData.csv
+│   │   │   └── spam-vs-ham-dataset.csv
+│   │   ├── Image
+│   │   │   ├── PairPlot_withHue.png
+│   │   │   ├── Spam-vs-ham-piechart.jpg
+│   │   │   ├── spam-ham-num_chr.jpg
+│   │   │   ├── spam-ham-num_sent.jpg
+│   │   │   └── spam-ham-num_word.jpg
+│   │   ├── Model
+│   │   │   ├── README.md
+│   │   │   ├── app1.py
+│   │   │   ├── app2.py
+│   │   │   ├── model1_(1) (1).ipynb
+│   │   │   └── model2.ipynb
+│   │   └── requirements.txt
+│   └── YOLO-Drowsiness-Detection-main
+│       ├── Drowsiness Detection Tutorial.ipynb
+│       └── README.md
 ├── Game_Development
 │   ├── Flappy_Bird
 │   │   ├── README.md
@@ -296,6 +312,21 @@
 │   └── MasterMind
 │       ├── README.md
 │       └── mastermind.py
+├── Image processing
+│   └── Number plate detection
+│       ├── README.md
+│       ├── model
+│       │   └── haarcascade_russian_plate_number.xml
+│       ├── number_plate.py
+│       ├── ocr-notebook
+│       │   └── easy_OCR_demo.ipynb
+│       ├── plates
+│       │   ├── Low zoom.png
+│       │   ├── scaned_img_0.jpg
+│       │   ├── scaned_img_1.jpg
+│       │   ├── scaned_img_2.jpg
+│       │   └── scaned_img_3.jpg
+│       └── requirements.txt
 ├── LICENSE
 ├── Machine_Learning
 │   ├── Air Quality Prediction
