@@ -22,6 +22,37 @@ def minMult(arr):
     # Return the minimum cost to multiply the entire chain of matrices
     return dp[0][n - 1]
 
+""" memoization method """
+def minMult_memo(arr:list ,i:int ,j:int ,dp:list[list[int]]):
+    """
+    Compute the minimum number of scalar multiplications required to multiply 
+    a chain of matrices using memoization (Matrix Chain Multiplication problem).
+    
+    Parameters:
+    arr (list): List of integers where the i-th matrix has dimensions arr[i-1] x arr[i].
+    i (int): Starting index of the matrix chain.
+    j (int): Ending index of the matrix chain.
+    dp (list[list[int]]): A memoization table initialized with -1 to store intermediate results.
+    
+    Returns:
+    int: Minimum number of scalar multiplications needed to multiply matrices from index i to j.
+    if i==j:
+        return 0
+    """
+    if dp[i][j] != -1:
+        return dp[i][j]
+    
+    ans = sys.maxsize
+    
+    for k in range(i,j):
+        
+        res = minMult_memo(arr ,i ,k ,dp) + minMult_memo(arr ,k+1 ,j ,dp) + arr[i-1]* arr[j] * arr[k]
+        
+        ans = min(ans,res)
+    
+    dp[i][j] = ans
+    return dp[i][j]
+
 if __name__ == "__main__":
     # Input the matrix dimensions as space-separated integers
     arr = list(map(int, input("Enter the dimensions of matrices separated by spaces: ").split()))

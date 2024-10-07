@@ -18,6 +18,36 @@ def get_lcs_length(S1, S2):
     # The last cell contains the length of the longest common subsequence
     return dp[m][n]
 
+""" memoization method """
+def lcs_memo(S1:str ,S2:str ,i:int ,j:int ,dp:list[list[int]]):
+    """
+    Compute the length of the longest common subsequence (LCS) between two strings using memoization.
+    
+    Parameters:
+    S1 (str): The first string.
+    S2 (str): The second string.
+    i (int): Current index of string S1 (starts from len(S1)-1).
+    j (int): Current index of string S2 (starts from len(S2)-1).
+    dp (list[list[int]]): A memoization table initialized with -1 to store intermediate results.
+    
+    Returns:
+    int: Length of the longest common subsequence between S1 and S2
+    """
+    #base case : if either string is ended return 0
+    if i<0 or j<0:   
+        return 0;
+    
+    #if result of subproblem is already calculated then no need to calculate again
+    if dp[i][j] != -1: 
+        return dp[i][j]
+    
+    if S1[i] == S2[j]:
+        dp[i][j] = 1 + lcs_memo(S1,S2,i-1,j-1,dp)
+    else:   
+        dp[i][j] = max(lcs_memo(S1,S2,i-1,j,dp),lcs_memo(S1,S2,i,j-1,dp))
+    
+    return dp[i][j]
+
 if __name__ == "__main__":
     # Take input strings from the user
     S1 = input("Enter the first string: ")
