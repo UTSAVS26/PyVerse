@@ -193,6 +193,19 @@
 │   │   ├── Model
 │   │   │   └── bird_species_classification.ipynb
 │   │   └── Readme.md
+│   ├── Dog Species Classification
+│   │   ├── DataSet
+│   │   │   └── readme.md
+│   │   ├── Images
+│   │   │   ├── Input.png
+│   │   │   ├── dog_2.png
+│   │   │   ├── dog_3.png
+│   │   │   └── dog_image.png
+│   │   ├── Models
+│   │   │   ├── MobileNetV2.ipynb
+│   │   │   ├── ResNet50V2.ipynb
+│   │   │   └── VGG19.ipynb
+│   │   └── Readme.md
 │   ├── Face Mask Detection
 │   │   ├── Dataset
 │   │   │   └── Readme.md
