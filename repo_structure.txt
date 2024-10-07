@@ -296,6 +296,21 @@
 │   └── MasterMind
 │       ├── README.md
 │       └── mastermind.py
+├── Image processing
+│   └── Number plate detection
+│       ├── README.md
+│       ├── model
+│       │   └── haarcascade_russian_plate_number.xml
+│       ├── number_plate.py
+│       ├── ocr-notebook
+│       │   └── easy_OCR_demo.ipynb
+│       ├── plates
+│       │   ├── Low zoom.png
+│       │   ├── scaned_img_0.jpg
+│       │   ├── scaned_img_1.jpg
+│       │   ├── scaned_img_2.jpg
+│       │   └── scaned_img_3.jpg
+│       └── requirements.txt
 ├── LICENSE
 ├── Machine_Learning
 │   ├── Air Quality Prediction
