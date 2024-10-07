@@ -314,6 +314,15 @@
 │       ├── README.md
 │       └── mastermind.py
 ├── Image processing
+│   ├── Lane Line Detection [OPEN CV]
+│   │   ├── README.md
+│   │   ├── binaryimage.png
+│   │   ├── finalresult.gif
+│   │   ├── gui.py
+│   │   ├── instancesegmentimage.png
+│   │   ├── main.py
+│   │   ├── testimageresult.png
+│   │   └── testimg.jpg
 │   └── Number plate detection
 │       ├── README.md
 │       ├── model
