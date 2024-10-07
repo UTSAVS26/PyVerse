@@ -105,6 +105,10 @@
 │   ├── Calculator_App
 │   │   ├── README.md
 │   │   └── main.py
+│   ├── Digital Clock
+│   │   ├── Digital Clock.PNG
+│   │   ├── README.md
+│   │   └── digital_clock.py
 │   ├── Egg_Catcher_Game.py
 │   ├── Morse Code Translator with GUI
 │   │   ├── README.md
