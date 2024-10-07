@@ -1,57 +1,50 @@
-# Movie Recommendation Engine
+## **Movie Recommendation Engine**
 
-## Overview
-This project builds a **Movie Recommendation Engine** using a dataset of the top 250 movies from IMDB. The recommendation system employs **Content-Based Filtering** to suggest movies based on various attributes such as Title, Director, Genre, Plot, and Ratings. By analyzing the features of the movies a user has liked, the engine provides recommendations for similar movies.
+###  **Goal**
+The main goal of this project is to build a **Movie Recommendation Engine** that suggests movies based on the content a user prefers. The system analyzes features such as genre, plot, director, and ratings to recommend movies similar to the ones the user has watched or liked. 
 
-## Dataset
-The dataset consists of the top 250 movies from IMDB with 27 attributes, including:
-- Title
-- Director
-- Genre
-- Plot
-- Ratings
-- Year of Release
-- Runtime
-- Country
-- Language
-- Cast
+### **Dataset**
+- Dataset: [IMDB Top 250 Movies](https://data.world/studentoflife/imdb-top-250-lists-and-5000-or-so-data-records)
+- The dataset contains 250 movies with 27 attributes including title, director, genre, plot, ratings, and more.
 
-The dataset can be downloaded from [IMDB Top 250 Dataset](https://data.world/studentoflife/imdb-top-250-lists-and-5000-or-so-data-records).
+### **Description**
+This project implements a content-based movie recommendation engine using data from IMDB's top 250 movies. By analyzing various features of the movies, such as genre, plot descriptions, and directors, the system recommends films that share similarities with the user's preferences. The recommendation is powered by the cosine similarity between movie feature vectors derived from textual data.
 
-## Libraries Used
-The following Python libraries are required for this project:
-1. **pandas**: For data manipulation and analysis.
-2. **nltk**: For text preprocessing and natural language processing tasks.
-3. **sklearn**: For machine learning algorithms and vectorization.
-4. **re**: For regular expressions and text cleaning.
+###  **What I had done!**
+1. **Data Loading**: Loaded the dataset into a pandas DataFrame.
+2. **Data Preprocessing**: 
+   - Converted all plot summaries to lowercase.
+   - Removed punctuation, numbers, and extra spaces.
+   - Tokenized the plot summaries.
+   - Removed stopwords from the tokenized plots.
+3. **Feature Engineering**: Used the **TF-IDF vectorizer** to extract features from the cleaned plot summaries.
+4. **Similarity Calculation**:Computed the cosine similarity matrix for all movies based on their plot summaries.
+5. **Recommendation System**:Developed a function that takes a movie title as input and returns the top 10 most similar movies based on plot similarity.
 
-## Project Workflow
-1. **Data Loading**: Load the IMDB dataset into a pandas DataFrame for easy manipulation and analysis.
-2. **Data Preprocessing**:
-   - Clean the dataset by handling missing values, removing unnecessary columns, and normalizing text data.
-   - Preprocess textual attributes such as Genre, Plot, and Director using **NLTK** for tokenization, lemmatization, and removal of stopwords.
-3. **Feature Engineering**: Combine relevant features like Genre, Plot, and Director to create a comprehensive profile of each movie.
-4. **Vectorization**:
-   - Use **TF-IDF Vectorizer** from sklearn to convert the textual data into numerical feature vectors.
-5. **Similarity Calculation**:
-   - Calculate the **cosine similarity** between the feature vectors to measure the similarity between movies.
-6. **Movie Recommendation**:
-   - Based on a user's selected movie, recommend movies with the highest cosine similarity score using Content-Based Filtering.
+###  **Models Implemented**
+- **TF-IDF Vectorizer**: Extracts the important words from the movie plots.
+- **Cosine Similarity**: Calculates the similarity between two movies based on their plot vectors.
+I chose **TF-IDF** because it’s a powerful technique to weigh the importance of words in the context of the entire dataset. **Cosine Similarity** works well to compare text data based on vector representations.
 
-## Algorithms
-The project leverages **Content-Based Filtering** for movie recommendations. This approach focuses on recommending movies similar to the ones the user has watched or liked, by analyzing the features of movies (e.g., genre, plot description, director, etc.).
+###  **Libraries Needed**
+- pandas
+- numpy
+- re
+- nltk
+- sklearn
+   
+###  **Exploratory Data Analysis Results**
+In the exploratory data analysis (EDA), we examined the structure of the dataset, identified missing values, and explored the distribution of movie plots. The key insights include:
 
-## Insights
-- **Genres Matter**: The genre of a movie plays a crucial role in determining similarity. Movies within the same genre often share thematic elements, making genre-based filtering a significant aspect of content-based recommendation systems.
+- **Plot Lengths**: Analyzed the distribution of movie plot lengths.
+- **Word Frequency**: Visualized the most common words in the movie plots after removing stopwords.
   
-- **Plot Descriptions Provide Context**: By utilizing the plot descriptions of movies, the engine can capture nuanced similarities between films. Movies with similar themes, narratives, or settings will be more likely to be recommended together, enriching the recommendation quality.
-  
-- **Director Influence**: Directors have distinctive styles that can influence the mood and tone of a movie. Including directors as a feature enhances the personalization aspect of the recommendations.
+###  **Performance of the Models based on the Accuracy Scores**
+This is a content-based recommendation system, so accuracy is based on how well the recommended movies align with the input movie's theme or content. There are no accuracy scores per se, but the cosine similarity score shows how close the movies are in terms of plot similarity.
 
-- **Cosine Similarity for Precision**: The use of cosine similarity ensures that the recommendations are not just random but mathematically precise. This method measures the angle between feature vectors, allowing the system to provide accurate suggestions based on content similarity.
+###  **Conclusion**
+The **Movie Recommendation Engine** provides relevant movie suggestions based on plot similarity. Content-based filtering helps find movies that share thematic and narrative elements with the input movie. This can be expanded further by incorporating additional movie attributes like genre, director, or actors for more refined recommendations.
 
-- **Content Over Popularity**: Unlike collaborative filtering, which relies on user behavior and popularity, content-based filtering makes recommendations purely on movie features. This ensures that lesser-known, high-quality movies can be suggested based on a user's taste rather than just popular choices.
-
-
-## Conclusion
-This **Movie Recommendation Engine** provides users with personalized movie recommendations based on the attributes of their preferred movies. The system uses natural language processing and machine learning techniques to analyze movie features and suggest relevant films.
+###  **Your Signature**
+Shreya Tripathy  
+[GitHub](https://github.com/Shreya7tripathy) | [LinkedIn](https://www.linkedin.com/in/shreyatripathy7/)
