@@ -44,6 +44,4 @@ This is a content-based recommendation system, so accuracy is based on how well 
 ###  **Conclusion**
 The **Movie Recommendation Engine** provides relevant movie suggestions based on plot similarity. Content-based filtering helps find movies that share thematic and narrative elements with the input movie. This can be expanded further by incorporating additional movie attributes like genre, director, or actors for more refined recommendations.
 
-###  **Your Signature**
-Shreya Tripathy  
-[GitHub](https://github.com/Shreya7tripathy) | [LinkedIn](https://www.linkedin.com/in/shreyatripathy7/)
+Thanks :)
