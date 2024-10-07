@@ -268,6 +268,9 @@
 │   │       ├── bluebird-midflap.png
 │   │       ├── bluebird-upflap.png
 │   │       └── pipe-green.png
+│   ├── KBC
+│   │   ├── KBCquiz.py
+│   │   └── README.md
 │   └── MasterMind
 │       ├── README.md
 │       └── mastermind.py
