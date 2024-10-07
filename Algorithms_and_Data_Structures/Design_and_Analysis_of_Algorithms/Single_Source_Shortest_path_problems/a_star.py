@@ -1,74 +1,73 @@
+from collections import defaultdict
 import heapq
 
-class Graph:
+class AStar:
     def __init__(self):
-        self.adjacency_list = {}
+        self.adjacency_list = defaultdict(list)  # Using defaultdict for adjacency list
 
-    def add_edge(self, u, v, cost):
-        if u not in self.adjacency_list:
-            self.adjacency_list[u] = []
-        if v not in self.adjacency_list:
-            self.adjacency_list[v] = []
-        self.adjacency_list[u].append((v, cost))
-        self.adjacency_list[v].append((u, cost))  # For undirected graph
+    def a_star(self, start, goal):
+        open_set = []  # Priority queue for nodes to explore
+        heapq.heappush(open_set, (0, start))
+        open_set_set = {start}  # Set for quick lookup
+        came_from = {}  # Lazy initialization
+        g_scores = {start: 0}  # Initialize g_score for start
+        f_scores = {start: self.manhattan_distance(start, goal)}  # Initialize f_score for start
 
-def heuristic(a, b):
-    # Example heuristic function (can be replaced with a real heuristic)
-    # Here we use a simple Manhattan distance as an example for 2D coordinates
-    return abs(a[0] - b[0]) + abs(a[1] - b[1])
+        while open_set:
+            current = heapq.heappop(open_set)[1]
+            open_set_set.remove(current)  # Remove from the open set
 
-def a_star_search(graph, start, goal):
-    open_set = []
-    heapq.heappush(open_set, (0, start))  # (f_score, node)
-    
-    came_from = {}
-    g_score = {node: float('inf') for node in graph.adjacency_list}
-    g_score[start] = 0
-    
-    f_score = {node: float('inf') for node in graph.adjacency_list}
-    f_score[start] = heuristic(start, goal)
+            if current == goal:
+                return self.reconstruct_path(came_from, current)  # Path construction when goal is found
 
-    while open_set:
-        current = heapq.heappop(open_set)[1]
+            for neighbor in self.adjacency_list[current]:
+                tentative_g_score = g_scores[current] + self.distance(current, neighbor)
 
-        if current == goal:
-            # Reconstruct the path
-            path = []
-            while current in came_from:
-                path.append(current)
-                current = came_from[current]
-            path.append(start)
-            return path[::-1]  # Return reversed path
+                if neighbor not in g_scores or tentative_g_score < g_scores[neighbor]:
+                    came_from[neighbor] = current
+                    g_scores[neighbor] = tentative_g_score
+                    f_scores[neighbor] = tentative_g_score + self.manhattan_distance(neighbor, goal)
 
-        for neighbor, cost in graph.adjacency_list.get(current, []):
-            tentative_g_score = g_score[current] + cost
-            
-            if tentative_g_score < g_score[neighbor]:
-                came_from[neighbor] = current
-                g_score[neighbor] = tentative_g_score
-                f_score[neighbor] = tentative_g_score + heuristic(neighbor, goal)
-                
-                if all(neighbor != n[1] for n in open_set):
-                    heapq.heappush(open_set, (f_score[neighbor], neighbor))
+                    # Only add the neighbor to the open set if it's not already there
+                    if neighbor not in open_set_set:
+                        heapq.heappush(open_set, (f_scores[neighbor], neighbor))
+                        open_set_set.add(neighbor)  # Add to the set for O(1) lookup
 
-    return None  # No path found
+        return []  # Return an empty path if no path is found
 
-# Example usage:
+    def reconstruct_path(self, came_from, current):
+        """Construct the path from start to goal."""
+        total_path = [current]
+        while current in came_from:
+            current = came_from[current]
+            total_path.append(current)
+        return total_path[::-1]  # Return the path from start to goal
+
+    def distance(self, node1, node2):
+        """Define your distance calculation here (e.g., uniform cost)."""
+        return 1  # For a grid, assume each move has a cost of 1
+
+    def manhattan_distance(self, node1, node2):
+        """Calculate the Manhattan distance between two nodes."""
+        x1, y1 = node1
+        x2, y2 = node2
+        return abs(x1 - x2) + abs(y1 - y2)
+
+# Example usage
 if __name__ == "__main__":
-    g = Graph()
-    g.add_edge((0, 0), (0, 1), 1)
-    g.add_edge((0, 0), (1, 0), 1)
-    g.add_edge((0, 1), (1, 1), 1)
-    g.add_edge((1, 0), (1, 1), 1)
-    g.add_edge((1, 1), (1, 2), 1)
-    g.add_edge((1, 0), (2, 0), 1)
-    g.add_edge((1, 2), (2, 2), 1)
-    g.add_edge((2, 0), (2, 1), 1)
-    g.add_edge((2, 1), (2, 2), 1)
+    astar = AStar()
+    # Example graph setup, you would need to populate the adjacency_list
+    astar.adjacency_list = {
+        (0, 0): [(0, 1), (1, 0)],
+        (0, 1): [(0, 0), (0, 2)],
+        (0, 2): [(0, 1), (1, 2)],
+        (1, 0): [(0, 0), (1, 1)],
+        (1, 1): [(1, 0), (1, 2)],
+        (1, 2): [(1, 1), (0, 2)],
+    }
 
     start = (0, 0)
-    goal = (2, 2)
-    path = a_star_search(g, start, goal)
-
+    goal = (1, 2)
+    path = astar.a_star(start, goal)
     print("Path found:", path)
 
