@@ -103,6 +103,9 @@
 │   │   ├── main.py
 │   │   └── screenshots
 │   │       └── tkinter-working.gif
+│   ├── Number Guessing Game
+│   │   ├── README.md
+│   │   └── number_guessing_game.py
 │   ├── Password-Generator
 │   │   ├── README.md
 │   │   ├── passwordGenerator.py
@@ -124,6 +127,9 @@
 │   │   ├── rainbow_spiral.py
 │   │   ├── turtle.py
 │   │   └── turtle_spiral.py
+│   ├── Web Scraper
+│   │   ├── README.md
+│   │   └── web_scraper.py
 │   └── chess_game
 │       ├── __init__.py
 │       ├── board.py
