@@ -151,6 +151,24 @@
 │   └── Readme.md
 ├── Data_Science
 │   ├── Data-science.md
+│   ├── Whatsapp_Chat_Analyzer
+│   │   ├── README.md
+│   │   ├── Sample_Data
+│   │   │   ├── sample_data_1.txt
+│   │   │   ├── sample_data_2.txt
+│   │   │   ├── sample_data_3.txt
+│   │   │   ├── sample_data_4.txt
+│   │   │   ├── sample_data_5.txt
+│   │   │   ├── sample_zipped_data_1.zip
+│   │   │   └── sample_zipped_data_2.zip
+│   │   ├── images
+│   │   │   ├── emoji_distribution.png
+│   │   │   ├── emoji_usage_author.png
+│   │   │   ├── message_distribution.png
+│   │   │   ├── sample_messages.png
+│   │   │   ├── top_days_messages.png
+│   │   │   └── word_cloud.png
+│   │   └── main.py
 │   └── time_series_visualization
 │       ├── README.md
 │       ├── Time_Series_Report.pdf
