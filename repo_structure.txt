@@ -110,6 +110,7 @@
 │   │   └── requirements.txt
 │   ├── QR Generator
 │   │   ├── QR-code_generator.py
+│   │   ├── QR_code_generator_GUI.py
 │   │   ├── README.md
 │   │   └── generate_qrcode.py
 │   ├── Stock App
