@@ -1,6 +1,6 @@
 import streamlit as st
 import graphviz as gv
-
+   
 # TreeNode class definition for Binary Search Tree (BST)
 class TreeNode:
     def __init__(self, key):
