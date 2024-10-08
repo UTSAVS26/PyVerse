@@ -1,5 +1,10 @@
 # 🛍️ Customer Clust - Customer Segmentation Tool
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/alo7lika/PyVerse/refs/heads/main/Machine_Learning/Customer%20Clust%20-%20Customer%20Segmentation%20Tool/Customer%20Clust%20-%20Segmentation%20Tool.png" alt="Customer Clust Segmentation Tool" width="600"/>
+</p>
+
+
 ## 📚 Table of Contents
 1. [Overview](#-overview)
 2. [Features](#-features)
@@ -55,6 +60,7 @@ Customer Clust is a powerful customer segmentation tool designed to categorize c
 ├── scripts/                  # 📝 Python scripts for data preprocessing and model training
 ├── results/                  # 📊 Final output of the model, including visualizations
 └── README.md                 # 📄 This file
+
 
 
 ## 🚀 Getting Started
