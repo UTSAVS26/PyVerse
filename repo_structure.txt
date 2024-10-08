@@ -389,6 +389,11 @@
 │   │   │   ├── top_days_messages.png
 │   │   │   └── word_cloud.png
 │   │   └── main.py
+│   ├── analysis_covid_trends
+│   │   ├── README.md
+│   │   ├── WHO-COVID-19-global-daily-data.csv
+│   │   ├── main.py
+│   │   └── requirements.txt
 │   ├── customer_segmentation
 │   │   ├── Customer_Segmentation.ipynb
 │   │   ├── Mall_Customers.csv
