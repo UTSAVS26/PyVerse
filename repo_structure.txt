@@ -200,6 +200,19 @@
 │   └── Readme.md
 ├── Data_Science
 │   ├── Data-science.md
+│   ├── AI Virtual Painter
+│       ├── Header Files
+│           ├── header 1.png
+│           ├── header 2.png
+│           ├── header 3.png
+│           ├── header 4.png
+│       ├── Images
+│           ├── Project.png
+│           ├── treediagram.png
+│       ├── HandTrackingModule.py
+│       ├── Readme.md
+│       ├── requirements.txt
+│       ├── VirtualPainter.py
 │   ├── Whatsapp_Chat_Analyzer
 │   │   ├── README.md
 │   │   ├── Sample_Data
