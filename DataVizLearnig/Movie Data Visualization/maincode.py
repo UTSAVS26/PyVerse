@@ -49,6 +49,7 @@ def show_piechart():
         genre_counts,
         colors=colors,
         autopct="%1.1f%%",
+        labels=genre_counts.index,  # Add genre names as labels
         shadow=True,
         wedgeprops={"edgecolor": "black"},  # Black border between slices
     )
