@@ -1,5 +1,3 @@
-  Minesweeper Documentation body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; } h1, h2 { color: #2c3e50; } pre { background: #f4f4f4; padding: 10px; border-radius: 5px; } hr { border: 1px solid #ccc; }
-
 Minesweeper
 ==================
 
