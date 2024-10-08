@@ -179,7 +179,149 @@ print(df.head())
 
 
 
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import OneHotEncoder, StandardScaler
+from sklearn.compose import ColumnTransformer
+from sklearn.pipeline import Pipeline
+from sklearn.metrics import r2_score,mean_absolute_error
 
+#import algorigthms now
+
+from sklearn.linear_model import LinearRegression,Lasso,Ridge
+from sklearn.neighbors import KNeighborsRegressor
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.ensemble import RandomForestRegressor,GradientBoostingRegressor,AdaBoostRegressor,ExtraTreesRegressor
+from sklearn.svm import SVR
+from xgboost import XGBRegressor
+
+df.drop(columns=['Inches'],inplace=True)
+
+x = df.drop(columns=['Price'])
+y = np.log(df['Price'])
+# print(x.columns)
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state= 2)
+
+# print(df.columns)
+step1 = ColumnTransformer(transformers=[
+    ('col_tnf',OneHotEncoder(sparse_output=False, drop='first'),[0,1,7,10,11])   # enter indexes on which one  hot encoding to be applying
+],remainder='passthrough')
+
+# step2 = LinearRegression()
+# step2 = Ridge(alpha=10)
+# step2 = Lasso(alpha = 0.001)
+# step2 = KNeighborsRegressor(n_neighbors=3)
+# step2 = DecisionTreeRegressor(max_depth=4)
+# step2 = SVR(kernel='rbf',C=10000, epsilon=0.1)
+step2 = RandomForestRegressor(
+    n_estimators=100,
+    random_state=5,
+    max_samples=0.7,
+    max_features=0.15,
+    max_depth=25
+)
+# step2 = ExtraTreesRegressor(
+#     n_estimators=100,
+#     random_state=5,
+#     max_samples=0.5,
+#     max_features=0.13,
+#     max_depth=15,
+#     bootstrap=True
+# )
+# step2 = AdaBoostRegressor(n_estimators=27,learning_rate=1.0)
+# step2 = GradientBoostingRegressor(n_estimators=500)
+# step2 = XGBRegressor(n_estimators = 40, max_depth=5 , learning_rate=0.6)
+
+
+pipe = Pipeline([
+    ('step1',step1),
+    ('step2',step2)
+])
+
+
+# -------------------- Linear Regression ------------------------
+
+# pipe.fit(x_train,y_train)
+# y_pred = pipe.predict(x_test)
+#
+# print('R2 score',r2_score(y_test,y_pred))        # R2 score 0.8152837383011426
+
+# -------------------- Ridge Regression ------------------------
+
+# pipe.fit(x_train,y_train)
+# y_pred = pipe.predict(x_test)
+#
+# print('R2 score',r2_score(y_test,y_pred))   # R2 score 0.8199736728206772
+
+
+# -------------------- Lasso Regression ------------------------
+
+# pipe.fit(x_train,y_train)
+# y_pred = pipe.predict(x_test)
+#
+# print('R2 score',r2_score(y_test,y_pred))           # R2 score 0.8174040400155699
+
+# -------------------- KNN Regression ------------------------
+
+# pipe.fit(x_train,y_train)
+# y_pred = pipe.predict(x_test)
+#
+# print('R2 score',r2_score(y_test,y_pred))              # R2 score 0.7881961438778196
+
+# -------------------- Decision Tree Regression ------------------------
+
+# pipe.fit(x_train,y_train)
+# y_pred = pipe.predict(x_test)
+#
+# print('R2 score',r2_score(y_test,y_pred))     # R2 score 0.7797903009324011
+
+# -------------------- SVM Regression ------------------------
+
+# pipe.fit(x_train,y_train)
+# y_pred = pipe.predict(x_test)
+#
+# print('R2 score',r2_score(y_test,y_pred))        # R2 score 0.7403779423062873
+
+# -------------------- Random forest Regression ------------------------
+
+pipe.fit(x_train,y_train)
+y_pred = pipe.predict(x_test)
+
+print('R2 score',r2_score(y_test,y_pred))           # R2 score 0.8663323136335733  ---> R2 score 0.8881535660014555
+
+# -------------------- Extra Tree Regression ------------------------
+
+# pipe.fit(x_train,y_train)
+# y_pred = pipe.predict(x_test)
+#
+# print('R2 score',r2_score(y_test,y_pred))            # R2 score 0.8766441310883409
+
+# -------------------- AdaBoost Regression ------------------------
+#
+# pipe.fit(x_train,y_train)
+# y_pred = pipe.predict(x_test)
+#
+# print('R2 score',r2_score(y_test,y_pred))            # R2 score 0.7890329023897401
+
+# -------------------- Gradient Boost Regression ------------------------
+
+# pipe.fit(x_train,y_train)
+# y_pred = pipe.predict(x_test)
+#
+# print('R2 score',r2_score(y_test,y_pred))           # R2 score 0.8680754945662121
+
+# -------------------- XGB Regression ------------------------
+
+# pipe.fit(x_train,y_train)
+# y_pred = pipe.predict(x_test)
+#
+# print('R2 score',r2_score(y_test,y_pred))           # R2 score 0.8521172187173272
+
+
+import pickle
+
+# pickle.dump(df,open('laptop_price_data.pkl','wb'))
+df.to_csv("cleaned_laptop_price_data.csv")
+pickle.dump(pipe,open('RandomForestModel.pkl','wb'))
 
 
 
