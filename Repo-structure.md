@@ -8,6 +8,12 @@
 │   ├── GUI Based TaskManager
 │   │   ├── mang.py
 │   │   └── readme.md
+│   ├── NaviBot-Voice-Assistant
+│   │   ├── README.md
+│   │   ├── app.py
+│   │   ├── main.py
+│   │   ├── map.py
+│   │   └── requirements.txt
 │   └── Research-Snap
 │       ├── README.md
 │       ├── app.py
