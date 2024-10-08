@@ -16,4 +16,10 @@ To get started with this Project, Read the following:
 
 5. after finishing code you can run your program with this command
    uvicorn main:app --reload
-6. http://127.0.0.1:8000 you will get this URL ,copy and paste it to browser and now you can check your api
+6. http://127.0.0.1:8000 you will get this URL,now you can check your api
+7. You can Postman/curl for testing.
+8. How to Check your api ? Follow this steps mentioned below
+   http://127.0.0.1:8000/books/ GET request for retrieving all books
+   http://127.0.0.1:8000/books/ POST request for adding a new book
+   http://127.0.0.1:8000/books/1 GET request for retireving book with bookid = 1
+   http://127.0.0.1:8000/books/1 DELETE request for deleting book with bookid = 1

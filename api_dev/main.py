@@ -33,6 +33,7 @@ def get_database():
 database_dependency = Annotated[Session ,Depends(get_database)]
 
 """ API endpoints """
+#On reaching this /books/  with post request create_book() method will be called
 @app.post('/books/',status_code=status.HTTP_201_CREATED ,response_model=BookBase)
 async def create_book(book:BookBase ,db:database_dependency):
     """
@@ -58,7 +59,7 @@ async def create_book(book:BookBase ,db:database_dependency):
     db.commit()
     db.refresh(new_book)
     return new_book
-
+#On reaching this /books/  with get request create_book() method will be called
 @app.get('/books/',response_model=List[BookBase])
 async def get_all_books(db:database_dependency):
     """ 
