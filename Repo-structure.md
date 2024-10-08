@@ -419,9 +419,25 @@
 │   │   │   ├── model1_(1) (1).ipynb
 │   │   │   └── model2.ipynb
 │   │   └── requirements.txt
-│   └── YOLO-Drowsiness-Detection-main
-│       ├── Drowsiness Detection Tutorial.ipynb
-│       └── README.md
+│   ├── YOLO-Drowsiness-Detection-main
+│   │   ├── Drowsiness Detection Tutorial.ipynb
+│   │   └── README.md
+│   └── smart_attendance_system
+│       ├── README.md
+│       ├── dlib-19.24.99-cp312-cp312-win_amd64.whl
+│       ├── face_rec.py
+│       ├── photos
+│       │   ├── Anirudh.jpg
+│       │   ├── Ashaya.jpg
+│       │   ├── Benak.jpg
+│       │   ├── Biden.jpeg
+│       │   ├── Harsha.jpg
+│       │   ├── Jobs.jpeg
+│       │   ├── Obama.jpg
+│       │   ├── Tata.jpg
+│       │   └── Tesla.jpeg
+│       ├── requirements.txt
+│       └── smart_attendance.py
 ├── Game_Development
 │   ├── Flappy_Bird
 │   │   ├── README.md
