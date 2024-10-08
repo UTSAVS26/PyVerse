@@ -332,6 +332,8 @@
 ├── Blockchain_Development
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
+├── Customer Clust - Customer Segmentation Tool
+├── Customer Clust - Customer Segmentation Tool.ipynb
 ├── Cybersecurity_Tools
 │   ├── CLI-based Port Scanner
 │   │   ├── README.md
@@ -681,10 +683,19 @@
 │   │   │   └── README.md
 │   │   ├── README.md
 │   │   └── requirements.txt
+│   ├── Customer Clust - Customer Segmentation Tool
+│   │   ├── Customer Clust - Customer Segmentation Tool.ipynb
+│   │   ├── Customer Clust - Segmentation Tool.png
+│   │   ├── Mall_Customers.csv
+│   │   └── README.md
 │   ├── Decision Tree Classifier
 │   │   ├── Decision_Tree_Classifier.ipynb
 │   │   ├── bank-additional.csv
 │   │   └── readme.md
+│   ├── Economic Regime Detection
+│   │   ├── Economic Regime Detection.ipynb
+│   │   ├── Generating....png
+│   │   └── README.md
 │   ├── Fake News Detection
 │   │   ├── Images
 │   │   │   ├── Dataset.png
@@ -787,6 +798,7 @@
 │   ├── requirements.txt
 │   ├── translation.py
 │   └── utils.py
+├── Mall_Customers.csv
 ├── PROJECT-README-TEMPLATE.md
 ├── PyVerse - Skill Selection.pdf
 ├── PyVerse - Skill Selection_page-0001.jpg
