@@ -3,9 +3,19 @@
 │   │   ├── README.md
 │   │   ├── main.py
 │   │   └── requirements.txt
-│   └── GUI Based TaskManager
-│       ├── mang.py
-│       └── readme.md
+│   ├── GUI Based TaskManager
+│   │   ├── mang.py
+│   │   └── readme.md
+│   ├── NaviBot-Voice-Assistant
+│   │   ├── README.md
+│   │   ├── app.py
+│   │   ├── main.py
+│   │   ├── map.py
+│   │   └── requirements.txt
+│   └── Research-Snap
+│       ├── README.md
+│       ├── app.py
+│       └── requirements.txt
 ├── Algorithms_and_Data_Structures
 │   ├── BinarySearchTree
 │   │   ├── __init__.py
@@ -18,6 +28,7 @@
 │   ├── Design_and_Analysis_of_Algorithms
 │   │   ├── All_Pair_Shortest_path_problems
 │   │   │   ├── README.md
+│   │   │   ├── Repeated_Dijkstra.py
 │   │   │   ├── floyd_warshall.py
 │   │   │   └── johnsons.py
 │   │   ├── Backtracking
@@ -70,6 +81,7 @@
 │   │   ├── README.md
 │   │   └── Single_Source_Shortest_path_problems
 │   │       ├── README.md
+│   │       ├── a_star.py
 │   │       ├── bellman_ford.py
 │   │       └── dijkstra.py
 │   ├── Linked List
@@ -100,14 +112,40 @@
 │   ├── Stack
 │   │   ├── README.md
 │   │   └── stack.py
-│   └── Trees
-│       ├── Menu_Driven_Code_for_Avl_Tree.py
-│       ├── Menu_Driven_Code_for_Binary_Search_Tree.py
-│       ├── Menu_Driven_Code_for_Binary_Tree.py
-│       ├── Menu_Driven_Code_for_DFS.py
-│       ├── Menu_Driven_Code_for_Tree_Traversals.py
-│       └── README.md
+│   ├── Trees
+│   │   ├── Menu_Driven_Code_for_Avl_Tree.py
+│   │   ├── Menu_Driven_Code_for_Binary_Search_Tree.py
+│   │   ├── Menu_Driven_Code_for_Binary_Tree.py
+│   │   ├── Menu_Driven_Code_for_DFS.py
+│   │   ├── Menu_Driven_Code_for_Tree_Traversals.py
+│   │   └── README.md
+│   ├── avl_tree_visualizer
+│   │   ├── README.md
+│   │   ├── input.txt
+│   │   ├── main.py
+│   │   ├── output.txt
+│   │   └── requirements.txt
+│   └── visualizer
+│       ├── README.md
+│       ├── binary_search_tree_visualizer.py
+│       ├── binary_tree_visualizer.py
+│       ├── heap_sort_visualizer.py
+│       ├── requirements.txt
+│       └── tree_traversal_visualizer.py
 ├── Automation_Tools
+│   ├── Autofill personal info using Aadhar Card Image
+│   │   ├── OCR ADHAAR API
+│   │   │   └── app.py
+│   │   ├── README.md
+│   │   ├── RESULT.md
+│   │   ├── assets
+│   │   │   └── images
+│   │   │       ├── Output.png
+│   │   │       ├── api_response.png
+│   │   │       ├── easyocr.png
+│   │   │       └── tesseract.png
+│   │   ├── extract_aadhar_details.ipynb
+│   │   └── requirements.txt
 │   ├── Image-Tool
 │   │   ├── Image_Tool.py
 │   │   ├── README.md
@@ -125,11 +163,121 @@
 │   ├── Calculator_App
 │   │   ├── README.md
 │   │   └── main.py
+│   ├── Chat App
+│   │   ├── README.md
+│   │   ├── chat_client.py
+│   │   └── chat_server.py
 │   ├── Digital Clock
 │   │   ├── Digital Clock.PNG
 │   │   ├── README.md
 │   │   └── digital_clock.py
 │   ├── Egg_Catcher_Game.py
+│   ├── File Sorter
+│   │   ├── App.py
+│   │   ├── README.md
+│   │   └── Theme
+│   │       ├── Dark screenshot.png
+│   │       ├── Light screenshot.png
+│   │       ├── azure.tcl
+│   │       ├── dark
+│   │       │   ├── box-accent.png
+│   │       │   ├── box-basic.png
+│   │       │   ├── box-hover.png
+│   │       │   ├── box-invalid.png
+│   │       │   ├── button-hover.png
+│   │       │   ├── card.png
+│   │       │   ├── check-accent.png
+│   │       │   ├── check-basic.png
+│   │       │   ├── check-hover.png
+│   │       │   ├── check-tri-accent.png
+│   │       │   ├── check-tri-basic.png
+│   │       │   ├── check-tri-hover.png
+│   │       │   ├── circle-accent.png
+│   │       │   ├── circle-basic.png
+│   │       │   ├── circle-hover.png
+│   │       │   ├── combo-button-basic.png
+│   │       │   ├── combo-button-focus.png
+│   │       │   ├── combo-button-hover.png
+│   │       │   ├── down-accent.png
+│   │       │   ├── down.png
+│   │       │   ├── empty.png
+│   │       │   ├── hor-accent.png
+│   │       │   ├── hor-basic.png
+│   │       │   ├── hor-hover.png
+│   │       │   ├── notebook.png
+│   │       │   ├── off-basic.png
+│   │       │   ├── on-accent.png
+│   │       │   ├── on-basic.png
+│   │       │   ├── outline-basic.png
+│   │       │   ├── outline-hover.png
+│   │       │   ├── radio-accent.png
+│   │       │   ├── radio-basic.png
+│   │       │   ├── radio-hover.png
+│   │       │   ├── radio-tri-accent.png
+│   │       │   ├── radio-tri-basic.png
+│   │       │   ├── radio-tri-hover.png
+│   │       │   ├── rect-accent-hover.png
+│   │       │   ├── rect-accent.png
+│   │       │   ├── rect-basic.png
+│   │       │   ├── rect-hover.png
+│   │       │   ├── right.png
+│   │       │   ├── scale-hor.png
+│   │       │   ├── scale-vert.png
+│   │       │   ├── separator.png
+│   │       │   ├── size.png
+│   │       │   ├── tab-basic.png
+│   │       │   ├── tab-disabled.png
+│   │       │   ├── tab-hover.png
+│   │       │   ├── tick-hor-accent.png
+│   │       │   ├── tick-hor-basic.png
+│   │       │   ├── tick-hor-hover.png
+│   │       │   ├── tick-vert-accent.png
+│   │       │   ├── tick-vert-basic.png
+│   │       │   ├── tick-vert-hover.png
+│   │       │   ├── tree-basic.png
+│   │       │   ├── tree-pressed.png
+│   │       │   ├── up-accent.png
+│   │       │   ├── up.png
+│   │       │   ├── vert-accent.png
+│   │       │   ├── vert-basic.png
+│   │       │   └── vert-hover.png
+│   │       ├── example.py
+│   │       └── light
+│   │           ├── box-accent.png
+│   │           ├── box-basic.png
+│   │           ├── box-hover.png
+│   │           ├── box-invalid.png
+│   │           ├── button-hover.png
+│   │           ├── card.png
+│   │           ├── check-accent.png
+│   │           ├── check-basic.png
+│   │           ├── check-hover.png
+│   │           ├── check-tri-accent.png
+│   │           ├── check-tri-basic.png
+│   │           ├── check-tri-hover.png
+│   │           ├── circle-accent.png
+│   │           ├── circle-basic.png
+│   │           ├── circle-hover.png
+│   │           ├── combo-button-basic.png
+│   │           ├── combo-button-focus.png
+│   │           ├── combo-button-hover.png
+│   │           ├── down-accent.png
+│   │           ├── down.png
+│   │           ├── empty.png
+│   │           ├── hor-accent.png
+│   │           ├── hor-basic.png
+│   │           ├── hor-hover.png
+│   │           ├── notebook.png
+│   │           ├── off-basic.png
+│   │           ├── off-hover.png
+│   │           ├── on-accent.png
+│   │           ├── on-basic.png
+│   │           ├── on-hover.png
+│   │           ├── outline-basic.png
+│   │           ├── outline-hover.png
+│   │           ├── radio-accent.png
+│   │           ├── radio-basic.png
+│   │           └── radio-hover.png
 │   ├── Morse Code Translator with GUI
 │   │   ├── README.md
 │   │   ├── main.py
@@ -138,6 +286,11 @@
 │   ├── Number Guessing Game
 │   │   ├── README.md
 │   │   └── number_guessing_game.py
+│   ├── PDF Quering
+│   │   ├── README.md
+│   │   ├── app.py
+│   │   ├── config.toml
+│   │   └── requirements.txt
 │   ├── Password-Generator
 │   │   ├── README.md
 │   │   ├── passwordGenerator.py
@@ -154,6 +307,9 @@
 │   │   │   ├── financials.html
 │   │   │   └── index.html
 │   │   └── server.py
+│   ├── Sudoku Solver
+│   │   ├── README.md
+│   │   └── sudoku.py
 │   ├── Tasker.py
 │   ├── Temperature
 │   │   ├── README.md
@@ -177,10 +333,15 @@
 ├── Blockchain_Development
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
+├── Customer Clust - Customer Segmentation Tool
+├── Customer Clust - Customer Segmentation Tool.ipynb
 ├── Cybersecurity_Tools
 │   ├── CLI-based Port Scanner
 │   │   ├── README.md
 │   │   └── port-scanner.py
+│   ├── Encryption_Decryption app
+│   │   ├── README.md
+│   │   └── encrypt_decrypt.py
 │   └── Pixel_Decoder
 │       └── pixel_decoder.py
 ├── Data Analytics
@@ -193,6 +354,22 @@
 │   ├── DataViz_Snippets.ipynb
 │   └── Readme.md
 ├── Data_Science
+│   ├── AI Virtual Painter
+│   │   ├── HandTrackingModule.py
+│   │   ├── Header Files
+│   │   │   ├── header 1.png
+│   │   │   ├── header 2.png
+│   │   │   ├── header 3.png
+│   │   │   └── header 4.png
+│   │   ├── Images
+│   │   │   ├── Project.png
+│   │   │   └── treediagram.png
+│   │   ├── Readme.md
+│   │   ├── VirtualPainter.py
+│   │   ├── __pycache__
+│   │   │   ├── HandTrackingModule.cpython-312.pyc
+│   │   │   └── HandTrackingModule.cpython-39.pyc
+│   │   └── requirements.txt
 │   ├── Data-science.md
 │   ├── Whatsapp_Chat_Analyzer
 │   │   ├── README.md
@@ -212,6 +389,11 @@
 │   │   │   ├── top_days_messages.png
 │   │   │   └── word_cloud.png
 │   │   └── main.py
+│   ├── analysis_covid_trends
+│   │   ├── README.md
+│   │   ├── WHO-COVID-19-global-daily-data.csv
+│   │   ├── main.py
+│   │   └── requirements.txt
 │   ├── customer_segmentation
 │   │   ├── Customer_Segmentation.ipynb
 │   │   ├── Mall_Customers.csv
@@ -248,6 +430,29 @@
 │   │   ├── Model
 │   │   │   └── bird_species_classification.ipynb
 │   │   └── Readme.md
+│   ├── Brain Tumor Detection
+│   │   ├── Dataset
+│   │   │   └── README.md
+│   │   ├── Images
+│   │   │   ├── README.md
+│   │   │   ├── image-1.png
+│   │   │   ├── image-10.png
+│   │   │   ├── image-11.png
+│   │   │   ├── image-2.png
+│   │   │   ├── image-3.png
+│   │   │   ├── image-4.png
+│   │   │   ├── image-5.png
+│   │   │   ├── image-6.png
+│   │   │   ├── image-7.png
+│   │   │   ├── image-8.png
+│   │   │   ├── image-9.png
+│   │   │   ├── image.png
+│   │   │   └── image12.png
+│   │   ├── Model
+│   │   │   ├── README.md
+│   │   │   └── brain_tumor_model.ipynb
+│   │   ├── README.md
+│   │   └── requirements.txt
 │   ├── Dog Species Classification
 │   │   ├── DataSet
 │   │   │   └── readme.md
@@ -301,6 +506,15 @@
 │   │   │   └── CNN_handwritten_digit_recogniser.ipynb
 │   │   ├── pie chart.png
 │   │   └── requirement.txt
+│   ├── Object detection
+│   │   ├── Dataset
+│   │   │   └── Readme.md
+│   │   ├── Images
+│   │   │   ├── Input.png
+│   │   │   └── Output.png
+│   │   ├── Model
+│   │   │   └── main.py
+│   │   └── requirements.txt
 │   ├── Plant Disease Detection
 │   │   ├── Final tensorflow Models
 │   │   │   ├── cotton.h5
@@ -350,9 +564,36 @@
 │   │   │   ├── model1_(1) (1).ipynb
 │   │   │   └── model2.ipynb
 │   │   └── requirements.txt
-│   └── YOLO-Drowsiness-Detection-main
-│       ├── Drowsiness Detection Tutorial.ipynb
-│       └── README.md
+│   ├── YOLO-Drowsiness-Detection-main
+│   │   ├── Drowsiness Detection Tutorial.ipynb
+│   │   └── README.md
+│   ├── smart_attendance_system
+│   │   ├── README.md
+│   │   ├── dlib-19.24.99-cp312-cp312-win_amd64.whl
+│   │   ├── face_rec.py
+│   │   ├── photos
+│   │   │   ├── Anirudh.jpg
+│   │   │   ├── Ashaya.jpg
+│   │   │   ├── Benak.jpg
+│   │   │   ├── Biden.jpeg
+│   │   │   ├── Harsha.jpg
+│   │   │   ├── Jobs.jpeg
+│   │   │   ├── Obama.jpg
+│   │   │   ├── Tata.jpg
+│   │   │   └── Tesla.jpeg
+│   │   ├── requirements.txt
+│   │   └── smart_attendance.py
+│   └── toxicity insult analyser
+│       ├── Toxicity.ipynb
+│       └── jigsaw-toxic-comment-classification-challenge
+│           ├── sample_submission.csv
+│           │   └── sample_submission.csv
+│           ├── test.csv
+│           │   └── test.csv
+│           ├── test_labels.csv
+│           │   └── test_labels.csv
+│           └── train.csv
+│               └── train.csv
 ├── Game_Development
 │   ├── Flappy_Bird
 │   │   ├── README.md
@@ -373,10 +614,25 @@
 │   ├── KBC
 │   │   ├── KBCquiz.py
 │   │   └── README.md
-│   └── MasterMind
+│   ├── MasterMind
+│   │   ├── README.md
+│   │   └── mastermind.py
+│   ├── Number Guessing Game
+│   │   ├── README.md
+│   │   └── main.py
+│   └── Snake_Game
 │       ├── README.md
-│       └── mastermind.py
+│       └── Snake.py
 ├── Image processing
+│   ├── Lane Line Detection [OPEN CV]
+│   │   ├── README.md
+│   │   ├── binaryimage.png
+│   │   ├── finalresult.gif
+│   │   ├── gui.py
+│   │   ├── instancesegmentimage.png
+│   │   ├── main.py
+│   │   ├── testimageresult.png
+│   │   └── testimg.jpg
 │   └── Number plate detection
 │       ├── README.md
 │       ├── model
@@ -393,6 +649,7 @@
 │       └── requirements.txt
 ├── LICENSE
 ├── Machine_Learning
+│   ├── AI_Text_Detector
 │   ├── Absent_Time_prediction_using_HyperParameter_Tuning
 │   │   ├── HyperParameter Tuning.md
 │   │   ├── Model.md
@@ -452,10 +709,19 @@
 │   │   │   └── README.md
 │   │   ├── README.md
 │   │   └── requirements.txt
+│   ├── Customer Clust - Customer Segmentation Tool
+│   │   ├── Customer Clust - Customer Segmentation Tool.ipynb
+│   │   ├── Customer Clust - Segmentation Tool.png
+│   │   ├── Mall_Customers.csv
+│   │   └── README.md
 │   ├── Decision Tree Classifier
 │   │   ├── Decision_Tree_Classifier.ipynb
 │   │   ├── bank-additional.csv
 │   │   └── readme.md
+│   ├── Economic Regime Detection
+│   │   ├── Economic Regime Detection.ipynb
+│   │   ├── Generating....png
+│   │   └── README.md
 │   ├── Fake News Detection
 │   │   ├── Images
 │   │   │   ├── Dataset.png
@@ -491,6 +757,34 @@
 │   ├── Multivitamine Prediction
 │   │   ├── multivitamins_data.csv
 │   │   └── scrape.py
+│   ├── Palm-Chatbot-main
+│   │   ├── README.md
+│   │   ├── angular.json
+│   │   ├── package-lock.json
+│   │   ├── package.json
+│   │   ├── server
+│   │   │   ├── index.js
+│   │   │   ├── package-lock.json
+│   │   │   └── package.json
+│   │   ├── src
+│   │   │   ├── app
+│   │   │   │   ├── app.component.css
+│   │   │   │   ├── app.component.html
+│   │   │   │   ├── app.component.ts
+│   │   │   │   ├── app.config.ts
+│   │   │   │   ├── chat-content.interface.ts
+│   │   │   │   ├── chat.service.ts
+│   │   │   │   └── line-break.pipe.ts
+│   │   │   ├── assets
+│   │   │   │   ├── avatar-chatbot.png
+│   │   │   │   └── avatar-user.png
+│   │   │   ├── favicon.ico
+│   │   │   ├── index.html
+│   │   │   ├── main.ts
+│   │   │   └── styles.css
+│   │   ├── tsconfig.app.json
+│   │   ├── tsconfig.json
+│   │   └── tsconfig.spec.json
 │   ├── Predicting Exam Score Using linear Regression
 │   │   ├── Dataset
 │   │   │   ├── README.md
@@ -519,12 +813,18 @@
 │   │   ├── images.jpg
 │   │   ├── train.csv
 │   │   └── twitter2-720x540.jpg
+│   ├── Zomato Restaurant Clustering and Sentiment Analysis
+│   │   ├── Readme.md
+│   │   ├── Zomato Restaurant names and Metadata.csv
+│   │   ├── Zomato Restaurant reviews.csv
+│   │   └── Zomato_Restaurant_Clustering_and_Sentiment_Analysis.ipynb
 │   ├── assets
 │   │   └── styles.css
 │   ├── main.py
 │   ├── requirements.txt
 │   ├── translation.py
 │   └── utils.py
+├── Mall_Customers.csv
 ├── PROJECT-README-TEMPLATE.md
 ├── PyVerse - Skill Selection.pdf
 ├── PyVerse - Skill Selection_page-0001.jpg
@@ -567,6 +867,57 @@
 │   │   ├── index.html
 │   │   ├── script.js
 │   │   └── styles.css
+│   ├── DocXtract
+│   │   ├── README.md
+│   │   ├── package-lock.json
+│   │   ├── package.json
+│   │   ├── public
+│   │   │   ├── favicon.ico
+│   │   │   ├── index.html
+│   │   │   ├── logo192.png
+│   │   │   ├── logo512.png
+│   │   │   ├── manifest.json
+│   │   │   └── robots.txt
+│   │   └── src
+│   │       ├── App.css
+│   │       ├── App.js
+│   │       ├── App.test.js
+│   │       ├── components
+│   │       │   └── Form.js
+│   │       ├── index.css
+│   │       ├── index.js
+│   │       ├── logo.svg
+│   │       ├── reportWebVitals.js
+│   │       └── setupTests.js
+│   ├── Invoice-Generator
+│   │   ├── README.md
+│   │   ├── package-lock.json
+│   │   ├── package.json
+│   │   ├── postcss.config.js
+│   │   ├── public
+│   │   │   ├── favicon.ico
+│   │   │   ├── index.html
+│   │   │   ├── logo192.png
+│   │   │   ├── logo512.png
+│   │   │   ├── manifest.json
+│   │   │   └── robots.txt
+│   │   ├── src
+│   │   │   ├── App.css
+│   │   │   ├── App.js
+│   │   │   ├── App.test.js
+│   │   │   ├── components
+│   │   │   │   ├── InvoiceField.jsx
+│   │   │   │   ├── InvoiceForm.jsx
+│   │   │   │   ├── InvoiceItem.jsx
+│   │   │   │   └── InvoiceModal.jsx
+│   │   │   ├── helpers
+│   │   │   │   └── IncrementString.jsx
+│   │   │   ├── index.css
+│   │   │   ├── index.js
+│   │   │   ├── logo.svg
+│   │   │   ├── reportWebVitals.js
+│   │   │   └── setupTests.js
+│   │   └── tailwind.config.js
 │   ├── Web_Developement_resources
 │   │   ├── 25_Years_of_Model_Driven_Web_ Engineering_What_we_Achieved_What_is_Missing_Author_Gustavo_Rossi_Matias_Urbieta_Damiano_Distante.pdf
 │   │   ├── Best_Practices_in_Designing_Websites.pdf
