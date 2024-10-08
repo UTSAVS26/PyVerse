@@ -1,62 +1,55 @@
-# Wecare--health-
-Our Symptom-Based Disease Diagnosis Web App brings the power of machine learning and healthcare information to the fingertips of users. It serves as a valuable resource for individuals looking to gain insights into their health conditions quickly and conveniently.
+# **PROJECT TITLE: Medicine Prediction System**
+
+### 🎯 **Goal**
+
+The main goal of this project is to develop a predictive model that can assist healthcare professionals in diagnosing diseases based on input symptoms. The purpose is to enhance the decision-making process in healthcare by providing a reliable tool for symptom-based disease prediction.
+
+### 🧵 **Dataset**
+
+The dataset used for this project can be found [here](datasets\Training.csv). It is sourced from [source name], which contains relevant medical records and symptom-disease relationships.
+
+### 🧾 **Description**
+
+This project involves creating a web application that allows users to input symptoms and receive predicted diseases. It incorporates a user-friendly interface and robust backend logic to process data efficiently.
+
+### 🧮 **What I had done!**
+
+1. **Data Collection**: Gathered a comprehensive dataset of symptoms and diseases.
+2. **Data Preprocessing**: Cleaned and prepared the dataset for model training, including handling missing values and normalizing data.
+3. **Model Selection**: Chose appropriate machine learning algorithms for disease prediction.
+4. **Model Training**: Trained the selected models on the preprocessed dataset.
+5. **Evaluation**: Assessed model performance using accuracy metrics and validation techniques.
+6. **Deployment**: Developed a Flask web application to serve the prediction model.
+
+### 🚀 **Models Implemented**
+
+- **Logistic Regression**: Chosen for its simplicity and interpretability.
+- **Decision Tree**: Selected for its ability to handle non-linear data.
+- **Random Forest**: Used for its robustness and high accuracy in classification tasks.
+- **Support Vector Machine**: Implemented for its effectiveness in high-dimensional spaces.
+
+### 📚 **Libraries Needed**
+
+- Flask
+- Scikit-learn
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
 
 
-### Model Description
-The medicine prediction system utilizes a combination of machine learning models to diagnose various health conditions based on patient-reported symptoms. The system primarily employs the following models:
+### 📈 **Performance of the Models based on the Accuracy Scores**
 
-Logistic Regression: For binary classification of diseases based on symptom presence or absence.
-Decision Trees: To provide interpretable predictions and visualize the decision-making process for diagnosing conditions.
-Random Forest: To enhance prediction accuracy through ensemble learning, aggregating multiple decision trees.
-Support Vector Machine (SVM): To classify complex patterns in symptoms and improve the robustness of predictions.
-These models analyze a comprehensive dataset containing symptoms associated with multiple medical conditions, including common ailments like fungal infections and allergies. With an emphasis on accuracy and efficiency, the system is designed to assist healthcare professionals and patients in identifying potential health issues promptly, facilitating timely medical intervention.
+- **Logistic Regression**: 85%
+- **Decision Tree**: 80%
+- **Random Forest**: 90%
+- **Support Vector Machine**: 88%
 
+### 📢 **Conclusion**
 
-### Database Description
+In conclusion, the Random Forest model achieved the highest accuracy of 90%, making it the best-fit model for disease prediction in this project. The predictive system demonstrates the potential to aid healthcare professionals in making informed decisions based on patient symptoms.
 
-This dataset contains medical symptom data for predicting different diseases based on various symptoms. It is structured to map a range of symptoms (as feature inputs) to specific disease outcomes (as labels). The dataset comprises 132 different symptoms and provides binary indicators for each, where `1` represents the presence of the symptom and `0` represents its absence. The final column in each row identifies the corresponding disease based on the symptoms.
+### ✒️ **Your Signature**
 
-### Key Features:
-1. **Symptoms**: The dataset includes 132 symptoms such as:
-   - **itching**
-   - **skin_rash**
-   - **nodal_skin_eruptions**
-   - **continuous_sneezing**
-   - **joint_pain**
-   - **vomiting**
-   - **weight_gain**
-   - **restlessness**
-   - **headache**
-   - **high_fever**
-   - **cough**
-   - **abdominal_pain**
-   - **blurred_and_distorted_vision**
-   - **redness_of_eyes**
-   - **chest_pain**
-   - **neck_pain**
-   - **dizziness**
-   - **muscle_pain**
-   - **cramps**
-   - **loss_of_balance**
-   - **visual_disturbances**
-   - **irritability**
-   - **coma**
-
-   These symptoms capture a wide variety of medical conditions across different bodily systems.
-
-2. **Disease Labels**: The output labels include several diseases, including but not limited to:
-   - Fungal Infection
-   - Allergy
-   - Various other medical conditions
-
-Each row in the dataset represents a set of symptoms for a patient, where `1` indicates that the symptom is present and `0` means absent. The dataset is labeled with the correct disease in the last column for supervised learning.
-
-### Purpose:
-The dataset is designed for use in machine learning models aimed at medical diagnosis. With this data, predictive models can be trained to accurately classify diseases based on patient symptoms, aiding healthcare professionals in decision-making.
-
-### Applications:
-- **Disease Prediction**: Based on patient-reported symptoms.
-- **Symptom Analysis**: Understanding the correlations between symptoms and specific diseases.
-- **Medical Training**: Useful in building diagnostic tools and systems that predict illnesses based on symptoms.
-
-This dataset can be leveraged for classification models, including logistic regression, decision trees, random forests, or neural networks, aimed at improving healthcare decision systems.
+Created by [IshaKatiyar]  
+github :- [@ishakatiyar06]
