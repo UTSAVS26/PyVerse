@@ -216,20 +216,23 @@
 │   ├── DataViz_Snippets.ipynb
 │   └── Readme.md
 ├── Data_Science
-│   ├── Data-science.md
 │   ├── AI Virtual Painter
-│       ├── Header Files
-│           ├── header 1.png
-│           ├── header 2.png
-│           ├── header 3.png
-│           ├── header 4.png
-│       ├── Images
-│           ├── Project.png
-│           ├── treediagram.png
-│       ├── HandTrackingModule.py
-│       ├── Readme.md
-│       ├── requirements.txt
-│       ├── VirtualPainter.py
+│   │   ├── HandTrackingModule.py
+│   │   ├── Header Files
+│   │   │   ├── header 1.png
+│   │   │   ├── header 2.png
+│   │   │   ├── header 3.png
+│   │   │   └── header 4.png
+│   │   ├── Images
+│   │   │   ├── Project.png
+│   │   │   └── treediagram.png
+│   │   ├── Readme.md
+│   │   ├── VirtualPainter.py
+│   │   ├── __pycache__
+│   │   │   ├── HandTrackingModule.cpython-312.pyc
+│   │   │   └── HandTrackingModule.cpython-39.pyc
+│   │   └── requirements.txt
+│   ├── Data-science.md
 │   ├── Whatsapp_Chat_Analyzer
 │   │   ├── README.md
 │   │   ├── Sample_Data
