@@ -269,6 +269,29 @@
 │   │   ├── Model
 │   │   │   └── bird_species_classification.ipynb
 │   │   └── Readme.md
+│   ├── Brain Tumor Detection
+│   │   ├── Dataset
+│   │   │   └── README.md
+│   │   ├── Images
+│   │   │   ├── README.md
+│   │   │   ├── image-1.png
+│   │   │   ├── image-10.png
+│   │   │   ├── image-11.png
+│   │   │   ├── image-2.png
+│   │   │   ├── image-3.png
+│   │   │   ├── image-4.png
+│   │   │   ├── image-5.png
+│   │   │   ├── image-6.png
+│   │   │   ├── image-7.png
+│   │   │   ├── image-8.png
+│   │   │   ├── image-9.png
+│   │   │   ├── image.png
+│   │   │   └── image12.png
+│   │   ├── Model
+│   │   │   ├── README.md
+│   │   │   └── brain_tumor_model.ipynb
+│   │   ├── README.md
+│   │   └── requirements.txt
 │   ├── Dog Species Classification
 │   │   ├── DataSet
 │   │   │   └── readme.md
