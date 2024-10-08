@@ -24,7 +24,7 @@ This is a Streamlit-based web application that allows users to upload a PDF file
 1. Clone the repository in your local machine:
    ```sh
    git clone https://github.com/<your-username>/PyVerse.git
-   cd TextToTalk
+   cd Machine_Learning/TextToTalk
    ```
 
 2. Create a virtual environment:
