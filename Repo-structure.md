@@ -5,9 +5,13 @@
 │   │   ├── README.md
 │   │   ├── main.py
 │   │   └── requirements.txt
-│   └── GUI Based TaskManager
-│       ├── mang.py
-│       └── readme.md
+│   ├── GUI Based TaskManager
+│   │   ├── mang.py
+│   │   └── readme.md
+│   └── Research-Snap
+│       ├── README.md
+│       ├── app.py
+│       └── requirements.txt
 ├── Algorithms_and_Data_Structures
 │   ├── BinarySearchTree
 │   │   ├── __init__.py
@@ -189,6 +193,9 @@
 │   ├── CLI-based Port Scanner
 │   │   ├── README.md
 │   │   └── port-scanner.py
+│   ├── Encryption_Decryption app
+│   │   ├── README.md
+│   │   └── encrypt_decrypt.py
 │   └── Pixel_Decoder
 │       └── pixel_decoder.py
 ├── Data Analytics
