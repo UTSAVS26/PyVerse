@@ -170,6 +170,9 @@
 │   │   │   ├── financials.html
 │   │   │   └── index.html
 │   │   └── server.py
+│   ├── Sudoku Solver
+│   │   ├── README.md
+│   │   └── sudoku.py
 │   ├── Tasker.py
 │   ├── Temperature
 │   │   ├── README.md
