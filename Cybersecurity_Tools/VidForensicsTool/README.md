@@ -27,8 +27,8 @@ Follow these steps to set up and run the Video Forensics Analysis Tool:
 ### 1. Clone the Repository
 
 ```sh
-git clone <repository-url>
-cd VidForensicsTool
+git clone https://github.com/UTSAVS26/PyVerse.git
+cd Cybersecurity_Tools/VidForensicsTool
 ```
 ### 2. Create a virtual environment:
    ```sh
