@@ -1,5 +1,3 @@
-  Tic-Tac-Toe body { font-family: Arial, sans-serif; line-height: 1.6; } h1 { color: #333; } pre { background: #f4f4f4; padding: 10px; border-radius: 5px; } code { font-family: monospace; background: #eaeaea; padding: 2px 4px; border-radius: 4px; }
-
 Tic-Tac-Toe 🎮
 ==============
 
