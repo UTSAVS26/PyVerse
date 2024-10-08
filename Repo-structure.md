@@ -583,6 +583,34 @@
 │   ├── Multivitamine Prediction
 │   │   ├── multivitamins_data.csv
 │   │   └── scrape.py
+│   ├── Palm-Chatbot-main
+│   │   ├── README.md
+│   │   ├── angular.json
+│   │   ├── package-lock.json
+│   │   ├── package.json
+│   │   ├── server
+│   │   │   ├── index.js
+│   │   │   ├── package-lock.json
+│   │   │   └── package.json
+│   │   ├── src
+│   │   │   ├── app
+│   │   │   │   ├── app.component.css
+│   │   │   │   ├── app.component.html
+│   │   │   │   ├── app.component.ts
+│   │   │   │   ├── app.config.ts
+│   │   │   │   ├── chat-content.interface.ts
+│   │   │   │   ├── chat.service.ts
+│   │   │   │   └── line-break.pipe.ts
+│   │   │   ├── assets
+│   │   │   │   ├── avatar-chatbot.png
+│   │   │   │   └── avatar-user.png
+│   │   │   ├── favicon.ico
+│   │   │   ├── index.html
+│   │   │   ├── main.ts
+│   │   │   └── styles.css
+│   │   ├── tsconfig.app.json
+│   │   ├── tsconfig.json
+│   │   └── tsconfig.spec.json
 │   ├── Predicting Exam Score Using linear Regression
 │   │   ├── Dataset
 │   │   │   ├── README.md
