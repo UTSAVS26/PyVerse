@@ -10,14 +10,13 @@
 2. [Features](#-features)
 3. [How It Works](#-how-it-works)
 4. [Tech Stack](#-tech-stack)
-5. [Project Structure](#-project-structure)
-6. [Installation](#-installation)
-7. [Usage](#-usage)
-8. [Visualizations](#-visualizations)
-9. [Machine Learning Models](#-machine-learning-models)
-10. [Goals](#-goals)
-11. [License](#-license)
-12. [Contact](#-contact)
+5. [Installation](#-installation)
+6. [Usage](#-usage)
+7. [Visualizations](#-visualizations)
+8. [Machine Learning Models](#-machine-learning-models)
+9. [Goals](#-goals)
+10. [License](#-license)
+11. [Contact](#-contact)
 
 
 ## 📋 Overview
@@ -50,18 +49,6 @@ Customer Clust is a powerful customer segmentation tool designed to categorize c
   - scikit-learn 📚
   - matplotlib 📉
   - seaborn 📈
-
-## 🗂️ Project Structure
-
-/Customer_Clust/
-│
-├── data/                     # 📂 Contains customer datasets
-├── notebooks/                # 📓 Jupyter notebooks for development and exploration
-├── scripts/                  # 📝 Python scripts for data preprocessing and model training
-├── results/                  # 📊 Final output of the model, including visualizations
-└── README.md                 # 📄 This file
-
-
 
 ## 🚀 Getting Started
 
