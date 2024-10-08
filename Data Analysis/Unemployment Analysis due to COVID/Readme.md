@@ -50,7 +50,4 @@ This project provides valuable insights into the socio-economic impact of the pa
 
 ---
 
-### ✒️ Your Signature
-**Shreya Tripathy**  
-[LinkedIn](https://www.linkedin.com/in/shreyatripathy7/) | [GitHub](https://github.com/Shreya7tripathy)
-
+Thanks :)
