@@ -47,6 +47,7 @@ Customer Clust is a powerful customer segmentation tool designed to categorize c
   - seaborn 📈
 
 ## 🗂️ Project Structure
+
 /Customer_Clust/
 │
 ├── data/                     # 📂 Contains customer datasets
