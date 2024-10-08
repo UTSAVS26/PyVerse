@@ -179,6 +179,11 @@
 │   ├── Number Guessing Game
 │   │   ├── README.md
 │   │   └── number_guessing_game.py
+│   ├── PDF Quering
+│   │   ├── README.md
+│   │   ├── app.py
+│   │   ├── config.toml
+│   │   └── requirements.txt
 │   ├── Password-Generator
 │   │   ├── README.md
 │   │   ├── passwordGenerator.py
