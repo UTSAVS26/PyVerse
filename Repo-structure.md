@@ -137,6 +137,10 @@
 │   ├── Calculator_App
 │   │   ├── README.md
 │   │   └── main.py
+│   ├── Chat App
+│   │   ├── README.md
+│   │   ├── chat_client.py
+│   │   └── chat_server.py
 │   ├── Digital Clock
 │   │   ├── Digital Clock.PNG
 │   │   ├── README.md
