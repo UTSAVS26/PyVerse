@@ -482,6 +482,7 @@
 │       └── requirements.txt
 ├── LICENSE
 ├── Machine_Learning
+│   ├── AI_Text_Detector
 │   ├── Absent_Time_prediction_using_HyperParameter_Tuning
 │   │   ├── HyperParameter Tuning.md
 │   │   ├── Model.md
@@ -661,6 +662,57 @@
 │   │   ├── index.html
 │   │   ├── script.js
 │   │   └── styles.css
+│   ├── DocXtract
+│   │   ├── README.md
+│   │   ├── package-lock.json
+│   │   ├── package.json
+│   │   ├── public
+│   │   │   ├── favicon.ico
+│   │   │   ├── index.html
+│   │   │   ├── logo192.png
+│   │   │   ├── logo512.png
+│   │   │   ├── manifest.json
+│   │   │   └── robots.txt
+│   │   └── src
+│   │       ├── App.css
+│   │       ├── App.js
+│   │       ├── App.test.js
+│   │       ├── components
+│   │       │   └── Form.js
+│   │       ├── index.css
+│   │       ├── index.js
+│   │       ├── logo.svg
+│   │       ├── reportWebVitals.js
+│   │       └── setupTests.js
+│   ├── Invoice-Generator
+│   │   ├── README.md
+│   │   ├── package-lock.json
+│   │   ├── package.json
+│   │   ├── postcss.config.js
+│   │   ├── public
+│   │   │   ├── favicon.ico
+│   │   │   ├── index.html
+│   │   │   ├── logo192.png
+│   │   │   ├── logo512.png
+│   │   │   ├── manifest.json
+│   │   │   └── robots.txt
+│   │   ├── src
+│   │   │   ├── App.css
+│   │   │   ├── App.js
+│   │   │   ├── App.test.js
+│   │   │   ├── components
+│   │   │   │   ├── InvoiceField.jsx
+│   │   │   │   ├── InvoiceForm.jsx
+│   │   │   │   ├── InvoiceItem.jsx
+│   │   │   │   └── InvoiceModal.jsx
+│   │   │   ├── helpers
+│   │   │   │   └── IncrementString.jsx
+│   │   │   ├── index.css
+│   │   │   ├── index.js
+│   │   │   ├── logo.svg
+│   │   │   ├── reportWebVitals.js
+│   │   │   └── setupTests.js
+│   │   └── tailwind.config.js
 │   ├── Web_Developement_resources
 │   │   ├── 25_Years_of_Model_Driven_Web_ Engineering_What_we_Achieved_What_is_Missing_Author_Gustavo_Rossi_Matias_Urbieta_Damiano_Distante.pdf
 │   │   ├── Best_Practices_in_Designing_Websites.pdf
