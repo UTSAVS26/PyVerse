@@ -368,6 +368,15 @@
 │   │   │   └── CNN_handwritten_digit_recogniser.ipynb
 │   │   ├── pie chart.png
 │   │   └── requirement.txt
+│   ├── Object detection
+│   │   ├── Dataset
+│   │   │   └── Readme.md
+│   │   ├── Images
+│   │   │   ├── Input.png
+│   │   │   └── Output.png
+│   │   ├── Model
+│   │   │   └── main.py
+│   │   └── requirements.txt
 │   ├── Plant Disease Detection
 │   │   ├── Final tensorflow Models
 │   │   │   ├── cotton.h5
