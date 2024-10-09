@@ -25,7 +25,7 @@ body:
     id: latest-pr-link
     attributes:
       label: Latest Merged PR Link
-      description: Please provide the link to the latest merged PR.
+      description: Please provide the link to the latest merged PR. (Write N/A if this is your first issue)
       placeholder: Enter the URL of the latest merged PR here.
     validations:
       required: true
