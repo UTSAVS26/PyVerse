@@ -55,7 +55,8 @@
 │   │   │   ├── README.md
 │   │   │   ├── lcs.py
 │   │   │   ├── matrix_multiplication.py
-│   │   │   └── nth_fibonacci.py
+│   │   │   ├── nth_fibonacci.py
+│   │   │   └── two_city_scheduling-3d-dp.py
 │   │   ├── Graph_Traversing
 │   │   │   ├── BFS.py
 │   │   │   ├── DFS.py
@@ -174,6 +175,9 @@
 │   │   ├── README.md
 │   │   └── digital_clock.py
 │   ├── Egg_Catcher_Game.py
+│   ├── Email_Automation
+│   │   ├── README.md
+│   │   └── email_automation.py
 │   ├── File Sorter
 │   │   ├── App.py
 │   │   ├── README.md
@@ -346,6 +350,15 @@
 │   │   └── encrypt_decrypt.py
 │   └── Pixel_Decoder
 │       └── pixel_decoder.py
+├── Data Analysis
+│   ├── Readme.md
+│   └── Unemployment Analysis due to COVID
+│       ├── Readme.md
+│       ├── UNEMPLOYMENT_ANALYSIS.ipynb
+│       ├── Unemployment_Rate_upto_11_2020.csv
+│       ├── impact_chart.png
+│       ├── line_chart.png
+│       └── pie.png
 ├── Data Analytics
 │   └── IPL Analysis
 │       ├── IPL_Analysis.ipynb
@@ -613,6 +626,22 @@
 │   │       ├── bluebird-midflap.png
 │   │       ├── bluebird-upflap.png
 │   │       └── pipe-green.png
+│   ├── Hangman-main
+│   │   ├── README.md
+│   │   ├── hangman.py
+│   │   └── images
+│   │       ├── hang0.png
+│   │       ├── hang1.png
+│   │       ├── hang10.png
+│   │       ├── hang11.png
+│   │       ├── hang2.png
+│   │       ├── hang3.png
+│   │       ├── hang4.png
+│   │       ├── hang5.png
+│   │       ├── hang6.png
+│   │       ├── hang7.png
+│   │       ├── hang8.png
+│   │       └── hang9.png
 │   ├── KBC
 │   │   ├── KBCquiz.py
 │   │   └── README.md
@@ -622,9 +651,15 @@
 │   ├── Number Guessing Game
 │   │   ├── README.md
 │   │   └── main.py
-│   └── Snake_Game
-│       ├── README.md
-│       └── Snake.py
+│   ├── Rock-Paper-Scissors
+│   │   ├── RPS.py
+│   │   └── Readme.md
+│   ├── Snake_Game
+│   │   ├── README.md
+│   │   └── Snake.py
+│   └── Trivia
+│       ├── Readme.md
+│       └── Trivia.py
 ├── Image processing
 │   ├── Lane Line Detection [OPEN CV]
 │   │   ├── README.md
@@ -651,6 +686,9 @@
 │       └── requirements.txt
 ├── LICENSE
 ├── Machine_Learning
+│   ├── AI_Language_Learning_Assistant
+│   │   ├── AI-Language-Learning-Assistant.ipynb
+│   │   └── Readme.md
 │   ├── AI_Text_Detector
 │   ├── Absent_Time_prediction_using_HyperParameter_Tuning
 │   │   ├── HyperParameter Tuning.md
@@ -940,27 +978,32 @@
 │   │   ├── Website_Design.pdf
 │   │   ├── Website_Design_and_Programming.pdf
 │   │   └── ultimate_full_stack_web_development_with_mern.pdf
-│   └── chatbot
-│       ├── README.md
-│       ├── __pycache__
-│       │   ├── chat.cpython-312.pyc
-│       │   ├── model.cpython-312.pyc
-│       │   └── nltk_utils.cpython-312.pyc
-│       ├── app.py
-│       ├── chat.py
-│       ├── data.pth
-│       ├── intents.json
-│       ├── model.py
-│       ├── nltk_utils.py
-│       ├── static
-│       │   ├── app.js
-│       │   ├── favicon.ico
-│       │   ├── images
-│       │   │   └── chatbox-icon.svg
-│       │   └── style.css
-│       ├── templates
-│       │   └── base.html
-│       └── train.py
+│   ├── chatbot
+│   │   ├── README.md
+│   │   ├── __pycache__
+│   │   │   ├── chat.cpython-312.pyc
+│   │   │   ├── model.cpython-312.pyc
+│   │   │   └── nltk_utils.cpython-312.pyc
+│   │   ├── app.py
+│   │   ├── chat.py
+│   │   ├── data.pth
+│   │   ├── intents.json
+│   │   ├── model.py
+│   │   ├── nltk_utils.py
+│   │   ├── static
+│   │   │   ├── app.js
+│   │   │   ├── favicon.ico
+│   │   │   ├── images
+│   │   │   │   └── chatbox-icon.svg
+│   │   │   └── style.css
+│   │   ├── templates
+│   │   │   └── base.html
+│   │   └── train.py
+│   └── sudoku_solver
+│       ├── Readme (1).md
+│       ├── index.html
+│       ├── script.js
+│       └── style.css
 ├── cybersecurity_resources
 │   └── pdf
 │       ├── A_Bug_Bounty_Hunting_Journey.pdf
