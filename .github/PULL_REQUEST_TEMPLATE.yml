@@ -1,0 +1,112 @@
+name: Pull Request for PyVerse 💡
+description: Requesting to submit a pull request to the PyVerse repository.
+title: "[Pull Request Request]: "
+body:
+  - type: textarea
+    id: issue-title
+    attributes:
+      label: Issue Title
+      description: Please enter the title of the issue related to your pull request.
+      placeholder: Enter the issue title here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: project-info
+    attributes:
+      label: Info about the Related Issue
+      description: What's the goal of the project?
+      placeholder: Describe the aim of the project.
+    validations:
+      required: true
+
+  - type: textarea
+    id: name
+    attributes:
+      label: Name
+      description: Please mention your name.
+      placeholder: Enter your name here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: github-id
+    attributes:
+      label: GitHub ID
+      description: Please mention your GitHub ID.
+      placeholder: Enter your GitHub ID here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: email-id
+    attributes:
+      label: Email ID
+      description: Please mention your email ID for further communication.
+      placeholder: Enter your email ID here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: participant-role
+    attributes:
+      label: Identify Yourself
+      description: Mention in which program you are contributing (e.g., WoB Participant).
+      placeholder: Enter your participant role here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: closes-issue
+    attributes:
+      label: Closes
+      description: Enter the issue number that will be closed through this PR.
+      placeholder: Closes: #issue-number
+    validations:
+      required: true
+
+  - type: textarea
+    id: changes-description
+    attributes:
+      label: Describe the Add-ons or Changes You've Made
+      description: Give a clear description of what you have added or modified.
+      placeholder: Describe your changes here.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: change-type
+    attributes:
+      label: Type of Change
+      options:
+        - label: Bug fix (non-breaking change which fixes an issue)
+        - label: New feature (non-breaking change which adds functionality)
+        - label: Code style update (formatting, local variables)
+        - label: Breaking change (fix or feature that would cause existing functionality to not work as expected)
+        - label: This change requires a documentation update
+      validations:
+        required: true
+
+  - type: textarea
+    id: testing-description
+    attributes:
+      label: How Has This Been Tested?
+      description: Describe how your changes have been tested.
+      placeholder: Describe your testing process here.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: My code follows the guidelines of this project.
+        - label: I have performed a self-review of my own code.
+        - label: I have commented my code, particularly wherever it was hard to understand.
+        - label: I have made corresponding changes to the documentation.
+        - label: My changes generate no new warnings.
+        - label: I have added things that prove my fix is effective or that my feature works.
+        - label: Any dependent changes have been merged and published in downstream modules.
+      validations:
+        required: true
