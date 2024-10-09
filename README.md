@@ -129,8 +129,6 @@ The **workflow** for getting involved is simple:
 3. **Select Your Level:** Beginner? Intermediate? Advanced? There's something for everyone!
 4. **Get Started:** Dive into the code, contribute, or mentor others. Your journey with PyVerse is just beginning!
 
-![Skill Selection Diagram](PyVerse%20-%20Skill%20Selection_page-0001.jpg)
-
 ---
 
 ## 🙌 **Acknowledgments**  
