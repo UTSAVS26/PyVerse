@@ -339,8 +339,6 @@
 ├── Blockchain_Development
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
-├── Customer Clust - Customer Segmentation Tool
-├── Customer Clust - Customer Segmentation Tool.ipynb
 ├── Cybersecurity_Tools
 │   ├── CLI-based Port Scanner
 │   │   ├── README.md
@@ -864,10 +862,7 @@
 │   ├── requirements.txt
 │   ├── translation.py
 │   └── utils.py
-├── Mall_Customers.csv
 ├── PROJECT-README-TEMPLATE.md
-├── PyVerse - Skill Selection.pdf
-├── PyVerse - Skill Selection_page-0001.jpg
 ├── README.md
 ├── Repo-structure.md
 ├── Tutorials
