@@ -4,8 +4,6 @@
 
 ---
 
-### [Pull Request Request]
-
 #### Issue Title
 **Please enter the title of the issue related to your pull request.**  
 *Enter the issue title here.*
