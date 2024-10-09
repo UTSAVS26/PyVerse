@@ -1,3 +1,6 @@
+<div align="center">
+<img src="Datasciecne-poster.jpg">
+
 # 🎓 **Beginner's Guide to Data Science** 🚀
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) 
@@ -15,6 +18,8 @@
 ![Jupyter](https://img.shields.io/badge/-Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white) 
 ![Tableau](https://img.shields.io/badge/-Tableau-E97627?style=flat-square&logo=tableau&logoColor=white) 
 ![Power BI](https://img.shields.io/badge/-Power%20BI-F25028?style=flat-square&logo=powerbi&logoColor=white) 
+
+</div>
 
 ---
 
