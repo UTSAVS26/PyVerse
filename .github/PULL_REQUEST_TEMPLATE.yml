@@ -1,4 +1,4 @@
-name: Pull Request for PyVerse 💡
+name: Pull Request 💡
 description: Requesting to submit a pull request to the PyVerse repository.
 title: "[Pull Request Request]: "
 body:
@@ -61,7 +61,7 @@ body:
     attributes:
       label: Closes
       description: Enter the issue number that will be closed through this PR.
-      placeholder: Closes: #issue-number
+      placeholder: Closes #<issue_number>
     validations:
       required: true
 
