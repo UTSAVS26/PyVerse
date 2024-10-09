@@ -949,27 +949,32 @@
 │   │   ├── Website_Design.pdf
 │   │   ├── Website_Design_and_Programming.pdf
 │   │   └── ultimate_full_stack_web_development_with_mern.pdf
-│   └── chatbot
-│       ├── README.md
-│       ├── __pycache__
-│       │   ├── chat.cpython-312.pyc
-│       │   ├── model.cpython-312.pyc
-│       │   └── nltk_utils.cpython-312.pyc
-│       ├── app.py
-│       ├── chat.py
-│       ├── data.pth
-│       ├── intents.json
-│       ├── model.py
-│       ├── nltk_utils.py
-│       ├── static
-│       │   ├── app.js
-│       │   ├── favicon.ico
-│       │   ├── images
-│       │   │   └── chatbox-icon.svg
-│       │   └── style.css
-│       ├── templates
-│       │   └── base.html
-│       └── train.py
+│   ├── chatbot
+│   │   ├── README.md
+│   │   ├── __pycache__
+│   │   │   ├── chat.cpython-312.pyc
+│   │   │   ├── model.cpython-312.pyc
+│   │   │   └── nltk_utils.cpython-312.pyc
+│   │   ├── app.py
+│   │   ├── chat.py
+│   │   ├── data.pth
+│   │   ├── intents.json
+│   │   ├── model.py
+│   │   ├── nltk_utils.py
+│   │   ├── static
+│   │   │   ├── app.js
+│   │   │   ├── favicon.ico
+│   │   │   ├── images
+│   │   │   │   └── chatbox-icon.svg
+│   │   │   └── style.css
+│   │   ├── templates
+│   │   │   └── base.html
+│   │   └── train.py
+│   └── sudoku_solver
+│       ├── Readme (1).md
+│       ├── index.html
+│       ├── script.js
+│       └── style.css
 ├── cybersecurity_resources
 │   └── pdf
 │       ├── A_Bug_Bounty_Hunting_Journey.pdf
