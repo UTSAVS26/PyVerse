@@ -1,16 +1,14 @@
-  Tic-Tac-Toe body { font-family: Arial, sans-serif; line-height: 1.6; } h1 { color: #333; } pre { background: #f4f4f4; padding: 10px; border-radius: 5px; } code { font-family: monospace; background: #eaeaea; padding: 2px 4px; border-radius: 4px; }
-
-Tic-Tac-Toe í ¼í¾®
+Tic-Tac-Toe
 ==============
 
-í ¼í¾¯ Objective
+Objective
 ------------
 
 This is a simple Tic-Tac-Toe game implemented in Python using the Tkinter library. Players take turns to place their marks (X or O) in a 3x3 grid. The first player to align three marks horizontally, vertically, or diagonally wins the game.
 
 * * *
 
-í ½íº€ How to Play:
+How to Play:
 ---------------
 
 *   Click on the buttons to place your mark (X or O).
@@ -20,7 +18,7 @@ This is a simple Tic-Tac-Toe game implemented in Python using the Tkinter librar
 
 * * *
 
-í ½í´§ How to Run
+How to Run
 -------------
 
 1.  **Install Tkinter:** Tkinter usually comes pre-installed with Python. If it's not installed, you can install it using your package manager.
