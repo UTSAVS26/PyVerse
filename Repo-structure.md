@@ -174,6 +174,9 @@
 │   │   ├── README.md
 │   │   └── digital_clock.py
 │   ├── Egg_Catcher_Game.py
+│   ├── Email_Automation
+│   │   ├── README.md
+│   │   └── email_automation.py
 │   ├── File Sorter
 │   │   ├── App.py
 │   │   ├── README.md
