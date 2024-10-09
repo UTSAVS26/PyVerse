@@ -1,0 +1,62 @@
+name: Bug Report 🐞
+about: Reporting for any bug in the project description or algorithm description.
+title: '🐛: '
+labels: ["Up-for-Grabs ✋", "bug 🐛"]
+assignees:
+  - ''
+
+body:
+  - type: textarea
+    id: bug-title
+    attributes:
+      label: Title
+      placeholder: Enter the title of your bug report here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug
+      placeholder: Describe the bug you encountered.
+    validations:
+      required: true
+
+  - type: textarea
+    id: changes
+    attributes:
+      label: Changes
+      placeholder: Explain the approach to handle this bug.
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots 📷
+      placeholder: Write N/A if not available.
+    validations:
+      required: false
+
+  - type: textarea
+    id: full-name
+    attributes:
+      label: Full Name
+      placeholder: Enter your full name here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: participant-role
+    attributes:
+      label: Participant Role
+      placeholder: Mention your participant role (e.g., GSOC, GSSOC, SSOC, JWOC).
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        :red_circle: **To be Mentioned while taking the issue:**
+        - Full name: 
+        - What is your participant role? (Mention the Open Source Program name. Eg. GSOC, GSSOC, SSOC, JWOC, etc.)
