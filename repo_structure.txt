@@ -22,15 +22,9 @@
 │   ├── Pattern Search
 │   ├── Recurssion
 │   ├── Stack
-<<<<<<< HEAD
-│   │   ├── README.md
-│   │   └── stack.py
 │   ├── Strings
-│   │   ├── String_Manipulation.py
-│   │   └── readme.md
-=======
->>>>>>> 41e139559635e77b85fa049b8b42733070d25b60
 │   ├── Trees
+│   ├── Two Pointer
 │   ├── avl_tree_visualizer
 │   └── visualizer
 ├── Automation_Tools
