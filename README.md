@@ -1,6 +1,6 @@
 <div align="center">
    
-  # 🌌 **PyVerse: Python Universe of Projects and Tools** 💻🧠
+  # 🌌 **PyVerse : Python Universe of Projects and Tools** 💻🧠
   
 </div>
 
