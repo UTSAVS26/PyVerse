@@ -1,9 +1,8 @@
----
 name: Enhancement Request 🧑‍💻
 title: '🧑‍💻: '
 labels: ["Up-for-Grabs ✋", "enhancement 🧑‍💻"]
 assignees:
-   - ''
+  - ''
 
 body:
   - type: textarea
