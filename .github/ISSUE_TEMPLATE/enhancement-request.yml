@@ -9,13 +9,48 @@ assignees:
 ---
 
 :red_circle: **Title** :
+  - type: textarea
+    id: enhancement-title
+    attributes:
+      placeholder: Enter the title of your enhancement request here.
+    validations:
+      required: true
+
 :red_circle: **Enhancement Aim** :
-:red_circle: **Changes** : <!-- Enlist those changes you want to do. -->
+  - type: textarea
+    id: enhancement-aim
+    attributes:
+      placeholder: Describe the aim of the enhancement.
+    validations:
+      required: true
+
+:red_circle: **Changes** : 
+  - type: textarea
+    id: changes
+    attributes:
+      placeholder: Enlist those changes you want to make.
+    validations:
+      required: true
 
 ### Screenshots 📷
-<!-- Write N/A if not available-->
+- type: textarea
+  id: screenshots
+  attributes:
+    placeholder: Write N/A if not available.
+  validations:
+    required: false
 
 ### Participant Information 📋
+- type: checkboxes
+  id: participant-info
+  attributes:
+    label: Please confirm the following:
+    options:
+      - label: I have completed my first issue
+        required: true
+      - label: I have read the guidelines
+        required: true
+
 - **Full Name**:
   - type: textarea
     id: full-name
