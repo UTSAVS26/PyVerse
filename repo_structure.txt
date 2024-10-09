@@ -348,6 +348,15 @@
 │   │   └── encrypt_decrypt.py
 │   └── Pixel_Decoder
 │       └── pixel_decoder.py
+├── Data Analysis
+│   ├── Readme.md
+│   └── Unemployment Analysis due to COVID
+│       ├── Readme.md
+│       ├── UNEMPLOYMENT_ANALYSIS.ipynb
+│       ├── Unemployment_Rate_upto_11_2020.csv
+│       ├── impact_chart.png
+│       ├── line_chart.png
+│       └── pie.png
 ├── Data Analytics
 │   └── IPL Analysis
 │       ├── IPL_Analysis.ipynb
