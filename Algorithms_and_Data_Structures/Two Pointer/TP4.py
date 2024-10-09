@@ -1,4 +1,4 @@
-# longest repeating character replacement 
+# longest repeating character replacement
 
 
 class TP4:
@@ -23,6 +23,7 @@ class TP4:
         return ans
 
 TP4 = TP4()
+
 
 s = "ABAB"
 k = 2

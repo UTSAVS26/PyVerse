@@ -1,46 +1,93 @@
-# Pull Request for PyVerse 💡
+## Pull Request for PyVerse 💡
 
+### Requesting to submit a pull request to the PyVerse repository.
 
-## Issue Title : <!-- Enter the issue title here -->
+---
 
-- **Info about the related issue (Aim of the project)** : <!-- What's the goal of the project -->
-- **Name:** <!--Mention Your name-->
-- **GitHub ID:** <!-- Mention your GitHub ID -->
-- **Email ID:** <!--Mention your email ID for further communication. -->
-- **Idenitfy yourself: (Mention in which program you are contributing in. Eg. For a WoB 2024 participant it's, `WoB Participant`)** <!-- Mention in which program you are contributing -->
+#### Issue Title
+**Please enter the title of the issue related to your pull request.**  
+*Enter the issue title here.*
 
+- [ ] I have provided the issue title.
 
-<!-- Mention the following details and these are mandatory -->
+---
 
-Closes: #issue number that will be closed through this PR
+#### Info about the Related Issue
+**What's the goal of the project?**  
+*Describe the aim of the project.*
 
-### Describe the add-ons or changes you've made 📃
+- [ ] I have described the aim of the project.
 
-Give a clear description of what have you added or modifications made
+---
 
-## Type of change ☑️
+#### Name
+**Please mention your name.**  
+*Enter your name here.*
 
-What sort of change have you made:
-<!--
-Example how to mark a checkbox:-
-- [x] My code follows the code style of this project.
--->
+- [ ] I have provided my name.
+
+---
+
+#### GitHub ID
+**Please mention your GitHub ID.**  
+*Enter your GitHub ID here.*
+
+- [ ] I have provided my GitHub ID.
+
+---
+
+#### Email ID
+**Please mention your email ID for further communication.**  
+*Enter your email ID here.*
+
+- [ ] I have provided my email ID.
+
+---
+
+#### Identify Yourself
+**Mention in which program you are contributing (e.g., WoB, GSSOC, SSOC, SWOC).**  
+*Enter your participant role here.*
+
+- [ ] I have mentioned my participant role.
+
+---
+
+#### Closes
+**Enter the issue number that will be closed through this PR.**  
+*Closes: #issue-number*
+
+- [ ] I have provided the issue number.
+
+---
+
+#### Describe the Add-ons or Changes You've Made
+**Give a clear description of what you have added or modified.**  
+*Describe your changes here.*
+
+- [ ] I have described my changes.
+
+---
+
+#### Type of Change
+**Select the type of change:**  
 - [ ] Bug fix (non-breaking change which fixes an issue)
 - [ ] New feature (non-breaking change which adds functionality)
 - [ ] Code style update (formatting, local variables)
 - [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
 - [ ] This change requires a documentation update
 
-## How Has This Been Tested? ⚙️
+---
 
-Describe how it has been tested
-Describe how have you verified the changes made
+#### How Has This Been Tested?
+**Describe how your changes have been tested.**  
+*Describe your testing process here.*
 
-## Checklist: ☑️
-<!--
-Example how to mark a checkbox:-
-- [x] My code follows the code style of this project.
--->
+- [ ] I have described my testing process.
+
+---
+
+#### Checklist
+**Please confirm the following:**  
 - [ ] My code follows the guidelines of this project.
 - [ ] I have performed a self-review of my own code.
 - [ ] I have commented my code, particularly wherever it was hard to understand.

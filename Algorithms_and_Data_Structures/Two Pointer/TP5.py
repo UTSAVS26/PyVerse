@@ -1,7 +1,7 @@
 
 # binary-subarrays-with-sum
 
-class TP5(object): 
+class TP5(object):
     def numSubarraysWithSum(self, nums, goal):
         count = {0: 1}
         curr_sum = 0
