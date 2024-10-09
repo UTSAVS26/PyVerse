@@ -9,10 +9,10 @@ def get_repo_structure(path='.', prefix=''):
         if item.startswith('.'):
             continue
         item_path = os.path.join(path, item)
-        is_last = i == len(items) - 1
-        current_prefix = '└── ' if is_last else '├── '
-        structure.append(f"{prefix}{current_prefix}{item}")
         if os.path.isdir(item_path):
+            is_last = i == len(items) - 1
+            current_prefix = '└── ' if is_last else '├── '
+            structure.append(f"{prefix}{current_prefix}{item}")
             next_prefix = prefix + ('    ' if is_last else '│   ')
             structure.extend(get_repo_structure(item_path, next_prefix))
     return structure
@@ -22,7 +22,7 @@ def update_structure_file(structure):
         f.write('\n'.join(structure))
 
 def update_readme(structure):
-    with open('Repo-structure.md', 'r') as f: # updated file name
+    with open('Repo-structure.md', 'r') as f:  # updated file name
         content = f.read()
 
     start_marker = '<!-- START_STRUCTURE -->'
