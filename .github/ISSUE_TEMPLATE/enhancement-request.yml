@@ -1,0 +1,33 @@
+---
+name: Enhancement Request 🧑‍💻
+about: Improving any styling or documentation of the project/algorithm
+title: '🧑‍💻: '
+labels: ["Up-for-Grabs ✋", "enhancement 🧑‍💻"]
+assignees:
+   - ''
+
+---
+
+:red_circle: **Title** :
+:red_circle: **Enhancement Aim** :
+:red_circle: **Changes** : <!-- Enlist those changes you want to do. -->
+
+### Screenshots 📷
+<!-- Write N/A if not available-->
+
+### Participant Information 📋
+- **Full Name**:
+  - type: textarea
+    id: full-name
+    attributes:
+      placeholder: Enter your full name here.
+    validations:
+      required: true
+
+- **Participant Role**:
+  - type: textarea
+    id: participant-role
+    attributes:
+      placeholder: Enter your participant role here (e.g., GSOC, GSSOC, SSOC, JWOC).
+    validations:
+      required: true
