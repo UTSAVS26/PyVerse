@@ -624,6 +624,22 @@
 │   │       ├── bluebird-midflap.png
 │   │       ├── bluebird-upflap.png
 │   │       └── pipe-green.png
+│   ├── Hangman-main
+│   │   ├── README.md
+│   │   ├── hangman.py
+│   │   └── images
+│   │       ├── hang0.png
+│   │       ├── hang1.png
+│   │       ├── hang10.png
+│   │       ├── hang11.png
+│   │       ├── hang2.png
+│   │       ├── hang3.png
+│   │       ├── hang4.png
+│   │       ├── hang5.png
+│   │       ├── hang6.png
+│   │       ├── hang7.png
+│   │       ├── hang8.png
+│   │       └── hang9.png
 │   ├── KBC
 │   │   ├── KBCquiz.py
 │   │   └── README.md
