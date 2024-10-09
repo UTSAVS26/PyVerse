@@ -1,0 +1,50 @@
+name: Code Addition Request 📜
+description: Requesting for the new project/algorithm addition to contribute to this repository.
+title: "[Code Addition Request]: "
+body:
+  - type: checkboxes
+    id: existing-issue
+    attributes:
+      label: Have you completed your first issue?
+      description: Please confirm that all other PRs related to issues have been approved and merged.
+      options:
+        - label: I have completed my first issue
+          required: true
+
+  - type: checkboxes
+    id: guidelines
+    attributes:
+      label: Guidelines
+      options:
+        - label: "I have read the guidelines"
+          required: true
+        - label: "I have the link to my latest merged PR"
+          required: false
+
+  - type: textarea
+    id: latest-pr-link
+    attributes:
+      label: Latest Merged PR Link
+      description: Please provide the link to the latest merged PR.
+      placeholder: Enter the URL of the latest merged PR here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: project-description
+    attributes:
+      label: Project Description
+      description: Please provide a brief explanation of the new project or algorithm you want to add.
+      placeholder: Describe the new project or algorithm you wish to contribute.
+    validations:
+      required: true
+
+***********************************************************************
+:white_check_mark: **To be Mentioned while taking the issue:**
+- Full name: 
+- What is your participant role? (Mention the Open Source Program name. Eg. GSOC, GSSOC, SSOC, JWOC, etc.)
+
+***********************************************************************
+Happy Contributing 🚀 
+
+All the best. Enjoy your open-source journey ahead. 😎
