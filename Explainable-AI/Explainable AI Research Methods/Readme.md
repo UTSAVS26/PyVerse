@@ -1,6 +1,4 @@
-# README.md
-
-# Project Title: **Iris Flower Classification with Explainable AI (XAI) Techniques**
+# Iris Flower Classification with Explainable AI (XAI) Techniques
 
 ## Goal:
 The aim of this project is to classify the Iris flower species using machine learning models, specifically Random Forest, and apply various Explainable AI (XAI) techniques such as LIME, SHAP, Counterfactuals, and model visualization to interpret and explain the model's predictions.
