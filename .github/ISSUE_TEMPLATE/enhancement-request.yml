@@ -39,14 +39,14 @@ body:
       required: false
 
   - type: checkboxes
-    id: participant-info
+    id: guidelines
     attributes:
-      label: Please confirm the following:
+      label: Guidelines
       options:
-        - label: I have completed my first issue
+        - label: "I have read the guidelines"
           required: true
-        - label: I have read the guidelines
-          required: true
+        - label: "I have the link to my latest merged PR"
+          required: false
 
   - type: textarea
     id: full-name
