@@ -1,5 +1,5 @@
 name: Bug Report 🐞
-about: Reporting for any bug in the project description or algorithm description.
+description: Reporting for any bug in the project description or algorithm description.
 title: '🐛: '
 labels: ["Up-for-Grabs ✋", "bug 🐛"]
 assignees:
