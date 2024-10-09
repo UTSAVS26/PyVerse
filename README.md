@@ -4,15 +4,19 @@
   
 </div>
 
-![GitHub contributors](https://img.shields.io/github/contributors/UTSAVS26/PyVerse?style=for-the-badge&color=blue)
-![GitHub Closed issues](https://img.shields.io/github/issues-closed-raw/UTSAVS26/PyVerse?style=for-the-badge&color=brightgreen)
-![GitHub PR Open](https://img.shields.io/github/issues-pr/UTSAVS26/PyVerse?style=for-the-badge&color=aqua)
-![GitHub PR closed](https://img.shields.io/github/issues-pr-closed-raw/UTSAVS26/PyVerse?style=for-the-badge&color=blue)
-![GitHub language count](https://img.shields.io/github/languages/count/UTSAVS26/PyVerse?style=for-the-badge&color=brightgreen)
-![GitHub top language](https://img.shields.io/github/languages/top/UTSAVS26/PyVerse?style=for-the-badge&color=aqua)
-![GitHub last commit](https://img.shields.io/github/last-commit/UTSAVS26/PyVerse?style=for-the-badge&color=blue)
-![GitHub Maintained](https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?style=for-the-badge)
-![Github Repo Size](https://img.shields.io/github/repo-size/UTSAVS26/PyVerse?style=for-the-badge&color=aqua)
+<div align="center">
+   
+   ![GitHub contributors](https://img.shields.io/github/contributors/UTSAVS26/PyVerse?style=for-the-badge&color=blue)
+   ![GitHub Closed issues](https://img.shields.io/github/issues-closed-raw/UTSAVS26/PyVerse?style=for-the-badge&color=brightgreen)
+   ![GitHub PR Open](https://img.shields.io/github/issues-pr/UTSAVS26/PyVerse?style=for-the-badge&color=aqua)
+   ![GitHub PR closed](https://img.shields.io/github/issues-pr-closed-raw/UTSAVS26/PyVerse?style=for-the-badge&color=blue)
+   ![GitHub language count](https://img.shields.io/github/languages/count/UTSAVS26/PyVerse?style=for-the-badge&color=brightgreen)
+   ![GitHub top language](https://img.shields.io/github/languages/top/UTSAVS26/PyVerse?style=for-the-badge&color=aqua)
+   ![GitHub last commit](https://img.shields.io/github/last-commit/UTSAVS26/PyVerse?style=for-the-badge&color=blue)
+   ![GitHub Maintained](https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?style=for-the-badge)
+   ![Github Repo Size](https://img.shields.io/github/repo-size/UTSAVS26/PyVerse?style=for-the-badge&color=aqua)
+  
+</div>
 
 <div align="center">
    
@@ -20,11 +24,7 @@
   
 </div>
 
-<div align="center">
-   
-  <img src=https://raw.githubusercontent.com/alo7lika/PyVerse/refs/heads/main/image.webp>
-  
-</div>
+<!-- <img src=https://raw.githubusercontent.com/alo7lika/PyVerse/refs/heads/main/image.webp> -->
 
 Welcome to **PyVerse**, your go-to open-source hub for exploring the limitless universe of Python! Whether you're a seasoned developer, an enthusiastic beginner, or just a curious explorer, PyVerse is here to fuel your Python journey with exciting projects, powerful tools, and a welcoming community. Let’s code, learn, and collaborate to build something amazing!
 
@@ -128,8 +128,6 @@ The **workflow** for getting involved is simple:
 2. **Pick Your Domain:** From **web development** to **deep learning**, find your area of interest.
 3. **Select Your Level:** Beginner? Intermediate? Advanced? There's something for everyone!
 4. **Get Started:** Dive into the code, contribute, or mentor others. Your journey with PyVerse is just beginning!
-
-![Skill Selection Diagram](PyVerse%20-%20Skill%20Selection_page-0001.jpg)
 
 ---
 
