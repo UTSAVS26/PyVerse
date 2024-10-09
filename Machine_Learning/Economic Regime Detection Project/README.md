@@ -1,5 +1,9 @@
 # 📈 Economic Regime Detection
 
+<p align="center">
+    <img src="https://raw.githubusercontent.com/alo7lika/PyVerse/refs/heads/main/Machine_Learning/Economic%20Regime%20Detection%20Project/ERD%20image.png" width="600" />
+</p>
+
 # 📚 Contents
 
 1. [Introduction](#introduction)
