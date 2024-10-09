@@ -1,7 +1,7 @@
 # 📊 Economic Regime Detection
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/alo7lika/PyVerse/refs/heads/main/Machine_Learning/Economic%20Regime%20Detection/Generating....png" width="600" />
+    <img src="https://raw.githubusercontent.com/alo7lika/PyVerse/refs/heads/main/Machine_Learning/Economic%20Regime%20Detectionn/Generating....png" width="600" />
 </p>
 
 # 📚 Table of Contents
