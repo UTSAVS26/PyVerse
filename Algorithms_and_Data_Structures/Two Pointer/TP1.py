@@ -5,7 +5,7 @@ class Solution:
     def lengthofLongestSubstring(self, s: str) -> int:
         mpp = [-1] * 256
 
-
+ 
         left = 0
         right = 0
         n = len(s)

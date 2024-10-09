@@ -6,7 +6,7 @@ class TP3:
         n = len(a)
         max_len = 0
         for i in range(n):
-            st = set()
+            st = set() 
             for j in range(i, n):
                 st.add(a[j])
                 if len(st) <= 2:

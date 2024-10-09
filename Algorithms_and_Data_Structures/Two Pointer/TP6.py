@@ -19,4 +19,4 @@ a = [1, 1, 0, 1, 0]
 k = 2
 
 result = tp6.numberOfSubarrays(a, k)
-print("The number of nice subarrays is:", result)
+print("The number of nice subarrays is:", result) 
