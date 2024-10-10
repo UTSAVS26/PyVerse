@@ -1,0 +1,38 @@
+{
+    "name": "gfg_api",
+    "version": "1.0.0",
+    "description": "GFG API for accessing GFG's user's data",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "nodemon index.js",
+        "postinstall": "npx puppeteer browsers install chrome"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Shariq2003/GFG_API.git"
+    },
+    "author": "Shariq",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.20.2",
+        "chrome-aws-lambda": "^10.1.0",
+        "cors": "^2.8.5",
+        "express": ">=4.18.2",
+        "mongodb": "^6.2.0",
+        "mongoose": "^7.3.0",
+        "nodemailer": "^6.9.7",
+        "nodemon": "^3.0.1",
+        "pug": "^3.0.2",
+        "puppeteer": ">=22.9.0",
+        "puppeteer-core": "^10.1.0",
+        "yarn": "^1.22.19"
+    },
+    "bugs": {
+        "url": "https://github.com/Shariq2003/GFG_API/issues"
+    },
+    "homepage": "https://github.com/Shariq2003/GFG_API#readme",
+    "engines": {
+        "node": ">=14.20.1"
+    }
+}
