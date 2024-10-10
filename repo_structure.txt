@@ -188,6 +188,12 @@
 │   ├── Signature_verification_portal
 │   ├── Twitter Sentiment Analysis
 │   │   ├── images
+│   ├── WeCare
+│   │   ├── datasets
+│   │   ├── instance
+│   │   ├── models
+│   │   ├── static
+│   │   └── templates
 │   ├── Zomato Restaurant Clustering and Sentiment Analysis
 │   ├── assets
 ├── Tutorials
