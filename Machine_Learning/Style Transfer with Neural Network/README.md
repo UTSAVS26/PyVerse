@@ -62,9 +62,9 @@ pip install torch torchvision matplotlib Pillow
 - **Content Image**: Defines the structure and objects in the final image.
 - **Style Image**: Provides the textures, colors, and patterns.
 
-| Content Image                                                                                  | Style Image                                                                                   | Output Image                   |
-|------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|--------------------------------|
-| ![Content Image](https://raw.githubusercontent.com/alo7lika/PyVerse/refs/heads/main/Machine_Learning/Style%20Transfer%20with%20Neural%20Network/content%20image.jpg) | ![Style Image](https://raw.githubusercontent.com/alo7lika/PyVerse/refs/heads/main/Machine_Learning/Style%20Transfer%20with%20Neural%20Network/style%20image.jpg) | ![Output Image](output/generated.jpg) |
+| Content Image                                                                                  | Style Image                                                                                   |
+|------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| ![Content Image](https://raw.githubusercontent.com/alo7lika/PyVerse/refs/heads/main/Machine_Learning/Style%20Transfer%20with%20Neural%20Network/content%20image.jpg) | ![Style Image](https://raw.githubusercontent.com/alo7lika/PyVerse/refs/heads/main/Machine_Learning/Style%20Transfer%20with%20Neural%20Network/style%20image.jpg) |
 
 
 ## 🔬 Concepts Behind the Project
