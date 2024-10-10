@@ -4,6 +4,18 @@ Welcome to the **Style Transfer with Neural Networks** project! In this project,
 
 This README provides an overview of the project, how to set it up, and the main concepts behind style transfer.
 
+1. [Project Overview](#-project-overview)
+2. [Setup & Installation](#-setup--installation)
+3. [File Structure](#-file-structure)
+4. [How to Run](#-how-to-run)
+5. [Sample Run](#-sample-run)
+6. [Concepts Behind the Project](#-concepts-behind-the-project)
+7. [Examples of Generated Images](#-examples-of-generated-images)
+8. [Technologies Used](#-technologies-used)
+9. [Parameters & Tuning](#-parameters--tuning)
+10. [License](#-license)
+11. [Contact](#-contact)
+
 ## 📚 Project Overview
 
 Style transfer is a technique in deep learning that involves using Convolutional Neural Networks (CNNs) to separate and combine the style of one image with the content of another image. This project implements a neural style transfer model using **PyTorch** and **pre-trained VGG19**.
@@ -52,7 +64,7 @@ pip install torch torchvision matplotlib Pillow
 
 | Content Image                        | Style Image                        | Output Image                        |
 |--------------------------------------|------------------------------------|-------------------------------------|
-| ![Content](images/content.jpg)       | ![Style](images/style.jpg)         | ![Output](output/generated_image.jpg) |
+| ![Content](|![Style](images/style.jpg)         | ![Output](output/generated_image.jpg) |
 
 ## 🔬 Concepts Behind the Project
 
@@ -62,8 +74,6 @@ pip install torch torchvision matplotlib Pillow
 
 - **Optimization**: The neural network optimizes a noise image to minimize both **content loss** and **style loss**, blending the content and style.
 
-### Loss Function
-
 The total loss function is a combination of content loss and style loss:
 
 \[
@@ -72,16 +82,8 @@ L_{\text{total}} = \alpha \cdot L_{\text{content}} + \beta \cdot L_{\text{style}
 
 Where:
 
-- \(L_{\text{content}}\): Represents the difference between the generated image and the content image.
-- \(L_{\text{style}}\): Captures the stylistic differences between the generated image and the style image.
-
-## 💡 Examples of Generated Images
-
-Here are some examples of style transfer results using different content and style images:
-
-| Content Image                        | Style Image                        | Output Image                        |
-|--------------------------------------|------------------------------------|-------------------------------------|
-| ![Content](images/content1.jpg)      | ![Style](images/style1.jpg)        | ![Output](output/output1.jpg)       |
+- \(L_{\text{content}}\) represents the difference between the generated image and the content image.
+- \(L_{\text{style}}\) captures the stylistic differences between the generated image and the style image.
 
 ## 🧠 Technologies Used
 
@@ -101,14 +103,6 @@ You can adjust the following parameters to control the output of the style trans
 | `num_steps`      | `300`         | Number of optimization steps        |
 | `learning_rate`  | `0.01`        | Learning rate for the optimizer     |
 
-## 🤝 Contributing
-
-If you'd like to contribute:
-
-1. Fork the repository
-2. Create a new branch: `git checkout -b feature-branch`
-3. Make your changes
-4. Submit a pull request
 
 ## 📄 License
 
