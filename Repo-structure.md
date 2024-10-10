@@ -168,7 +168,7 @@
 │   │   ├── Model
 │   ├── Customer Clust - Customer Segmentation Tool
 │   ├── Decision Tree Classifier
-│   ├── Economic Regime Detection
+│   ├── Economic Regime Detection Project
 │   ├── Fake News Detection
 │   │   ├── Images
 │   │   ├── Model
