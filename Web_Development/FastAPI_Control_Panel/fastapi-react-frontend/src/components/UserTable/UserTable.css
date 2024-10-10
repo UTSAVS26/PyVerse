@@ -1,0 +1,56 @@
+.userTable-container {
+    overflow-x: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.userTable {
+    min-width: 300px;
+    width: 70%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.userTable th, .userTable td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.userTable th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: 600;
+}
+
+.userTable tr:hover {
+    background-color: #f1f1f1;
+}
+
+.deleteButton {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.deleteButton:hover {
+    background-color: #c0392b;
+}
+
+@media (max-width: 568px) {
+    .userTable td:nth-child(3),
+    .userTable th:nth-child(3) {
+        display: none;
+    }
+}
+
