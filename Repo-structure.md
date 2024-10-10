@@ -70,6 +70,7 @@
 ├── Data Analytics
 │   └── IPL Analysis
 ├── DataVizLearnig
+│   ├── Movie Data Visualization
 ├── Data_Science
 │   ├── AI Virtual Painter
 │   │   ├── Header Files
@@ -90,6 +91,7 @@
 │   │   ├── Dataset
 │   │   ├── Images
 │   │   ├── Model
+│   ├── Digital Image Tampering Detection
 │   ├── Dog Species Classification
 │   │   ├── DataSet
 │   │   ├── Images
@@ -113,10 +115,21 @@
 │   │   ├── assets
 │   │   │   └── images
 │   │   ├── ipynb files
+│   ├── SRGAN for upscaling image resolutions
+│   │   ├── main
+│   │   │   ├── temp
+│   │   │   └── tests
+│   │   └── saves
+│   │       ├── 6850
+│   │       └── 6900
 │   ├── Spam Vs Ham Mail Classification [With Streamlit GUI]
 │   │   ├── Dataset
 │   │   ├── Image
 │   │   ├── Model
+│   ├── Sugarcane Disease Prediction
+│   │   ├── Dataset
+│   │   ├── Images
+│   │   ├── models
 │   ├── YOLO-Drowsiness-Detection-main
 │   ├── smart_attendance_system
 │   │   ├── photos
@@ -169,6 +182,7 @@
 │   ├── Customer Clust - Customer Segmentation Tool
 │   ├── Decision Tree Classifier
 │   ├── Economic Regime Detection Project
+│   ├── Email Spam Classifier
 │   ├── Fake News Detection
 │   │   ├── Images
 │   │   ├── Model
@@ -188,6 +202,8 @@
 │   │   ├── Images
 │   │   ├── Model
 │   ├── Signature_verification_portal
+│   ├── TextToTalk
+│   │   └── scripts
 │   ├── Twitter Sentiment Analysis
 │   │   ├── images
 │   ├── WeCare
@@ -198,6 +214,8 @@
 │   │   └── templates
 │   ├── Zomato Restaurant Clustering and Sentiment Analysis
 │   ├── assets
+│   ├── pokemon-data-analysis-and-legendary-classification-main
+│   │   ├── Data
 ├── Tutorials
 ├── Web_Development
 │   ├── Advanced-Weather-APP
