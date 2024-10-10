@@ -2,7 +2,7 @@
 
 Welcome to the **Style Transfer with Neural Networks** project! In this project, we explore the application of neural networks to perform artistic style transfer, allowing us to blend the artistic style of one image with the content of another. 
 
-This README provides an overview of the project, how to set it up, and the main concepts behind style transfer.
+## Table of Content
 
 1. [Project Overview](#-project-overview)
 2. [Setup & Installation](#-setup--installation)
@@ -62,9 +62,10 @@ pip install torch torchvision matplotlib Pillow
 - **Content Image**: Defines the structure and objects in the final image.
 - **Style Image**: Provides the textures, colors, and patterns.
 
-| Content Image                        | Style Image                        | Output Image                        |
-|--------------------------------------|------------------------------------|-------------------------------------|
-| ![Content](|![Style](images/style.jpg)         | ![Output](output/generated_image.jpg) |
+| Content Image                                                                                  | Style Image                                                                                   | Output Image                   |
+|------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|--------------------------------|
+| ![Content Image](https://raw.githubusercontent.com/alo7lika/PyVerse/refs/heads/main/Machine_Learning/Style%20Transfer%20with%20Neural%20Network/content%20image.jpg) | ![Style Image](https://raw.githubusercontent.com/alo7lika/PyVerse/refs/heads/main/Machine_Learning/Style%20Transfer%20with%20Neural%20Network/style%20image.jpg) | ![Output Image](output/generated.jpg) |
+
 
 ## 🔬 Concepts Behind the Project
 
