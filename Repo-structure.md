@@ -214,6 +214,7 @@
 │   │   ├── Dataset
 │   │   ├── Images
 │   │   ├── Model
+│   ├── Red Wine Quality Detection
 │   ├── Signature_verification_portal
 │   ├── TextToTalk
 │   │   └── scripts
