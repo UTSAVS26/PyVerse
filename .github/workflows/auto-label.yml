@@ -17,17 +17,33 @@ jobs:
           script: |
             const issue = context.payload.issue;
             const issueBody = issue.body ? issue.body.toLowerCase() : '';
-            const issueTitle = issue.title.toLowerCase();
-            
-            // Check if the issue body mentions GSSOC
-            if (issueBody.includes('gssoc')) {
-              // Add gssoc label to issues that mention GSSOC
+
+            // Check for participation roles in the issue body
+            const hasGSSOC = issueBody.includes('gssoc');
+            const hasHacktoberfest = issueBody.includes('hacktoberfest');
+
+            if (hasGSSOC) {
+              // Add gssoc label for GSSOC participants
               await github.rest.issues.addLabels({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: issue.number,
-                labels: ['gssoc-ext', 'hacktoberfest-accepted']
+                labels: ['gssoc-ext']
               });
-            } else {
-              console.log('No GSSOC mention found. Skipping label addition.');
+              console.log('Added gssoc-ext label for GSSOC participant.');
+            }
+
+            if (hasHacktoberfest && !hasGSSOC) {
+              // Add hacktoberfest label for Hacktoberfest participants
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                labels: ['hacktoberfest-accepted']
+              });
+              console.log('Added hacktoberfest-accepted label for Hacktoberfest participant.');
+            }
+
+            if (!hasGSSOC && !hasHacktoberfest) {
+              console.log('No relevant participation role found. Skipping label addition.');
             }
