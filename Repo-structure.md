@@ -22,6 +22,7 @@
 │   │   └── Single_Source_Shortest_path_problems
 │   ├── Linked List
 │   ├── Pattern Search
+│   ├── Queue
 │   ├── Recurssion
 │   ├── Stack
 │   ├── Trees
@@ -56,6 +57,10 @@
 │   ├── Stock App
 │   │   ├── Templates
 │   ├── Sudoku Solver
+│   ├── Task-Tracker
+│   │   ├── task_tracker
+│   │   │   ├── __pycache__
+│   │   ├── task_tracker.egg-info
 │   ├── Temperature
 │   ├── Turtle
 │   ├── URL_Shortener
@@ -66,7 +71,8 @@
 │   ├── CLI-based Port Scanner
 │   ├── Encryption_Decryption app
 │   ├── Pixel_Decoder
-│   └── VidForensicsTool
+│   ├── VidForensicsTool
+│   └── bruteforce_password_cracking
 ├── Data Analysis
 │   └── Unemployment Analysis due to COVID
 ├── Data Analytics
