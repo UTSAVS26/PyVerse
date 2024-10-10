@@ -33,8 +33,10 @@
 │   │   ├── assets
 │   │   │   └── images
 │   ├── Image-Tool
+│   ├── Web Scrapping
 │   └── WhatsApp Tool
 ├── Beginner_Projects
+│   ├── BMI Calculator
 │   ├── Bar-Code-Generator
 │   ├── Budget-tracker
 │   ├── Calculator_App
@@ -91,6 +93,7 @@
 │   │   ├── Dataset
 │   │   ├── Images
 │   │   ├── Model
+│   ├── Detect Bad Posture Media Pipe
 │   ├── Digital Image Tampering Detection
 │   ├── Dog Species Classification
 │   │   ├── DataSet
@@ -126,6 +129,7 @@
 │   │   ├── Dataset
 │   │   ├── Image
 │   │   ├── Model
+│   ├── Spoken Language Translator
 │   ├── Sugarcane Disease Prediction
 │   │   ├── Dataset
 │   │   ├── Images
@@ -227,11 +231,22 @@
 │   │   ├── public
 │   │   └── src
 │   │       ├── components
+│   ├── GIF_Generator-main
+│   │   ├── public
+│   │   ├── src
+│   │   │   ├── components
+│   │   │   ├── hooks
 │   ├── Invoice-Generator
 │   │   ├── public
 │   │   ├── src
 │   │   │   ├── components
 │   │   │   ├── helpers
+│   ├── Password_Generator--main
+│   │   ├── assets
+│   ├── RazorPay-Clone-master
+│   │   ├── images
+│   ├── Recursive-Tic-Tac-Toe-main
+│   │   ├── assets
 │   ├── Web_Developement_resources
 │   ├── chatbot
 │   │   ├── __pycache__
