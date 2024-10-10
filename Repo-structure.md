@@ -194,6 +194,8 @@
 │   ├── Iris Classification using KNN
 │   │   ├── assets
 │   │   │   └── images
+│   ├── Landmark_Detection
+│   │   ├── images
 │   ├── Movie Classification
 │   ├── Multivitamine Prediction
 │   ├── Palm-Chatbot-main
@@ -221,6 +223,8 @@
 │   ├── pokemon-data-analysis-and-legendary-classification-main
 │   │   ├── Data
 ├── Tutorials
+├── Video Processing
+│   └── Online Video Editor
 ├── Web_Development
 │   ├── Advanced-Weather-APP
 │   │   ├── assets
