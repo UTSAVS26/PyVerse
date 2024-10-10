@@ -63,7 +63,8 @@
 ├── Cybersecurity_Tools
 │   ├── CLI-based Port Scanner
 │   ├── Encryption_Decryption app
-│   └── Pixel_Decoder
+│   ├── Pixel_Decoder
+│   └── VidForensicsTool
 ├── Data Analysis
 │   └── Unemployment Analysis due to COVID
 ├── Data Analytics
@@ -137,6 +138,9 @@
 │   ├── Rock-Paper-Scissors
 │   ├── Snake_Game
 │   └── Trivia
+├── Generative-AI
+│   └── Code-LLM-bot
+│       ├── images
 ├── Image processing
 │   ├── Lane Line Detection [OPEN CV]
 │   └── Number plate detection
