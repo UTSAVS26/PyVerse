@@ -176,6 +176,7 @@
 │   ├── Iris Classification using KNN
 │   │   ├── assets
 │   │   │   └── images
+│   ├── Movie Classification
 │   ├── Multivitamine Prediction
 │   ├── Palm-Chatbot-main
 │   │   ├── server
@@ -186,6 +187,7 @@
 │   │   ├── Dataset
 │   │   ├── Images
 │   │   ├── Model
+│   ├── Signature_verification_portal
 │   ├── Twitter Sentiment Analysis
 │   │   ├── images
 │   ├── Zomato Restaurant Clustering and Sentiment Analysis
