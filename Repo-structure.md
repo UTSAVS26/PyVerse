@@ -91,6 +91,7 @@
 │   ├── customer_segmentation
 │   └── time_series_visualization
 ├── Deep_Learning
+│   ├── BankNifty Index Price Prediction LSTM
 │   ├── Bird Species Classification
 │   │   ├── Dataset
 │   │   ├── Images
