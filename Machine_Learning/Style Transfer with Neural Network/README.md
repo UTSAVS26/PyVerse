@@ -75,17 +75,6 @@ pip install torch torchvision matplotlib Pillow
 
 - **Optimization**: The neural network optimizes a noise image to minimize both **content loss** and **style loss**, blending the content and style.
 
-The total loss function is a combination of content loss and style loss:
-
-\[
-L_{\text{total}} = \alpha \cdot L_{\text{content}} + \beta \cdot L_{\text{style}}
-\]
-
-Where:
-
-- \(L_{\text{content}}\) represents the difference between the generated image and the content image.
-- \(L_{\text{style}}\) captures the stylistic differences between the generated image and the style image.
-
 ## 🧠 Technologies Used
 
 - **Python** 🐍
