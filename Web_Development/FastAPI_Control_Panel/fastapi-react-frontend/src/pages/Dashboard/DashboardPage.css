@@ -1,0 +1,12 @@
+.dashboard-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    overflow: hidden;
+}
+.content-container{
+    display: flex;
+    overflow: hidden;
+}
