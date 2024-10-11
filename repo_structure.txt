@@ -243,6 +243,28 @@
 │   │   ├── public
 │   │   └── src
 │   │       ├── components
+│   ├── FastAPI_Control_Panel
+│   │   ├── app
+│   │   ├── fastapi-react-frontend
+│   │   │   ├── public
+│   │   │   └── src
+│   │   │       ├── components
+│   │   │       │   ├── AddNewUser
+│   │   │       │   ├── AdminDashboard
+│   │   │       │   ├── LoginForm
+│   │   │       │   ├── RegistrationForm
+│   │   │       │   ├── SideBar
+│   │   │       │   ├── TopBar
+│   │   │       │   ├── UserDashboard
+│   │   │       │   ├── UserProfile
+│   │   │       │   └── UserTable
+│   │   │       ├── context
+│   │   │       ├── pages
+│   │   │       │   ├── Dashboard
+│   │   │       │   ├── Home
+│   │   │       │   └── Login
+│   │   │       ├── services
+│   │   │       └── utils
 │   ├── GIF_Generator-main
 │   │   ├── public
 │   │   ├── src
