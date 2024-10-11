@@ -4,7 +4,9 @@
 │   ├── EDUHELPER
 │   ├── GUI Based TaskManager
 │   ├── NaviBot-Voice-Assistant
-│   └── Research-Snap
+│   ├── Research-Snap
+│   └── SkillSync
+│       └── templates
 ├── Algorithms_and_Data_Structures
 │   ├── BinarySearchTree
 │   │   ├── __pycache__
