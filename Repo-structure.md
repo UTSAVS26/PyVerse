@@ -83,10 +83,16 @@
 ├── DataVizLearnig
 │   ├── Movie Data Visualization
 ├── Data_Science
-│   ├── AI Virtual Painter
+├── AI Virtual Painter
 │   │   ├── Header Files
 │   │   ├── Images
 │   │   ├── __pycache__
+│   ├──Gesture_Based_Volume_Control
+│       ├── Images
+│       ├── HandTrackingModule.py
+│       ├── Readme.md
+│       ├── requirements.txt
+│       ├──VolumeHandTracking.py
 │   ├── Whatsapp_Chat_Analyzer
 │   │   ├── Sample_Data
 │   │   ├── images
