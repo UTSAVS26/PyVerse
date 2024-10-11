@@ -1,0 +1,351 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  background-color: pink;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar ul li {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#navbar ul li:last-child {
+  margin-right: 0;
+}
+
+#navbar ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+}
+body {
+  background-color: bisque;
+}
+.container
+{
+    padding: 10px 10%;
+    
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#home {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(home.png);
+}
+
+
+
+
+.book{
+  display: inline-block;
+  padding: 15px 20px;
+  border: 2px solid red; 
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: border-color 0.5s; 
+  width: 100px;
+}
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  grid-gap: 20px; 
+}
+
+.image-grid img {
+  max-width: 100%; 
+  transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+  transform: scale(1.1);
+}
+
+form input,form textarea{
+  width: 40%;
+  height: 3%;
+  border: 0;
+  outline: none;
+  background-color: rgb(211, 210, 210);
+  padding: 15px;
+  margin: 15px 0;
+  color: black;
+  font-size: 18px ;
+  border-radius: 6px;
+}
+.sendbutton {
+  display: inline-block;
+  padding: 10px 20PX;
+  border: 2px solid black; 
+  color: grey;
+  background-color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: border-color 0.5s; 
+}
+.sendbutton:hover
+{
+  background-color: red;
+  color: black;
+}
+.book:hover{
+  background-color: #009087;
+  color : white;
+  border-color: wheat;
+}
+.menu {
+  display: inline-block;
+  padding: 20px; /* Adjust padding to make buttons square */
+  width: 130px; /* Adjust width to make buttons square */
+  height: 130px; /* Adjust height to make buttons square */
+  color: rgb(108, 153, 108);
+  background-color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: border-color 0.5s;
+  transition: transform 0.3s ease;
+  text-align: center; /* Center text horizontally */
+  line-height: 1.5; /* Center text vertically */
+}
+
+.menu img {
+  display: block;
+  margin: 0 auto 10px; /* Center the image vertically */
+}
+.menu:hover {
+  transform: scale(1.1);
+}
+.page-section {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.page-section.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/*
+#loadMoreBtn{
+  display: inline-block;
+  padding: 10px 20PX;
+  border: 2px solid red; 
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: border-color 0.5s; 
+  transition: transform 0.3s ease
+}*/
+
+/*
+.btn:link,
+.btn:visited {
+ text-transform: uppercase;
+ text-decoration: none;
+ color: rgb(27, 27, 27);
+ padding: 10px 30px;
+ border: 1px solid;
+ border-radius: 1000px;
+ display: inline-block;
+ transition: all .2s;
+ position: relative;
+}
+
+.btn:hover {
+ transform: translateY(-5px);
+ box-shadow: 0 10px 20px rgba(27, 27, 27, .5);
+}
+
+.btn:active {
+ transform: translateY(-3px);
+}
+
+.btn::after {
+ content: "";
+ display: inline-block;
+ height: 100%;
+ width: 100%;
+ border-radius: 100px;
+ top: 0;
+ left: 0;
+ position: absolute;
+ z-index: -1;
+ transition: all .3s;
+}
+
+.btn:hover::after {
+ background-color: rgb(0, 238, 255);
+ transform: scaleX(1.4) scaleY(1.5);
+ opacity: 0;
+}*/
+.btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(27, 27, 27);
+  padding: 10px 30px;
+  border: 1px solid;
+  border-radius: 1000px;
+  display: inline-block;
+  transition: all .2s;
+  position: relative;
+  background-color: grey;
+ }
+ 
+ .btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(27, 27, 27, .5);
+ }
+ 
+ .btn:active {
+  transform: translateY(-3px);
+ }
+ 
+ .btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  transition: all .3s;
+ }
+ 
+ .btn:hover::after {
+  background-color: rgb(0, 238, 255);
+  transform: scaleX(1.4) scaleY(1.5);
+  opacity: 0;
+ }
+ .checkbtn{
+
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 15px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+  align-items: left;
+ }
+ #check{
+  display: none;
+
+ }
+ #booktable {
+  background-image: url('contact.png'); /* Adjust the path to your background image */
+  
+}
+
+.services__container{
+  row-gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.services__content{
+  text-align: center;
+}
+
+.services__img{
+  width: 64px;
+  height: 64px;
+  margin-bottom: var(--mb-2);
+}
+
+.services__title{
+  font-size: var(--h3-font-size);
+  color: var(--title-color);
+  margin-bottom: var(--mb-1);
+}
+
+.services__description{
+  padding: 0 1.5rem;
+}
+.section{
+  padding: 4rem 0 2rem;
+}
+
+.section-title, .section-subtitle{
+  text-align: center;
+}
+
+
+.section-subtitle{
+  display: block;
+  color: var(--first-color);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-1);
+} 
+ @media (max-width: 952px) {
+  #navbar ul {
+    display: none;
+    position: fixed;
+    top: 56px; /* Adjust as needed */
+    left: 0;
+    width: 100%;
+    background-color: pink; /* Adjust as needed */
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+#navbar ul li {
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc; /* Adjust as needed */
+}
+#navbar ul li:last-child {
+    border-bottom: none;
+}
+#navbar ul li a {
+    color: #0d0e10; /* Adjust as needed */
+    text-decoration: none;
+    font-size: 18px; /* Adjust as needed */
+}
+#check {
+    display: none;
+}
+#check + label {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    
+    color: #0d0e10; /* Adjust as needed */
+    font-size: 20px; /* Adjust as needed */
+    text-align: center;
+    border-bottom: 1px solid #ccc; /* Adjust as needed */
+}
+#check + label:hover {
+    background-color: transparent /* Adjust as needed */
+}
+#check:checked ~ ul {
+    display: block;
+}
+
+}
