@@ -1,0 +1,2 @@
+streamlit==1.17.0  # Streamlit for the app interface
+graphviz==0.20.1  # For tree visualization

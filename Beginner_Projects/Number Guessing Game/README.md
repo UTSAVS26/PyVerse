@@ -1,4 +1,4 @@
-## **Password Generator**
+## **Number Guessing Game**
 
 ### 🎯 **Goal**
 
