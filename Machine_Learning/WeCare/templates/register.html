@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Register page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<style>
+    .button{
+        position: relative;
+        left: 35%;
+        top: 7.8%;
+        align-items: center;
+        margin-top: 3rem;
+    }
+    .container{
+        position: relative;
+        top: 10%;
+    }
+    h2{
+        text-align: center;
+    }
+    label{
+        font-weight: bold;
+    }
+</style>
+<body>
+
+    <div class="row justify-content-center">
+        <div class="col-sm-6">
+            <div class="container">
+                <h2>Register form</h2>
+                <form action="/register" method="POST">
+
+                    <div class="form-group">
+                        <label for="Name">Name:</label>
+                        <input type="text" class="form-control" id="fname" placeholder="Enter your name" name="name">
+                    </div>
+                  <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password">
+                  </div>
+                  <div class="form-group"></div>
+                    <label for="pwd">Confirm Password:</label>
+                    <input type="password" class="form-control" id="cpwd" placeholder="Enter password again" name="c_password">
+                  </div>
+                  
+                  <div class="button">
+                  <button type="submit" class="btn btn-dark">Register</button>
+                </div>
+                <span>Already Registered ? </span><a href="/login" class="btn btn-primary">Login</a>
+                </form>
+              </div>
+
+        </div>
+    </div>
+
+
+
+</body>
+</html>
