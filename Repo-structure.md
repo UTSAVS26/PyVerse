@@ -164,7 +164,9 @@
 │   ├── Number Guessing Game
 │   ├── Rock-Paper-Scissors
 │   ├── Snake_Game
-│   └── Trivia
+│   ├── Tic_Tac_Toe
+│   ├── Trivia
+│   └── Turtle Collection Game
 ├── Generative-AI
 │   └── Code-LLM-bot
 │       ├── images
