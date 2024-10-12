@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Signika+Negative:wght@500&display=swap');
+
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+/* Set full width and height for html and body */
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'PT Serif', serif; /* Set the font for the document */
+}
+
+/* Main container styles */
+#main {
+    display: flex;
+    align-items: center; /* Vertically center contents */
+    justify-content: center; /* Horizontally center contents */
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #2fdcdf, #00cef0, #00bdfa, #4fa9f9, #8492ea); /* Gradient background */
+}
+
+/* Panel container styles */
+#panel {
+    overflow: hidden; /* Prevents overflow of content */
+    width: 80%; /* Set width of the panel */
+    height: 90%; /* Set height of the panel */
+    background-color: white; /* Background color of the panel */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Top panel styles */
+#ptop {
+    padding: 0px 5%; 
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Vertically center items */
+    display: flex; /* Use flexbox layout */
+    width: 100%;
+    height: 95px; /* Height of the top panel */
+    background-color: #00bbea; /* Background color */
+}
+
+/* Box styles */
+.box {
+    padding: 10px; /* Inner padding */
+    border-radius: 5px; /* Rounded corners */
+    background-color: white; /* Background color */
+    font-weight: 600; /* Bold text */
+    font-size: 18px; /* Font size */
+    padding: 10px 15px; /* Padding for the box */
+    background-image: linear-gradient(to right bottom, #046eb7, #0072b7, #0077b8, #007bb7, #0b7fb7); /* Gradient background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    border: 1px solid #ddd; /* Border around the box */
+}
+
+/* Element styles */
+.elem {
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 10px; /* Space between items */
+    color: white; /* Text color */
+}
+
+/* Heading styles within elements */
+.elem h4 {
+    font-weight: 500; /* Semi-bold text */
+    font-size: 18px; /* Font size */
+    color: #333; /* Text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Shadow effect for text */
+}
+
+/* Bottom panel styles */
+#pbtm {
+    display: flex; /* Use flexbox layout */
+    flex-wrap: wrap; /* Allow items to wrap onto new lines */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    gap: 10px; /* Space between items */
+    padding: 10px; /* Padding around the panel */
+    width: 100%; /* Full width */
+    height: calc(100% - 95px); /* Remaining height after accounting for top panel */
+}
+
+/* Bubble styles */
+.bubble {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    width: 47px; /* Width of the bubble */
+    height: 47px; /* Height of the bubble */
+    background-image: linear-gradient(to bottom, #2fdcdf, #00cef0, #00bdfa, #4fa9f9, #8492ea); /* Gradient background */
+    border-radius: 50%; /* Make bubbles circular */
+    color: #fff; /* Text color */
+    font-weight: 500; /* Semi-bold text */
+    font-size: 20px; /* Font size */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    border: 2px solid #fff; /* White border around the bubble */
+}
+
+/* Media query for responsive design */
+@media (max-width: 600px) {
+    #ptop {
+        padding: 0px 2%; /* Reduce padding for smaller screens */
+    }
+
+    .box {
+        font-size: 16px; /* Smaller font size for boxes */
+    }
+
+    .elem {
+        gap: 5px; /* Reduce gap between elements */
+    }
+
+    .elem h4 {
+        font-size: 16px; /* Smaller font size for headings */
+    }
+
+    .bubble {
+        width: 40px; /* Smaller bubble width */
+        height: 40px; /* Smaller bubble height */
+        font-size: 18px; /* Smaller font size for bubbles */
+    }
+}
+
+/* Hover effect for bubbles */
+.bubble:hover {
+    cursor: pointer; /* Change cursor to pointer on hover */
+    background-image: linear-gradient(to top, #023e9c, #1545a2, #224ca8, #2c54ae, #355bb4); /* Change background gradient on hover */
+}

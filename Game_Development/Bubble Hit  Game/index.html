@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+    <title>Bubble Game</title> <!-- Title of the web page -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS stylesheet -->
+    <link rel="icon" type="image/png" href="images/favicon.png"> <!-- Favicon for the website -->
+</head>
+<body>
+    <div id="main"> <!-- Main container for the game -->
+        <div id="panel"> <!-- Panel that holds the game elements -->
+            <div id="ptop"> <!-- Top panel for displaying game status -->
+                <div class="elem"> <!-- Element to display hit value -->
+                    <h4> Hit </h4> <!-- Title for hit count -->
+                    <div id="hitvalue" class="box"> 6</div> <!-- Display the hit value -->
+                </div>
+                <div class="elem"> <!-- Element to display timer -->
+                    <h4> Timer</h4> <!-- Title for timer -->
+                    <div id="timervalue" class="box">60</div> <!-- Display the timer value -->
+                </div>
+                <div class="elem"> <!-- Element to display score -->
+                    <h4> Score</h4> <!-- Title for score -->
+                    <div id="scorevalue" class="box">0</div> <!-- Display the score value -->
+                </div>
+            </div>
+            <div id="pbtm"> <!-- Bottom panel for bubbles -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>
