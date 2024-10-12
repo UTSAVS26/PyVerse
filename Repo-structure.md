@@ -2,6 +2,9 @@
 ```
 ├── Advanced_Projects
 │   ├── EDUHELPER
+│   ├── EdgeLock-X
+│   │   ├── faces
+│   │   ├── static
 │   ├── GUI Based TaskManager
 │   ├── NaviBot-Voice-Assistant
 │   ├── Research-Snap
@@ -73,6 +76,7 @@
 ├── Cybersecurity_Tools
 │   ├── CLI-based Port Scanner
 │   ├── Encryption_Decryption app
+│   ├── Packet-sniffer
 │   ├── Pixel_Decoder
 │   ├── VidForensicsTool
 │   └── bruteforce_password_cracking
@@ -87,6 +91,7 @@
 │   │   ├── Header Files
 │   │   ├── Images
 │   │   ├── __pycache__
+│   ├── Hotel Demand EDA and Forecasting Using ARIMA Model
 │   ├── Whatsapp_Chat_Analyzer
 │   │   ├── Sample_Data
 │   │   ├── images
@@ -164,7 +169,9 @@
 │   ├── Number Guessing Game
 │   ├── Rock-Paper-Scissors
 │   ├── Snake_Game
-│   └── Trivia
+│   ├── Tic_Tac_Toe
+│   ├── Trivia
+│   └── Turtle Collection Game
 ├── Generative-AI
 │   └── Code-LLM-bot
 │       ├── images
