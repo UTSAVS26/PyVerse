@@ -165,7 +165,8 @@
 │   ├── Rock-Paper-Scissors
 │   ├── Snake_Game
 │   ├── Tic_Tac_Toe
-│   └── Trivia
+│   ├── Trivia
+│   └── Turtle Collection Game
 ├── Generative-AI
 │   └── Code-LLM-bot
 │       ├── images
