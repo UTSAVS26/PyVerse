@@ -164,6 +164,7 @@
 │   ├── Number Guessing Game
 │   ├── Rock-Paper-Scissors
 │   ├── Snake_Game
+│   ├── Tic_Tac_Toe
 │   └── Trivia
 ├── Generative-AI
 │   └── Code-LLM-bot
