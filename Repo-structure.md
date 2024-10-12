@@ -2,6 +2,9 @@
 ```
 ├── Advanced_Projects
 │   ├── EDUHELPER
+│   ├── EdgeLock-X
+│   │   ├── faces
+│   │   ├── static
 │   ├── GUI Based TaskManager
 │   ├── NaviBot-Voice-Assistant
 │   ├── Research-Snap
