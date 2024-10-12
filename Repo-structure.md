@@ -4,7 +4,9 @@
 │   ├── EDUHELPER
 │   ├── GUI Based TaskManager
 │   ├── NaviBot-Voice-Assistant
-│   └── Research-Snap
+│   ├── Research-Snap
+│   └── SkillSync
+│       └── templates
 ├── Algorithms_and_Data_Structures
 │   ├── BinarySearchTree
 │   │   ├── __pycache__
@@ -20,6 +22,7 @@
 │   │   ├── Minimum_spanning_tree
 │   │   ├── N-Queen-Visualiser-main
 │   │   └── Single_Source_Shortest_path_problems
+│   ├── HeapSort
 │   ├── Linked List
 │   ├── Pattern Search
 │   ├── Queue
@@ -91,6 +94,7 @@
 │   ├── customer_segmentation
 │   └── time_series_visualization
 ├── Deep_Learning
+│   ├── BankNifty Index Price Prediction LSTM
 │   ├── Bird Species Classification
 │   │   ├── Dataset
 │   │   ├── Images
@@ -160,7 +164,9 @@
 │   ├── Number Guessing Game
 │   ├── Rock-Paper-Scissors
 │   ├── Snake_Game
-│   └── Trivia
+│   ├── Tic_Tac_Toe
+│   ├── Trivia
+│   └── Turtle Collection Game
 ├── Generative-AI
 │   └── Code-LLM-bot
 │       ├── images
@@ -181,6 +187,7 @@
 │   │   ├── Dataset
 │   │   ├── Images
 │   │   └── Model
+│   ├── Analying_ML_model_using_maang
 │   ├── Automobile Sales Data Analysis and Prediction
 │   │   ├── Dataset
 │   │   ├── Images
@@ -213,6 +220,7 @@
 │   │   ├── Dataset
 │   │   ├── Images
 │   │   ├── Model
+│   ├── Red Wine Quality Detection
 │   ├── Signature_verification_portal
 │   ├── TextToTalk
 │   │   └── scripts
@@ -241,6 +249,28 @@
 │   │   ├── public
 │   │   └── src
 │   │       ├── components
+│   ├── FastAPI_Control_Panel
+│   │   ├── app
+│   │   ├── fastapi-react-frontend
+│   │   │   ├── public
+│   │   │   └── src
+│   │   │       ├── components
+│   │   │       │   ├── AddNewUser
+│   │   │       │   ├── AdminDashboard
+│   │   │       │   ├── LoginForm
+│   │   │       │   ├── RegistrationForm
+│   │   │       │   ├── SideBar
+│   │   │       │   ├── TopBar
+│   │   │       │   ├── UserDashboard
+│   │   │       │   ├── UserProfile
+│   │   │       │   └── UserTable
+│   │   │       ├── context
+│   │   │       ├── pages
+│   │   │       │   ├── Dashboard
+│   │   │       │   ├── Home
+│   │   │       │   └── Login
+│   │   │       ├── services
+│   │   │       └── utils
 │   ├── GIF_Generator-main
 │   │   ├── public
 │   │   ├── src
