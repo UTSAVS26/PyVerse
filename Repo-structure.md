@@ -88,6 +88,7 @@
 │   │   ├── Header Files
 │   │   ├── Images
 │   │   ├── __pycache__
+│   ├── Hotel Demand EDA and Forecasting Using ARIMA Model
 │   ├── Whatsapp_Chat_Analyzer
 │   │   ├── Sample_Data
 │   │   ├── images
