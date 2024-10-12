@@ -1,6 +1,6 @@
 Turtle Collection Game
 
-🎯 Goal The goal of this project is to create an engaging Rock-Paper-Scissors game that allows players to compete against a computer opponent in a fun and interactive way.
+🎯 Goal The goal of this project is to create a turtle game.
 
 🧾 Description 
 The Turtle Collection Game is a simple arcade-style game built using the Python turtle module. The player controls a turtle that navigates the screen, collecting points while avoiding obstacles. The objective is to increase the score by moving the player turtle toward randomly placed point items on the screen. The game ends if the player collides with any obstacles.
