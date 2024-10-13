@@ -59,6 +59,8 @@
 │   ├── Number Guessing Game
 │   ├── PDF Quering
 │   ├── Password-Generator
+│   ├── Positive_News_Digest
+│   │   ├── templates
 │   ├── QR Generator
 │   ├── Stock App
 │   │   ├── Templates
