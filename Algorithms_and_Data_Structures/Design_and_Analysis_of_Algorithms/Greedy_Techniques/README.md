@@ -88,6 +88,33 @@ The **Traveling Salesman Problem (TSP)** involves finding the shortest possible 
 
 - **Use Case**: Route optimization in logistics, delivery services, and circuit board manufacturing.
 
+
+### 7. **Coin Change Problem**
+
+The **Coin Change Problem** involves finding the minimum number of coins needed to make a certain amount of money, given a set of coin denominations.
+
+- **Greedy Approach**:
+  1. Sort the coin denominations in descending order.
+  2. Iteratively select the largest coin that doesn't exceed the remaining amount.
+  3. Repeat until the target amount is reached or no suitable coins remain.
+
+- **Time Complexity**: O(n log n) due to sorting, where n is the number of coin denominations.
+
+- **Use Case**: Currency systems, vending machines, and cashier algorithms.
+
+### 8. **Minimum Spanning Tree (MST) using Kruskal's Algorithm**
+
+The **Minimum Spanning Tree** problem involves finding a subset of edges in a weighted, undirected graph that connects all vertices with the minimum total edge weight.
+
+- **Greedy Approach (Kruskal's Algorithm)**:
+  1. Sort all edges in non-decreasing order of their weight.
+  2. Pick the smallest edge and add it to the MST if it doesn't create a cycle.
+  3. Repeat step 2 until the MST has (V-1) edges, where V is the number of vertices.
+
+- **Time Complexity**: O(E log E) or O(E log V), where E is the number of edges and V is the number of vertices.
+
+- **Use Case**: Network design, clustering algorithms, and approximation algorithms for NP-hard problems like the Traveling Salesman Problem.
+
 ---
 
 ## Key Differences Between Applications:
@@ -100,12 +127,16 @@ The **Traveling Salesman Problem (TSP)** involves finding the shortest possible 
 | **Optimal Merge Pattern**      | \(O(n \log n)\)      | File compression algorithms                    |
 | **Huffman Coding**            | \(O(n \log n)\)      | Data compression formats                       |
 | **Traveling Salesman Problem**| \(O(n^2)\)           | Route optimization                             |
+| **Coin Change**               | O(n log n)           | Currency systems, vending machines             |
+| **Minimum Spanning Tree**     | O(E log E) or O(E log V)| Network design, clustering algorithms          |
 
 ---
 
 ## Conclusion
 
-**Greedy Algorithms** are a powerful technique for solving optimization problems by making locally optimal choices. They provide efficient solutions to a variety of problems, including the **Activity Selection Problem**, **Job Scheduling**, **Fractional Knapsack**, **Optimal Merge Pattern**, **Huffman Coding**, and the **Traveling Salesman Problem**. By understanding the principles and applications of greedy algorithms, developers can tackle real-world problems effectively, maximizing efficiency and optimizing resource usage. 
+**Greedy Algorithms** are a powerful technique for solving optimization problems by making locally optimal choices. They provide efficient solutions to a variety of problems, including the **Activity Selection Problem**, **Job Scheduling**, **Fractional Knapsack**, **Optimal Merge Pattern**, **Huffman Coding**, and the **Traveling Salesman Problem**. 
+The addition of the **Coin Change Problem** and **Minimum Spanning Tree** using Kruskal's algorithm further expands the repertoire of greedy algorithms. These problems showcase how greedy strategies can be applied to optimize currency calculations and network designs, respectively. While the Coin Change greedy approach may not always yield the optimal solution for all coin systems, it's efficient for many practical scenarios. Kruskal's algorithm for MST demonstrates how a simple greedy choice of always selecting the lowest-weight edge can lead to an optimal solution for connecting all nodes in a graph with minimum total weight.
+By understanding the principles and applications of greedy algorithms, developers can tackle real-world problems effectively, maximizing efficiency and optimizing resource usage. 
 
 Mastering greedy algorithms not only enhances problem-solving skills but also lays a solid foundation for further exploration of advanced algorithmic techniques.
 

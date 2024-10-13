@@ -57,6 +57,8 @@
 │   ├── Number Guessing Game
 │   ├── PDF Quering
 │   ├── Password-Generator
+│   ├── Positive_News_Digest
+│   │   ├── templates
 │   ├── QR Generator
 │   ├── Stock App
 │   │   ├── Templates
@@ -175,10 +177,24 @@
 │       ├── images
 ├── Image processing
 │   ├── Lane Line Detection [OPEN CV]
-│   └── Number plate detection
-│       ├── model
-│       ├── ocr-notebook
-│       ├── plates
+│   ├── Number plate detection
+│   │   ├── model
+│   │   ├── ocr-notebook
+│   │   ├── plates
+│   └── PhotoSpectroscope
+│       ├── Analyser
+│       │   ├── Scripts
+│       │   └── Test Docs
+│       │       └── images
+│       ├── Normaliser
+│       │   ├── Images
+│       │   └── Script
+│       ├── Results
+│       ├── Scource
+│       ├── Theme
+│       │   └── theme
+│       │       ├── dark
+│       │       ├── light
 ├── Machine_Learning
 │   ├── AI_Language_Learning_Assistant
 │   ├── AI_Text_Detector
