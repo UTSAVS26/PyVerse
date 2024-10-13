@@ -2,9 +2,14 @@
 ```
 ├── Advanced_Projects
 │   ├── EDUHELPER
+│   ├── EdgeLock-X
+│   │   ├── faces
+│   │   ├── static
 │   ├── GUI Based TaskManager
 │   ├── NaviBot-Voice-Assistant
-│   └── Research-Snap
+│   ├── Research-Snap
+│   └── SkillSync
+│       └── templates
 ├── Algorithms_and_Data_Structures
 │   ├── BinarySearchTree
 │   │   ├── __pycache__
@@ -20,8 +25,10 @@
 │   │   ├── Minimum_spanning_tree
 │   │   ├── N-Queen-Visualiser-main
 │   │   └── Single_Source_Shortest_path_problems
+│   ├── HeapSort
 │   ├── Linked List
 │   ├── Pattern Search
+│   ├── Queue
 │   ├── Recurssion
 │   ├── Stack
 │   ├── Trees
@@ -33,8 +40,10 @@
 │   │   ├── assets
 │   │   │   └── images
 │   ├── Image-Tool
+│   ├── Web Scrapping
 │   └── WhatsApp Tool
 ├── Beginner_Projects
+│   ├── BMI Calculator
 │   ├── Bar-Code-Generator
 │   ├── Budget-tracker
 │   ├── Calculator_App
@@ -50,10 +59,16 @@
 │   ├── Number Guessing Game
 │   ├── PDF Quering
 │   ├── Password-Generator
+│   ├── Positive_News_Digest
+│   │   ├── templates
 │   ├── QR Generator
 │   ├── Stock App
 │   │   ├── Templates
 │   ├── Sudoku Solver
+│   ├── Task-Tracker
+│   │   ├── task_tracker
+│   │   │   ├── __pycache__
+│   │   ├── task_tracker.egg-info
 │   ├── Temperature
 │   ├── Turtle
 │   ├── URL_Shortener
@@ -63,17 +78,22 @@
 ├── Cybersecurity_Tools
 │   ├── CLI-based Port Scanner
 │   ├── Encryption_Decryption app
-│   └── Pixel_Decoder
+│   ├── Packet-sniffer
+│   ├── Pixel_Decoder
+│   ├── VidForensicsTool
+│   └── bruteforce_password_cracking
 ├── Data Analysis
 │   └── Unemployment Analysis due to COVID
 ├── Data Analytics
 │   └── IPL Analysis
 ├── DataVizLearnig
+│   ├── Movie Data Visualization
 ├── Data_Science
 │   ├── AI Virtual Painter
 │   │   ├── Header Files
 │   │   ├── Images
 │   │   ├── __pycache__
+│   ├── Hotel Demand EDA and Forecasting Using ARIMA Model
 │   ├── Whatsapp_Chat_Analyzer
 │   │   ├── Sample_Data
 │   │   ├── images
@@ -81,6 +101,7 @@
 │   ├── customer_segmentation
 │   └── time_series_visualization
 ├── Deep_Learning
+│   ├── BankNifty Index Price Prediction LSTM
 │   ├── Bird Species Classification
 │   │   ├── Dataset
 │   │   ├── Images
@@ -89,6 +110,8 @@
 │   │   ├── Dataset
 │   │   ├── Images
 │   │   ├── Model
+│   ├── Detect Bad Posture Media Pipe
+│   ├── Digital Image Tampering Detection
 │   ├── Dog Species Classification
 │   │   ├── DataSet
 │   │   ├── Images
@@ -112,10 +135,22 @@
 │   │   ├── assets
 │   │   │   └── images
 │   │   ├── ipynb files
+│   ├── SRGAN for upscaling image resolutions
+│   │   ├── main
+│   │   │   ├── temp
+│   │   │   └── tests
+│   │   └── saves
+│   │       ├── 6850
+│   │       └── 6900
 │   ├── Spam Vs Ham Mail Classification [With Streamlit GUI]
 │   │   ├── Dataset
 │   │   ├── Image
 │   │   ├── Model
+│   ├── Spoken Language Translator
+│   ├── Sugarcane Disease Prediction
+│   │   ├── Dataset
+│   │   ├── Images
+│   │   ├── models
 │   ├── YOLO-Drowsiness-Detection-main
 │   ├── smart_attendance_system
 │   │   ├── photos
@@ -136,7 +171,12 @@
 │   ├── Number Guessing Game
 │   ├── Rock-Paper-Scissors
 │   ├── Snake_Game
-│   └── Trivia
+│   ├── Tic_Tac_Toe
+│   ├── Trivia
+│   └── Turtle Collection Game
+├── Generative-AI
+│   └── Code-LLM-bot
+│       ├── images
 ├── Image processing
 │   ├── Lane Line Detection [OPEN CV]
 │   └── Number plate detection
@@ -154,6 +194,7 @@
 │   │   ├── Dataset
 │   │   ├── Images
 │   │   └── Model
+│   ├── Analying_ML_model_using_maang
 │   ├── Automobile Sales Data Analysis and Prediction
 │   │   ├── Dataset
 │   │   ├── Images
@@ -164,7 +205,8 @@
 │   │   ├── Model
 │   ├── Customer Clust - Customer Segmentation Tool
 │   ├── Decision Tree Classifier
-│   ├── Economic Regime Detection
+│   ├── Economic Regime Detection Project
+│   ├── Email Spam Classifier
 │   ├── Fake News Detection
 │   │   ├── Images
 │   │   ├── Model
@@ -172,6 +214,9 @@
 │   ├── Iris Classification using KNN
 │   │   ├── assets
 │   │   │   └── images
+│   ├── Landmark_Detection
+│   │   ├── images
+│   ├── Movie Classification
 │   ├── Multivitamine Prediction
 │   ├── Palm-Chatbot-main
 │   │   ├── server
@@ -182,11 +227,25 @@
 │   │   ├── Dataset
 │   │   ├── Images
 │   │   ├── Model
+│   ├── Red Wine Quality Detection
+│   ├── Signature_verification_portal
+│   ├── TextToTalk
+│   │   └── scripts
 │   ├── Twitter Sentiment Analysis
 │   │   ├── images
+│   ├── WeCare
+│   │   ├── datasets
+│   │   ├── instance
+│   │   ├── models
+│   │   ├── static
+│   │   └── templates
 │   ├── Zomato Restaurant Clustering and Sentiment Analysis
 │   ├── assets
+│   ├── pokemon-data-analysis-and-legendary-classification-main
+│   │   ├── Data
 ├── Tutorials
+├── Video Processing
+│   └── Online Video Editor
 ├── Web_Development
 │   ├── Advanced-Weather-APP
 │   │   ├── assets
@@ -197,11 +256,44 @@
 │   │   ├── public
 │   │   └── src
 │   │       ├── components
+│   ├── FastAPI_Control_Panel
+│   │   ├── app
+│   │   ├── fastapi-react-frontend
+│   │   │   ├── public
+│   │   │   └── src
+│   │   │       ├── components
+│   │   │       │   ├── AddNewUser
+│   │   │       │   ├── AdminDashboard
+│   │   │       │   ├── LoginForm
+│   │   │       │   ├── RegistrationForm
+│   │   │       │   ├── SideBar
+│   │   │       │   ├── TopBar
+│   │   │       │   ├── UserDashboard
+│   │   │       │   ├── UserProfile
+│   │   │       │   └── UserTable
+│   │   │       ├── context
+│   │   │       ├── pages
+│   │   │       │   ├── Dashboard
+│   │   │       │   ├── Home
+│   │   │       │   └── Login
+│   │   │       ├── services
+│   │   │       └── utils
+│   ├── GIF_Generator-main
+│   │   ├── public
+│   │   ├── src
+│   │   │   ├── components
+│   │   │   ├── hooks
 │   ├── Invoice-Generator
 │   │   ├── public
 │   │   ├── src
 │   │   │   ├── components
 │   │   │   ├── helpers
+│   ├── Password_Generator--main
+│   │   ├── assets
+│   ├── RazorPay-Clone-master
+│   │   ├── images
+│   ├── Recursive-Tic-Tac-Toe-main
+│   │   ├── assets
 │   ├── Web_Developement_resources
 │   ├── chatbot
 │   │   ├── __pycache__
@@ -209,6 +301,7 @@
 │   │   │   ├── images
 │   │   ├── templates
 │   └── sudoku_solver
+├── api_dev
 ├── cybersecurity_resources
 │   └── pdf
 ```
