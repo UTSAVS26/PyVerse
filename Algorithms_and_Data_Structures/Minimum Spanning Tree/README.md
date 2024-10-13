@@ -42,7 +42,7 @@ This project demonstrates three algorithms for finding the Minimum Spanning Tree
 - For sparse graphs, using SciPy’s implementation, the time complexity is typically `O(E log V)`.
 - Usage: This method is very efficient when working with large, sparse graphs. The sparse matrix format saves memory and speeds up computation.
 
-**Installation and Requirements**<br>
+### **Installation and Requirements**<br>
 To run the algorithms, you will need:
 - Python 3.x
 - `SciPy` for the SciPy Minimum Spanning Tree
