@@ -16,13 +16,17 @@ Stock Predictions: Use machine learning models (e.g., LSTM, ARIMA) to predict st
 Investment Recommendations: Generate buy/sell/hold signals based on user-defined investment goals.
 News Sentiment Analysis: Analyze market sentiment through financial news or social media trends..
 
-### 📚 - **Streamlit**: For building the user interface.
-- **python-barcode**: To generate the barcodes.
-- **base64**: For encoding the barcode image to display and download in the Streamlit app.
-Libraries Needed
+### 📚 \Libraries Needed
+- **Streamlit**: For building the user interface.
+- **Bokeh**: For creating interactive visualizations.
+- **yfinance**: For fetching real-time stock data.
+- **python-barcode**: (Optional) For generating barcodes as part of another feature.
+- **TensorFlow/Scikit-learn**: For implementing machine learning models.
+- **NLTK/TextBlob**: For sentiment analysis of financial news.
+
 
 ### 📢 Conclusion
 The barcode generator offers a simple and effective way for users to generate and download barcodes in various formats. The app handles input validation and provides a clean interface for creating barcodes, making it a useful tool for generating barcodes on demand.
 
-**Akarsh Ghildyal**  
-[GitHub](https://github.com/AkarshGhildyal) | [LinkedIn](https://www.linkedin.com/in/akarsh-ghildyal/)
+**Aman Verma**  
+[GitHub](https://github.com/amanver45) | [LinkedIn](https://www.linkedin.com/in/aman-verma-47b626294)
