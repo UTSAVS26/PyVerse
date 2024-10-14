@@ -233,6 +233,9 @@
 │   │   ├── Model
 │   ├── Flight_delay_prediction
 │   ├── Hand Game Controller
+│   ├── Intrusion Detection System
+│   │   ├── Dataset
+│   │   ├── Image
 │   ├── Iris Classification using KNN
 │   │   ├── assets
 │   │   │   └── images
