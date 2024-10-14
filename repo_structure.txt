@@ -161,7 +161,9 @@
 │           ├── test_labels.csv
 │           └── train.csv
 ├── Game_Development
+│   ├── Bubble Shoot
 │   ├── Card quest
+│   ├── Dice_rolling_simulator
 │   ├── Flappy_Bird
 │   │   ├── audio
 │   │   └── sprites
@@ -170,6 +172,7 @@
 │   ├── KBC
 │   ├── MasterMind
 │   ├── Number Guessing Game
+│   ├── Pig Dice Game
 │   ├── Rock-Paper-Scissors
 │   ├── Snake_Game
 │   ├── Tic_Tac_Toe
@@ -228,6 +231,7 @@
 │   ├── Fake News Detection
 │   │   ├── Images
 │   │   ├── Model
+│   ├── Flight_delay_prediction
 │   ├── Hand Game Controller
 │   ├── Iris Classification using KNN
 │   │   ├── assets
