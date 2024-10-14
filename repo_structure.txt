@@ -247,6 +247,7 @@
 │   │   ├── Model
 │   ├── Red Wine Quality Detection
 │   ├── Signature_verification_portal
+│   ├── Style Transfer with Neural Network
 │   ├── TextToTalk
 │   │   └── scripts
 │   ├── Twitter Sentiment Analysis
