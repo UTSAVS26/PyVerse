@@ -26,7 +26,7 @@ News Sentiment Analysis: Analyze market sentiment through financial news or soci
 
 
 ### 📢 Conclusion
-The barcode generator offers a simple and effective way for users to generate and download barcodes in various formats. The app handles input validation and provides a clean interface for creating barcodes, making it a useful tool for generating barcodes on demand.
+It is an easy-to-use yet powerful tool for stock comparison, analysis, and investment decision-making. With its interactive charts and AI-driven recommendations, It helps investors—whether beginners or experts—make data-driven decisions with confidence.
 
 **Aman Verma**  
 [GitHub](https://github.com/amanver45) | [LinkedIn](https://www.linkedin.com/in/aman-verma-47b626294)
