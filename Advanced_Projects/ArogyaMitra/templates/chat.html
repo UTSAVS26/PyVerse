@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArogyaMitra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @font-face {
+            font-family: 'Valacia Vintage';
+            src: url('path-to-your-font/ValaciaVintage.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            background-color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .welcome-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+            color: #fff;
+        }
+
+        .welcome-title {
+            font-size: 6em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .welcome-slogan {
+            font-size: 1.5em;
+            font-weight: normal;
+            margin-bottom: 50px;
+            font-family: 'Valacia Vintage', serif;
+        }
+
+        .message-container {
+            display: none;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            height: calc(100vh - 120px - 100px); /* Adjusted height to fit above the input container and leave space for disclaimer */
+            margin-bottom: 70px;
+            overflow-y: auto;
+            box-sizing: border-box;
+            padding: 10px;
+            position: absolute;
+            top: 60px; /* Space for the welcome slogan */
+            left: 0;
+            right: 0;
+            background-color: #333;
+        }
+
+        .chat-message {
+            width: auto;
+            max-width: 80%;
+            background-color: #444;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px 0;
+            color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            position: relative;
+            word-wrap: break-word;
+            overflow: hidden;
+        }
+
+        .chat-message.user {
+            background-color: #007bff;
+            color: #fff;
+            text-align: right;
+            align-self: flex-end;
+            margin-left: auto;
+        }
+
+        .chat-message.bot {
+            background-color: #e0e0e0;
+            color: #000;
+            text-align: left;
+            align-self: flex-start;
+            margin-right: auto;
+        }
+
+        .chat-input-container {
+            display: none;
+            position: fixed;
+            bottom: 50px; /* Moved up to make space for the disclaimer */
+            width: 95%;
+            max-width: 800px;
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            padding: 15px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            z-index: 10;
+        }
+
+        .chat-input {
+            display: flex;
+            width: 100%;
+            border-top: 1px solid #ddd;
+        }
+
+        .chat-input input {
+            flex: 1;
+            padding: 15px;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #444;
+            color: #fff;
+        }
+
+        .chat-input button {
+            padding: 15px;
+            border: none;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .chat-input button:disabled {
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
+
+        .disclaimer {
+            position: fixed;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+            z-index: 5;
+        }
+
+        .logo {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 2em;
+            color: #fff;
+            z-index: 5;
+        }
+
+        .welcome-slogan-top {
+            position: fixed;
+            top: 50px;
+            left: 10px;
+            font-family: 'Valacia Vintage', serif;
+            font-size: 1.2em;
+            color: #fff;
+            z-index: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container" id="welcome-container">
+        <div class="welcome-title">ArogyaMitra</div>
+        <div class="welcome-slogan">"Wellness Crafted for You"</div>
+    </div>
+
+    <div class="message-container" id="message-container"></div>
+
+    <div class="chat-input-container" id="chat-input-container">
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Ask me about Arogya..." onkeydown="handleKeyDown(event)">
+            <button id="send-button" onclick="sendMessage()"><i class="fas fa-arrow-up"></i></button>
+        </div>
+    </div>
+
+    <div class="disclaimer">
+        ArogyaMitra is not capable of answering all your questions, still in R&D
+    </div>1
+
+    <div class="logo" id="logo">ArogyaMitra</div>
+    <div class="welcome-slogan-top" id="welcome-slogan-top">"Wellness Crafted for You"</div>
+
+    <script>
+        let waitingForResponse = false;
+        let firstInputReceived = false;
+
+        function showChatContainer() {
+            if (firstInputReceived) {
+                document.getElementById('welcome-container').style.display = 'none';
+                document.getElementById('message-container').style.display = 'flex';
+                document.getElementById('chat-input-container').style.display = 'flex';
+                document.getElementById('logo').style.display = 'block';
+                document.getElementById('welcome-slogan-top').style.display = 'block';
+            }
+        }
+
+        function addMessage(content, sender) {
+            const messageElement = document.createElement('div');
+            messageElement.className = `chat-message ${sender}`;
+            messageElement.textContent = content;
+            document.getElementById('message-container').appendChild(messageElement);
+            messageElement.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function sendMessage() {
+            if (waitingForResponse) return;
+
+            const userInput = document.getElementById('user-input');
+            const message = userInput.value.trim();
+            if (message) {
+                addMessage(message, 'user');
+                userInput.value = '';
+                disableInput(true);
+
+                waitingForResponse = true;
+                fetch('/get', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    },
+                    body: 'msg=' + encodeURIComponent(message)
+                })
+                .then(response => response.text())
+                .then(data => {
+                    addMessage(data, 'bot');
+                    waitingForResponse = false;
+                    disableInput(false);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    waitingForResponse = false;
+                    disableInput(false);
+                });
+            }
+        }
+
+        function handleKeyDown(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                sendMessage();
+            }
+        }
+
+        function disableInput(disable) {
+            document.getElementById('user-input').disabled = disable;
+            document.getElementById('send-button').disabled = disable;
+        }
+
+        function handleInitialDisplay() {
+            document.getElementById('welcome-container').style.display = 'flex';
+            document.getElementById('logo').style.display = 'none';
+            document.getElementById('welcome-slogan-top').style.display = 'none';
+        }
+
+        handleInitialDisplay();
+
+        document.getElementById('user-input').addEventListener('focus', () => {
+            if (!firstInputReceived) {
+                firstInputReceived = true;
+                showChatContainer();
+            }
+        });
+
+        document.getElementById('user-input').addEventListener('input', showChatContainer);
+    </script>
+</body>
+</html>

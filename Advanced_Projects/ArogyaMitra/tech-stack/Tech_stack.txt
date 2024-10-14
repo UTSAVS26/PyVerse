@@ -1,0 +1,5 @@
+Language: Python
+langchain: GenAI Framework 
+Frontend/webapp: Flask/Streamlit
+LLM: Meta llama 2
+Vector DB: Pinecone
