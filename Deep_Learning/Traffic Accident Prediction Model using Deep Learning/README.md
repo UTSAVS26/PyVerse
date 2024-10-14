@@ -1,4 +1,4 @@
-# 🚦 Traffic Accident Prediction Model using Deep Learning 🧠
+# 🚦 Traffic Accident Prediction Model using Deep Learning 
 
 Welcome to the **Traffic Accident Prediction** project! This project utilizes machine learning techniques and historical data (e.g., accident records, weather conditions, traffic volume, road characteristics) to predict the likelihood of traffic accidents. Our aim is to provide insights into high-risk areas and conditions, enabling local authorities to implement targeted safety measures and improve traffic management strategies. 
 
