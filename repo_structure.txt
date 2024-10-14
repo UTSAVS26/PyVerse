@@ -9,6 +9,7 @@
 │   └── SkillSync
 │       └── templates
 ├── Algorithms_and_Data_Structures
+│   ├── Arrays
 │   ├── BinarySearchTree
 │   │   ├── __pycache__
 │   ├── Design_and_Analysis_of_Algorithms
