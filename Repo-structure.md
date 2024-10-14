@@ -1,215 +1,1729 @@
-<!-- START_STRUCTURE -->
 ```
-├── Advanced_Projects
-│   ├── EDUHELPER
-│   ├── GUI Based TaskManager
-│   ├── NaviBot-Voice-Assistant
-│   └── Research-Snap
-├── Algorithms_and_Data_Structures
-│   ├── BinarySearchTree
-│   │   ├── __pycache__
-│   ├── Design_and_Analysis_of_Algorithms
-│   │   ├── All_Pair_Shortest_path_problems
-│   │   ├── Backtracking
-│   │   ├── Branch_and_Bound
-│   │   ├── Divide_and_Conquer
-│   │   ├── Dynammic_Programming
-│   │   ├── Graph_Traversing
-│   │   ├── Greedy_Techniques
-│   │   ├── Maximum_Flow
-│   │   ├── Minimum_spanning_tree
-│   │   ├── N-Queen-Visualiser-main
-│   │   └── Single_Source_Shortest_path_problems
-│   ├── Linked List
-│   ├── Pattern Search
-│   ├── Recurssion
-│   ├── Stack
-│   ├── Trees
-│   ├── avl_tree_visualizer
-│   └── visualizer
-├── Automation_Tools
-│   ├── Autofill personal info using Aadhar Card Image
-│   │   ├── OCR ADHAAR API
-│   │   ├── assets
-│   │   │   └── images
-│   ├── Image-Tool
-│   └── WhatsApp Tool
-├── Beginner_Projects
-│   ├── Bar-Code-Generator
-│   ├── Budget-tracker
-│   ├── Calculator_App
-│   ├── Chat App
-│   ├── Digital Clock
-│   ├── Email_Automation
-│   ├── File Sorter
-│   │   └── Theme
-│   │       ├── dark
-│   │       └── light
-│   ├── Morse Code Translator with GUI
-│   │   └── screenshots
-│   ├── Number Guessing Game
-│   ├── PDF Quering
-│   ├── Password-Generator
-│   ├── QR Generator
-│   ├── Stock App
-│   │   ├── Templates
-│   ├── Sudoku Solver
-│   ├── Temperature
-│   ├── Turtle
-│   ├── URL_Shortener
-│   ├── Web Scraper
-│   └── chess_game
-├── Blockchain_Development
-├── Cybersecurity_Tools
-│   ├── CLI-based Port Scanner
-│   ├── Encryption_Decryption app
-│   └── Pixel_Decoder
-├── Data Analysis
-│   └── Unemployment Analysis due to COVID
-├── Data Analytics
-│   └── IPL Analysis
-├── DataVizLearnig
-├── Data_Science
-│   ├── AI Virtual Painter
-│   │   ├── Header Files
-│   │   ├── Images
-│   │   ├── __pycache__
-│   ├── Whatsapp_Chat_Analyzer
-│   │   ├── Sample_Data
-│   │   ├── images
-│   ├── analysis_covid_trends
-│   ├── customer_segmentation
-│   └── time_series_visualization
-├── Deep_Learning
-│   ├── Bird Species Classification
-│   │   ├── Dataset
-│   │   ├── Images
-│   │   ├── Model
-│   ├── Brain Tumor Detection
-│   │   ├── Dataset
-│   │   ├── Images
-│   │   ├── Model
-│   ├── Dog Species Classification
-│   │   ├── DataSet
-│   │   ├── Images
-│   │   ├── Models
-│   ├── Face Mask Detection
-│   │   ├── Dataset
-│   │   ├── Images
-│   │   ├── Model
-│   ├── File-Locking-Mechanism
-│   │   ├── Face_Recognition_Script
-│   ├── MNIST Digit Classification using Neural Networks
-│   │   ├── dataset
-│   │   ├── images
-│   │   ├── model
-│   ├── Object detection
-│   │   ├── Dataset
-│   │   ├── Images
-│   │   ├── Model
-│   ├── Plant Disease Detection
-│   │   ├── Final tensorflow Models
-│   │   ├── assets
-│   │   │   └── images
-│   │   ├── ipynb files
-│   ├── Spam Vs Ham Mail Classification [With Streamlit GUI]
-│   │   ├── Dataset
-│   │   ├── Image
-│   │   ├── Model
-│   ├── YOLO-Drowsiness-Detection-main
-│   ├── smart_attendance_system
-│   │   ├── photos
-│   └── toxicity insult analyser
-│       └── jigsaw-toxic-comment-classification-challenge
-│           ├── sample_submission.csv
-│           ├── test.csv
-│           ├── test_labels.csv
-│           └── train.csv
-├── Game_Development
-│   ├── Flappy_Bird
-│   │   ├── audio
-│   │   └── sprites
-│   ├── Hangman-main
-│   │   └── images
-│   ├── KBC
-│   ├── MasterMind
-│   ├── Number Guessing Game
-│   ├── Rock-Paper-Scissors
-│   ├── Snake_Game
-│   └── Trivia
-├── Image processing
-│   ├── Lane Line Detection [OPEN CV]
-│   └── Number plate detection
-│       ├── model
-│       ├── ocr-notebook
-│       ├── plates
-├── Machine_Learning
-│   ├── AI_Language_Learning_Assistant
-│   ├── AI_Text_Detector
-│   ├── Absent_Time_prediction_using_HyperParameter_Tuning
-│   │   ├── absenteeism_at_work_data
-│   │   ├── images
-│   │   ├── model
-│   ├── Air Quality Prediction
-│   │   ├── Dataset
-│   │   ├── Images
-│   │   └── Model
-│   ├── Automobile Sales Data Analysis and Prediction
-│   │   ├── Dataset
-│   │   ├── Images
-│   │   ├── Model
-│   ├── Bitcoin Price Prediction
-│   │   ├── Dataset
-│   │   ├── Images
-│   │   ├── Model
-│   ├── Customer Clust - Customer Segmentation Tool
-│   ├── Decision Tree Classifier
-│   ├── Economic Regime Detection
-│   ├── Fake News Detection
-│   │   ├── Images
-│   │   ├── Model
-│   ├── Hand Game Controller
-│   ├── Iris Classification using KNN
-│   │   ├── assets
-│   │   │   └── images
-│   ├── Multivitamine Prediction
-│   ├── Palm-Chatbot-main
-│   │   ├── server
-│   │   ├── src
-│   │   │   ├── app
-│   │   │   ├── assets
-│   ├── Predicting Exam Score Using linear Regression
-│   │   ├── Dataset
-│   │   ├── Images
-│   │   ├── Model
-│   ├── Twitter Sentiment Analysis
-│   │   ├── images
-│   ├── Zomato Restaurant Clustering and Sentiment Analysis
-│   ├── assets
-├── Tutorials
-├── Web_Development
-│   ├── Advanced-Weather-APP
-│   │   ├── assets
-│   ├── DevDetective
-│   │   ├── assets
-│   │   │   ├── images
-│   ├── DocXtract
-│   │   ├── public
-│   │   └── src
-│   │       ├── components
-│   ├── Invoice-Generator
-│   │   ├── public
-│   │   ├── src
-│   │   │   ├── components
-│   │   │   ├── helpers
-│   ├── Web_Developement_resources
-│   ├── chatbot
-│   │   ├── __pycache__
-│   │   ├── static
-│   │   │   ├── images
-│   │   ├── templates
-│   └── sudoku_solver
-├── cybersecurity_resources
-│   └── pdf
+└── 📁PyVerse
+    └── 📁Advanced_Projects
+        └── 📁EdgeLock-X
+            └── 📁faces
+                └── Mysterio.png
+            └── 📁static
+                └── app.js
+                └── home.html
+                └── index.html
+            └── .env-sample
+            └── generate_keys.py
+            └── README.md
+            └── requirements.txt
+            └── tee_server.py
+            └── web_server.py
+        └── 📁EDUHELPER
+            └── .env.example
+            └── .gitignore
+            └── main.py
+            └── README.md
+            └── requirements.txt
+        └── 📁GUI Based TaskManager
+            └── mang.py
+            └── readme.md
+        └── 📁NaviBot-Voice-Assistant
+            └── app.py
+            └── main.py
+            └── map.py
+            └── README.md
+            └── requirements.txt
+        └── 📁Research-Snap
+            └── .env-sample
+            └── app.py
+            └── README.md
+            └── requirements.txt
+        └── 📁SkillSync
+            └── 📁templates
+                └── index.html
+            └── .env-sample
+            └── app.py
+            └── README.md
+            └── requirements.txt
+        └── .gitkeep
+    └── 📁Algorithms_and_Data_Structures
+        └── 📁avl_tree_visualizer
+            └── .gitignore
+            └── input.txt
+            └── main.py
+            └── output.txt
+            └── README.md
+            └── requirements.txt
+        └── 📁BinarySearchTree
+            └── 📁__pycache__
+                └── bst.cpython-312.pyc
+                └── bstnode.cpython-312.pyc
+            └── __init__.py
+            └── bst.py
+            └── bstnode.py
+            └── main.py
+        └── 📁Design_and_Analysis_of_Algorithms
+            └── 📁All_Pair_Shortest_path_problems
+                └── floyd_warshall.py
+                └── johnsons.py
+                └── README.md
+                └── Repeated_Dijkstra.py
+            └── 📁Backtracking
+                └── graph_coloring.py
+                └── hamiltonian_cycle.py
+                └── knights_tour.py
+                └── maze_solving.py
+                └── n_queens.py
+                └── README.md
+            └── 📁Branch_and_Bound
+                └── 8_puzzle.py
+                └── README.md
+            └── 📁Divide_and_Conquer
+                └── binary_search.py
+                └── merge_sort.py
+                └── min_max.py
+                └── quick_sort.py
+                └── README.md
+                └── tower_of_hanoi.py
+            └── 📁Dynammic_Programming
+                └── 01_knapsack.py
+                └── lcs.py
+                └── matrix_multiplication.py
+                └── nth_fibonacci.py
+                └── README.md
+                └── two_city_scheduling-3d-dp.py
+            └── 📁Graph_Traversing
+                └── BFS.py
+                └── DFS.py
+                └── README.md
+            └── 📁Greedy_Techniques
+                └── activity_selection.py
+                └── Coin_change.py
+                └── fractional_knapsack.py
+                └── huffman_code.py
+                └── job_scheduling.py
+                └── minimum_spanning_tree.py
+                └── optimal_merge_pattern.py
+                └── README.md
+                └── travel_salesman.py
+            └── 📁Maximum_Flow
+                └── ford_fulkenson.py
+                └── README.md
+            └── 📁Minimum_spanning_tree
+                └── kruskal.py
+                └── prim.py
+                └── README.md
+            └── 📁N-Queen-Visualiser-main
+                └── chess.js
+                └── index.css
+                └── index.html
+                └── README.md
+            └── 📁Single_Source_Shortest_path_problems
+                └── a_star.py
+                └── bellman_ford.py
+                └── dijkstra.py
+                └── README.md
+            └── README.md
+        └── 📁HeapSort
+            └── heapsortvisualizer.py
+            └── timecomplexity1.py
+        └── 📁Linked List
+            └── Menu_Driven_Code_for_Circular_Doubly_LinkedList.py
+            └── Menu_Driven_Code_for_Circular_LinkedList.py
+            └── Menu_Driven_Code_for_Doubly_LinkedList.py
+            └── Menu_Driven_Code_for_Dynamic_Linear_Queue_using_LinkedList.py
+            └── Menu_Driven_Code_for_Dynamic_Stack_using_LinkedList.py
+            └── Menu_Driven_Code_for_Linear_LinkedList.py
+            └── README.md
+        └── 📁Pattern Search
+            └── aho_corasick.py
+            └── bitap_algorithm.py
+            └── boyer_moore.py
+            └── kmp_pattern_search.py
+            └── naive_pattern_search.py
+            └── rabin_karp.py
+            └── suffix_array.py
+        └── 📁Queue
+            └── Circular_Queue.py
+            └── Deque.py
+            └── Linear_Queue.py
+            └── Priority_Queue.py
+            └── Queue_Using_Two_Stacks.py
+            └── README.md
+        └── 📁Recurssion
+            └── Binary_Search.py
+            └── Check_for_Palindrome.py
+            └── Count_Vowels_in_a_String.py
+            └── Factorial.py
+            └── Fibonacci_Series.py
+            └── Power_Function.py
+            └── Reverse_a_String.py
+            └── TowerofHanoi.py
+        └── 📁Stack
+            └── README.md
+            └── stack.py
+        └── 📁Trees
+            └── Menu_Driven_Code_for_Avl_Tree.py
+            └── Menu_Driven_Code_for_Binary_Search_Tree.py
+            └── Menu_Driven_Code_for_Binary_Tree.py
+            └── Menu_Driven_Code_for_DFS.py
+            └── Menu_Driven_Code_for_Tree_Traversals.py
+            └── README.md
+        └── 📁visualizer
+            └── binary_search_tree_visualizer.py
+            └── binary_tree_visualizer.py
+            └── heap_sort_visualizer.py
+            └── README.md
+            └── requirements.txt
+            └── tree_traversal_visualizer.py
+        └── .gitkeep
+    └── 📁api_dev
+        └── .gitignore
+        └── database.py
+        └── main.py
+        └── models.py
+        └── ReadME.md
+        └── requirements.txt
+    └── 📁Automation_Tools
+        └── 📁Autofill personal info using Aadhar Card Image
+            └── 📁assets
+                └── 📁images
+                    └── api_response.png
+                    └── easyocr.png
+                    └── Output.png
+                    └── tesseract.png
+            └── 📁OCR ADHAAR API
+                └── app.py
+            └── extract_aadhar_details.ipynb
+            └── README.md
+            └── requirements.txt
+            └── RESULT.md
+        └── 📁Image-Tool
+            └── Image_Tool.py
+            └── README.md
+            └── requirements.txt
+        └── 📁Web Scrapping
+            └── books_data.csv
+            └── README.md
+            └── WebScrapping.ipynb
+        └── 📁WhatsApp Tool
+            └── WhatsappBot.py
+        └── .gitkeep
+    └── 📁Beginner_Projects
+        └── 📁Bar-Code-Generator
+            └── barCodeGenerator.py
+            └── README.md
+            └── requirements.txt
+        └── 📁BMI Calculator
+            └── BMI.py
+            └── README.md
+        └── 📁Budget-tracker
+            └── budget.md
+            └── budget.py
+        └── 📁Calculator_App
+            └── main.py
+            └── README.md
+        └── 📁Chat App
+            └── chat_client.py
+            └── chat_server.py
+            └── README.md
+        └── 📁chess_game
+            └── __init__.py
+            └── .gitignore
+            └── board.py
+            └── game.py
+            └── piece.py
+        └── 📁Digital Clock
+            └── Digital Clock.PNG
+            └── digital_clock.py
+            └── README.md
+        └── 📁Email_Automation
+            └── email_automation.py
+            └── README.md
+        └── 📁File Sorter
+            └── 📁Theme
+                └── 📁dark
+                    └── box-accent.png
+                    └── box-basic.png
+                    └── box-hover.png
+                    └── box-invalid.png
+                    └── button-hover.png
+                    └── card.png
+                    └── check-accent.png
+                    └── check-basic.png
+                    └── check-hover.png
+                    └── check-tri-accent.png
+                    └── check-tri-basic.png
+                    └── check-tri-hover.png
+                    └── circle-accent.png
+                    └── circle-basic.png
+                    └── circle-hover.png
+                    └── combo-button-basic.png
+                    └── combo-button-focus.png
+                    └── combo-button-hover.png
+                    └── down-accent.png
+                    └── down.png
+                    └── empty.png
+                    └── hor-accent.png
+                    └── hor-basic.png
+                    └── hor-hover.png
+                    └── notebook.png
+                    └── off-basic.png
+                    └── on-accent.png
+                    └── on-basic.png
+                    └── outline-basic.png
+                    └── outline-hover.png
+                    └── radio-accent.png
+                    └── radio-basic.png
+                    └── radio-hover.png
+                    └── radio-tri-accent.png
+                    └── radio-tri-basic.png
+                    └── radio-tri-hover.png
+                    └── rect-accent-hover.png
+                    └── rect-accent.png
+                    └── rect-basic.png
+                    └── rect-hover.png
+                    └── right.png
+                    └── scale-hor.png
+                    └── scale-vert.png
+                    └── separator.png
+                    └── size.png
+                    └── tab-basic.png
+                    └── tab-disabled.png
+                    └── tab-hover.png
+                    └── tick-hor-accent.png
+                    └── tick-hor-basic.png
+                    └── tick-hor-hover.png
+                    └── tick-vert-accent.png
+                    └── tick-vert-basic.png
+                    └── tick-vert-hover.png
+                    └── tree-basic.png
+                    └── tree-pressed.png
+                    └── up-accent.png
+                    └── up.png
+                    └── vert-accent.png
+                    └── vert-basic.png
+                    └── vert-hover.png
+                └── 📁light
+                    └── box-accent.png
+                    └── box-basic.png
+                    └── box-hover.png
+                    └── box-invalid.png
+                    └── button-hover.png
+                    └── card.png
+                    └── check-accent.png
+                    └── check-basic.png
+                    └── check-hover.png
+                    └── check-tri-accent.png
+                    └── check-tri-basic.png
+                    └── check-tri-hover.png
+                    └── circle-accent.png
+                    └── circle-basic.png
+                    └── circle-hover.png
+                    └── combo-button-basic.png
+                    └── combo-button-focus.png
+                    └── combo-button-hover.png
+                    └── down-accent.png
+                    └── down.png
+                    └── empty.png
+                    └── hor-accent.png
+                    └── hor-basic.png
+                    └── hor-hover.png
+                    └── notebook.png
+                    └── off-basic.png
+                    └── off-hover.png
+                    └── on-accent.png
+                    └── on-basic.png
+                    └── on-hover.png
+                    └── outline-basic.png
+                    └── outline-hover.png
+                    └── radio-accent.png
+                    └── radio-basic.png
+                    └── radio-hover.png
+                └── azure.tcl
+                └── Dark screenshot.png
+                └── example.py
+                └── Light screenshot.png
+            └── App.py
+            └── README.md
+        └── 📁Morse Code Translator with GUI
+            └── 📁screenshots
+                └── tkinter-working.gif
+            └── main.py
+            └── README.md
+        └── 📁Number Guessing Game
+            └── number_guessing_game.py
+            └── README.md
+        └── 📁Password-Generator
+            └── passwordGenerator.py
+            └── README.md
+            └── requirements.txt
+        └── 📁PDF Quering
+            └── app.py
+            └── config.toml
+            └── README.md
+            └── requirements.txt
+        └── 📁Positive_News_Digest
+            └── 📁templates
+                └── bookmarks.html
+                └── index.html
+            └── app_flask.py
+            └── data_collection.py
+            └── README.md
+            └── requirements.txt
+            └── sentiment_analysis.py
+            └── visualization.py
+        └── 📁QR Generator
+            └── generate_qrcode.py
+            └── QR_code_generator_GUI.py
+            └── QR-code_generator.py
+            └── README.md
+        └── 📁Stock App
+            └── 📁Templates
+                └── base.html
+                └── financials.html
+                └── index.html
+            └── Readme.md
+            └── server.py
+        └── 📁Sudoku Solver
+            └── README.md
+            └── sudoku.py
+        └── 📁Task-Tracker
+            └── 📁task_tracker
+                └── 📁__pycache__
+                    └── __init__.cpython-312.pyc
+                    └── cli.cpython-312.pyc
+                └── __init__.py
+                └── cli.py
+            └── 📁task_tracker.egg-info
+                └── dependency_links.txt
+                └── entry_points.txt
+                └── PKG-INFO
+                └── requires.txt
+                └── SOURCES.txt
+                └── top_level.txt
+            └── README.md
+            └── requirements.txt
+            └── setup.py
+            └── tasks.json
+        └── 📁Temperature
+            └── README.md
+            └── Temp.py
+        └── 📁Turtle
+            └── rainbow_spiral.py
+            └── Readme.md
+            └── turtle_spiral.py
+            └── turtle.py
+        └── 📁URL_Shortener
+            └── README.md
+            └── url_shortener.py
+        └── 📁Web Scraper
+            └── README.md
+            └── web_scraper.py
+        └── .gitkeep
+        └── Egg_Catcher_Game.py
+        └── Tasker.py
+    └── 📁Blockchain_Development
+        └── .gitkeep
+    └── 📁cybersecurity_resources
+        └── 📁pdf
+            └── A_Bug_Bounty_Hunting_Journey.pdf
+            └── Advanced_Web_Attacks_and_Exploitation.pdf
+            └── Black_hat_Python_ Python_programming_for_hackers.pdf
+            └── breaking_to_infosec .pdf
+            └── BruteForcingAndSupplyChainAttacks.pdf
+            └── Bug_Bounty_Bootcampth_guide_to_finding_and_reporting_web_vulnerabilities.pdf
+            └── CCNA_Routing_and_Switching_Complete_Study_Guide_Exam_100_105_Exam_200_105_Exam_200_125.pdf
+            └── CompTIA_Network_Exam_N10_006.pdf
+            └── CompTIA.pdf
+            └── Computer_Hacking_for_Beginners.pdf
+            └── Defense_with_Python.pdf
+            └── eLearnSecurity_Junior_Penetration_Testing_Notes_by_Joas.pdf
+            └── Gray_Hat Hacking_The_Ethical_Hacker’s_Handbook.pdf
+            └── Hacking_API.pdf
+            └── Hacking_APIs_1.pdf
+            └── Hacking_Practical_Guide_for_Beginners.pdf
+            └── Hacking_the_art_of_exploitation.pdf
+            └── Hacking.pdf
+            └── How_to_Hack_Computers.pdf
+            └── Linux_book.pdf
+            └── Owasp_Testing.pdf
+            └── Penetration_testing.pdf
+            └── README.md
+            └── Real_World_Bug_Hunting.pdf
+            └── Social_Engineering_The_Art_of_Psychological_Warfare_Human_Hacking_Persuasion_Deception.pdf
+            └── THE_ADVANCED_PENETRATING_TESTING_Made.pdf
+            └── The_Hacker_Playbook _Practical_Guide_To_Penetration_Testing.pdf
+            └── The_Hacker_Playbook 3_ Practical_Guide_To_Penetration_Testing.pdf
+            └── The_Hacker_Playbook_Practical_Guide_To_Penetration_Testing.pdf
+            └── The_Hardware_Hacking_Handbook.pdf
+            └── The_Web_Application _Hacker_Handbook.pdf
+            └── web_hacking_101.pdf
+            └── WiFi_Hacking_for_Beginners_(James Wells)_(Z-Library).pdf
+            └── Zed_Attack_Pro_(Z-Library).pdf
+            └── zseanos_bugbounty_methodology.pdf
+    └── 📁Cybersecurity_Tools
+        └── 📁bruteforce_password_cracking
+            └── main.py
+        └── 📁CLI-based Port Scanner
+            └── port-scanner.py
+            └── README.md
+        └── 📁Encryption_Decryption app
+            └── encrypt_decrypt.py
+            └── README.md
+        └── 📁Packet-sniffer
+            └── packetsniffer.py
+            └── Readme.md
+        └── 📁Pixel_Decoder
+            └── pixel_decoder.py
+        └── 📁VidForensicsTool
+            └── LICENSE
+            └── main.py
+            └── README.md
+            └── requirements.txt
+        └── .gitkeep
+    └── 📁Data Analysis
+        └── 📁Unemployment Analysis due to COVID
+            └── impact_chart.png
+            └── line_chart.png
+            └── pie.png
+            └── Readme.md
+            └── UNEMPLOYMENT_ANALYSIS.ipynb
+            └── Unemployment_Rate_upto_11_2020.csv
+        └── Readme.md
+    └── 📁Data Analytics
+        └── 📁IPL Analysis
+            └── .gitignore
+            └── deliveries.csv
+            └── IPL_Analysis.ipynb
+            └── matches.csv
+            └── README.md
+    └── 📁Data_Science
+        └── 📁AI Virtual Painter
+            └── 📁__pycache__
+                └── HandTrackingModule.cpython-312.pyc
+                └── HandTrackingModule.cpython-39.pyc
+            └── 📁Header Files
+                └── header 1.png
+                └── header 2.png
+                └── header 3.png
+                └── header 4.png
+            └── 📁Images
+                └── Project.png
+                └── treediagram.png
+            └── HandTrackingModule.py
+            └── Readme.md
+            └── requirements.txt
+            └── VirtualPainter.py
+        └── 📁analysis_covid_trends
+            └── main.py
+            └── README.md
+            └── requirements.txt
+            └── WHO-COVID-19-global-daily-data.csv
+        └── 📁customer_segmentation
+            └── age_distribution.png
+            └── age_group_counts.png
+            └── boxplot_spending_score.png
+            └── customer_segmentation_2D.png
+            └── customer_segmentation_3D.png
+            └── customer_segmentation_statistical_analysis_report.pdf
+            └── Customer_Segmentation.ipynb
+            └── gender_distribution.png
+            └── income_vs_spending_score.png
+            └── Mall_Customers.csv
+            └── README.md
+        └── 📁Hotel Demand EDA and Forecasting Using ARIMA Model
+            └── Hotel Demand Forecasting.ipynb
+            └── readme.md
+        └── 📁time_series_visualization
+            └── airline_passengers.csv
+            └── autocorrelation_plot.png
+            └── eda_plot.png
+            └── exponential_smoothing_plot.png
+            └── moving_average_plot.png
+            └── README.md
+            └── seasonal_plot.png
+            └── Time_Series_Report.pdf
+            └── Time_Series_Visualization.ipynb
+            └── trend_analysis_plot.png
+        └── 📁Whatsapp_Chat_Analyzer
+            └── 📁images
+                └── emoji_distribution.png
+                └── emoji_usage_author.png
+                └── message_distribution.png
+                └── sample_messages.png
+                └── top_days_messages.png
+                └── word_cloud.png
+            └── 📁Sample_Data
+                └── sample_data_1.txt
+                └── sample_data_2.txt
+                └── sample_data_3.txt
+                └── sample_data_4.txt
+                └── sample_data_5.txt
+                └── sample_zipped_data_1.zip
+                └── sample_zipped_data_2.zip
+            └── main.py
+            └── README.md
+        └── .gitkeep
+        └── Data-science.md
+        └── Datasciecne-poster.jpg
+    └── 📁DataVizLearnig
+        └── 📁Movie Data Visualization
+            └── maincode.py
+            └── MovieRatings.xlsx
+            └── Readme.md
+        └── DataViz_Snippets.ipynb
+        └── Readme.md
+    └── 📁Deep_Learning
+        └── 📁BankNifty Index Price Prediction LSTM
+            └── BankNifty Index Price Prediction.ipynb
+            └── banknifty_historical_data 2007- 2023.csv
+        └── 📁Bird Species Classification
+            └── 📁Dataset
+                └── Readme.md
+            └── 📁Images
+                └── inception_resnet_v2 .png
+                └── InceptionV3.png
+                └── masked_image_1.png
+                └── masked_image_2.png
+                └── masked_image_3.png
+            └── 📁Model
+                └── bird_species_classification.ipynb
+            └── Readme.md
+        └── 📁Brain Tumor Detection
+            └── 📁Dataset
+                └── README.md
+            └── 📁Images
+                └── image-1.png
+                └── image-10.png
+                └── image-11.png
+                └── image-2.png
+                └── image-3.png
+                └── image-4.png
+                └── image-5.png
+                └── image-6.png
+                └── image-7.png
+                └── image-8.png
+                └── image-9.png
+                └── image.png
+                └── image12.png
+                └── README.md
+            └── 📁Model
+                └── brain_tumor_model.ipynb
+                └── README.md
+            └── README.md
+            └── requirements.txt
+        └── 📁Detect Bad Posture Media Pipe
+            └── Media_Pipe_Pose_checkpoint.ipynb
+        └── 📁Digital Image Tampering Detection
+            └── notebook.ipynb
+            └── Readme.md
+            └── requirements.txt
+        └── 📁Dog Species Classification
+            └── 📁DataSet
+                └── readme.md
+            └── 📁Images
+                └── dog_2.png
+                └── dog_3.png
+                └── dog_image.png
+                └── Input.png
+            └── 📁Models
+                └── MobileNetV2.ipynb
+                └── ResNet50V2.ipynb
+                └── VGG19.ipynb
+            └── Readme.md
+        └── 📁Face Mask Detection
+            └── 📁Dataset
+                └── Readme.md
+            └── 📁Images
+                └── Distribution of classes.jpg
+                └── Evaluation.jpg
+                └── Readme.md
+                └── Sample Images.jpg
+            └── 📁Model
+                └── detecting-face-masks-with-5-models.ipynb
+                └── Readme.md
+            └── requirements.txt
+        └── 📁File-Locking-Mechanism
+            └── 📁Face_Recognition_Script
+                └── Face recognition.py
+                └── FaceDetection.py
+                └── haarcascade_frontalface_alt.xml
+                └── lbpcascade_frontalface.xml
+            └── locker.bat
+            └── README.md
+            └── requirements.txt
+        └── 📁MNIST Digit Classification using Neural Networks
+            └── 📁dataset
+                └── readme.md
+            └── 📁images
+                └── bar graph.png
+                └── confusion matrix.png
+                └── histogram.png
+                └── input visualisation.png
+                └── pie chart.png
+                └── training loss.png
+            └── 📁model
+                └── ANN_Handwritten_Digit_Classification.ipynb
+                └── CNN_handwritten_digit_recogniser.ipynb
+            └── bar graph.png
+            └── histogram.png
+            └── input visualisation.png
+            └── pie chart.png
+            └── README.md
+            └── requirement.txt
+        └── 📁Object detection
+            └── 📁Dataset
+                └── Readme.md
+            └── 📁Images
+                └── Input.png
+                └── Output.png
+            └── 📁Model
+                └── main.py
+            └── requirements.txt
+        └── 📁Plant Disease Detection
+            └── 📁assets
+                └── 📁images
+                    └── cotton_result-graph.png
+                    └── cotton_result.png
+                    └── grapes_result_graph.png
+                    └── grapes_result.png
+                    └── guava_result_graph.png
+                    └── guava_result.png
+                    └── potato_result_graph.png
+                    └── sugarcane_result_graph.png
+                    └── tomato_result_graph.png
+            └── 📁Final tensorflow Models
+                └── cotton.h5
+                └── cucumber.h5
+                └── grapes.h5
+                └── guava.h5
+                └── potato.h5
+                └── rice.h5
+                └── sugarcane.h5
+                └── tomato.h5
+                └── wheat.h5
+            └── 📁ipynb files
+                └── Cotton_Classification.ipynb
+                └── Grapes_Classification.ipynb
+                └── Guava_Classification.ipynb
+                └── Potato_Classification.ipynb
+                └── requirements.txt
+                └── Sugarcane_Classification.ipynb
+                └── Tomato_Classification.ipynb
+            └── README.md
+            └── result.md
+        └── 📁smart_attendance_system
+            └── 📁photos
+                └── Anirudh.jpg
+                └── Ashaya.jpg
+                └── Benak.jpg
+                └── Biden.jpeg
+                └── Harsha.jpg
+                └── Jobs.jpeg
+                └── Obama.jpg
+                └── Tata.jpg
+                └── Tesla.jpeg
+            └── .gitignore
+            └── dlib-19.24.99-cp312-cp312-win_amd64.whl
+            └── face_rec.py
+            └── README.md
+            └── requirements.txt
+            └── smart_attendance.py
+        └── 📁Spam Vs Ham Mail Classification [With Streamlit GUI]
+            └── 📁Dataset
+                └── newData.csv
+                └── spam-vs-ham-dataset.csv
+            └── 📁Image
+                └── PairPlot_withHue.png
+                └── spam-ham-num_chr.jpg
+                └── spam-ham-num_sent.jpg
+                └── spam-ham-num_word.jpg
+                └── Spam-vs-ham-piechart.jpg
+            └── 📁Model
+                └── app1.py
+                └── app2.py
+                └── model1_(1) (1).ipynb
+                └── model2.ipynb
+                └── README.md
+            └── requirements.txt
+        └── 📁Spoken Language Translator
+            └── main.py
+            └── README.MD
+        └── 📁SRGAN for upscaling image resolutions
+            └── 📁main
+                └── 📁temp
+                    └── img0.jpg
+                    └── img1.jpg
+                    └── img2.jpg
+                    └── img3.jpg
+                    └── img4.jpg
+                    └── img5.jpg
+                └── 📁tests
+                    └── highres_output1.jpg
+                    └── highres_output2.jpg
+                    └── test1.jpg
+                    └── test2.jpg
+                └── data_loader.py
+                └── preprocessing.py
+                └── srgan.py
+            └── 📁saves
+                └── 📁6850
+                    └── model.h5
+                └── 📁6900
+                    └── model.h5
+            └── .gitignore
+            └── README.md
+        └── 📁Sugarcane Disease Prediction
+            └── 📁Dataset
+                └── readme.md
+            └── 📁Images
+                └── classification_report.png
+                └── confusion_matrix.png
+                └── input.png
+                └── vgg16_graph.png
+            └── 📁models
+                └── ensemble_model.ipynb
+            └── readme.md
+        └── 📁toxicity insult analyser
+            └── 📁jigsaw-toxic-comment-classification-challenge
+                └── 📁sample_submission.csv
+                    └── sample_submission.csv
+                └── 📁test_labels.csv
+                    └── test_labels.csv
+                └── 📁test.csv
+                    └── test.csv
+                └── 📁train.csv
+                    └── train.csv
+                └── .DS_Store
+            └── Toxicity.ipynb
+        └── 📁YOLO-Drowsiness-Detection-main
+            └── Drowsiness Detection Tutorial.ipynb
+            └── README.md
+    └── 📁Game_Development
+        └── 📁Flappy_Bird
+            └── 📁audio
+                └── die.wav
+                └── hit.wav
+                └── point.wav
+                └── wing.wav
+            └── 📁sprites
+                └── background-day.png
+                └── base.png
+                └── bluebird-downflap.png
+                └── bluebird-midflap.png
+                └── bluebird-upflap.png
+                └── pipe-green.png
+            └── .gitignore
+            └── favicon.ico
+            └── main.py
+            └── README.md
+        └── 📁Hangman-main
+            └── 📁images
+                └── hang0.png
+                └── hang1.png
+                └── hang10.png
+                └── hang11.png
+                └── hang2.png
+                └── hang3.png
+                └── hang4.png
+                └── hang5.png
+                └── hang6.png
+                └── hang7.png
+                └── hang8.png
+                └── hang9.png
+            └── hangman.py
+            └── README.md
+        └── 📁KBC
+            └── KBCquiz.py
+            └── README.md
+        └── 📁MasterMind
+            └── mastermind.py
+            └── README.md
+        └── 📁Number Guessing Game
+            └── main.py
+            └── README.md
+        └── 📁Rock-Paper-Scissors
+            └── Readme.md
+            └── RPS.py
+        └── 📁Snake_Game
+            └── README.md
+            └── Snake.py
+        └── 📁Tic_Tac_Toe
+            └── README.md
+            └── tic_tac_toe.py
+        └── 📁Trivia
+            └── Readme.md
+            └── Trivia.py
+        └── 📁Turtle Collection Game
+            └── README.md
+            └── Turtle Collection Game.py
+        └── .gitkeep
+    └── 📁Generative-AI
+        └── 📁Code-LLM-bot
+            └── 📁.streamlit
+                └── config.toml
+            └── 📁images
+                └── api-key.png
+                └── logo.png
+                └── thumbnail.png
+                └── video.mp4
+            └── .gitignore
+            └── app.py
+            └── LICENSE
+            └── README.md
+            └── requirements.txt
+    └── 📁Image processing
+        └── 📁Lane Line Detection [OPEN CV]
+            └── binaryimage.png
+            └── finalresult.gif
+            └── gui.py
+            └── instancesegmentimage.png
+            └── main.py
+            └── README.md
+            └── testimageresult.png
+            └── testimg.jpg
+        └── 📁Number plate detection
+            └── 📁model
+                └── haarcascade_russian_plate_number.xml
+            └── 📁ocr-notebook
+                └── easy_OCR_demo.ipynb
+            └── 📁plates
+                └── Low zoom.png
+                └── scaned_img_0.jpg
+                └── scaned_img_1.jpg
+                └── scaned_img_2.jpg
+                └── scaned_img_3.jpg
+            └── number_plate.py
+            └── README.md
+            └── requirements.txt
+        └── 📁PhotoSpectroscope
+            └── 📁Analyser
+                └── 📁Scripts
+                    └── Analyse.py
+                    └── Calibarate.py
+                └── 📁Test Docs
+                    └── 📁images
+                        └── 1_IPA_Glass.png
+                        └── 2_IPA_Glass.png
+                        └── cfl_plot.png
+                        └── cfl.png
+                        └── IPA_Glass.png
+                        └── plot.png
+                └── Documentation.md
+                └── TCD1304 ( Liner CCD ).py
+            └── 📁Normaliser
+                └── 📁Images
+                    └── 1_IPA_Glass.png
+                    └── 2_IPA_Glass.png
+                    └── cfl_plot.png
+                    └── cfl.png
+                    └── IPA_Glass.png
+                    └── plot.png
+                └── 📁Script
+                    └── Caliberate.py
+                    └── Main.py
+                └── Documentation.docx
+            └── 📁Results
+                └── Final Test.png
+                └── Fional Test.png
+                └── Grating Spectrum GUI 2.png
+                └── Outliners Spectrum GUI 3.png
+                └── Please Work.png
+                └── Scatter Test 1.png
+                └── Scatter Test 2.png
+                └── Scatter Test 3.png
+                └── Scatter Test 4.png
+                └── Scatter Test 5.png
+                └── Scatter_Plot_Test.png
+                └── Spectrun GUI 1.png
+                └── Test 305.png
+                └── Test Plot.png
+                └── Test.png
+            └── 📁Scource
+                └── Spectroscope.py
+                └── Spectroscopy GUI.py
+                └── Spectroscopy Kmeans.py
+                └── Spectroscopy Regression.py
+            └── 📁Theme
+                └── 📁theme
+                    └── 📁dark
+                        └── box-accent.png
+                        └── box-basic.png
+                        └── box-hover.png
+                        └── box-invalid.png
+                        └── button-hover.png
+                        └── card.png
+                        └── check-accent.png
+                        └── check-basic.png
+                        └── check-hover.png
+                        └── check-tri-accent.png
+                        └── check-tri-basic.png
+                        └── check-tri-hover.png
+                        └── circle-accent.png
+                        └── circle-basic.png
+                        └── circle-hover.png
+                        └── combo-button-basic.png
+                        └── combo-button-focus.png
+                        └── combo-button-hover.png
+                        └── down-accent.png
+                        └── down.png
+                        └── empty.png
+                        └── hor-accent.png
+                        └── hor-basic.png
+                        └── hor-hover.png
+                        └── notebook.png
+                        └── off-basic.png
+                        └── on-accent.png
+                        └── on-basic.png
+                        └── outline-basic.png
+                        └── outline-hover.png
+                        └── radio-accent.png
+                        └── radio-basic.png
+                        └── radio-hover.png
+                        └── radio-tri-accent.png
+                        └── radio-tri-basic.png
+                        └── radio-tri-hover.png
+                        └── rect-accent-hover.png
+                        └── rect-accent.png
+                        └── rect-basic.png
+                        └── rect-hover.png
+                        └── right.png
+                        └── scale-hor.png
+                        └── scale-vert.png
+                        └── separator.png
+                        └── size.png
+                        └── tab-basic.png
+                        └── tab-disabled.png
+                        └── tab-hover.png
+                        └── tick-hor-accent.png
+                        └── tick-hor-basic.png
+                        └── tick-hor-hover.png
+                        └── tick-vert-accent.png
+                        └── tick-vert-basic.png
+                        └── tick-vert-hover.png
+                        └── tree-basic.png
+                        └── tree-pressed.png
+                        └── up-accent.png
+                        └── up.png
+                        └── vert-accent.png
+                        └── vert-basic.png
+                        └── vert-hover.png
+                    └── 📁light
+                        └── box-accent.png
+                        └── box-basic.png
+                        └── box-hover.png
+                        └── box-invalid.png
+                        └── button-hover.png
+                        └── card.png
+                        └── check-accent.png
+                        └── check-basic.png
+                        └── check-hover.png
+                        └── check-tri-accent.png
+                        └── check-tri-basic.png
+                        └── check-tri-hover.png
+                        └── circle-accent.png
+                        └── circle-basic.png
+                        └── circle-hover.png
+                        └── combo-button-basic.png
+                        └── combo-button-focus.png
+                        └── combo-button-hover.png
+                        └── down-accent.png
+                        └── down.png
+                        └── empty.png
+                        └── hor-accent.png
+                        └── hor-basic.png
+                        └── hor-hover.png
+                        └── notebook.png
+                        └── off-basic.png
+                        └── off-hover.png
+                        └── on-accent.png
+                        └── on-basic.png
+                        └── on-hover.png
+                        └── outline-basic.png
+                        └── outline-hover.png
+                        └── radio-accent.png
+                        └── radio-basic.png
+                        └── radio-hover.png
+                        └── radio-tri-accent.png
+                        └── radio-tri-basic.png
+                        └── radio-tri-hover.png
+                        └── rect-accent-hover.png
+                        └── rect-accent.png
+                        └── rect-basic.png
+                        └── rect-hover.png
+                        └── right.png
+                        └── scale-hor.png
+                        └── scale-vert.png
+                        └── separator.png
+                        └── size.png
+                        └── tab-basic.png
+                        └── tab-disabled.png
+                        └── tab-hover.png
+                        └── tick-hor-accent.png
+                        └── tick-hor-basic.png
+                        └── tick-hor-hover.png
+                        └── tick-vert-accent.png
+                        └── tick-vert-basic.png
+                        └── tick-vert-hover.png
+                        └── tree-basic.png
+                        └── tree-pressed.png
+                        └── up-accent.png
+                        └── up.png
+                        └── vert-accent.png
+                        └── vert-basic.png
+                        └── vert-hover.png
+                    └── dark.tcl
+                    └── light.tcl
+                └── azure.tcl
+                └── Dark screenshot.png
+                └── example.py
+                └── Light screenshot.png
+            └── App.ico
+            └── asdfghjkl.png
+            └── Chart.drawio
+            └── HubeRegression.png
+            └── LinearRegression.png
+            └── Main.py
+            └── OQW.png
+            └── README.md
+            └── Test 2.png
+            └── Test.png
+    └── 📁Machine_Learning
+        └── 📁Absent_Time_prediction_using_HyperParameter_Tuning
+            └── 📁absenteeism_at_work_data
+                └── absenteeism_at_work_converted.csv
+                └── Absenteeism_at_work.arff
+                └── Absenteeism_at_work.csv
+                └── Absenteeism_at_work.xls
+                └── Attribute Information.docx
+                └── UCI_ABS_TEXT.docx
+            └── 📁images
+                └── DataSet.png
+                └── pairplot.png
+                └── plot.png
+            └── 📁model
+                └── Absent_time.ipynb
+                └── ridge_model.pkl
+            └── HyperParameter Tuning.md
+            └── Model.md
+            └── requirements.txt
+        └── 📁AI_Language_Learning_Assistant
+            └── AI-Language-Learning-Assistant.ipynb
+            └── Readme.md
+        └── 📁AI_Text_Detector
+        └── 📁Air Quality Prediction
+            └── 📁Dataset
+                └── README.md
+            └── 📁Images
+                └── most_polluted_cities_post_covid.jpg
+                └── most_polluted_cities_pre_covid.jpg
+                └── Satisfaction_level_of_people_post_covid.jpg
+                └── Satisfaction_level_of_people_pre_covid.jpg
+            └── 📁Model
+                └── air-quality-eda-and-classification.ipynb
+                └── README.md
+        └── 📁Analying_ML_model_using_maang
+            └── main.py
+            └── README.md
+            └── requirements.txt
+        └── 📁assets
+            └── styles.css
+        └── 📁Automobile Sales Data Analysis and Prediction
+            └── 📁Dataset
+                └── Auto Sales data.csv
+                └── README.md
+            └── 📁Images
+                └── Dealsize_bar.png
+                └── Dealsize_pie.png
+                └── Productline_bar.png
+                └── Productline_pie.png
+                └── Status_bar.png
+                └── Status_pie.png
+            └── 📁Model
+                └── Automobile_Sales_Prediction.ipynb
+                └── README.md
+            └── requirements.txt
+        └── 📁Bitcoin Price Prediction
+            └── 📁Dataset
+                └── bitcoin_dataset.csv
+                └── README.md
+            └── 📁Images
+                └── image1.png
+                └── image2.png
+                └── image4.png
+                └── image5.png
+                └── images3.png
+            └── 📁Model
+                └── Bitcoin_Price_Prediction.ipynb
+                └── README.md
+            └── README.md
+            └── requirements.txt
+        └── 📁Customer Clust - Customer Segmentation Tool
+            └── Customer Clust - Customer Segmentation Tool.ipynb
+            └── Customer Clust - Segmentation Tool.png
+            └── Mall_Customers.csv
+            └── README.md
+        └── 📁Decision Tree Classifier
+            └── bank-additional.csv
+            └── Decision_Tree_Classifier.ipynb
+            └── readme.md
+        └── 📁Economic Regime Detection Project
+            └── ERD file.ipynb
+            └── ERD image.png
+            └── README.md
+        └── 📁Email Spam Classifier
+            └── classifier.py
+            └── spam.csv
+        └── 📁Fake News Detection
+            └── 📁Images
+                └── Dataset.png
+                └── EDA.png
+                └── EDA1.png
+                └── metrics.png
+                └── model.png
+                └── model2.png
+                └── model2metrics.png
+            └── 📁Model
+                └── PridictionModel.ipynb
+            └── Readme.md
+        └── 📁Hand Game Controller
+            └── A_Key_Binding.png
+            └── D_Key_Binding.png
+            └── main-mobile-cam.py
+            └── main-pc-cam.py
+            └── README.md
+            └── requirements.txt
+            └── S_Key_Binding.png
+            └── W_Key_Binding.png
+        └── 📁Iris Classification using KNN
+            └── 📁assets
+                └── 📁images
+                    └── 1.png
+                    └── 2.png
+                    └── 3.png
+                    └── 4.png
+            └── irisClassifier.ipynb
+            └── README.md
+            └── requirements.txt.txt
+            └── RESULT.md
+        └── 📁Landmark_Detection
+            └── 📁images
+                └── image1.jpeg
+                └── image2.jpeg
+                └── image3.jpeg
+                └── image4.jpeg
+                └── image5.jpeg
+            └── app.py
+            └── landmark-detection-tfhub.ipynb
+            └── README.md
+            └── requirements.txt
+        └── 📁Movie Classification
+            └── movie_classification.ipynb
+            └── README.md
+            └── test_data_solution.txt
+            └── test_data.txt
+            └── train_data.txt
+        └── 📁Multivitamine Prediction
+            └── multivitamins_data.csv
+            └── scrape.py
+        └── 📁Palm-Chatbot-main
+            └── 📁.vscode
+                └── extensions.json
+                └── launch.json
+                └── tasks.json
+            └── 📁server
+                └── .gitignore
+                └── index.js
+                └── package-lock.json
+                └── package.json
+            └── 📁src
+                └── 📁app
+                    └── app.component.css
+                    └── app.component.html
+                    └── app.component.ts
+                    └── app.config.ts
+                    └── chat-content.interface.ts
+                    └── chat.service.ts
+                    └── line-break.pipe.ts
+                └── 📁assets
+                    └── .gitkeep
+                    └── avatar-chatbot.png
+                    └── avatar-user.png
+                └── favicon.ico
+                └── index.html
+                └── main.ts
+                └── styles.css
+            └── .editorconfig
+            └── .gitignore
+            └── angular.json
+            └── package-lock.json
+            └── package.json
+            └── README.md
+            └── tsconfig.app.json
+            └── tsconfig.json
+            └── tsconfig.spec.json
+        └── 📁pokemon-data-analysis-and-legendary-classification-main
+            └── 📁Data
+                └── pokemon.csv
+            └── data-analysis-advance-modelling-on-pokemons.ipynb
+            └── LICENSE
+            └── notebook.pdf
+            └── README.md
+            └── requirements.txt
+        └── 📁Predicting Exam Score Using linear Regression
+            └── 📁Dataset
+                └── README.md
+                └── student_exam_data.csv
+            └── 📁Images
+                └── Applied LR.png
+                └── Correleation.png
+                └── README.md
+            └── 📁Model
+                └── Applying Linear Regression Model to Predict Exam Score.ipynb
+                └── README.md
+            └── README.md
+            └── Requirements.txt
+        └── 📁Red Wine Quality Detection
+            └── dataset.csv
+            └── Readme.md
+            └── Red_Wine_Quality (1).ipynb
+        └── 📁Signature_verification_portal
+            └── app.py
+            └── Dashboard.py
+            └── db.py
+            └── mydatabase.db
+            └── README.md
+            └── requirements.txt
+            └── user_credentials.csv
+            └── Validation.py
+        └── 📁TextToTalk
+            └── 📁scripts
+                └── app.py
+                └── ExtText.py
+                └── Pipeline.py
+                └── TTS.py
+            └── LICENSE
+            └── README.md
+            └── requirements.txt
+        └── 📁Twitter Sentiment Analysis
+            └── 📁images
+                └── Input Data.jpg
+                └── Model Performance.jpg
+                └── Negative wordcloud.jpg
+                └── Positive wordcloud.jpg
+                └── sample.md
+                └── Sentiment countplot.jpg
+            └── images.jpg
+            └── README.md
+            └── train.csv
+            └── Twitter Sentiment Analysis.ipynb
+            └── Twitter-sentiment-analysis-1.jpg
+            └── twitter2-720x540.jpg
+        └── 📁WeCare
+            └── 📁datasets
+                └── description.csv
+                └── diets.csv
+                └── medications.csv
+                └── precautions_df.csv
+                └── README.md
+                └── svc.pkl
+                └── Symptom-severity.csv
+                └── symtoms_df.csv
+                └── train_mdl.ipynb
+                └── Training.csv
+                └── workout_df.csv
+            └── 📁instance
+                └── database.db
+                └── README.md
+            └── 📁models
+                └── svc.pkl
+            └── 📁static
+                └── bg-image.jpg
+                └── healthcare.jpg
+                └── home-bgimg.jpg
+                └── logo.jpg
+            └── 📁templates
+                └── about.html
+                └── blog.html
+                └── contact.html
+                └── dashboard.html
+                └── diagnosis.html
+                └── footer.html
+                └── index.html
+                └── layout.html
+                └── login.html
+                └── profile.html
+                └── register.html
+            └── main.py
+            └── README.md
+        └── 📁Zomato Restaurant Clustering and Sentiment Analysis
+            └── Readme.md
+            └── Zomato Restaurant names and Metadata.csv
+            └── Zomato Restaurant reviews.csv
+            └── Zomato_Restaurant_Clustering_and_Sentiment_Analysis.ipynb
+        └── main.py
+        └── Readme.md
+        └── requirements.txt
+        └── translation.py
+        └── utils.py
+    └── 📁Tutorials
+        └── .gitkeep
+    └── 📁Video Processing
+        └── 📁Online Video Editor
+            └── edits.py
+            └── Readme.md
+            └── requirements.txt
+    └── 📁Web_Development
+        └── 📁Advanced-Weather-APP
+            └── 📁assets
+                └── cloud.png
+                └── favicon.ico
+                └── humidity.png
+                └── loading.gif
+                └── location.png
+                └── not-found.png
+                └── search.png
+                └── wind.png
+            └── .DS_Store
+            └── index.html
+            └── index.js
+            └── README.md
+            └── styles.css
+        └── 📁chatbot
+            └── 📁__pycache__
+                └── chat.cpython-312.pyc
+                └── model.cpython-312.pyc
+                └── nltk_utils.cpython-312.pyc
+            └── 📁static
+                └── 📁images
+                    └── chatbox-icon.svg
+                └── app.js
+                └── favicon.ico
+                └── style.css
+            └── 📁templates
+                └── base.html
+            └── app.py
+            └── chat.py
+            └── data.pth
+            └── intents.json
+            └── model.py
+            └── nltk_utils.py
+            └── README.md
+            └── train.py
+        └── 📁DevDetective
+            └── 📁.vscode
+                └── settings.json
+            └── 📁assets
+                └── 📁images
+                    └── company-icon.svg
+                    └── location-icon.svg
+                    └── moon-icon.svg
+                    └── search-icon.svg
+                    └── sun-icon.svg
+                    └── twitter-icon.svg
+                    └── website-icon.svg
+                └── .DS_Store
+                └── android-chrome-192x192.png
+                └── android-chrome-512x512.png
+                └── apple-touch-icon.png
+                └── favicon-16x16.png
+                └── favicon-32x32.png
+                └── favicon.ico
+                └── site.webmanifest
+            └── .DS_Store
+            └── index.html
+            └── README.md
+            └── script.js
+            └── styles.css
+        └── 📁DocXtract
+            └── 📁public
+                └── favicon.ico
+                └── index.html
+                └── logo192.png
+                └── logo512.png
+                └── manifest.json
+                └── robots.txt
+            └── 📁src
+                └── 📁components
+                    └── Form.js
+                └── App.css
+                └── App.js
+                └── App.test.js
+                └── index.css
+                └── index.js
+                └── logo.svg
+                └── reportWebVitals.js
+                └── setupTests.js
+            └── .gitignore
+            └── package-lock.json
+            └── package.json
+            └── README.md
+        └── 📁FastAPI_Control_Panel
+            └── 📁app
+                └── __init__.py
+                └── auth.py
+                └── config.py
+                └── crud.py
+                └── database.py
+                └── dependencies.py
+                └── main.py
+                └── models.py
+                └── schemas.py
+            └── 📁fastapi-react-frontend
+                └── 📁public
+                    └── favicon.ico
+                    └── index.html
+                    └── logo192.png
+                    └── logo512.png
+                    └── manifest.json
+                    └── robots.txt
+                └── 📁src
+                    └── 📁components
+                        └── 📁AddNewUser
+                            └── AddNewUser.css
+                            └── AddNewUser.jsx
+                        └── 📁AdminDashboard
+                            └── AdminDashboard.css
+                            └── AdminDashboard.jsx
+                        └── 📁LoginForm
+                            └── LoginForm.css
+                            └── LoginForm.jsx
+                        └── 📁RegistrationForm
+                            └── RegistrationForm.css
+                            └── RegistrationForm.jsx
+                        └── 📁SideBar
+                            └── SideBar.css
+                            └── SideBar.jsx
+                        └── 📁TopBar
+                            └── TopBar.css
+                            └── TopBar.jsx
+                        └── 📁UserDashboard
+                            └── UserDashboard.css
+                            └── UserDashboard.jsx
+                        └── 📁UserProfile
+                            └── UserProfile.css
+                            └── UserProfile.jsx
+                        └── 📁UserTable
+                            └── UserTable.css
+                            └── UserTable.jsx
+                        └── PrivateRoute.jsx
+                    └── 📁context
+                        └── AuthContext.js
+                    └── 📁pages
+                        └── 📁Dashboard
+                            └── DashboardPage.css
+                            └── DashboardPage.jsx
+                        └── 📁Home
+                            └── Home.css
+                            └── HomePage.jsx
+                        └── 📁Login
+                            └── LoginPage.css
+                            └── LoginPage.jsx
+                    └── 📁services
+                        └── api.js
+                        └── auth.js
+                        └── axios.api.js
+                        └── history.js
+                        └── principal.service.js
+                        └── principal.state.js
+                    └── 📁utils
+                        └── icons.js
+                    └── App.css
+                    └── App.jsx
+                    └── App.test.js
+                    └── index.css
+                    └── index.js
+                    └── logo.svg
+                    └── reportWebVitals.js
+                    └── setupTests.js
+                └── .gitignore
+                └── package-lock.json
+                └── package.json
+            └── .gitignore
+            └── requirements.txt
+        └── 📁GIF_Generator-main
+            └── 📁public
+                └── favicon.ico
+                └── index.html
+                └── logo192.png
+                └── logo512.png
+                └── manifest.json
+                └── robots.txt
+            └── 📁src
+                └── 📁components
+                    └── GIFByTag.jsx
+                    └── Header.jsx
+                    └── RandomGIF.jsx
+                    └── Spinner.jsx
+                └── 📁hooks
+                    └── useGIF.jsx
+                └── App.css
+                └── App.js
+                └── App.test.js
+                └── index.css
+                └── index.js
+                └── logo.svg
+                └── reportWebVitals.js
+                └── setupTests.js
+            └── .env
+            └── .gitignore
+            └── package-lock.json
+            └── package.json
+            └── postcss.config.js
+            └── README.md
+            └── tailwind.config.js
+        └── 📁Invoice-Generator
+            └── 📁public
+                └── favicon.ico
+                └── index.html
+                └── logo192.png
+                └── logo512.png
+                └── manifest.json
+                └── robots.txt
+            └── 📁src
+                └── 📁components
+                    └── InvoiceField.jsx
+                    └── InvoiceForm.jsx
+                    └── InvoiceItem.jsx
+                    └── InvoiceModal.jsx
+                └── 📁helpers
+                    └── IncrementString.jsx
+                └── App.css
+                └── App.js
+                └── App.test.js
+                └── index.css
+                └── index.js
+                └── logo.svg
+                └── reportWebVitals.js
+                └── setupTests.js
+            └── .gitignore
+            └── package-lock.json
+            └── package.json
+            └── postcss.config.js
+            └── README.md
+            └── tailwind.config.js
+        └── 📁Password_Generator--main
+            └── 📁assets
+                └── copy.svg
+            └── index.css
+            └── index.html
+            └── index.js
+        └── 📁RazorPay-Clone-master
+            └── 📁images
+                └── .DS_Store
+                └── api-driven-icon.svg
+                └── autopay-icon.svg
+                └── buisness-banking.png
+                └── capital-credit-icon.svg
+                └── comanies.png
+                └── core-features-sectionBg.svg
+                └── CTABg.svg
+                └── ctaImg.svg
+                └── current-icon.svg
+                └── dashboard-reporting-icon.svg
+                └── easy-integration.svg
+                └── facebook-icon.svg
+                └── fake-company-logo.png
+                └── favicon.png
+                └── feature-section-2BG.svg
+                └── feature-section1-dottedrows.png
+                └── features-wave.svg
+                └── features2-wave.svg
+                └── footer-certificate-1.png
+                └── footer-certificate-2.jpg
+                └── github-icon.svg
+                └── hero-illustration.jpg
+                └── hero-shape.svg
+                └── india-flag.svg
+                └── industry-support-icon.svg
+                └── instagram-icon.svg
+                └── instant-activation-icon.svg
+                └── instant-settlement-bg.svg
+                └── instant-settlement-bghover.svg
+                └── instant-settlement-icon.svg
+                └── instantsettlement-bg.svg
+                └── instantsettlement-hoverbg.svg
+                └── linkedin-icon.svg
+                └── logo-dark.svg
+                └── logo.svg
+                └── magic-checkout-bg.svg
+                └── magic-checkout-hoverbg.svg
+                └── magic-checkout.svg
+                └── payment-button-bg.svg
+                └── payment-button-hoverbg.svg
+                └── payment-button.svg
+                └── payment-buttons-icon.svg
+                └── payment-gateway.svg
+                └── payment-link-icon.svg
+                └── payment-modes.svg
+                └── payment-pages-icon.svg
+                └── payment-suite.png
+                └── payouts-icon.svg
+                └── quotes.svg
+                └── razorpayX.svg
+                └── razorpayXicon.svg
+                └── route-icon.svg
+                └── secure-icon.svg
+                └── simple-pricing.svg
+                └── smart-collect-icon.svg
+                └── subscriptions-icon.svg
+                └── testimonial.jpg
+                └── twitter-icon.svg
+                └── upi-autopay-bg.svg
+                └── upi-autopay-hoverbg.svg
+                └── x-flame-1.png
+                └── x-flame-2.png
+                └── Xicon.svg
+            └── .DS_Store
+            └── .gitignore
+            └── index.html
+            └── main.css
+            └── package-lock.json
+            └── package.json
+            └── postcss.config.js
+            └── README.md
+            └── tailwind.config.js
+        └── 📁Recursive-Tic-Tac-Toe-main
+            └── 📁.vscode
+                └── settings.json
+            └── 📁assets
+                └── favicon.ico
+                └── gradient-bg.jpg
+            └── .DS_Store
+            └── index.html
+            └── index.js
+            └── styles.css
+        └── 📁sudoku_solver
+            └── index.html
+            └── Readme (1).md
+            └── script.js
+            └── style.css
+        └── 📁Web_Developement_resources
+            └── 25_Years_of_Model_Driven_Web_ Engineering_What_we_Achieved_What_is_Missing_Author_Gustavo_Rossi_Matias_Urbieta_Damiano_Distante.pdf
+            └── Best_Practices_in_Designing_Websites.pdf
+            └── Building_Blocks_of_Responsive_Web_Design.pdf
+            └── Create_Web_Pages_with_HTML_and_CSS.pdf
+            └── Factors_to_Consider_When_ Preparing_Graphics_for_Web.pdf
+            └── How_to_ Make_a_Simple_Web_Page_Using_HTML.pdf
+            └── Introduction_to_Development_ of_Dynamic_Web_Applications.pdf
+            └── Introduction_to_Web_Programming_(Presentation).pdf
+            └── Modern_Methods_of_Web_Applications_Analysis_and_Design.pdf
+            └── Proposed_Methodology_for_Web_Development.pdf
+            └── README.md
+            └── The_Modern_Web_Design_Process.pdf
+            └── The_Principles_of_Beautiful_Web_Design.pdf
+            └── ultimate_full_stack_web_development_with_mern.pdf
+            └── Usability_Issues_in_Web_Site_Design.pdf
+            └── Web_Design_1.pdf
+            └── Web_Design_Basics_1.pdf
+            └── Website_Design_and_Programming.pdf
+            └── Website_Design.pdf
+        └── .gitkeep
+        └── Recursive-Tic-Tac-Toe-main.zip
+    └── .gitignore
+    └── CODE_OF_CONDUCT.md
+    └── CONTRIBUTING.md
+    └── image.webp
+    └── LICENSE
+    └── PROJECT-README-TEMPLATE.md
+    └── README.md
+    └── repo_structure.txt
+    └── Repo-structure.md
 ```
-<!-- END_STRUCTURE -->
