@@ -34,9 +34,6 @@ Imagine a scenario where a software development company can provide dedicated en
     streamlit run app/app.py
     ```
 
-## License
-
-This project is licensed under the MIT License. However, commercial use of this software is strictly prohibited without prior written permission from the author. Attribution must be given in all copies or substantial portions of the software.
 
 
 
