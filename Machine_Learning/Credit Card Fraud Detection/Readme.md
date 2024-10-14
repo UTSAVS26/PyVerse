@@ -46,5 +46,14 @@ This project aims to detect fraudulent credit card transactions using machine le
 7. **Visualization**:
     - Scatter plots, line plots, density plots, and correlation heatmaps are extensively used to understand the relationships between features and their impact on fraud detection.
 
-**Conclusion**:  
+
+## LIBRARIES NEEDED
+- **Numpy:** For numerical computations.
+- **Pandas:** For data manipulation and preprocessing.
+- **Matplotlib:** For basic data visualization.
+- **Seaborn:** For advanced data visualization.
+- **Scikit-Learn:** For building and evaluating machine learning models.
+- **Imbalanced-learn:** For handling imbalanced datasets (SMOTE).
+
+## **Conclusion**:  
 This project builds a robust system for detecting fraudulent credit card transactions using a variety of machine learning algorithms. Extensive data exploration, handling of class imbalance, and model validation techniques are used to ensure accuracy and reliability of fraud detection models.
