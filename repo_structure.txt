@@ -80,6 +80,7 @@
 ├── Cybersecurity_Tools
 │   ├── CLI-based Port Scanner
 │   ├── Encryption_Decryption app
+│   ├── File Integrity Checker
 │   ├── Packet-sniffer
 │   ├── Pixel_Decoder
 │   ├── VidForensicsTool
