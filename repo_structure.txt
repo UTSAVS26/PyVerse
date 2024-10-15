@@ -32,6 +32,7 @@
 │   ├── Stack
 │   ├── Trees
 │   ├── avl_tree_visualizer
+│   ├── sorting_algorithms
 │   └── visualizer
 ├── Automation_Tools
 │   ├── Autofill personal info using Aadhar Card Image
@@ -113,6 +114,8 @@
 │   │   ├── Dataset
 │   │   ├── Images
 │   │   ├── Model
+│   ├── Deep-learning-for-Animal-Identification
+│   │   ├── images
 │   ├── Detect Bad Posture Media Pipe
 │   ├── Digital Image Tampering Detection
 │   ├── Dog Species Classification
@@ -231,6 +234,10 @@
 │   │   ├── __pycache__
 │   │   └── templates
 │   ├── Decision Tree Classifier
+│   ├── Earthquake-prediction-using-Machine-learning-models
+│   │   ├── Dataset
+│   │   │   └── Processed_data
+│   │   └── images
 │   ├── Economic Regime Detection Project
 │   ├── Email Spam Classifier
 │   ├── Fake News Detection
