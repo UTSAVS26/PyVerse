@@ -7,3 +7,4 @@ squarify
 scikit-learn
 streamlit
 mlxtend
+skimpy
