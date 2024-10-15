@@ -60,15 +60,15 @@ class ScientificCalculatorGUI:
         button_frame = ttk.Frame(self.master, padding="10")
         button_frame.pack(fill=tk.BOTH, expand=True)
 
-        # Define button layout
+        # Define button layout (more traditional calculator layout)
         buttons = [
-            ('7', '8', '9', '/', 'sin'),
-            ('4', '5', '6', '*', 'cos'),
-            ('1', '2', '3', '-', 'tan'),
-            ('0', '.', '=', '+', 'sqrt'),
-            ('(', ')', 'C', 'exp', 'log'),
-            ('M+', 'M-', 'MR', 'MC', 'x^y'),
-            ('π', 'e', '!', 'sin⁻¹', 'cos⁻¹')
+            ('MC', 'MR', 'M+', 'M-', 'C'),
+            ('π', 'e', 'sin', 'cos', 'tan'),
+            ('7', '8', '9', '/', '√'),
+            ('4', '5', '6', '*', 'x^y'),
+            ('1', '2', '3', '-', 'log'),
+            ('0', '.', '=', '+', 'exp'),
+            ('(', ')', '!', 'sin⁻¹', 'cos⁻¹')
         ]
 
         # Create buttons
@@ -100,7 +100,7 @@ class ScientificCalculatorGUI:
             self.calculate_result()
         elif key == 'C':
             self.result_var.set("0")
-        elif key in ['sin', 'cos', 'tan', 'sqrt', 'log', 'exp', 'sin⁻¹', 'cos⁻¹', '!']:
+        elif key in ['sin', 'cos', 'tan', '√', 'log', 'exp', 'sin⁻¹', 'cos⁻¹', '!']:
             self.calculate_function(key)
         elif key in ['M+', 'M-', 'MR', 'MC']:
             self.memory_operations(key)
@@ -131,7 +131,7 @@ class ScientificCalculatorGUI:
                     'sin': math.sin(math.radians(value)),
                     'cos': math.cos(math.radians(value)),
                     'tan': math.tan(math.radians(value)),
-                    'sqrt': math.sqrt(value),
+                    '√': math.sqrt(value),
                     'log': math.log10(value),
                     'exp': math.exp(value),
                     'sin⁻¹': math.degrees(math.asin(value)),
