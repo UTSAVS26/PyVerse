@@ -6,10 +6,11 @@ class ScientificCalculatorGUI:
     def __init__(self, master):
         self.master = master
         master.title("Scientific Calculator")
-        master.geometry("500x600")
+        master.geometry("500x650")
         master.configure(bg='#2c3e50')
 
         self.result_var = tk.StringVar(value="0")
+        self.memory = 0  # Memory value for memory functions
 
         self.create_style()
         self.create_widgets()
@@ -17,7 +18,6 @@ class ScientificCalculatorGUI:
     def create_style(self):
         style = ttk.Style()
         style.theme_use('clam')
-        
         style.configure('TFrame', background='#2c3e50')
         style.configure('TButton', 
                         font=('Arial', 14, 'bold'), 
@@ -28,19 +28,16 @@ class ScientificCalculatorGUI:
                         padding=10)
         style.map('TButton', 
                   background=[('active', '#2980b9'), ('pressed', '#3498db')])
-        
         style.configure('Operator.TButton', 
                         background='#e67e22',
                         font=('Arial', 16, 'bold'))
         style.map('Operator.TButton', 
                   background=[('active', '#d35400'), ('pressed', '#e67e22')])
-        
         style.configure('Equal.TButton', 
                         background='#27ae60',
                         font=('Arial', 16, 'bold'))
         style.map('Equal.TButton', 
                   background=[('active', '#2ecc71'), ('pressed', '#27ae60')])
-        
         style.configure('Clear.TButton', 
                         background='#c0392b',
                         font=('Arial', 16, 'bold'))
@@ -69,7 +66,9 @@ class ScientificCalculatorGUI:
             ('4', '5', '6', '*', 'cos'),
             ('1', '2', '3', '-', 'tan'),
             ('0', '.', '=', '+', 'sqrt'),
-            ('(', ')', 'C', 'exp', 'log')
+            ('(', ')', 'C', 'exp', 'log'),
+            ('M+', 'M-', 'MR', 'MC', 'x^y'),
+            ('π', 'e', '!', 'sin⁻¹', 'cos⁻¹')
         ]
 
         # Create buttons
@@ -83,12 +82,12 @@ class ScientificCalculatorGUI:
                 button.grid(row=i, column=j, sticky="nsew", padx=4, pady=4)
 
         # Configure grid
-        for i in range(5):
+        for i in range(7):
             button_frame.grid_rowconfigure(i, weight=1)
             button_frame.grid_columnconfigure(i, weight=1)
 
     def get_button_style(self, text):
-        if text in ['+', '-', '*', '/']:
+        if text in ['+', '-', '*', '/', 'x^y']:
             return 'Operator.TButton'
         elif text == '=':
             return 'Equal.TButton'
@@ -101,8 +100,14 @@ class ScientificCalculatorGUI:
             self.calculate_result()
         elif key == 'C':
             self.result_var.set("0")
-        elif key in ['sin', 'cos', 'tan', 'sqrt', 'log', 'exp']:
+        elif key in ['sin', 'cos', 'tan', 'sqrt', 'log', 'exp', 'sin⁻¹', 'cos⁻¹', '!']:
             self.calculate_function(key)
+        elif key in ['M+', 'M-', 'MR', 'MC']:
+            self.memory_operations(key)
+        elif key == 'x^y':
+            self.result_var.set(self.result_var.get() + '**')
+        elif key in ['π', 'e']:
+            self.update_display(str(math.pi) if key == 'π' else str(math.e))
         else:
             self.update_display(key)
 
@@ -122,9 +127,26 @@ class ScientificCalculatorGUI:
                 'tan': math.tan(math.radians(value)),
                 'sqrt': math.sqrt(value),
                 'log': math.log10(value),
-                'exp': math.exp(value)
+                'exp': math.exp(value),
+                'sin⁻¹': math.degrees(math.asin(value)),
+                'cos⁻¹': math.degrees(math.acos(value)),
+                '!': math.factorial(int(value))
             }[func]
             self.result_var.set(str(result))
+        except:
+            self.result_var.set("Error")
+
+    def memory_operations(self, operation):
+        try:
+            current_value = float(self.result_var.get())
+            if operation == 'M+':
+                self.memory += current_value
+            elif operation == 'M-':
+                self.memory -= current_value
+            elif operation == 'MR':
+                self.result_var.set(str(self.memory))
+            elif operation == 'MC':
+                self.memory = 0
         except:
             self.result_var.set("Error")
 
