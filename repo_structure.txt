@@ -32,6 +32,7 @@
 │   ├── Stack
 │   ├── Trees
 │   ├── avl_tree_visualizer
+│   ├── sorting_algorithms
 │   └── visualizer
 ├── Automation_Tools
 │   ├── Autofill personal info using Aadhar Card Image
