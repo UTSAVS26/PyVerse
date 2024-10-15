@@ -121,17 +121,22 @@ class ScientificCalculatorGUI:
     def calculate_function(self, func):
         try:
             value = float(self.result_var.get())
-            result = {
-                'sin': math.sin(math.radians(value)),
-                'cos': math.cos(math.radians(value)),
-                'tan': math.tan(math.radians(value)),
-                'sqrt': math.sqrt(value),
-                'log': math.log10(value),
-                'exp': math.exp(value),
-                'sin⁻¹': math.degrees(math.asin(value)),
-                'cos⁻¹': math.degrees(math.acos(value)),
-                '!': math.factorial(int(value))
-            }[func]
+            if func == '!':
+                if value.is_integer() and value >= 0:
+                    result = math.factorial(int(value))
+                else:
+                    raise ValueError("Factorial is only defined for non-negative integers.")
+            else:
+                result = {
+                    'sin': math.sin(math.radians(value)),
+                    'cos': math.cos(math.radians(value)),
+                    'tan': math.tan(math.radians(value)),
+                    'sqrt': math.sqrt(value),
+                    'log': math.log10(value),
+                    'exp': math.exp(value),
+                    'sin⁻¹': math.degrees(math.asin(value)),
+                    'cos⁻¹': math.degrees(math.acos(value))
+                }[func]
             self.result_var.set(str(result))
         except:
             self.result_var.set("Error")
