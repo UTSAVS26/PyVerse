@@ -72,6 +72,26 @@ The **N-Queens Problem** is a classic puzzle where the goal is to place \(N\) qu
   
 - **Use Case**: Resource allocation and optimization problems, where multiple entities must be placed in non-conflicting positions (e.g., server load balancing).
 
+### 6. **Rat in a Maze**
+
+The **Rat in a Maze** problem involves finding a path for a rat from the source to the destination in a maze represented by a binary matrix.
+
+- **Backtracking Approach**: Start from the source and explore possible moves (usually up, down, left, right). If a move leads to a valid path, continue; otherwise, backtrack and try another direction.
+  
+- **Time Complexity**: \(O(4^{n^2})\) in the worst case, where \(n\) is the size of the maze.
+  
+- **Use Case**: Pathfinding algorithms, robot navigation in constrained environments.
+
+### 7. **Kth Permutation**
+
+The **Kth Permutation** problem involves finding the kth permutation of a set of n numbers in lexicographic order.
+
+- **Backtracking Approach**: Generate permutations in lexicographic order until the kth permutation is reached. Alternatively, use a more efficient factorial number system approach.
+  
+- **Time Complexity**: \(O(n!)\) for naive approach, \(O(n^2)\) for optimized factorial number system approach.
+  
+- **Use Case**: Combinatorial problems, generating specific arrangements in lexicographic order.
+
 ---
 
 ## Key Differences Between Backtracking Applications:
@@ -83,12 +103,14 @@ The **N-Queens Problem** is a classic puzzle where the goal is to place \(N\) qu
 | **Knight's Tour**    | \(O(8^n)\)      | Chess puzzle solvers, Pathfinding         |
 | **Maze Solving**     | \(O(4^n)\)      | Robotics, Navigation Systems              |
 | **N-Queens**         | \(O(N!)\)       | Resource allocation, Server optimization  |
+| **Rat in a Maze**    | \(O(4^{n^2})\)  | Pathfinding, Robot navigation             |
+| **Kth Permutation**  | \(O(n^2)\)      | Combinatorial problems, Lexicographic ordering |
 
 ---
 
 ## Conclusion
 
-**Backtracking** is a versatile and powerful technique for solving constraint-based problems. By exploring all possibilities and eliminating invalid paths through backtracking, this approach enables the efficient solving of complex combinatorial problems. Applications like **Graph Coloring**, **Hamiltonian Cycle**, **Knight's Tour**, **Maze Solving**, and the **N-Queens Problem** showcase the wide applicability of backtracking, from puzzle-solving to real-world optimization tasks.
+**Backtracking** is a versatile and powerful technique for solving constraint-based problems. By exploring all possibilities and eliminating invalid paths through backtracking, this approach enables the efficient solving of complex combinatorial problems. Applications like **Graph Coloring**, **Hamiltonian Cycle**, **Knight's Tour**, **Maze Solving**,**N-Queens Problem** ,**Rat in a Maze** and **Kth Permutation** showcase the wide applicability of backtracking, from puzzle-solving to real-world optimization tasks.
 
 Mastering backtracking is essential for understanding and solving a range of computational problems, making it a critical tool in algorithmic design.
 
