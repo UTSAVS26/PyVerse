@@ -6,3 +6,4 @@ plotly
 squarify
 scikit-learn
 streamlit
+mlxtend
