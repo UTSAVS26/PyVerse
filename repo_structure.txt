@@ -24,6 +24,8 @@
 │   │   ├── Minimum_spanning_tree
 │   │   ├── N-Queen-Visualiser-main
 │   │   └── Single_Source_Shortest_path_problems
+│   ├── Dynamic-Programming-Series
+│   │   └── Basic-DP-Problems
 │   ├── HeapSort
 │   ├── Linked List
 │   ├── Pattern Search
