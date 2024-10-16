@@ -138,6 +138,8 @@
 │   │   ├── dataset
 │   │   ├── images
 │   │   ├── model
+│   ├── Medical_diagnoser
+│   │   ├── Dataset
 │   ├── Object detection
 │   │   ├── Dataset
 │   │   ├── Images
