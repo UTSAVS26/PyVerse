@@ -94,6 +94,10 @@
 │   ├── VidForensicsTool
 │   └── bruteforce_password_cracking
 ├── Data Analysis
+│   ├── Diabetes Analysis
+│   │   ├── EDA
+│   │   ├── Model
+│   │   ├── data
 │   └── Unemployment Analysis due to COVID
 ├── Data Analytics
 │   └── IPL Analysis
@@ -193,6 +197,7 @@
 │   ├── Pig Dice Game
 │   ├── Rock-Paper-Scissors
 │   ├── Snake_Game
+│   ├── Space_quiz.py
 │   ├── Tic_Tac_Toe
 │   ├── Trivia
 │   ├── Turtle Collection Game
