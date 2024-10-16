@@ -253,6 +253,10 @@
 │   │   ├── __pycache__
 │   │   └── templates
 │   ├── Decision Tree Classifier
+│   ├── Diabetes-Prediction
+│   │   ├── readme_resources
+│   │   ├── static
+│   │   └── templates
 │   ├── Earthquake-prediction-using-Machine-learning-models
 │   │   ├── Dataset
 │   │   │   └── Processed_data
