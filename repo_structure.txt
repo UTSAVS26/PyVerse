@@ -85,6 +85,9 @@
 │   ├── CLI-based Port Scanner
 │   ├── Encryption_Decryption app
 │   ├── File Integrity Checker
+│   ├── PDF_Malware_Detection
+│   │   ├── Dataset
+│   │   └── saved_models
 │   ├── Packet-sniffer
 │   ├── Pixel_Decoder
 │   ├── VidForensicsTool
@@ -162,6 +165,7 @@
 │   │   ├── models
 │   ├── Terrain_classification
 │   │   └── transfer_learning_models
+│   ├── Traffic Accident Prediction Model using Deep Learning
 │   ├── YOLO-Drowsiness-Detection-main
 │   ├── smart_attendance_system
 │   │   ├── photos
@@ -190,8 +194,11 @@
 │   ├── Trivia
 │   └── Turtle Collection Game
 ├── Generative-AI
-│   └── Code-LLM-bot
-│       ├── images
+│   ├── Code-LLM-bot
+│   │   ├── images
+│   └── Cold-Email-Generator
+│       ├── app
+│       └── img
 ├── Image processing
 │   ├── Lane Line Detection [OPEN CV]
 │   ├── Number plate detection
