@@ -114,6 +114,7 @@
 │   │   ├── images
 │   ├── analysis_covid_trends
 │   ├── customer_segmentation
+│   ├── stock_prediction
 │   └── time_series_visualization
 ├── Deep_Learning
 │   ├── BankNifty Index Price Prediction LSTM
