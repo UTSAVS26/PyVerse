@@ -24,6 +24,9 @@
 │   │   ├── Minimum_spanning_tree
 │   │   ├── N-Queen-Visualiser-main
 │   │   └── Single_Source_Shortest_path_problems
+│   ├── Dijkstra
+│   ├── Dynamic-Programming-Series
+│   │   └── Basic-DP-Problems
 │   ├── HeapSort
 │   ├── Linked List
 │   ├── Pattern Search
@@ -71,6 +74,7 @@
 │   │   ├── task_tracker.egg-info
 │   ├── Temperature
 │   ├── Turtle
+│   │   ├── Turtle-Art
 │   ├── URL_Shortener
 │   ├── Web Scraper
 │   └── chess_game
@@ -82,11 +86,18 @@
 │   ├── CLI-based Port Scanner
 │   ├── Encryption_Decryption app
 │   ├── File Integrity Checker
+│   ├── PDF_Malware_Detection
+│   │   ├── Dataset
+│   │   └── saved_models
 │   ├── Packet-sniffer
 │   ├── Pixel_Decoder
 │   ├── VidForensicsTool
 │   └── bruteforce_password_cracking
 ├── Data Analysis
+│   ├── Diabetes Analysis
+│   │   ├── EDA
+│   │   ├── Model
+│   │   ├── data
 │   └── Unemployment Analysis due to COVID
 ├── Data Analytics
 │   └── IPL Analysis
@@ -103,6 +114,7 @@
 │   │   ├── images
 │   ├── analysis_covid_trends
 │   ├── customer_segmentation
+│   ├── stock_prediction
 │   └── time_series_visualization
 ├── Deep_Learning
 │   ├── BankNifty Index Price Prediction LSTM
@@ -132,6 +144,8 @@
 │   │   ├── dataset
 │   │   ├── images
 │   │   ├── model
+│   ├── Medical_diagnoser
+│   │   ├── Dataset
 │   ├── Object detection
 │   │   ├── Dataset
 │   │   ├── Images
@@ -159,6 +173,7 @@
 │   │   ├── models
 │   ├── Terrain_classification
 │   │   └── transfer_learning_models
+│   ├── Traffic Accident Prediction Model using Deep Learning
 │   ├── YOLO-Drowsiness-Detection-main
 │   ├── smart_attendance_system
 │   │   ├── photos
@@ -183,12 +198,17 @@
 │   ├── Pig Dice Game
 │   ├── Rock-Paper-Scissors
 │   ├── Snake_Game
+│   ├── Space_quiz.py
 │   ├── Tic_Tac_Toe
 │   ├── Trivia
-│   └── Turtle Collection Game
+│   ├── Turtle Collection Game
+│   └── Visual_novel _code
 ├── Generative-AI
-│   └── Code-LLM-bot
-│       ├── images
+│   ├── Code-LLM-bot
+│   │   ├── images
+│   └── Cold-Email-Generator
+│       ├── app
+│       └── img
 ├── Image processing
 │   ├── Lane Line Detection [OPEN CV]
 │   ├── Number plate detection
@@ -234,6 +254,10 @@
 │   │   ├── __pycache__
 │   │   └── templates
 │   ├── Decision Tree Classifier
+│   ├── Diabetes-Prediction
+│   │   ├── readme_resources
+│   │   ├── static
+│   │   └── templates
 │   ├── Earthquake-prediction-using-Machine-learning-models
 │   │   ├── Dataset
 │   │   │   └── Processed_data
@@ -265,6 +289,7 @@
 │   │   ├── Images
 │   │   ├── Model
 │   ├── Red Wine Quality Detection
+│   ├── SVM
 │   ├── Signature_verification_portal
 │   ├── Style Transfer with Neural Network
 │   ├── TextToTalk
@@ -326,6 +351,8 @@
 │   │   ├── src
 │   │   │   ├── components
 │   │   │   ├── helpers
+│   ├── Movie_Recommendation
+│   │   ├── data
 │   ├── Password_Generator--main
 │   │   ├── assets
 │   ├── RazorPay-Clone-master
@@ -342,3 +369,6 @@
 ├── api_dev
 ├── cybersecurity_resources
 │   └── pdf
+└── traffic_vs_zombie_game
+    ├── images
+    └── sound
