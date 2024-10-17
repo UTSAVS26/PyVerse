@@ -9,6 +9,7 @@
 │   └── SkillSync
 │       └── templates
 ├── Algorithms_and_Data_Structures
+│   ├── Arrays
 │   ├── BinarySearchTree
 │   │   ├── __pycache__
 │   ├── Design_and_Analysis_of_Algorithms
@@ -23,6 +24,9 @@
 │   │   ├── Minimum_spanning_tree
 │   │   ├── N-Queen-Visualiser-main
 │   │   └── Single_Source_Shortest_path_problems
+│   ├── Dijkstra
+│   ├── Dynamic-Programming-Series
+│   │   └── Basic-DP-Problems
 │   ├── HeapSort
 │   ├── Linked List
 │   ├── Pattern Search
@@ -31,6 +35,7 @@
 │   ├── Stack
 │   ├── Trees
 │   ├── avl_tree_visualizer
+│   ├── sorting_algorithms
 │   └── visualizer
 ├── Automation_Tools
 │   ├── Autofill personal info using Aadhar Card Image
@@ -57,6 +62,8 @@
 │   ├── Number Guessing Game
 │   ├── PDF Quering
 │   ├── Password-Generator
+│   ├── Positive_News_Digest
+│   │   ├── templates
 │   ├── QR Generator
 │   ├── Stock App
 │   │   ├── Templates
@@ -67,18 +74,30 @@
 │   │   ├── task_tracker.egg-info
 │   ├── Temperature
 │   ├── Turtle
+│   │   ├── Turtle-Art
 │   ├── URL_Shortener
 │   ├── Web Scraper
 │   └── chess_game
 ├── Blockchain_Development
+├── Computer Vision
+│   └── Volume Control Using Hand Gesture
+│       ├── docs
 ├── Cybersecurity_Tools
 │   ├── CLI-based Port Scanner
 │   ├── Encryption_Decryption app
+│   ├── File Integrity Checker
+│   ├── PDF_Malware_Detection
+│   │   ├── Dataset
+│   │   └── saved_models
 │   ├── Packet-sniffer
 │   ├── Pixel_Decoder
 │   ├── VidForensicsTool
 │   └── bruteforce_password_cracking
 ├── Data Analysis
+│   ├── Diabetes Analysis
+│   │   ├── EDA
+│   │   ├── Model
+│   │   ├── data
 │   └── Unemployment Analysis due to COVID
 ├── Data Analytics
 │   └── IPL Analysis
@@ -95,6 +114,7 @@
 │   │   ├── images
 │   ├── analysis_covid_trends
 │   ├── customer_segmentation
+│   ├── stock_prediction
 │   └── time_series_visualization
 ├── Deep_Learning
 │   ├── BankNifty Index Price Prediction LSTM
@@ -106,6 +126,8 @@
 │   │   ├── Dataset
 │   │   ├── Images
 │   │   ├── Model
+│   ├── Deep-learning-for-Animal-Identification
+│   │   ├── images
 │   ├── Detect Bad Posture Media Pipe
 │   ├── Digital Image Tampering Detection
 │   ├── Dog Species Classification
@@ -122,6 +144,8 @@
 │   │   ├── dataset
 │   │   ├── images
 │   │   ├── model
+│   ├── Medical_diagnoser
+│   │   ├── Dataset
 │   ├── Object detection
 │   │   ├── Dataset
 │   │   ├── Images
@@ -147,6 +171,9 @@
 │   │   ├── Dataset
 │   │   ├── Images
 │   │   ├── models
+│   ├── Terrain_classification
+│   │   └── transfer_learning_models
+│   ├── Traffic Accident Prediction Model using Deep Learning
 │   ├── YOLO-Drowsiness-Detection-main
 │   ├── smart_attendance_system
 │   │   ├── photos
@@ -157,6 +184,9 @@
 │           ├── test_labels.csv
 │           └── train.csv
 ├── Game_Development
+│   ├── Bubble Shoot
+│   ├── Card quest
+│   ├── Dice_rolling_simulator
 │   ├── Flappy_Bird
 │   │   ├── audio
 │   │   └── sprites
@@ -165,20 +195,40 @@
 │   ├── KBC
 │   ├── MasterMind
 │   ├── Number Guessing Game
+│   ├── Pig Dice Game
 │   ├── Rock-Paper-Scissors
 │   ├── Snake_Game
+│   ├── Space_quiz.py
 │   ├── Tic_Tac_Toe
 │   ├── Trivia
-│   └── Turtle Collection Game
+│   ├── Turtle Collection Game
+│   └── Visual_novel _code
 ├── Generative-AI
-│   └── Code-LLM-bot
-│       ├── images
+│   ├── Code-LLM-bot
+│   │   ├── images
+│   └── Cold-Email-Generator
+│       ├── app
+│       └── img
 ├── Image processing
 │   ├── Lane Line Detection [OPEN CV]
-│   └── Number plate detection
-│       ├── model
-│       ├── ocr-notebook
-│       ├── plates
+│   ├── Number plate detection
+│   │   ├── model
+│   │   ├── ocr-notebook
+│   │   ├── plates
+│   └── PhotoSpectroscope
+│       ├── Analyser
+│       │   ├── Scripts
+│       │   └── Test Docs
+│       │       └── images
+│       ├── Normaliser
+│       │   ├── Images
+│       │   └── Script
+│       ├── Results
+│       ├── Scource
+│       ├── Theme
+│       │   └── theme
+│       │       ├── dark
+│       │       ├── light
 ├── Machine_Learning
 │   ├── AI_Language_Learning_Assistant
 │   ├── AI_Text_Detector
@@ -200,13 +250,28 @@
 │   │   ├── Images
 │   │   ├── Model
 │   ├── Customer Clust - Customer Segmentation Tool
+│   ├── Data Summarizer NLP
+│   │   ├── __pycache__
+│   │   └── templates
 │   ├── Decision Tree Classifier
+│   ├── Diabetes-Prediction
+│   │   ├── readme_resources
+│   │   ├── static
+│   │   └── templates
+│   ├── Earthquake-prediction-using-Machine-learning-models
+│   │   ├── Dataset
+│   │   │   └── Processed_data
+│   │   └── images
 │   ├── Economic Regime Detection Project
 │   ├── Email Spam Classifier
 │   ├── Fake News Detection
 │   │   ├── Images
 │   │   ├── Model
+│   ├── Flight_delay_prediction
 │   ├── Hand Game Controller
+│   ├── Intrusion Detection System
+│   │   ├── Dataset
+│   │   ├── Image
 │   ├── Iris Classification using KNN
 │   │   ├── assets
 │   │   │   └── images
@@ -224,7 +289,9 @@
 │   │   ├── Images
 │   │   ├── Model
 │   ├── Red Wine Quality Detection
+│   ├── SVM
 │   ├── Signature_verification_portal
+│   ├── Style Transfer with Neural Network
 │   ├── TextToTalk
 │   │   └── scripts
 │   ├── Twitter Sentiment Analysis
@@ -284,6 +351,8 @@
 │   │   ├── src
 │   │   │   ├── components
 │   │   │   ├── helpers
+│   ├── Movie_Recommendation
+│   │   ├── data
 │   ├── Password_Generator--main
 │   │   ├── assets
 │   ├── RazorPay-Clone-master
@@ -300,3 +369,6 @@
 ├── api_dev
 ├── cybersecurity_resources
 │   └── pdf
+└── traffic_vs_zombie_game
+    ├── images
+    └── sound
