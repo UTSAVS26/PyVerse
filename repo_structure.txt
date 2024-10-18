@@ -64,6 +64,8 @@
 │   ├── Password-Generator
 │   ├── Positive_News_Digest
 │   │   ├── templates
+│   ├── Pycham Face reco
+│   │   ├── images
 │   ├── QR Generator
 │   ├── Stock App
 │   │   ├── Templates
