@@ -203,15 +203,22 @@ This project is licensed under the **MIT License**. For more details, check out 
 </table>
 
 ---
-
-<a href="https://github.com/UTSAVS26/PyVerse/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=UTSAVS26/PyVerse" />
-</a>
+Got questions? Want to suggest improvements? Open an issue on GitHub or contact the project admin, **Utsav Singhal**, at:  
+📧 **utsavsinghal26@gmail.com** 
 
 ---
 
-Got questions? Want to suggest improvements? Open an issue on GitHub or contact the project admin, **Utsav Singhal**, at:  
-📧 **utsavsinghal26@gmail.com**
+## Our Contributors 🌏
+
+We extend our profound appreciation for your invaluable contributions to this project. Your dedication, ingenuity, and collaborative spirit have been pivotal in transforming PyVerse.  ✨
+
+Each line of code, every insightful suggestion, and all the meticulous documentation you've provided have been essential to our collective success. 💻  We recognize and celebrate the passion and expertise you bring to this endeavor.
+
+<div align="center">
+<a href="https://github.com/UTSAVS26/PyVerse/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=UTSAVS26/PyVerse" />
+</a>
+</div>
 
 ---
 
