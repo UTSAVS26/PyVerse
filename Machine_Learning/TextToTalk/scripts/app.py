@@ -1,6 +1,3 @@
-import streamlit as st
-from Pipeline import pipeline
-
 def main():
     """Streamlit app for PDF to MP3 conversion."""
     st.title("PDF to MP3 Converter")
@@ -8,7 +5,7 @@ def main():
     uploaded_file = st.file_uploader("Choose a PDF file to convert:", type=['pdf'])
 
     if uploaded_file is not None:
-        audio_file = pipeline(uploaded_file, lang=lang_code)
+        audio_file, error_message = pipeline(uploaded_file, lang='en')  # Pass the selected language here
         if audio_file:
             st.audio(audio_file, format='audio/mp3')
             st.download_button(
@@ -18,7 +15,4 @@ def main():
                 mime="audio/mp3"
             )
         else:
-            st.error("Failed to convert PDF to audio.")
-
-if __name__ == '__main__':
-    main()
+            st.error(error_message)  # Display the error message
