@@ -19,6 +19,10 @@
 </div>
 
 <div align="center">
+<img  src="https://readme-typing-svg.herokuapp.com?color=45ffaa&center=true&vCenter=true&size=40&width=900&height=80&lines=Welcome+to+PyVerse"/>
+</div>
+
+<div align="center">
    
   ## 📊 **Visual Workflow Diagram for PyVerse**
   
@@ -169,8 +173,52 @@ This project is licensed under the **MIT License**. For more details, check out 
 
 ## 📞 **Contact Information**
 
+### Project Admin⚡
+ 
+<table>
+<tr>
+<td align="center"><a href="https://github.com/UTSAVS26/"><img src="https://media.licdn.com/dms/image/v2/D5603AQEoUyTNIj8ktg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1719649955614?e=1734566400&v=beta&t=dlqyhLIKaVLoqPk3d32d-Ltst471Td8fPo6_S-kAJ2o" width=150px height=150px /></a></br> <h4 style="color:red;">UTSAV SINGHAL</h4>
+ <a href="https://www.linkedin.com/in/utsavsinghal2604/"><img src="https://img.icons8.com/fluency/2x/linkedin.png" width="32px" height="32px"></img></a>
+</td>
+</tr>
+</table>
+
+### Project Mentors✨
+ 
+<table>
+<tr>
+<td align="center"><a href="https://github.com/shaansuraj"><img src="https://media.licdn.com/dms/image/v2/D5603AQGPxNguGmynZA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1718695838556?e=1734566400&v=beta&t=TP6Dpxblbh_pD63tpzdHLPeTjxKxAZVqu-hMhSZtMjI" width=150px height=150px /></a></br> <h4 style="color:red;">SURAJ SAHU
+</h4>
+ <a href="https://www.linkedin.com/in/shaansuraj"><img src="https://img.icons8.com/fluency/2x/linkedin.png" width="32px" height="32px"></img></a>
+</td>
+<td align="center"><a href="https://github.com/TheChaoticor"><img src="https://media.licdn.com/dms/image/v2/C4D03AQGdmfKXUQZR7Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1657196383790?e=1734566400&v=beta&t=MEUGrddHDqshy1aIa1o27t8UykKaaOG6HTtPIZVXjfU" width=150px height=150px /></a></br> <h4 style="color:red;">ARPIT MISHRA
+</h4>
+ <a href="https://www.linkedin.com/in/arpit-mishra-87b943242/"><img src="https://img.icons8.com/fluency/2x/linkedin.png" width="32px" height="32px"></img></a>
+</td>
+<td align="center"><a href="https://www.github.com/ruhi47"><img src="https://media.licdn.com/dms/image/v2/D4E35AQEILO693y_M2w/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1718823506641?e=1729832400&v=beta&t=LoWlVhGGdjgPbDcJZqA_YNhTcmm4PVlvHnRJGz5snPM" width=150px height=150px /></a></br> <h4 style="color:red;">RUHI TYAGI
+</h4>
+ <a href="https://www.linkedin.com/in/ruhityagi"><img src="https://img.icons8.com/fluency/2x/linkedin.png" width="32px" height="32px"></img></a>
+</td>
+</tr>
+</table>
+
+---
 Got questions? Want to suggest improvements? Open an issue on GitHub or contact the project admin, **Utsav Singhal**, at:  
-📧 **utsavsinghal26@gmail.com**
+📧 **utsavsinghal26@gmail.com** 
+
+---
+
+## Our Contributors 🌏
+
+We extend our profound appreciation for your invaluable contributions to our project PyVerse: Python Universe of Projects and Tools. Your dedication, ingenuity, and collaborative spirit have been pivotal in transforming PyVerse.  ✨
+
+Each line of code, every insightful suggestion, and all the meticulous documentation provided have been essential to our collective success. 💻  We recognize and celebrate the passion and expertise you bring to this endeavor.
+
+<div align="center">
+<a href="https://github.com/UTSAVS26/PyVerse/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=UTSAVS26/PyVerse" />
+</a>
+</div>
 
 ---
 
