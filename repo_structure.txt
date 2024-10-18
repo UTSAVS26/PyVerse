@@ -64,6 +64,8 @@
 │   ├── Password-Generator
 │   ├── Positive_News_Digest
 │   │   ├── templates
+│   ├── Pycham Face reco
+│   │   ├── images
 │   ├── QR Generator
 │   ├── Stock App
 │   │   ├── Templates
@@ -114,6 +116,7 @@
 │   │   ├── images
 │   ├── analysis_covid_trends
 │   ├── customer_segmentation
+│   ├── stock_prediction
 │   └── time_series_visualization
 ├── Deep_Learning
 │   ├── BankNifty Index Price Prediction LSTM
@@ -192,6 +195,7 @@
 │   ├── Hangman-main
 │   │   └── images
 │   ├── KBC
+│   ├── Map Game
 │   ├── MasterMind
 │   ├── Number Guessing Game
 │   ├── Pig Dice Game
@@ -228,6 +232,7 @@
 │       │   └── theme
 │       │       ├── dark
 │       │       ├── light
+├── Images
 ├── Machine_Learning
 │   ├── AI_Language_Learning_Assistant
 │   ├── AI_Text_Detector
@@ -253,6 +258,10 @@
 │   │   ├── __pycache__
 │   │   └── templates
 │   ├── Decision Tree Classifier
+│   ├── Diabetes-Prediction
+│   │   ├── readme_resources
+│   │   ├── static
+│   │   └── templates
 │   ├── Earthquake-prediction-using-Machine-learning-models
 │   │   ├── Dataset
 │   │   │   └── Processed_data
@@ -297,6 +306,7 @@
 │   │   ├── models
 │   │   ├── static
 │   │   └── templates
+│   ├── Web Page Phishing Detection
 │   ├── Zomato Restaurant Clustering and Sentiment Analysis
 │   ├── assets
 │   ├── pokemon-data-analysis-and-legendary-classification-main
