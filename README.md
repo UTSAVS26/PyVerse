@@ -28,7 +28,21 @@
 
 Welcome to **PyVerse**, your go-to open-source hub for exploring the limitless universe of Python! Whether you're a seasoned developer, an enthusiastic beginner, or just a curious explorer, PyVerse is here to fuel your Python journey with exciting projects, powerful tools, and a welcoming community. Let’s code, learn, and collaborate to build something amazing!
 
----
+<img src="https://raw.githubusercontent.com/alo7lika/PyVerse/refs/heads/main/Images/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900">
+
+### This project is now OFFICIALLY accepted for
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/alo7lika/PyVerse/refs/heads/main/Images/329829127-e79eb6de-81b1-4ffb-b6ed-f018bb977e88.png" alt="GSSoC 2024 Extd" width="80%">
+</div>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/alo7lika/PyVerse/refs/heads/main/Images/hacktober.png" alt="Hacktober fest 2024" width="80%">
+</div>
+
+<br>
+
+<img src="https://raw.githubusercontent.com/alo7lika/PyVerse/refs/heads/main/Images/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900">
 
 ## 📑 **Table of Contents**
 
