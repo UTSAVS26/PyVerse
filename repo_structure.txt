@@ -232,6 +232,7 @@
 │       │   └── theme
 │       │       ├── dark
 │       │       ├── light
+├── Images
 ├── Machine_Learning
 │   ├── AI_Language_Learning_Assistant
 │   ├── AI_Text_Detector
