@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Code Playground</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/python/python.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        #editor-container {
+            max-width: 1500px;
+            margin: auto;
+            padding-bottom: 20px; 
+            display: flex; /* Added for image alignment */
+            align-items: center; /* Centered the images vertically */
+        }
+        #editor {
+            flex-grow: 1; /* Allow the editor to take up remaining space */
+            height: 400px; /* Set a fixed height for the editor */
+            padding: 0 10px; /* Added padding for spacing */
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:disabled {
+            background-color: #ddd;
+            cursor: not-allowed;
+        }
+        #output {
+            background-color: #272822;
+            color: #f8f8f2;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+            white-space: pre-wrap;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        .snippet-list {
+            margin-top: 20px;
+            max-height: 300px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px; 
+            background-color: #fff; 
+        }
+        .snippet-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 8px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 5px;
+            transition: background-color 0.3s; 
+        }
+        .snippet-item:hover {
+            background-color: #e7e7e7; 
+        }
+        /* Added styles for images */
+        .editor-image {
+            width: 400px; /* Increased width for images */
+            height: 400px; /* Maintain aspect ratio */
+            margin: 0px; /* Spacing around images */
+        }
+    </style>
+</head>
+<body>
+    <h1>Interactive Python Playground</h1>
+    <div id="editor-container">
+        <img src="https://lh3.googleusercontent.com/gg/ACM6BIu1BoYHCeOLWv4F8AZZUWReP6o9JnXSRQMOBTMBVaZQELFP8CFbj0Ds9Ed3rpsfwz5v3pNXaaTSIKZNTdSUJDhJZIUyKSxqdU0KDLg4uxxG5rSMnfg4tpXRMpTTUIf92JEC3n5_Td3mWP3cpajFSFiwv6xBop-HVuSz7e-laP_gxmhTONM" class="editor-image" alt="Left Side Image">
+        
+        <div id="editor">
+            <textarea id="code" name="code"></textarea>
+            <div class="button-container">
+                <button onclick="executeCode()">Run Code</button>
+                <button onclick="saveSnippet()">Save Code</button>
+                <button onclick="loadSnippets()">Load Saved Snippets</button>
+            </div>
+            <pre id="output"></pre>
+            <div class="snippet-list" id="snippet-list"></div>
+        </div>
+
+        <img src="https://lh3.googleusercontent.com/gg/ACM6BIsn8Dm1WtSuQ0YiJ1xJQX0l720t32zLvvPYejf5tMzJtpwyMcVwV3v21ZxyomPEv61vkb9j0Eg5kFw1gmvO-vgJWuqiWtD2grz9gS4xohM0S-6NXZNYod2jIsDWOOUg5rg_8_VbxsJqw_8EYVT0QDj6k0_VTX126f0yk51iKcNXaZb3IRY" class="editor-image" alt="Right Side Image">
+    </div>
+
+    <script>
+        // Initialize CodeMirror
+        const editor = CodeMirror.fromTextArea(document.getElementById('code'), {
+            mode: 'python',
+            lineNumbers: true,
+            theme: 'default'
+        });
+
+        // Function to execute the code
+        async function executeCode() {
+            const code = editor.getValue();
+            const response = await fetch('http://127.0.0.1:8000/execute', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ code })
+            });
+
+            const result = await response.json();
+            document.getElementById('output').innerText = result.output || result.errors;
+        }
+
+        // Function to save the current code snippet
+        async function saveSnippet() {
+            const code = editor.getValue();
+            const response = await fetch('http://127.0.0.1:8000/save_snippet', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ code })
+            });
+
+            const result = await response.json();
+            alert(result.message);
+        }
+
+        // Function to load saved snippets
+        async function loadSnippets() {
+            const response = await fetch('http://127.0.0.1:8000/snippets', {
+                method: 'GET'
+            });
+
+            const result = await response.json();
+            const snippetList = document.getElementById('snippet-list');
+            snippetList.innerHTML = '';
+
+            result.snippets.forEach(snippet => {
+                const snippetElement = document.createElement('div');
+                snippetElement.classList.add('snippet-item');
+                snippetElement.textContent = snippet.code; // Adjusted to directly show the code
+                snippetElement.onclick = () => {
+                    editor.setValue(snippet.code);
+                };
+                snippetList.appendChild(snippetElement);
+            });
+        }
+    </script>
+</body>
+</html>
