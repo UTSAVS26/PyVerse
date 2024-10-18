@@ -210,9 +210,9 @@ Got questions? Want to suggest improvements? Open an issue on GitHub or contact 
 
 ## Our Contributors 🌏
 
-We extend our profound appreciation for your invaluable contributions to this project. Your dedication, ingenuity, and collaborative spirit have been pivotal in transforming PyVerse.  ✨
+We extend our profound appreciation for your invaluable contributions to our project PyVerse: Python Universe of Projects and Tools. Your dedication, ingenuity, and collaborative spirit have been pivotal in transforming PyVerse.  ✨
 
-Each line of code, every insightful suggestion, and all the meticulous documentation you've provided have been essential to our collective success. 💻  We recognize and celebrate the passion and expertise you bring to this endeavor.
+Each line of code, every insightful suggestion, and all the meticulous documentation provided have been essential to our collective success. 💻  We recognize and celebrate the passion and expertise you bring to this endeavor.
 
 <div align="center">
 <a href="https://github.com/UTSAVS26/PyVerse/graphs/contributors">
