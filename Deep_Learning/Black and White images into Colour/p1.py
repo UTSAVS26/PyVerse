@@ -3,7 +3,7 @@ import argparse
 import cv2
 import os
 
-DIR=r"C:\Users\SWATI MOHAPATRA\PycharmProjects\Colourisation"
+DIR=r"C:\Users\Your-Directory\PycharmProjects\Colourisation"
 PROTOTXT=os.path.join(DIR,r"For Colorisation\colorization_deploy_v2.prototxt")
 POINTS=os.path.join(DIR,r"For Colorisation\pts_in_hull.npy")
 MODEL=os.path.join(DIR,r"For Colorisation\colorization_release_v2.caffemodel")
@@ -56,5 +56,5 @@ cv2.imshow("Original", image)
 cv2.imshow("Colorized", colorized)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
-#Command python p1.py --image images/naruto.jpg
+#Switch to the folder where this project is via command prompt
+#Run this Command   python p1.py --image images/space4.jpg
