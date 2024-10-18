@@ -195,6 +195,7 @@
 │   ├── Hangman-main
 │   │   └── images
 │   ├── KBC
+│   ├── Map Game
 │   ├── MasterMind
 │   ├── Number Guessing Game
 │   ├── Pig Dice Game
