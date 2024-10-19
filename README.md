@@ -28,9 +28,24 @@
 
 Welcome to **PyVerse**, your go-to open-source hub for exploring the limitless universe of Python! Whether you're a seasoned developer, an enthusiastic beginner, or just a curious explorer, PyVerse is here to fuel your Python journey with exciting projects, powerful tools, and a welcoming community. Let’s code, learn, and collaborate to build something amazing!
 
----
+<img src="https://raw.githubusercontent.com/alo7lika/PyVerse/refs/heads/main/Images/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900">
+
+### This project is now OFFICIALLY accepted for
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/alo7lika/PyVerse/refs/heads/main/Images/329829127-e79eb6de-81b1-4ffb-b6ed-f018bb977e88.png" alt="GSSoC 2024 Extd" width="80%">
+</div>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/alo7lika/PyVerse/refs/heads/main/Images/hacktober.png" alt="Hacktober fest 2024" width="80%">
+</div>
+
+<br>
+
+<img src="https://raw.githubusercontent.com/alo7lika/PyVerse/refs/heads/main/Images/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900">
 
 ## 📑 **Table of Contents**
+
 - [🌟 Vision and Mission](#-vision-and-mission)
 - [🎯 What is PyVerse?](#-what-is-pyverse)
 - [🔥 Features to Explore](#-features-to-explore)
@@ -50,24 +65,26 @@ Welcome to **PyVerse**, your go-to open-source hub for exploring the limitless u
 
 ## 🌟 **Vision and Mission**
 
-At PyVerse, we envision a thriving community where Python enthusiasts of **all skill levels** come together to innovate, learn, and contribute. Our mission is simple:  
-- Build a rich, well-organized repository for Python projects and tools.  
-- Foster open-source development and collaboration.  
-- Create a platform where developers can **showcase their work** and **grow together**.  
+At PyVerse, we envision a thriving community where Python enthusiasts of **all skill levels** come together to innovate, learn, and contribute. Our mission is simple:
+
+- Build a rich, well-organized repository for Python projects and tools.
+- Foster open-source development and collaboration.
+- Create a platform where developers can **showcase their work** and **grow together**.
 
 ---
 
 ## 🎯 **What is PyVerse?**
 
-**PyVerse** is a dynamic, central hub packed with Python projects that span a variety of domains such as:  
-- **Web Development** 🌐  
-- **Machine Learning** 🤖  
-- **Data Science** 📊  
-- **Automation Tools** ⚙️  
-- **Game Development** 🎮  
-- **Deep Learning** 🧠  
-- **Cybersecurity** 🔐  
-- **Blockchain Development** ⛓️  
+**PyVerse** is a dynamic, central hub packed with Python projects that span a variety of domains such as:
+
+- **Web Development** 🌐
+- **Machine Learning** 🤖
+- **Data Science** 📊
+- **Automation Tools** ⚙️
+- **Game Development** 🎮
+- **Deep Learning** 🧠
+- **Cybersecurity** 🔐
+- **Blockchain Development** ⛓️
 - **Algorithms and Data Structures** 🧩
 
 Our goal is to provide a structured, easy-to-navigate platform where **developers of all levels** can dive in, explore, and contribute to projects that challenge them and build their skills.
@@ -86,17 +103,18 @@ Our goal is to provide a structured, easy-to-navigate platform where **developer
 
 ## 🏗️ **Project Structure**
 
-We've designed **PyVerse** to be well-organized so that you can find the right tools and projects effortlessly. Each domain (e.g., web dev, machine learning) has its own section, with projects further categorized by complexity and purpose. 
+We've designed **PyVerse** to be well-organized so that you can find the right tools and projects effortlessly. Each domain (e.g., web dev, machine learning) has its own section, with projects further categorized by complexity and purpose.
 
 ---
 
 ## 🚀 **Future Scope**
 
-The Python universe is ever-expanding, and so is **PyVerse**! Here’s what’s on the horizon:  
-- Adding cutting-edge projects in **emerging Python domains**.  
-- Improving tutorials and adding video walkthroughs.  
-- Enhancing quality with **comprehensive test suites** for each project.  
-- Expanding **cross-language integrations** for broader applicability.  
+The Python universe is ever-expanding, and so is **PyVerse**! Here’s what’s on the horizon:
+
+- Adding cutting-edge projects in **emerging Python domains**.
+- Improving tutorials and adding video walkthroughs.
+- Enhancing quality with **comprehensive test suites** for each project.
+- Expanding **cross-language integrations** for broader applicability.
 
 ---
 
@@ -105,16 +123,19 @@ The Python universe is ever-expanding, and so is **PyVerse**! Here’s what’s 
 Whether you're just starting out or looking to contribute at an advanced level, PyVerse has something for you. Here's how to get involved:
 
 ### 🟢 **Beginner Level**
+
 - **Explore:** Navigate through the repositories and understand the project structure.
 - **Read Documentation:** Study the README files and guides.
 - **Run Projects:** Start with beginner-level projects to gain practical experience.
 
 ### 🔵 **Intermediate Level**
-- **Write Test Cases:** Improve code quality by creating robust test cases.  
-- **Add Features:** Build on existing projects by introducing new features.  
+
+- **Write Test Cases:** Improve code quality by creating robust test cases.
+- **Add Features:** Build on existing projects by introducing new features.
 - **Enhance Documentation:** Help make our documentation more detailed and user-friendly.
 
 ### 🔴 **Advanced Level**
+
 - **Research and Develop:** Explore new algorithms, libraries, and innovative Python tools.
 - **Lead Projects:** Take charge of complex, large-scale Python projects and mentor others.
 - **Collaborate:** Work with other contributors to push the boundaries of Python development.
@@ -123,7 +144,8 @@ Whether you're just starting out or looking to contribute at an advanced level, 
 
 ## 🛠️ **Skill Selection Diagram**
 
-The **workflow** for getting involved is simple:  
+The **workflow** for getting involved is simple:
+
 1. **Access the Repository** on GitHub.
 2. **Pick Your Domain:** From **web development** to **deep learning**, find your area of interest.
 3. **Select Your Level:** Beginner? Intermediate? Advanced? There's something for everyone!
@@ -131,9 +153,9 @@ The **workflow** for getting involved is simple:
 
 ---
 
-## 🙌 **Acknowledgments**  
+## 🙌 **Acknowledgments**
 
-A huge shoutout to our amazing **Top Contributors** and the open-source community for their support and hard work. Your contributions make PyVerse a reality! 🚀 
+A huge shoutout to our amazing **Top Contributors** and the open-source community for their support and hard work. Your contributions make PyVerse a reality! 🚀
 
 Want to join them? Your contributions are always welcome!
 
