@@ -124,6 +124,9 @@
 │   │   ├── Dataset
 │   │   ├── Images
 │   │   ├── Model
+│   ├── Black and White images into Colour
+│   │   ├── For Colorisation
+│   │   ├── images
 │   ├── Brain Tumor Detection
 │   │   ├── Dataset
 │   │   ├── Images
