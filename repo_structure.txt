@@ -64,6 +64,8 @@
 │   ├── Password-Generator
 │   ├── Positive_News_Digest
 │   │   ├── templates
+│   ├── Pycham Face reco
+│   │   ├── images
 │   ├── QR Generator
 │   ├── Stock App
 │   │   ├── Templates
@@ -122,6 +124,9 @@
 │   │   ├── Dataset
 │   │   ├── Images
 │   │   ├── Model
+│   ├── Black and White images into Colour
+│   │   ├── For Colorisation
+│   │   ├── images
 │   ├── Brain Tumor Detection
 │   │   ├── Dataset
 │   │   ├── Images
@@ -146,6 +151,7 @@
 │   │   ├── model
 │   ├── Medical_diagnoser
 │   │   ├── Dataset
+│   ├── NN_FROM_SCRATCH
 │   ├── Object detection
 │   │   ├── Dataset
 │   │   ├── Images
@@ -193,7 +199,9 @@
 │   ├── Hangman-main
 │   │   └── images
 │   ├── KBC
+│   ├── Map Game
 │   ├── MasterMind
+│   ├── Maze
 │   ├── Number Guessing Game
 │   ├── Pig Dice Game
 │   ├── Rock-Paper-Scissors
@@ -229,6 +237,7 @@
 │       │   └── theme
 │       │       ├── dark
 │       │       ├── light
+├── Images
 ├── Machine_Learning
 │   ├── AI_Language_Learning_Assistant
 │   ├── AI_Text_Detector
@@ -277,6 +286,7 @@
 │   │   │   └── images
 │   ├── Landmark_Detection
 │   │   ├── images
+│   ├── Linear regression using gradient decent.
 │   ├── Movie Classification
 │   ├── Multivitamine Prediction
 │   ├── Palm-Chatbot-main
@@ -284,11 +294,18 @@
 │   │   ├── src
 │   │   │   ├── app
 │   │   │   ├── assets
+│   ├── Poker Hand Prediction
+│   │   ├── Images
+│   │   ├── Poker Hand Prediction
+│   │   ├── datasets
+│   │   │   └── csv
+│   │   ├── models
 │   ├── Predicting Exam Score Using linear Regression
 │   │   ├── Dataset
 │   │   ├── Images
 │   │   ├── Model
 │   ├── Red Wine Quality Detection
+│   ├── SONAR_Rock_ Mine_Prediction
 │   ├── SVM
 │   ├── Signature_verification_portal
 │   ├── Style Transfer with Neural Network
@@ -302,6 +319,7 @@
 │   │   ├── models
 │   │   ├── static
 │   │   └── templates
+│   ├── Web Page Phishing Detection
 │   ├── Zomato Restaurant Clustering and Sentiment Analysis
 │   ├── assets
 │   ├── pokemon-data-analysis-and-legendary-classification-main
