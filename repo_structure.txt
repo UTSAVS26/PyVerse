@@ -201,6 +201,7 @@
 │   ├── KBC
 │   ├── Map Game
 │   ├── MasterMind
+│   ├── Maze
 │   ├── Number Guessing Game
 │   ├── Pig Dice Game
 │   ├── Rock-Paper-Scissors
