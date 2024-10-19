@@ -294,6 +294,7 @@
 │   │   ├── Images
 │   │   ├── Model
 │   ├── Red Wine Quality Detection
+│   ├── SONAR_Rock_ Mine_Prediction
 │   ├── SVM
 │   ├── Signature_verification_portal
 │   ├── Style Transfer with Neural Network
