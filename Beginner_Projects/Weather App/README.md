@@ -27,7 +27,7 @@ Install the required libraries: ```pip install PyQt5 requests```
 3. Run the application: ```python weatherapp.py```
 
 # Result
-![This is an alt text.](https://github.com/user-attachments/assets/d859a056-7370-40a8-bf7f-a403ee2d8d2c)
+[![Watch the video](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://github.com/user-attachments/assets/d859a056-7370-40a8-bf7f-a403ee2d8d2c)
 
 # Contributor
 - Prisha Sanyal Aich
