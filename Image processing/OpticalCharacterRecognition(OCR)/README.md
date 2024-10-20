@@ -26,7 +26,8 @@ sudo apt install tesseract-ocr-eng
 📂 Project Structure
 ```
 ├── main.py           # 🐍 Python script to perform OCR on images
-├── images.png        # 🖼️ Sample image for OCR
+├── image.png         # 🖼️ Sample image for OCR
+├── example.png    
 └── README.md         # 📖 Documentation
 ```
 ⚙️ Usage
