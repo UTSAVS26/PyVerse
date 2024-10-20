@@ -79,7 +79,7 @@
 │   │   ├── Turtle-Art
 │   ├── URL_Shortener
 │   ├── Web Scraper
-│   └── chess_game
+│   ├── chess_game
 ├── Blockchain_Development
 ├── Computer Vision
 │   └── Volume Control Using Hand Gesture
