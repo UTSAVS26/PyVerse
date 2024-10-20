@@ -39,36 +39,6 @@ The architecture of the **NGTMS** is built on several machine learning models, e
 - **Weather & Event Impact Prediction**: LSTM/ARIMA models for forecasting the effects of weather and events.
 - **Accident Prediction**: Explainable AI-powered model to forecast accident-prone areas.
 
-+-----------------------------+ 
-|      Traffic Data Sources    | 
-+-------------+---------------+
-              |
-              v
-+-----------------------------+
-|    Dynamic Traffic Lights    | <-- LSTM Model
-+-------------+---------------+
-              |
-              v
-+-----------------------------+
-|   Vehicle Classification     | <-- CNN Model
-+-------------+---------------+
-              |
-              v
-+-----------------------------+
-| Emergency Vehicle Detection  | <-- Random Forest Model
-+-------------+---------------+
-              |
-              v
-+-----------------------------+
-| Weather & Event Prediction   | <-- LSTM/ARIMA Models
-+-------------+---------------+
-              |
-              v
-+-----------------------------+
-|  Accident Prediction Model   | <-- Explainable AI Model
-+-----------------------------+
-
-
 ---
 
 ## 🤖 Models
