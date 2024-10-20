@@ -54,7 +54,7 @@ python main.py
 4. **Draw bounding boxes around recognized text with high confidence (confidence score > 60).** 🟩✏️
 
 ## 📊 Example Output
-![Example Output](images/example_output.png)
+![Example Output](example.png)
 After running the script, it will output the extracted text:
 ```
 Extracted Text:
