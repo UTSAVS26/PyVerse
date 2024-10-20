@@ -64,6 +64,8 @@
 │   ├── Password-Generator
 │   ├── Positive_News_Digest
 │   │   ├── templates
+│   ├── Pycham Face reco
+│   │   ├── images
 │   ├── QR Generator
 │   ├── Stock App
 │   │   ├── Templates
@@ -77,7 +79,7 @@
 │   │   ├── Turtle-Art
 │   ├── URL_Shortener
 │   ├── Web Scraper
-│   └── chess_game
+│   ├── chess_game
 ├── Blockchain_Development
 ├── Computer Vision
 │   └── Volume Control Using Hand Gesture
@@ -86,6 +88,7 @@
 │   ├── CLI-based Port Scanner
 │   ├── Encryption_Decryption app
 │   ├── File Integrity Checker
+│   ├── Keylogger
 │   ├── PDF_Malware_Detection
 │   │   ├── Dataset
 │   │   └── saved_models
@@ -98,6 +101,7 @@
 │   │   ├── EDA
 │   │   ├── Model
 │   │   ├── data
+│   ├── Google Search Analysis with python
 │   └── Unemployment Analysis due to COVID
 ├── Data Analytics
 │   └── IPL Analysis
@@ -122,6 +126,9 @@
 │   │   ├── Dataset
 │   │   ├── Images
 │   │   ├── Model
+│   ├── Black and White images into Colour
+│   │   ├── For Colorisation
+│   │   ├── images
 │   ├── Brain Tumor Detection
 │   │   ├── Dataset
 │   │   ├── Images
@@ -146,6 +153,7 @@
 │   │   ├── model
 │   ├── Medical_diagnoser
 │   │   ├── Dataset
+│   ├── NN_FROM_SCRATCH
 │   ├── Object detection
 │   │   ├── Dataset
 │   │   ├── Images
@@ -193,9 +201,12 @@
 │   ├── Hangman-main
 │   │   └── images
 │   ├── KBC
+│   ├── Map Game
 │   ├── MasterMind
+│   ├── Maze
 │   ├── Number Guessing Game
 │   ├── Pig Dice Game
+│   ├── PingPong
 │   ├── Rock-Paper-Scissors
 │   ├── Snake_Game
 │   ├── Space_quiz.py
@@ -229,6 +240,7 @@
 │       │   └── theme
 │       │       ├── dark
 │       │       ├── light
+├── Images
 ├── Machine_Learning
 │   ├── AI_Language_Learning_Assistant
 │   ├── AI_Text_Detector
@@ -277,6 +289,7 @@
 │   │   │   └── images
 │   ├── Landmark_Detection
 │   │   ├── images
+│   ├── Linear regression using gradient decent.
 │   ├── Movie Classification
 │   ├── Multivitamine Prediction
 │   ├── Palm-Chatbot-main
@@ -284,11 +297,18 @@
 │   │   ├── src
 │   │   │   ├── app
 │   │   │   ├── assets
+│   ├── Poker Hand Prediction
+│   │   ├── Images
+│   │   ├── Poker Hand Prediction
+│   │   ├── datasets
+│   │   │   └── csv
+│   │   ├── models
 │   ├── Predicting Exam Score Using linear Regression
 │   │   ├── Dataset
 │   │   ├── Images
 │   │   ├── Model
 │   ├── Red Wine Quality Detection
+│   ├── SONAR_Rock_ Mine_Prediction
 │   ├── SVM
 │   ├── Signature_verification_portal
 │   ├── Style Transfer with Neural Network
@@ -302,6 +322,7 @@
 │   │   ├── models
 │   │   ├── static
 │   │   └── templates
+│   ├── Web Page Phishing Detection
 │   ├── Zomato Restaurant Clustering and Sentiment Analysis
 │   ├── assets
 │   ├── pokemon-data-analysis-and-legendary-classification-main
