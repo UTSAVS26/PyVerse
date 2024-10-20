@@ -33,6 +33,7 @@
 │   ├── Pattern Search
 │   ├── Queue
 │   ├── Recurssion
+│   ├── SearchingAlgorithms
 │   ├── Stack
 │   ├── Trees
 │   ├── avl_tree_visualizer
