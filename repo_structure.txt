@@ -1,4 +1,5 @@
 ├── Advanced_Projects
+│   ├── Chat-GPT-Discord-Bot
 │   ├── EDUHELPER
 │   ├── EdgeLock-X
 │   │   ├── faces
