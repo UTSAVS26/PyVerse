@@ -26,7 +26,8 @@
 │   │   └── Single_Source_Shortest_path_problems
 │   ├── Dijkstra
 │   ├── Dynamic-Programming-Series
-│   │   └── Basic-DP-Problems
+│   │   ├── Basic-DP-Problems
+│   │   └── Medium-DP-Problems
 │   ├── HeapSort
 │   ├── Linked List
 │   ├── Pattern Search
@@ -261,6 +262,7 @@
 │   │   ├── Dataset
 │   │   ├── Images
 │   │   ├── Model
+│   ├── CreditCardFraudDetection
 │   ├── Customer Clust - Customer Segmentation Tool
 │   ├── Data Summarizer NLP
 │   │   ├── __pycache__
