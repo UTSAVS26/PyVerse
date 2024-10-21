@@ -6,10 +6,8 @@ This repository contains a machine learning model for detecting lunar craters, p
 - [Overview](#overview)
 - [Dataset](#dataset)
 - [Model Architecture](#model-architecture)
-- [Installation](#installation)
 - [Usage](#usage)
 - [Results](#results)
-- [Contributing](#contributing)
 
 ## Overview
 Accurate detection of lunar craters is essential for tasks such as identifying safe landing sites and analyzing the lunar surface. This crater detection model is designed to work efficiently even in low-light conditions found in PSR areas. By incorporating this model, lunar mapping missions can achieve higher precision and reliability.
@@ -26,23 +24,15 @@ The crater detection model is built using **YOLOv8**, a state-of-the-art Convolu
 - **Object detection**: Accurately identifies lunar craters and relevant features
 - **Low-light optimization**: Fine-tuned for detecting craters in Permanently Shadowed Regions (PSR)
 
-## Installation
-
-1. **Clone the repository:**
-    ```bash
-    git clone https://github.com/Kaibalya27/ML-Nexus.git
-    cd ML-Nexus/Computer Vision/Crater Detection
-    ```
-
 ## Usage
 
 1. **Run the Jupyter Notebook:**
-    - Open the `crater_detection_model.ipynb` notebook and run all the cells to train and test the model.
+    - Open the `crater_detection.ipynb` notebook and run all the cells to train and test the model.
     
     Alternatively, to run it from the terminal:
 
     ```bash
-    jupyter notebook crater_detection_model.ipynb
+    jupyter notebook crater_detection.ipynb
     ```
 
 2. **Training and Testing:**
