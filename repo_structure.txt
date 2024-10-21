@@ -48,6 +48,7 @@
 │   ├── Web Scrapping
 │   └── WhatsApp Tool
 ├── Beginner_Projects
+│   ├── Anime_Manga_Tracker
 │   ├── BMI Calculator
 │   ├── Bar-Code-Generator
 │   ├── Budget-tracker
@@ -81,6 +82,8 @@
 │   │   ├── Turtle-Art
 │   ├── URL_Shortener
 │   ├── Web Scraper
+│   ├── background-remover
+│   │   └── templates
 │   ├── chess_game
 ├── Blockchain_Development
 ├── Computer Vision
@@ -160,6 +163,10 @@
 │   │   ├── Dataset
 │   │   ├── Images
 │   │   ├── Model
+│   ├── Paddy Disease Classification
+│   │   ├── Dataset
+│   │   ├── Image
+│   │   ├── models
 │   ├── Plant Disease Detection
 │   │   ├── Final tensorflow Models
 │   │   ├── assets
