@@ -60,6 +60,7 @@
 │   │   └── Theme
 │   │       ├── dark
 │   │       └── light
+│   ├── Financial AI Assistant
 │   ├── Morse Code Translator with GUI
 │   │   └── screenshots
 │   ├── Number Guessing Game
