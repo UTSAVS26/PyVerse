@@ -1,6 +1,3 @@
-Here’s a concise version of the `README.md` file:
-
-```markdown
 # Simple Blockchain in Python
 
 This project implements a basic blockchain in Python, showcasing key concepts like block creation, mining, and validation.
@@ -15,8 +12,6 @@ This project implements a basic blockchain in Python, showcasing key concepts li
 ## Requirements
 
 - Python 3.x
-
-## Installation
 
 ### Clone the Repository
 
@@ -46,4 +41,3 @@ python blockchain.py
 - Alice pays Bob 5 BTC
 - Bob pays Charlie 2 BTC
 - Charlie pays Dave 1 BTC
-
