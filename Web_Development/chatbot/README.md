@@ -55,5 +55,5 @@ $python app.py
 ### ✒️ **Your Signature**
 
 `Ankan Mukhopadhyay`
-[GitHub Profile](https://github.com/Peart-Guy) | [LinkedIn](https://www.linkedin.com/in/ankan-mukhopadhyay-06baa4315/)
+[GitHub Profile](https://github.com/Peart-Guy) | [LinkedIn](https://www.linkedin.com/in/ankan-mukhopadhyaypeartguy/)
 
