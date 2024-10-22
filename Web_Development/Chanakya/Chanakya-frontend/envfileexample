@@ -1,0 +1,7 @@
+VITE_EPISODES_API_URL=https://api.github.com/repos/hack-boi/Chanakya/contents
+
+# Create YouTube API key from https://console.developers.google.com/apis/credentials
+VITE_YOUTUBE_API_KEY=enter youtube api
+VITE_QUOTES_API_KEY=enter quotes api
+VITE_NEWS_API_KEY=enter news api
+VITE_BACKEND_URL=http://localhost:8081
