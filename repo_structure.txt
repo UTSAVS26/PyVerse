@@ -236,20 +236,24 @@
 │   │   ├── model
 │   │   ├── ocr-notebook
 │   │   ├── plates
-│   └── PhotoSpectroscope
-│       ├── Analyser
-│       │   ├── Scripts
-│       │   └── Test Docs
-│       │       └── images
-│       ├── Normaliser
-│       │   ├── Images
-│       │   └── Script
-│       ├── Results
-│       ├── Scource
-│       ├── Theme
-│       │   └── theme
-│       │       ├── dark
-│       │       ├── light
+│   ├── PhotoSpectroscope
+│   │   ├── Analyser
+│   │   │   ├── Scripts
+│   │   │   └── Test Docs
+│   │   │       └── images
+│   │   ├── Normaliser
+│   │   │   ├── Images
+│   │   │   └── Script
+│   │   ├── Results
+│   │   ├── Scource
+│   │   ├── Theme
+│   │   │   └── theme
+│   │   │       ├── dark
+│   │   │       ├── light
+│   └── covid_face_mask
+│       ├── archive
+│       │   ├── annotations
+│       │   └── images
 ├── Images
 ├── Machine_Learning
 │   ├── AI_Language_Learning_Assistant
