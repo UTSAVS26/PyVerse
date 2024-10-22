@@ -23,7 +23,8 @@ This project aims to bring the timeless wisdom of Chanakya to a modern audience,
 - **Language Translation**: AI model for translating content into multiple languages.
 
 <hr>
-## Frontend Technologies Used:
+
+## Frontend Technologies Used
 - **React.js**: A JavaScript library for building user interfaces.
 - **Redux**: State management for handling complex state across the application.
 - **Axios**: Promise-based HTTP client for making API requests.
