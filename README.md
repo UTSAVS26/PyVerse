@@ -151,7 +151,7 @@ Whether you're just starting out or looking to contribute at an advanced level, 
 The **workflow** for getting involved is simple:
 
 1. **Access the Repository** on GitHub.
-2. **Pick Your Domain:** From **web development** to **deep learning**, find your area of interest.
+2. **Pick Your Domain:** From **Web development** to **Deep learning**, find your area of interest.
 3. **Select Your Level:** Beginner? Intermediate? Advanced? There's something for everyone!
 4. **Get Started:** Dive into the code, contribute, or mentor others. Your journey with PyVerse is just beginning!
 
