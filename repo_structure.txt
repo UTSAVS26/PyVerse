@@ -346,6 +346,7 @@
 │   ├── assets
 │   ├── pokemon-data-analysis-and-legendary-classification-main
 │   │   ├── Data
+├── Stock_Market_Analysis
 ├── Tutorials
 ├── Video Processing
 │   └── Online Video Editor
