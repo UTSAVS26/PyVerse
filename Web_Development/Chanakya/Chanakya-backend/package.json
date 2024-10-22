@@ -2,12 +2,12 @@
   "name": "chanakya-niti-backend",
   "version": "1.0.0",
   "description": "A digital platform leveraging AI to provide accessible and engaging content on the teachings of Chanakya, an ancient Indian philosopher.",
-  "main": "app.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
-    "server": "nodemon app.js"
+    "start": "node index.js",
+    "server": "nodemon index.js"
   },
   "keywords": [
     "chanakya-niti",
@@ -26,7 +26,12 @@
     "express-validator": "^7.1.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.5.1",
-    "nodemailer": "^6.9.15"
+    "nodemailer": "^6.9.15",
+    "body-parser": "^1.20.2",
+    "mongodb": "^6.5.0",
+    "mongoose": "^7.0.4",
+    "nodemailer": "^6.9.15",
+    "nodemon": "^2.0.22"
   },
   "devDependencies": {
     "nodemon": "^3.1.4"
