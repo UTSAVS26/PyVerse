@@ -23,12 +23,15 @@ This project aims to bring the timeless wisdom of Chanakya to a modern audience,
 - **Language Translation**: AI model for translating content into multiple languages.
 
 <hr>
+## Frontend Technologies Used:
+- **React.js**: A JavaScript library for building user interfaces.
+- **Redux**: State management for handling complex state across the application.
+- **Axios**: Promise-based HTTP client for making API requests.
+- **Material-UI**: React components for faster and easier web development.
+- **React Router**: Declarative routing for React applications.
+- **Vite**: A build tool that provides a faster and leaner development experience for modern web projects.
 
-## Backend Repository 🔧
-
-The backend of the CHANAKYA-NITI application is designed to provide a secure and scalable infrastructure for handling user data, authentication, multimedia content, and AI integrations.
-
-- **Technologies Used**:
+## Backend Technologies Used 
   - **Node.js**: Server-side JavaScript runtime.
   - **Express.js**: Web application framework for Node.js.
   - **MongoDB**: NoSQL database for storing application data.
@@ -147,4 +150,4 @@ Backend:
    npm run dev
    ```
 
-Visit project website live: 
+Thank you
