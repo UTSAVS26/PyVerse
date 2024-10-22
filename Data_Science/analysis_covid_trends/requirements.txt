@@ -1,5 +1,0 @@
-streamlit
-plotly
-statsmodels
-scikit-learn
-pandas

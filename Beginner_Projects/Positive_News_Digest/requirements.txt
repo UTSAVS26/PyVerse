@@ -1,7 +1,0 @@
-requests
-beautifulsoup4
-flask
-textblob
-wordcloud
-matplotlib
-pandas

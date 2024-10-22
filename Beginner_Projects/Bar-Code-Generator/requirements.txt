@@ -1,4 +1,0 @@
-streamlit==1.26.0
-python-barcode==0.14.0
-Pillow==10.0.1  
-base64==1.1.0  
