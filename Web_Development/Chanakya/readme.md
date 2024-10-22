@@ -149,6 +149,25 @@ Backend:
 4. Start the development server:
    ```sh
    npm run dev(frontend) | npm start(backend) 
-   ```
+   ```## .env Structure:
+
+## .env Structure:
+### Frontend:
+- `VITE_EPISODES_API_URL=https://api.github.com/repos/hack-boi/Chanakya/contents`
+- `VITE_YOUTUBE_API_KEY=enter youtube api`
+- `VITE_QUOTES_API_KEY=enter quotes api`
+- `VITE_NEWS_API_KEY=enter news api`
+- `VITE_BACKEND_URL=http://localhost:8081`
+
+### Backend:
+- `PORT=8081`
+- `MONGODB_URI=mongodb://127.0.0.1:27017/database name`
+- `FRONTEND_URL=http://localhost:5173`
+- `JWT_EXPIRY=1h`
+- `JWT_SECRET=Skanarul$123@`
+- `PASSWORD=enter gmail auth pass key`
+- `EMAIL=enter your gmail for forgot mail`
+- `BACKEND_URL=http://localhost:8081/`
+
 
 Thank you
