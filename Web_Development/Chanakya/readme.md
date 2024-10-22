@@ -148,7 +148,7 @@ Backend:
    ```
 4. Start the development server:
    ```sh
-   npm run dev
+   npm run dev(frontend) | npm start(backend) 
    ```
 
 Thank you
