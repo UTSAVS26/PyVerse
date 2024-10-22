@@ -34,6 +34,6 @@ Before running the code, make sure you have Python installed on your system.
 1. **Download or clone** the game code to your local machine.
 2. **Run the game** using the command:
    ```bash
-   python adventure_game.py
+   python main.py
    ```
 3. Make your choices and enjoy the adventure!
