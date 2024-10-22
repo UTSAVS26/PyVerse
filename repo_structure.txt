@@ -310,6 +310,7 @@
 │   ├── Linear regression using gradient decent.
 │   ├── Movie Classification
 │   ├── Multivitamine Prediction
+│   ├── NEXT-GEN TRAFFIC MANAGEMENT SYSTEM
 │   ├── Palm-Chatbot-main
 │   │   ├── server
 │   │   ├── src
