@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000;
 const URI = process.env.MONGODB_URI;
 
 // Middleware
-const allowedOrigins = ['https://chanakya-niti.vercel.app', 'http://localhost:5173'];
+const allowedOrigins = ['https://chanakya-web-application-ui-sk-anaruls-projects.vercel.app','https://chanakya-web-application-ui.vercel.app','http://localhost:5173'];
 
 app.use(cors({
   origin: function (origin, callback) {
