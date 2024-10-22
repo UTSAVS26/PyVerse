@@ -37,27 +37,20 @@ function App() {
 
         <main className="container flex-grow-1 mt-4">
           <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/about" element={<About />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
 
-            <Route exact path="/resources/audio" element={<ChanakyaAudio />} />
-            <Route exact path="/resources/book" element={<ChanakyaBook />} />
-            <Route exact path="/resources/news" element={<ChanakyaNews />} />
-            <Route exact path="/resources/quiz" element={<ChanakyaQuiz />} />
-            <Route exact path="/resources/video" element={<ChanakyaVideo />} />
-            <Route
-              exact
-              path="/resources/chanakyagpt"
-              element={<ChanakyaGpt />}
-            />
+            <Route path="/resources/audio" element={<ChanakyaAudio />} />
+            <Route path="/resources/book" element={<ChanakyaBook />} />
+            <Route path="/resources/news" element={<ChanakyaNews />} />
+            <Route path="/resources/quiz" element={<ChanakyaQuiz />} />
+            <Route path="/resources/video" element={<ChanakyaVideo />} />
+            <Route path="/resources/chanakyagpt" element={<ChanakyaGpt />} />
             {/* Authentication Pages */}
-            <Route exact path="/auth/login" element={<Login />} />
-            <Route exact path="/auth/signup" element={<SignUp />} />
+            <Route path="/auth/login" element={<Login />} />
+            <Route path="/auth/signup" element={<SignUp />} />
             <Route path="/auth/forgot-password" element={<ForgotPassword />} />
-            <Route
-              path="/auth/resetpassword/:id/:token"
-              element={<ResetPassword />}
-            />
+            <Route path="/auth/resetpassword/:id/:token" element={<ResetPassword />} />
           </Routes>
         </main>
 
