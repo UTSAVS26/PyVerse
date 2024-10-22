@@ -26,12 +26,14 @@
 │   │   └── Single_Source_Shortest_path_problems
 │   ├── Dijkstra
 │   ├── Dynamic-Programming-Series
-│   │   └── Basic-DP-Problems
+│   │   ├── Basic-DP-Problems
+│   │   └── Medium-DP-Problems
 │   ├── HeapSort
 │   ├── Linked List
 │   ├── Pattern Search
 │   ├── Queue
 │   ├── Recurssion
+│   ├── SearchingAlgorithms
 │   ├── Stack
 │   ├── Trees
 │   ├── avl_tree_visualizer
@@ -46,6 +48,7 @@
 │   ├── Web Scrapping
 │   └── WhatsApp Tool
 ├── Beginner_Projects
+│   ├── Anime_Manga_Tracker
 │   ├── BMI Calculator
 │   ├── Bar-Code-Generator
 │   ├── Budget-tracker
@@ -57,6 +60,7 @@
 │   │   └── Theme
 │   │       ├── dark
 │   │       └── light
+│   ├── Financial AI Assistant
 │   ├── Morse Code Translator with GUI
 │   │   └── screenshots
 │   ├── Number Guessing Game
@@ -79,8 +83,11 @@
 │   │   ├── Turtle-Art
 │   ├── URL_Shortener
 │   ├── Web Scraper
-│   └── chess_game
+│   ├── background-remover
+│   │   └── templates
+│   ├── chess_game
 ├── Blockchain_Development
+│   └── Basic Python Blockchain Implementation
 ├── Computer Vision
 │   └── Volume Control Using Hand Gesture
 │       ├── docs
@@ -88,6 +95,7 @@
 │   ├── CLI-based Port Scanner
 │   ├── Encryption_Decryption app
 │   ├── File Integrity Checker
+│   ├── Keylogger
 │   ├── PDF_Malware_Detection
 │   │   ├── Dataset
 │   │   └── saved_models
@@ -157,6 +165,10 @@
 │   │   ├── Dataset
 │   │   ├── Images
 │   │   ├── Model
+│   ├── Paddy Disease Classification
+│   │   ├── Dataset
+│   │   ├── Image
+│   │   ├── models
 │   ├── Plant Disease Detection
 │   │   ├── Final tensorflow Models
 │   │   ├── assets
@@ -225,20 +237,24 @@
 │   │   ├── model
 │   │   ├── ocr-notebook
 │   │   ├── plates
-│   └── PhotoSpectroscope
-│       ├── Analyser
-│       │   ├── Scripts
-│       │   └── Test Docs
-│       │       └── images
-│       ├── Normaliser
-│       │   ├── Images
-│       │   └── Script
-│       ├── Results
-│       ├── Scource
-│       ├── Theme
-│       │   └── theme
-│       │       ├── dark
-│       │       ├── light
+│   ├── PhotoSpectroscope
+│   │   ├── Analyser
+│   │   │   ├── Scripts
+│   │   │   └── Test Docs
+│   │   │       └── images
+│   │   ├── Normaliser
+│   │   │   ├── Images
+│   │   │   └── Script
+│   │   ├── Results
+│   │   ├── Scource
+│   │   ├── Theme
+│   │   │   └── theme
+│   │   │       ├── dark
+│   │   │       ├── light
+│   └── covid_face_mask
+│       ├── archive
+│       │   ├── annotations
+│       │   └── images
 ├── Images
 ├── Machine_Learning
 │   ├── AI_Language_Learning_Assistant
@@ -252,6 +268,8 @@
 │   │   ├── Images
 │   │   └── Model
 │   ├── Analying_ML_model_using_maang
+│   ├── Anomaly_based_ids
+│   │   └── saved_model
 │   ├── Automobile Sales Data Analysis and Prediction
 │   │   ├── Dataset
 │   │   ├── Images
@@ -260,6 +278,7 @@
 │   │   ├── Dataset
 │   │   ├── Images
 │   │   ├── Model
+│   ├── CreditCardFraudDetection
 │   ├── Customer Clust - Customer Segmentation Tool
 │   ├── Data Summarizer NLP
 │   │   ├── __pycache__
@@ -291,6 +310,7 @@
 │   ├── Linear regression using gradient decent.
 │   ├── Movie Classification
 │   ├── Multivitamine Prediction
+│   ├── NEXT-GEN TRAFFIC MANAGEMENT SYSTEM
 │   ├── Palm-Chatbot-main
 │   │   ├── server
 │   │   ├── src
@@ -389,6 +409,7 @@
 ├── api_dev
 ├── cybersecurity_resources
 │   └── pdf
-└── traffic_vs_zombie_game
-    ├── images
-    └── sound
+├── traffic_vs_zombie_game
+│   ├── images
+│   └── sound
+└── web_scraper
