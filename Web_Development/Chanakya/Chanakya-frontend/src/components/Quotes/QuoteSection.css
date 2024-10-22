@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+.quote-text {
+  font-family: "Great Vibes", cursive;
+  font-size: 1.9rem;
+  font-style: italic;
+  color: #ffc107;
+  margin: 10px;
+  text-align: center;
+}
