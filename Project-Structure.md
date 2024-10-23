@@ -1,1 +1,1 @@
-/home/runner/work/_temp/a9fa69c1-bab6-4ada-b205-e0bf3e1af0c3.sh: line 1: scripts/build_directory_md.py: No such file or directory
+/home/runner/work/_temp/7d2b57a0-c6d7-4bf5-ad1a-72a05e84f6b2.sh: line 1: scripts/update_dir_structure.py: No such file or directory
