@@ -100,6 +100,7 @@
 │   │   ├── Dataset
 │   │   └── saved_models
 │   ├── Packet-sniffer
+│   ├── Phishing detection tool
 │   ├── Pixel_Decoder
 │   ├── VidForensicsTool
 │   └── bruteforce_password_cracking
