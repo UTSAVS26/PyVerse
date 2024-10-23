@@ -155,6 +155,10 @@
 │   │   ├── DataSet
 │   │   ├── Images
 │   │   ├── Models
+│   ├── ESRGAN-Model for Enhanced Upscaling of Image
+│   │   ├── LR
+│   │   ├── figures
+│   │   ├── models
 │   ├── Face Mask Detection
 │   │   ├── Dataset
 │   │   ├── Images
