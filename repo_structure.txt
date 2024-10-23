@@ -39,6 +39,7 @@
 │   ├── avl_tree_visualizer
 │   ├── sorting_algorithms
 │   └── visualizer
+├── Analysis of Mortality Rate
 ├── Automation_Tools
 │   ├── Autofill personal info using Aadhar Card Image
 │   │   ├── OCR ADHAAR API
@@ -359,6 +360,7 @@
 │   ├── assets
 │   ├── pokemon-data-analysis-and-legendary-classification-main
 │   │   ├── Data
+├── Sentiment-Analysis-Of-Restaurant-Reviews
 ├── Stock_Market_Analysis
 ├── Tutorials
 ├── Video Processing
