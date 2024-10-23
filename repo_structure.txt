@@ -102,6 +102,7 @@
 │   ├── CLI-based Port Scanner
 │   ├── Encryption_Decryption app
 │   ├── File Integrity Checker
+│   ├── File_encryption_tool
 │   ├── Keylogger
 │   ├── PDF_Malware_Detection
 │   │   ├── Dataset
