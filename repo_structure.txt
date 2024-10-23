@@ -46,6 +46,12 @@
 │   │   │   └── images
 │   ├── Image-Tool
 │   ├── Web Scrapping
+│   │   └── linkedin_scraper
+│   │       └── linkedin_scraper
+│   │           ├── linkedin_scraper
+│   │           │   ├── __pycache__
+│   │           │   └── spiders
+│   │           │       ├── __pycache__
 │   └── WhatsApp Tool
 ├── Beginner_Projects
 │   ├── Anime_Manga_Tracker
