@@ -39,6 +39,7 @@
 │   ├── avl_tree_visualizer
 │   ├── sorting_algorithms
 │   └── visualizer
+├── Analysis of Mortality Rate
 ├── Automation_Tools
 │   ├── Autofill personal info using Aadhar Card Image
 │   │   ├── OCR ADHAAR API
@@ -46,6 +47,12 @@
 │   │   │   └── images
 │   ├── Image-Tool
 │   ├── Web Scrapping
+│   │   └── linkedin_scraper
+│   │       └── linkedin_scraper
+│   │           ├── linkedin_scraper
+│   │           │   ├── __pycache__
+│   │           │   └── spiders
+│   │           │       ├── __pycache__
 │   └── WhatsApp Tool
 ├── Beginner_Projects
 │   ├── Anime_Manga_Tracker
@@ -100,6 +107,7 @@
 │   │   ├── Dataset
 │   │   └── saved_models
 │   ├── Packet-sniffer
+│   ├── Phishing detection tool
 │   ├── Pixel_Decoder
 │   ├── VidForensicsTool
 │   └── bruteforce_password_cracking
@@ -148,6 +156,10 @@
 │   │   ├── DataSet
 │   │   ├── Images
 │   │   ├── Models
+│   ├── ESRGAN-Model for Enhanced Upscaling of Image
+│   │   ├── LR
+│   │   ├── figures
+│   │   ├── models
 │   ├── Face Mask Detection
 │   │   ├── Dataset
 │   │   ├── Images
@@ -221,6 +233,7 @@
 │   ├── Rock-Paper-Scissors
 │   ├── Snake_Game
 │   ├── Space_quiz.py
+│   ├── Text-Based Adventure
 │   ├── Tic_Tac_Toe
 │   ├── Trivia
 │   ├── Turtle Collection Game
@@ -237,6 +250,7 @@
 │   │   ├── model
 │   │   ├── ocr-notebook
 │   │   ├── plates
+│   ├── OpticalCharacterRecognition(OCR)
 │   ├── PhotoSpectroscope
 │   │   ├── Analyser
 │   │   │   ├── Scripts
@@ -346,6 +360,8 @@
 │   ├── assets
 │   ├── pokemon-data-analysis-and-legendary-classification-main
 │   │   ├── Data
+├── Sentiment-Analysis-Of-Restaurant-Reviews
+├── Stock_Market_Analysis
 ├── Tutorials
 ├── Video Processing
 │   └── Online Video Editor
