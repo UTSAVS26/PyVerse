@@ -12,7 +12,7 @@ jobs:
           python-version: 3.x
       - name: Write Project-Structure.md
         run: |
-          scripts/build_directory_md.py 2>&1 | tee Project-Structure.md
+          scripts/update_dir_structure.py 2>&1 | tee Project-Structure.md
           git config --global user.name "$GITHUB_ACTOR"
           git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
