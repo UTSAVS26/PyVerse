@@ -4,10 +4,7 @@
 │   │   ├── faces
 │   │   ├── static
 │   ├── GUI Based TaskManager
-│   ├── NaviBot-Voice-Assistant
-│   ├── Research-Snap
-│   └── SkillSync
-│       └── templates
+│   └── NaviBot-Voice-Assistant
 ├── Algorithms_and_Data_Structures
 │   ├── Arrays
 │   ├── BinarySearchTree
@@ -39,7 +36,6 @@
 │   ├── avl_tree_visualizer
 │   ├── sorting_algorithms
 │   └── visualizer
-├── Analysis of Mortality Rate
 ├── Automation_Tools
 │   ├── Autofill personal info using Aadhar Card Image
 │   │   ├── OCR ADHAAR API
@@ -53,7 +49,8 @@
 │   │           │   ├── __pycache__
 │   │           │   └── spiders
 │   │           │       ├── __pycache__
-│   └── WhatsApp Tool
+│   ├── WhatsApp Tool
+│   └── api_dev
 ├── Beginner_Projects
 │   ├── Anime_Manga_Tracker
 │   ├── BMI Calculator
@@ -78,6 +75,9 @@
 │   ├── Pycham Face reco
 │   │   ├── images
 │   ├── QR Generator
+│   ├── Research-Snap
+│   ├── SkillSync
+│   │   └── templates
 │   ├── Stock App
 │   │   ├── Templates
 │   ├── Sudoku Solver
@@ -111,30 +111,35 @@
 │   ├── Phishing detection tool
 │   ├── Pixel_Decoder
 │   ├── VidForensicsTool
-│   └── bruteforce_password_cracking
-├── Data Analysis
-│   ├── Diabetes Analysis
-│   │   ├── EDA
-│   │   ├── Model
-│   │   ├── data
-│   ├── Google Search Analysis with python
-│   └── Unemployment Analysis due to COVID
+│   ├── bruteforce_password_cracking
+│   └── cybersecurity_resources
+│       └── pdf
 ├── Data_Science
 │   ├── AI Virtual Painter
 │   │   ├── Header Files
 │   │   ├── Images
 │   │   ├── __pycache__
+│   ├── Analysis of Mortality Rate
 │   ├── DataVizLearnig
 │   │   ├── Movie Data Visualization
+│   ├── Diabetes Analysis
+│   │   ├── EDA
+│   │   ├── Model
+│   │   ├── data
+│   ├── Google Search Analysis with python
 │   ├── Hotel Demand EDA and Forecasting Using ARIMA Model
 │   ├── IPL Analysis
+│   ├── Unemployment Analysis due to COVID
 │   ├── Whatsapp_Chat_Analyzer
 │   │   ├── Sample_Data
 │   │   ├── images
 │   ├── analysis_covid_trends
 │   ├── customer_segmentation
 │   ├── stock_prediction
-│   └── time_series_visualization
+│   ├── time_series_visualization
+│   └── traffic_vs_zombie_game
+│       ├── images
+│       └── sound
 ├── Deep_Learning
 │   ├── BankNifty Index Price Prediction LSTM
 │   ├── Bird Species Classification
@@ -366,15 +371,6 @@
 ├── Video Processing
 │   └── Online Video Editor
 ├── Web_Development
-│   ├── Advanced-Weather-APP
-│   │   ├── assets
-│   ├── DevDetective
-│   │   ├── assets
-│   │   │   ├── images
-│   ├── DocXtract
-│   │   ├── public
-│   │   └── src
-│   │       ├── components
 │   ├── FastAPI_Control_Panel
 │   │   ├── app
 │   │   ├── fastapi-react-frontend
@@ -397,35 +393,11 @@
 │   │   │       │   └── Login
 │   │   │       ├── services
 │   │   │       └── utils
-│   ├── GIF_Generator-main
-│   │   ├── public
-│   │   ├── src
-│   │   │   ├── components
-│   │   │   ├── hooks
-│   ├── Invoice-Generator
-│   │   ├── public
-│   │   ├── src
-│   │   │   ├── components
-│   │   │   ├── helpers
 │   ├── Movie_Recommendation
 │   │   ├── data
-│   ├── Password_Generator--main
-│   │   ├── assets
-│   ├── RazorPay-Clone-master
-│   │   ├── images
-│   ├── Recursive-Tic-Tac-Toe-main
-│   │   ├── assets
 │   ├── Web_Developement_resources
-│   ├── chatbot
-│   │   ├── __pycache__
-│   │   ├── static
-│   │   │   ├── images
-│   │   ├── templates
-│   └── sudoku_solver
-├── api_dev
-├── cybersecurity_resources
-│   └── pdf
-├── traffic_vs_zombie_game
-│   ├── images
-│   └── sound
-└── web_scraper
+│   └── chatbot
+│       ├── __pycache__
+│       ├── static
+│       │   ├── images
+│       ├── templates
