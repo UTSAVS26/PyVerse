@@ -1,38 +1,23 @@
-name: Detect and Update Repo Structure
-
-on:
-  schedule:
-    - cron: '0 * * * *'  # Run every hour
-  workflow_dispatch:  # Allow manual triggering
-  push:
-    branches:
-      - main
-
+name: directory_writer
+on: [push]
 jobs:
-  detect-and-update-structure:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Set up Python
-        uses: actions/setup-python@v2
+      - uses: actions/checkout@v4
         with:
-          python-version: 3.12
-
-      - name: Install dependencies
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+      - name: Write Project-Structure.md
         run: |
-          python -m pip install --upgrade pip
-          pip install PyGithub
-
-      - name: Run update script
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python .github/scripts/update_dir_structure.py
-
-      - name: Commit and push if changed
+          scripts/build_directory_md.py 2>&1 | tee Project-Structure.md
+          git config --global user.name "$GITHUB_ACTOR"
+          git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+      - name: Update Project-Structure.md
         run: |
-          git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com" 
-          git config --local user.name "$GITHUB_ACTOR"
-          git add . 
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update repo structure" && git push)
+          git add Project-Structure.md
+          git commit -am "updating Project-Structure.md" ||  true
+          git push --force origin HEAD:$GITHUB_REF || true
