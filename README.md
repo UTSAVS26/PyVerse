@@ -220,7 +220,30 @@ Each line of code, every insightful suggestion, and all the meticulous documenta
 </a>
 </div>
 
----
+<img src="https://raw.githubusercontent.com/alo7lika/PyVerse/refs/heads/main/Images/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900">
+
+## Stargazers ❤️
+
+<div align='left'>
+
+[![Stargazers repo roster for @UTSAVS26/PyVerse](https://reporoster.com/stars/dark/UTSAVS26/PyVerse)](https://github.com/UTSAVS26/PyVerse/stargazers)
+
+
+</div>
+
+## Forkers ❤️
+
+
+[![Forkers repo roster for @UTSAVS26/PyVerse](https://reporoster.com/forks/dark/UTSAVS26/PyVerse)](https://github.com/UTSAVS26/PyVerse/network/members)
+
+
+
+
+<img src="https://raw.githubusercontent.com/alo7lika/PyVerse/refs/heads/main/Images/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900">
+
+
+
+
 
 ## ❤️ **Show Some Love**
 
