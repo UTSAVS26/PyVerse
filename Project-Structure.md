@@ -247,6 +247,9 @@
     * [Turtle Spiral](Beginner_Projects/Turtle/turtle_spiral.py)
   * Url Shortener
     * [Url Shortener](Beginner_Projects/URL_Shortener/url_shortener.py)
+  * Voice Assistant
+    * [Main](Beginner_Projects/Voice_Assistant/main.py)
+    * [Musiclibrary](Beginner_Projects/Voice_Assistant/musicLibrary.py)
   * Weather App
     * [Weatherapp](Beginner_Projects/Weather%20App/weatherapp.py)
   * Web Scraper
