@@ -354,6 +354,8 @@
   * Brain Tumor Detection
     * Model
       * [Brain Tumor Model](Deep_Learning/Brain%20Tumor%20Detection/Model/brain_tumor_model.ipynb)
+  * Crater Detection
+    * [Crater Detection](Deep_Learning/Crater%20detection/Crater_detection.ipynb)
   * Deep-Learning-For-Animal-Identification
     * [Identify The Animal Colab](Deep_Learning/Deep-learning-for-Animal-Identification/Identify%20the%20Animal_colab.ipynb)
     * [Identify The Animal Novalid Colab](Deep_Learning/Deep-learning-for-Animal-Identification/Identify_the_Animal_novalid_colab.ipynb)
