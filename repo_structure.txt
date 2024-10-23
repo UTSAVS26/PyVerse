@@ -232,6 +232,7 @@
 │   ├── Rock-Paper-Scissors
 │   ├── Snake_Game
 │   ├── Space_quiz.py
+│   ├── Text-Based Adventure
 │   ├── Tic_Tac_Toe
 │   ├── Trivia
 │   ├── Turtle Collection Game
