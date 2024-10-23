@@ -247,6 +247,8 @@
     * [Turtle Spiral](Beginner_Projects/Turtle/turtle_spiral.py)
   * Url Shortener
     * [Url Shortener](Beginner_Projects/URL_Shortener/url_shortener.py)
+  * Weather App
+    * [Weatherapp](Beginner_Projects/Weather%20App/weatherapp.py)
   * Web Scraper
     * [Web Scraper](Beginner_Projects/Web%20Scraper/web_scraper.py)
   * Background-Remover
