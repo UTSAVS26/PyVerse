@@ -119,16 +119,15 @@
 │   │   ├── data
 │   ├── Google Search Analysis with python
 │   └── Unemployment Analysis due to COVID
-├── Data Analytics
-│   └── IPL Analysis
-├── DataVizLearnig
-│   ├── Movie Data Visualization
 ├── Data_Science
 │   ├── AI Virtual Painter
 │   │   ├── Header Files
 │   │   ├── Images
 │   │   ├── __pycache__
+│   ├── DataVizLearnig
+│   │   ├── Movie Data Visualization
 │   ├── Hotel Demand EDA and Forecasting Using ARIMA Model
+│   ├── IPL Analysis
 │   ├── Whatsapp_Chat_Analyzer
 │   │   ├── Sample_Data
 │   │   ├── images
@@ -322,7 +321,7 @@
 │   │   │   └── images
 │   ├── Landmark_Detection
 │   │   ├── images
-│   ├── Linear regression using gradient decent.
+│   ├── Linear regression using gradient decent
 │   ├── Movie Classification
 │   ├── Multivitamine Prediction
 │   ├── NEXT-GEN TRAFFIC MANAGEMENT SYSTEM
