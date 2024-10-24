@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(228, 193, 129, 0.272);
+}
+
+.dark {
+  background-color: #2c2a2a;
+  color: white;
+  transition: 0.25s;
+}

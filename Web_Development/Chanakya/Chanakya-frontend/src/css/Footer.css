@@ -1,0 +1,21 @@
+  .star-btn a {
+    transition: transform 0.3s, background-color 0.3s, color 0.3s; 
+  }
+  
+  .star-btn a:hover {
+    transform: scale(1.1); 
+  }
+  
+  .list-unstyled li {
+    margin-bottom: 0.5rem; 
+  }
+  
+  .list-unstyled li a {
+    transition: transform 0.3s ease-in-out; 
+    display: inline-block; 
+  }
+  
+  .list-unstyled li a:hover {
+    transform: scale(1.1); 
+  }
+  

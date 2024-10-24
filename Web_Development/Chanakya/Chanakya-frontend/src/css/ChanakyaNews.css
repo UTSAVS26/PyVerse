@@ -1,0 +1,72 @@
+/* Individual newsletter card */
+.nItem {
+  background-color: rgba(223, 223, 176, 0.4);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px; 
+  text-align: center;
+  box-shadow: 0 4px 8px #383636;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px;
+  box-sizing: border-box;
+  width: calc(100% - 20px); 
+}
+
+.nItem:hover {
+  border: 0.5px solid rgb(254, 251, 251);
+  transform: scale(1.05); 
+}
+
+.card-des {
+  font-size: 1rem;
+  color: #383636;
+  margin-bottom: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.itemdate {
+  font-size: 0.9rem;
+  color: #502828;
+  margin-bottom: 5px;
+}
+.badge {
+  display: inline-block;
+  margin-bottom: 5px;
+  text-align: left; /* Align badge to the left */
+}
+
+.badge,
+.itemdate {
+  font-size: 0.9rem;
+  color: #502828;
+  text-align: left; 
+  width: auto; 
+  margin-bottom: 5px;
+}
+
+
+.nItem div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+.btn {
+  align-self: center;
+  margin-top: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .individualitem {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nItem {
+    width: 90%; 
+  }
+}

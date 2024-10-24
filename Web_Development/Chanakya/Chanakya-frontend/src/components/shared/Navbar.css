@@ -1,0 +1,91 @@
+ 
+.navbar {
+  padding: 60px 0;  
+  transition: background-color 0.5s ease, box-shadow 0.3s ease;
+}
+
+ 
+.navbar-brand img {
+  width: 80px;   
+  height: 80px;  
+  transition: transform 0.4s ease-in-out;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.navbar-brand img:hover {
+  transform: rotateX(15deg) rotateY(15deg) translateZ(20px);  
+}
+
+
+.navbar-brand span {
+  font-size: 1.8rem;   
+  font-weight: bold;
+  color:  whitesmoke;        
+  transition: color 0.5s ease, transform 0.5s ease;   
+}
+
+.navbar-brand span:hover {
+  color: #f39c12;   
+  transform: scale(1.2);   
+}
+ 
+.navbar-brand span {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); 
+}
+
+.navbar-brand span:hover {
+  text-shadow: 2px 2px 5px rgba(243, 156, 18, 0.8);  
+}
+
+ 
+.nav-link {
+  font-size: 1.8rem;  
+  padding: 20px 30px;  
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease-in-out; 
+ 
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;  
+  bottom: 0;
+  left: 0;
+  background-color: #f39c12;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #f39c12;  
+}
+ 
+.nav-item svg {
+  font-size: 2.5rem;  
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-item svg:hover {
+  transform: scale(1.2);
+}
+.nav-item.nav-link {
+  padding: 0;  
+}
+
+.nav-item.nav-link:hover::before {
+  content: none;  
+}
+
+.navbar{
+  height: 70px;
+}
+.navbar-nav{
+  gap: 15px;
+}
