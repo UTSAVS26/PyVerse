@@ -215,10 +215,21 @@ We extend our profound appreciation for your invaluable contributions to our pro
 Each line of code, every insightful suggestion, and all the meticulous documentation provided have been essential to our collective success. 💻  We recognize and celebrate the passion and expertise you bring to this endeavor.
 
 <div align="center">
+<div align="center">
+
+| Contributor                                                                                      | Contributor                                                                                      | Contributor                                                                                      | Contributor                                                                                      |
+|--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| <img src="https://github.com/UTSAVS26.png" alt="UTSAVS26" width="80"/> <br> <p align="center">[UTSAVS26](https://github.com/UTSAVS26) 👨‍💻</p> | <img src="https://github.com/priyanka350.png" alt="Priyanka" width="80"/> <br> <p align="center">[Priyanka](https://github.com/priyanka350) 👩‍💻</p> | <img src="https://github.com/yashksaini-coder.png" alt="Yash" width="80"/> <br> <p align="center">[Yash](https://github.com/yashksaini-coder) 👨‍💻</p> | <img src="https://github.com/alo7lika.png" alt="Alolika" width="80"/> <br> <p align="center">[Alolika](https://github.com/alo7lika) 👩‍💻</p> |
+| <img src="https://github.com/aviralgarg05.png" alt="Aviral" width="80"/> <br> <p align="center">[Aviral](https://github.com/aviralgarg05) 👨‍💻</p> | <img src="https://github.com/SpreadSheets600.png" alt="Spreadsheets" width="80"/> <br> <p align="center">[Spreadsheets](https://github.com/SpreadSheets600) 👩‍💻</p> | <img src="https://github.com/Mayank202004.png" alt="Mayank" width="80"/> <br> <p align="center">[Mayank](https://github.com/Mayank202004) 👨‍💻</p> | <img src="https://github.com/pavitraag.png" alt="Pavitra" width="80"/> <br> <p align="center">[Pavitra](https://github.com/pavitraag) 👩‍💻</p> |
+| <img src="https://github.com/Chin-may02.png" alt="Chinmay" width="80"/> <br> <p align="center">[Chinmay](https://github.com/Chin-may02) 👨‍💻</p> | <img src="https://github.com/AHSANATIQ98.png" alt="AHSAN" width="80"/> <br> <p align="center">[AHSAN](https://github.com/AHSANATIQ98) 👨‍💻</p> | <img src="https://github.com/ananyag309.png" alt="Ananya" width="80"/> <br> <p align="center">[Ananya](https://github.com/ananyag309) 👩‍💻</p> | <img src="https://github.com/Mansi07sharma.png" alt="Mansi" width="80"/> <br> <p align="center">[Mansi](https://github.com/Mansi07sharma) 👩‍💻</p> |
+
+</div>
+
+🔗🌟 **Check out even more amazing contributors who made this project possible!** 👉 [Explore the full list of contributors on GitHub](https://github.com/UTSAVS26/PyVerse/graphs/contributors) 💪💻👩‍💻👨‍💻
+
 <a href="https://github.com/UTSAVS26/PyVerse/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=UTSAVS26/PyVerse" />
 </a>
-</div>
 
 <img src="https://raw.githubusercontent.com/alo7lika/PyVerse/refs/heads/main/Images/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900">
 
