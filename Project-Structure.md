@@ -292,6 +292,8 @@
     * [Encryption](Cybersecurity_Tools/File_encryption_tool/Encryption.py)
   * Keylogger
     * [Keylogger](Cybersecurity_Tools/Keylogger/keylogger.py)
+  * Netwrok Packet Analyzer
+    * [Packet Analyzer](Cybersecurity_Tools/Netwrok%20Packet%20Analyzer/packet_analyzer.py)
   * Pdf Malware Detection
     * [Model](Cybersecurity_Tools/PDF_Malware_Detection/model.ipynb)
     * [Pdf Extraction](Cybersecurity_Tools/PDF_Malware_Detection/pdf_extraction.py)
