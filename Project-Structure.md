@@ -1,4 +1,14 @@
 
+## Ai Sudoku
+  * [Boardextractor](AI_Sudoku/BoardExtractor.py)
+  * [Cnn](AI_Sudoku/CNN.py)
+  * [Knn](AI_Sudoku/KNN.py)
+  * [Mainui](AI_Sudoku/MainUI.py)
+  * [Recognizeandconstructboard](AI_Sudoku/RecognizeAndConstructBoard.py)
+  * [Recognizer](AI_Sudoku/Recognizer.py)
+  * [Run](AI_Sudoku/Run.py)
+  * [Sudokusolver](AI_Sudoku/SudokuSolver.py)
+
 ## Advanced Projects
   * Eduhelper
     * [Main](Advanced_Projects/EDUHELPER/main.py)
