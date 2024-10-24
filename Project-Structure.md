@@ -228,6 +228,8 @@
     * [App](Beginner_Projects/Research-Snap/app.py)
   * Skillsync
     * [App](Beginner_Projects/SkillSync/app.py)
+  * Spell Checker
+    * [Spell Checker](Beginner_Projects/Spell%20Checker/spell_checker.py)
   * Stock App
     * [Server](Beginner_Projects/Stock%20App/server.py)
   * Sudoku Solver
