@@ -192,10 +192,7 @@ def create_streamlit_app(llm, portfolio, clean_text):
     st.markdown("<div class='container'>", unsafe_allow_html=True)
 
     user_name = st.text_input("Enter your name:", value=" ")
-    user_about = st.text_area(
-        "Enter a brief description about yourself:",
-        value=" "
-    )
+    user_about = st.text_area("Enter a brief description about yourself:", value=" ")
 
     url_input = st.text_input("Enter a Job Post URL:", value=" ")
 
@@ -228,23 +225,20 @@ def create_streamlit_app(llm, portfolio, clean_text):
             # Add a text area for manual editing of the generated email
             edited_email = st.text_area("Edit the generated email:", value=email_content, height=200)
 
-            # Options to save as draft, download, or copy to clipboard
+            # Options to download as txt file
             col1, col2, col3 = st.columns(3)
 
-            with col1:
-                if st.button("Save as Draft"):
-                    st.session_state['draft_email'] = edited_email
-                    st.success("Email saved as draft!")
+
 
             with col2:
-                if st.button("Download Email"):
-                    # Save the email as a text file for download
-                    st.download_button("Download Email", edited_email, file_name="email.txt", mime="text/plain")
+                st.download_button(
+                    label="Download Email", 
+                    data=edited_email, 
+                    file_name="email.txt", 
+                    mime="text/plain"
+                )
 
-            with col3:
-                if st.button("Copy to Clipboard"):
-                    st.markdown(f"<script>navigator.clipboard.writeText(`{edited_email}`);</script>")
-                    st.success("Email copied to clipboard!")
+            
 
         except Exception as e:
             st.error(f"An error occurred: {e}")
