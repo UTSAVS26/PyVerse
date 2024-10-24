@@ -438,6 +438,8 @@
     * [Main](Game_Development/Bubble%20Shoot/main.py)
   * Card Quest
     * [Cards](Game_Development/Card%20quest/Cards.py)
+  * Crossword Game
+    * [Crossword](Game_Development/Crossword%20Game/crossword.py)
   * Dice Rolling Simulator
     * [Main3](Game_Development/Dice_rolling_simulator/main3.py)
   * Flappy Bird
