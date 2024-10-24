@@ -130,6 +130,8 @@
     * [Prefixtoinfix](Algorithms_and_Data_Structures/Stack/PrefixToInfix.py)
     * [Prefixtopostfix](Algorithms_and_Data_Structures/Stack/PrefixToPostfix.py)
     * [Stack](Algorithms_and_Data_Structures/Stack/stack.py)
+  * Timecomplexity Analyzer
+    * [Checker](Algorithms_and_Data_Structures/TimeComplexity_analyzer/Checker.py)
   * Trees
     * [Menu Driven Code For Avl Tree](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Avl_Tree.py)
     * [Menu Driven Code For Binary Search Tree](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Binary_Search_Tree.py)
