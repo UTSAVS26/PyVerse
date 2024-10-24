@@ -141,7 +141,6 @@ pygame.mixer.music.load(in_game_music)
 pygame.mixer.music.play(-1)
 
 # Main game loop and logic
-pygame.init()
 size = (900,600)
 screen = pygame.display.set_mode((size))
 pygame.display.set_caption("My Game")
