@@ -1,0 +1,26 @@
+{
+    "id": "C4C06032",
+    "path": "D:/HACKTOBERFEST-2024/Death_Rate_Analysis/ShinyApp/shinyapp.R",
+    "project_path": "ShinyApp/shinyapp.R",
+    "type": "r_source",
+    "hash": "978793459",
+    "contents": "",
+    "dirty": false,
+    "created": 1729159777954.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "559,0",
+        "scrollLine": "540"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1728907540,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1728907540,
+    "read_only": false,
+    "read_only_alternatives": []
+}
