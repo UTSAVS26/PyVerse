@@ -3,19 +3,27 @@ import ast
 class TimeComplexityAnalyzer(ast.NodeVisitor):
     def __init__(self):
         self.complexity = 0
+        self.loop_depth = 0
 
     def visit_For(self, node):
-        self.complexity += 1
+        self.loop_depth += 1
+        self.complexity += 2 ** self.loop_depth
         self.generic_visit(node)
+        self.loop_depth -= 1
 
     def visit_While(self, node):
-        self.complexity += 1
+        self.loop_depth += 1
+        self.complexity += 2 ** self.loop_depth
         self.generic_visit(node)
+        self.loop_depth -= 1
 
     def visit_FunctionDef(self, node):
         self.generic_visit(node)
 
     def visit_Call(self, node):
+        self.generic_visit(node)
+
+    def visit_If(self, node):
         self.generic_visit(node)
 
     def get_complexity(self):
