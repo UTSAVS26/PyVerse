@@ -215,6 +215,7 @@ We extend our profound appreciation for your invaluable contributions to our pro
 Each line of code, every insightful suggestion, and all the meticulous documentation provided have been essential to our collective success. 💻  We recognize and celebrate the passion and expertise you bring to this endeavor.
 
 <div align="center">
+<div align="center">
 
 | Contributor                                                                                      | Contributor                                                                                      | Contributor                                                                                      | Contributor                                                                                      |
 |--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
@@ -224,10 +225,13 @@ Each line of code, every insightful suggestion, and all the meticulous documenta
 
 </div>
 
-
 🔗🌟 **Check out even more amazing contributors who made this project possible!** 👉 [Explore the full list of contributors on GitHub](https://github.com/UTSAVS26/PyVerse/graphs/contributors) 💪💻👩‍💻👨‍💻
 
+<a href="https://github.com/UTSAVS26/PyVerse/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=UTSAVS26/PyVerse" />
+</a>
 
+<img src="https://raw.githubusercontent.com/alo7lika/PyVerse/refs/heads/main/Images/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900">
 
 ## Stargazers ❤️
 

@@ -50,21 +50,39 @@ The **Single Source Shortest Path (SSSP)** problem involves finding the shortest
   - **Routing Algorithms**: Applications in networks where negative weights may occur, such as adjusting routes based on penalties.
   - **Social Network Analysis**: Analyzing connections with potential negative impacts.
 
+### 3. **A* Search Algorithm**
+
+**A* Search Algorithm** is a popular pathfinding and graph traversal algorithm that is used to find the shortest path from a source to a goal node in a weighted graph. A* uses a combination of the actual cost to reach a node and an estimated cost to reach the goal, allowing it to efficiently navigate towards the goal.
+
+- **How It Works**:
+  1. Initialize a priority queue to keep track of nodes to explore, starting with the source node.
+  2. Maintain a set of nodes that have already been evaluated.
+  3. For each node, calculate the cost to reach its neighbors and update their scores.
+  4. Use a heuristic function to estimate the cost from each node to the goal.
+  5. Continue exploring nodes until the goal is reached or all possibilities are exhausted.
+
+- **Time Complexity**: The time complexity can vary depending on the heuristic used, but it is generally \(O(E)\) in the worst case, where \(E\) is the number of edges.
+
+- **Use Case**: A* is particularly useful in:
+  - **Game Development**: Pathfinding for characters in a game environment.
+  - **Robotics**: Navigating through obstacles in real-world scenarios.
+  - **Routing and Navigation**: Finding optimal paths in maps.
+
 ---
 
 ## Key Differences Between Algorithms:
 
-| Algorithm        | Time Complexity     | Edge Weights         | Use Case                                       |
-|------------------|---------------------|----------------------|------------------------------------------------|
+| Algorithm        | Time Complexity       | Edge Weights         | Use Case                                       |
+|------------------|-----------------------|----------------------|------------------------------------------------|
 | **Dijkstra's**    | \(O((V + E) \log V)\) | Non-negative only    | GPS systems, network routing                   |
-| **Bellman-Ford** | \(O(V \cdot E)\)    | Can include negatives | Detecting negative cycles, financial markets    |
+| **Bellman-Ford** | \(O(V \cdot E)\)      | Can include negatives | Detecting negative cycles, financial markets    |
+| **A***           | Varies by heuristic    | Non-negative         | Game development, robotics, routing            |
 
 ---
 
 ## Conclusion
 
-**Single Source Shortest Path (SSSP)** is a fundamental concept in graph theory with critical applications in routing, navigation, and network design. **Dijkstra's** and **Bellman-Ford Algorithms** provide robust solutions to this problem, each suited to different types of graphs and scenarios. 
+**Single Source Shortest Path (SSSP)** is a fundamental concept in graph theory with critical applications in routing, navigation, and network design. **Dijkstra's**, **Bellman-Ford**, and **A\*** algorithms provide robust solutions to this problem, each suited to different types of graphs and scenarios. 
 
 Mastering these algorithms equips developers to effectively solve a variety of optimization challenges, enhancing their algorithmic thinking and problem-solving capabilities. Understanding SSSP is essential for advancing in areas such as computer science, operations research, and artificial intelligence.
 
----
