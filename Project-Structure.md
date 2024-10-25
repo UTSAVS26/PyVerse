@@ -141,6 +141,12 @@
     * [Menu Driven Code For Tree Traversals](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Tree_Traversals.py)
   * Avl Tree Visualizer
     * [Main](Algorithms_and_Data_Structures/avl_tree_visualizer/main.py)
+  * Bellman Ford
+    * [Bellman Ford](Algorithms_and_Data_Structures/bellman_ford/Bellman_ford.py)
+  * Closest Pair Of Points
+    * [Closest Pair Of Points](Algorithms_and_Data_Structures/closest_pair_of_points/closest_pair_of_points.py)
+  * Graham Scan
+    * [Convex Hull Graham Scan](Algorithms_and_Data_Structures/graham_scan/convex_hull_graham_scan.py)
   * Sorting Algorithms
     * [Bubble Sort](Algorithms_and_Data_Structures/sorting_algorithms/Bubble_Sort.py)
     * [Counting Sort](Algorithms_and_Data_Structures/sorting_algorithms/Counting_sort.py)
