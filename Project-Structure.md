@@ -21,6 +21,7 @@
     * [Bst](Algorithms_and_Data_Structures/BinarySearchTree/bst.py)
     * [Bstnode](Algorithms_and_Data_Structures/BinarySearchTree/bstnode.py)
     * [Main](Algorithms_and_Data_Structures/BinarySearchTree/main.py)
+    * [Tree Exceptions](Algorithms_and_Data_Structures/BinarySearchTree/tree_exceptions.py)
   * Design And Analysis Of Algorithms
     * All Pair Shortest Path Problems
       * [Repeated Dijkstra](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/All_Pair_Shortest_path_problems/Repeated_Dijkstra.py)
@@ -142,6 +143,12 @@
     * [Menu Driven Code For Tree Traversals](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Tree_Traversals.py)
   * Avl Tree Visualizer
     * [Main](Algorithms_and_Data_Structures/avl_tree_visualizer/main.py)
+  * Bellman Ford
+    * [Bellman Ford](Algorithms_and_Data_Structures/bellman_ford/Bellman_ford.py)
+  * Closest Pair Of Points
+    * [Closest Pair Of Points](Algorithms_and_Data_Structures/closest_pair_of_points/closest_pair_of_points.py)
+  * Graham Scan
+    * [Convex Hull Graham Scan](Algorithms_and_Data_Structures/graham_scan/convex_hull_graham_scan.py)
   * Sorting Algorithms
     * [Bubble Sort](Algorithms_and_Data_Structures/sorting_algorithms/Bubble_Sort.py)
     * [Counting Sort](Algorithms_and_Data_Structures/sorting_algorithms/Counting_sort.py)
@@ -265,6 +272,8 @@
     * [Game](Beginner_Projects/chess_game/game.py)
     * [Piece](Beginner_Projects/chess_game/piece.py)
   * [Labbot](Beginner_Projects/labbot.ipynb)
+  * Pomodoro Clock
+    * [Main](Beginner_Projects/pomodoro_Clock/main.py)
 
 ## Blockchain Development
   * Basic Python Blockchain Implementation
@@ -436,6 +445,12 @@
     * [Smart Attendance](Deep_Learning/smart_attendance_system/smart_attendance.py)
   * Toxicity Insult Analyser
     * [Toxicity](Deep_Learning/toxicity%20insult%20analyser/Toxicity.ipynb)
+
+## Explainable-Ai
+  * Explainable Ai Research Methods
+    * [Xai](Explainable-AI/Explainable%20AI%20Research%20Methods/xai.ipynb)
+  * Xai On Cancer Dataset
+    * [Cancer Dataset](Explainable-AI/XAI%20on%20Cancer%20Dataset/cancer_dataset.ipynb)
 
 ## Game Development
   * Bubble Shoot
