@@ -454,6 +454,9 @@
     * [Cancer Dataset](Explainable-AI/XAI%20on%20Cancer%20Dataset/cancer_dataset.ipynb)
 
 ## Game Development
+  * 2D Platformer
+    * [Level Editor](Game_Development/2D%20Platformer/level_editor.py)
+    * [Platformer](Game_Development/2D%20Platformer/platformer.py)
   * Bubble Shoot
     * [Main](Game_Development/Bubble%20Shoot/main.py)
   * Card Quest
