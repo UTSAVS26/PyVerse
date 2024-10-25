@@ -21,6 +21,7 @@
     * [Bst](Algorithms_and_Data_Structures/BinarySearchTree/bst.py)
     * [Bstnode](Algorithms_and_Data_Structures/BinarySearchTree/bstnode.py)
     * [Main](Algorithms_and_Data_Structures/BinarySearchTree/main.py)
+    * [Tree Exceptions](Algorithms_and_Data_Structures/BinarySearchTree/tree_exceptions.py)
   * Design And Analysis Of Algorithms
     * All Pair Shortest Path Problems
       * [Repeated Dijkstra](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/All_Pair_Shortest_path_problems/Repeated_Dijkstra.py)
