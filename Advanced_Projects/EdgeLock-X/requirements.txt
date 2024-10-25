@@ -1,5 +1,0 @@
-Flask
-cryptography
-python-dotenv
-requests
-pillow

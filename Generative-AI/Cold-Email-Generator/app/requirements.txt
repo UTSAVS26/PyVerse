@@ -1,7 +1,0 @@
-streamlit==1.35.0
-python-dotenv==1.0.0
-langchain-community==0.2.12
-langchain-groq==0.1.9
-langchain-core==0.2.37
-Gunicorn
-beautifulsoup4==4.12.2

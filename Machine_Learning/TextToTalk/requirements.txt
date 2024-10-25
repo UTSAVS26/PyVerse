@@ -1,3 +1,0 @@
-pdfminer.six
-gtts
-streamlit

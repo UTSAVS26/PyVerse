@@ -1,5 +1,0 @@
-streamlit
-dotenv
-google-generativeai
-speech_recognition
-gtts
