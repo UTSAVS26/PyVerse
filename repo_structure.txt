@@ -5,10 +5,7 @@
 │   │   ├── faces
 │   │   ├── static
 │   ├── GUI Based TaskManager
-│   ├── NaviBot-Voice-Assistant
-│   ├── Research-Snap
-│   └── SkillSync
-│       └── templates
+│   └── NaviBot-Voice-Assistant
 ├── Algorithms_and_Data_Structures
 │   ├── Arrays
 │   ├── BinarySearchTree
@@ -27,12 +24,14 @@
 │   │   └── Single_Source_Shortest_path_problems
 │   ├── Dijkstra
 │   ├── Dynamic-Programming-Series
-│   │   └── Basic-DP-Problems
+│   │   ├── Basic-DP-Problems
+│   │   └── Medium-DP-Problems
 │   ├── HeapSort
 │   ├── Linked List
 │   ├── Pattern Search
 │   ├── Queue
 │   ├── Recurssion
+│   ├── SearchingAlgorithms
 │   ├── Stack
 │   ├── Trees
 │   ├── avl_tree_visualizer
@@ -45,8 +44,16 @@
 │   │   │   └── images
 │   ├── Image-Tool
 │   ├── Web Scrapping
-│   └── WhatsApp Tool
+│   │   └── linkedin_scraper
+│   │       └── linkedin_scraper
+│   │           ├── linkedin_scraper
+│   │           │   ├── __pycache__
+│   │           │   └── spiders
+│   │           │       ├── __pycache__
+│   ├── WhatsApp Tool
+│   └── api_dev
 ├── Beginner_Projects
+│   ├── Anime_Manga_Tracker
 │   ├── BMI Calculator
 │   ├── Bar-Code-Generator
 │   ├── Budget-tracker
@@ -58,6 +65,7 @@
 │   │   └── Theme
 │   │       ├── dark
 │   │       └── light
+│   ├── Financial AI Assistant
 │   ├── Morse Code Translator with GUI
 │   │   └── screenshots
 │   ├── Number Guessing Game
@@ -68,6 +76,9 @@
 │   ├── Pycham Face reco
 │   │   ├── images
 │   ├── QR Generator
+│   ├── Research-Snap
+│   ├── SkillSync
+│   │   └── templates
 │   ├── Stock App
 │   │   ├── Templates
 │   ├── Sudoku Solver
@@ -80,8 +91,11 @@
 │   │   ├── Turtle-Art
 │   ├── URL_Shortener
 │   ├── Web Scraper
+│   ├── background-remover
+│   │   └── templates
 │   ├── chess_game
 ├── Blockchain_Development
+│   └── Basic Python Blockchain Implementation
 ├── Computer Vision
 │   └── Volume Control Using Hand Gesture
 │       ├── docs
@@ -89,38 +103,44 @@
 │   ├── CLI-based Port Scanner
 │   ├── Encryption_Decryption app
 │   ├── File Integrity Checker
+│   ├── File_encryption_tool
 │   ├── Keylogger
 │   ├── PDF_Malware_Detection
 │   │   ├── Dataset
 │   │   └── saved_models
 │   ├── Packet-sniffer
+│   ├── Phishing detection tool
 │   ├── Pixel_Decoder
 │   ├── VidForensicsTool
-│   └── bruteforce_password_cracking
-├── Data Analysis
-│   ├── Diabetes Analysis
-│   │   ├── EDA
-│   │   ├── Model
-│   │   ├── data
-│   ├── Google Search Analysis with python
-│   └── Unemployment Analysis due to COVID
-├── Data Analytics
-│   └── IPL Analysis
-├── DataVizLearnig
-│   ├── Movie Data Visualization
+│   ├── bruteforce_password_cracking
+│   └── cybersecurity_resources
+│       └── pdf
 ├── Data_Science
 │   ├── AI Virtual Painter
 │   │   ├── Header Files
 │   │   ├── Images
 │   │   ├── __pycache__
+│   ├── Analysis of Mortality Rate
+│   ├── DataVizLearnig
+│   │   ├── Movie Data Visualization
+│   ├── Diabetes Analysis
+│   │   ├── EDA
+│   │   ├── Model
+│   │   ├── data
+│   ├── Google Search Analysis with python
 │   ├── Hotel Demand EDA and Forecasting Using ARIMA Model
+│   ├── IPL Analysis
+│   ├── Unemployment Analysis due to COVID
 │   ├── Whatsapp_Chat_Analyzer
 │   │   ├── Sample_Data
 │   │   ├── images
 │   ├── analysis_covid_trends
 │   ├── customer_segmentation
 │   ├── stock_prediction
-│   └── time_series_visualization
+│   ├── time_series_visualization
+│   └── traffic_vs_zombie_game
+│       ├── images
+│       └── sound
 ├── Deep_Learning
 │   ├── BankNifty Index Price Prediction LSTM
 │   ├── Bird Species Classification
@@ -142,6 +162,10 @@
 │   │   ├── DataSet
 │   │   ├── Images
 │   │   ├── Models
+│   ├── ESRGAN-Model for Enhanced Upscaling of Image
+│   │   ├── LR
+│   │   ├── figures
+│   │   ├── models
 │   ├── Face Mask Detection
 │   │   ├── Dataset
 │   │   ├── Images
@@ -159,6 +183,10 @@
 │   │   ├── Dataset
 │   │   ├── Images
 │   │   ├── Model
+│   ├── Paddy Disease Classification
+│   │   ├── Dataset
+│   │   ├── Image
+│   │   ├── models
 │   ├── Plant Disease Detection
 │   │   ├── Final tensorflow Models
 │   │   ├── assets
@@ -211,6 +239,7 @@
 │   ├── Rock-Paper-Scissors
 │   ├── Snake_Game
 │   ├── Space_quiz.py
+│   ├── Text-Based Adventure
 │   ├── Tic_Tac_Toe
 │   ├── Trivia
 │   ├── Turtle Collection Game
@@ -227,20 +256,25 @@
 │   │   ├── model
 │   │   ├── ocr-notebook
 │   │   ├── plates
-│   └── PhotoSpectroscope
-│       ├── Analyser
-│       │   ├── Scripts
-│       │   └── Test Docs
-│       │       └── images
-│       ├── Normaliser
-│       │   ├── Images
-│       │   └── Script
-│       ├── Results
-│       ├── Scource
-│       ├── Theme
-│       │   └── theme
-│       │       ├── dark
-│       │       ├── light
+│   ├── OpticalCharacterRecognition(OCR)
+│   ├── PhotoSpectroscope
+│   │   ├── Analyser
+│   │   │   ├── Scripts
+│   │   │   └── Test Docs
+│   │   │       └── images
+│   │   ├── Normaliser
+│   │   │   ├── Images
+│   │   │   └── Script
+│   │   ├── Results
+│   │   ├── Scource
+│   │   ├── Theme
+│   │   │   └── theme
+│   │   │       ├── dark
+│   │   │       ├── light
+│   └── covid_face_mask
+│       ├── archive
+│       │   ├── annotations
+│       │   └── images
 ├── Images
 ├── Machine_Learning
 │   ├── AI_Language_Learning_Assistant
@@ -254,6 +288,8 @@
 │   │   ├── Images
 │   │   └── Model
 │   ├── Analying_ML_model_using_maang
+│   ├── Anomaly_based_ids
+│   │   └── saved_model
 │   ├── Automobile Sales Data Analysis and Prediction
 │   │   ├── Dataset
 │   │   ├── Images
@@ -262,6 +298,7 @@
 │   │   ├── Dataset
 │   │   ├── Images
 │   │   ├── Model
+│   ├── CreditCardFraudDetection
 │   ├── Customer Clust - Customer Segmentation Tool
 │   ├── Data Summarizer NLP
 │   │   ├── __pycache__
@@ -290,9 +327,10 @@
 │   │   │   └── images
 │   ├── Landmark_Detection
 │   │   ├── images
-│   ├── Linear regression using gradient decent.
+│   ├── Linear regression using gradient decent
 │   ├── Movie Classification
 │   ├── Multivitamine Prediction
+│   ├── NEXT-GEN TRAFFIC MANAGEMENT SYSTEM
 │   ├── Palm-Chatbot-main
 │   │   ├── server
 │   │   ├── src
@@ -328,19 +366,12 @@
 │   ├── assets
 │   ├── pokemon-data-analysis-and-legendary-classification-main
 │   │   ├── Data
+├── Sentiment-Analysis-Of-Restaurant-Reviews
+├── Stock_Market_Analysis
 ├── Tutorials
 ├── Video Processing
 │   └── Online Video Editor
 ├── Web_Development
-│   ├── Advanced-Weather-APP
-│   │   ├── assets
-│   ├── DevDetective
-│   │   ├── assets
-│   │   │   ├── images
-│   ├── DocXtract
-│   │   ├── public
-│   │   └── src
-│   │       ├── components
 │   ├── FastAPI_Control_Panel
 │   │   ├── app
 │   │   ├── fastapi-react-frontend
@@ -363,34 +394,11 @@
 │   │   │       │   └── Login
 │   │   │       ├── services
 │   │   │       └── utils
-│   ├── GIF_Generator-main
-│   │   ├── public
-│   │   ├── src
-│   │   │   ├── components
-│   │   │   ├── hooks
-│   ├── Invoice-Generator
-│   │   ├── public
-│   │   ├── src
-│   │   │   ├── components
-│   │   │   ├── helpers
 │   ├── Movie_Recommendation
 │   │   ├── data
-│   ├── Password_Generator--main
-│   │   ├── assets
-│   ├── RazorPay-Clone-master
-│   │   ├── images
-│   ├── Recursive-Tic-Tac-Toe-main
-│   │   ├── assets
 │   ├── Web_Developement_resources
-│   ├── chatbot
-│   │   ├── __pycache__
-│   │   ├── static
-│   │   │   ├── images
-│   │   ├── templates
-│   └── sudoku_solver
-├── api_dev
-├── cybersecurity_resources
-│   └── pdf
-└── traffic_vs_zombie_game
-    ├── images
-    └── sound
+│   └── chatbot
+│       ├── __pycache__
+│       ├── static
+│       │   ├── images
+│       ├── templates

@@ -1,0 +1,1 @@
+Paste your lower res pic here.
