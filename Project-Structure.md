@@ -320,6 +320,8 @@
     * [Main](Cybersecurity_Tools/VidForensicsTool/main.py)
   * Bruteforce Password Cracking
     * [Main](Cybersecurity_Tools/bruteforce_password_cracking/main.py)
+  * Network Scanner
+    * [Main](Cybersecurity_Tools/network_Scanner/main.py)
 
 ## Data Science
   * Ai Virtual Painter
