@@ -2,7 +2,7 @@
 <html lang="en">
 
 <body>
-<div class="container">
+<div>
     <h1>🔍 Network Vulnerability Scanner</h1>
     <p>A powerful yet simple network vulnerability scanner built in Python! This tool is designed to help identify open ports, detect running services, and retrieve service banners to assist with vulnerability assessment. Featuring multithreading for efficiency and SSH support for secure banner grabbing, it’s ideal for network admins, security enthusiasts, and developers.</p>
 
@@ -42,9 +42,11 @@
   <p>Run the scanner by providing the target IP address and the range of ports to scan.</p>
     <pre><code>python main.py</code></pre>
     <p><strong>Example Run:</strong></p>
-    <div class="code-snippet">
-        <img src="scanner_screenshot.png" alt="Network Vulnerability Scanner Screenshot" width="600">
+    <div>
+        <img src="demo.png" alt="Network Vulnerability Scanner Screenshot" width="600">
     </div>
+<h2>📜 Note</h2>
+ <p>To know the IP address of any website in cmd use:  <pre><code>ping "website_URL" </code></pre></p>
 
 <h2>⚠️ Important Notes</h2>
 <ul>
