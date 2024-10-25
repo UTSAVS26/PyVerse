@@ -263,6 +263,8 @@
     * [Game](Beginner_Projects/chess_game/game.py)
     * [Piece](Beginner_Projects/chess_game/piece.py)
   * [Labbot](Beginner_Projects/labbot.ipynb)
+  * Pomodoro Clock
+    * [Main](Beginner_Projects/pomodoro_Clock/main.py)
 
 ## Blockchain Development
   * Basic Python Blockchain Implementation
@@ -434,6 +436,12 @@
     * [Smart Attendance](Deep_Learning/smart_attendance_system/smart_attendance.py)
   * Toxicity Insult Analyser
     * [Toxicity](Deep_Learning/toxicity%20insult%20analyser/Toxicity.ipynb)
+
+## Explainable-Ai
+  * Explainable Ai Research Methods
+    * [Xai](Explainable-AI/Explainable%20AI%20Research%20Methods/xai.ipynb)
+  * Xai On Cancer Dataset
+    * [Cancer Dataset](Explainable-AI/XAI%20on%20Cancer%20Dataset/cancer_dataset.ipynb)
 
 ## Game Development
   * Bubble Shoot
