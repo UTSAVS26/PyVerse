@@ -109,6 +109,7 @@
     * [Binary Search](Algorithms_and_Data_Structures/Recurssion/Binary_Search.py)
     * [Check For Palindrome](Algorithms_and_Data_Structures/Recurssion/Check_for_Palindrome.py)
     * [Count Vowels In A String](Algorithms_and_Data_Structures/Recurssion/Count_Vowels_in_a_String.py)
+    * [Countnumberofzeroes](Algorithms_and_Data_Structures/Recurssion/Countnumberofzeroes.py)
     * [Factorial](Algorithms_and_Data_Structures/Recurssion/Factorial.py)
     * [Fibonacci Series](Algorithms_and_Data_Structures/Recurssion/Fibonacci_Series.py)
     * [Power Function](Algorithms_and_Data_Structures/Recurssion/Power_Function.py)
@@ -625,6 +626,8 @@
   * Svm
     * [Svm](Machine_Learning/SVM/svm.py)
     * [Test](Machine_Learning/SVM/test.py)
+  * Sentiment Analysis
+    * [Code](Machine_Learning/Sentiment%20Analysis/code.py)
   * Signature Verification Portal
     * [Dashboard](Machine_Learning/Signature_verification_portal/Dashboard.py)
     * [Validation](Machine_Learning/Signature_verification_portal/Validation.py)
