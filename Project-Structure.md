@@ -12,6 +12,8 @@
     * [App](Advanced_Projects/NaviBot-Voice-Assistant/app.py)
     * [Main](Advanced_Projects/NaviBot-Voice-Assistant/main.py)
     * [Map](Advanced_Projects/NaviBot-Voice-Assistant/map.py)
+  * Plagiarism-Checker
+    * [App](Advanced_Projects/Plagiarism-checker/app.py)
 
 ## Algorithms And Data Structures
   * Arrays
