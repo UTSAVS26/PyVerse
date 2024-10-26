@@ -16,7 +16,15 @@ def groq_completions(user_content, model, api_key):
             messages=[
                 {
                     "role": "system",
-                    "content": "You are an AI-powered coding assistant here to help with programming challenges. \nYou can assist with various tasks, including:\n\n- **Debugging Code:** Identify and fix errors in code shared by the user.\n- **Explaining Concepts:** Provide detailed explanations of programming concepts.\n- **Code Suggestions:** Offer code snippets and suggest approaches to implement features.\n- **Optimization Tips:** Advise on improving code performance.\n- **Learning Resources:** Recommend tutorials, articles, and other resources to help the user learn something new."
+                    "content": (
+                        "You are an AI-powered coding assistant here to help with programming challenges. \n"
+                        "You can assist with various tasks, including:\n\n"
+                        "- **Debugging Code:** Identify and fix errors in code shared by the user.\n"
+                        "- **Explaining Concepts:** Provide detailed explanations of programming concepts.\n"
+                        "- **Code Suggestions:** Offer code snippets and suggest approaches to implement features.\n"
+                        "- **Optimization Tips:** Advise on improving code performance.\n"
+                        "- **Learning Resources:** Recommend tutorials, articles, and other resources to help the user learn something new."
+                    )
                 },
                 {
                     "role": "user",
@@ -82,7 +90,7 @@ def main():
         "gemma-7b-it",
     ]
     selected_model = st.selectbox("Select Model", model_options)
-    user_content = st.text_input("How can I help you today?")
+    user_content = st.text_input("How can I help you today?", key="query_input")  # Added session key for reset
     if st.button("Submit"):
         if not user_content:
             st.warning("Please enter your query to proceed.")
@@ -98,6 +106,10 @@ def main():
             st.text_area("", value=answer, height=min(len(answer) * 20, 500), max_chars=None, key=None)
         else:
             st.error("Failed to generate a response. Please try again.")
+
+    # Clear button functionality added with session state reset
+    if st.button("Clear"):
+        st.session_state["query_input"] = ""  # Resets the input field
 
 if __name__ == "__main__":
     main()
