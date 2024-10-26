@@ -73,9 +73,13 @@
     * [Test Main](Algorithms_and_Data_Structures/Dijkstra/test_main.py)
   * Dynamic-Programming-Series
     * Basic-Dp-Problems
+      * [Paint House](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/Paint_House.py)
+      * [Subset Sum](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/SubSet_Sum.py)
       * [Climbing-Stairs](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/climbing-stairs.py)
       * [Fibonacci-Seq](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/fibonacci-seq.py)
       * [House-Robber](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/house-robber.py)
+      * [Nth Tribonacci Num](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/nth_tribonacci_num.py)
+      * [Zero One Knapsack](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/zero_one_knapsack.py)
     * Medium-Dp-Problems
       * [Coin-Change](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/coin-change.py)
       * [Longest-Inc-Subseq](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/longest-inc-subseq.py)
