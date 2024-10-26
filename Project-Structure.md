@@ -79,6 +79,7 @@
     * Medium-Dp-Problems
       * [Coin-Change](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/coin-change.py)
       * [Longest-Inc-Subseq](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/longest-inc-subseq.py)
+      * [Multistage-Graph](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/multistage-graph.py)
       * [Partition-Subset-Sum](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/partition-subset-sum.py)
       * [Unique-Paths](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/unique-paths.py)
   * Heapsort
