@@ -8,6 +8,9 @@
     * [Web Server](Advanced_Projects/EdgeLock-X/web_server.py)
   * Gui Based Taskmanager
     * [Mang](Advanced_Projects/GUI%20Based%20TaskManager/mang.py)
+  * Jarvis-Desktop-Assistant
+    * Jarvis
+      * [Jarvis](Advanced_Projects/Jarvis-Desktop-Assistant/Jarvis/jarvis.py)
   * Navibot-Voice-Assistant
     * [App](Advanced_Projects/NaviBot-Voice-Assistant/app.py)
     * [Main](Advanced_Projects/NaviBot-Voice-Assistant/main.py)
