@@ -558,6 +558,8 @@
       * [Automobile Sales Prediction](Machine_Learning/Automobile%20Sales%20Data%20Analysis%20and%20Prediction/Model/Automobile_Sales_Prediction.ipynb)
   * Bitcoin Price Prediction
       * [Bitcoin Price Prediction](Machine_Learning/Bitcoin%20Price%20Prediction/Model/Bitcoin_Price_Prediction.ipynb)
+  * Bookrecommendationsystem
+    * [Book Recommendation System](Machine_Learning/BookRecommendationSystem/Book_Recommendation_System.ipynb)
   * Creditcardfrauddetection
     * [Fraud Detection Machine Learning Project](Machine_Learning/CreditCardFraudDetection/Fraud_Detection_Machine_Learning_Project.ipynb)
   * Customer Clust - Customer Segmentation Tool
