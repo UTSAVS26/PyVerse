@@ -16,6 +16,8 @@
     * [App](Advanced_Projects/NaviBot-Voice-Assistant/app.py)
     * [Main](Advanced_Projects/NaviBot-Voice-Assistant/main.py)
     * [Map](Advanced_Projects/NaviBot-Voice-Assistant/map.py)
+  * Plagiarism-Checker
+    * [App](Advanced_Projects/Plagiarism-checker/app.py)
 
 ## Algorithms And Data Structures
   * Arrays
@@ -125,6 +127,7 @@
     * [Depthfirstseach](Algorithms_and_Data_Structures/SearchingAlgorithms/DepthFirstSeach.py)
     * [Exponenetialseach](Algorithms_and_Data_Structures/SearchingAlgorithms/ExponenetialSeach.py)
     * [Fibbonacisearch](Algorithms_and_Data_Structures/SearchingAlgorithms/FibbonaciSearch.py)
+    * [Jumpsearch](Algorithms_and_Data_Structures/SearchingAlgorithms/JumpSearch.py)
     * [Linearsearch](Algorithms_and_Data_Structures/SearchingAlgorithms/LinearSearch.py)
     * [Sublistsearch](Algorithms_and_Data_Structures/SearchingAlgorithms/SublistSearch.py)
     * [Ternarysearch](Algorithms_and_Data_Structures/SearchingAlgorithms/TernarySearch.py)
@@ -136,6 +139,8 @@
     * [Prefixtoinfix](Algorithms_and_Data_Structures/Stack/PrefixToInfix.py)
     * [Prefixtopostfix](Algorithms_and_Data_Structures/Stack/PrefixToPostfix.py)
     * [Stack](Algorithms_and_Data_Structures/Stack/stack.py)
+  * Timecomplexity Analyzer
+    * [Checker](Algorithms_and_Data_Structures/TimeComplexity_analyzer/Checker.py)
   * Trees
     * [Menu Driven Code For Avl Tree](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Avl_Tree.py)
     * [Menu Driven Code For Binary Search Tree](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Binary_Search_Tree.py)
@@ -160,6 +165,7 @@
     * [Merge Sort](Algorithms_and_Data_Structures/sorting_algorithms/Merge_Sort.py)
     * [Quick Sort](Algorithms_and_Data_Structures/sorting_algorithms/Quick_sort.py)
     * [Radix Sort](Algorithms_and_Data_Structures/sorting_algorithms/Radix_Sort.py)
+    * [Tim Sort](Algorithms_and_Data_Structures/sorting_algorithms/Tim_Sort.py)
   * Visualizer
     * [Binary Search Tree Visualizer](Algorithms_and_Data_Structures/visualizer/binary_search_tree_visualizer.py)
     * [Binary Tree Visualizer](Algorithms_and_Data_Structures/visualizer/binary_tree_visualizer.py)
@@ -570,6 +576,8 @@
       * [Automobile Sales Prediction](Machine_Learning/Automobile%20Sales%20Data%20Analysis%20and%20Prediction/Model/Automobile_Sales_Prediction.ipynb)
   * Bitcoin Price Prediction
       * [Bitcoin Price Prediction](Machine_Learning/Bitcoin%20Price%20Prediction/Model/Bitcoin_Price_Prediction.ipynb)
+  * Credit Card Fraud Detection
+    * [Credit Card Fraud Detection](Machine_Learning/Credit%20Card%20Fraud%20Detection/Credit_card_fraud_detection.ipynb)
   * Creditcardfrauddetection
     * [Fraud Detection Machine Learning Project](Machine_Learning/CreditCardFraudDetection/Fraud_Detection_Machine_Learning_Project.ipynb)
   * Customer Clust - Customer Segmentation Tool
@@ -695,6 +703,8 @@
     * [Info](Web_Development/Movie_Recommendation/info.py)
     * [Pythonapplication](Web_Development/Movie_Recommendation/pythonApplication.py)
     * [Test](Web_Development/Movie_Recommendation/test.py)
+  * Test Sumarrization Nlp
+    * [Textsummary](Web_Development/Test_Sumarrization_NLP/textsummary.py)
   * Chatbot
     * [App](Web_Development/chatbot/app.py)
     * [Chat](Web_Development/chatbot/chat.py)
