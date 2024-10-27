@@ -157,6 +157,9 @@
     * [Closest Pair Of Points](Algorithms_and_Data_Structures/closest_pair_of_points/closest_pair_of_points.py)
   * Graham Scan
     * [Convex Hull Graham Scan](Algorithms_and_Data_Structures/graham_scan/convex_hull_graham_scan.py)
+  * Queue Visualizer
+    * [All](Algorithms_and_Data_Structures/queue_visualizer/all.py)
+    * [Circular](Algorithms_and_Data_Structures/queue_visualizer/circular.py)
   * Sorting Algorithms
     * [Bubble Sort](Algorithms_and_Data_Structures/sorting_algorithms/Bubble_Sort.py)
     * [Counting Sort](Algorithms_and_Data_Structures/sorting_algorithms/Counting_sort.py)
@@ -674,6 +677,8 @@
   * [Main](Machine_Learning/main.py)
   * Pokemon-Data-Analysis-And-Legendary-Classification-Main
     * [Data-Analysis-Advance-Modelling-On-Pokemons](Machine_Learning/pokemon-data-analysis-and-legendary-classification-main/data-analysis-advance-modelling-on-pokemons.ipynb)
+  * Smartphone Rate Prediction
+    * [Main](Machine_Learning/smartphone_rate_prediction/main.py)
   * [Translation](Machine_Learning/translation.py)
   * [Utils](Machine_Learning/utils.py)
 
