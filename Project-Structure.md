@@ -692,6 +692,8 @@
     * [Info](Web_Development/Movie_Recommendation/info.py)
     * [Pythonapplication](Web_Development/Movie_Recommendation/pythonApplication.py)
     * [Test](Web_Development/Movie_Recommendation/test.py)
+  * Test Sumarrization Nlp
+    * [Textsummary](Web_Development/Test_Sumarrization_NLP/textsummary.py)
   * Chatbot
     * [App](Web_Development/chatbot/app.py)
     * [Chat](Web_Development/chatbot/chat.py)
