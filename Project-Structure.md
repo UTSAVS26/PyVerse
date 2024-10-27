@@ -1,5 +1,9 @@
 
 ## Advanced Projects
+  * Chat-Gpt-Discord-Bot
+    * [Chat Gpt Function](Advanced_Projects/Chat-GPT-Discord-Bot/Chat_GPT_Function.py)
+    * [Main](Advanced_Projects/Chat-GPT-Discord-Bot/main.py)
+    * [Tests](Advanced_Projects/Chat-GPT-Discord-Bot/tests.py)
   * Eduhelper
     * [Main](Advanced_Projects/EDUHELPER/main.py)
   * Edgelock-X
