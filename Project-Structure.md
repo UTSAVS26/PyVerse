@@ -476,6 +476,8 @@
     * [Main](Game_Development/Bubble%20Shoot/main.py)
   * Card Quest
     * [Cards](Game_Development/Card%20quest/Cards.py)
+  * Catch The Fruit
+    * [Catch The Fruit](Game_Development/Catch_The_Fruit/Catch_the_fruit.py)
   * Crossword Game
     * [Crossword](Game_Development/Crossword%20Game/crossword.py)
   * Dice Rolling Simulator
