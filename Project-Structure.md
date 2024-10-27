@@ -127,6 +127,7 @@
     * [Depthfirstseach](Algorithms_and_Data_Structures/SearchingAlgorithms/DepthFirstSeach.py)
     * [Exponenetialseach](Algorithms_and_Data_Structures/SearchingAlgorithms/ExponenetialSeach.py)
     * [Fibbonacisearch](Algorithms_and_Data_Structures/SearchingAlgorithms/FibbonaciSearch.py)
+    * [Jumpsearch](Algorithms_and_Data_Structures/SearchingAlgorithms/JumpSearch.py)
     * [Linearsearch](Algorithms_and_Data_Structures/SearchingAlgorithms/LinearSearch.py)
     * [Sublistsearch](Algorithms_and_Data_Structures/SearchingAlgorithms/SublistSearch.py)
     * [Ternarysearch](Algorithms_and_Data_Structures/SearchingAlgorithms/TernarySearch.py)
@@ -164,6 +165,7 @@
     * [Merge Sort](Algorithms_and_Data_Structures/sorting_algorithms/Merge_Sort.py)
     * [Quick Sort](Algorithms_and_Data_Structures/sorting_algorithms/Quick_sort.py)
     * [Radix Sort](Algorithms_and_Data_Structures/sorting_algorithms/Radix_Sort.py)
+    * [Tim Sort](Algorithms_and_Data_Structures/sorting_algorithms/Tim_Sort.py)
   * Visualizer
     * [Binary Search Tree Visualizer](Algorithms_and_Data_Structures/visualizer/binary_search_tree_visualizer.py)
     * [Binary Tree Visualizer](Algorithms_and_Data_Structures/visualizer/binary_tree_visualizer.py)
