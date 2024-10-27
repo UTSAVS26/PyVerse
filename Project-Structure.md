@@ -1,5 +1,9 @@
 
 ## Advanced Projects
+  * Chat-Gpt-Discord-Bot
+    * [Chat Gpt Function](Advanced_Projects/Chat-GPT-Discord-Bot/Chat_GPT_Function.py)
+    * [Main](Advanced_Projects/Chat-GPT-Discord-Bot/main.py)
+    * [Tests](Advanced_Projects/Chat-GPT-Discord-Bot/tests.py)
   * Eduhelper
     * [Main](Advanced_Projects/EDUHELPER/main.py)
   * Edgelock-X
@@ -292,11 +296,16 @@
       * [Transaction](Blockchain_Development/Flask-Blockchain-app/client/transaction.py)
 
 ## Computer Vision
+  * Ball-Tracking
+    * [Output](Computer%20Vision/Ball-Tracking/Output.ipynb)
+    * [Project](Computer%20Vision/Ball-Tracking/Project.ipynb)
   * Volume Control Using Hand Gesture
     * [Gesturevolume](Computer%20Vision/Volume%20Control%20Using%20Hand%20Gesture/GestureVolume.py)
     * [Handtrackingmodule](Computer%20Vision/Volume%20Control%20Using%20Hand%20Gesture/HandTrackingModule.py)
 
 ## Cybersecurity Tools
+  * Arp Spoofing Detection Tool
+    * [Arp Spoofing Detection](Cybersecurity_Tools/ARP%20Spoofing%20Detection%20Tool/arp_spoofing_detection.py)
   * Cli-Based Port Scanner
     * [Port-Scanner](Cybersecurity_Tools/CLI-based%20Port%20Scanner/port-scanner.py)
   * Encryption Decryption App
