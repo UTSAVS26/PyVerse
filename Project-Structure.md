@@ -333,6 +333,8 @@
     * [Pixel Decoder](Cybersecurity_Tools/Pixel_Decoder/pixel_decoder.py)
   * Vidforensicstool
     * [Main](Cybersecurity_Tools/VidForensicsTool/main.py)
+  * Web Application Firewall
+    * [Waf](Cybersecurity_Tools/Web%20Application%20Firewall/waf.py)
   * Bruteforce Password Cracking
     * [Main](Cybersecurity_Tools/bruteforce_password_cracking/main.py)
   * Network Scanner
