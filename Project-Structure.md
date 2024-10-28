@@ -10,6 +10,8 @@
     * [Generate Keys](Advanced_Projects/EdgeLock-X/generate_keys.py)
     * [Tee Server](Advanced_Projects/EdgeLock-X/tee_server.py)
     * [Web Server](Advanced_Projects/EdgeLock-X/web_server.py)
+  * Frontal Face Generator
+    * [Psp Frontalization Notebook](Advanced_Projects/Frontal%20Face%20Generator/PSP_frontalization_notebook.ipynb)
   * Gui Based Taskmanager
     * [Mang](Advanced_Projects/GUI%20Based%20TaskManager/mang.py)
   * Navibot-Voice-Assistant
