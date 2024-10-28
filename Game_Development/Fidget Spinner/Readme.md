@@ -33,6 +33,6 @@ Before running the code, make sure you have Python installed on your system. No 
 1. **Download or clone** the game code to your local machine.
 2. **Run the game** using the command:
    ```bash
-   python fidget_spinner.py
+   python main.py
    ```
 3. Press the space bar to start spinning the fidget spinner and enjoy!
