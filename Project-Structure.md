@@ -157,6 +157,9 @@
     * [Closest Pair Of Points](Algorithms_and_Data_Structures/closest_pair_of_points/closest_pair_of_points.py)
   * Graham Scan
     * [Convex Hull Graham Scan](Algorithms_and_Data_Structures/graham_scan/convex_hull_graham_scan.py)
+  * Queue Visualizer
+    * [All](Algorithms_and_Data_Structures/queue_visualizer/all.py)
+    * [Circular](Algorithms_and_Data_Structures/queue_visualizer/circular.py)
   * Sorting Algorithms
     * [Bubble Sort](Algorithms_and_Data_Structures/sorting_algorithms/Bubble_Sort.py)
     * [Counting Sort](Algorithms_and_Data_Structures/sorting_algorithms/Counting_sort.py)
@@ -284,6 +287,9 @@
   * Pomodoro Clock
     * [Main](Beginner_Projects/pomodoro_Clock/main.py)
 
+## Bird Image Classification
+  * [Bird-Classification-Using-Cnn-Efficientnetb0](Bird%20image%20classification/bird-classification-using-cnn-efficientnetb0.ipynb)
+
 ## Blockchain Development
   * Basic Python Blockchain Implementation
     * [Blockchain Demo](Blockchain_Development/Basic%20Python%20Blockchain%20Implementation/blockchain_demo.py)
@@ -327,6 +333,8 @@
     * [Predict](Cybersecurity_Tools/PDF_Malware_Detection/predict.py)
   * Packet-Sniffer
     * [Packetsniffer](Cybersecurity_Tools/Packet-sniffer/packetsniffer.py)
+  * Password Strength Checker
+    * [Password Strength Checker](Cybersecurity_Tools/Password%20Strength%20Checker/password_strength_checker.py)
   * Phishing Detection Tool
     * [Phishing Detection](Cybersecurity_Tools/Phishing%20detection%20tool/phishing_detection.py)
   * Pixel Decoder
@@ -519,6 +527,8 @@
     * [Turtle Collection Game](Game_Development/Turtle%20Collection%20Game/Turtle%20Collection%20Game.py)
   * Visual Novel  Code
     * [Novel](Game_Development/Visual_novel%20_code/Novel.py)
+  * Word Ladder Puzzle Game
+    * [Main](Game_Development/Word%20Ladder%20Puzzle%20Game/main.py)
 
 ## Generative-Ai
   * Code-Llm-Bot
@@ -674,6 +684,8 @@
   * [Main](Machine_Learning/main.py)
   * Pokemon-Data-Analysis-And-Legendary-Classification-Main
     * [Data-Analysis-Advance-Modelling-On-Pokemons](Machine_Learning/pokemon-data-analysis-and-legendary-classification-main/data-analysis-advance-modelling-on-pokemons.ipynb)
+  * Smartphone Rate Prediction
+    * [Main](Machine_Learning/smartphone_rate_prediction/main.py)
   * [Translation](Machine_Learning/translation.py)
   * [Utils](Machine_Learning/utils.py)
 
@@ -715,3 +727,6 @@
   * Interactive-Code-Playground
     * [Main](Web_Development/interactive-code-playground/main.py)
     * [Temp Code](Web_Development/interactive-code-playground/temp_code.py)
+
+## Jamesweb
+  * [Galaxy-And-Nebula-Images-By-James-Web-Telescope](jamesweb/galaxy-and-nebula-images-by-james-web-telescope.ipynb)
