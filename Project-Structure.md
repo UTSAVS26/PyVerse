@@ -333,6 +333,8 @@
     * [Predict](Cybersecurity_Tools/PDF_Malware_Detection/predict.py)
   * Packet-Sniffer
     * [Packetsniffer](Cybersecurity_Tools/Packet-sniffer/packetsniffer.py)
+  * Password Strength Checker
+    * [Password Strength Checker](Cybersecurity_Tools/Password%20Strength%20Checker/password_strength_checker.py)
   * Phishing Detection Tool
     * [Phishing Detection](Cybersecurity_Tools/Phishing%20detection%20tool/phishing_detection.py)
   * Pixel Decoder
