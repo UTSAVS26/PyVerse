@@ -216,6 +216,8 @@
   * Chat App
     * [Chat Client](Beginner_Projects/Chat%20App/chat_client.py)
     * [Chat Server](Beginner_Projects/Chat%20App/chat_server.py)
+  * Currency  Convertor
+    * [Currency Convertor](Beginner_Projects/Currency%20_Convertor/Currency_Convertor.py)
   * Digital Clock
     * [Digital Clock](Beginner_Projects/Digital%20Clock/digital_clock.py)
   * [Egg Catcher Game](Beginner_Projects/Egg_Catcher_Game.py)
