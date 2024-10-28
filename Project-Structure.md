@@ -91,6 +91,8 @@
     * [Heapsortvisualizer](Algorithms_and_Data_Structures/HeapSort/heapsortvisualizer.py)
     * [Timecomplexity1](Algorithms_and_Data_Structures/HeapSort/timecomplexity1.py)
   * Linked List
+    * Clone A List With Random Pointers
+      * [Program](Algorithms_and_Data_Structures/Linked%20List/Clone_a_List_with_Random_Pointers/program.py)
     * [Menu Driven Code For Circular Doubly Linkedlist](Algorithms_and_Data_Structures/Linked%20List/Menu_Driven_Code_for_Circular_Doubly_LinkedList.py)
     * [Menu Driven Code For Circular Linkedlist](Algorithms_and_Data_Structures/Linked%20List/Menu_Driven_Code_for_Circular_LinkedList.py)
     * [Menu Driven Code For Doubly Linkedlist](Algorithms_and_Data_Structures/Linked%20List/Menu_Driven_Code_for_Doubly_LinkedList.py)
@@ -214,6 +216,8 @@
   * Chat App
     * [Chat Client](Beginner_Projects/Chat%20App/chat_client.py)
     * [Chat Server](Beginner_Projects/Chat%20App/chat_server.py)
+  * Currency  Convertor
+    * [Currency Convertor](Beginner_Projects/Currency%20_Convertor/Currency_Convertor.py)
   * Digital Clock
     * [Digital Clock](Beginner_Projects/Digital%20Clock/digital_clock.py)
   * [Egg Catcher Game](Beginner_Projects/Egg_Catcher_Game.py)
@@ -369,6 +373,10 @@
     * [Hotel Demand Forecasting](Data_Science/Hotel%20Demand%20EDA%20and%20Forecasting%20Using%20ARIMA%20Model/Hotel%20Demand%20Forecasting.ipynb)
   * Ipl Analysis
     * [Ipl Analysis](Data_Science/IPL%20Analysis/IPL_Analysis.ipynb)
+  * Lead Conversion Case Study
+    * [Advanced-Eda](Data_Science/Lead%20Conversion%20Case%20Study/Advanced-EDA.ipynb)
+    * [Eda Feature-Engineering Outlier-Analysis](Data_Science/Lead%20Conversion%20Case%20Study/EDA_Feature-Engineering_Outlier-Analysis.ipynb)
+    * [Lead Score Model Building](Data_Science/Lead%20Conversion%20Case%20Study/Lead%20Score%20Model%20Building.ipynb)
   * Unemployment Analysis Due To Covid
     * [Unemployment Analysis](Data_Science/Unemployment%20Analysis%20due%20to%20COVID/UNEMPLOYMENT_ANALYSIS.ipynb)
   * Whatsapp Chat Analyzer
@@ -527,6 +535,8 @@
     * [Turtle Collection Game](Game_Development/Turtle%20Collection%20Game/Turtle%20Collection%20Game.py)
   * Visual Novel  Code
     * [Novel](Game_Development/Visual_novel%20_code/Novel.py)
+  * Word Games With Lives
+    * [Main](Game_Development/Word%20Games%20with%20lives/main.py)
   * Word Ladder Puzzle Game
     * [Main](Game_Development/Word%20Ladder%20Puzzle%20Game/main.py)
 
@@ -587,6 +597,8 @@
       * [Automobile Sales Prediction](Machine_Learning/Automobile%20Sales%20Data%20Analysis%20and%20Prediction/Model/Automobile_Sales_Prediction.ipynb)
   * Bitcoin Price Prediction
       * [Bitcoin Price Prediction](Machine_Learning/Bitcoin%20Price%20Prediction/Model/Bitcoin_Price_Prediction.ipynb)
+  * Book Recommendation System
+    * [Book Recommendation System](Machine_Learning/Book%20Recommendation%20System/Book_Recommendation_System.ipynb)
   * Credit Card Fraud Detection
     * [Credit Card Fraud Detection](Machine_Learning/Credit%20Card%20Fraud%20Detection/Credit_card_fraud_detection.ipynb)
   * Creditcardfrauddetection
