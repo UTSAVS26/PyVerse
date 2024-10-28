@@ -425,8 +425,11 @@
     * Face Recognition Script
       * [Face Recognition](Deep_Learning/File-Locking-Mechanism/Face_Recognition_Script/Face%20recognition.py)
       * [Facedetection](Deep_Learning/File-Locking-Mechanism/Face_Recognition_Script/FaceDetection.py)
-  * Mnist Digit Classification Using Neural Networks
+  * Handwritten Mathematical Equation Solver
     * Model
+      * [Data Loading](Deep_Learning/Handwritten%20Mathematical%20Equation%20Solver/model/data_loading.ipynb)
+      * [Data Preparation](Deep_Learning/Handwritten%20Mathematical%20Equation%20Solver/model/data_preparation.ipynb)
+  * Mnist Digit Classification Using Neural Networks
       * [Ann Handwritten Digit Classification](Deep_Learning/MNIST%20Digit%20Classification%20using%20Neural%20Networks/model/ANN_Handwritten_Digit_Classification.ipynb)
       * [Cnn Handwritten Digit Recogniser](Deep_Learning/MNIST%20Digit%20Classification%20using%20Neural%20Networks/model/CNN_handwritten_digit_recogniser.ipynb)
   * Medical Diagnoser
