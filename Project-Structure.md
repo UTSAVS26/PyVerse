@@ -535,12 +535,12 @@
     * [Turtle Collection Game](Game_Development/Turtle%20Collection%20Game/Turtle%20Collection%20Game.py)
   * Visual Novel  Code
     * [Novel](Game_Development/Visual_novel%20_code/Novel.py)
-  * Space Invaders
-    * [Spaceinvader](Game_Development/space_invaders/spaceinvader.py)
   * Word Games With Lives
     * [Main](Game_Development/Word%20Games%20with%20lives/main.py)
   * Word Ladder Puzzle Game
     * [Main](Game_Development/Word%20Ladder%20Puzzle%20Game/main.py)
+  * Space Invaders
+    * [Spaceinvader](Game_Development/space_invaders/spaceinvader.py)
 
 ## Generative-Ai
   * Code-Llm-Bot
