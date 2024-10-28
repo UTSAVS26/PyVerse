@@ -35,5 +35,3 @@ if guessed_word_correctly:
     print('You won! The secret word was ' + secret_word)
 else:
     print('You lost! The secret word was ' + secret_word)
-
-# Coded with 💙 by Mr. Unity Buddy
