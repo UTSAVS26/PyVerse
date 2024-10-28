@@ -287,6 +287,9 @@
   * Pomodoro Clock
     * [Main](Beginner_Projects/pomodoro_Clock/main.py)
 
+## Bird Image Classification
+  * [Bird-Classification-Using-Cnn-Efficientnetb0](Bird%20image%20classification/bird-classification-using-cnn-efficientnetb0.ipynb)
+
 ## Blockchain Development
   * Basic Python Blockchain Implementation
     * [Blockchain Demo](Blockchain_Development/Basic%20Python%20Blockchain%20Implementation/blockchain_demo.py)
@@ -722,3 +725,6 @@
   * Interactive-Code-Playground
     * [Main](Web_Development/interactive-code-playground/main.py)
     * [Temp Code](Web_Development/interactive-code-playground/temp_code.py)
+
+## Jamesweb
+  * [Galaxy-And-Nebula-Images-By-James-Web-Telescope](jamesweb/galaxy-and-nebula-images-by-james-web-telescope.ipynb)
