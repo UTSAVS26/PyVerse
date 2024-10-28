@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarked Articles</title>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom , #f0f8ff, #fbc89f);
+            font-family: 'Brush Script Empty', cursive; 
+            color: #333; 
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #EA871E; 
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .news-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            border: 1px solid #ddd; 
+            background-color: #FDA491; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            border-radius: 10px; 
+
+        }
+
+        .news-content {
+            flex: 1;
+            padding: 20px;
+            color: #555; 
+        }
+
+        .news-image {
+            max-width: 100%; 
+            height: 50%; 
+            width: 50%;
+            padding: 10px;
+            border-radius: 30px; 
+        }
+
+
+        button {
+            background-color: #1e90ff; 
+            color: #fff; 
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px; 
+            font-size: 14px;
+        }
+
+        button:hover {
+            background-color: #1c86ee; 
+        }
+
+        .word-cloud {
+            text-align: center;
+            margin-bottom: 40px; 
+        }
+        button {
+            background-color: #FF5349; 
+            color: #fff; 
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px; 
+            font-size: 14px;
+        }
+
+        button:hover {
+            background-color: #b62a23; 
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Bookmarked Articles</h1>
+    <div class="nav-buttons">
+        <a href="{{ url_for('home') }}">
+            <button>Back To Home</button>
+        </a>
+    </div>
+    <div id="bookmarked-news-list">
+        {% if articles %}
+            {% for article in articles %}
+            <div class="news-container">
+                <div class="news-content">
+                    <h2>{{ article.Title }}</h2>
+                    <p>{{ article.Content }}</p>
+                    <button onclick="removebookmarkArticle('{{ article.id }}')">Remove Bookmark</button> 
+                </div>
+                <img src="{{ article.Image }}" class="news-image" alt="News Image">
+            </div>
+            {% endfor %}
+        {% else %}
+            <p>No bookmarked articles found.</p>
+        {% endif %}
+    </div>
+
+    <script>
+        function removebookmarkArticle(articleId) {
+            fetch('/removebookmark/' + articleId, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                articleId: articleId,
+                // other data if needed
+            }),
+            }).then(response => {
+                if (response.ok) {
+                    alert('Removed Bookmark!');
+                } else {
+                    // alert('Failed to remove bookmark.');
+                    return;
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>

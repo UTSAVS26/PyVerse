@@ -1,0 +1,133 @@
+{% extends "base.html" %} {% block title %}Blockchain Frontend{% endblock %} {%
+block content %}
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">Blockchain Frontend</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarResponsive"
+      aria-controls="navbarResponsive"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Mine</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/configure"
+            >Configure
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Add nodes -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card-body">
+        <h4 class="card-title">Add Blockchain nodes</h4>
+        <p class="card-text">
+          Enter a list of Blockchain node URLs separated by comma and click on
+          "Add" button to add them to the list of nodes
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container alert alert-secondary">
+  <form id="node_form">
+    <div class="row">
+      <label class="col-sm-2">Node URLs:</label>
+      <div class="col-sm-10">
+        <input
+          type="text"
+          name="nodes"
+          id="nodes"
+          rows="2"
+          class="form-control"
+        />
+      </div>
+    </div>
+
+    <br />
+
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <input
+          type="button"
+          id="add_node_button"
+          class="btn btn-primary btn-lg"
+          value="Add Node"
+        />
+      </div>
+    </div>
+  </form>
+</div>
+
+<hr />
+
+<!-- List of nodes -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card-body">
+        <h4 class="card-title">
+          This node can retrieve Blockchain data from the following nodes:
+        </h4>
+      </div>
+    </div>
+
+    <div class="col-lg-12" id="list_nodes"></div>
+  </div>
+</div>
+{% endblock %} {% block script %}
+<script>
+  $(function () {
+    $("#add_node_button").click(function () {
+      $.ajax({
+        url: "/nodes/register",
+        type: "POST",
+        dataType: "json",
+        data: $("#node_form").serialize(),
+        success: function (response) {
+          document.getElementById("nodes").value = "";
+          window.location.reload();
+        },
+        error: function (error) {
+          console.log(error);
+        },
+      });
+    });
+
+    $.ajax({
+      url: "/nodes/get",
+      type: "GET",
+      success: function (response) {
+        let node = "";
+
+        for (let i = 0; i < response["nodes"].length; i++) {
+          node = `<li> Node ${i + 1} | <a href="http://${
+            response["nodes"][i]
+          }"> ${response["nodes"][i]} </a></li>`;
+          document.getElementById("list_nodes").innerHTML += node;
+        }
+      },
+      error: function (error) {
+        console.log(error);
+      },
+    });
+  });
+</script>
+{% endblock %}
