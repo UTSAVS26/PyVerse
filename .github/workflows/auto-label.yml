@@ -31,8 +31,8 @@ jobs:
             }
 
             if (hasHacktoberfest) {
-              labelsToAdd.push('hacktoberfest-accepted');
-              console.log('hacktoberfest-accepted label will be added for Hacktoberfest participant.');
+              labelsToAdd.push('hacktoberfest');
+              console.log('hacktoberfest label will be added for Hacktoberfest participant.');
             }
 
             // Add labels if any are present
