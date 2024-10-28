@@ -1,0 +1,237 @@
+{% extends "base.html" %} {% block title %}Blockchain Frontend{% endblock %} {%
+block content %}
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Blockchain Frontend</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarResponsive"
+      aria-controls="navbarResponsive"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/"
+            >Mine
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/configure">Configure</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--  -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card-body">
+        <h4 class="card-title">
+          Transactions to be added to the next block &nbsp;&nbsp;&nbsp;
+          <button
+            type="submit"
+            id="refresh_transactions"
+            class="btn btn-sq-xs btn-primary"
+          >
+            <i class="fa fa-refresh"></i>
+          </button>
+        </h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Unmined Transactions Table -->
+<div class="container">
+  <table
+    id="unmined_transactions_table"
+    class="table table-striped table-bordered"
+    cellspacing="0"
+    width="100%"
+  ></table>
+
+  <div class="col-lg-12 text-center">
+    <input
+      type="button"
+      id="mine_button"
+      class="btn btn-primary btn-lg"
+      value="Mine"
+    />
+  </div>
+</div>
+
+<hr />
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card-body">
+        <h4 class="card-title">
+          Transactions on the Blockchain &nbsp;&nbsp;&nbsp;
+          <button
+            type="submit"
+            id="refresh_blockchain"
+            class="btn btn-sq-xs btn-primary"
+          >
+            <i class="fa fa-refresh"></i>
+          </button>
+        </h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Blockchain Transactions Table -->
+<div class="container">
+  <table
+    id="transactions_table"
+    class="table table-striped table-bordered"
+    cellspacing="0"
+    width="100%"
+  ></table>
+</div>
+
+{% endblock %} {% block script %}
+<script>
+  $(function () {
+    $.ajax({
+      url: "/transactions/get",
+      type: "GET",
+      success: function (response) {
+        let transactions = [];
+        let count = 1;
+
+        for (let i = 0; i < response["transactions"].length; i++) {
+          let transaction = [
+            count,
+            response["transactions"][i]["recipient_address"],
+            response["transactions"][i]["sender_address"],
+            response["transactions"][i]["value"],
+          ];
+
+          transactions.push(transaction);
+
+          count += 1;
+        }
+
+        $("#unmined_transactions_table").dataTable({
+          data: transactions,
+          columns: [
+            { title: "#" },
+            { title: "Recipient Address" },
+            { title: "Sender Address" },
+            { title: "Value" },
+          ],
+          columnDefs: [
+            { targets: [1, 2, 3], render: $.fn.dataTable.render.ellipsis(25) },
+          ],
+        });
+      },
+      error: function (error) {
+        console.log(error);
+      },
+    });
+
+    $.ajax({
+      url: "/chain",
+      type: "GET",
+      success: function (response) {
+        let transactions = [];
+        let count = 1;
+
+        for (let i = 1; i < response.length; i++) {
+          for (
+            let j = 0;
+            j < response["chain"][i]["transactions"].length;
+            j++
+          ) {
+            let options = {
+              year: "numeric",
+              month: "short",
+              day: "numeric",
+              hour: "2-digit",
+              minute: "2-digit",
+              second: "2-digit",
+            };
+            let date = new Date(response["chain"][i]["timestamp"] * 1000);
+            let formattedDateTime = date.toLocaleTimeString("en-us", options);
+
+            let transaction = [
+              count,
+              response["chain"][i]["transactions"][j]["recipient_address"],
+              response["chain"][i]["transactions"][j]["sender_address"],
+              response["chain"][i]["transactions"][j]["value"],
+              formattedDateTime,
+              response["chain"][i]["block_number"],
+            ];
+            transactions.push(transaction);
+
+            count += 1;
+          }
+        }
+
+        $("#transactions_table").dataTable({
+          data: transactions,
+          columns: [
+            { title: "#" },
+            { title: "Recipient Address" },
+            { title: "Sender Address" },
+            { title: "Value" },
+            { title: "Timestamp" },
+            { title: "Block" },
+          ],
+          columnDefs: [
+            {
+              targets: [1, 2, 3, 4, 5],
+              render: $.fn.dataTable.render.ellipsis(25),
+            },
+          ],
+        });
+      },
+      error: function (error) {
+        console.log(error);
+      },
+    });
+
+    $("#mine_button").click(function () {
+      $.ajax({
+        url: "/mine",
+        type: "GET",
+        success: function (response) {
+          window.location.reload();
+        },
+        error: function (error) {
+          console.log(error);
+        },
+      });
+    });
+
+    $("#refresh_transactions").click(function () {
+      window.location.reload();
+    });
+
+    $("#refresh_blockchain").click(function () {
+      $.ajax({
+        url: "/nodes/resolve",
+        type: "GET",
+        success: function (response) {
+          window.location.reload();
+        },
+        error: function (error) {
+          console.log(error);
+        },
+      });
+    });
+  });
+</script>
+{% endblock %}
