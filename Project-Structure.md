@@ -369,6 +369,10 @@
     * [Hotel Demand Forecasting](Data_Science/Hotel%20Demand%20EDA%20and%20Forecasting%20Using%20ARIMA%20Model/Hotel%20Demand%20Forecasting.ipynb)
   * Ipl Analysis
     * [Ipl Analysis](Data_Science/IPL%20Analysis/IPL_Analysis.ipynb)
+  * Lead Conversion Case Study
+    * [Advanced-Eda](Data_Science/Lead%20Conversion%20Case%20Study/Advanced-EDA.ipynb)
+    * [Eda Feature-Engineering Outlier-Analysis](Data_Science/Lead%20Conversion%20Case%20Study/EDA_Feature-Engineering_Outlier-Analysis.ipynb)
+    * [Lead Score Model Building](Data_Science/Lead%20Conversion%20Case%20Study/Lead%20Score%20Model%20Building.ipynb)
   * Unemployment Analysis Due To Covid
     * [Unemployment Analysis](Data_Science/Unemployment%20Analysis%20due%20to%20COVID/UNEMPLOYMENT_ANALYSIS.ipynb)
   * Whatsapp Chat Analyzer
