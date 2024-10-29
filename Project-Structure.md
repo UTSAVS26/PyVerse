@@ -656,9 +656,6 @@
   * [Translation](Machine_Learning/translation.py)
   * [Utils](Machine_Learning/utils.py)
 
-## Sentiment Analysis
-  * [Code](Sentiment%20Analysis/code.py)
-
 ## Sentiment-Analysis-Of-Restaurant-Reviews
   * [Sentiment Analysis Of Restaurant Reviews](Sentiment-Analysis-Of-Restaurant-Reviews/Sentiment%20Analysis%20of%20Restaurant%20Reviews.ipynb)
 
