@@ -576,6 +576,8 @@
   * Lane Line Detection [Open Cv]
     * [Gui](Image%20processing/Lane%20Line%20Detection%20[OPEN%20CV]/gui.py)
     * [Main](Image%20processing/Lane%20Line%20Detection%20[OPEN%20CV]/main.py)
+  * Mask-Detection
+    * [Maskdetect](Image%20processing/Mask-detection/MaskDetect.py)
   * Number Plate Detection
     * [Number Plate](Image%20processing/Number%20plate%20detection/number_plate.py)
     * Ocr-Notebook
