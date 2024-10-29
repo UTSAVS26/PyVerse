@@ -480,6 +480,8 @@
       * [Model2](Deep_Learning/Spam%20Vs%20Ham%20Mail%20Classification%20[With%20Streamlit%20GUI]/Model/model2.ipynb)
   * Spoken Language Translator
     * [Main](Deep_Learning/Spoken%20Language%20Translator/main.py)
+  * Spotify Recommendation
+    * [Spotify-Playlists-Recommender-System](Deep_Learning/Spotify_recommendation/spotify-playlists-recommender-system.ipynb)
   * Sugarcane Disease Prediction
     * Models
       * [Ensemble Model](Deep_Learning/Sugarcane%20Disease%20Prediction/models/ensemble_model.ipynb)
