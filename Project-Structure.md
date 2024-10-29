@@ -491,6 +491,8 @@
     * [Traffic Accident Prediction Model Using Deep Learning](Deep_Learning/Traffic%20Accident%20Prediction%20Model%20using%20Deep%20Learning/Traffic%20Accident%20Prediction%20Model%20using%20Deep%20Learning.ipynb)
   * Yolo-Drowsiness-Detection-Main
     * [Drowsiness Detection Tutorial](Deep_Learning/YOLO-Drowsiness-Detection-main/Drowsiness%20Detection%20Tutorial.ipynb)
+  * Youtube Spam Detector
+    * [Youtube-Comments-Spam-Detection-F1-Score-96](Deep_Learning/YouTube_Spam_Detector/youtube-comments-spam-detection-f1-score-96.ipynb)
   * Smart Attendance System
     * [Face Rec](Deep_Learning/smart_attendance_system/face_rec.py)
     * [Smart Attendance](Deep_Learning/smart_attendance_system/smart_attendance.py)
