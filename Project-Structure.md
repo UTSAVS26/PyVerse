@@ -382,6 +382,9 @@
     * Face Recognition Script
       * [Face Recognition](Deep_Learning/File-Locking-Mechanism/Face_Recognition_Script/Face%20recognition.py)
       * [Facedetection](Deep_Learning/File-Locking-Mechanism/Face_Recognition_Script/FaceDetection.py)
+  * Gan-Based Art Generator Using Deep Learning
+    * Model
+      * [Gan-Based Art Generator Using Deep Learning](Deep_Learning/GAN-based%20Art%20Generator%20using%20Deep%20learning/Model/GAN-based%20Art%20Generator%20using%20Deep%20learning.ipynb)
   * Mnist Digit Classification Using Neural Networks
     * Model
       * [Ann Handwritten Digit Classification](Deep_Learning/MNIST%20Digit%20Classification%20using%20Neural%20Networks/model/ANN_Handwritten_Digit_Classification.ipynb)
