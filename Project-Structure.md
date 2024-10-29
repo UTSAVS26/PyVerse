@@ -18,6 +18,8 @@
     * [Map](Advanced_Projects/NaviBot-Voice-Assistant/map.py)
   * Plagiarism-Checker
     * [App](Advanced_Projects/Plagiarism-checker/app.py)
+  * Telegram Bot
+    * [App](Advanced_Projects/Telegram_Bot/app.py)
 
 ## Algorithms And Data Structures
   * Arrays
@@ -85,6 +87,7 @@
     * Medium-Dp-Problems
       * [Coin-Change](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/coin-change.py)
       * [Longest-Inc-Subseq](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/longest-inc-subseq.py)
+      * [Multistage-Graph](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/multistage-graph.py)
       * [Partition-Subset-Sum](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/partition-subset-sum.py)
       * [Unique-Paths](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/unique-paths.py)
   * Heapsort
@@ -568,6 +571,8 @@
   * Cold-Email-Generator
     * App
       * [App](Generative-AI/Cold-Email-Generator/app/app.py)
+  * Image-To-3D Model
+    * [Model](Generative-AI/image-to-3D%20model/model.py)
 
 ## Image Processing
   * Lane Line Detection [Open Cv]
@@ -660,6 +665,16 @@
     * [Landmark-Detection-Tfhub](Machine_Learning/Landmark_Detection/landmark-detection-tfhub.ipynb)
   * Linear Regression Using Gradient Decent
     * [Linear Regression Using Gradient Decent](Machine_Learning/Linear%20regression%20using%20gradient%20decent/Linear%20regression%20using%20gradient%20decent.ipynb)
+  * Lungcancerdetection
+    * Notebooks
+      * [Cnnresultsanalysis](Machine_Learning/LungCancerDetection/notebooks/CNNresultsAnalysis.ipynb)
+      * [Lungcancerdetection](Machine_Learning/LungCancerDetection/notebooks/LungCancerDetection.ipynb)
+    * Src
+      * Models
+        * [Cnn Model](Machine_Learning/LungCancerDetection/src/models/cnn_model.py)
+        * [Predict Model](Machine_Learning/LungCancerDetection/src/models/predict_model.py)
+        * [Train](Machine_Learning/LungCancerDetection/src/models/train.py)
+        * [Visualize Model](Machine_Learning/LungCancerDetection/src/models/visualize_model.py)
   * Movie Classification
     * [Movie Classification](Machine_Learning/Movie%20Classification/movie_classification.ipynb)
   * Multivitamine Prediction
