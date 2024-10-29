@@ -221,6 +221,8 @@
   * Chat App
     * [Chat Client](Beginner_Projects/Chat%20App/chat_client.py)
     * [Chat Server](Beginner_Projects/Chat%20App/chat_server.py)
+  * Coach
+    * [Coach](Beginner_Projects/Coach/Coach.py)
   * Currency  Convertor
     * [Currency Convertor](Beginner_Projects/Currency%20_Convertor/Currency_Convertor.py)
   * Digital Clock
