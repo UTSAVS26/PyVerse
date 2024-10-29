@@ -569,6 +569,8 @@
   * Cold-Email-Generator
     * App
       * [App](Generative-AI/Cold-Email-Generator/app/app.py)
+  * Image-To-3D Model
+    * [Model](Generative-AI/image-to-3D%20model/model.py)
 
 ## Image Processing
   * Lane Line Detection [Open Cv]
