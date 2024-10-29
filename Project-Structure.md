@@ -234,6 +234,8 @@
   * [Egg Catcher Game](Beginner_Projects/Egg_Catcher_Game.py)
   * Email Automation
     * [Email Automation](Beginner_Projects/Email_Automation/email_automation.py)
+  * Excel To Csv
+    * [Exceltocsv](Beginner_Projects/Excel%20to%20CSV/excelToCsv.py)
   * File Sorter
     * [App](Beginner_Projects/File%20Sorter/App.py)
     * Theme
