@@ -18,6 +18,8 @@
     * [Map](Advanced_Projects/NaviBot-Voice-Assistant/map.py)
   * Plagiarism-Checker
     * [App](Advanced_Projects/Plagiarism-checker/app.py)
+  * Telegram Bot
+    * [App](Advanced_Projects/Telegram_Bot/app.py)
 
 ## Algorithms And Data Structures
   * Arrays
