@@ -141,6 +141,9 @@
     * [Prefixtoinfix](Algorithms_and_Data_Structures/Stack/PrefixToInfix.py)
     * [Prefixtopostfix](Algorithms_and_Data_Structures/Stack/PrefixToPostfix.py)
     * [Stack](Algorithms_and_Data_Structures/Stack/stack.py)
+  * Strings
+    * [Longest Palindromic Substring](Algorithms_and_Data_Structures/Strings/longest_palindromic_substring.py)
+    * [Valid Anagram](Algorithms_and_Data_Structures/Strings/valid_anagram.py)
   * Timecomplexity Analyzer
     * [Checker](Algorithms_and_Data_Structures/TimeComplexity_analyzer/Checker.py)
   * Trees
