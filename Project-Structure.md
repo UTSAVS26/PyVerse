@@ -631,8 +631,8 @@
   * Svm
     * [Svm](Machine_Learning/SVM/svm.py)
     * [Test](Machine_Learning/SVM/test.py)
-  * Sentiment Analysis
-    * [Code](Machine_Learning/Sentiment%20Analysis/code.py)
+  * Sentiment Analysis Using Machine Learning
+    * [Code](Machine_Learning/Sentiment%20Analysis%20using%20machine%20learning/code.py)
   * Signature Verification Portal
     * [Dashboard](Machine_Learning/Signature_verification_portal/Dashboard.py)
     * [Validation](Machine_Learning/Signature_verification_portal/Validation.py)
