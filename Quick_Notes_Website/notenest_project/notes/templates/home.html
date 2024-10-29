@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <style>
+        body {
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+            background: linear-gradient(to right, #6a11cb, #2575fc); 
+            color: white; 
+            font-family: 'Arial', sans-serif; 
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 3em; 
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+        }
+        p {
+            font-size: 1.5em; 
+        }
+        a {
+            text-decoration: none; 
+            color: #fff; 
+            background-color: rgba(255, 255, 255, 0.2); 
+            padding: 10px 20px; 
+            border-radius: 5px; 
+            transition: background-color 0.3s ease; 
+        }
+        a:hover {
+            background-color: rgba(255, 255, 255, 0.5); 
+            text-decoration: underline; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Notes App</h1>
+    <p><a href="{% url 'note_list' %}">View Notes</a></p>
+</body>
+</html>
