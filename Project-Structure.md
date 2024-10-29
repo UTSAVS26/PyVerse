@@ -571,6 +571,8 @@
   * Cold-Email-Generator
     * App
       * [App](Generative-AI/Cold-Email-Generator/app/app.py)
+  * Image-To-3D Model
+    * [Model](Generative-AI/image-to-3D%20model/model.py)
 
 ## Image Processing
   * Lane Line Detection [Open Cv]
@@ -663,6 +665,16 @@
     * [Landmark-Detection-Tfhub](Machine_Learning/Landmark_Detection/landmark-detection-tfhub.ipynb)
   * Linear Regression Using Gradient Decent
     * [Linear Regression Using Gradient Decent](Machine_Learning/Linear%20regression%20using%20gradient%20decent/Linear%20regression%20using%20gradient%20decent.ipynb)
+  * Lungcancerdetection
+    * Notebooks
+      * [Cnnresultsanalysis](Machine_Learning/LungCancerDetection/notebooks/CNNresultsAnalysis.ipynb)
+      * [Lungcancerdetection](Machine_Learning/LungCancerDetection/notebooks/LungCancerDetection.ipynb)
+    * Src
+      * Models
+        * [Cnn Model](Machine_Learning/LungCancerDetection/src/models/cnn_model.py)
+        * [Predict Model](Machine_Learning/LungCancerDetection/src/models/predict_model.py)
+        * [Train](Machine_Learning/LungCancerDetection/src/models/train.py)
+        * [Visualize Model](Machine_Learning/LungCancerDetection/src/models/visualize_model.py)
   * Movie Classification
     * [Movie Classification](Machine_Learning/Movie%20Classification/movie_classification.ipynb)
   * Multivitamine Prediction
