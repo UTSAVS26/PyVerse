@@ -1,0 +1,49 @@
+name: Auto Label Issue
+
+on:
+  issues:
+    types: [opened, reopened, edited]
+
+jobs:
+  label_issue:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Label Issue
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const issue = context.payload.issue;
+            const issueBody = issue.body ? issue.body.toLowerCase() : '';
+
+            // Check for participation roles in the issue body
+            const hasGSSOC = issueBody.includes('gssoc');
+            const hasHacktoberfest = issueBody.includes('hacktoberfest');
+
+            const labelsToAdd = [];
+
+            // Add labels based on participation roles
+            if (hasGSSOC) {
+              labelsToAdd.push('gssoc-ext');
+              console.log('gssoc-ext label will be added for GSSOC participant.');
+            }
+
+            if (hasHacktoberfest) {
+              labelsToAdd.push('hacktoberfest');
+              console.log('hacktoberfest label will be added for Hacktoberfest participant.');
+            }
+
+            // Add labels if any are present
+            if (labelsToAdd.length > 0) {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                labels: labelsToAdd
+              });
+              console.log(`Added labels: ${labelsToAdd.join(', ')}`);
+            } else {
+              console.log('No relevant participation role found. Skipping label addition.');
+            }
