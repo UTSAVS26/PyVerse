@@ -482,6 +482,8 @@
       * [Model2](Deep_Learning/Spam%20Vs%20Ham%20Mail%20Classification%20[With%20Streamlit%20GUI]/Model/model2.ipynb)
   * Spoken Language Translator
     * [Main](Deep_Learning/Spoken%20Language%20Translator/main.py)
+  * Spotify Recommendation
+    * [Spotify-Playlists-Recommender-System](Deep_Learning/Spotify_recommendation/spotify-playlists-recommender-system.ipynb)
   * Sugarcane Disease Prediction
     * Models
       * [Ensemble Model](Deep_Learning/Sugarcane%20Disease%20Prediction/models/ensemble_model.ipynb)
@@ -493,8 +495,6 @@
     * [Traffic Accident Prediction Model Using Deep Learning](Deep_Learning/Traffic%20Accident%20Prediction%20Model%20using%20Deep%20Learning/Traffic%20Accident%20Prediction%20Model%20using%20Deep%20Learning.ipynb)
   * Yolo-Drowsiness-Detection-Main
     * [Drowsiness Detection Tutorial](Deep_Learning/YOLO-Drowsiness-Detection-main/Drowsiness%20Detection%20Tutorial.ipynb)
-  * Youtube Spam Detector
-    * [Youtube-Comments-Spam-Detection-F1-Score-96](Deep_Learning/YouTube_Spam_Detector/youtube-comments-spam-detection-f1-score-96.ipynb)
   * Smart Attendance System
     * [Face Rec](Deep_Learning/smart_attendance_system/face_rec.py)
     * [Smart Attendance](Deep_Learning/smart_attendance_system/smart_attendance.py)
