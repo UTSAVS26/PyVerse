@@ -3,7 +3,7 @@ from django.shortcuts import render
 from .forms import CurrencyConverterForm
 from decimal import Decimal, ROUND_DOWN
 
-API_KEY = ""  # add your API key from exhangerate api
+API_KEY = "8db4f338e84f0e6b160b78ea"  # add your API key from exhangerate api
 
 
 def currency_converter(request):
