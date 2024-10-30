@@ -386,6 +386,10 @@
     * [Main](Cybersecurity_Tools/bruteforce_password_cracking/main.py)
   * Network Scanner
     * [Main](Cybersecurity_Tools/network_Scanner/main.py)
+  * Phishing Detection
+    * [Features Extraction](Cybersecurity_Tools/phishing_detection/features_extraction.py)
+    * [Phishing-Website-Detection-Voting-Classifier](Cybersecurity_Tools/phishing_detection/phishing-website-detection-voting-classifier.ipynb)
+    * [Test](Cybersecurity_Tools/phishing_detection/test.py)
 
 ## Data Science
   * Ai Virtual Painter
