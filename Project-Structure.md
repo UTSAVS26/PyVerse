@@ -260,6 +260,20 @@
     * [Qr-Code Generator](Beginner_Projects/QR%20Generator/QR-code_generator.py)
     * [Qr Code Generator Gui](Beginner_Projects/QR%20Generator/QR_code_generator_GUI.py)
     * [Generate Qrcode](Beginner_Projects/QR%20Generator/generate_qrcode.py)
+  * Quick Notes Application
+    * Nodenest Application
+      * [Manage](Beginner_Projects/Quick_Notes_application/nodenest_application/manage.py)
+      * Notenest Project
+        * [Asgi](Beginner_Projects/Quick_Notes_application/nodenest_application/notenest_project/asgi.py)
+        * [Settings](Beginner_Projects/Quick_Notes_application/nodenest_application/notenest_project/settings.py)
+        * [Urls](Beginner_Projects/Quick_Notes_application/nodenest_application/notenest_project/urls.py)
+        * [Wsgi](Beginner_Projects/Quick_Notes_application/nodenest_application/notenest_project/wsgi.py)
+      * Notes
+        * [Admin](Beginner_Projects/Quick_Notes_application/nodenest_application/notes/admin.py)
+        * [Forms](Beginner_Projects/Quick_Notes_application/nodenest_application/notes/forms.py)
+        * [Models](Beginner_Projects/Quick_Notes_application/nodenest_application/notes/models.py)
+        * [Urls](Beginner_Projects/Quick_Notes_application/nodenest_application/notes/urls.py)
+        * [Views](Beginner_Projects/Quick_Notes_application/nodenest_application/notes/views.py)
   * Recipe Finder
     * [Recipe Finder](Beginner_Projects/Recipe_Finder/recipe_finder.py)
   * Research-Snap
