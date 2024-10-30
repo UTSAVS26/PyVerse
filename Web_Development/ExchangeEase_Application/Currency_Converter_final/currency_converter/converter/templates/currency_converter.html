@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      form {
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+      }
+
+      h1 {
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 12px;
+        border-radius: 6px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      h2 {
+        color: #333;
+        margin-top: 20px;
+      }
+
+      h3 {
+        color: red;
+        margin-top: 20px;
+      }
+
+      @media (max-width: 400px) {
+        form {
+          padding: 20px;
+        }
+
+        button {
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <form method="post">
+      <h1>Currency Converter</h1>
+      {% csrf_token %} {{ form.as_p }}
+      <button type="submit">Convert</button>
+
+      {% if result %}
+      <h2>Converted Amount: {{ result }}</h2>
+      {% endif %} {% if error_message %}
+      <h3>{{ error_message }}</h3>
+      {% endif %}
+    </form>
+  </body>
+</html>
