@@ -81,6 +81,8 @@
     * [Test Main](Algorithms_and_Data_Structures/Dijkstra/test_main.py)
   * Dynamic-Programming-Series
     * Basic-Dp-Problems
+      * Best-Time-To-Buy-And-Sell-Stock
+        * [Program](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/best-time-to-buy-and-sell-stock/program.py)
       * [Climbing-Stairs](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/climbing-stairs.py)
       * [Fibonacci-Seq](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/fibonacci-seq.py)
       * [House-Robber](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/house-robber.py)
@@ -234,6 +236,8 @@
   * [Egg Catcher Game](Beginner_Projects/Egg_Catcher_Game.py)
   * Email Automation
     * [Email Automation](Beginner_Projects/Email_Automation/email_automation.py)
+  * Excel To Csv
+    * [Exceltocsv](Beginner_Projects/Excel%20to%20CSV/excelToCsv.py)
   * File Sorter
     * [App](Beginner_Projects/File%20Sorter/App.py)
     * Theme
@@ -260,6 +264,20 @@
     * [Qr-Code Generator](Beginner_Projects/QR%20Generator/QR-code_generator.py)
     * [Qr Code Generator Gui](Beginner_Projects/QR%20Generator/QR_code_generator_GUI.py)
     * [Generate Qrcode](Beginner_Projects/QR%20Generator/generate_qrcode.py)
+  * Quick Notes Application
+    * Nodenest Application
+      * [Manage](Beginner_Projects/Quick_Notes_application/nodenest_application/manage.py)
+      * Notenest Project
+        * [Asgi](Beginner_Projects/Quick_Notes_application/nodenest_application/notenest_project/asgi.py)
+        * [Settings](Beginner_Projects/Quick_Notes_application/nodenest_application/notenest_project/settings.py)
+        * [Urls](Beginner_Projects/Quick_Notes_application/nodenest_application/notenest_project/urls.py)
+        * [Wsgi](Beginner_Projects/Quick_Notes_application/nodenest_application/notenest_project/wsgi.py)
+      * Notes
+        * [Admin](Beginner_Projects/Quick_Notes_application/nodenest_application/notes/admin.py)
+        * [Forms](Beginner_Projects/Quick_Notes_application/nodenest_application/notes/forms.py)
+        * [Models](Beginner_Projects/Quick_Notes_application/nodenest_application/notes/models.py)
+        * [Urls](Beginner_Projects/Quick_Notes_application/nodenest_application/notes/urls.py)
+        * [Views](Beginner_Projects/Quick_Notes_application/nodenest_application/notes/views.py)
   * Recipe Finder
     * [Recipe Finder](Beginner_Projects/Recipe_Finder/recipe_finder.py)
   * Research-Snap
@@ -447,6 +465,8 @@
     * Face Recognition Script
       * [Face Recognition](Deep_Learning/File-Locking-Mechanism/Face_Recognition_Script/Face%20recognition.py)
       * [Facedetection](Deep_Learning/File-Locking-Mechanism/Face_Recognition_Script/FaceDetection.py)
+  * Image Caption Generation With Audio Output
+    * [App](Deep_Learning/Image%20Caption%20Generation%20with%20Audio%20Output/app.py)
   * Mnist Digit Classification Using Neural Networks
     * Model
       * [Ann Handwritten Digit Classification](Deep_Learning/MNIST%20Digit%20Classification%20using%20Neural%20Networks/model/ANN_Handwritten_Digit_Classification.ipynb)
@@ -483,6 +503,8 @@
       * [Model2](Deep_Learning/Spam%20Vs%20Ham%20Mail%20Classification%20[With%20Streamlit%20GUI]/Model/model2.ipynb)
   * Spoken Language Translator
     * [Main](Deep_Learning/Spoken%20Language%20Translator/main.py)
+  * Spotify Recommendation
+    * [Spotify-Playlists-Recommender-System](Deep_Learning/Spotify_recommendation/spotify-playlists-recommender-system.ipynb)
   * Sugarcane Disease Prediction
     * Models
       * [Ensemble Model](Deep_Learning/Sugarcane%20Disease%20Prediction/models/ensemble_model.ipynb)
@@ -494,8 +516,6 @@
     * [Traffic Accident Prediction Model Using Deep Learning](Deep_Learning/Traffic%20Accident%20Prediction%20Model%20using%20Deep%20Learning/Traffic%20Accident%20Prediction%20Model%20using%20Deep%20Learning.ipynb)
   * Yolo-Drowsiness-Detection-Main
     * [Drowsiness Detection Tutorial](Deep_Learning/YOLO-Drowsiness-Detection-main/Drowsiness%20Detection%20Tutorial.ipynb)
-  * Youtube Spam Detector
-    * [Youtube-Comments-Spam-Detection-F1-Score-96](Deep_Learning/YouTube_Spam_Detector/youtube-comments-spam-detection-f1-score-96.ipynb)
   * Smart Attendance System
     * [Face Rec](Deep_Learning/smart_attendance_system/face_rec.py)
     * [Smart Attendance](Deep_Learning/smart_attendance_system/smart_attendance.py)
@@ -712,8 +732,8 @@
   * Svm
     * [Svm](Machine_Learning/SVM/svm.py)
     * [Test](Machine_Learning/SVM/test.py)
-  * Sentiment Analysis
-    * [Code](Machine_Learning/Sentiment%20Analysis/code.py)
+  * Sentiment Analysis Using Machine Learning
+    * [Code](Machine_Learning/Sentiment%20Analysis%20using%20machine%20learning/code.py)
   * Signature Verification Portal
     * [Dashboard](Machine_Learning/Signature_verification_portal/Dashboard.py)
     * [Validation](Machine_Learning/Signature_verification_portal/Validation.py)
