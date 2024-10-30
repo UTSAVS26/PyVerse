@@ -44,6 +44,7 @@
     * Branch And Bound
       * [8 Puzzle](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Branch_and_Bound/8_puzzle.py)
     * Divide And Conquer
+      * [Strassen'S Matrix Multiplication](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Divide_and_Conquer/Strassen's_Matrix_Multiplication.py)
       * [Binary Search](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Divide_and_Conquer/binary_search.py)
       * [Merge Sort](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Divide_and_Conquer/merge_sort.py)
       * [Min Max](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Divide_and_Conquer/min_max.py)
