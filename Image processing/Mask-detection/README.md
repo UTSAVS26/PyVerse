@@ -32,7 +32,7 @@ pip install tensorflow opencv-python numpy
 
 ## Dataset Structure
 The dataset should contain two main folders: `annotations` and `images`. The structure should look like this:
-
+Dataset can be downloaded using the link: https://www.kaggle.com/datasets/andrewmvd/face-mask-detection/data 
 ```
 dataset/
 │
