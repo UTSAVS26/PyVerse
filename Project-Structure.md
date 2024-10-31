@@ -640,7 +640,7 @@
     * [Train Model](Image%20processing/covid_face_mask/train_model.ipynb)
 
 ## Machine Learning
-  * AI-Powered Study Assistant
+  * Ai-Powered Study Assistant Python
     * [App](Machine_Learning/AI-powered%20Study%20assistant%20python/app.py)
   * Ai Language Learning Assistant
     * [Ai-Language-Learning-Assistant](Machine_Learning/AI_Language_Learning_Assistant/AI-Language-Learning-Assistant.ipynb)
