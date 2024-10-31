@@ -686,6 +686,8 @@
   * Landmark Detection
     * [App](Machine_Learning/Landmark_Detection/app.py)
     * [Landmark-Detection-Tfhub](Machine_Learning/Landmark_Detection/landmark-detection-tfhub.ipynb)
+  * Leaf Disease Analyzer Using Ml
+    * [Model Training](Machine_Learning/Leaf%20disease%20analyzer%20using%20ML/Model_Training.ipynb)
   * Linear Regression Using Gradient Decent
     * [Linear Regression Using Gradient Decent](Machine_Learning/Linear%20regression%20using%20gradient%20decent/Linear%20regression%20using%20gradient%20decent.ipynb)
   * Lungcancerdetection
