@@ -566,6 +566,8 @@
     * [Main](Game_Development/Map%20Game/main.py)
   * Mastermind
     * [Mastermind](Game_Development/MasterMind/mastermind.py)
+  * Math Wizard Game
+    * [Main](Game_Development/Math%20Wizard%20Game/main.py)
   * Maze
     * [Maze](Game_Development/Maze/Maze.py)
   * Memory Typing Game
