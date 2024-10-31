@@ -141,6 +141,7 @@
     * [Sublistsearch](Algorithms_and_Data_Structures/SearchingAlgorithms/SublistSearch.py)
     * [Ternarysearch](Algorithms_and_Data_Structures/SearchingAlgorithms/TernarySearch.py)
   * Stack
+    * [Balanced Parentheses Checker](Algorithms_and_Data_Structures/Stack/Balanced_parentheses_checker.py)
     * [Infixtopostifix](Algorithms_and_Data_Structures/Stack/InfixToPostifix.py)
     * [Infixtoprefix](Algorithms_and_Data_Structures/Stack/InfixToPrefix.py)
     * [Postfixtoinfix](Algorithms_and_Data_Structures/Stack/PostfixToInfix.py)
@@ -386,6 +387,10 @@
     * [Main](Cybersecurity_Tools/bruteforce_password_cracking/main.py)
   * Network Scanner
     * [Main](Cybersecurity_Tools/network_Scanner/main.py)
+  * Phishing Detection
+    * [Features Extraction](Cybersecurity_Tools/phishing_detection/features_extraction.py)
+    * [Phishing-Website-Detection-Voting-Classifier](Cybersecurity_Tools/phishing_detection/phishing-website-detection-voting-classifier.ipynb)
+    * [Test](Cybersecurity_Tools/phishing_detection/test.py)
 
 ## Data Science
   * Ai Virtual Painter
@@ -462,6 +467,9 @@
     * Face Recognition Script
       * [Face Recognition](Deep_Learning/File-Locking-Mechanism/Face_Recognition_Script/Face%20recognition.py)
       * [Facedetection](Deep_Learning/File-Locking-Mechanism/Face_Recognition_Script/FaceDetection.py)
+  * Gan-Based Art Generator Using Deep Learning
+    * Model
+      * [Gan-Based Art Generator Using Deep Learning](Deep_Learning/GAN-based%20Art%20Generator%20using%20Deep%20learning/Model/GAN-based%20Art%20Generator%20using%20Deep%20learning.ipynb)
   * Image Caption Generation With Audio Output
     * [App](Deep_Learning/Image%20Caption%20Generation%20with%20Audio%20Output/app.py)
   * Mnist Digit Classification Using Neural Networks
@@ -683,6 +691,8 @@
   * Landmark Detection
     * [App](Machine_Learning/Landmark_Detection/app.py)
     * [Landmark-Detection-Tfhub](Machine_Learning/Landmark_Detection/landmark-detection-tfhub.ipynb)
+  * Leaf Disease Analyzer Using Ml
+    * [Model Training](Machine_Learning/Leaf%20disease%20analyzer%20using%20ML/Model_Training.ipynb)
   * Linear Regression Using Gradient Decent
     * [Linear Regression Using Gradient Decent](Machine_Learning/Linear%20regression%20using%20gradient%20decent/Linear%20regression%20using%20gradient%20decent.ipynb)
   * Lungcancerdetection
