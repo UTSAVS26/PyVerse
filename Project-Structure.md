@@ -473,6 +473,8 @@
   * Gan-Based Art Generator Using Deep Learning
     * Model
       * [Gan-Based Art Generator Using Deep Learning](Deep_Learning/GAN-based%20Art%20Generator%20using%20Deep%20learning/Model/GAN-based%20Art%20Generator%20using%20Deep%20learning.ipynb)
+  * Human Action Detection
+    * [Human-Action-Detection-Artificial-Intelligence-Cnn](Deep_Learning/Human%20Action%20Detection/human-action-detection-artificial-intelligence-cnn.ipynb)
   * Image Caption Generation With Audio Output
     * [App](Deep_Learning/Image%20Caption%20Generation%20with%20Audio%20Output/app.py)
   * Mnist Digit Classification Using Neural Networks
