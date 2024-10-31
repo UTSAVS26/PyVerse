@@ -18,6 +18,8 @@
     * [Map](Advanced_Projects/NaviBot-Voice-Assistant/map.py)
   * Plagiarism-Checker
     * [App](Advanced_Projects/Plagiarism-checker/app.py)
+  * Telegram Bot
+    * [App](Advanced_Projects/Telegram_Bot/app.py)
 
 ## Algorithms And Data Structures
   * Arrays
@@ -79,18 +81,25 @@
     * [Test Main](Algorithms_and_Data_Structures/Dijkstra/test_main.py)
   * Dynamic-Programming-Series
     * Basic-Dp-Problems
+      * Best-Time-To-Buy-And-Sell-Stock
+        * [Program](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/best-time-to-buy-and-sell-stock/program.py)
       * [Climbing-Stairs](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/climbing-stairs.py)
       * [Fibonacci-Seq](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/fibonacci-seq.py)
       * [House-Robber](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/house-robber.py)
     * Medium-Dp-Problems
       * [Coin-Change](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/coin-change.py)
       * [Longest-Inc-Subseq](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/longest-inc-subseq.py)
+      * [Multistage-Graph](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/multistage-graph.py)
       * [Partition-Subset-Sum](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/partition-subset-sum.py)
       * [Unique-Paths](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/unique-paths.py)
   * Heapsort
     * [Heapsortvisualizer](Algorithms_and_Data_Structures/HeapSort/heapsortvisualizer.py)
     * [Timecomplexity1](Algorithms_and_Data_Structures/HeapSort/timecomplexity1.py)
   * Linked List
+    * Clone A List With Random Pointers
+      * [Program](Algorithms_and_Data_Structures/Linked%20List/Clone_a_List_with_Random_Pointers/program.py)
+    * Detect Cycle In List
+      * [Program](Algorithms_and_Data_Structures/Linked%20List/Detect_Cycle_in_List/program.py)
     * [Menu Driven Code For Circular Doubly Linkedlist](Algorithms_and_Data_Structures/Linked%20List/Menu_Driven_Code_for_Circular_Doubly_LinkedList.py)
     * [Menu Driven Code For Circular Linkedlist](Algorithms_and_Data_Structures/Linked%20List/Menu_Driven_Code_for_Circular_LinkedList.py)
     * [Menu Driven Code For Doubly Linkedlist](Algorithms_and_Data_Structures/Linked%20List/Menu_Driven_Code_for_Doubly_LinkedList.py)
@@ -132,6 +141,7 @@
     * [Sublistsearch](Algorithms_and_Data_Structures/SearchingAlgorithms/SublistSearch.py)
     * [Ternarysearch](Algorithms_and_Data_Structures/SearchingAlgorithms/TernarySearch.py)
   * Stack
+    * [Balanced Parentheses Checker](Algorithms_and_Data_Structures/Stack/Balanced_parentheses_checker.py)
     * [Infixtopostifix](Algorithms_and_Data_Structures/Stack/InfixToPostifix.py)
     * [Infixtoprefix](Algorithms_and_Data_Structures/Stack/InfixToPrefix.py)
     * [Postfixtoinfix](Algorithms_and_Data_Structures/Stack/PostfixToInfix.py)
@@ -139,9 +149,13 @@
     * [Prefixtoinfix](Algorithms_and_Data_Structures/Stack/PrefixToInfix.py)
     * [Prefixtopostfix](Algorithms_and_Data_Structures/Stack/PrefixToPostfix.py)
     * [Stack](Algorithms_and_Data_Structures/Stack/stack.py)
+  * Strings
+    * [Longest Palindromic Substring](Algorithms_and_Data_Structures/Strings/longest_palindromic_substring.py)
+    * [Valid Anagram](Algorithms_and_Data_Structures/Strings/valid_anagram.py)
   * Timecomplexity Analyzer
     * [Checker](Algorithms_and_Data_Structures/TimeComplexity_analyzer/Checker.py)
   * Trees
+    * [Menu Driven Code For Redblack Tree](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_For_RedBlack_Tree.py)
     * [Menu Driven Code For Avl Tree](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Avl_Tree.py)
     * [Menu Driven Code For Binary Search Tree](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Binary_Search_Tree.py)
     * [Menu Driven Code For Binary Tree](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Binary_Tree.py)
@@ -157,6 +171,9 @@
     * [Closest Pair Of Points](Algorithms_and_Data_Structures/closest_pair_of_points/closest_pair_of_points.py)
   * Graham Scan
     * [Convex Hull Graham Scan](Algorithms_and_Data_Structures/graham_scan/convex_hull_graham_scan.py)
+  * Queue Visualizer
+    * [All](Algorithms_and_Data_Structures/queue_visualizer/all.py)
+    * [Circular](Algorithms_and_Data_Structures/queue_visualizer/circular.py)
   * Sorting Algorithms
     * [Bubble Sort](Algorithms_and_Data_Structures/sorting_algorithms/Bubble_Sort.py)
     * [Counting Sort](Algorithms_and_Data_Structures/sorting_algorithms/Counting_sort.py)
@@ -211,11 +228,17 @@
   * Chat App
     * [Chat Client](Beginner_Projects/Chat%20App/chat_client.py)
     * [Chat Server](Beginner_Projects/Chat%20App/chat_server.py)
+  * Coach
+    * [Coach](Beginner_Projects/Coach/Coach.py)
+  * Currency  Convertor
+    * [Currency Convertor](Beginner_Projects/Currency%20_Convertor/Currency_Convertor.py)
   * Digital Clock
     * [Digital Clock](Beginner_Projects/Digital%20Clock/digital_clock.py)
   * [Egg Catcher Game](Beginner_Projects/Egg_Catcher_Game.py)
   * Email Automation
     * [Email Automation](Beginner_Projects/Email_Automation/email_automation.py)
+  * Excel To Csv
+    * [Exceltocsv](Beginner_Projects/Excel%20to%20CSV/excelToCsv.py)
   * File Sorter
     * [App](Beginner_Projects/File%20Sorter/App.py)
     * Theme
@@ -242,6 +265,22 @@
     * [Qr-Code Generator](Beginner_Projects/QR%20Generator/QR-code_generator.py)
     * [Qr Code Generator Gui](Beginner_Projects/QR%20Generator/QR_code_generator_GUI.py)
     * [Generate Qrcode](Beginner_Projects/QR%20Generator/generate_qrcode.py)
+  * Quick Notes Application
+    * Nodenest Application
+      * [Manage](Beginner_Projects/Quick_Notes_application/nodenest_application/manage.py)
+      * Notenest Project
+        * [Asgi](Beginner_Projects/Quick_Notes_application/nodenest_application/notenest_project/asgi.py)
+        * [Settings](Beginner_Projects/Quick_Notes_application/nodenest_application/notenest_project/settings.py)
+        * [Urls](Beginner_Projects/Quick_Notes_application/nodenest_application/notenest_project/urls.py)
+        * [Wsgi](Beginner_Projects/Quick_Notes_application/nodenest_application/notenest_project/wsgi.py)
+      * Notes
+        * [Admin](Beginner_Projects/Quick_Notes_application/nodenest_application/notes/admin.py)
+        * [Forms](Beginner_Projects/Quick_Notes_application/nodenest_application/notes/forms.py)
+        * [Models](Beginner_Projects/Quick_Notes_application/nodenest_application/notes/models.py)
+        * [Urls](Beginner_Projects/Quick_Notes_application/nodenest_application/notes/urls.py)
+        * [Views](Beginner_Projects/Quick_Notes_application/nodenest_application/notes/views.py)
+  * Recipe Finder
+    * [Recipe Finder](Beginner_Projects/Recipe_Finder/recipe_finder.py)
   * Research-Snap
     * [App](Beginner_Projects/Research-Snap/app.py)
   * Skillsync
@@ -284,6 +323,9 @@
   * Pomodoro Clock
     * [Main](Beginner_Projects/pomodoro_Clock/main.py)
 
+## Bird Image Classification
+  * [Bird-Classification-Using-Cnn-Efficientnetb0](Bird%20image%20classification/bird-classification-using-cnn-efficientnetb0.ipynb)
+
 ## Blockchain Development
   * Basic Python Blockchain Implementation
     * [Blockchain Demo](Blockchain_Development/Basic%20Python%20Blockchain%20Implementation/blockchain_demo.py)
@@ -302,6 +344,8 @@
   * Ball-Tracking
     * [Output](Computer%20Vision/Ball-Tracking/Output.ipynb)
     * [Project](Computer%20Vision/Ball-Tracking/Project.ipynb)
+  * Drowsiness Detection System
+    * [Main](Computer%20Vision/Drowsiness%20Detection%20System/main.py)
   * Volume Control Using Hand Gesture
     * [Gesturevolume](Computer%20Vision/Volume%20Control%20Using%20Hand%20Gesture/GestureVolume.py)
     * [Handtrackingmodule](Computer%20Vision/Volume%20Control%20Using%20Hand%20Gesture/HandTrackingModule.py)
@@ -317,6 +361,8 @@
     * [File Integrity Checker](Cybersecurity_Tools/File%20Integrity%20Checker/file_integrity_checker.py)
   * File Encryption Tool
     * [Encryption](Cybersecurity_Tools/File_encryption_tool/Encryption.py)
+  * Ids Ips Tool
+    * [Ids Ips](Cybersecurity_Tools/IDS_IPS%20Tool/ids_ips.py)
   * Keylogger
     * [Keylogger](Cybersecurity_Tools/Keylogger/keylogger.py)
   * Netwrok Packet Analyzer
@@ -327,16 +373,24 @@
     * [Predict](Cybersecurity_Tools/PDF_Malware_Detection/predict.py)
   * Packet-Sniffer
     * [Packetsniffer](Cybersecurity_Tools/Packet-sniffer/packetsniffer.py)
+  * Password Strength Checker
+    * [Password Strength Checker](Cybersecurity_Tools/Password%20Strength%20Checker/password_strength_checker.py)
   * Phishing Detection Tool
     * [Phishing Detection](Cybersecurity_Tools/Phishing%20detection%20tool/phishing_detection.py)
   * Pixel Decoder
     * [Pixel Decoder](Cybersecurity_Tools/Pixel_Decoder/pixel_decoder.py)
   * Vidforensicstool
     * [Main](Cybersecurity_Tools/VidForensicsTool/main.py)
+  * Web Application Firewall
+    * [Waf](Cybersecurity_Tools/Web%20Application%20Firewall/waf.py)
   * Bruteforce Password Cracking
     * [Main](Cybersecurity_Tools/bruteforce_password_cracking/main.py)
   * Network Scanner
     * [Main](Cybersecurity_Tools/network_Scanner/main.py)
+  * Phishing Detection
+    * [Features Extraction](Cybersecurity_Tools/phishing_detection/features_extraction.py)
+    * [Phishing-Website-Detection-Voting-Classifier](Cybersecurity_Tools/phishing_detection/phishing-website-detection-voting-classifier.ipynb)
+    * [Test](Cybersecurity_Tools/phishing_detection/test.py)
 
 ## Data Science
   * Ai Virtual Painter
@@ -359,6 +413,10 @@
     * [Hotel Demand Forecasting](Data_Science/Hotel%20Demand%20EDA%20and%20Forecasting%20Using%20ARIMA%20Model/Hotel%20Demand%20Forecasting.ipynb)
   * Ipl Analysis
     * [Ipl Analysis](Data_Science/IPL%20Analysis/IPL_Analysis.ipynb)
+  * Lead Conversion Case Study
+    * [Advanced-Eda](Data_Science/Lead%20Conversion%20Case%20Study/Advanced-EDA.ipynb)
+    * [Eda Feature-Engineering Outlier-Analysis](Data_Science/Lead%20Conversion%20Case%20Study/EDA_Feature-Engineering_Outlier-Analysis.ipynb)
+    * [Lead Score Model Building](Data_Science/Lead%20Conversion%20Case%20Study/Lead%20Score%20Model%20Building.ipynb)
   * Unemployment Analysis Due To Covid
     * [Unemployment Analysis](Data_Science/Unemployment%20Analysis%20due%20to%20COVID/UNEMPLOYMENT_ANALYSIS.ipynb)
   * Whatsapp Chat Analyzer
@@ -375,6 +433,9 @@
     * [Main](Data_Science/traffic_vs_zombie_game/main.py)
 
 ## Deep Learning
+  * Anomaly Detection In Time Series
+    * Model
+      * [Anomaly Detection In Time Series](Deep_Learning/Anomaly%20Detection%20in%20Time%20Series/Model/Anomaly%20Detection%20in%20Time%20Series.ipynb)
   * Banknifty Index Price Prediction Lstm
     * [Banknifty Index Price Prediction](Deep_Learning/BankNifty%20Index%20Price%20Prediction%20LSTM/BankNifty%20Index%20Price%20Prediction.ipynb)
   * Bird Species Classification
@@ -409,6 +470,11 @@
     * Face Recognition Script
       * [Face Recognition](Deep_Learning/File-Locking-Mechanism/Face_Recognition_Script/Face%20recognition.py)
       * [Facedetection](Deep_Learning/File-Locking-Mechanism/Face_Recognition_Script/FaceDetection.py)
+  * Gan-Based Art Generator Using Deep Learning
+    * Model
+      * [Gan-Based Art Generator Using Deep Learning](Deep_Learning/GAN-based%20Art%20Generator%20using%20Deep%20learning/Model/GAN-based%20Art%20Generator%20using%20Deep%20learning.ipynb)
+  * Image Caption Generation With Audio Output
+    * [App](Deep_Learning/Image%20Caption%20Generation%20with%20Audio%20Output/app.py)
   * Mnist Digit Classification Using Neural Networks
     * Model
       * [Ann Handwritten Digit Classification](Deep_Learning/MNIST%20Digit%20Classification%20using%20Neural%20Networks/model/ANN_Handwritten_Digit_Classification.ipynb)
@@ -445,6 +511,8 @@
       * [Model2](Deep_Learning/Spam%20Vs%20Ham%20Mail%20Classification%20[With%20Streamlit%20GUI]/Model/model2.ipynb)
   * Spoken Language Translator
     * [Main](Deep_Learning/Spoken%20Language%20Translator/main.py)
+  * Spotify Recommendation
+    * [Spotify-Playlists-Recommender-System](Deep_Learning/Spotify_recommendation/spotify-playlists-recommender-system.ipynb)
   * Sugarcane Disease Prediction
     * Models
       * [Ensemble Model](Deep_Learning/Sugarcane%20Disease%20Prediction/models/ensemble_model.ipynb)
@@ -476,10 +544,14 @@
     * [Main](Game_Development/Bubble%20Shoot/main.py)
   * Card Quest
     * [Cards](Game_Development/Card%20quest/Cards.py)
+  * Catch The Fruit
+    * [Catch The Fruit](Game_Development/Catch_The_Fruit/Catch_the_fruit.py)
   * Crossword Game
     * [Crossword](Game_Development/Crossword%20Game/crossword.py)
   * Dice Rolling Simulator
     * [Main3](Game_Development/Dice_rolling_simulator/main3.py)
+  * Fidget Spinner
+    * [Main](Game_Development/Fidget%20Spinner/main.py)
   * Flappy Bird
     * [Main](Game_Development/Flappy_Bird/main.py)
   * Hangman-Main
@@ -492,6 +564,8 @@
     * [Mastermind](Game_Development/MasterMind/mastermind.py)
   * Maze
     * [Maze](Game_Development/Maze/Maze.py)
+  * Memory Typing Game
+    * [Main](Game_Development/Memory%20Typing%20Game/main.py)
   * Number Guessing Game
     * [Main](Game_Development/Number%20Guessing%20Game/main.py)
   * Pig Dice Game
@@ -515,6 +589,12 @@
     * [Turtle Collection Game](Game_Development/Turtle%20Collection%20Game/Turtle%20Collection%20Game.py)
   * Visual Novel  Code
     * [Novel](Game_Development/Visual_novel%20_code/Novel.py)
+  * Word Games With Lives
+    * [Main](Game_Development/Word%20Games%20with%20lives/main.py)
+  * Word Ladder Puzzle Game
+    * [Main](Game_Development/Word%20Ladder%20Puzzle%20Game/main.py)
+  * Space Invaders
+    * [Spaceinvader](Game_Development/space_invaders/spaceinvader.py)
 
 ## Generative-Ai
   * Code-Llm-Bot
@@ -522,6 +602,8 @@
   * Cold-Email-Generator
     * App
       * [App](Generative-AI/Cold-Email-Generator/app/app.py)
+  * Image-To-3D Model
+    * [Model](Generative-AI/image-to-3D%20model/model.py)
 
 ## Image Processing
   * Lane Line Detection [Open Cv]
@@ -551,6 +633,8 @@
       * [Spectroscopy Regression](Image%20processing/PhotoSpectroscope/Scource/Spectroscopy%20Regression.py)
     * Theme
       * [Example](Image%20processing/PhotoSpectroscope/Theme/example.py)
+  * Real-Time-Feature-Detection-And-Matching
+    * [Main](Image%20processing/Real-Time-Feature-Detection-and-Matching/Main.py)
   * Covid Face Mask
     * [Test](Image%20processing/covid_face_mask/test.py)
     * [Train Model](Image%20processing/covid_face_mask/train_model.ipynb)
@@ -573,6 +657,8 @@
       * [Automobile Sales Prediction](Machine_Learning/Automobile%20Sales%20Data%20Analysis%20and%20Prediction/Model/Automobile_Sales_Prediction.ipynb)
   * Bitcoin Price Prediction
       * [Bitcoin Price Prediction](Machine_Learning/Bitcoin%20Price%20Prediction/Model/Bitcoin_Price_Prediction.ipynb)
+  * Book Recommendation System
+    * [Book Recommendation System](Machine_Learning/Book%20Recommendation%20System/Book_Recommendation_System.ipynb)
   * Credit Card Fraud Detection
     * [Credit Card Fraud Detection](Machine_Learning/Credit%20Card%20Fraud%20Detection/Credit_card_fraud_detection.ipynb)
   * Creditcardfrauddetection
@@ -600,6 +686,8 @@
       * [Pridictionmodel](Machine_Learning/Fake%20News%20Detection/Model/PridictionModel.ipynb)
   * Flight Delay Prediction
     * [Model](Machine_Learning/Flight_delay_prediction/model.ipynb)
+  * Gradient Descent
+    * [Gradientdescent](Machine_Learning/Gradient_descent/gradientdescent.ipynb)
   * Hand Game Controller
     * [Main-Mobile-Cam](Machine_Learning/Hand%20Game%20Controller/main-mobile-cam.py)
     * [Main-Pc-Cam](Machine_Learning/Hand%20Game%20Controller/main-pc-cam.py)
@@ -610,8 +698,20 @@
   * Landmark Detection
     * [App](Machine_Learning/Landmark_Detection/app.py)
     * [Landmark-Detection-Tfhub](Machine_Learning/Landmark_Detection/landmark-detection-tfhub.ipynb)
+  * Leaf Disease Analyzer Using Ml
+    * [Model Training](Machine_Learning/Leaf%20disease%20analyzer%20using%20ML/Model_Training.ipynb)
   * Linear Regression Using Gradient Decent
     * [Linear Regression Using Gradient Decent](Machine_Learning/Linear%20regression%20using%20gradient%20decent/Linear%20regression%20using%20gradient%20decent.ipynb)
+  * Lungcancerdetection
+    * Notebooks
+      * [Cnnresultsanalysis](Machine_Learning/LungCancerDetection/notebooks/CNNresultsAnalysis.ipynb)
+      * [Lungcancerdetection](Machine_Learning/LungCancerDetection/notebooks/LungCancerDetection.ipynb)
+    * Src
+      * Models
+        * [Cnn Model](Machine_Learning/LungCancerDetection/src/models/cnn_model.py)
+        * [Predict Model](Machine_Learning/LungCancerDetection/src/models/predict_model.py)
+        * [Train](Machine_Learning/LungCancerDetection/src/models/train.py)
+        * [Visualize Model](Machine_Learning/LungCancerDetection/src/models/visualize_model.py)
   * Movie Classification
     * [Movie Classification](Machine_Learning/Movie%20Classification/movie_classification.ipynb)
   * Multivitamine Prediction
@@ -648,8 +748,8 @@
   * Svm
     * [Svm](Machine_Learning/SVM/svm.py)
     * [Test](Machine_Learning/SVM/test.py)
-  * Sentiment Analysis
-    * [Code](Machine_Learning/Sentiment%20Analysis/code.py)
+  * Sentiment Analysis Using Machine Learning
+    * [Code](Machine_Learning/Sentiment%20Analysis%20using%20machine%20learning/code.py)
   * Signature Verification Portal
     * [Dashboard](Machine_Learning/Signature_verification_portal/Dashboard.py)
     * [Validation](Machine_Learning/Signature_verification_portal/Validation.py)
@@ -670,6 +770,8 @@
   * [Main](Machine_Learning/main.py)
   * Pokemon-Data-Analysis-And-Legendary-Classification-Main
     * [Data-Analysis-Advance-Modelling-On-Pokemons](Machine_Learning/pokemon-data-analysis-and-legendary-classification-main/data-analysis-advance-modelling-on-pokemons.ipynb)
+  * Smartphone Rate Prediction
+    * [Main](Machine_Learning/smartphone_rate_prediction/main.py)
   * [Translation](Machine_Learning/translation.py)
   * [Utils](Machine_Learning/utils.py)
 
@@ -711,3 +813,6 @@
   * Interactive-Code-Playground
     * [Main](Web_Development/interactive-code-playground/main.py)
     * [Temp Code](Web_Development/interactive-code-playground/temp_code.py)
+
+## Jamesweb
+  * [Galaxy-And-Nebula-Images-By-James-Web-Telescope](jamesweb/galaxy-and-nebula-images-by-james-web-telescope.ipynb)
