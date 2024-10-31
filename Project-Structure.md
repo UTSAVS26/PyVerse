@@ -141,6 +141,7 @@
     * [Sublistsearch](Algorithms_and_Data_Structures/SearchingAlgorithms/SublistSearch.py)
     * [Ternarysearch](Algorithms_and_Data_Structures/SearchingAlgorithms/TernarySearch.py)
   * Stack
+    * [Balanced Parentheses Checker](Algorithms_and_Data_Structures/Stack/Balanced_parentheses_checker.py)
     * [Infixtopostifix](Algorithms_and_Data_Structures/Stack/InfixToPostifix.py)
     * [Infixtoprefix](Algorithms_and_Data_Structures/Stack/InfixToPrefix.py)
     * [Postfixtoinfix](Algorithms_and_Data_Structures/Stack/PostfixToInfix.py)
@@ -432,6 +433,9 @@
     * [Main](Data_Science/traffic_vs_zombie_game/main.py)
 
 ## Deep Learning
+  * Anomaly Detection In Time Series
+    * Model
+      * [Anomaly Detection In Time Series](Deep_Learning/Anomaly%20Detection%20in%20Time%20Series/Model/Anomaly%20Detection%20in%20Time%20Series.ipynb)
   * Banknifty Index Price Prediction Lstm
     * [Banknifty Index Price Prediction](Deep_Learning/BankNifty%20Index%20Price%20Prediction%20LSTM/BankNifty%20Index%20Price%20Prediction.ipynb)
   * Bird Species Classification
@@ -466,6 +470,9 @@
     * Face Recognition Script
       * [Face Recognition](Deep_Learning/File-Locking-Mechanism/Face_Recognition_Script/Face%20recognition.py)
       * [Facedetection](Deep_Learning/File-Locking-Mechanism/Face_Recognition_Script/FaceDetection.py)
+  * Gan-Based Art Generator Using Deep Learning
+    * Model
+      * [Gan-Based Art Generator Using Deep Learning](Deep_Learning/GAN-based%20Art%20Generator%20using%20Deep%20learning/Model/GAN-based%20Art%20Generator%20using%20Deep%20learning.ipynb)
   * Image Caption Generation With Audio Output
     * [App](Deep_Learning/Image%20Caption%20Generation%20with%20Audio%20Output/app.py)
   * Mnist Digit Classification Using Neural Networks
@@ -557,6 +564,8 @@
     * [Mastermind](Game_Development/MasterMind/mastermind.py)
   * Maze
     * [Maze](Game_Development/Maze/Maze.py)
+  * Memory Typing Game
+    * [Main](Game_Development/Memory%20Typing%20Game/main.py)
   * Number Guessing Game
     * [Main](Game_Development/Number%20Guessing%20Game/main.py)
   * Pig Dice Game
@@ -627,6 +636,8 @@
       * [Spectroscopy Regression](Image%20processing/PhotoSpectroscope/Scource/Spectroscopy%20Regression.py)
     * Theme
       * [Example](Image%20processing/PhotoSpectroscope/Theme/example.py)
+  * Real-Time-Feature-Detection-And-Matching
+    * [Main](Image%20processing/Real-Time-Feature-Detection-and-Matching/Main.py)
   * Covid Face Mask
     * [Test](Image%20processing/covid_face_mask/test.py)
     * [Train Model](Image%20processing/covid_face_mask/train_model.ipynb)
@@ -678,6 +689,8 @@
       * [Pridictionmodel](Machine_Learning/Fake%20News%20Detection/Model/PridictionModel.ipynb)
   * Flight Delay Prediction
     * [Model](Machine_Learning/Flight_delay_prediction/model.ipynb)
+  * Gradient Descent
+    * [Gradientdescent](Machine_Learning/Gradient_descent/gradientdescent.ipynb)
   * Hand Game Controller
     * [Main-Mobile-Cam](Machine_Learning/Hand%20Game%20Controller/main-mobile-cam.py)
     * [Main-Pc-Cam](Machine_Learning/Hand%20Game%20Controller/main-pc-cam.py)
@@ -688,6 +701,8 @@
   * Landmark Detection
     * [App](Machine_Learning/Landmark_Detection/app.py)
     * [Landmark-Detection-Tfhub](Machine_Learning/Landmark_Detection/landmark-detection-tfhub.ipynb)
+  * Leaf Disease Analyzer Using Ml
+    * [Model Training](Machine_Learning/Leaf%20disease%20analyzer%20using%20ML/Model_Training.ipynb)
   * Linear Regression Using Gradient Decent
     * [Linear Regression Using Gradient Decent](Machine_Learning/Linear%20regression%20using%20gradient%20decent/Linear%20regression%20using%20gradient%20decent.ipynb)
   * Lungcancerdetection
