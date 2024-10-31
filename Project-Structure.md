@@ -561,6 +561,8 @@
     * [Mastermind](Game_Development/MasterMind/mastermind.py)
   * Maze
     * [Maze](Game_Development/Maze/Maze.py)
+  * Memory Typing Game
+    * [Main](Game_Development/Memory%20Typing%20Game/main.py)
   * Number Guessing Game
     * [Main](Game_Development/Number%20Guessing%20Game/main.py)
   * Pig Dice Game
