@@ -433,6 +433,9 @@
     * [Main](Data_Science/traffic_vs_zombie_game/main.py)
 
 ## Deep Learning
+  * Anomaly Detection In Time Series
+    * Model
+      * [Anomaly Detection In Time Series](Deep_Learning/Anomaly%20Detection%20in%20Time%20Series/Model/Anomaly%20Detection%20in%20Time%20Series.ipynb)
   * Banknifty Index Price Prediction Lstm
     * [Banknifty Index Price Prediction](Deep_Learning/BankNifty%20Index%20Price%20Prediction%20LSTM/BankNifty%20Index%20Price%20Prediction.ipynb)
   * Bird Species Classification
@@ -563,6 +566,8 @@
     * [Mastermind](Game_Development/MasterMind/mastermind.py)
   * Maze
     * [Maze](Game_Development/Maze/Maze.py)
+  * Memory Typing Game
+    * [Main](Game_Development/Memory%20Typing%20Game/main.py)
   * Number Guessing Game
     * [Main](Game_Development/Number%20Guessing%20Game/main.py)
   * Pig Dice Game
@@ -630,6 +635,8 @@
       * [Spectroscopy Regression](Image%20processing/PhotoSpectroscope/Scource/Spectroscopy%20Regression.py)
     * Theme
       * [Example](Image%20processing/PhotoSpectroscope/Theme/example.py)
+  * Real-Time-Feature-Detection-And-Matching
+    * [Main](Image%20processing/Real-Time-Feature-Detection-and-Matching/Main.py)
   * Covid Face Mask
     * [Test](Image%20processing/covid_face_mask/test.py)
     * [Train Model](Image%20processing/covid_face_mask/train_model.ipynb)
@@ -681,6 +688,8 @@
       * [Pridictionmodel](Machine_Learning/Fake%20News%20Detection/Model/PridictionModel.ipynb)
   * Flight Delay Prediction
     * [Model](Machine_Learning/Flight_delay_prediction/model.ipynb)
+  * Gradient Descent
+    * [Gradientdescent](Machine_Learning/Gradient_descent/gradientdescent.ipynb)
   * Hand Game Controller
     * [Main-Mobile-Cam](Machine_Learning/Hand%20Game%20Controller/main-mobile-cam.py)
     * [Main-Pc-Cam](Machine_Learning/Hand%20Game%20Controller/main-pc-cam.py)
