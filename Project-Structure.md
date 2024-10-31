@@ -503,6 +503,8 @@
       * [Data Loader](Deep_Learning/SRGAN%20for%20upscaling%20image%20resolutions/main/data_loader.py)
       * [Preprocessing](Deep_Learning/SRGAN%20for%20upscaling%20image%20resolutions/main/preprocessing.py)
       * [Srgan](Deep_Learning/SRGAN%20for%20upscaling%20image%20resolutions/main/srgan.py)
+  * Sentimental Analysis Navie
+    * [Sentimental-Analysis-Using-Naive-Bayes-Classifier](Deep_Learning/Sentimental_Analysis_navie/sentimental-analysis-using-naive-bayes-classifier.ipynb)
   * Spam Vs Ham Mail Classification [With Streamlit Gui]
     * Model
       * [App1](Deep_Learning/Spam%20Vs%20Ham%20Mail%20Classification%20[With%20Streamlit%20GUI]/Model/app1.py)
