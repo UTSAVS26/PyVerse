@@ -410,6 +410,8 @@
     * [Main](Data_Science/traffic_vs_zombie_game/main.py)
 
 ## Deep Learning
+  * Bacteria Classification
+    * [Bacteria Classification](Deep_Learning/Bacteria_Classification/Bacteria_Classification.ipynb)
   * Banknifty Index Price Prediction Lstm
     * [Banknifty Index Price Prediction](Deep_Learning/BankNifty%20Index%20Price%20Prediction%20LSTM/BankNifty%20Index%20Price%20Prediction.ipynb)
   * Bird Species Classification
