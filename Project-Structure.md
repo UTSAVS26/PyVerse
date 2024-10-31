@@ -215,6 +215,8 @@
     * [Models](Automation_Tools/api_dev/models.py)
 
 ## Beginner Projects
+  * Amazon Product Availbility Checker
+    * [Amazon](Beginner_Projects/Amazon%20product%20availbility%20checker/amazon.py)
   * Anime Manga Tracker
     * [Anime Manga Tracker](Beginner_Projects/Anime_Manga_Tracker/Anime_Manga_Tracker.py)
   * Bmi Calculator
