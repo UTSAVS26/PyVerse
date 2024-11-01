@@ -148,6 +148,7 @@
     * [Postfixtoprefix](Algorithms_and_Data_Structures/Stack/PostfixToPrefix.py)
     * [Prefixtoinfix](Algorithms_and_Data_Structures/Stack/PrefixToInfix.py)
     * [Prefixtopostfix](Algorithms_and_Data_Structures/Stack/PrefixToPostfix.py)
+    * [Stack Permutation](Algorithms_and_Data_Structures/Stack/Stack_permutation.py)
     * [Stack](Algorithms_and_Data_Structures/Stack/stack.py)
   * Strings
     * [Longest Palindromic Substring](Algorithms_and_Data_Structures/Strings/longest_palindromic_substring.py)
