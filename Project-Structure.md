@@ -695,6 +695,8 @@
   * Hand Game Controller
     * [Main-Mobile-Cam](Machine_Learning/Hand%20Game%20Controller/main-mobile-cam.py)
     * [Main-Pc-Cam](Machine_Learning/Hand%20Game%20Controller/main-pc-cam.py)
+  * Handwritten Text Recognition Model
+    * [App](Machine_Learning/Handwritten%20Text%20Recognition%20Model/app.py)
   * Intrusion Detection System
     * [Network-Intrusion-Detection-Using-Arm](Machine_Learning/Intrusion%20Detection%20System/network-intrusion-detection-using-ARM.ipynb)
   * Iris Classification Using Knn
