@@ -144,6 +144,7 @@
     * [Balanced Parentheses Checker](Algorithms_and_Data_Structures/Stack/Balanced_parentheses_checker.py)
     * [Infixtopostifix](Algorithms_and_Data_Structures/Stack/InfixToPostifix.py)
     * [Infixtoprefix](Algorithms_and_Data_Structures/Stack/InfixToPrefix.py)
+    * [Min Stack](Algorithms_and_Data_Structures/Stack/Min_Stack.py)
     * [Postfixtoinfix](Algorithms_and_Data_Structures/Stack/PostfixToInfix.py)
     * [Postfixtoprefix](Algorithms_and_Data_Structures/Stack/PostfixToPrefix.py)
     * [Prefixtoinfix](Algorithms_and_Data_Structures/Stack/PrefixToInfix.py)
