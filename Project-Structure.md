@@ -25,6 +25,7 @@
   * Arrays
     * [1Darray](Algorithms_and_Data_Structures/Arrays/1Darray.py)
     * [2Darray](Algorithms_and_Data_Structures/Arrays/2Darray.py)
+    * [Reverse Array](Algorithms_and_Data_Structures/Arrays/Reverse_array.py)
   * Binarysearchtree
     * [Bst](Algorithms_and_Data_Structures/BinarySearchTree/bst.py)
     * [Bstnode](Algorithms_and_Data_Structures/BinarySearchTree/bstnode.py)
@@ -166,6 +167,7 @@
     * [Menu Driven Code For Lowest Common Ancestor](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Lowest_common_ancestor.py)
     * [Menu Driven Code For Prefix Tree](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Prefix_Tree.py)
     * [Menu Driven Code For Tree Traversals](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Tree_Traversals.py)
+    * [Sum Tree](Algorithms_and_Data_Structures/Trees/Sum_Tree.py)
   * Avl Tree Visualizer
     * [Main](Algorithms_and_Data_Structures/avl_tree_visualizer/main.py)
   * Bellman Ford
@@ -622,6 +624,9 @@
   * Lane Line Detection [Open Cv]
     * [Gui](Image%20processing/Lane%20Line%20Detection%20[OPEN%20CV]/gui.py)
     * [Main](Image%20processing/Lane%20Line%20Detection%20[OPEN%20CV]/main.py)
+  * Mask-Detection
+    * [Maskdetect](Image%20processing/Mask-detection/MaskDetect.py)
+    * [Model-Training](Image%20processing/Mask-detection/Model-training.py)
   * Number Plate Detection
     * [Number Plate](Image%20processing/Number%20plate%20detection/number_plate.py)
     * Ocr-Notebook
@@ -772,6 +777,10 @@
     * [Db](Machine_Learning/Signature_verification_portal/db.py)
   * Style Transfer With Neural Network
     * [Style Transfer With Neural Networks](Machine_Learning/Style%20Transfer%20with%20Neural%20Network/Style%20Transfer%20with%20Neural%20Networks.ipynb)
+  * Translator App
+    * [Main](Machine_Learning/Translator%20App/main.py)
+    * [Translation](Machine_Learning/Translator%20App/translation.py)
+    * [Utils](Machine_Learning/Translator%20App/utils.py)
   * Twitter Sentiment Analysis
     * [Twitter Sentiment Analysis](Machine_Learning/Twitter%20Sentiment%20Analysis/Twitter%20Sentiment%20Analysis.ipynb)
   * Wecare
@@ -782,13 +791,10 @@
     * [Web Page Phishing Detection](Machine_Learning/Web%20Page%20Phishing%20Detection/web_page_phishing_detection.ipynb)
   * Zomato Restaurant Clustering And Sentiment Analysis
     * [Zomato Restaurant Clustering And Sentiment Analysis](Machine_Learning/Zomato%20Restaurant%20Clustering%20and%20Sentiment%20Analysis/Zomato_Restaurant_Clustering_and_Sentiment_Analysis.ipynb)
-  * [Main](Machine_Learning/main.py)
   * Pokemon-Data-Analysis-And-Legendary-Classification-Main
     * [Data-Analysis-Advance-Modelling-On-Pokemons](Machine_Learning/pokemon-data-analysis-and-legendary-classification-main/data-analysis-advance-modelling-on-pokemons.ipynb)
   * Smartphone Rate Prediction
     * [Main](Machine_Learning/smartphone_rate_prediction/main.py)
-  * [Translation](Machine_Learning/translation.py)
-  * [Utils](Machine_Learning/utils.py)
 
 ## Sentiment-Analysis-Of-Restaurant-Reviews
   * [Sentiment Analysis Of Restaurant Reviews](Sentiment-Analysis-Of-Restaurant-Reviews/Sentiment%20Analysis%20of%20Restaurant%20Reviews.ipynb)
