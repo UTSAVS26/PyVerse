@@ -1,5 +1,5 @@
 # Drowsiness Detection System
-The Drowsiness Detection System is a Computer Vision-based project aimed at improving road safety by detecting drowsiness in drivers. The system leverages machine learning and computer vision techniques to monitor eye closure and alert the user if signs of drowsiness are detected, potentially preventing accidents due to fatigue.
+The **Drowsiness Detection System** is a Computer Vision-based project aimed at improving road safety by detecting drowsiness in drivers. The system leverages machine learning and computer vision techniques to monitor eye closure and alert the user if signs of drowsiness are detected, potentially preventing accidents due to fatigue.
 
 ## Overview
 
@@ -44,21 +44,21 @@ The **Drowsiness Detection System** is designed to help prevent road accidents c
 ## EXPLANATION
 The core main.py script operates as follows:
 
-- Camera Feed Initialization: The script starts by accessing the connected camera.
-- Facial Landmark Detection: Using a pre-trained model from dlib, it identifies facial landmarks, specifically focusing on the eye regions.
-- Eye Aspect Ratio (EAR) Calculation: The script computes the EAR, a measure of eye openness, using specific eye landmarks.
-- Drowsiness Detection: If the EAR remains below a predefined threshold for a specified duration, the system interprets this as drowsiness.
-- Alert Mechanism: Upon detecting drowsiness, an audible alarm is triggered to alert the driver.
-- Display and Exit: The system displays real-time video with annotations for monitoring and allows for termination with a key press.
+- **Camera Feed Initialization:** The script starts by accessing the connected camera.
+- **Facial Landmark Detection:** Using a pre-trained model from dlib, it identifies facial landmarks, specifically focusing on the eye regions.
+- **Eye Aspect Ratio (EAR) Calculation:** The script computes the EAR, a measure of eye openness, using specific eye landmarks.
+- **Drowsiness Detection:** If the EAR remains below a predefined threshold for a specified duration, the system interprets this as drowsiness.
+- **Alert Mechanism:** Upon detecting drowsiness, an audible alarm is triggered to alert the driver.
+- **Display and Exit:** The system displays real-time video with annotations for monitoring and allows for termination with a key press.
 
 ## Libraries Needed
 The following libraries are required for the project:
 
-- cv2 (OpenCV) - for image processing functions
-- numpy - for array operations
-- dlib - for face landmark detection
-- imutils.face_utils - for basic operations of facial landmark conversion
-- playsound - for playing the alarm sound
+- **cv2 (OpenCV)** - for image processing functions
+- **numpy** - for array operations
+- **dlib** - for face landmark detection
+- **imutils.face_utils** - for basic operations of facial landmark conversion
+- **playsound** - for playing the alarm sound
   
 ## Usage
 To run the Drowsiness Detection System, ensure you have a camera connected to your device and execute the following command:
