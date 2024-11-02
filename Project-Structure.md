@@ -441,6 +441,8 @@
   * Anomaly Detection In Time Series
     * Model
       * [Anomaly Detection In Time Series](Deep_Learning/Anomaly%20Detection%20in%20Time%20Series/Model/Anomaly%20Detection%20in%20Time%20Series.ipynb)
+  * Bacteria Classification
+    * [Bacteria Classification](Deep_Learning/Bacteria_Classification/Bacteria_Classification.ipynb)
   * Banknifty Index Price Prediction Lstm
     * [Banknifty Index Price Prediction](Deep_Learning/BankNifty%20Index%20Price%20Prediction%20LSTM/BankNifty%20Index%20Price%20Prediction.ipynb)
   * Bird Species Classification
