@@ -166,6 +166,7 @@
     * [Menu Driven Code For Lowest Common Ancestor](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Lowest_common_ancestor.py)
     * [Menu Driven Code For Prefix Tree](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Prefix_Tree.py)
     * [Menu Driven Code For Tree Traversals](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Tree_Traversals.py)
+    * [Sum Tree](Algorithms_and_Data_Structures/Trees/Sum_Tree.py)
   * Avl Tree Visualizer
     * [Main](Algorithms_and_Data_Structures/avl_tree_visualizer/main.py)
   * Bellman Ford
