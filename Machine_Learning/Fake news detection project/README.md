@@ -1,6 +1,6 @@
 # Fake News Detection
 
-This project is a machine learning model that detects fake news articles based on their content. It uses Natural Language Processing (NLP) and text classification techniques to classify news as either real or fake.
+This project aims to create a machine learning model that detects fake news articles based on their content. It uses Natural Language Processing (NLP) and text classification techniques to classify news as either real or fake.
 
 ## Dataset
 The dataset used is the [Fake and Real News Dataset](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset) from Kaggle. 
