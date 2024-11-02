@@ -20,7 +20,7 @@ jobs:
 
             // Check for participation roles in the issue body
             const hasGSSOC = issueBody.includes('gssoc');
-            const hasHacktoberfest = issueBody.includes('hacktoberfest');
+            const hasHacktoberfest = issueBody.includes('hacktoberfest-2024');
 
             const labelsToAdd = [];
 
