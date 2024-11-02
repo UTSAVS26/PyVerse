@@ -144,10 +144,12 @@
     * [Balanced Parentheses Checker](Algorithms_and_Data_Structures/Stack/Balanced_parentheses_checker.py)
     * [Infixtopostifix](Algorithms_and_Data_Structures/Stack/InfixToPostifix.py)
     * [Infixtoprefix](Algorithms_and_Data_Structures/Stack/InfixToPrefix.py)
+    * [Min Stack](Algorithms_and_Data_Structures/Stack/Min_Stack.py)
     * [Postfixtoinfix](Algorithms_and_Data_Structures/Stack/PostfixToInfix.py)
     * [Postfixtoprefix](Algorithms_and_Data_Structures/Stack/PostfixToPrefix.py)
     * [Prefixtoinfix](Algorithms_and_Data_Structures/Stack/PrefixToInfix.py)
     * [Prefixtopostfix](Algorithms_and_Data_Structures/Stack/PrefixToPostfix.py)
+    * [Stack Permutation](Algorithms_and_Data_Structures/Stack/Stack_permutation.py)
     * [Stack](Algorithms_and_Data_Structures/Stack/stack.py)
   * Strings
     * [Longest Palindromic Substring](Algorithms_and_Data_Structures/Strings/longest_palindromic_substring.py)
@@ -157,6 +159,7 @@
   * Trees
     * [Menu Driven Code For Redblack Tree](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_For_RedBlack_Tree.py)
     * [Menu Driven Code For Avl Tree](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Avl_Tree.py)
+    * [Menu Driven Code For Bfs](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_BFS.py)
     * [Menu Driven Code For Binary Search Tree](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Binary_Search_Tree.py)
     * [Menu Driven Code For Binary Tree](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Binary_Tree.py)
     * [Menu Driven Code For Dfs](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_DFS.py)
@@ -196,6 +199,8 @@
     * [Extract Aadhar Details](Automation_Tools/Autofill%20personal%20info%20using%20Aadhar%20Card%20Image/extract_aadhar_details.ipynb)
   * Image-Tool
     * [Image Tool](Automation_Tools/Image-Tool/Image_Tool.py)
+  * Playlist-Downloader
+    * [Setup](Automation_Tools/Playlist-downloader/setup.py)
   * Web Scrapping
     * [Webscrapping](Automation_Tools/Web%20Scrapping/WebScrapping.ipynb)
     * Linkedin Scraper
@@ -503,6 +508,8 @@
       * [Data Loader](Deep_Learning/SRGAN%20for%20upscaling%20image%20resolutions/main/data_loader.py)
       * [Preprocessing](Deep_Learning/SRGAN%20for%20upscaling%20image%20resolutions/main/preprocessing.py)
       * [Srgan](Deep_Learning/SRGAN%20for%20upscaling%20image%20resolutions/main/srgan.py)
+  * Sentimental Analysis Navie
+    * [Sentimental-Analysis-Using-Naive-Bayes-Classifier](Deep_Learning/Sentimental_Analysis_navie/sentimental-analysis-using-naive-bayes-classifier.ipynb)
   * Spam Vs Ham Mail Classification [With Streamlit Gui]
     * Model
       * [App1](Deep_Learning/Spam%20Vs%20Ham%20Mail%20Classification%20[With%20Streamlit%20GUI]/Model/app1.py)
@@ -564,6 +571,8 @@
     * [Main](Game_Development/Map%20Game/main.py)
   * Mastermind
     * [Mastermind](Game_Development/MasterMind/mastermind.py)
+  * Math Wizard Game
+    * [Main](Game_Development/Math%20Wizard%20Game/main.py)
   * Maze
     * [Maze](Game_Development/Maze/Maze.py)
   * Memory Typing Game
@@ -693,6 +702,8 @@
   * Hand Game Controller
     * [Main-Mobile-Cam](Machine_Learning/Hand%20Game%20Controller/main-mobile-cam.py)
     * [Main-Pc-Cam](Machine_Learning/Hand%20Game%20Controller/main-pc-cam.py)
+  * Handwritten Text Recognition Model
+    * [App](Machine_Learning/Handwritten%20Text%20Recognition%20Model/app.py)
   * Intrusion Detection System
     * [Network-Intrusion-Detection-Using-Arm](Machine_Learning/Intrusion%20Detection%20System/network-intrusion-detection-using-ARM.ipynb)
   * Iris Classification Using Knn
