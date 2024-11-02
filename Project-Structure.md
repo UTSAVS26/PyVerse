@@ -25,6 +25,7 @@
   * Arrays
     * [1Darray](Algorithms_and_Data_Structures/Arrays/1Darray.py)
     * [2Darray](Algorithms_and_Data_Structures/Arrays/2Darray.py)
+    * [Reverse Array](Algorithms_and_Data_Structures/Arrays/Reverse_array.py)
   * Binarysearchtree
     * [Bst](Algorithms_and_Data_Structures/BinarySearchTree/bst.py)
     * [Bstnode](Algorithms_and_Data_Structures/BinarySearchTree/bstnode.py)
