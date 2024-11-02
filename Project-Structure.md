@@ -590,6 +590,8 @@
     * [Main](Game_Development/Text-Based%20Adventure/main.py)
   * Tic Tac Toe
     * [Tic Tac Toe](Game_Development/Tic_Tac_Toe/tic_tac_toe.py)
+  * Tower Of Hanoi
+    * [Game](Game_Development/Tower%20of%20Hanoi/game.py)
   * Trivia
     * [Trivia](Game_Development/Trivia/Trivia.py)
   * Turtle Collection Game
