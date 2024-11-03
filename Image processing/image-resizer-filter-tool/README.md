@@ -68,4 +68,3 @@ python app.py
 - `style.css`: CSS file for styling the web page.
 - `script.js`: JavaScript file handling client-side logic and interactions.
 - `app.py`: Python Flask server handling image processing requests.
-- 
