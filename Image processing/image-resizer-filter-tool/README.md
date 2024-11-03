@@ -6,17 +6,26 @@ The **Image Resizer and Filter Tool** is a web-based application that allows use
 
 ## Features 🩵
 
-- **Image Upload**: Easily upload images from your device.
-- **Resize Functionality**: Adjust the size of the image using a percentage slider.
-- **Filters**: Apply various filters such as brightness, contrast, saturation, and blur.
-- **Preview**: View real-time changes on the canvas.
-- **Download**: Save the processed image to your device.
 
+- Image upload
+- Real-time preview
+- Image filters (Grayscale, Sepia, Invert)
+- Image resizing
+- Text overlay with customizable font size, color, and position
+- Adjustable compression quality
+- Download processed image
+  
 ## Technologies Used 👨🏻‍💻
 
-- HTML
-- CSS
-- JavaScript (with Canvas API)
+- Frontend:
+  - HTML5
+  - CSS3
+  - JavaScript (ES6+)
+- Backend:
+  - Python 3.7+
+  - Flask
+  - Pillow (PIL Fork)
+
 
 ## Installation ⬇
 
@@ -30,31 +39,33 @@ git clone https://github.com/yourusername/image-resizer-filter-tool.git
    ```
 cd image-resizer-filter-tool
    ```
-3.**Open the index.html File**:
-Open index.html in your preferred web browser (e.g., Chrome, Firefox).
+3.**Install the required Python packages:**
+```
+pip install flask flask-cors Pillow
+```
+4.**Run the Flask server:**
+```
+python app.py
+```
+
+
+4. Open your web browser and navigate to `http://localhost:5000`
 
 ## Usage
-1.**Upload an Image:** 📷
-- Click on the "Choose Image" button to upload an image file from your device.
 
-2. Adjust Settings
+1. Upload an image using the "Choose an image" button.
+2. Select a filter from the dropdown menu (None, Grayscale, Sepia, Invert).
+3. Adjust the resize percentage if needed.
+4. Add text to the image if desired, and customize its appearance and position.
+5. Set the compression quality (1-100).
+6. The preview will update in real-time as you make changes.
+7. Click the "Process Image" button to finalize the changes.
+8. Click the "Download Processed Image" link to save the result.
 
-Use the features to resize the image and apply filters:
+## Project Structure 
 
-- **Resize:** 🔄
-  - Adjust the image size in percentage.
-  
-- **Compression:** ⚖️
-  - Adjust the compression level.
-  
-- **Filter:** ✨
-  - Apply featured filters on images.
-- **Add Text:**
-  - Add text on image and adjust it with your choice
-
-
-3.**Process the Image:**
-Click the "Process Image" button to apply the selected settings.
-
-4.**Download the Processed Image:**
-After processing, a "Download Processed Image" link will appear. Click it to save the modified image.
+- `index.html`: The main HTML file containing the structure of the web page.
+- `style.css`: CSS file for styling the web page.
+- `script.js`: JavaScript file handling client-side logic and interactions.
+- `app.py`: Python Flask server handling image processing requests.
+- 
