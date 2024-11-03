@@ -18,7 +18,7 @@ To set up the Drowsiness Detection System on your local machine, follow these st
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/shashmitha46/PyVerse.git
+   git clone https://github.com/UTSAVS26/PyVerse.git
 2. Navigate to the project directory:
 ```bash
 cd PyVerse/main/Computer Vision/Drowsiness Detection System
