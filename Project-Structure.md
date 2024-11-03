@@ -88,6 +88,7 @@
       * [Fibonacci-Seq](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/fibonacci-seq.py)
       * [House-Robber](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/house-robber.py)
     * Hard-Dp-Problems
+      * [Cherry-Pick-Algo](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Hard-DP-Problems/cherry-pick-algo.py)
       * [Regular-Expression-Matching](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Hard-DP-Problems/regular-expression-matching.py)
     * Medium-Dp-Problems
       * [Coin-Change](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/coin-change.py)
@@ -419,6 +420,8 @@
       * [Detailed Eda](Data_Science/Diabetes%20Analysis/EDA/Detailed%20EDA.ipynb)
     * Model
       * [Logistic+Decision+Random Forest](Data_Science/Diabetes%20Analysis/Model/Logistic+Decision+Random_Forest.ipynb)
+  * Economic Analysis
+    * [Global Econoviz](Data_Science/Economic%20Analysis/Global_EconoViz.py)
   * Google Search Analysis With Python
     * [Google Search Analysis With Python](Data_Science/Google%20Search%20Analysis%20with%20python/Google_Search_Analysis_with_python.ipynb)
   * Hotel Demand Eda And Forecasting Using Arima Model
@@ -613,6 +616,8 @@
     * [Main](Game_Development/Word%20Games%20with%20lives/main.py)
   * Word Ladder Puzzle Game
     * [Main](Game_Development/Word%20Ladder%20Puzzle%20Game/main.py)
+  * Word Scramble Challenge
+    * [Main](Game_Development/Word%20Scramble%20Challenge/main.py)
   * Space Invaders
     * [Spaceinvader](Game_Development/space_invaders/spaceinvader.py)
 
@@ -808,6 +813,26 @@
 
 ## Stock Market Analysis
   * [Stock-Market-Analysis Final](Stock_Market_Analysis/stock-market-analysis_final.ipynb)
+
+## Tutorials
+  * Python Data Engineering
+    * 1. Iphone Data Analysis Project
+      * [Iphone Data Analysis Mini Project](Tutorials/Python_Data_Engineering/1.%20iPhone%20Data%20Analysis%20Project/iPhone%20Data%20Analysis%20Mini%20Project.ipynb)
+    * 2. Python Basics
+      * [Python Basics](Tutorials/Python_Data_Engineering/2.%20Python%20Basics/Python%20Basics.ipynb)
+      * [Untitled](Tutorials/Python_Data_Engineering/2.%20Python%20Basics/Untitled.ipynb)
+    * 3. Python Intermediate
+      * [Intermediate - Functions And Oops](Tutorials/Python_Data_Engineering/3.%20Python%20Intermediate/Intermediate%20-%20Functions%20and%20OOPS.ipynb)
+    * 4. Python Advance
+      * [Numpy Basics](Tutorials/Python_Data_Engineering/4.%20Python%20Advance/Numpy%20Basics.ipynb)
+      * [Pandas Basics](Tutorials/Python_Data_Engineering/4.%20Python%20Advance/Pandas%20Basics.ipynb)
+    * 5. Python For Data Engineering
+      * [5.1 Working With Date & Time](Tutorials/Python_Data_Engineering/5.%20Python%20for%20Data%20Engineering/5.1%20Working%20with%20date%20&%20time.ipynb)
+      * [5.2 Working With File Formats](Tutorials/Python_Data_Engineering/5.%20Python%20for%20Data%20Engineering/5.2%20Working%20with%20file%20formats.ipynb)
+    * 6. End-To-End Data Pipeline Project
+      * [Spotify Data Pipeline Project](Tutorials/Python_Data_Engineering/6.%20End-To-End%20Data%20Pipeline%20Project/Spotify%20Data%20Pipeline%20Project.ipynb)
+      * [Spotify Api Data Extract](Tutorials/Python_Data_Engineering/6.%20End-To-End%20Data%20Pipeline%20Project/spotify_api_data_extract.py)
+      * [Spotify Transformation Load Function](Tutorials/Python_Data_Engineering/6.%20End-To-End%20Data%20Pipeline%20Project/spotify_transformation_load_function.py)
 
 ## Video Processing
   * Online Video Editor
