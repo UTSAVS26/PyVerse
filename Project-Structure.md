@@ -87,6 +87,8 @@
       * [Climbing-Stairs](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/climbing-stairs.py)
       * [Fibonacci-Seq](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/fibonacci-seq.py)
       * [House-Robber](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/house-robber.py)
+    * Hard-Dp-Problems
+      * [Regular-Expression-Matching](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Hard-DP-Problems/regular-expression-matching.py)
     * Medium-Dp-Problems
       * [Coin-Change](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/coin-change.py)
       * [Longest-Inc-Subseq](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/longest-inc-subseq.py)
