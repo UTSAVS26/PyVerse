@@ -107,6 +107,8 @@
     * [Menu Driven Code For Dynamic Linear Queue Using Linkedlist](Algorithms_and_Data_Structures/Linked%20List/Menu_Driven_Code_for_Dynamic_Linear_Queue_using_LinkedList.py)
     * [Menu Driven Code For Dynamic Stack Using Linkedlist](Algorithms_and_Data_Structures/Linked%20List/Menu_Driven_Code_for_Dynamic_Stack_using_LinkedList.py)
     * [Menu Driven Code For Linear Linkedlist](Algorithms_and_Data_Structures/Linked%20List/Menu_Driven_Code_for_Linear_LinkedList.py)
+    * Segregate Odd Even Valued Nodes
+      * [Program](Algorithms_and_Data_Structures/Linked%20List/segregate_odd_even_valued_nodes/program.py)
   * Pattern Search
     * [Aho Corasick](Algorithms_and_Data_Structures/Pattern%20Search/aho_corasick.py)
     * [Bitap Algorithm](Algorithms_and_Data_Structures/Pattern%20Search/bitap_algorithm.py)
