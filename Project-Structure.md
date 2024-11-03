@@ -656,6 +656,8 @@
       * [Example](Image%20processing/PhotoSpectroscope/Theme/example.py)
   * Real-Time-Feature-Detection-And-Matching
     * [Main](Image%20processing/Real-Time-Feature-Detection-and-Matching/Main.py)
+  * Video Summarization
+    * [Video Summarization](Image%20processing/Video%20Summarization/Video%20Summarization.ipynb)
   * Covid Face Mask
     * [Test](Image%20processing/covid_face_mask/test.py)
     * [Train Model](Image%20processing/covid_face_mask/train_model.ipynb)
