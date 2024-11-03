@@ -12,44 +12,47 @@ class Solution:
             return None
         if node in self.visited:
             return self.visited[node]
+
         cloneNode = Node(node.val)
         self.visited[node] = cloneNode
+
         for neighbor in node.neighbors:
             cloneNode.neighbors.append(self.cloneGraph(neighbor))
+
         return cloneNode
 
 def printGraph(node, printed):
     if not node or printed.get(node, False):
         return
+
     printed[node] = True  # Mark this node as printed
     print(f"Node: {node.val} Neighbors: ", end="")
     for neighbor in node.neighbors:
         print(neighbor.val, end=" ")
     print()
+
     for neighbor in node.neighbors:
         printGraph(neighbor, printed)
 
 if __name__ == "__main__":
-    # Creating the graph with nodes 50, 60, and 70
-    node50 = Node(50)
-    node60 = Node(60)
-    node70 = Node(70)
+    node0 = Node(0)
+    node1 = Node(1)
+    node2 = Node(2)
 
-    # Establishing the connections (edges) between nodes
-    node50.neighbors.append(node60)
-    node50.neighbors.append(node70)
-    node60.neighbors.append(node50)
-    node60.neighbors.append(node70)
-    node70.neighbors.append(node50)
-    node70.neighbors.append(node60)
+    node0.neighbors.append(node1)
+    node0.neighbors.append(node2)
+    node1.neighbors.append(node0)
+    node1.neighbors.append(node2)
+    node2.neighbors.append(node0)
+    node2.neighbors.append(node1)
 
     solution = Solution()
-    clonedGraph = solution.cloneGraph(node50)
+    clonedGraph = solution.cloneGraph(node0)
 
     # Print the original graph
     print("Original graph:")
     printed = {}
-    printGraph(node50, printed)
+    printGraph(node0, printed)
 
     # Print the cloned graph
     print("\nCloned graph:")
