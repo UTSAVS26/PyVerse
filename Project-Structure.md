@@ -25,6 +25,7 @@
   * Arrays
     * [1Darray](Algorithms_and_Data_Structures/Arrays/1Darray.py)
     * [2Darray](Algorithms_and_Data_Structures/Arrays/2Darray.py)
+    * [Reverse Array](Algorithms_and_Data_Structures/Arrays/Reverse_array.py)
   * Binarysearchtree
     * [Bst](Algorithms_and_Data_Structures/BinarySearchTree/bst.py)
     * [Bstnode](Algorithms_and_Data_Structures/BinarySearchTree/bstnode.py)
@@ -86,6 +87,8 @@
       * [Climbing-Stairs](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/climbing-stairs.py)
       * [Fibonacci-Seq](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/fibonacci-seq.py)
       * [House-Robber](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/house-robber.py)
+    * Hard-Dp-Problems
+      * [Regular-Expression-Matching](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Hard-DP-Problems/regular-expression-matching.py)
     * Medium-Dp-Problems
       * [Coin-Change](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/coin-change.py)
       * [Longest-Inc-Subseq](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/longest-inc-subseq.py)
@@ -106,6 +109,8 @@
     * [Menu Driven Code For Dynamic Linear Queue Using Linkedlist](Algorithms_and_Data_Structures/Linked%20List/Menu_Driven_Code_for_Dynamic_Linear_Queue_using_LinkedList.py)
     * [Menu Driven Code For Dynamic Stack Using Linkedlist](Algorithms_and_Data_Structures/Linked%20List/Menu_Driven_Code_for_Dynamic_Stack_using_LinkedList.py)
     * [Menu Driven Code For Linear Linkedlist](Algorithms_and_Data_Structures/Linked%20List/Menu_Driven_Code_for_Linear_LinkedList.py)
+    * Segregate Odd Even Valued Nodes
+      * [Program](Algorithms_and_Data_Structures/Linked%20List/segregate_odd_even_valued_nodes/program.py)
   * Pattern Search
     * [Aho Corasick](Algorithms_and_Data_Structures/Pattern%20Search/aho_corasick.py)
     * [Bitap Algorithm](Algorithms_and_Data_Structures/Pattern%20Search/bitap_algorithm.py)
@@ -144,6 +149,7 @@
     * [Balanced Parentheses Checker](Algorithms_and_Data_Structures/Stack/Balanced_parentheses_checker.py)
     * [Infixtopostifix](Algorithms_and_Data_Structures/Stack/InfixToPostifix.py)
     * [Infixtoprefix](Algorithms_and_Data_Structures/Stack/InfixToPrefix.py)
+    * [Min Stack](Algorithms_and_Data_Structures/Stack/Min_Stack.py)
     * [Postfixtoinfix](Algorithms_and_Data_Structures/Stack/PostfixToInfix.py)
     * [Postfixtoprefix](Algorithms_and_Data_Structures/Stack/PostfixToPrefix.py)
     * [Prefixtoinfix](Algorithms_and_Data_Structures/Stack/PrefixToInfix.py)
@@ -158,12 +164,15 @@
   * Trees
     * [Menu Driven Code For Redblack Tree](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_For_RedBlack_Tree.py)
     * [Menu Driven Code For Avl Tree](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Avl_Tree.py)
+    * [Menu Driven Code For Bfs](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_BFS.py)
     * [Menu Driven Code For Binary Search Tree](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Binary_Search_Tree.py)
     * [Menu Driven Code For Binary Tree](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Binary_Tree.py)
     * [Menu Driven Code For Dfs](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_DFS.py)
     * [Menu Driven Code For Lowest Common Ancestor](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Lowest_common_ancestor.py)
     * [Menu Driven Code For Prefix Tree](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Prefix_Tree.py)
     * [Menu Driven Code For Tree Traversals](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Tree_Traversals.py)
+    * [Sum Tree](Algorithms_and_Data_Structures/Trees/Sum_Tree.py)
+    * [Symmetric Tree](Algorithms_and_Data_Structures/Trees/Symmetric_Tree.py)
   * Avl Tree Visualizer
     * [Main](Algorithms_and_Data_Structures/avl_tree_visualizer/main.py)
   * Bellman Ford
@@ -439,6 +448,8 @@
   * Anomaly Detection In Time Series
     * Model
       * [Anomaly Detection In Time Series](Deep_Learning/Anomaly%20Detection%20in%20Time%20Series/Model/Anomaly%20Detection%20in%20Time%20Series.ipynb)
+  * Bacteria Classification
+    * [Bacteria Classification](Deep_Learning/Bacteria_Classification/Bacteria_Classification.ipynb)
   * Banknifty Index Price Prediction Lstm
     * [Banknifty Index Price Prediction](Deep_Learning/BankNifty%20Index%20Price%20Prediction%20LSTM/BankNifty%20Index%20Price%20Prediction.ipynb)
   * Bird Species Classification
@@ -590,6 +601,8 @@
     * [Main](Game_Development/Text-Based%20Adventure/main.py)
   * Tic Tac Toe
     * [Tic Tac Toe](Game_Development/Tic_Tac_Toe/tic_tac_toe.py)
+  * Tower Of Hanoi
+    * [Game](Game_Development/Tower%20of%20Hanoi/game.py)
   * Trivia
     * [Trivia](Game_Development/Trivia/Trivia.py)
   * Turtle Collection Game
@@ -616,6 +629,9 @@
   * Lane Line Detection [Open Cv]
     * [Gui](Image%20processing/Lane%20Line%20Detection%20[OPEN%20CV]/gui.py)
     * [Main](Image%20processing/Lane%20Line%20Detection%20[OPEN%20CV]/main.py)
+  * Mask-Detection
+    * [Maskdetect](Image%20processing/Mask-detection/MaskDetect.py)
+    * [Model-Training](Image%20processing/Mask-detection/Model-training.py)
   * Number Plate Detection
     * [Number Plate](Image%20processing/Number%20plate%20detection/number_plate.py)
     * Ocr-Notebook
@@ -642,6 +658,8 @@
       * [Example](Image%20processing/PhotoSpectroscope/Theme/example.py)
   * Real-Time-Feature-Detection-And-Matching
     * [Main](Image%20processing/Real-Time-Feature-Detection-and-Matching/Main.py)
+  * Video Summarization
+    * [Video Summarization](Image%20processing/Video%20Summarization/Video%20Summarization.ipynb)
   * Covid Face Mask
     * [Test](Image%20processing/covid_face_mask/test.py)
     * [Train Model](Image%20processing/covid_face_mask/train_model.ipynb)
@@ -766,6 +784,10 @@
     * [Db](Machine_Learning/Signature_verification_portal/db.py)
   * Style Transfer With Neural Network
     * [Style Transfer With Neural Networks](Machine_Learning/Style%20Transfer%20with%20Neural%20Network/Style%20Transfer%20with%20Neural%20Networks.ipynb)
+  * Translator App
+    * [Main](Machine_Learning/Translator%20App/main.py)
+    * [Translation](Machine_Learning/Translator%20App/translation.py)
+    * [Utils](Machine_Learning/Translator%20App/utils.py)
   * Twitter Sentiment Analysis
     * [Twitter Sentiment Analysis](Machine_Learning/Twitter%20Sentiment%20Analysis/Twitter%20Sentiment%20Analysis.ipynb)
   * Wecare
@@ -776,13 +798,10 @@
     * [Web Page Phishing Detection](Machine_Learning/Web%20Page%20Phishing%20Detection/web_page_phishing_detection.ipynb)
   * Zomato Restaurant Clustering And Sentiment Analysis
     * [Zomato Restaurant Clustering And Sentiment Analysis](Machine_Learning/Zomato%20Restaurant%20Clustering%20and%20Sentiment%20Analysis/Zomato_Restaurant_Clustering_and_Sentiment_Analysis.ipynb)
-  * [Main](Machine_Learning/main.py)
   * Pokemon-Data-Analysis-And-Legendary-Classification-Main
     * [Data-Analysis-Advance-Modelling-On-Pokemons](Machine_Learning/pokemon-data-analysis-and-legendary-classification-main/data-analysis-advance-modelling-on-pokemons.ipynb)
   * Smartphone Rate Prediction
     * [Main](Machine_Learning/smartphone_rate_prediction/main.py)
-  * [Translation](Machine_Learning/translation.py)
-  * [Utils](Machine_Learning/utils.py)
 
 ## Sentiment-Analysis-Of-Restaurant-Reviews
   * [Sentiment Analysis Of Restaurant Reviews](Sentiment-Analysis-Of-Restaurant-Reviews/Sentiment%20Analysis%20of%20Restaurant%20Reviews.ipynb)
