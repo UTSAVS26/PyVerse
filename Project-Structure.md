@@ -809,6 +809,26 @@
 ## Stock Market Analysis
   * [Stock-Market-Analysis Final](Stock_Market_Analysis/stock-market-analysis_final.ipynb)
 
+## Tutorials
+  * Python Data Engineering
+    * 1. Iphone Data Analysis Project
+      * [Iphone Data Analysis Mini Project](Tutorials/Python_Data_Engineering/1.%20iPhone%20Data%20Analysis%20Project/iPhone%20Data%20Analysis%20Mini%20Project.ipynb)
+    * 2. Python Basics
+      * [Python Basics](Tutorials/Python_Data_Engineering/2.%20Python%20Basics/Python%20Basics.ipynb)
+      * [Untitled](Tutorials/Python_Data_Engineering/2.%20Python%20Basics/Untitled.ipynb)
+    * 3. Python Intermediate
+      * [Intermediate - Functions And Oops](Tutorials/Python_Data_Engineering/3.%20Python%20Intermediate/Intermediate%20-%20Functions%20and%20OOPS.ipynb)
+    * 4. Python Advance
+      * [Numpy Basics](Tutorials/Python_Data_Engineering/4.%20Python%20Advance/Numpy%20Basics.ipynb)
+      * [Pandas Basics](Tutorials/Python_Data_Engineering/4.%20Python%20Advance/Pandas%20Basics.ipynb)
+    * 5. Python For Data Engineering
+      * [5.1 Working With Date & Time](Tutorials/Python_Data_Engineering/5.%20Python%20for%20Data%20Engineering/5.1%20Working%20with%20date%20&%20time.ipynb)
+      * [5.2 Working With File Formats](Tutorials/Python_Data_Engineering/5.%20Python%20for%20Data%20Engineering/5.2%20Working%20with%20file%20formats.ipynb)
+    * 6. End-To-End Data Pipeline Project
+      * [Spotify Data Pipeline Project](Tutorials/Python_Data_Engineering/6.%20End-To-End%20Data%20Pipeline%20Project/Spotify%20Data%20Pipeline%20Project.ipynb)
+      * [Spotify Api Data Extract](Tutorials/Python_Data_Engineering/6.%20End-To-End%20Data%20Pipeline%20Project/spotify_api_data_extract.py)
+      * [Spotify Transformation Load Function](Tutorials/Python_Data_Engineering/6.%20End-To-End%20Data%20Pipeline%20Project/spotify_transformation_load_function.py)
+
 ## Video Processing
   * Online Video Editor
     * [Edits](Video%20Processing/Online%20Video%20Editor/edits.py)
