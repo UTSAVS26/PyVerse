@@ -529,6 +529,8 @@
     * [Cal Inference](Deep_Learning/Terrain_classification/cal_inference.ipynb)
     * [Load Model](Deep_Learning/Terrain_classification/load_model.ipynb)
     * [Transfer Learning](Deep_Learning/Terrain_classification/transfer_learning.ipynb)
+  * Thyroid Detection
+    * [Thyroid-Disease-Detection-Using-Deep-Learning](Deep_Learning/Thyroid_detection/thyroid-disease-detection-using-deep-learning.ipynb)
   * Traffic Accident Prediction Model Using Deep Learning
     * [Traffic Accident Prediction Model Using Deep Learning](Deep_Learning/Traffic%20Accident%20Prediction%20Model%20using%20Deep%20Learning/Traffic%20Accident%20Prediction%20Model%20using%20Deep%20Learning.ipynb)
   * Yolo-Drowsiness-Detection-Main
