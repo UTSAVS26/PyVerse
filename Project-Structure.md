@@ -824,6 +824,504 @@
   * [Stock-Market-Analysis Final](Stock_Market_Analysis/stock-market-analysis_final.ipynb)
 
 ## Tutorials
+  * Data Science
+    * Part 4 Python
+      * S23 L143
+        * Python 2
+          * [Variables - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S23_L143/Python%202/Variables%20-%20Exercise_Py2.ipynb)
+          * [Variables - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S23_L143/Python%202/Variables%20-%20Lecture_Py2.ipynb)
+          * [Variables - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S23_L143/Python%202/Variables%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Variables - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S23_L143/Python%203/Variables%20-%20Exercise_Py3.ipynb)
+          * [Variables - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S23_L143/Python%203/Variables%20-%20Lecture_Py3.ipynb)
+          * [Variables - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S23_L143/Python%203/Variables%20-%20Solution_Py3.ipynb)
+      * S23 L144
+        * Python 2
+          * [Numbers And Boolean Values - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S23_L144/Python%202/Numbers%20and%20Boolean%20Values%20-%20Exercise_Py2.ipynb)
+          * [Numbers And Boolean Values - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S23_L144/Python%202/Numbers%20and%20Boolean%20Values%20-%20Lecture_Py2.ipynb)
+          * [Numbers And Boolean Values - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S23_L144/Python%202/Numbers%20and%20Boolean%20Values%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Numbers And Boolean Values - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S23_L144/Python%203/Numbers%20and%20Boolean%20Values%20-%20Exercise_Py3.ipynb)
+          * [Numbers And Boolean Values - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S23_L144/Python%203/Numbers%20and%20Boolean%20Values%20-%20Lecture_Py3.ipynb)
+          * [Numbers And Boolean Values - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S23_L144/Python%203/Numbers%20and%20Boolean%20Values%20-%20Solution_Py3.ipynb)
+      * S23 L145
+        * Python 2
+          * [Strings - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S23_L145/Python%202/Strings%20-%20Exercise_Py2.ipynb)
+          * [Strings - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S23_L145/Python%202/Strings%20-%20Lecture_Py2.ipynb)
+          * [Strings - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S23_L145/Python%202/Strings%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Strings - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S23_L145/Python%203/Strings%20-%20Exercise_Py3.ipynb)
+          * [Strings - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S23_L145/Python%203/Strings%20-%20Lecture_Py3.ipynb)
+          * [Strings - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S23_L145/Python%203/Strings%20-%20Solution_Py3.ipynb)
+      * S24 L146
+        * Python 2
+          * [Arithmetic Operators - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S24_L146/Python%202/Arithmetic%20Operators%20-%20Exercise_Py2.ipynb)
+          * [Arithmetic Operators - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S24_L146/Python%202/Arithmetic%20Operators%20-%20Lecture_Py2.ipynb)
+          * [Arithmetic Operators - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S24_L146/Python%202/Arithmetic%20Operators%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Arithmetic Operators - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S24_L146/Python%203/Arithmetic%20Operators%20-%20Exercise_Py3.ipynb)
+          * [Arithmetic Operators - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S24_L146/Python%203/Arithmetic%20Operators%20-%20Lecture_Py3.ipynb)
+          * [Arithmetic Operators - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S24_L146/Python%203/Arithmetic%20Operators%20-%20Solution_Py3.ipynb)
+      * S24 L147
+        * Python 2
+          * [The Double Equality Sign - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S24_L147/Python%202/The%20Double%20Equality%20Sign%20-%20Exercise_Py2.ipynb)
+          * [The Double Equality Sign - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S24_L147/Python%202/The%20Double%20Equality%20Sign%20-%20Lecture_Py2.ipynb)
+          * [The Double Equality Sign - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S24_L147/Python%202/The%20Double%20Equality%20Sign%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [The Double Equality Sign - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S24_L147/Python%203/The%20Double%20Equality%20Sign%20-%20Exercise_Py3.ipynb)
+          * [The Double Equality Sign - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S24_L147/Python%203/The%20Double%20Equality%20Sign%20-%20Lecture_Py3.ipynb)
+          * [The Double Equality Sign - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S24_L147/Python%203/The%20Double%20Equality%20Sign%20-%20Solution_Py3.ipynb)
+      * S24 L148
+        * Python 2
+          * [Reassign Values - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S24_L148/Python%202/Reassign%20Values%20-%20Exercise_Py2.ipynb)
+          * [Reassign Values - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S24_L148/Python%202/Reassign%20Values%20-%20Lecture_Py2.ipynb)
+          * [Reassign Values - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S24_L148/Python%202/Reassign%20Values%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Reassign Values - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S24_L148/Python%203/Reassign%20Values%20-%20Exercise_Py3.ipynb)
+          * [Reassign Values - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S24_L148/Python%203/Reassign%20Values%20-%20Lecture_Py3.ipynb)
+          * [Reassign Values - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S24_L148/Python%203/Reassign%20Values%20-%20Solution_Py3.ipynb)
+      * S24 L149
+        * Python 2
+          * [Add Comments - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S24_L149/Python%202/Add%20Comments%20-%20Lecture_Py2.ipynb)
+        * Python 3
+          * [Add Comments - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S24_L149/Python%203/Add%20Comments%20-%20Lecture_Py3.ipynb)
+      * S24 L150
+        * 0.2.1 Variables
+          * Python 2
+            * [Variables - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.1%20Variables/Python%202/Variables%20-%20Exercise_Py2.ipynb)
+            * [Variables - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.1%20Variables/Python%202/Variables%20-%20Lecture_Py2.ipynb)
+            * [Variables - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.1%20Variables/Python%202/Variables%20-%20Solution_Py2.ipynb)
+          * Python 3
+            * [Variables - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.1%20Variables/Python%203/Variables%20-%20Exercise_Py3.ipynb)
+            * [Variables - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.1%20Variables/Python%203/Variables%20-%20Lecture_Py3.ipynb)
+            * [Variables - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.1%20Variables/Python%203/Variables%20-%20Solution_Py3.ipynb)
+        * 0.2.2 Numbers And Boolean Values
+          * Python 2
+            * [Numbers And Boolean Values - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.2%20Numbers%20and%20Boolean%20Values/Python%202/Numbers%20and%20Boolean%20Values%20-%20Exercise_Py2.ipynb)
+            * [Numbers And Boolean Values - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.2%20Numbers%20and%20Boolean%20Values/Python%202/Numbers%20and%20Boolean%20Values%20-%20Lecture_Py2.ipynb)
+            * [Numbers And Boolean Values - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.2%20Numbers%20and%20Boolean%20Values/Python%202/Numbers%20and%20Boolean%20Values%20-%20Solution_Py2.ipynb)
+          * Python 3
+            * [Numbers And Boolean Values - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.2%20Numbers%20and%20Boolean%20Values/Python%203/Numbers%20and%20Boolean%20Values%20-%20Exercise_Py3.ipynb)
+            * [Numbers And Boolean Values - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.2%20Numbers%20and%20Boolean%20Values/Python%203/Numbers%20and%20Boolean%20Values%20-%20Lecture_Py3.ipynb)
+            * [Numbers And Boolean Values - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.2%20Numbers%20and%20Boolean%20Values/Python%203/Numbers%20and%20Boolean%20Values%20-%20Solution_Py3.ipynb)
+        * 0.2.3 Strings
+          * Python 2
+            * [Strings - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.3%20Strings/Python%202/Strings%20-%20Exercise_Py2.ipynb)
+            * [Strings - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.3%20Strings/Python%202/Strings%20-%20Lecture_Py2.ipynb)
+            * [Strings - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.3%20Strings/Python%202/Strings%20-%20Solution_Py2.ipynb)
+          * Python 3
+            * [Strings - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.3%20Strings/Python%203/Strings%20-%20Exercise_Py3.ipynb)
+            * [Strings - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.3%20Strings/Python%203/Strings%20-%20Lecture_Py3.ipynb)
+            * [Strings - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.3%20Strings/Python%203/Strings%20-%20Solution_Py3.ipynb)
+        * 0.3.1 Arithmetic Operators
+          * Python 2
+            * [Arithmetic Operators - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.1%20Arithmetic%20Operators/Python%202/Arithmetic%20Operators%20-%20Exercise_Py2.ipynb)
+            * [Arithmetic Operators - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.1%20Arithmetic%20Operators/Python%202/Arithmetic%20Operators%20-%20Lecture_Py2.ipynb)
+            * [Arithmetic Operators - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.1%20Arithmetic%20Operators/Python%202/Arithmetic%20Operators%20-%20Solution_Py2.ipynb)
+          * Python 3
+            * [Arithmetic Operators - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.1%20Arithmetic%20Operators/Python%203/Arithmetic%20Operators%20-%20Exercise_Py3.ipynb)
+            * [Arithmetic Operators - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.1%20Arithmetic%20Operators/Python%203/Arithmetic%20Operators%20-%20Lecture_Py3.ipynb)
+            * [Arithmetic Operators - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.1%20Arithmetic%20Operators/Python%203/Arithmetic%20Operators%20-%20Solution_Py3.ipynb)
+        * 0.3.2 The Double Equality Sign
+          * Python 2
+            * [The Double Equality Sign - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.2%20The%20Double%20Equality%20Sign/Python%202/The%20Double%20Equality%20Sign%20-%20Exercise_Py2.ipynb)
+            * [The Double Equality Sign - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.2%20The%20Double%20Equality%20Sign/Python%202/The%20Double%20Equality%20Sign%20-%20Lecture_Py2.ipynb)
+            * [The Double Equality Sign - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.2%20The%20Double%20Equality%20Sign/Python%202/The%20Double%20Equality%20Sign%20-%20Solution_Py2.ipynb)
+          * Python 3
+            * [The Double Equality Sign - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.2%20The%20Double%20Equality%20Sign/Python%203/The%20Double%20Equality%20Sign%20-%20Exercise_Py3.ipynb)
+            * [The Double Equality Sign - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.2%20The%20Double%20Equality%20Sign/Python%203/The%20Double%20Equality%20Sign%20-%20Lecture_Py3.ipynb)
+            * [The Double Equality Sign - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.2%20The%20Double%20Equality%20Sign/Python%203/The%20Double%20Equality%20Sign%20-%20Solution_Py3.ipynb)
+        * 0.3.3 Reassign Values
+          * Python 2
+            * [Reassign Values - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.3%20Reassign%20Values/Python%202/Reassign%20Values%20-%20Exercise_Py2.ipynb)
+            * [Reassign Values - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.3%20Reassign%20Values/Python%202/Reassign%20Values%20-%20Lecture_Py2.ipynb)
+            * [Reassign Values - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.3%20Reassign%20Values/Python%202/Reassign%20Values%20-%20Solution_Py2.ipynb)
+          * Python 3
+            * [Reassign Values - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.3%20Reassign%20Values/Python%203/Reassign%20Values%20-%20Exercise_Py3.ipynb)
+            * [Reassign Values - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.3%20Reassign%20Values/Python%203/Reassign%20Values%20-%20Lecture_Py3.ipynb)
+            * [Reassign Values - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.3%20Reassign%20Values/Python%203/Reassign%20Values%20-%20Solution_Py3.ipynb)
+        * 0.3.4 Add Comments
+          * Python 2
+            * [Add Comments - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.4%20Add%20Comments/Python%202/Add%20Comments%20-%20Lecture_Py2.ipynb)
+          * Python 3
+            * [Add Comments - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.4%20Add%20Comments/Python%203/Add%20Comments%20-%20Lecture_Py3.ipynb)
+        * Python 2
+          * [Line Continuation - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/Python%202/Line%20Continuation%20-%20Exercise_Py2.ipynb)
+          * [Line Continuation - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/Python%202/Line%20Continuation%20-%20Lecture_Py2.ipynb)
+          * [Line Continuation - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/Python%202/Line%20Continuation%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Line Continuation - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/Python%203/Line%20Continuation%20-%20Exercise_Py3.ipynb)
+          * [Line Continuation - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/Python%203/Line%20Continuation%20-%20Lecture_Py3.ipynb)
+          * [Line Continuation - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/Python%203/Line%20Continuation%20-%20Solution_Py3.ipynb)
+      * S24 L151
+        * Python 2
+          * [Indexing Elements - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S24_L151/Python%202/Indexing%20Elements%20-%20Exercise_Py2.ipynb)
+          * [Indexing Elements - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S24_L151/Python%202/Indexing%20Elements%20-%20Lecture_Py2.ipynb)
+          * [Indexing Elements - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S24_L151/Python%202/Indexing%20Elements%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Indexing Elements - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S24_L151/Python%203/Indexing%20Elements%20-%20Exercise_Py3.ipynb)
+          * [Indexing Elements - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S24_L151/Python%203/Indexing%20Elements%20-%20Lecture_Py3.ipynb)
+          * [Indexing Elements - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S24_L151/Python%203/Indexing%20Elements%20-%20Solution_Py3.ipynb)
+      * S24 L152
+        * Python 2
+          * [Structure Your Code With Indentation - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S24_L152/Python%202/Structure%20Your%20Code%20with%20Indentation%20-%20Exercise_Py2.ipynb)
+          * [Structure Your Code With Indentation - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S24_L152/Python%202/Structure%20Your%20Code%20with%20Indentation%20-%20Lecture_Py2.ipynb)
+          * [Structure Your Code With Indentation - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S24_L152/Python%202/Structure%20Your%20Code%20with%20Indentation%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Structure Your Code With Indentation - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S24_L152/Python%203/Structure%20Your%20Code%20with%20Indentation%20-%20Exercise_Py3.ipynb)
+          * [Structure Your Code With Indentation - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S24_L152/Python%203/Structure%20Your%20Code%20with%20Indentation%20-%20Lecture_Py3.ipynb)
+          * [Structure Your Code With Indentation - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S24_L152/Python%203/Structure%20Your%20Code%20with%20Indentation%20-%20Solution_Py3.ipynb)
+      * S25 L153
+        * Python 2
+          * [Comparison Operators - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S25_L153/Python%202/Comparison%20Operators%20-%20Exercise_Py2.ipynb)
+          * [Comparison Operators - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S25_L153/Python%202/Comparison%20Operators%20-%20Lecture_Py2.ipynb)
+          * [Comparison Operators - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S25_L153/Python%202/Comparison%20Operators%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Comparison Operators - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S25_L153/Python%203/Comparison%20Operators%20-%20Exercise_Py3.ipynb)
+          * [Comparison Operators - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S25_L153/Python%203/Comparison%20Operators%20-%20Lecture_Py3.ipynb)
+          * [Comparison Operators - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S25_L153/Python%203/Comparison%20Operators%20-%20Solution_Py3.ipynb)
+      * S25 L154
+        * Python 2
+          * [Logical And Identity Operators - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S25_L154/Python%202/Logical%20and%20Identity%20Operators%20-%20Exercise_Py2.ipynb)
+          * [Logical And Identity Operators - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S25_L154/Python%202/Logical%20and%20Identity%20Operators%20-%20Lecture_Py2.ipynb)
+          * [Logical And Identity Operators - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S25_L154/Python%202/Logical%20and%20Identity%20Operators%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Logical And Identity Operators - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S25_L154/Python%203/Logical%20and%20Identity%20Operators%20-%20Exercise_Py3.ipynb)
+          * [Logical And Identity Operators - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S25_L154/Python%203/Logical%20and%20Identity%20Operators%20-%20Lecture_Py3.ipynb)
+          * [Logical And Identity Operators - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S25_L154/Python%203/Logical%20and%20Identity%20Operators%20-%20Solution_Py3.ipynb)
+      * S26 L155
+        * Python 2
+          * [Introduction To The If Statement - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S26_L155/Python%202/Introduction%20to%20the%20If%20Statement%20-%20Exercise_Py2.ipynb)
+          * [Introduction To The If Statement - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S26_L155/Python%202/Introduction%20to%20the%20If%20Statement%20-%20Lecture_Py2.ipynb)
+          * [Introduction To The If Statement - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S26_L155/Python%202/Introduction%20to%20the%20If%20Statement%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Introduction To The If Statement - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S26_L155/Python%203/Introduction%20to%20the%20If%20Statement%20-%20Exercise_Py3.ipynb)
+          * [Introduction To The If Statement - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S26_L155/Python%203/Introduction%20to%20the%20If%20Statement%20-%20Lecture_Py3.ipynb)
+          * [Introduction To The If Statement - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S26_L155/Python%203/Introduction%20to%20the%20If%20Statement%20-%20Solution_Py3.ipynb)
+      * S26 L156
+        * Python 2
+          * [Add An Else Statement - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S26_L156/Python%202/Add%20an%20Else%20Statement%20-%20Exercise_Py2.ipynb)
+          * [Add An Else Statement - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S26_L156/Python%202/Add%20an%20Else%20Statement%20-%20Lecture_Py2.ipynb)
+          * [Add An Else Statement - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S26_L156/Python%202/Add%20an%20Else%20Statement%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Add An Else Statement - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S26_L156/Python%203/Add%20an%20Else%20Statement%20-%20Exercise_Py3.ipynb)
+          * [Add An Else Statement - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S26_L156/Python%203/Add%20an%20Else%20Statement%20-%20Lecture_Py3.ipynb)
+          * [Add An Else Statement - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S26_L156/Python%203/Add%20an%20Else%20Statement%20-%20Solution_Py3.ipynb)
+      * S26 L157
+        * Python 2
+          * [Else If, For Brief - Elif - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S26_L157/Python%202/Else%20If,%20for%20Brief%20-%20Elif%20-%20Exercise_Py2.ipynb)
+          * [Else If, For Brief - Elif - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S26_L157/Python%202/Else%20If,%20for%20Brief%20-%20Elif%20-%20Lecture_Py2.ipynb)
+          * [Else If, For Brief - Elif - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S26_L157/Python%202/Else%20If,%20for%20Brief%20-%20Elif%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Else If, For Brief - Elif - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S26_L157/Python%203/Else%20If,%20for%20Brief%20-%20Elif%20-%20Exercise_Py3.ipynb)
+          * [Else If, For Brief - Elif - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S26_L157/Python%203/Else%20If,%20for%20Brief%20-%20Elif%20-%20Lecture_Py3.ipynb)
+          * [Else If, For Brief - Elif - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S26_L157/Python%203/Else%20If,%20for%20Brief%20-%20Elif%20-%20Solution_Py3.ipynb)
+      * S26 L158
+        * Python 2
+          * [A Note On Boolean Values - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S26_L158/Python%202/A%20Note%20on%20Boolean%20Values%20-%20Lecture_Py2.ipynb)
+        * Python 3
+          * [A Note On Boolean Values - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S26_L158/Python%203/A%20Note%20on%20Boolean%20Values%20-%20Lecture_Py3.ipynb)
+      * S27 L159
+        * Python 2
+          * [Defining A Function In Python - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S27_L159/Python%202/Defining%20a%20Function%20in%20Python%20-%20Lecture_Py2.ipynb)
+        * Python 3
+          * [Defining A Function In Python - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S27_L159/Python%203/Defining%20a%20Function%20in%20Python%20-%20Lecture_Py3.ipynb)
+      * S27 L160
+        * Python 2
+          * [Creating A Function With A Parameter - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S27_L160/Python%202/Creating%20a%20Function%20with%20a%20Parameter%20-%20Exercise_Py2.ipynb)
+          * [Creating A Function With A Parameter - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S27_L160/Python%202/Creating%20a%20Function%20with%20a%20Parameter%20-%20Lecture_Py2.ipynb)
+          * [Creating A Function With A Parameter - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S27_L160/Python%202/Creating%20a%20Function%20with%20a%20Parameter%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Creating A Function With A Parameter - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S27_L160/Python%203/Creating%20a%20Function%20with%20a%20Parameter%20-%20Exercise_Py3.ipynb)
+          * [Creating A Function With A Parameter - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S27_L160/Python%203/Creating%20a%20Function%20with%20a%20Parameter%20-%20Lecture_Py3.ipynb)
+          * [Creating A Function With A Parameter - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S27_L160/Python%203/Creating%20a%20Function%20with%20a%20Parameter%20-%20Solution_Py3.ipynb)
+      * S27 L161
+        * Python 2
+          * [Another Way To Define A Function - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S27_L161/Python%202/Another%20Way%20to%20Define%20a%20Function%20-%20Exercise_Py2.ipynb)
+          * [Another Way To Define A Function - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S27_L161/Python%202/Another%20Way%20to%20Define%20a%20Function%20-%20Lecture_Py2.ipynb)
+          * [Another Way To Define A Function - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S27_L161/Python%202/Another%20Way%20to%20Define%20a%20Function%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Another Way To Define A Function - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S27_L161/Python%203/Another%20Way%20to%20Define%20a%20Function%20-%20Exercise_Py3.ipynb)
+          * [Another Way To Define A Function - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S27_L161/Python%203/Another%20Way%20to%20Define%20a%20Function%20-%20Lecture_Py3.ipynb)
+          * [Another Way To Define A Function - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S27_L161/Python%203/Another%20Way%20to%20Define%20a%20Function%20-%20Solution_Py3.ipynb)
+      * S27 L162
+        * Python 2
+          * [0.6.4 Using A Function In Another Function - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S27_L162/Python%202/0.6.4%20Using%20a%20Function%20in%20another%20Function%20-%20Exercise_Py2.ipynb)
+          * [0.6.4 Using A Function In Another Function - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S27_L162/Python%202/0.6.4%20Using%20a%20Function%20in%20another%20Function%20-%20Lecture_Py2.ipynb)
+          * [0.6.4 Using A Function In Another Function - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S27_L162/Python%202/0.6.4%20Using%20a%20Function%20in%20another%20Function%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [0.6.4 Using A Function In Another Function - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S27_L162/Python%203/0.6.4%20Using%20a%20Function%20in%20another%20Function%20-%20Exercise_Py3.ipynb)
+          * [0.6.4 Using A Function In Another Function - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S27_L162/Python%203/0.6.4%20Using%20a%20Function%20in%20another%20Function%20-%20Lecture_Py3.ipynb)
+          * [0.6.4 Using A Function In Another Function - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S27_L162/Python%203/0.6.4%20Using%20a%20Function%20in%20another%20Function%20-%20Solution_Py3.ipynb)
+      * S27 L163
+        * Python 2
+          * [Combining Conditional Statements And Functions - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S27_L163/Python%202/Combining%20Conditional%20Statements%20and%20Functions%20-%20Exercise_Py2.ipynb)
+          * [Combining Conditional Statements And Functions - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S27_L163/Python%202/Combining%20Conditional%20Statements%20and%20Functions%20-%20Lecture_Py2.ipynb)
+          * [Combining Conditional Statements And Functions - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S27_L163/Python%202/Combining%20Conditional%20Statements%20and%20Functions%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Combining Conditional Statements And Functions - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S27_L163/Python%203/Combining%20Conditional%20Statements%20and%20Functions%20-%20Exercise_Py3.ipynb)
+          * [Combining Conditional Statements And Functions - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S27_L163/Python%203/Combining%20Conditional%20Statements%20and%20Functions%20-%20Lecture_Py3.ipynb)
+          * [Combining Conditional Statements And Functions - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S27_L163/Python%203/Combining%20Conditional%20Statements%20and%20Functions%20-%20Solution_Py3.ipynb)
+      * S27 L164
+        * Python 2
+          * [Creating Functions Containing A Few Arguments - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S27_L164/Python%202/Creating%20Functions%20Containing%20a%20Few%20Arguments%20-%20Lecture_Py2.ipynb)
+        * Python 3
+          * [Creating Functions Containing A Few Arguments - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S27_L164/Python%203/Creating%20Functions%20Containing%20a%20Few%20Arguments%20-%20Lecture_Py3.ipynb)
+      * S27 L165
+        * Python 2
+          * [Notable Built-In Functions In Python - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S27_L165/Python%202/Notable%20Built-In%20Functions%20in%20Python%20-%20Exercise_Py2.ipynb)
+          * [Notable Built-In Functions In Python - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S27_L165/Python%202/Notable%20Built-In%20Functions%20in%20Python%20-%20Lecture_Py2.ipynb)
+          * [Notable Built-In Functions In Python - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S27_L165/Python%202/Notable%20Built-In%20Functions%20in%20Python%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Notable Built-In Functions In Python - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S27_L165/Python%203/Notable%20Built-In%20Functions%20in%20Python%20-%20Exercise_Py3.ipynb)
+          * [Notable Built-In Functions In Python - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S27_L165/Python%203/Notable%20Built-In%20Functions%20in%20Python%20-%20Lecture_Py3.ipynb)
+          * [Notable Built-In Functions In Python - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S27_L165/Python%203/Notable%20Built-In%20Functions%20in%20Python%20-%20Solution_Py3.ipynb)
+      * S28 L166
+        * Python 2
+          * [Lists - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S28_L166/Python%202/Lists%20-%20Exercise_Py2.ipynb)
+          * [Lists - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S28_L166/Python%202/Lists%20-%20Lecture_Py2.ipynb)
+          * [Lists - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S28_L166/Python%202/Lists%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Lists - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S28_L166/Python%203/Lists%20-%20Exercise_Py3.ipynb)
+          * [Lists - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S28_L166/Python%203/Lists%20-%20Lecture_Py3.ipynb)
+          * [Lists - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S28_L166/Python%203/Lists%20-%20Solution_Py3.ipynb)
+      * S28 L167
+        * Python 2
+          * [Help Yourself With Methods - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S28_L167/Python%202/Help%20Yourself%20with%20Methods%20-%20Exercise_Py2.ipynb)
+          * [Help Yourself With Methods - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S28_L167/Python%202/Help%20Yourself%20with%20Methods%20-%20Lecture_Py2.ipynb)
+          * [Help Yourself With Methods - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S28_L167/Python%202/Help%20Yourself%20with%20Methods%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Help Yourself With Methods - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S28_L167/Python%203/Help%20Yourself%20with%20Methods%20-%20Exercise_Py3.ipynb)
+          * [Help Yourself With Methods - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S28_L167/Python%203/Help%20Yourself%20with%20Methods%20-%20Lecture_Py3.ipynb)
+          * [Help Yourself With Methods - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S28_L167/Python%203/Help%20Yourself%20with%20Methods%20-%20Solution_Py3.ipynb)
+      * S28 L168
+        * Python 2
+          * [List Slicing - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S28_L168/Python%202/List%20Slicing%20-%20Exercise_Py2.ipynb)
+          * [List Slicing - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S28_L168/Python%202/List%20Slicing%20-%20Lecture_Py2.ipynb)
+          * [List Slicing - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S28_L168/Python%202/List%20Slicing%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [List Slicing - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S28_L168/Python%203/List%20Slicing%20-%20Exercise_Py3.ipynb)
+          * [List Slicing - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S28_L168/Python%203/List%20Slicing%20-%20Lecture_Py3.ipynb)
+          * [List Slicing - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S28_L168/Python%203/List%20Slicing%20-%20Solution_Py3.ipynb)
+      * S28 L169
+        * Python 2
+          * [Tuples - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S28_L169/Python%202/Tuples%20-%20Exercise_Py2.ipynb)
+          * [Tuples - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S28_L169/Python%202/Tuples%20-%20Lecture_Py2.ipynb)
+          * [Tuples - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S28_L169/Python%202/Tuples%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Tuples - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S28_L169/Python%203/Tuples%20-%20Exercise_Py3.ipynb)
+          * [Tuples - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S28_L169/Python%203/Tuples%20-%20Lecture_Py3.ipynb)
+          * [Tuples - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S28_L169/Python%203/Tuples%20-%20Solution_Py3.ipynb)
+      * S28 L170
+        * Python 2
+          * [Dictionaries - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S28_L170/Python%202/Dictionaries%20-%20Exercise_Py2.ipynb)
+          * [Dictionaries - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S28_L170/Python%202/Dictionaries%20-%20Lecture_Py2.ipynb)
+          * [Dictionaries - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S28_L170/Python%202/Dictionaries%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Dictionaries - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S28_L170/Python%203/Dictionaries%20-%20Exercise_Py3.ipynb)
+          * [Dictionaries - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S28_L170/Python%203/Dictionaries%20-%20Lecture_Py3.ipynb)
+          * [Dictionaries - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S28_L170/Python%203/Dictionaries%20-%20Solution_Py3.ipynb)
+      * S29 L171
+        * Python 2
+          * [For Loops - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S29_L171/Python%202/For%20Loops%20-%20Exercise_Py2.ipynb)
+          * [For Loops - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S29_L171/Python%202/For%20Loops%20-%20Lecture_Py2.ipynb)
+          * [For Loops - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S29_L171/Python%202/For%20Loops%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [For Loops - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S29_L171/Python%203/For%20Loops%20-%20Exercise_Py3.ipynb)
+          * [For Loops - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S29_L171/Python%203/For%20Loops%20-%20Lecture_Py3.ipynb)
+          * [For Loops - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S29_L171/Python%203/For%20Loops%20-%20Solution_Py3.ipynb)
+      * S29 L172
+        * Python 2
+          * [While Loops And Incrementing - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S29_L172/Python%202/While%20Loops%20and%20Incrementing%20-%20Exercise_Py2.ipynb)
+          * [While Loops And Incrementing - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S29_L172/Python%202/While%20Loops%20and%20Incrementing%20-%20Lecture_Py2.ipynb)
+          * [While Loops And Incrementing - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S29_L172/Python%202/While%20Loops%20and%20Incrementing%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [While Loops And Incrementing - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S29_L172/Python%203/While%20Loops%20and%20Incrementing%20-%20Exercise_Py3.ipynb)
+          * [While Loops And Incrementing - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S29_L172/Python%203/While%20Loops%20and%20Incrementing%20-%20Lecture_Py3.ipynb)
+          * [While Loops And Incrementing - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S29_L172/Python%203/While%20Loops%20and%20Incrementing%20-%20Solution_Py3.ipynb)
+      * S29 L173
+        * Python 2
+          * [Create Lists With The Range() Function - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S29_L173/Python%202/Create%20Lists%20with%20the%20range()%20Function%20-%20Exercise_Py2.ipynb)
+          * [Create Lists With The Range() Function - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S29_L173/Python%202/Create%20Lists%20with%20the%20range()%20Function%20-%20Lecture_Py2.ipynb)
+          * [Create Lists With The Range() Function - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S29_L173/Python%202/Create%20Lists%20with%20the%20range()%20Function%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Create Lists With The Range() Function - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S29_L173/Python%203/Create%20Lists%20with%20the%20range()%20Function%20-%20Exercise_Py3.ipynb)
+          * [Create Lists With The Range() Function - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S29_L173/Python%203/Create%20Lists%20with%20the%20range()%20Function%20-%20Lecture_Py3.ipynb)
+          * [Create Lists With The Range() Function - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S29_L173/Python%203/Create%20Lists%20with%20the%20range()%20Function%20-%20Solution_Py3.ipynb)
+      * S29 L174
+        * Python 2
+          * [Use Conditional Statements And Loops Together - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S29_L174/Python%202/Use%20Conditional%20Statements%20and%20Loops%20Together%20-%20Exercise_Py2.ipynb)
+          * [Use Conditional Statements And Loops Together - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S29_L174/Python%202/Use%20Conditional%20Statements%20and%20Loops%20Together%20-%20Lecture_Py2.ipynb)
+          * [Use Conditional Statements And Loops Together - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S29_L174/Python%202/Use%20Conditional%20Statements%20and%20Loops%20Together%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Use Conditional Statements And Loops Together - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S29_L174/Python%203/Use%20Conditional%20Statements%20and%20Loops%20Together%20-%20Exercise_Py3.ipynb)
+          * [Use Conditional Statements And Loops Together - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S29_L174/Python%203/Use%20Conditional%20Statements%20and%20Loops%20Together%20-%20Lecture_Py3.ipynb)
+          * [Use Conditional Statements And Loops Together - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S29_L174/Python%203/Use%20Conditional%20Statements%20and%20Loops%20Together%20-%20Solution_Py3.ipynb)
+      * S29 L175
+        * Python 2
+          * [All In - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S29_L175/Python%202/All%20In%20-%20Exercise_Py2.ipynb)
+          * [All In - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S29_L175/Python%202/All%20In%20-%20Lecture_Py2.ipynb)
+          * [All In - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S29_L175/Python%202/All%20In%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [All In - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S29_L175/Python%203/All%20In%20-%20Exercise_Py3.ipynb)
+          * [All In - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S29_L175/Python%203/All%20In%20-%20Lecture_Py3.ipynb)
+          * [All In - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S29_L175/Python%203/All%20In%20-%20Solution_Py3.ipynb)
+      * S29 L176
+        * Python 2
+          * [Iterating Over Dictionaries - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S29_L176/Python%202/Iterating%20over%20Dictionaries%20-%20Exercise_Py2.ipynb)
+          * [Iterating Over Dictionaries - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S29_L176/Python%202/Iterating%20over%20Dictionaries%20-%20Lecture_Py2.ipynb)
+          * [Iterating Over Dictionaries - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S29_L176/Python%202/Iterating%20over%20Dictionaries%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Iterating Over Dictionaries - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S29_L176/Python%203/Iterating%20over%20Dictionaries%20-%20Exercise_Py3.ipynb)
+          * [Iterating Over Dictionaries - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S29_L176/Python%203/Iterating%20over%20Dictionaries%20-%20Lecture_Py3.ipynb)
+          * [Iterating Over Dictionaries - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S29_L176/Python%203/Iterating%20over%20Dictionaries%20-%20Solution_Py3.ipynb)
+    * Part 5 Advanced Statistical Methods (Machine Learning)
+      * S32 L186
+        * [Simple Linear Regression](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S32_L186/Simple%20linear%20regression.ipynb)
+        * [Simple Linear Regression With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S32_L186/Simple%20linear%20regression_with_comments.ipynb)
+      * S32 L187
+        * [Simple Linear Regression Exercise Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S32_L187/Simple%20Linear%20Regression%20Exercise%20Solution.ipynb)
+        * [Simple Linear Regression Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S32_L187/Simple%20Linear%20Regression%20Exercise.ipynb)
+      * S33 L194
+        * [Multiple Linear Regression And Adjusted R-Squared ](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S33_L194/Multiple%20linear%20regression%20and%20Adjusted%20R-squared_.ipynb)
+        * [Multiple Linear Regression And Adjusted R-Squared With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S33_L194/Multiple%20linear%20regression%20and%20Adjusted%20R-squared_with_comments.ipynb)
+      * S33 L195
+        * [Multiple Linear Regression Exercise Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S33_L195/Multiple%20Linear%20Regression%20Exercise%20Solution.ipynb)
+        * [Multiple Linear Regression Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S33_L195/Multiple%20Linear%20Regression%20Exercise.ipynb)
+      * S33 L203
+        * [Dummy Variables](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S33_L203/Dummy%20Variables.ipynb)
+        * [Dummy Variables With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S33_L203/Dummy%20variables_with_comments.ipynb)
+      * S33 L204
+        * [Multiple Linear Regression With Dummies Exercise Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S33_L204/Multiple%20Linear%20Regression%20with%20Dummies%20Exercise%20Solution.ipynb)
+        * [Multiple Linear Regression With Dummies Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S33_L204/Multiple%20Linear%20Regression%20with%20Dummies%20Exercise.ipynb)
+      * S33 L205
+        * [Making Predictions](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S33_L205/Making%20predictions.ipynb)
+        * [Making Predictions With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S33_L205/Making%20predictions_with_comments.ipynb)
+      * S34 L208
+        * [Sklearn - Simple Linear Regression](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L208/sklearn%20-%20Simple%20Linear%20Regression.ipynb)
+        * [Sklearn - Simple Linear Regression With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L208/sklearn%20-%20Simple%20Linear%20Regression_with_comments.ipynb)
+      * S34 L209
+        * [Sklearn - Simple Linear Regression](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L209/sklearn%20-%20Simple%20Linear%20Regression.ipynb)
+        * [Sklearn - Simple Linear Regression With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L209/sklearn%20-%20Simple%20Linear%20Regression_with_comments.ipynb)
+      * S34 L211
+        * [Simple Linear Regression With Sklearn - Exercise Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L211/Simple%20Linear%20Regression%20with%20sklearn%20-%20Exercise%20Solution.ipynb)
+        * [Simple Linear Regression With Sklearn - Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L211/Simple%20Linear%20Regression%20with%20sklearn%20-%20Exercise.ipynb)
+      * S34 L212
+        * [Sklearn - Multiple Linear Regression](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L212/sklearn%20-%20Multiple%20Linear%20Regression.ipynb)
+        * [Sklearn - Multiple Linear Regression With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L212/sklearn%20-%20Multiple%20Linear%20Regression_with_comments.ipynb)
+      * S34 L213
+        * [Sklearn - Multiple Linear Regression And Adjusted R-Squared](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L213/sklearn%20-%20Multiple%20Linear%20Regression%20and%20Adjusted%20R-squared.ipynb)
+        * [Sklearn - Multiple Linear Regression And Adjusted R-Squared With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L213/sklearn%20-%20Multiple%20Linear%20Regression%20and%20Adjusted%20R-squared_with_comments.ipynb)
+      * S34 L214
+        * [Sklearn - Multiple Linear Regression And Adjusted R-Squared - Exercise Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L214/sklearn%20-%20Multiple%20Linear%20Regression%20and%20Adjusted%20R-squared%20-%20Exercise%20Solution.ipynb)
+        * [Sklearn - Multiple Linear Regression And Adjusted R-Squared - Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L214/sklearn%20-%20Multiple%20Linear%20Regression%20and%20Adjusted%20R-squared%20-%20Exercise.ipynb)
+      * S34 L215
+        * [Sklearn - Feature Selection With F-Regression](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L215/sklearn%20-%20Feature%20Selection%20with%20F-regression.ipynb)
+        * [Sklearn - Feature Selection With F-Regression With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L215/sklearn%20-%20Feature%20Selection%20with%20F-regression_with_comments.ipynb)
+      * S34 L216
+        * [Sklearn - How To Properly Include P-Values](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L216/sklearn%20-%20How%20to%20properly%20include%20p-values.ipynb)
+      * S34 L217
+        * [Sklearn - Multiple Linear Regression Summary Table](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L217/sklearn%20-%20Multiple%20Linear%20Regression%20Summary%20Table.ipynb)
+        * [Sklearn - Multiple Linear Regression Summary Table With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L217/sklearn%20-%20Multiple%20Linear%20Regression%20Summary%20Table_with_comments.ipynb)
+      * S34 L218
+        * [Sklearn - Multiple Linear Regression Exercise Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L218/sklearn%20-%20Multiple%20Linear%20Regression%20Exercise%20Solution.ipynb)
+        * [Sklearn - Multiple Linear Regression Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L218/sklearn%20-%20Multiple%20Linear%20Regression%20Exercise.ipynb)
+      * S34 L219
+        * [Sklearn - Feature Selection Through Feature Scaling (Standardization) - Part 1](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L219/sklearn%20-%20Feature%20Selection%20through%20Feature%20Scaling%20(Standardization)%20-%20Part%201.ipynb)
+        * [Sklearn - Feature Selection Through Feature Scaling (Standardization) - Part 1 With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L219/sklearn%20-%20Feature%20Selection%20through%20Feature%20Scaling%20(Standardization)%20-%20Part%201_with_comments.ipynb)
+      * S34 L220
+        * [Sklearn - Feature Selection Through Feature Scaling (Standardization) - Part 2](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L220/sklearn%20-%20Feature%20Selection%20through%20Feature%20Scaling%20(Standardization)%20-%20Part%202.ipynb)
+        * [Sklearn - Feature Selection Through Feature Scaling (Standardization) - Part 2 With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L220/sklearn%20-%20Feature%20Selection%20through%20Feature%20Scaling%20(Standardization)%20-%20Part%202_with_comments.ipynb)
+      * S34 L221
+        * [Sklearn - Making Predictions With The Standardized Coefficients](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L221/sklearn%20-%20Making%20Predictions%20with%20the%20Standardized%20Coefficients.ipynb)
+        * [Sklearn - Making Predictions With The Standardized Coefficients With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L221/sklearn%20-%20Making%20Predictions%20with%20the%20Standardized%20Coefficients_with_comments.ipynb)
+      * S34 L222
+        * [Sklearn - Feature Scaling Exercise Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L222/sklearn%20-%20Feature%20Scaling%20Exercise%20Solution.ipynb)
+        * [Sklearn - Feature Scaling Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L222/sklearn%20-%20Feature%20Scaling%20Exercise.ipynb)
+      * S34 L224
+        * [Sklearn - Train Test Split](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L224/sklearn%20-%20Train%20Test%20Split.ipynb)
+        * [Sklearn - Train Test Split With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L224/sklearn%20-%20Train%20Test%20Split_with_comments.ipynb)
+      * S35 L225
+        * [Sklearn - Linear Regression - Practical Example (Part 1)](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S35_L225/sklearn%20-%20Linear%20Regression%20-%20Practical%20Example%20(Part%201).ipynb)
+        * [Sklearn - Linear Regression - Practical Example (Part 1) With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S35_L225/sklearn%20-%20Linear%20Regression%20-%20Practical%20Example%20(Part%201)_with_comments.ipynb)
+      * S35 L226
+        * [Sklearn - Linear Regression - Practical Example (Part 2)](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S35_L226/sklearn%20-%20Linear%20Regression%20-%20Practical%20Example%20(Part%202).ipynb)
+        * [Sklearn - Linear Regression - Practical Example (Part 2) With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S35_L226/sklearn%20-%20Linear%20Regression%20-%20Practical%20Example%20(Part%202)_with_comments.ipynb)
+      * S35 L228
+        * [Sklearn - Linear Regression - Practical Example (Part 3)](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S35_L228/sklearn%20-%20Linear%20Regression%20-%20Practical%20Example%20(Part%203).ipynb)
+        * [Sklearn - Linear Regression - Practical Example (Part 3) With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S35_L228/sklearn%20-%20Linear%20Regression%20-%20Practical%20Example%20(Part%203)_with_comments.ipynb)
+      * S35 L229
+        * [Sklearn - Dummies And Vif - Exercise Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S35_L229/sklearn%20-%20Dummies%20and%20VIF%20-%20Exercise%20Solution.ipynb)
+        * [Sklearn - Dummies And Vif - Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S35_L229/sklearn%20-%20Dummies%20and%20VIF%20-%20Exercise.ipynb)
+      * S35 L230
+        * [Sklearn - Linear Regression - Practical Example (Part 4)](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S35_L230/sklearn%20-%20Linear%20Regression%20-%20Practical%20Example%20(Part%204).ipynb)
+        * [Sklearn - Linear Regression - Practical Example (Part 4) With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S35_L230/sklearn%20-%20Linear%20Regression%20-%20Practical%20Example%20(Part%204)_with_comments.ipynb)
+      * S35 L232
+        * [Sklearn - Linear Regression - Practical Example (Part 5)](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S35_L232/sklearn%20-%20Linear%20Regression%20-%20Practical%20Example%20(Part%205).ipynb)
+        * [Sklearn - Linear Regression - Practical Example (Part 5) With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S35_L232/sklearn%20-%20Linear%20Regression%20-%20Practical%20Example%20(Part%205)_with_comments.ipynb)
+      * S36 L235
+        * [Admittance](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L235/Admittance.ipynb)
+        * [Admittance With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L235/Admittance_with_comments.ipynb)
+      * S36 L237
+        * [Admittance Regression Tables Fixed Error](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L237/Admittance%20regression%20tables_fixed_error.ipynb)
+        * [Admittance Regression](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L237/Admittance%20regression.ipynb)
+        * [Admittance Regression Summary Error](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L237/Admittance%20regression_summary_error.ipynb)
+      * S36 L238
+        * [Building A Logistic Regression - Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L238/Building%20a%20Logistic%20Regression%20-%20Exercise.ipynb)
+        * [Building A Logistic Regression - Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L238/Building%20a%20Logistic%20Regression%20-%20Solution.ipynb)
+      * S36 L241
+        * [Understanding Logistic Regression Tables - Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L241/Understanding%20Logistic%20Regression%20Tables%20-%20Exercise.ipynb)
+        * [Understanding Logistic Regression Tables - Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L241/Understanding%20Logistic%20Regression%20Tables%20-%20Solution.ipynb)
+      * S36 L243
+        * [Binary Predictors](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L243/Binary%20predictors.ipynb)
+      * S36 L244
+        * [Binary Predictors In A Logistic Regression - Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L244/Binary%20Predictors%20in%20a%20Logistic%20Regression%20-%20Exercise.ipynb)
+        * [Binary Predictors In A Logistic Regression - Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L244/Binary%20Predictors%20in%20a%20Logistic%20Regression%20-%20Solution.ipynb)
+      * S36 L245
+        * [Accuracy](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L245/Accuracy.ipynb)
+        * [Accuracy With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L245/Accuracy_with_comments.ipynb)
+      * S36 L246
+        * [Calculating The Accuracy Of The Model - Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L246/Calculating%20the%20Accuracy%20of%20the%20Model%20-%20Exercise.ipynb)
+        * [Calculating The Accuracy Of The Model - Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L246/Calculating%20the%20Accuracy%20of%20the%20Model%20-%20Solution.ipynb)
+      * S36 L248
+        * [Testing The Model](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L248/Testing%20the%20model.ipynb)
+        * [Testing The Model With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L248/Testing%20the%20model_with_comments.ipynb)
+      * S36 L249
+        * [Testing The Model - Exercise.](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L249/Testing%20the%20Model%20-%20Exercise..ipynb)
+        * [Testing The Model - Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L249/Testing%20the%20Model%20-%20Solution.ipynb)
+      * S38 L255
+        * [Country Clusters](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L255/Country%20clusters.ipynb)
+        * [Country Clusters With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L255/Country%20clusters_with_comments.ipynb)
+      * S38 L256
+        * [A Simple Example Of Clustering - Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L256/A%20Simple%20Example%20of%20Clustering%20-%20Exercise.ipynb)
+        * [A Simple Example Of Clustering - Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L256/A%20Simple%20Example%20of%20Clustering%20-%20Solution.ipynb)
+      * S38 L257
+        * [Categorical Data](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L257/Categorical%20data.ipynb)
+        * [Categorical Data With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L257/Categorical%20data_with_comments.ipynb)
+      * S38 L258
+        * [Clustering Categorical Data - Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L258/Clustering%20Categorical%20Data%20-%20Exercise.ipynb)
+        * [Clustering Categorical Data - Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L258/Clustering%20Categorical%20Data%20-%20Solution.ipynb)
+      * S38 L259
+        * [Selecting The Number Of Clusters](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L259/Selecting%20the%20number%20of%20clusters.ipynb)
+        * [Selecting The Number Of Clusters With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L259/Selecting%20the%20number%20of%20clusters_with_comments.ipynb)
+      * S38 L260
+        * [How To Choose The Number Of Clusters - Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L260/How%20to%20Choose%20the%20Number%20of%20Clusters%20-%20Exercise.ipynb)
+        * [How To Choose The Number Of Clusters - Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L260/How%20to%20Choose%20the%20Number%20of%20Clusters%20-%20Solution.ipynb)
+      * S38 L264
+        * [Market Segmentation Example](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L264/Market%20segmentation%20example.ipynb)
+        * [Market Segmentation Example With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L264/Market%20segmentation%20example_with_comments.ipynb)
+      * S38 L265
+        * [Market Segmentation Example Part2](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L265/Market%20segmentation%20example_Part2.ipynb)
+        * [Market Segmentation Example Part2 With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L265/Market%20segmentation%20example_Part2_with_comments.ipynb)
+      * S38 L267
+        * [Species Segmentation With Cluster Analysis Part 1- Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L267/Species%20Segmentation%20with%20Cluster%20Analysis%20Part%201-%20Exercise.ipynb)
+        * [Species Segmentation With Cluster Analysis Part 1- Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L267/Species%20Segmentation%20with%20Cluster%20Analysis%20Part%201-%20Solution.ipynb)
+      * S38 L268
+        * [Species Segmentation With Cluster Analysis Part 2 - Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L268/Species%20Segmentation%20with%20Cluster%20Analysis%20Part%202%20-%20Exercise.ipynb)
+        * [Species Segmentation With Cluster Analysis Part 2 - Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L268/Species%20Segmentation%20with%20Cluster%20Analysis%20Part%202%20-%20Solution.ipynb)
+      * S39 L271
+        * [Heatmaps](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S39_L271/Heatmaps.ipynb)
+        * [Heatmaps With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S39_L271/Heatmaps_with_comments.ipynb)
   * Python Data Engineering
     * 1. Iphone Data Analysis Project
       * [Iphone Data Analysis Mini Project](Tutorials/Python_Data_Engineering/1.%20iPhone%20Data%20Analysis%20Project/iPhone%20Data%20Analysis%20Mini%20Project.ipynb)
