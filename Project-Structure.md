@@ -634,6 +634,9 @@
   * Cold-Email-Generator
     * App
       * [App](Generative-AI/Cold-Email-Generator/app/app.py)
+  * Pdf-Analyzer
+    * [Flask-Server](Generative-AI/PDF-Analyzer/flask-server.py)
+    * [Streamlit App](Generative-AI/PDF-Analyzer/streamlit_app.py)
   * Image-To-3D Model
     * [Model](Generative-AI/image-to-3D%20model/model.py)
 
