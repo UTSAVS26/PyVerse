@@ -40,8 +40,10 @@
       * [Graph Coloring](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Backtracking/graph_coloring.py)
       * [Hamiltonian Cycle](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Backtracking/hamiltonian_cycle.py)
       * [Knights Tour](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Backtracking/knights_tour.py)
+      * [Kth Permutation Sequence](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Backtracking/kth_permutation_sequence.py)
       * [Maze Solving](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Backtracking/maze_solving.py)
       * [N Queens](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Backtracking/n_queens.py)
+      * [Rat In A Maze](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Backtracking/rat_in_a_maze.py)
     * Branch And Bound
       * [8 Puzzle](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Branch_and_Bound/8_puzzle.py)
     * Divide And Conquer
