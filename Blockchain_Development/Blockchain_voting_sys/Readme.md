@@ -24,7 +24,7 @@ This project is a blockchain-based voting system that ensures transparency and i
    ```bash
    npm install -g truffle
 2. **Compile and Deploy the Contract:**
-- Navigate to the contracts directory.
+- Navigate to the ```voting_sys.sol```.
 - Run truffle compile to compile the Solidity contract.
 - Run truffle migrate to deploy the contract to your local blockchain or test network.
 
