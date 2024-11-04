@@ -106,6 +106,8 @@
       * [Program](Algorithms_and_Data_Structures/Linked%20List/Clone_a_List_with_Random_Pointers/program.py)
     * Detect Cycle In List
       * [Program](Algorithms_and_Data_Structures/Linked%20List/Detect_Cycle_in_List/program.py)
+    * Intersection Of Two List
+      * [Program](Algorithms_and_Data_Structures/Linked%20List/Intersection_of_Two_List/program.py)
     * [Menu Driven Code For Circular Doubly Linkedlist](Algorithms_and_Data_Structures/Linked%20List/Menu_Driven_Code_for_Circular_Doubly_LinkedList.py)
     * [Menu Driven Code For Circular Linkedlist](Algorithms_and_Data_Structures/Linked%20List/Menu_Driven_Code_for_Circular_LinkedList.py)
     * [Menu Driven Code For Doubly Linkedlist](Algorithms_and_Data_Structures/Linked%20List/Menu_Driven_Code_for_Doubly_LinkedList.py)
