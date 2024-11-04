@@ -724,6 +724,8 @@
     * [Model](Machine_Learning/Flight_delay_prediction/model.ipynb)
   * Gradient Descent
     * [Gradientdescent](Machine_Learning/Gradient_descent/gradientdescent.ipynb)
+  * Grammar Auto Corrector Model
+    * [Main](Machine_Learning/Grammar%20Auto%20Corrector%20Model/main.py)
   * Hand Game Controller
     * [Main-Mobile-Cam](Machine_Learning/Hand%20Game%20Controller/main-mobile-cam.py)
     * [Main-Pc-Cam](Machine_Learning/Hand%20Game%20Controller/main-pc-cam.py)
