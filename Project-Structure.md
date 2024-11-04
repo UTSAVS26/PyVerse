@@ -572,6 +572,8 @@
     * [Cards](Game_Development/Card%20quest/Cards.py)
   * Catch The Fruit
     * [Catch The Fruit](Game_Development/Catch_The_Fruit/Catch_the_fruit.py)
+  * Color Match Challenge
+    * [Main](Game_Development/Color%20Match%20Challenge/main.py)
   * Crossword Game
     * [Crossword](Game_Development/Crossword%20Game/crossword.py)
   * Dice Rolling Simulator
