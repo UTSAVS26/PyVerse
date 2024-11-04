@@ -517,6 +517,8 @@
       * [Potato Classification](Deep_Learning/Plant%20Disease%20Detection/ipynb%20files/Potato_Classification.ipynb)
       * [Sugarcane Classification](Deep_Learning/Plant%20Disease%20Detection/ipynb%20files/Sugarcane_Classification.ipynb)
       * [Tomato Classification](Deep_Learning/Plant%20Disease%20Detection/ipynb%20files/Tomato_Classification.ipynb)
+  * Pneumonia Detection
+    * [Pneumonia-Detection-Using-Deep-Learning](Deep_Learning/Pneumonia_Detection/pneumonia-detection-using-deep-learning.ipynb)
   * Srgan For Upscaling Image Resolutions
     * Main
       * [Data Loader](Deep_Learning/SRGAN%20for%20upscaling%20image%20resolutions/main/data_loader.py)
