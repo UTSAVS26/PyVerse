@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Voting System</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #6200ea;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        #candidates {
+            margin-bottom: 20px;
+        }
+        .candidate {
+            background-color: #fff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        input[type="number"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #3700b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blockchain Voting System</h1>
+    </header>
+    <main>
+        <div id="candidates"></div>
+        <input type="number" id="candidateId" placeholder="Enter Candidate ID">
+        <button onclick="vote()">Vote</button>
+        <button onclick="toggleVoting()">Toggle Voting</button>
+    </main>
+
+    <script>
+        const contractAddress = 'YOUR_CONTRACT_ADDRESS';
+        const contractABI = [/* YOUR_CONTRACT_ABI */];
+
+        let web3;
+        let votingContract;
+        let accounts;
+
+        window.addEventListener('load', async () => {
+            if (window.ethereum) {
+                web3 = new Web3(window.ethereum);
+                try {
+                    accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+                    votingContract = new web3.eth.Contract(contractABI, contractAddress);
+                    loadCandidates();
+                    listenForEvents();
+                } catch (error) {
+                    console.error("User denied account access", error);
+                }
+            } else {
+                console.log('Non-Ethereum browser detected. You should consider trying MetaMask!');
+            }
+        });
+
+        async function loadCandidates() {
+            const candidatesCount = await votingContract.methods.candidatesCount().call();
+            const candidatesDiv = document.getElementById('candidates');
+            candidatesDiv.innerHTML = '';
+
+            for (let i = 1; i <= candidatesCount; i++) {
+                const candidate = await votingContract.methods.candidates(i).call();
+                candidatesDiv.innerHTML += `<div class="candidate"><p>${candidate.id}: ${candidate.name} - ${candidate.voteCount} votes</p></div>`;
+            }
+        }
+
+        async function vote() {
+            const candidateId = document.getElementById('candidateId').value;
+            try {
+                await votingContract.methods.vote(candidateId).send({ from: accounts[0] });
+                alert('Vote cast successfully!');
+                loadCandidates();
+            } catch (error) {
+                console.error(error);
+                alert('There was an error casting your vote.');
+            }
+        }
+
+        async function toggleVoting() {
+            try {
+                const isOwner = await votingContract.methods.owner().call() === accounts[0];
+                if (!isOwner) {
+                    alert('Only the contract owner can toggle voting.');
+                    return;
+                }
+                const votingOpen = await votingContract.methods.votingOpen().call();
+                if (votingOpen) {
+                    await votingContract.methods.closeVoting().send({ from: accounts[0] });
+                } else {
+                    await votingContract.methods.openVoting().send({ from: accounts[0] });
+                }
+                alert('Voting status changed successfully!');
+            } catch (error) {
+                console.error(error);
+                alert('There was an error changing the voting status.');
+            }
+        }
+
+        function listenForEvents() {
+            votingContract.events.VotedEvent({}, (error, event) => {
+                if (!error) {
+                    console.log('VotedEvent', event);
+                    loadCandidates();
+                } else {
+                    console.error(error);
+                }
+            });
+
+            votingContract.events.CandidateAdded({}, (error, event) => {
+                if (!error) {
+                    console.log('CandidateAdded', event);
+                    loadCandidates();
+                } else {
+                    console.error(error);
+                }
+            });
+
+            votingContract.events.VotingStatusChanged({}, (error, event) => {
+                if (!error) {
+                    console.log('VotingStatusChanged', event);
+                } else {
+                    console.error(error);
+                }
+            });
+        }
+    </script>
+</body>
+</html>
