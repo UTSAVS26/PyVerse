@@ -99,6 +99,7 @@
       * [Unique-Paths](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/unique-paths.py)
   * Graph
     * [Graph Cloning](Algorithms_and_Data_Structures/Graph/Graph_Cloning.py)
+    * [Graph Reversal](Algorithms_and_Data_Structures/Graph/Graph_Reversal.py)
   * Heapsort
     * [Heapsortvisualizer](Algorithms_and_Data_Structures/HeapSort/heapsortvisualizer.py)
     * [Timecomplexity1](Algorithms_and_Data_Structures/HeapSort/timecomplexity1.py)
