@@ -641,6 +641,8 @@
   * Pdf-Analyzer
     * [Flask-Server](Generative-AI/PDF-Analyzer/flask-server.py)
     * [Streamlit App](Generative-AI/PDF-Analyzer/streamlit_app.py)
+  * Turn Pictures Into Story
+    * [App](Generative-AI/Turn%20Pictures%20Into%20Story/app.py)
   * Image-To-3D Model
     * [Model](Generative-AI/image-to-3D%20model/model.py)
 
