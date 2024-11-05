@@ -516,6 +516,8 @@
     * Model
       * [Ann Handwritten Digit Classification](Deep_Learning/MNIST%20Digit%20Classification%20using%20Neural%20Networks/model/ANN_Handwritten_Digit_Classification.ipynb)
       * [Cnn Handwritten Digit Recogniser](Deep_Learning/MNIST%20Digit%20Classification%20using%20Neural%20Networks/model/CNN_handwritten_digit_recogniser.ipynb)
+  * Malaria-Classification
+      * [Malaria-Classification](Deep_Learning/Malaria-Classification/model/malaria-classification.ipynb)
   * Medical Diagnoser
     * [Medical](Deep_Learning/Medical_diagnoser/medical.ipynb)
   * Nn From Scratch
