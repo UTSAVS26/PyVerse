@@ -584,6 +584,8 @@
 ## Explainable-Ai
   * Explainable Ai Research Methods
     * [Xai](Explainable-AI/Explainable%20AI%20Research%20Methods/xai.ipynb)
+  * Intro To Lime And Shap
+    * [Explainable-Ai-Intro-To-Lime-Shap](Explainable-AI/Intro_to_LIME_and_Shap/explainable-ai-intro-to-lime-shap.ipynb)
   * Xai On Cancer Dataset
     * [Cancer Dataset](Explainable-AI/XAI%20on%20Cancer%20Dataset/cancer_dataset.ipynb)
 
