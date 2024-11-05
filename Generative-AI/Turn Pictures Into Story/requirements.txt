@@ -1,0 +1,5 @@
+transformers
+torch
+gradio
+scipy
+phonemizer
