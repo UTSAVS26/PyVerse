@@ -95,8 +95,11 @@
       * [Nth Tribonacci Num](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/nth_tribonacci_num.py)
       * [Zero One Knapsack](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/zero_one_knapsack.py)
     * Hard-Dp-Problems
+      * [Catalan-Numbers](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Hard-DP-Problems/catalan-numbers.py)
       * [Cherry-Pick-Algo](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Hard-DP-Problems/cherry-pick-algo.py)
+      * [Knapsack-With-Constraints](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Hard-DP-Problems/knapsack-with-constraints.py)
       * [Levenshtein-Distance](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Hard-DP-Problems/levenshtein-distance.py)
+      * [Min-Steps-To-One](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Hard-DP-Problems/min-steps-to-one.py)
       * [Regular-Expression-Matching](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Hard-DP-Problems/regular-expression-matching.py)
     * Medium-Dp-Problems
       * [Coin-Change](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/coin-change.py)
