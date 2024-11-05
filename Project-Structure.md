@@ -582,6 +582,8 @@
     * [Toxicity](Deep_Learning/toxicity%20insult%20analyser/Toxicity.ipynb)
 
 ## Explainable-Ai
+  * Covid Detection From Explainable Cnn
+    * [Covid-Detection-From-Cxr-Using-Explainable-Cnn](Explainable-AI/Covid_Detection_from_Explainable_cnn/covid-detection-from-cxr-using-explainable-cnn.ipynb)
   * Explainable Ai Research Methods
     * [Xai](Explainable-AI/Explainable%20AI%20Research%20Methods/xai.ipynb)
   * Xai On Cancer Dataset
