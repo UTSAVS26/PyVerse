@@ -670,6 +670,8 @@
     * [Model](Generative-AI/image-to-3D%20model/model.py)
 
 ## Image Processing
+  * Ai Super-Resolution And Image Restoration
+    * [Main](Image%20processing/AI%20Super-Resolution%20and%20Image%20Restoration/main.py)
   * Cat Dog Cnn Classifier
     * [Cat Dog Cnn Classifier](Image%20processing/Cat_Dog_CNN_classifier/Cat_Dog_CNN_classifier.ipynb)
   * Lane Line Detection [Open Cv]
