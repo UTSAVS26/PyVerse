@@ -586,7 +586,6 @@
     * [Xai](Explainable-AI/Explainable%20AI%20Research%20Methods/xai.ipynb)
   * Xai On Cancer Dataset
     * [Cancer Dataset](Explainable-AI/XAI%20on%20Cancer%20Dataset/cancer_dataset.ipynb)
-  * [Covid-Detection-From-Cxr-Using-Explainable-Cnn](Explainable-AI/covid-detection-from-cxr-using-explainable-cnn.ipynb)
 
 ## Game Development
   * 2D Platformer
