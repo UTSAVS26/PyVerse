@@ -1,101 +1,220 @@
-# Contributing to PyVerse
+# Contribute to PyVerse
 
----
+Welcome to our project! We're thrilled to have you contribute. Your efforts, big or small, make a difference. Please ensure that you follow our [Code of Conduct](CODE_OF_CONDUCT.md) in all interactions.
 
-We welcome contributions to **PyVerse**! Whether you're fixing bugs, adding new features, improving documentation, or enhancing existing projects, your contributions are highly valued. Please follow the guidelines below to contribute effectively to the project.
+<br>         
 
----
+# Need Help with the Basics? 🤔
 
-## How to Contribute
+If you're new to Git and GitHub, no worries! Here are some useful resources:
 
-1. **Fork the Repository:**
+- [Forking a Repository](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
+- [Cloning a Repository](https://help.github.com/en/desktop/contributing-to-projects/creating-an-issue-or-pull-request)
+- [How to Create a Pull Request](https://opensource.com/article/19/7/create-pull-request-github)
+- [Getting Started with Git and GitHub](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)
+- [Learn GitHub from Scratch](https://docs.github.com/en/get-started/start-your-journey/git-and-github-learning-resources)
 
-   Click the "Fork" button on the top right of the repository page to create a copy of the repository under your GitHub account.
 
-2. **Clone Your Fork:**
+# Project Structure 📂
 
-   Clone your forked repository to your local machine:
+```bash
 
-   ```sh
-   git clone https://github.com/yourusername/PyVerse.git
-   cd PyVerse
-   ```
+PyVerse/
+├── .github/                  # GitHub-related files
+│   ├── ISSUE_TEMPLATE/       # Issue templates for GitHub
+│   ├── workflows/            # CI/CD workflows
+│   └── PULL_REQUEST_TEMPLATE.md # Template for pull requests
+├── Advanced_Projects/        # Advanced project directory
+├── Algorithms_and_Data_Structures/ # Algorithms and data structures
+├── Automation_Tools/         # Automation tools directory
+├── Beginner_Projects/        # Beginner project directory
+├── Blockchain_Development/   # Blockchain projects
+├── Computer Vision/          # Computer vision projects
+├── Cybersecurity_Tools/      # Cybersecurity tools
+├── Data_Science/             # Data science projects
+├── Deep_Learning/            # Deep learning projects
+├── Explainable-AI/           # Explainable AI projects
+├── Game_Development/         # Game development projects
+├── Generative-AI/            # Generative AI projects
+├── Image Processing/         # Image processing projects
+├── Machine_Learning/         # Machine learning projects
+├── Sentiment-Analysis-Of-Restaurant-Reviews/ # Sentiment analysis project
+├── Stock_Market_Analysis/    # Stock market analysis
+├── Tutorials/                # Tutorials and guides
+├── Video Processing/         # Video processing projects
+├── Web_Development/          # Web development projects
+├── .gitignore                # Git ignore file
+├── CODE_OF_CONDUCT.md        # Code of conduct
+├── CONTRIBUTING.md           # Contribution guidelines
+├── LICENSE                   # License file
+├── PROJECT-README-TEMPLATE.md # Project README template
+├── Project-Structure.md      # Project structure documentation
+├── README.md                 # Main README file with project details
+├── image.webp                # Image file
+├── performance_metrics.png    # Performance metrics image
+├── repo_structure.txt        # Repository structure documentation
+└── Breadcrumbs               # Breadcrumbs functionality (if applicable)
 
-3. **Create a Branch:**
+```
 
-   Create a new branch for your changes:
+# First Pull Request ✨
 
-   ```sh
-   git checkout -b my-feature-branch
-   ```
+1. **Star this repository**
+    Click on the top right corner marked as **Stars** at last.
 
-4. **Make Your Changes:**
+2. **Fork this repository**
+    Click on the top right corner marked as **Fork** at second last.                  
 
-   Implement your changes, whether it's adding a new project, improving existing features, fixing bugs, or updating documentation.
+3. **Clone the forked repository**                   
 
-5. **Commit Your Changes:**
+```bash
+git clone https://github.com/<your-github-username>/PyVerse.git
+```
+  
+4. **Navigate to the project directory**
 
-   Commit your changes with a descriptive commit message:
+```bash
+cd PyVerse
+```
 
-   ```sh
-   git add .
-   git commit -m "Add new feature/fix bug/update documentation"
-   ```
+5. **Create a new branch**               
 
-6. **Push Your Branch:**
+```bash
+git checkout -b <your_branch_name>
+```
 
-   Push your branch to your forked repository:
+6. **To make changes**
 
-   ```sh
-   git push origin my-feature-branch
-   ```
+```bash
+git add .
+```
 
-7. **Open a Pull Request:**
+7. **Now to commit**
 
-   Navigate to the original repository on GitHub and open a pull request from your branch. Provide a detailed description of your changes and the reasons behind them.
+```bash
+git commit -m "add comment according to your changes or addition of features inside this"
+```
 
----
+8. **Push your local commits to the remote repository**
 
-## Guidelines
+```bash
+git push -u origin <your_branch_name>
+```
 
-- **Code Style:**
+9. **Create a Pull Request**
 
-  Adhere to the existing code style of the project. Ensure your code is clean, well-structured, and documented. Follow PEP 8 for Python code style guidelines.
+10. **Congratulations! 🎉 you've made your contribution**
 
-- **Testing:**
+<br>
 
-  Ensure your changes do not break existing functionality. Run the test suite before submitting your pull request:
+# Alternatively contribute using GitHub Desktop 🖥️
 
-  ```sh
-  pytest
-  ```
+1. **Open GitHub Desktop:**
+   Launch GitHub Desktop and log in to your GitHub account if you haven't already.
 
-  If you are adding a new feature, include tests to validate your changes.
+2. **Clone the Repository:**
+   - If you haven't cloned the repository yet, you can do so by clicking on the "File" menu and selecting "Clone Repository."
+   - Choose the repository from the list of repositories on GitHub and clone it to your local machine.
 
-- **Documentation:**
+3. **Switch to the Correct Branch:**
+   - Ensure you are on the branch that you want to submit a pull request for.
+   - If you need to switch branches, you can do so by clicking on the "Current Branch" dropdown menu and selecting the desired branch.
 
-  Update relevant documentation to reflect your changes. This includes README files, project descriptions, and any new features or modifications.
+4. **Make Changes:**
+   Make your changes to the code or files in the repository using your preferred code editor.
 
-- **Commit Messages:**
+5. **Commit Changes:**
+   - In GitHub Desktop, you'll see a list of the files you've changed. Check the box next to each file you want to include in the commit.
+   - Enter a summary and description for your changes in the "Summary" and "Description" fields, respectively. Click the "Commit to <branch-name>" button to commit your changes to the local branch.
 
-  Write clear and concise commit messages. Use the imperative mood in the subject line (e.g., "Fix issue" instead of "Fixed issue").
+6. **Push Changes to GitHub:**
+   After committing your changes, click the "Push origin" button in the top right corner of GitHub Desktop to push your changes to your forked repository on GitHub.
 
-- **Pull Requests:**
+7. **Create a Pull Request:**
+   - Go to the GitHub website and navigate to your fork of the repository.
+   - You should see a button to "Compare & pull request" between your fork and the original repository. Click on it.
 
-  - Provide a clear and detailed description of the changes in your pull request.
-  - Reference any related issues or discussions.
-  - Be responsive to feedback and make adjustments as needed.
+8. **Review and Submit:**
+   - On the pull request page, review your changes and add any additional information, such as a title and description, that you want to include with your pull request.
+   - Once you're satisfied, click the "Create pull request" button to submit your pull request.
 
----
+9. **Wait for Review:**
+    Your pull request will now be available for review by the project maintainers. They may provide feedback or ask for changes before merging your pull request into the main branch of the repository.
 
-## Code of Conduct
+<br>
 
-This project is governed by a [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you agree to uphold this code and ensure a respectful and inclusive environment. Report any issues to [utsavsinghal26@gmail.com](mailto:utsavsinghal26@gmail.com).
 
----
+# Good Coding Practices 🧑‍💻
 
-## Contact
+1. **Follow the Project's Code Style**
 
-For questions, suggestions, or general inquiries, please reach out to us at [utsavsinghal26@gmail.com](mailto:utsavsinghal26@gmail.com).
+   - Maintain consistency with the existing code style (indentation, spacing, comments).
+   - Use meaningful and descriptive names for variables, functions, and classes.
+   - Keep functions short and focused on a single task.
+   - Avoid hardcoding values; instead, use constants or configuration files when possible.
 
-Thank you for contributing to **PyVerse**!
+2. **Write Clear and Concise Comments**
+
+   - Use comments to explain why you did something, not just what you did.
+   - Avoid unnecessary comments that state the obvious.
+   - Document complex logic and functions with brief explanations to help others understand your thought -process.
+
+3. **Keep Code DRY (Don't Repeat Yourself)**
+
+   - Avoid duplicating code. Reuse functions, methods, and components whenever possible.
+   - If you find yourself copying and pasting code, consider creating a new function or component.
+
+4. **Write Tests**
+
+   - Write unit tests for your functions and components.
+   - Ensure your tests cover both expected outcomes and edge cases.
+   - Run tests locally before making a pull request to make sure your changes don’t introduce new bugs.
+
+5. **Code Reviews and Feedback**
+
+   - Be open to receiving constructive feedback from other contributors.
+   - Conduct code reviews for others and provide meaningful suggestions to improve the code.
+   - Always refactor your code based on feedback to meet the project's standards.
+
+<br>
+
+# Pull Request Process 🚀
+
+When submitting a pull request, please adhere to the following:
+
+1. **Self-review your code** before submission. 
+2. Include a detailed description of the functionality you’ve added or modified.
+3. Comment your code, especially in complex sections, to aid understanding.
+4. Add relevant screenshots to assist in the review process.
+5. Submit your PR using the provided template and hang tight; we'll review it as soon as possible! 🚀
+
+<br>          
+
+# Issue Report Process 📌            
+
+To report an issue, follow these steps:                   			 
+1. Navigate to the project's issues section :- [Issues](https://github.com/UTSAVS26/PyVerse/issues)
+2. Provide a clear and concise description of the issue.
+3. **Avoid spamming** to claim an issue. Patience is key! 
+4. Wait until someone looks into your report.
+5. Begin working on the issue only after you have been assigned to it. 🚀
+
+<br>
+
+## :zap: Note from Admin ❗
+
+- We welcome contributions from everyone. However, please avoid spamming the repository with irrelevant issues & pull requests. We reserve the right to mark PRs as invalid if they are not relevant.
+
+<div align="center">
+  <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60"> <em><b>I love connecting with different people .</b> <b> For questions, suggestions, or general inquiries, please reach out to us at [utsavsinghal26@gmail.com] .</b> <b> I'll be happy to meet you more!</b>  :)</em>
+</div>
+
+
+
+
+
+
+
+       
+
+
