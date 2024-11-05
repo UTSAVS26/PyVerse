@@ -43,9 +43,8 @@ Before you begin, ensure you have the following installed:
 
 ## Installation
 
-1. Clone the repository:
+1. After cloning the repository
    ```bash
-   git clone https://github.com/yourusername/iot-device-control.git
    cd Iot_control
    ```
 2. Install the required Python packages:
