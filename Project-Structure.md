@@ -40,11 +40,14 @@
       * [Graph Coloring](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Backtracking/graph_coloring.py)
       * [Hamiltonian Cycle](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Backtracking/hamiltonian_cycle.py)
       * [Knights Tour](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Backtracking/knights_tour.py)
+      * [Kth Permutation Sequence](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Backtracking/kth_permutation_sequence.py)
       * [Maze Solving](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Backtracking/maze_solving.py)
       * [N Queens](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Backtracking/n_queens.py)
+      * [Rat In A Maze](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Backtracking/rat_in_a_maze.py)
     * Branch And Bound
       * [8 Puzzle](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Branch_and_Bound/8_puzzle.py)
     * Divide And Conquer
+      * [Strassen'S Matrix Multiplication](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Divide_and_Conquer/Strassen's_Matrix_Multiplication.py)
       * [Binary Search](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Divide_and_Conquer/binary_search.py)
       * [Merge Sort](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Divide_and_Conquer/merge_sort.py)
       * [Min Max](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Divide_and_Conquer/min_max.py)
@@ -82,14 +85,21 @@
     * [Test Main](Algorithms_and_Data_Structures/Dijkstra/test_main.py)
   * Dynamic-Programming-Series
     * Basic-Dp-Problems
+      * [Paint House](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/Paint_House.py)
+      * [Subset Sum](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/SubSet_Sum.py)
       * Best-Time-To-Buy-And-Sell-Stock
         * [Program](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/best-time-to-buy-and-sell-stock/program.py)
       * [Climbing-Stairs](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/climbing-stairs.py)
       * [Fibonacci-Seq](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/fibonacci-seq.py)
       * [House-Robber](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/house-robber.py)
+      * [Nth Tribonacci Num](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/nth_tribonacci_num.py)
+      * [Zero One Knapsack](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/zero_one_knapsack.py)
     * Hard-Dp-Problems
+      * [Catalan-Numbers](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Hard-DP-Problems/catalan-numbers.py)
       * [Cherry-Pick-Algo](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Hard-DP-Problems/cherry-pick-algo.py)
+      * [Knapsack-With-Constraints](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Hard-DP-Problems/knapsack-with-constraints.py)
       * [Levenshtein-Distance](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Hard-DP-Problems/levenshtein-distance.py)
+      * [Min-Steps-To-One](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Hard-DP-Problems/min-steps-to-one.py)
       * [Regular-Expression-Matching](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Hard-DP-Problems/regular-expression-matching.py)
     * Medium-Dp-Problems
       * [Coin-Change](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/coin-change.py)
@@ -98,7 +108,11 @@
       * [Partition-Subset-Sum](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/partition-subset-sum.py)
       * [Unique-Paths](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/unique-paths.py)
   * Graph
+    * [Adjacency Matrix](Algorithms_and_Data_Structures/Graph/Adjacency_Matrix.py)
+    * [Bipartite Graph](Algorithms_and_Data_Structures/Graph/Bipartite_Graph.py)
     * [Graph Cloning](Algorithms_and_Data_Structures/Graph/Graph_Cloning.py)
+    * [Menu Driven Code Bfs Traversal](Algorithms_and_Data_Structures/Graph/Menu_driven_code_BFS_Traversal.py)
+    * [Menu Driven Code Dfs Traversal](Algorithms_and_Data_Structures/Graph/Menu_driven_code_DFS_Traversal.py)
   * Heapsort
     * [Heapsortvisualizer](Algorithms_and_Data_Structures/HeapSort/heapsortvisualizer.py)
     * [Timecomplexity1](Algorithms_and_Data_Structures/HeapSort/timecomplexity1.py)
@@ -115,6 +129,8 @@
     * [Menu Driven Code For Dynamic Linear Queue Using Linkedlist](Algorithms_and_Data_Structures/Linked%20List/Menu_Driven_Code_for_Dynamic_Linear_Queue_using_LinkedList.py)
     * [Menu Driven Code For Dynamic Stack Using Linkedlist](Algorithms_and_Data_Structures/Linked%20List/Menu_Driven_Code_for_Dynamic_Stack_using_LinkedList.py)
     * [Menu Driven Code For Linear Linkedlist](Algorithms_and_Data_Structures/Linked%20List/Menu_Driven_Code_for_Linear_LinkedList.py)
+    * Remove Duplicates From Sorted List
+      * [Program](Algorithms_and_Data_Structures/Linked%20List/Remove_Duplicates_from_Sorted_List/program.py)
     * Segregate Odd Even Valued Nodes
       * [Program](Algorithms_and_Data_Structures/Linked%20List/segregate_odd_even_valued_nodes/program.py)
   * Pattern Search
@@ -506,6 +522,8 @@
     * Model
       * [Ann Handwritten Digit Classification](Deep_Learning/MNIST%20Digit%20Classification%20using%20Neural%20Networks/model/ANN_Handwritten_Digit_Classification.ipynb)
       * [Cnn Handwritten Digit Recogniser](Deep_Learning/MNIST%20Digit%20Classification%20using%20Neural%20Networks/model/CNN_handwritten_digit_recogniser.ipynb)
+  * Malaria-Classification
+      * [Malaria-Classification](Deep_Learning/Malaria-Classification/model/malaria-classification.ipynb)
   * Medical Diagnoser
     * [Medical](Deep_Learning/Medical_diagnoser/medical.ipynb)
   * Nn From Scratch
@@ -551,8 +569,12 @@
     * [Cal Inference](Deep_Learning/Terrain_classification/cal_inference.ipynb)
     * [Load Model](Deep_Learning/Terrain_classification/load_model.ipynb)
     * [Transfer Learning](Deep_Learning/Terrain_classification/transfer_learning.ipynb)
+  * Thyroid Detection
+    * [Thyroid-Disease-Detection-Using-Deep-Learning](Deep_Learning/Thyroid_detection/thyroid-disease-detection-using-deep-learning.ipynb)
   * Traffic Accident Prediction Model Using Deep Learning
     * [Traffic Accident Prediction Model Using Deep Learning](Deep_Learning/Traffic%20Accident%20Prediction%20Model%20using%20Deep%20Learning/Traffic%20Accident%20Prediction%20Model%20using%20Deep%20Learning.ipynb)
+  * Tweet Classificaion Dl
+    * [Disaster Tweet Classification Using Nlp And Deep Learning](Deep_Learning/Tweet_Classificaion_DL/Disaster%20Tweet%20Classification%20using%20NLP%20and%20Deep%20Learning.ipynb)
   * Yolo-Drowsiness-Detection-Main
     * [Drowsiness Detection Tutorial](Deep_Learning/YOLO-Drowsiness-Detection-main/Drowsiness%20Detection%20Tutorial.ipynb)
   * Smart Attendance System
@@ -608,6 +630,8 @@
     * [Main](Game_Development/PingPong/main.py)
   * Rock-Paper-Scissors
     * [Rps](Game_Development/Rock-Paper-Scissors/RPS.py)
+  * Snakegame
+    * [Main](Game_Development/SnakeGame/main.py)
   * Snake Game
     * [Snake](Game_Development/Snake_Game/Snake.py)
   * Space Quiz.Py
@@ -639,10 +663,17 @@
   * Cold-Email-Generator
     * App
       * [App](Generative-AI/Cold-Email-Generator/app/app.py)
+  * Pdf-Analyzer
+    * [Flask-Server](Generative-AI/PDF-Analyzer/flask-server.py)
+    * [Streamlit App](Generative-AI/PDF-Analyzer/streamlit_app.py)
+  * Turn Pictures Into Story
+    * [App](Generative-AI/Turn%20Pictures%20Into%20Story/app.py)
   * Image-To-3D Model
     * [Model](Generative-AI/image-to-3D%20model/model.py)
 
 ## Image Processing
+  * Cat Dog Cnn Classifier
+    * [Cat Dog Cnn Classifier](Image%20processing/Cat_Dog_CNN_classifier/Cat_Dog_CNN_classifier.ipynb)
   * Lane Line Detection [Open Cv]
     * [Gui](Image%20processing/Lane%20Line%20Detection%20[OPEN%20CV]/gui.py)
     * [Main](Image%20processing/Lane%20Line%20Detection%20[OPEN%20CV]/main.py)

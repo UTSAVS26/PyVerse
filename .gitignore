@@ -9,6 +9,9 @@ share/
 pyvenv.cfg
 __pycache__\
 
+# API Key for PDF-Analyzer
+/Generative-AI/PDF-Analyzer/config.py
+
 # Name of my Virtual environment
 aiml
 
