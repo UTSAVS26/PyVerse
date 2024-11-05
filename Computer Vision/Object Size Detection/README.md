@@ -12,6 +12,24 @@ This Project creates an app where users can upload an image to measure the size 
 
 **Framework:** Streamlit
 
+## Project Structure
+
+Here's an overview of the main files and folders in this project:
+
+```plaintext
+├── app.py              
+├── requirements.txt     
+├── README.md         
+└── Results
+    ├── res1.png
+    ├── res2.png
+    └── res3.png   
+
+```
+## Screenshots
+
+![App Screenshot](Results/res1.png)
+![App Screenshot](Results/res2.png)
 
 ## Run Locally
 
