@@ -1,5 +1,9 @@
 
 ## Advanced Projects
+  * Chat-Gpt-Discord-Bot
+    * [Chat Gpt Function](Advanced_Projects/Chat-GPT-Discord-Bot/Chat_GPT_Function.py)
+    * [Main](Advanced_Projects/Chat-GPT-Discord-Bot/main.py)
+    * [Tests](Advanced_Projects/Chat-GPT-Discord-Bot/tests.py)
   * Eduhelper
     * [Main](Advanced_Projects/EDUHELPER/main.py)
   * Edgelock-X
@@ -12,11 +16,16 @@
     * [App](Advanced_Projects/NaviBot-Voice-Assistant/app.py)
     * [Main](Advanced_Projects/NaviBot-Voice-Assistant/main.py)
     * [Map](Advanced_Projects/NaviBot-Voice-Assistant/map.py)
+  * Plagiarism-Checker
+    * [App](Advanced_Projects/Plagiarism-checker/app.py)
+  * Telegram Bot
+    * [App](Advanced_Projects/Telegram_Bot/app.py)
 
 ## Algorithms And Data Structures
   * Arrays
     * [1Darray](Algorithms_and_Data_Structures/Arrays/1Darray.py)
     * [2Darray](Algorithms_and_Data_Structures/Arrays/2Darray.py)
+    * [Reverse Array](Algorithms_and_Data_Structures/Arrays/Reverse_array.py)
   * Binarysearchtree
     * [Bst](Algorithms_and_Data_Structures/BinarySearchTree/bst.py)
     * [Bstnode](Algorithms_and_Data_Structures/BinarySearchTree/bstnode.py)
@@ -31,11 +40,14 @@
       * [Graph Coloring](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Backtracking/graph_coloring.py)
       * [Hamiltonian Cycle](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Backtracking/hamiltonian_cycle.py)
       * [Knights Tour](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Backtracking/knights_tour.py)
+      * [Kth Permutation Sequence](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Backtracking/kth_permutation_sequence.py)
       * [Maze Solving](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Backtracking/maze_solving.py)
       * [N Queens](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Backtracking/n_queens.py)
+      * [Rat In A Maze](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Backtracking/rat_in_a_maze.py)
     * Branch And Bound
       * [8 Puzzle](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Branch_and_Bound/8_puzzle.py)
     * Divide And Conquer
+      * [Strassen'S Matrix Multiplication](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Divide_and_Conquer/Strassen's_Matrix_Multiplication.py)
       * [Binary Search](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Divide_and_Conquer/binary_search.py)
       * [Merge Sort](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Divide_and_Conquer/merge_sort.py)
       * [Min Max](Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms/Divide_and_Conquer/min_max.py)
@@ -73,6 +85,7 @@
     * [Test Main](Algorithms_and_Data_Structures/Dijkstra/test_main.py)
   * Dynamic-Programming-Series
     * Basic-Dp-Problems
+
       * [Paint House](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/Paint_House.py)
       * [Subset Sum](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/SubSet_Sum.py)
       * [Climbing-Stairs](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/climbing-stairs.py)
@@ -80,21 +93,48 @@
       * [House-Robber](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/house-robber.py)
       * [Nth Tribonacci Num](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/nth_tribonacci_num.py)
       * [Zero One Knapsack](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/zero_one_knapsack.py)
+
+      * Best-Time-To-Buy-And-Sell-Stock
+        * [Program](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/best-time-to-buy-and-sell-stock/program.py)
+      * [Climbing-Stairs](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/climbing-stairs.py)
+      * [Fibonacci-Seq](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/fibonacci-seq.py)
+      * [House-Robber](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/house-robber.py)
+    * Hard-Dp-Problems
+      * [Cherry-Pick-Algo](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Hard-DP-Problems/cherry-pick-algo.py)
+      * [Levenshtein-Distance](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Hard-DP-Problems/levenshtein-distance.py)
+      * [Regular-Expression-Matching](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Hard-DP-Problems/regular-expression-matching.py)
+
     * Medium-Dp-Problems
       * [Coin-Change](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/coin-change.py)
       * [Longest-Inc-Subseq](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/longest-inc-subseq.py)
+      * [Multistage-Graph](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/multistage-graph.py)
       * [Partition-Subset-Sum](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/partition-subset-sum.py)
       * [Unique-Paths](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/unique-paths.py)
+  * Graph
+    * [Adjacency Matrix](Algorithms_and_Data_Structures/Graph/Adjacency_Matrix.py)
+    * [Graph Cloning](Algorithms_and_Data_Structures/Graph/Graph_Cloning.py)
+    * [Menu Driven Code Bfs Traversal](Algorithms_and_Data_Structures/Graph/Menu_driven_code_BFS_Traversal.py)
+    * [Menu Driven Code Dfs Traversal](Algorithms_and_Data_Structures/Graph/Menu_driven_code_DFS_Traversal.py)
   * Heapsort
     * [Heapsortvisualizer](Algorithms_and_Data_Structures/HeapSort/heapsortvisualizer.py)
     * [Timecomplexity1](Algorithms_and_Data_Structures/HeapSort/timecomplexity1.py)
   * Linked List
+    * Clone A List With Random Pointers
+      * [Program](Algorithms_and_Data_Structures/Linked%20List/Clone_a_List_with_Random_Pointers/program.py)
+    * Detect Cycle In List
+      * [Program](Algorithms_and_Data_Structures/Linked%20List/Detect_Cycle_in_List/program.py)
+    * Intersection Of Two List
+      * [Program](Algorithms_and_Data_Structures/Linked%20List/Intersection_of_Two_List/program.py)
     * [Menu Driven Code For Circular Doubly Linkedlist](Algorithms_and_Data_Structures/Linked%20List/Menu_Driven_Code_for_Circular_Doubly_LinkedList.py)
     * [Menu Driven Code For Circular Linkedlist](Algorithms_and_Data_Structures/Linked%20List/Menu_Driven_Code_for_Circular_LinkedList.py)
     * [Menu Driven Code For Doubly Linkedlist](Algorithms_and_Data_Structures/Linked%20List/Menu_Driven_Code_for_Doubly_LinkedList.py)
     * [Menu Driven Code For Dynamic Linear Queue Using Linkedlist](Algorithms_and_Data_Structures/Linked%20List/Menu_Driven_Code_for_Dynamic_Linear_Queue_using_LinkedList.py)
     * [Menu Driven Code For Dynamic Stack Using Linkedlist](Algorithms_and_Data_Structures/Linked%20List/Menu_Driven_Code_for_Dynamic_Stack_using_LinkedList.py)
     * [Menu Driven Code For Linear Linkedlist](Algorithms_and_Data_Structures/Linked%20List/Menu_Driven_Code_for_Linear_LinkedList.py)
+    * Remove Duplicates From Sorted List
+      * [Program](Algorithms_and_Data_Structures/Linked%20List/Remove_Duplicates_from_Sorted_List/program.py)
+    * Segregate Odd Even Valued Nodes
+      * [Program](Algorithms_and_Data_Structures/Linked%20List/segregate_odd_even_valued_nodes/program.py)
   * Pattern Search
     * [Aho Corasick](Algorithms_and_Data_Structures/Pattern%20Search/aho_corasick.py)
     * [Bitap Algorithm](Algorithms_and_Data_Structures/Pattern%20Search/bitap_algorithm.py)
@@ -125,25 +165,38 @@
     * [Depthfirstseach](Algorithms_and_Data_Structures/SearchingAlgorithms/DepthFirstSeach.py)
     * [Exponenetialseach](Algorithms_and_Data_Structures/SearchingAlgorithms/ExponenetialSeach.py)
     * [Fibbonacisearch](Algorithms_and_Data_Structures/SearchingAlgorithms/FibbonaciSearch.py)
+    * [Jumpsearch](Algorithms_and_Data_Structures/SearchingAlgorithms/JumpSearch.py)
     * [Linearsearch](Algorithms_and_Data_Structures/SearchingAlgorithms/LinearSearch.py)
     * [Sublistsearch](Algorithms_and_Data_Structures/SearchingAlgorithms/SublistSearch.py)
     * [Ternarysearch](Algorithms_and_Data_Structures/SearchingAlgorithms/TernarySearch.py)
   * Stack
+    * [Balanced Parentheses Checker](Algorithms_and_Data_Structures/Stack/Balanced_parentheses_checker.py)
     * [Infixtopostifix](Algorithms_and_Data_Structures/Stack/InfixToPostifix.py)
     * [Infixtoprefix](Algorithms_and_Data_Structures/Stack/InfixToPrefix.py)
+    * [Min Stack](Algorithms_and_Data_Structures/Stack/Min_Stack.py)
     * [Postfixtoinfix](Algorithms_and_Data_Structures/Stack/PostfixToInfix.py)
     * [Postfixtoprefix](Algorithms_and_Data_Structures/Stack/PostfixToPrefix.py)
     * [Prefixtoinfix](Algorithms_and_Data_Structures/Stack/PrefixToInfix.py)
     * [Prefixtopostfix](Algorithms_and_Data_Structures/Stack/PrefixToPostfix.py)
+    * [Stack Permutation](Algorithms_and_Data_Structures/Stack/Stack_permutation.py)
     * [Stack](Algorithms_and_Data_Structures/Stack/stack.py)
+  * Strings
+    * [Longest Palindromic Substring](Algorithms_and_Data_Structures/Strings/longest_palindromic_substring.py)
+    * [Valid Anagram](Algorithms_and_Data_Structures/Strings/valid_anagram.py)
+  * Timecomplexity Analyzer
+    * [Checker](Algorithms_and_Data_Structures/TimeComplexity_analyzer/Checker.py)
   * Trees
+    * [Menu Driven Code For Redblack Tree](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_For_RedBlack_Tree.py)
     * [Menu Driven Code For Avl Tree](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Avl_Tree.py)
+    * [Menu Driven Code For Bfs](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_BFS.py)
     * [Menu Driven Code For Binary Search Tree](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Binary_Search_Tree.py)
     * [Menu Driven Code For Binary Tree](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Binary_Tree.py)
     * [Menu Driven Code For Dfs](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_DFS.py)
     * [Menu Driven Code For Lowest Common Ancestor](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Lowest_common_ancestor.py)
     * [Menu Driven Code For Prefix Tree](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Prefix_Tree.py)
     * [Menu Driven Code For Tree Traversals](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Tree_Traversals.py)
+    * [Sum Tree](Algorithms_and_Data_Structures/Trees/Sum_Tree.py)
+    * [Symmetric Tree](Algorithms_and_Data_Structures/Trees/Symmetric_Tree.py)
   * Avl Tree Visualizer
     * [Main](Algorithms_and_Data_Structures/avl_tree_visualizer/main.py)
   * Bellman Ford
@@ -152,6 +205,9 @@
     * [Closest Pair Of Points](Algorithms_and_Data_Structures/closest_pair_of_points/closest_pair_of_points.py)
   * Graham Scan
     * [Convex Hull Graham Scan](Algorithms_and_Data_Structures/graham_scan/convex_hull_graham_scan.py)
+  * Queue Visualizer
+    * [All](Algorithms_and_Data_Structures/queue_visualizer/all.py)
+    * [Circular](Algorithms_and_Data_Structures/queue_visualizer/circular.py)
   * Sorting Algorithms
     * [Bubble Sort](Algorithms_and_Data_Structures/sorting_algorithms/Bubble_Sort.py)
     * [Counting Sort](Algorithms_and_Data_Structures/sorting_algorithms/Counting_sort.py)
@@ -160,6 +216,7 @@
     * [Merge Sort](Algorithms_and_Data_Structures/sorting_algorithms/Merge_Sort.py)
     * [Quick Sort](Algorithms_and_Data_Structures/sorting_algorithms/Quick_sort.py)
     * [Radix Sort](Algorithms_and_Data_Structures/sorting_algorithms/Radix_Sort.py)
+    * [Tim Sort](Algorithms_and_Data_Structures/sorting_algorithms/Tim_Sort.py)
   * Visualizer
     * [Binary Search Tree Visualizer](Algorithms_and_Data_Structures/visualizer/binary_search_tree_visualizer.py)
     * [Binary Tree Visualizer](Algorithms_and_Data_Structures/visualizer/binary_tree_visualizer.py)
@@ -173,6 +230,8 @@
     * [Extract Aadhar Details](Automation_Tools/Autofill%20personal%20info%20using%20Aadhar%20Card%20Image/extract_aadhar_details.ipynb)
   * Image-Tool
     * [Image Tool](Automation_Tools/Image-Tool/Image_Tool.py)
+  * Playlist-Downloader
+    * [Setup](Automation_Tools/Playlist-downloader/setup.py)
   * Web Scrapping
     * [Webscrapping](Automation_Tools/Web%20Scrapping/WebScrapping.ipynb)
     * Linkedin Scraper
@@ -205,11 +264,17 @@
   * Chat App
     * [Chat Client](Beginner_Projects/Chat%20App/chat_client.py)
     * [Chat Server](Beginner_Projects/Chat%20App/chat_server.py)
+  * Coach
+    * [Coach](Beginner_Projects/Coach/Coach.py)
+  * Currency  Convertor
+    * [Currency Convertor](Beginner_Projects/Currency%20_Convertor/Currency_Convertor.py)
   * Digital Clock
     * [Digital Clock](Beginner_Projects/Digital%20Clock/digital_clock.py)
   * [Egg Catcher Game](Beginner_Projects/Egg_Catcher_Game.py)
   * Email Automation
     * [Email Automation](Beginner_Projects/Email_Automation/email_automation.py)
+  * Excel To Csv
+    * [Exceltocsv](Beginner_Projects/Excel%20to%20CSV/excelToCsv.py)
   * File Sorter
     * [App](Beginner_Projects/File%20Sorter/App.py)
     * Theme
@@ -236,6 +301,22 @@
     * [Qr-Code Generator](Beginner_Projects/QR%20Generator/QR-code_generator.py)
     * [Qr Code Generator Gui](Beginner_Projects/QR%20Generator/QR_code_generator_GUI.py)
     * [Generate Qrcode](Beginner_Projects/QR%20Generator/generate_qrcode.py)
+  * Quick Notes Application
+    * Nodenest Application
+      * [Manage](Beginner_Projects/Quick_Notes_application/nodenest_application/manage.py)
+      * Notenest Project
+        * [Asgi](Beginner_Projects/Quick_Notes_application/nodenest_application/notenest_project/asgi.py)
+        * [Settings](Beginner_Projects/Quick_Notes_application/nodenest_application/notenest_project/settings.py)
+        * [Urls](Beginner_Projects/Quick_Notes_application/nodenest_application/notenest_project/urls.py)
+        * [Wsgi](Beginner_Projects/Quick_Notes_application/nodenest_application/notenest_project/wsgi.py)
+      * Notes
+        * [Admin](Beginner_Projects/Quick_Notes_application/nodenest_application/notes/admin.py)
+        * [Forms](Beginner_Projects/Quick_Notes_application/nodenest_application/notes/forms.py)
+        * [Models](Beginner_Projects/Quick_Notes_application/nodenest_application/notes/models.py)
+        * [Urls](Beginner_Projects/Quick_Notes_application/nodenest_application/notes/urls.py)
+        * [Views](Beginner_Projects/Quick_Notes_application/nodenest_application/notes/views.py)
+  * Recipe Finder
+    * [Recipe Finder](Beginner_Projects/Recipe_Finder/recipe_finder.py)
   * Research-Snap
     * [App](Beginner_Projects/Research-Snap/app.py)
   * Skillsync
@@ -278,9 +359,15 @@
   * Pomodoro Clock
     * [Main](Beginner_Projects/pomodoro_Clock/main.py)
 
+## Bird Image Classification
+  * [Bird-Classification-Using-Cnn-Efficientnetb0](Bird%20image%20classification/bird-classification-using-cnn-efficientnetb0.ipynb)
+
 ## Blockchain Development
   * Basic Python Blockchain Implementation
     * [Blockchain Demo](Blockchain_Development/Basic%20Python%20Blockchain%20Implementation/blockchain_demo.py)
+  * Blockchain Voting Sys
+    * App
+      * [App](Blockchain_Development/Blockchain_voting_sys/app/app.py)
   * Flask-Blockchain-App
     * Blockchain
       * [  Main  ](Blockchain_Development/Flask-Blockchain-app/blockchain/__main__.py)
@@ -293,11 +380,18 @@
       * [Transaction](Blockchain_Development/Flask-Blockchain-app/client/transaction.py)
 
 ## Computer Vision
+  * Ball-Tracking
+    * [Output](Computer%20Vision/Ball-Tracking/Output.ipynb)
+    * [Project](Computer%20Vision/Ball-Tracking/Project.ipynb)
+  * Drowsiness Detection System
+    * [Main](Computer%20Vision/Drowsiness%20Detection%20System/main.py)
   * Volume Control Using Hand Gesture
     * [Gesturevolume](Computer%20Vision/Volume%20Control%20Using%20Hand%20Gesture/GestureVolume.py)
     * [Handtrackingmodule](Computer%20Vision/Volume%20Control%20Using%20Hand%20Gesture/HandTrackingModule.py)
 
 ## Cybersecurity Tools
+  * Arp Spoofing Detection Tool
+    * [Arp Spoofing Detection](Cybersecurity_Tools/ARP%20Spoofing%20Detection%20Tool/arp_spoofing_detection.py)
   * Cli-Based Port Scanner
     * [Port-Scanner](Cybersecurity_Tools/CLI-based%20Port%20Scanner/port-scanner.py)
   * Encryption Decryption App
@@ -306,6 +400,8 @@
     * [File Integrity Checker](Cybersecurity_Tools/File%20Integrity%20Checker/file_integrity_checker.py)
   * File Encryption Tool
     * [Encryption](Cybersecurity_Tools/File_encryption_tool/Encryption.py)
+  * Ids Ips Tool
+    * [Ids Ips](Cybersecurity_Tools/IDS_IPS%20Tool/ids_ips.py)
   * Keylogger
     * [Keylogger](Cybersecurity_Tools/Keylogger/keylogger.py)
   * Netwrok Packet Analyzer
@@ -316,16 +412,24 @@
     * [Predict](Cybersecurity_Tools/PDF_Malware_Detection/predict.py)
   * Packet-Sniffer
     * [Packetsniffer](Cybersecurity_Tools/Packet-sniffer/packetsniffer.py)
+  * Password Strength Checker
+    * [Password Strength Checker](Cybersecurity_Tools/Password%20Strength%20Checker/password_strength_checker.py)
   * Phishing Detection Tool
     * [Phishing Detection](Cybersecurity_Tools/Phishing%20detection%20tool/phishing_detection.py)
   * Pixel Decoder
     * [Pixel Decoder](Cybersecurity_Tools/Pixel_Decoder/pixel_decoder.py)
   * Vidforensicstool
     * [Main](Cybersecurity_Tools/VidForensicsTool/main.py)
+  * Web Application Firewall
+    * [Waf](Cybersecurity_Tools/Web%20Application%20Firewall/waf.py)
   * Bruteforce Password Cracking
     * [Main](Cybersecurity_Tools/bruteforce_password_cracking/main.py)
   * Network Scanner
     * [Main](Cybersecurity_Tools/network_Scanner/main.py)
+  * Phishing Detection
+    * [Features Extraction](Cybersecurity_Tools/phishing_detection/features_extraction.py)
+    * [Phishing-Website-Detection-Voting-Classifier](Cybersecurity_Tools/phishing_detection/phishing-website-detection-voting-classifier.ipynb)
+    * [Test](Cybersecurity_Tools/phishing_detection/test.py)
 
 ## Data Science
   * Ai Virtual Painter
@@ -342,12 +446,18 @@
       * [Detailed Eda](Data_Science/Diabetes%20Analysis/EDA/Detailed%20EDA.ipynb)
     * Model
       * [Logistic+Decision+Random Forest](Data_Science/Diabetes%20Analysis/Model/Logistic+Decision+Random_Forest.ipynb)
+  * Economic Analysis
+    * [Global Econoviz](Data_Science/Economic%20Analysis/Global_EconoViz.py)
   * Google Search Analysis With Python
     * [Google Search Analysis With Python](Data_Science/Google%20Search%20Analysis%20with%20python/Google_Search_Analysis_with_python.ipynb)
   * Hotel Demand Eda And Forecasting Using Arima Model
     * [Hotel Demand Forecasting](Data_Science/Hotel%20Demand%20EDA%20and%20Forecasting%20Using%20ARIMA%20Model/Hotel%20Demand%20Forecasting.ipynb)
   * Ipl Analysis
     * [Ipl Analysis](Data_Science/IPL%20Analysis/IPL_Analysis.ipynb)
+  * Lead Conversion Case Study
+    * [Advanced-Eda](Data_Science/Lead%20Conversion%20Case%20Study/Advanced-EDA.ipynb)
+    * [Eda Feature-Engineering Outlier-Analysis](Data_Science/Lead%20Conversion%20Case%20Study/EDA_Feature-Engineering_Outlier-Analysis.ipynb)
+    * [Lead Score Model Building](Data_Science/Lead%20Conversion%20Case%20Study/Lead%20Score%20Model%20Building.ipynb)
   * Unemployment Analysis Due To Covid
     * [Unemployment Analysis](Data_Science/Unemployment%20Analysis%20due%20to%20COVID/UNEMPLOYMENT_ANALYSIS.ipynb)
   * Whatsapp Chat Analyzer
@@ -364,6 +474,11 @@
     * [Main](Data_Science/traffic_vs_zombie_game/main.py)
 
 ## Deep Learning
+  * Anomaly Detection In Time Series
+    * Model
+      * [Anomaly Detection In Time Series](Deep_Learning/Anomaly%20Detection%20in%20Time%20Series/Model/Anomaly%20Detection%20in%20Time%20Series.ipynb)
+  * Bacteria Classification
+    * [Bacteria Classification](Deep_Learning/Bacteria_Classification/Bacteria_Classification.ipynb)
   * Banknifty Index Price Prediction Lstm
     * [Banknifty Index Price Prediction](Deep_Learning/BankNifty%20Index%20Price%20Prediction%20LSTM/BankNifty%20Index%20Price%20Prediction.ipynb)
   * Bird Species Classification
@@ -398,6 +513,11 @@
     * Face Recognition Script
       * [Face Recognition](Deep_Learning/File-Locking-Mechanism/Face_Recognition_Script/Face%20recognition.py)
       * [Facedetection](Deep_Learning/File-Locking-Mechanism/Face_Recognition_Script/FaceDetection.py)
+  * Gan-Based Art Generator Using Deep Learning
+    * Model
+      * [Gan-Based Art Generator Using Deep Learning](Deep_Learning/GAN-based%20Art%20Generator%20using%20Deep%20learning/Model/GAN-based%20Art%20Generator%20using%20Deep%20learning.ipynb)
+  * Image Caption Generation With Audio Output
+    * [App](Deep_Learning/Image%20Caption%20Generation%20with%20Audio%20Output/app.py)
   * Mnist Digit Classification Using Neural Networks
     * Model
       * [Ann Handwritten Digit Classification](Deep_Learning/MNIST%20Digit%20Classification%20using%20Neural%20Networks/model/ANN_Handwritten_Digit_Classification.ipynb)
@@ -421,11 +541,15 @@
       * [Potato Classification](Deep_Learning/Plant%20Disease%20Detection/ipynb%20files/Potato_Classification.ipynb)
       * [Sugarcane Classification](Deep_Learning/Plant%20Disease%20Detection/ipynb%20files/Sugarcane_Classification.ipynb)
       * [Tomato Classification](Deep_Learning/Plant%20Disease%20Detection/ipynb%20files/Tomato_Classification.ipynb)
+  * Pneumonia Detection
+    * [Pneumonia-Detection-Using-Deep-Learning](Deep_Learning/Pneumonia_Detection/pneumonia-detection-using-deep-learning.ipynb)
   * Srgan For Upscaling Image Resolutions
     * Main
       * [Data Loader](Deep_Learning/SRGAN%20for%20upscaling%20image%20resolutions/main/data_loader.py)
       * [Preprocessing](Deep_Learning/SRGAN%20for%20upscaling%20image%20resolutions/main/preprocessing.py)
       * [Srgan](Deep_Learning/SRGAN%20for%20upscaling%20image%20resolutions/main/srgan.py)
+  * Sentimental Analysis Navie
+    * [Sentimental-Analysis-Using-Naive-Bayes-Classifier](Deep_Learning/Sentimental_Analysis_navie/sentimental-analysis-using-naive-bayes-classifier.ipynb)
   * Spam Vs Ham Mail Classification [With Streamlit Gui]
     * Model
       * [App1](Deep_Learning/Spam%20Vs%20Ham%20Mail%20Classification%20[With%20Streamlit%20GUI]/Model/app1.py)
@@ -434,6 +558,8 @@
       * [Model2](Deep_Learning/Spam%20Vs%20Ham%20Mail%20Classification%20[With%20Streamlit%20GUI]/Model/model2.ipynb)
   * Spoken Language Translator
     * [Main](Deep_Learning/Spoken%20Language%20Translator/main.py)
+  * Spotify Recommendation
+    * [Spotify-Playlists-Recommender-System](Deep_Learning/Spotify_recommendation/spotify-playlists-recommender-system.ipynb)
   * Sugarcane Disease Prediction
     * Models
       * [Ensemble Model](Deep_Learning/Sugarcane%20Disease%20Prediction/models/ensemble_model.ipynb)
@@ -441,8 +567,12 @@
     * [Cal Inference](Deep_Learning/Terrain_classification/cal_inference.ipynb)
     * [Load Model](Deep_Learning/Terrain_classification/load_model.ipynb)
     * [Transfer Learning](Deep_Learning/Terrain_classification/transfer_learning.ipynb)
+  * Thyroid Detection
+    * [Thyroid-Disease-Detection-Using-Deep-Learning](Deep_Learning/Thyroid_detection/thyroid-disease-detection-using-deep-learning.ipynb)
   * Traffic Accident Prediction Model Using Deep Learning
     * [Traffic Accident Prediction Model Using Deep Learning](Deep_Learning/Traffic%20Accident%20Prediction%20Model%20using%20Deep%20Learning/Traffic%20Accident%20Prediction%20Model%20using%20Deep%20Learning.ipynb)
+  * Tweet Classificaion Dl
+    * [Disaster Tweet Classification Using Nlp And Deep Learning](Deep_Learning/Tweet_Classificaion_DL/Disaster%20Tweet%20Classification%20using%20NLP%20and%20Deep%20Learning.ipynb)
   * Yolo-Drowsiness-Detection-Main
     * [Drowsiness Detection Tutorial](Deep_Learning/YOLO-Drowsiness-Detection-main/Drowsiness%20Detection%20Tutorial.ipynb)
   * Smart Attendance System
@@ -465,10 +595,14 @@
     * [Main](Game_Development/Bubble%20Shoot/main.py)
   * Card Quest
     * [Cards](Game_Development/Card%20quest/Cards.py)
+  * Catch The Fruit
+    * [Catch The Fruit](Game_Development/Catch_The_Fruit/Catch_the_fruit.py)
   * Crossword Game
     * [Crossword](Game_Development/Crossword%20Game/crossword.py)
   * Dice Rolling Simulator
     * [Main3](Game_Development/Dice_rolling_simulator/main3.py)
+  * Fidget Spinner
+    * [Main](Game_Development/Fidget%20Spinner/main.py)
   * Flappy Bird
     * [Main](Game_Development/Flappy_Bird/main.py)
   * Hangman-Main
@@ -479,8 +613,12 @@
     * [Main](Game_Development/Map%20Game/main.py)
   * Mastermind
     * [Mastermind](Game_Development/MasterMind/mastermind.py)
+  * Math Wizard Game
+    * [Main](Game_Development/Math%20Wizard%20Game/main.py)
   * Maze
     * [Maze](Game_Development/Maze/Maze.py)
+  * Memory Typing Game
+    * [Main](Game_Development/Memory%20Typing%20Game/main.py)
   * Number Guessing Game
     * [Main](Game_Development/Number%20Guessing%20Game/main.py)
   * Pig Dice Game
@@ -490,6 +628,8 @@
     * [Main](Game_Development/PingPong/main.py)
   * Rock-Paper-Scissors
     * [Rps](Game_Development/Rock-Paper-Scissors/RPS.py)
+  * Snakegame
+    * [Main](Game_Development/SnakeGame/main.py)
   * Snake Game
     * [Snake](Game_Development/Snake_Game/Snake.py)
   * Space Quiz.Py
@@ -498,12 +638,22 @@
     * [Main](Game_Development/Text-Based%20Adventure/main.py)
   * Tic Tac Toe
     * [Tic Tac Toe](Game_Development/Tic_Tac_Toe/tic_tac_toe.py)
+  * Tower Of Hanoi
+    * [Game](Game_Development/Tower%20of%20Hanoi/game.py)
   * Trivia
     * [Trivia](Game_Development/Trivia/Trivia.py)
   * Turtle Collection Game
     * [Turtle Collection Game](Game_Development/Turtle%20Collection%20Game/Turtle%20Collection%20Game.py)
   * Visual Novel  Code
     * [Novel](Game_Development/Visual_novel%20_code/Novel.py)
+  * Word Games With Lives
+    * [Main](Game_Development/Word%20Games%20with%20lives/main.py)
+  * Word Ladder Puzzle Game
+    * [Main](Game_Development/Word%20Ladder%20Puzzle%20Game/main.py)
+  * Word Scramble Challenge
+    * [Main](Game_Development/Word%20Scramble%20Challenge/main.py)
+  * Space Invaders
+    * [Spaceinvader](Game_Development/space_invaders/spaceinvader.py)
 
 ## Generative-Ai
   * Code-Llm-Bot
@@ -511,11 +661,23 @@
   * Cold-Email-Generator
     * App
       * [App](Generative-AI/Cold-Email-Generator/app/app.py)
+  * Pdf-Analyzer
+    * [Flask-Server](Generative-AI/PDF-Analyzer/flask-server.py)
+    * [Streamlit App](Generative-AI/PDF-Analyzer/streamlit_app.py)
+  * Turn Pictures Into Story
+    * [App](Generative-AI/Turn%20Pictures%20Into%20Story/app.py)
+  * Image-To-3D Model
+    * [Model](Generative-AI/image-to-3D%20model/model.py)
 
 ## Image Processing
+  * Cat Dog Cnn Classifier
+    * [Cat Dog Cnn Classifier](Image%20processing/Cat_Dog_CNN_classifier/Cat_Dog_CNN_classifier.ipynb)
   * Lane Line Detection [Open Cv]
     * [Gui](Image%20processing/Lane%20Line%20Detection%20[OPEN%20CV]/gui.py)
     * [Main](Image%20processing/Lane%20Line%20Detection%20[OPEN%20CV]/main.py)
+  * Mask-Detection
+    * [Maskdetect](Image%20processing/Mask-detection/MaskDetect.py)
+    * [Model-Training](Image%20processing/Mask-detection/Model-training.py)
   * Number Plate Detection
     * [Number Plate](Image%20processing/Number%20plate%20detection/number_plate.py)
     * Ocr-Notebook
@@ -540,6 +702,10 @@
       * [Spectroscopy Regression](Image%20processing/PhotoSpectroscope/Scource/Spectroscopy%20Regression.py)
     * Theme
       * [Example](Image%20processing/PhotoSpectroscope/Theme/example.py)
+  * Real-Time-Feature-Detection-And-Matching
+    * [Main](Image%20processing/Real-Time-Feature-Detection-and-Matching/Main.py)
+  * Video Summarization
+    * [Video Summarization](Image%20processing/Video%20Summarization/Video%20Summarization.ipynb)
   * Covid Face Mask
     * [Test](Image%20processing/covid_face_mask/test.py)
     * [Train Model](Image%20processing/covid_face_mask/train_model.ipynb)
@@ -562,6 +728,10 @@
       * [Automobile Sales Prediction](Machine_Learning/Automobile%20Sales%20Data%20Analysis%20and%20Prediction/Model/Automobile_Sales_Prediction.ipynb)
   * Bitcoin Price Prediction
       * [Bitcoin Price Prediction](Machine_Learning/Bitcoin%20Price%20Prediction/Model/Bitcoin_Price_Prediction.ipynb)
+  * Book Recommendation System
+    * [Book Recommendation System](Machine_Learning/Book%20Recommendation%20System/Book_Recommendation_System.ipynb)
+  * Credit Card Fraud Detection
+    * [Credit Card Fraud Detection](Machine_Learning/Credit%20Card%20Fraud%20Detection/Credit_card_fraud_detection.ipynb)
   * Creditcardfrauddetection
     * [Fraud Detection Machine Learning Project](Machine_Learning/CreditCardFraudDetection/Fraud_Detection_Machine_Learning_Project.ipynb)
   * Customer Clust - Customer Segmentation Tool
@@ -587,9 +757,15 @@
       * [Pridictionmodel](Machine_Learning/Fake%20News%20Detection/Model/PridictionModel.ipynb)
   * Flight Delay Prediction
     * [Model](Machine_Learning/Flight_delay_prediction/model.ipynb)
+  * Gradient Descent
+    * [Gradientdescent](Machine_Learning/Gradient_descent/gradientdescent.ipynb)
+  * Grammar Auto Corrector Model
+    * [Main](Machine_Learning/Grammar%20Auto%20Corrector%20Model/main.py)
   * Hand Game Controller
     * [Main-Mobile-Cam](Machine_Learning/Hand%20Game%20Controller/main-mobile-cam.py)
     * [Main-Pc-Cam](Machine_Learning/Hand%20Game%20Controller/main-pc-cam.py)
+  * Handwritten Text Recognition Model
+    * [App](Machine_Learning/Handwritten%20Text%20Recognition%20Model/app.py)
   * Intrusion Detection System
     * [Network-Intrusion-Detection-Using-Arm](Machine_Learning/Intrusion%20Detection%20System/network-intrusion-detection-using-ARM.ipynb)
   * Iris Classification Using Knn
@@ -597,8 +773,20 @@
   * Landmark Detection
     * [App](Machine_Learning/Landmark_Detection/app.py)
     * [Landmark-Detection-Tfhub](Machine_Learning/Landmark_Detection/landmark-detection-tfhub.ipynb)
+  * Leaf Disease Analyzer Using Ml
+    * [Model Training](Machine_Learning/Leaf%20disease%20analyzer%20using%20ML/Model_Training.ipynb)
   * Linear Regression Using Gradient Decent
     * [Linear Regression Using Gradient Decent](Machine_Learning/Linear%20regression%20using%20gradient%20decent/Linear%20regression%20using%20gradient%20decent.ipynb)
+  * Lungcancerdetection
+    * Notebooks
+      * [Cnnresultsanalysis](Machine_Learning/LungCancerDetection/notebooks/CNNresultsAnalysis.ipynb)
+      * [Lungcancerdetection](Machine_Learning/LungCancerDetection/notebooks/LungCancerDetection.ipynb)
+    * Src
+      * Models
+        * [Cnn Model](Machine_Learning/LungCancerDetection/src/models/cnn_model.py)
+        * [Predict Model](Machine_Learning/LungCancerDetection/src/models/predict_model.py)
+        * [Train](Machine_Learning/LungCancerDetection/src/models/train.py)
+        * [Visualize Model](Machine_Learning/LungCancerDetection/src/models/visualize_model.py)
   * Movie Classification
     * [Movie Classification](Machine_Learning/Movie%20Classification/movie_classification.ipynb)
   * Multivitamine Prediction
@@ -635,8 +823,8 @@
   * Svm
     * [Svm](Machine_Learning/SVM/svm.py)
     * [Test](Machine_Learning/SVM/test.py)
-  * Sentiment Analysis
-    * [Code](Machine_Learning/Sentiment%20Analysis/code.py)
+  * Sentiment Analysis Using Machine Learning
+    * [Code](Machine_Learning/Sentiment%20Analysis%20using%20machine%20learning/code.py)
   * Signature Verification Portal
     * [Dashboard](Machine_Learning/Signature_verification_portal/Dashboard.py)
     * [Validation](Machine_Learning/Signature_verification_portal/Validation.py)
@@ -644,6 +832,10 @@
     * [Db](Machine_Learning/Signature_verification_portal/db.py)
   * Style Transfer With Neural Network
     * [Style Transfer With Neural Networks](Machine_Learning/Style%20Transfer%20with%20Neural%20Network/Style%20Transfer%20with%20Neural%20Networks.ipynb)
+  * Translator App
+    * [Main](Machine_Learning/Translator%20App/main.py)
+    * [Translation](Machine_Learning/Translator%20App/translation.py)
+    * [Utils](Machine_Learning/Translator%20App/utils.py)
   * Twitter Sentiment Analysis
     * [Twitter Sentiment Analysis](Machine_Learning/Twitter%20Sentiment%20Analysis/Twitter%20Sentiment%20Analysis.ipynb)
   * Wecare
@@ -654,17 +846,534 @@
     * [Web Page Phishing Detection](Machine_Learning/Web%20Page%20Phishing%20Detection/web_page_phishing_detection.ipynb)
   * Zomato Restaurant Clustering And Sentiment Analysis
     * [Zomato Restaurant Clustering And Sentiment Analysis](Machine_Learning/Zomato%20Restaurant%20Clustering%20and%20Sentiment%20Analysis/Zomato_Restaurant_Clustering_and_Sentiment_Analysis.ipynb)
-  * [Main](Machine_Learning/main.py)
   * Pokemon-Data-Analysis-And-Legendary-Classification-Main
     * [Data-Analysis-Advance-Modelling-On-Pokemons](Machine_Learning/pokemon-data-analysis-and-legendary-classification-main/data-analysis-advance-modelling-on-pokemons.ipynb)
-  * [Translation](Machine_Learning/translation.py)
-  * [Utils](Machine_Learning/utils.py)
+  * Smartphone Rate Prediction
+    * [Main](Machine_Learning/smartphone_rate_prediction/main.py)
 
 ## Sentiment-Analysis-Of-Restaurant-Reviews
   * [Sentiment Analysis Of Restaurant Reviews](Sentiment-Analysis-Of-Restaurant-Reviews/Sentiment%20Analysis%20of%20Restaurant%20Reviews.ipynb)
 
 ## Stock Market Analysis
   * [Stock-Market-Analysis Final](Stock_Market_Analysis/stock-market-analysis_final.ipynb)
+
+## Tutorials
+  * Data Science
+    * Part 4 Python
+      * S23 L143
+        * Python 2
+          * [Variables - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S23_L143/Python%202/Variables%20-%20Exercise_Py2.ipynb)
+          * [Variables - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S23_L143/Python%202/Variables%20-%20Lecture_Py2.ipynb)
+          * [Variables - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S23_L143/Python%202/Variables%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Variables - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S23_L143/Python%203/Variables%20-%20Exercise_Py3.ipynb)
+          * [Variables - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S23_L143/Python%203/Variables%20-%20Lecture_Py3.ipynb)
+          * [Variables - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S23_L143/Python%203/Variables%20-%20Solution_Py3.ipynb)
+      * S23 L144
+        * Python 2
+          * [Numbers And Boolean Values - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S23_L144/Python%202/Numbers%20and%20Boolean%20Values%20-%20Exercise_Py2.ipynb)
+          * [Numbers And Boolean Values - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S23_L144/Python%202/Numbers%20and%20Boolean%20Values%20-%20Lecture_Py2.ipynb)
+          * [Numbers And Boolean Values - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S23_L144/Python%202/Numbers%20and%20Boolean%20Values%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Numbers And Boolean Values - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S23_L144/Python%203/Numbers%20and%20Boolean%20Values%20-%20Exercise_Py3.ipynb)
+          * [Numbers And Boolean Values - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S23_L144/Python%203/Numbers%20and%20Boolean%20Values%20-%20Lecture_Py3.ipynb)
+          * [Numbers And Boolean Values - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S23_L144/Python%203/Numbers%20and%20Boolean%20Values%20-%20Solution_Py3.ipynb)
+      * S23 L145
+        * Python 2
+          * [Strings - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S23_L145/Python%202/Strings%20-%20Exercise_Py2.ipynb)
+          * [Strings - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S23_L145/Python%202/Strings%20-%20Lecture_Py2.ipynb)
+          * [Strings - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S23_L145/Python%202/Strings%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Strings - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S23_L145/Python%203/Strings%20-%20Exercise_Py3.ipynb)
+          * [Strings - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S23_L145/Python%203/Strings%20-%20Lecture_Py3.ipynb)
+          * [Strings - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S23_L145/Python%203/Strings%20-%20Solution_Py3.ipynb)
+      * S24 L146
+        * Python 2
+          * [Arithmetic Operators - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S24_L146/Python%202/Arithmetic%20Operators%20-%20Exercise_Py2.ipynb)
+          * [Arithmetic Operators - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S24_L146/Python%202/Arithmetic%20Operators%20-%20Lecture_Py2.ipynb)
+          * [Arithmetic Operators - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S24_L146/Python%202/Arithmetic%20Operators%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Arithmetic Operators - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S24_L146/Python%203/Arithmetic%20Operators%20-%20Exercise_Py3.ipynb)
+          * [Arithmetic Operators - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S24_L146/Python%203/Arithmetic%20Operators%20-%20Lecture_Py3.ipynb)
+          * [Arithmetic Operators - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S24_L146/Python%203/Arithmetic%20Operators%20-%20Solution_Py3.ipynb)
+      * S24 L147
+        * Python 2
+          * [The Double Equality Sign - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S24_L147/Python%202/The%20Double%20Equality%20Sign%20-%20Exercise_Py2.ipynb)
+          * [The Double Equality Sign - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S24_L147/Python%202/The%20Double%20Equality%20Sign%20-%20Lecture_Py2.ipynb)
+          * [The Double Equality Sign - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S24_L147/Python%202/The%20Double%20Equality%20Sign%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [The Double Equality Sign - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S24_L147/Python%203/The%20Double%20Equality%20Sign%20-%20Exercise_Py3.ipynb)
+          * [The Double Equality Sign - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S24_L147/Python%203/The%20Double%20Equality%20Sign%20-%20Lecture_Py3.ipynb)
+          * [The Double Equality Sign - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S24_L147/Python%203/The%20Double%20Equality%20Sign%20-%20Solution_Py3.ipynb)
+      * S24 L148
+        * Python 2
+          * [Reassign Values - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S24_L148/Python%202/Reassign%20Values%20-%20Exercise_Py2.ipynb)
+          * [Reassign Values - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S24_L148/Python%202/Reassign%20Values%20-%20Lecture_Py2.ipynb)
+          * [Reassign Values - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S24_L148/Python%202/Reassign%20Values%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Reassign Values - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S24_L148/Python%203/Reassign%20Values%20-%20Exercise_Py3.ipynb)
+          * [Reassign Values - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S24_L148/Python%203/Reassign%20Values%20-%20Lecture_Py3.ipynb)
+          * [Reassign Values - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S24_L148/Python%203/Reassign%20Values%20-%20Solution_Py3.ipynb)
+      * S24 L149
+        * Python 2
+          * [Add Comments - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S24_L149/Python%202/Add%20Comments%20-%20Lecture_Py2.ipynb)
+        * Python 3
+          * [Add Comments - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S24_L149/Python%203/Add%20Comments%20-%20Lecture_Py3.ipynb)
+      * S24 L150
+        * 0.2.1 Variables
+          * Python 2
+            * [Variables - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.1%20Variables/Python%202/Variables%20-%20Exercise_Py2.ipynb)
+            * [Variables - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.1%20Variables/Python%202/Variables%20-%20Lecture_Py2.ipynb)
+            * [Variables - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.1%20Variables/Python%202/Variables%20-%20Solution_Py2.ipynb)
+          * Python 3
+            * [Variables - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.1%20Variables/Python%203/Variables%20-%20Exercise_Py3.ipynb)
+            * [Variables - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.1%20Variables/Python%203/Variables%20-%20Lecture_Py3.ipynb)
+            * [Variables - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.1%20Variables/Python%203/Variables%20-%20Solution_Py3.ipynb)
+        * 0.2.2 Numbers And Boolean Values
+          * Python 2
+            * [Numbers And Boolean Values - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.2%20Numbers%20and%20Boolean%20Values/Python%202/Numbers%20and%20Boolean%20Values%20-%20Exercise_Py2.ipynb)
+            * [Numbers And Boolean Values - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.2%20Numbers%20and%20Boolean%20Values/Python%202/Numbers%20and%20Boolean%20Values%20-%20Lecture_Py2.ipynb)
+            * [Numbers And Boolean Values - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.2%20Numbers%20and%20Boolean%20Values/Python%202/Numbers%20and%20Boolean%20Values%20-%20Solution_Py2.ipynb)
+          * Python 3
+            * [Numbers And Boolean Values - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.2%20Numbers%20and%20Boolean%20Values/Python%203/Numbers%20and%20Boolean%20Values%20-%20Exercise_Py3.ipynb)
+            * [Numbers And Boolean Values - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.2%20Numbers%20and%20Boolean%20Values/Python%203/Numbers%20and%20Boolean%20Values%20-%20Lecture_Py3.ipynb)
+            * [Numbers And Boolean Values - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.2%20Numbers%20and%20Boolean%20Values/Python%203/Numbers%20and%20Boolean%20Values%20-%20Solution_Py3.ipynb)
+        * 0.2.3 Strings
+          * Python 2
+            * [Strings - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.3%20Strings/Python%202/Strings%20-%20Exercise_Py2.ipynb)
+            * [Strings - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.3%20Strings/Python%202/Strings%20-%20Lecture_Py2.ipynb)
+            * [Strings - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.3%20Strings/Python%202/Strings%20-%20Solution_Py2.ipynb)
+          * Python 3
+            * [Strings - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.3%20Strings/Python%203/Strings%20-%20Exercise_Py3.ipynb)
+            * [Strings - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.3%20Strings/Python%203/Strings%20-%20Lecture_Py3.ipynb)
+            * [Strings - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.2.3%20Strings/Python%203/Strings%20-%20Solution_Py3.ipynb)
+        * 0.3.1 Arithmetic Operators
+          * Python 2
+            * [Arithmetic Operators - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.1%20Arithmetic%20Operators/Python%202/Arithmetic%20Operators%20-%20Exercise_Py2.ipynb)
+            * [Arithmetic Operators - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.1%20Arithmetic%20Operators/Python%202/Arithmetic%20Operators%20-%20Lecture_Py2.ipynb)
+            * [Arithmetic Operators - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.1%20Arithmetic%20Operators/Python%202/Arithmetic%20Operators%20-%20Solution_Py2.ipynb)
+          * Python 3
+            * [Arithmetic Operators - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.1%20Arithmetic%20Operators/Python%203/Arithmetic%20Operators%20-%20Exercise_Py3.ipynb)
+            * [Arithmetic Operators - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.1%20Arithmetic%20Operators/Python%203/Arithmetic%20Operators%20-%20Lecture_Py3.ipynb)
+            * [Arithmetic Operators - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.1%20Arithmetic%20Operators/Python%203/Arithmetic%20Operators%20-%20Solution_Py3.ipynb)
+        * 0.3.2 The Double Equality Sign
+          * Python 2
+            * [The Double Equality Sign - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.2%20The%20Double%20Equality%20Sign/Python%202/The%20Double%20Equality%20Sign%20-%20Exercise_Py2.ipynb)
+            * [The Double Equality Sign - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.2%20The%20Double%20Equality%20Sign/Python%202/The%20Double%20Equality%20Sign%20-%20Lecture_Py2.ipynb)
+            * [The Double Equality Sign - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.2%20The%20Double%20Equality%20Sign/Python%202/The%20Double%20Equality%20Sign%20-%20Solution_Py2.ipynb)
+          * Python 3
+            * [The Double Equality Sign - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.2%20The%20Double%20Equality%20Sign/Python%203/The%20Double%20Equality%20Sign%20-%20Exercise_Py3.ipynb)
+            * [The Double Equality Sign - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.2%20The%20Double%20Equality%20Sign/Python%203/The%20Double%20Equality%20Sign%20-%20Lecture_Py3.ipynb)
+            * [The Double Equality Sign - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.2%20The%20Double%20Equality%20Sign/Python%203/The%20Double%20Equality%20Sign%20-%20Solution_Py3.ipynb)
+        * 0.3.3 Reassign Values
+          * Python 2
+            * [Reassign Values - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.3%20Reassign%20Values/Python%202/Reassign%20Values%20-%20Exercise_Py2.ipynb)
+            * [Reassign Values - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.3%20Reassign%20Values/Python%202/Reassign%20Values%20-%20Lecture_Py2.ipynb)
+            * [Reassign Values - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.3%20Reassign%20Values/Python%202/Reassign%20Values%20-%20Solution_Py2.ipynb)
+          * Python 3
+            * [Reassign Values - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.3%20Reassign%20Values/Python%203/Reassign%20Values%20-%20Exercise_Py3.ipynb)
+            * [Reassign Values - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.3%20Reassign%20Values/Python%203/Reassign%20Values%20-%20Lecture_Py3.ipynb)
+            * [Reassign Values - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.3%20Reassign%20Values/Python%203/Reassign%20Values%20-%20Solution_Py3.ipynb)
+        * 0.3.4 Add Comments
+          * Python 2
+            * [Add Comments - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.4%20Add%20Comments/Python%202/Add%20Comments%20-%20Lecture_Py2.ipynb)
+          * Python 3
+            * [Add Comments - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/0.3.4%20Add%20Comments/Python%203/Add%20Comments%20-%20Lecture_Py3.ipynb)
+        * Python 2
+          * [Line Continuation - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/Python%202/Line%20Continuation%20-%20Exercise_Py2.ipynb)
+          * [Line Continuation - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/Python%202/Line%20Continuation%20-%20Lecture_Py2.ipynb)
+          * [Line Continuation - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S24_L150/Python%202/Line%20Continuation%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Line Continuation - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/Python%203/Line%20Continuation%20-%20Exercise_Py3.ipynb)
+          * [Line Continuation - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/Python%203/Line%20Continuation%20-%20Lecture_Py3.ipynb)
+          * [Line Continuation - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S24_L150/Python%203/Line%20Continuation%20-%20Solution_Py3.ipynb)
+      * S24 L151
+        * Python 2
+          * [Indexing Elements - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S24_L151/Python%202/Indexing%20Elements%20-%20Exercise_Py2.ipynb)
+          * [Indexing Elements - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S24_L151/Python%202/Indexing%20Elements%20-%20Lecture_Py2.ipynb)
+          * [Indexing Elements - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S24_L151/Python%202/Indexing%20Elements%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Indexing Elements - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S24_L151/Python%203/Indexing%20Elements%20-%20Exercise_Py3.ipynb)
+          * [Indexing Elements - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S24_L151/Python%203/Indexing%20Elements%20-%20Lecture_Py3.ipynb)
+          * [Indexing Elements - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S24_L151/Python%203/Indexing%20Elements%20-%20Solution_Py3.ipynb)
+      * S24 L152
+        * Python 2
+          * [Structure Your Code With Indentation - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S24_L152/Python%202/Structure%20Your%20Code%20with%20Indentation%20-%20Exercise_Py2.ipynb)
+          * [Structure Your Code With Indentation - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S24_L152/Python%202/Structure%20Your%20Code%20with%20Indentation%20-%20Lecture_Py2.ipynb)
+          * [Structure Your Code With Indentation - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S24_L152/Python%202/Structure%20Your%20Code%20with%20Indentation%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Structure Your Code With Indentation - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S24_L152/Python%203/Structure%20Your%20Code%20with%20Indentation%20-%20Exercise_Py3.ipynb)
+          * [Structure Your Code With Indentation - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S24_L152/Python%203/Structure%20Your%20Code%20with%20Indentation%20-%20Lecture_Py3.ipynb)
+          * [Structure Your Code With Indentation - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S24_L152/Python%203/Structure%20Your%20Code%20with%20Indentation%20-%20Solution_Py3.ipynb)
+      * S25 L153
+        * Python 2
+          * [Comparison Operators - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S25_L153/Python%202/Comparison%20Operators%20-%20Exercise_Py2.ipynb)
+          * [Comparison Operators - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S25_L153/Python%202/Comparison%20Operators%20-%20Lecture_Py2.ipynb)
+          * [Comparison Operators - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S25_L153/Python%202/Comparison%20Operators%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Comparison Operators - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S25_L153/Python%203/Comparison%20Operators%20-%20Exercise_Py3.ipynb)
+          * [Comparison Operators - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S25_L153/Python%203/Comparison%20Operators%20-%20Lecture_Py3.ipynb)
+          * [Comparison Operators - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S25_L153/Python%203/Comparison%20Operators%20-%20Solution_Py3.ipynb)
+      * S25 L154
+        * Python 2
+          * [Logical And Identity Operators - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S25_L154/Python%202/Logical%20and%20Identity%20Operators%20-%20Exercise_Py2.ipynb)
+          * [Logical And Identity Operators - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S25_L154/Python%202/Logical%20and%20Identity%20Operators%20-%20Lecture_Py2.ipynb)
+          * [Logical And Identity Operators - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S25_L154/Python%202/Logical%20and%20Identity%20Operators%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Logical And Identity Operators - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S25_L154/Python%203/Logical%20and%20Identity%20Operators%20-%20Exercise_Py3.ipynb)
+          * [Logical And Identity Operators - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S25_L154/Python%203/Logical%20and%20Identity%20Operators%20-%20Lecture_Py3.ipynb)
+          * [Logical And Identity Operators - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S25_L154/Python%203/Logical%20and%20Identity%20Operators%20-%20Solution_Py3.ipynb)
+      * S26 L155
+        * Python 2
+          * [Introduction To The If Statement - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S26_L155/Python%202/Introduction%20to%20the%20If%20Statement%20-%20Exercise_Py2.ipynb)
+          * [Introduction To The If Statement - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S26_L155/Python%202/Introduction%20to%20the%20If%20Statement%20-%20Lecture_Py2.ipynb)
+          * [Introduction To The If Statement - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S26_L155/Python%202/Introduction%20to%20the%20If%20Statement%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Introduction To The If Statement - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S26_L155/Python%203/Introduction%20to%20the%20If%20Statement%20-%20Exercise_Py3.ipynb)
+          * [Introduction To The If Statement - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S26_L155/Python%203/Introduction%20to%20the%20If%20Statement%20-%20Lecture_Py3.ipynb)
+          * [Introduction To The If Statement - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S26_L155/Python%203/Introduction%20to%20the%20If%20Statement%20-%20Solution_Py3.ipynb)
+      * S26 L156
+        * Python 2
+          * [Add An Else Statement - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S26_L156/Python%202/Add%20an%20Else%20Statement%20-%20Exercise_Py2.ipynb)
+          * [Add An Else Statement - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S26_L156/Python%202/Add%20an%20Else%20Statement%20-%20Lecture_Py2.ipynb)
+          * [Add An Else Statement - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S26_L156/Python%202/Add%20an%20Else%20Statement%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Add An Else Statement - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S26_L156/Python%203/Add%20an%20Else%20Statement%20-%20Exercise_Py3.ipynb)
+          * [Add An Else Statement - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S26_L156/Python%203/Add%20an%20Else%20Statement%20-%20Lecture_Py3.ipynb)
+          * [Add An Else Statement - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S26_L156/Python%203/Add%20an%20Else%20Statement%20-%20Solution_Py3.ipynb)
+      * S26 L157
+        * Python 2
+          * [Else If, For Brief - Elif - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S26_L157/Python%202/Else%20If,%20for%20Brief%20-%20Elif%20-%20Exercise_Py2.ipynb)
+          * [Else If, For Brief - Elif - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S26_L157/Python%202/Else%20If,%20for%20Brief%20-%20Elif%20-%20Lecture_Py2.ipynb)
+          * [Else If, For Brief - Elif - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S26_L157/Python%202/Else%20If,%20for%20Brief%20-%20Elif%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Else If, For Brief - Elif - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S26_L157/Python%203/Else%20If,%20for%20Brief%20-%20Elif%20-%20Exercise_Py3.ipynb)
+          * [Else If, For Brief - Elif - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S26_L157/Python%203/Else%20If,%20for%20Brief%20-%20Elif%20-%20Lecture_Py3.ipynb)
+          * [Else If, For Brief - Elif - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S26_L157/Python%203/Else%20If,%20for%20Brief%20-%20Elif%20-%20Solution_Py3.ipynb)
+      * S26 L158
+        * Python 2
+          * [A Note On Boolean Values - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S26_L158/Python%202/A%20Note%20on%20Boolean%20Values%20-%20Lecture_Py2.ipynb)
+        * Python 3
+          * [A Note On Boolean Values - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S26_L158/Python%203/A%20Note%20on%20Boolean%20Values%20-%20Lecture_Py3.ipynb)
+      * S27 L159
+        * Python 2
+          * [Defining A Function In Python - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S27_L159/Python%202/Defining%20a%20Function%20in%20Python%20-%20Lecture_Py2.ipynb)
+        * Python 3
+          * [Defining A Function In Python - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S27_L159/Python%203/Defining%20a%20Function%20in%20Python%20-%20Lecture_Py3.ipynb)
+      * S27 L160
+        * Python 2
+          * [Creating A Function With A Parameter - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S27_L160/Python%202/Creating%20a%20Function%20with%20a%20Parameter%20-%20Exercise_Py2.ipynb)
+          * [Creating A Function With A Parameter - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S27_L160/Python%202/Creating%20a%20Function%20with%20a%20Parameter%20-%20Lecture_Py2.ipynb)
+          * [Creating A Function With A Parameter - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S27_L160/Python%202/Creating%20a%20Function%20with%20a%20Parameter%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Creating A Function With A Parameter - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S27_L160/Python%203/Creating%20a%20Function%20with%20a%20Parameter%20-%20Exercise_Py3.ipynb)
+          * [Creating A Function With A Parameter - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S27_L160/Python%203/Creating%20a%20Function%20with%20a%20Parameter%20-%20Lecture_Py3.ipynb)
+          * [Creating A Function With A Parameter - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S27_L160/Python%203/Creating%20a%20Function%20with%20a%20Parameter%20-%20Solution_Py3.ipynb)
+      * S27 L161
+        * Python 2
+          * [Another Way To Define A Function - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S27_L161/Python%202/Another%20Way%20to%20Define%20a%20Function%20-%20Exercise_Py2.ipynb)
+          * [Another Way To Define A Function - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S27_L161/Python%202/Another%20Way%20to%20Define%20a%20Function%20-%20Lecture_Py2.ipynb)
+          * [Another Way To Define A Function - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S27_L161/Python%202/Another%20Way%20to%20Define%20a%20Function%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Another Way To Define A Function - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S27_L161/Python%203/Another%20Way%20to%20Define%20a%20Function%20-%20Exercise_Py3.ipynb)
+          * [Another Way To Define A Function - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S27_L161/Python%203/Another%20Way%20to%20Define%20a%20Function%20-%20Lecture_Py3.ipynb)
+          * [Another Way To Define A Function - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S27_L161/Python%203/Another%20Way%20to%20Define%20a%20Function%20-%20Solution_Py3.ipynb)
+      * S27 L162
+        * Python 2
+          * [0.6.4 Using A Function In Another Function - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S27_L162/Python%202/0.6.4%20Using%20a%20Function%20in%20another%20Function%20-%20Exercise_Py2.ipynb)
+          * [0.6.4 Using A Function In Another Function - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S27_L162/Python%202/0.6.4%20Using%20a%20Function%20in%20another%20Function%20-%20Lecture_Py2.ipynb)
+          * [0.6.4 Using A Function In Another Function - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S27_L162/Python%202/0.6.4%20Using%20a%20Function%20in%20another%20Function%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [0.6.4 Using A Function In Another Function - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S27_L162/Python%203/0.6.4%20Using%20a%20Function%20in%20another%20Function%20-%20Exercise_Py3.ipynb)
+          * [0.6.4 Using A Function In Another Function - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S27_L162/Python%203/0.6.4%20Using%20a%20Function%20in%20another%20Function%20-%20Lecture_Py3.ipynb)
+          * [0.6.4 Using A Function In Another Function - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S27_L162/Python%203/0.6.4%20Using%20a%20Function%20in%20another%20Function%20-%20Solution_Py3.ipynb)
+      * S27 L163
+        * Python 2
+          * [Combining Conditional Statements And Functions - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S27_L163/Python%202/Combining%20Conditional%20Statements%20and%20Functions%20-%20Exercise_Py2.ipynb)
+          * [Combining Conditional Statements And Functions - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S27_L163/Python%202/Combining%20Conditional%20Statements%20and%20Functions%20-%20Lecture_Py2.ipynb)
+          * [Combining Conditional Statements And Functions - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S27_L163/Python%202/Combining%20Conditional%20Statements%20and%20Functions%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Combining Conditional Statements And Functions - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S27_L163/Python%203/Combining%20Conditional%20Statements%20and%20Functions%20-%20Exercise_Py3.ipynb)
+          * [Combining Conditional Statements And Functions - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S27_L163/Python%203/Combining%20Conditional%20Statements%20and%20Functions%20-%20Lecture_Py3.ipynb)
+          * [Combining Conditional Statements And Functions - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S27_L163/Python%203/Combining%20Conditional%20Statements%20and%20Functions%20-%20Solution_Py3.ipynb)
+      * S27 L164
+        * Python 2
+          * [Creating Functions Containing A Few Arguments - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S27_L164/Python%202/Creating%20Functions%20Containing%20a%20Few%20Arguments%20-%20Lecture_Py2.ipynb)
+        * Python 3
+          * [Creating Functions Containing A Few Arguments - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S27_L164/Python%203/Creating%20Functions%20Containing%20a%20Few%20Arguments%20-%20Lecture_Py3.ipynb)
+      * S27 L165
+        * Python 2
+          * [Notable Built-In Functions In Python - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S27_L165/Python%202/Notable%20Built-In%20Functions%20in%20Python%20-%20Exercise_Py2.ipynb)
+          * [Notable Built-In Functions In Python - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S27_L165/Python%202/Notable%20Built-In%20Functions%20in%20Python%20-%20Lecture_Py2.ipynb)
+          * [Notable Built-In Functions In Python - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S27_L165/Python%202/Notable%20Built-In%20Functions%20in%20Python%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Notable Built-In Functions In Python - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S27_L165/Python%203/Notable%20Built-In%20Functions%20in%20Python%20-%20Exercise_Py3.ipynb)
+          * [Notable Built-In Functions In Python - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S27_L165/Python%203/Notable%20Built-In%20Functions%20in%20Python%20-%20Lecture_Py3.ipynb)
+          * [Notable Built-In Functions In Python - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S27_L165/Python%203/Notable%20Built-In%20Functions%20in%20Python%20-%20Solution_Py3.ipynb)
+      * S28 L166
+        * Python 2
+          * [Lists - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S28_L166/Python%202/Lists%20-%20Exercise_Py2.ipynb)
+          * [Lists - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S28_L166/Python%202/Lists%20-%20Lecture_Py2.ipynb)
+          * [Lists - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S28_L166/Python%202/Lists%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Lists - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S28_L166/Python%203/Lists%20-%20Exercise_Py3.ipynb)
+          * [Lists - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S28_L166/Python%203/Lists%20-%20Lecture_Py3.ipynb)
+          * [Lists - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S28_L166/Python%203/Lists%20-%20Solution_Py3.ipynb)
+      * S28 L167
+        * Python 2
+          * [Help Yourself With Methods - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S28_L167/Python%202/Help%20Yourself%20with%20Methods%20-%20Exercise_Py2.ipynb)
+          * [Help Yourself With Methods - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S28_L167/Python%202/Help%20Yourself%20with%20Methods%20-%20Lecture_Py2.ipynb)
+          * [Help Yourself With Methods - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S28_L167/Python%202/Help%20Yourself%20with%20Methods%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Help Yourself With Methods - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S28_L167/Python%203/Help%20Yourself%20with%20Methods%20-%20Exercise_Py3.ipynb)
+          * [Help Yourself With Methods - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S28_L167/Python%203/Help%20Yourself%20with%20Methods%20-%20Lecture_Py3.ipynb)
+          * [Help Yourself With Methods - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S28_L167/Python%203/Help%20Yourself%20with%20Methods%20-%20Solution_Py3.ipynb)
+      * S28 L168
+        * Python 2
+          * [List Slicing - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S28_L168/Python%202/List%20Slicing%20-%20Exercise_Py2.ipynb)
+          * [List Slicing - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S28_L168/Python%202/List%20Slicing%20-%20Lecture_Py2.ipynb)
+          * [List Slicing - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S28_L168/Python%202/List%20Slicing%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [List Slicing - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S28_L168/Python%203/List%20Slicing%20-%20Exercise_Py3.ipynb)
+          * [List Slicing - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S28_L168/Python%203/List%20Slicing%20-%20Lecture_Py3.ipynb)
+          * [List Slicing - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S28_L168/Python%203/List%20Slicing%20-%20Solution_Py3.ipynb)
+      * S28 L169
+        * Python 2
+          * [Tuples - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S28_L169/Python%202/Tuples%20-%20Exercise_Py2.ipynb)
+          * [Tuples - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S28_L169/Python%202/Tuples%20-%20Lecture_Py2.ipynb)
+          * [Tuples - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S28_L169/Python%202/Tuples%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Tuples - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S28_L169/Python%203/Tuples%20-%20Exercise_Py3.ipynb)
+          * [Tuples - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S28_L169/Python%203/Tuples%20-%20Lecture_Py3.ipynb)
+          * [Tuples - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S28_L169/Python%203/Tuples%20-%20Solution_Py3.ipynb)
+      * S28 L170
+        * Python 2
+          * [Dictionaries - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S28_L170/Python%202/Dictionaries%20-%20Exercise_Py2.ipynb)
+          * [Dictionaries - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S28_L170/Python%202/Dictionaries%20-%20Lecture_Py2.ipynb)
+          * [Dictionaries - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S28_L170/Python%202/Dictionaries%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Dictionaries - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S28_L170/Python%203/Dictionaries%20-%20Exercise_Py3.ipynb)
+          * [Dictionaries - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S28_L170/Python%203/Dictionaries%20-%20Lecture_Py3.ipynb)
+          * [Dictionaries - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S28_L170/Python%203/Dictionaries%20-%20Solution_Py3.ipynb)
+      * S29 L171
+        * Python 2
+          * [For Loops - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S29_L171/Python%202/For%20Loops%20-%20Exercise_Py2.ipynb)
+          * [For Loops - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S29_L171/Python%202/For%20Loops%20-%20Lecture_Py2.ipynb)
+          * [For Loops - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S29_L171/Python%202/For%20Loops%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [For Loops - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S29_L171/Python%203/For%20Loops%20-%20Exercise_Py3.ipynb)
+          * [For Loops - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S29_L171/Python%203/For%20Loops%20-%20Lecture_Py3.ipynb)
+          * [For Loops - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S29_L171/Python%203/For%20Loops%20-%20Solution_Py3.ipynb)
+      * S29 L172
+        * Python 2
+          * [While Loops And Incrementing - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S29_L172/Python%202/While%20Loops%20and%20Incrementing%20-%20Exercise_Py2.ipynb)
+          * [While Loops And Incrementing - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S29_L172/Python%202/While%20Loops%20and%20Incrementing%20-%20Lecture_Py2.ipynb)
+          * [While Loops And Incrementing - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S29_L172/Python%202/While%20Loops%20and%20Incrementing%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [While Loops And Incrementing - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S29_L172/Python%203/While%20Loops%20and%20Incrementing%20-%20Exercise_Py3.ipynb)
+          * [While Loops And Incrementing - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S29_L172/Python%203/While%20Loops%20and%20Incrementing%20-%20Lecture_Py3.ipynb)
+          * [While Loops And Incrementing - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S29_L172/Python%203/While%20Loops%20and%20Incrementing%20-%20Solution_Py3.ipynb)
+      * S29 L173
+        * Python 2
+          * [Create Lists With The Range() Function - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S29_L173/Python%202/Create%20Lists%20with%20the%20range()%20Function%20-%20Exercise_Py2.ipynb)
+          * [Create Lists With The Range() Function - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S29_L173/Python%202/Create%20Lists%20with%20the%20range()%20Function%20-%20Lecture_Py2.ipynb)
+          * [Create Lists With The Range() Function - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S29_L173/Python%202/Create%20Lists%20with%20the%20range()%20Function%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Create Lists With The Range() Function - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S29_L173/Python%203/Create%20Lists%20with%20the%20range()%20Function%20-%20Exercise_Py3.ipynb)
+          * [Create Lists With The Range() Function - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S29_L173/Python%203/Create%20Lists%20with%20the%20range()%20Function%20-%20Lecture_Py3.ipynb)
+          * [Create Lists With The Range() Function - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S29_L173/Python%203/Create%20Lists%20with%20the%20range()%20Function%20-%20Solution_Py3.ipynb)
+      * S29 L174
+        * Python 2
+          * [Use Conditional Statements And Loops Together - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S29_L174/Python%202/Use%20Conditional%20Statements%20and%20Loops%20Together%20-%20Exercise_Py2.ipynb)
+          * [Use Conditional Statements And Loops Together - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S29_L174/Python%202/Use%20Conditional%20Statements%20and%20Loops%20Together%20-%20Lecture_Py2.ipynb)
+          * [Use Conditional Statements And Loops Together - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S29_L174/Python%202/Use%20Conditional%20Statements%20and%20Loops%20Together%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Use Conditional Statements And Loops Together - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S29_L174/Python%203/Use%20Conditional%20Statements%20and%20Loops%20Together%20-%20Exercise_Py3.ipynb)
+          * [Use Conditional Statements And Loops Together - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S29_L174/Python%203/Use%20Conditional%20Statements%20and%20Loops%20Together%20-%20Lecture_Py3.ipynb)
+          * [Use Conditional Statements And Loops Together - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S29_L174/Python%203/Use%20Conditional%20Statements%20and%20Loops%20Together%20-%20Solution_Py3.ipynb)
+      * S29 L175
+        * Python 2
+          * [All In - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S29_L175/Python%202/All%20In%20-%20Exercise_Py2.ipynb)
+          * [All In - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S29_L175/Python%202/All%20In%20-%20Lecture_Py2.ipynb)
+          * [All In - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S29_L175/Python%202/All%20In%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [All In - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S29_L175/Python%203/All%20In%20-%20Exercise_Py3.ipynb)
+          * [All In - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S29_L175/Python%203/All%20In%20-%20Lecture_Py3.ipynb)
+          * [All In - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S29_L175/Python%203/All%20In%20-%20Solution_Py3.ipynb)
+      * S29 L176
+        * Python 2
+          * [Iterating Over Dictionaries - Exercise Py2](Tutorials/Data%20Science/Part_4_Python/S29_L176/Python%202/Iterating%20over%20Dictionaries%20-%20Exercise_Py2.ipynb)
+          * [Iterating Over Dictionaries - Lecture Py2](Tutorials/Data%20Science/Part_4_Python/S29_L176/Python%202/Iterating%20over%20Dictionaries%20-%20Lecture_Py2.ipynb)
+          * [Iterating Over Dictionaries - Solution Py2](Tutorials/Data%20Science/Part_4_Python/S29_L176/Python%202/Iterating%20over%20Dictionaries%20-%20Solution_Py2.ipynb)
+        * Python 3
+          * [Iterating Over Dictionaries - Exercise Py3](Tutorials/Data%20Science/Part_4_Python/S29_L176/Python%203/Iterating%20over%20Dictionaries%20-%20Exercise_Py3.ipynb)
+          * [Iterating Over Dictionaries - Lecture Py3](Tutorials/Data%20Science/Part_4_Python/S29_L176/Python%203/Iterating%20over%20Dictionaries%20-%20Lecture_Py3.ipynb)
+          * [Iterating Over Dictionaries - Solution Py3](Tutorials/Data%20Science/Part_4_Python/S29_L176/Python%203/Iterating%20over%20Dictionaries%20-%20Solution_Py3.ipynb)
+    * Part 5 Advanced Statistical Methods (Machine Learning)
+      * S32 L186
+        * [Simple Linear Regression](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S32_L186/Simple%20linear%20regression.ipynb)
+        * [Simple Linear Regression With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S32_L186/Simple%20linear%20regression_with_comments.ipynb)
+      * S32 L187
+        * [Simple Linear Regression Exercise Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S32_L187/Simple%20Linear%20Regression%20Exercise%20Solution.ipynb)
+        * [Simple Linear Regression Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S32_L187/Simple%20Linear%20Regression%20Exercise.ipynb)
+      * S33 L194
+        * [Multiple Linear Regression And Adjusted R-Squared ](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S33_L194/Multiple%20linear%20regression%20and%20Adjusted%20R-squared_.ipynb)
+        * [Multiple Linear Regression And Adjusted R-Squared With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S33_L194/Multiple%20linear%20regression%20and%20Adjusted%20R-squared_with_comments.ipynb)
+      * S33 L195
+        * [Multiple Linear Regression Exercise Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S33_L195/Multiple%20Linear%20Regression%20Exercise%20Solution.ipynb)
+        * [Multiple Linear Regression Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S33_L195/Multiple%20Linear%20Regression%20Exercise.ipynb)
+      * S33 L203
+        * [Dummy Variables](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S33_L203/Dummy%20Variables.ipynb)
+        * [Dummy Variables With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S33_L203/Dummy%20variables_with_comments.ipynb)
+      * S33 L204
+        * [Multiple Linear Regression With Dummies Exercise Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S33_L204/Multiple%20Linear%20Regression%20with%20Dummies%20Exercise%20Solution.ipynb)
+        * [Multiple Linear Regression With Dummies Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S33_L204/Multiple%20Linear%20Regression%20with%20Dummies%20Exercise.ipynb)
+      * S33 L205
+        * [Making Predictions](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S33_L205/Making%20predictions.ipynb)
+        * [Making Predictions With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S33_L205/Making%20predictions_with_comments.ipynb)
+      * S34 L208
+        * [Sklearn - Simple Linear Regression](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L208/sklearn%20-%20Simple%20Linear%20Regression.ipynb)
+        * [Sklearn - Simple Linear Regression With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L208/sklearn%20-%20Simple%20Linear%20Regression_with_comments.ipynb)
+      * S34 L209
+        * [Sklearn - Simple Linear Regression](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L209/sklearn%20-%20Simple%20Linear%20Regression.ipynb)
+        * [Sklearn - Simple Linear Regression With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L209/sklearn%20-%20Simple%20Linear%20Regression_with_comments.ipynb)
+      * S34 L211
+        * [Simple Linear Regression With Sklearn - Exercise Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L211/Simple%20Linear%20Regression%20with%20sklearn%20-%20Exercise%20Solution.ipynb)
+        * [Simple Linear Regression With Sklearn - Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L211/Simple%20Linear%20Regression%20with%20sklearn%20-%20Exercise.ipynb)
+      * S34 L212
+        * [Sklearn - Multiple Linear Regression](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L212/sklearn%20-%20Multiple%20Linear%20Regression.ipynb)
+        * [Sklearn - Multiple Linear Regression With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L212/sklearn%20-%20Multiple%20Linear%20Regression_with_comments.ipynb)
+      * S34 L213
+        * [Sklearn - Multiple Linear Regression And Adjusted R-Squared](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L213/sklearn%20-%20Multiple%20Linear%20Regression%20and%20Adjusted%20R-squared.ipynb)
+        * [Sklearn - Multiple Linear Regression And Adjusted R-Squared With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L213/sklearn%20-%20Multiple%20Linear%20Regression%20and%20Adjusted%20R-squared_with_comments.ipynb)
+      * S34 L214
+        * [Sklearn - Multiple Linear Regression And Adjusted R-Squared - Exercise Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L214/sklearn%20-%20Multiple%20Linear%20Regression%20and%20Adjusted%20R-squared%20-%20Exercise%20Solution.ipynb)
+        * [Sklearn - Multiple Linear Regression And Adjusted R-Squared - Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L214/sklearn%20-%20Multiple%20Linear%20Regression%20and%20Adjusted%20R-squared%20-%20Exercise.ipynb)
+      * S34 L215
+        * [Sklearn - Feature Selection With F-Regression](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L215/sklearn%20-%20Feature%20Selection%20with%20F-regression.ipynb)
+        * [Sklearn - Feature Selection With F-Regression With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L215/sklearn%20-%20Feature%20Selection%20with%20F-regression_with_comments.ipynb)
+      * S34 L216
+        * [Sklearn - How To Properly Include P-Values](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L216/sklearn%20-%20How%20to%20properly%20include%20p-values.ipynb)
+      * S34 L217
+        * [Sklearn - Multiple Linear Regression Summary Table](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L217/sklearn%20-%20Multiple%20Linear%20Regression%20Summary%20Table.ipynb)
+        * [Sklearn - Multiple Linear Regression Summary Table With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L217/sklearn%20-%20Multiple%20Linear%20Regression%20Summary%20Table_with_comments.ipynb)
+      * S34 L218
+        * [Sklearn - Multiple Linear Regression Exercise Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L218/sklearn%20-%20Multiple%20Linear%20Regression%20Exercise%20Solution.ipynb)
+        * [Sklearn - Multiple Linear Regression Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L218/sklearn%20-%20Multiple%20Linear%20Regression%20Exercise.ipynb)
+      * S34 L219
+        * [Sklearn - Feature Selection Through Feature Scaling (Standardization) - Part 1](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L219/sklearn%20-%20Feature%20Selection%20through%20Feature%20Scaling%20(Standardization)%20-%20Part%201.ipynb)
+        * [Sklearn - Feature Selection Through Feature Scaling (Standardization) - Part 1 With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L219/sklearn%20-%20Feature%20Selection%20through%20Feature%20Scaling%20(Standardization)%20-%20Part%201_with_comments.ipynb)
+      * S34 L220
+        * [Sklearn - Feature Selection Through Feature Scaling (Standardization) - Part 2](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L220/sklearn%20-%20Feature%20Selection%20through%20Feature%20Scaling%20(Standardization)%20-%20Part%202.ipynb)
+        * [Sklearn - Feature Selection Through Feature Scaling (Standardization) - Part 2 With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L220/sklearn%20-%20Feature%20Selection%20through%20Feature%20Scaling%20(Standardization)%20-%20Part%202_with_comments.ipynb)
+      * S34 L221
+        * [Sklearn - Making Predictions With The Standardized Coefficients](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L221/sklearn%20-%20Making%20Predictions%20with%20the%20Standardized%20Coefficients.ipynb)
+        * [Sklearn - Making Predictions With The Standardized Coefficients With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L221/sklearn%20-%20Making%20Predictions%20with%20the%20Standardized%20Coefficients_with_comments.ipynb)
+      * S34 L222
+        * [Sklearn - Feature Scaling Exercise Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L222/sklearn%20-%20Feature%20Scaling%20Exercise%20Solution.ipynb)
+        * [Sklearn - Feature Scaling Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L222/sklearn%20-%20Feature%20Scaling%20Exercise.ipynb)
+      * S34 L224
+        * [Sklearn - Train Test Split](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L224/sklearn%20-%20Train%20Test%20Split.ipynb)
+        * [Sklearn - Train Test Split With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S34_L224/sklearn%20-%20Train%20Test%20Split_with_comments.ipynb)
+      * S35 L225
+        * [Sklearn - Linear Regression - Practical Example (Part 1)](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S35_L225/sklearn%20-%20Linear%20Regression%20-%20Practical%20Example%20(Part%201).ipynb)
+        * [Sklearn - Linear Regression - Practical Example (Part 1) With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S35_L225/sklearn%20-%20Linear%20Regression%20-%20Practical%20Example%20(Part%201)_with_comments.ipynb)
+      * S35 L226
+        * [Sklearn - Linear Regression - Practical Example (Part 2)](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S35_L226/sklearn%20-%20Linear%20Regression%20-%20Practical%20Example%20(Part%202).ipynb)
+        * [Sklearn - Linear Regression - Practical Example (Part 2) With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S35_L226/sklearn%20-%20Linear%20Regression%20-%20Practical%20Example%20(Part%202)_with_comments.ipynb)
+      * S35 L228
+        * [Sklearn - Linear Regression - Practical Example (Part 3)](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S35_L228/sklearn%20-%20Linear%20Regression%20-%20Practical%20Example%20(Part%203).ipynb)
+        * [Sklearn - Linear Regression - Practical Example (Part 3) With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S35_L228/sklearn%20-%20Linear%20Regression%20-%20Practical%20Example%20(Part%203)_with_comments.ipynb)
+      * S35 L229
+        * [Sklearn - Dummies And Vif - Exercise Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S35_L229/sklearn%20-%20Dummies%20and%20VIF%20-%20Exercise%20Solution.ipynb)
+        * [Sklearn - Dummies And Vif - Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S35_L229/sklearn%20-%20Dummies%20and%20VIF%20-%20Exercise.ipynb)
+      * S35 L230
+        * [Sklearn - Linear Regression - Practical Example (Part 4)](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S35_L230/sklearn%20-%20Linear%20Regression%20-%20Practical%20Example%20(Part%204).ipynb)
+        * [Sklearn - Linear Regression - Practical Example (Part 4) With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S35_L230/sklearn%20-%20Linear%20Regression%20-%20Practical%20Example%20(Part%204)_with_comments.ipynb)
+      * S35 L232
+        * [Sklearn - Linear Regression - Practical Example (Part 5)](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S35_L232/sklearn%20-%20Linear%20Regression%20-%20Practical%20Example%20(Part%205).ipynb)
+        * [Sklearn - Linear Regression - Practical Example (Part 5) With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S35_L232/sklearn%20-%20Linear%20Regression%20-%20Practical%20Example%20(Part%205)_with_comments.ipynb)
+      * S36 L235
+        * [Admittance](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L235/Admittance.ipynb)
+        * [Admittance With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L235/Admittance_with_comments.ipynb)
+      * S36 L237
+        * [Admittance Regression Tables Fixed Error](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L237/Admittance%20regression%20tables_fixed_error.ipynb)
+        * [Admittance Regression](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L237/Admittance%20regression.ipynb)
+        * [Admittance Regression Summary Error](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L237/Admittance%20regression_summary_error.ipynb)
+      * S36 L238
+        * [Building A Logistic Regression - Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L238/Building%20a%20Logistic%20Regression%20-%20Exercise.ipynb)
+        * [Building A Logistic Regression - Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L238/Building%20a%20Logistic%20Regression%20-%20Solution.ipynb)
+      * S36 L241
+        * [Understanding Logistic Regression Tables - Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L241/Understanding%20Logistic%20Regression%20Tables%20-%20Exercise.ipynb)
+        * [Understanding Logistic Regression Tables - Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L241/Understanding%20Logistic%20Regression%20Tables%20-%20Solution.ipynb)
+      * S36 L243
+        * [Binary Predictors](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L243/Binary%20predictors.ipynb)
+      * S36 L244
+        * [Binary Predictors In A Logistic Regression - Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L244/Binary%20Predictors%20in%20a%20Logistic%20Regression%20-%20Exercise.ipynb)
+        * [Binary Predictors In A Logistic Regression - Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L244/Binary%20Predictors%20in%20a%20Logistic%20Regression%20-%20Solution.ipynb)
+      * S36 L245
+        * [Accuracy](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L245/Accuracy.ipynb)
+        * [Accuracy With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L245/Accuracy_with_comments.ipynb)
+      * S36 L246
+        * [Calculating The Accuracy Of The Model - Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L246/Calculating%20the%20Accuracy%20of%20the%20Model%20-%20Exercise.ipynb)
+        * [Calculating The Accuracy Of The Model - Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L246/Calculating%20the%20Accuracy%20of%20the%20Model%20-%20Solution.ipynb)
+      * S36 L248
+        * [Testing The Model](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L248/Testing%20the%20model.ipynb)
+        * [Testing The Model With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L248/Testing%20the%20model_with_comments.ipynb)
+      * S36 L249
+        * [Testing The Model - Exercise.](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L249/Testing%20the%20Model%20-%20Exercise..ipynb)
+        * [Testing The Model - Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S36_L249/Testing%20the%20Model%20-%20Solution.ipynb)
+      * S38 L255
+        * [Country Clusters](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L255/Country%20clusters.ipynb)
+        * [Country Clusters With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L255/Country%20clusters_with_comments.ipynb)
+      * S38 L256
+        * [A Simple Example Of Clustering - Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L256/A%20Simple%20Example%20of%20Clustering%20-%20Exercise.ipynb)
+        * [A Simple Example Of Clustering - Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L256/A%20Simple%20Example%20of%20Clustering%20-%20Solution.ipynb)
+      * S38 L257
+        * [Categorical Data](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L257/Categorical%20data.ipynb)
+        * [Categorical Data With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L257/Categorical%20data_with_comments.ipynb)
+      * S38 L258
+        * [Clustering Categorical Data - Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L258/Clustering%20Categorical%20Data%20-%20Exercise.ipynb)
+        * [Clustering Categorical Data - Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L258/Clustering%20Categorical%20Data%20-%20Solution.ipynb)
+      * S38 L259
+        * [Selecting The Number Of Clusters](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L259/Selecting%20the%20number%20of%20clusters.ipynb)
+        * [Selecting The Number Of Clusters With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L259/Selecting%20the%20number%20of%20clusters_with_comments.ipynb)
+      * S38 L260
+        * [How To Choose The Number Of Clusters - Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L260/How%20to%20Choose%20the%20Number%20of%20Clusters%20-%20Exercise.ipynb)
+        * [How To Choose The Number Of Clusters - Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L260/How%20to%20Choose%20the%20Number%20of%20Clusters%20-%20Solution.ipynb)
+      * S38 L264
+        * [Market Segmentation Example](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L264/Market%20segmentation%20example.ipynb)
+        * [Market Segmentation Example With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L264/Market%20segmentation%20example_with_comments.ipynb)
+      * S38 L265
+        * [Market Segmentation Example Part2](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L265/Market%20segmentation%20example_Part2.ipynb)
+        * [Market Segmentation Example Part2 With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L265/Market%20segmentation%20example_Part2_with_comments.ipynb)
+      * S38 L267
+        * [Species Segmentation With Cluster Analysis Part 1- Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L267/Species%20Segmentation%20with%20Cluster%20Analysis%20Part%201-%20Exercise.ipynb)
+        * [Species Segmentation With Cluster Analysis Part 1- Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L267/Species%20Segmentation%20with%20Cluster%20Analysis%20Part%201-%20Solution.ipynb)
+      * S38 L268
+        * [Species Segmentation With Cluster Analysis Part 2 - Exercise](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L268/Species%20Segmentation%20with%20Cluster%20Analysis%20Part%202%20-%20Exercise.ipynb)
+        * [Species Segmentation With Cluster Analysis Part 2 - Solution](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S38_L268/Species%20Segmentation%20with%20Cluster%20Analysis%20Part%202%20-%20Solution.ipynb)
+      * S39 L271
+        * [Heatmaps](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S39_L271/Heatmaps.ipynb)
+        * [Heatmaps With Comments](Tutorials/Data%20Science/Part_5_Advanced_Statistical_Methods_(Machine_Learning)/S39_L271/Heatmaps_with_comments.ipynb)
+  * Python Data Engineering
+    * 1. Iphone Data Analysis Project
+      * [Iphone Data Analysis Mini Project](Tutorials/Python_Data_Engineering/1.%20iPhone%20Data%20Analysis%20Project/iPhone%20Data%20Analysis%20Mini%20Project.ipynb)
+    * 2. Python Basics
+      * [Python Basics](Tutorials/Python_Data_Engineering/2.%20Python%20Basics/Python%20Basics.ipynb)
+      * [Untitled](Tutorials/Python_Data_Engineering/2.%20Python%20Basics/Untitled.ipynb)
+    * 3. Python Intermediate
+      * [Intermediate - Functions And Oops](Tutorials/Python_Data_Engineering/3.%20Python%20Intermediate/Intermediate%20-%20Functions%20and%20OOPS.ipynb)
+    * 4. Python Advance
+      * [Numpy Basics](Tutorials/Python_Data_Engineering/4.%20Python%20Advance/Numpy%20Basics.ipynb)
+      * [Pandas Basics](Tutorials/Python_Data_Engineering/4.%20Python%20Advance/Pandas%20Basics.ipynb)
+    * 5. Python For Data Engineering
+      * [5.1 Working With Date & Time](Tutorials/Python_Data_Engineering/5.%20Python%20for%20Data%20Engineering/5.1%20Working%20with%20date%20&%20time.ipynb)
+      * [5.2 Working With File Formats](Tutorials/Python_Data_Engineering/5.%20Python%20for%20Data%20Engineering/5.2%20Working%20with%20file%20formats.ipynb)
+    * 6. End-To-End Data Pipeline Project
+      * [Spotify Data Pipeline Project](Tutorials/Python_Data_Engineering/6.%20End-To-End%20Data%20Pipeline%20Project/Spotify%20Data%20Pipeline%20Project.ipynb)
+      * [Spotify Api Data Extract](Tutorials/Python_Data_Engineering/6.%20End-To-End%20Data%20Pipeline%20Project/spotify_api_data_extract.py)
+      * [Spotify Transformation Load Function](Tutorials/Python_Data_Engineering/6.%20End-To-End%20Data%20Pipeline%20Project/spotify_transformation_load_function.py)
 
 ## Video Processing
   * Online Video Editor
@@ -687,6 +1396,8 @@
     * [Info](Web_Development/Movie_Recommendation/info.py)
     * [Pythonapplication](Web_Development/Movie_Recommendation/pythonApplication.py)
     * [Test](Web_Development/Movie_Recommendation/test.py)
+  * Test Sumarrization Nlp
+    * [Textsummary](Web_Development/Test_Sumarrization_NLP/textsummary.py)
   * Chatbot
     * [App](Web_Development/chatbot/app.py)
     * [Chat](Web_Development/chatbot/chat.py)
@@ -696,3 +1407,6 @@
   * Interactive-Code-Playground
     * [Main](Web_Development/interactive-code-playground/main.py)
     * [Temp Code](Web_Development/interactive-code-playground/temp_code.py)
+
+## Jamesweb
+  * [Galaxy-And-Nebula-Images-By-James-Web-Telescope](jamesweb/galaxy-and-nebula-images-by-james-web-telescope.ipynb)

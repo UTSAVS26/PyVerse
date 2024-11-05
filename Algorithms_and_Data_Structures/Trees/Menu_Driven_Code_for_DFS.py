@@ -1,38 +1,60 @@
-class Graph:
+class Node:
+    def __init__(self, key):
+        # Initialize a new node with the given key, left and right children as None
+        self.left = None
+        self.right = None
+        self.val = key
+
+class BinaryTree:
     def __init__(self):
-        # Initialize an empty graph as a dictionary
-        self.graph = {}
+        # Initialize the binary tree with no root
+        self.root = None
 
-    def add_edge(self, u, v):
-        # Add an edge from node u to node v
-        if u not in self.graph:
-            self.graph[u] = []  # Create an empty list for u if not exists
-        self.graph[u].append(v)  # Append v to the adjacency list of u
+    def insert(self, key):
+        # Public method to insert a new key into the binary tree
+        if self.root is None:
+            self.root = Node(key)  # If tree is empty, create the root
+        else:
+            self._insert_rec(self.root, key)  # Call the recursive insert method
 
-    def dfs(self, start, visited=None):
-        # Perform depth-first search starting from the given node
-        if visited is None:
-            visited = set()  # Initialize visited set if it's the first call
-        visited.add(start)  # Mark the current node as visited
-        print(start, end=' ')  # Print the current node
-        for neighbor in self.graph.get(start, []):
-            if neighbor not in visited:
-                self.dfs(neighbor, visited)  # Recur for all unvisited neighbors
+    def _insert_rec(self, root, key):
+        # Recursive helper method to insert a key into the tree
+        if key < root.val:
+            # If key is smaller, go left
+            if root.left is None:
+                root.left = Node(key)  # Insert new node
+            else:
+                self._insert_rec(root.left, key)  # Recur on left child
+        else:
+            # If key is greater or equal, go right
+            if root.right is None:
+                root.right = Node(key)  # Insert new node
+            else:
+                self._insert_rec(root.right, key)  # Recur on right child
+
+    def dfs(self):
+        # Public method to perform DFS traversal (preorder)
+        self._dfs_rec(self.root)
+
+    def _dfs_rec(self, node):
+        # Recursive helper method for DFS traversal (preorder)
+        if node:
+            print(node.val, end=' ')  # Visit the node
+            self._dfs_rec(node.left)  # Recur on left child
+            self._dfs_rec(node.right)  # Recur on right child
 
 def menu():
-    g = Graph()  # Create a new Graph instance
+    tree = BinaryTree()  # Create a new BinaryTree instance
     while True:
         # Display menu options
-        print("\n1. Add Edge\n2. Perform DFS\n3. Exit")
+        print("\n1. Insert\n2. DFS Traversal\n3. Exit")
         choice = int(input("Choose an option: "))
         if choice == 1:
-            u = input("Enter starting node: ")  # Get starting node
-            v = input("Enter ending node: ")  # Get ending node
-            g.add_edge(u, v)  # Add edge to the graph
+            key = int(input("Enter value to insert: "))  # Get value to insert
+            tree.insert(key)  # Insert value into the tree
         elif choice == 2:
-            start = input("Enter starting node for DFS: ")  # Get starting node for DFS
             print("DFS Traversal: ", end='')
-            g.dfs(start)  # Perform DFS from the starting node
+            tree.dfs()  # Perform and print DFS traversal
         elif choice == 3:
             break  # Exit the loop and program
         else:
