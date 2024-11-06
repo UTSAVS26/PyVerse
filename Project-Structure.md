@@ -85,14 +85,21 @@
     * [Test Main](Algorithms_and_Data_Structures/Dijkstra/test_main.py)
   * Dynamic-Programming-Series
     * Basic-Dp-Problems
+      * [Paint House](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/Paint_House.py)
+      * [Subset Sum](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/SubSet_Sum.py)
       * Best-Time-To-Buy-And-Sell-Stock
         * [Program](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/best-time-to-buy-and-sell-stock/program.py)
       * [Climbing-Stairs](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/climbing-stairs.py)
       * [Fibonacci-Seq](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/fibonacci-seq.py)
       * [House-Robber](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/house-robber.py)
+      * [Nth Tribonacci Num](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/nth_tribonacci_num.py)
+      * [Zero One Knapsack](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Basic-DP-Problems/zero_one_knapsack.py)
     * Hard-Dp-Problems
+      * [Catalan-Numbers](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Hard-DP-Problems/catalan-numbers.py)
       * [Cherry-Pick-Algo](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Hard-DP-Problems/cherry-pick-algo.py)
+      * [Knapsack-With-Constraints](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Hard-DP-Problems/knapsack-with-constraints.py)
       * [Levenshtein-Distance](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Hard-DP-Problems/levenshtein-distance.py)
+      * [Min-Steps-To-One](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Hard-DP-Problems/min-steps-to-one.py)
       * [Regular-Expression-Matching](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Hard-DP-Problems/regular-expression-matching.py)
     * Medium-Dp-Problems
       * [Coin-Change](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/coin-change.py)
@@ -102,6 +109,7 @@
       * [Unique-Paths](Algorithms_and_Data_Structures/Dynamic-Programming-Series/Medium-DP-Problems/unique-paths.py)
   * Graph
     * [Adjacency Matrix](Algorithms_and_Data_Structures/Graph/Adjacency_Matrix.py)
+    * [Bipartite Graph](Algorithms_and_Data_Structures/Graph/Bipartite_Graph.py)
     * [Graph Cloning](Algorithms_and_Data_Structures/Graph/Graph_Cloning.py)
     * [Menu Driven Code Bfs Traversal](Algorithms_and_Data_Structures/Graph/Menu_driven_code_BFS_Traversal.py)
     * [Menu Driven Code Dfs Traversal](Algorithms_and_Data_Structures/Graph/Menu_driven_code_DFS_Traversal.py)
@@ -176,6 +184,7 @@
   * Timecomplexity Analyzer
     * [Checker](Algorithms_and_Data_Structures/TimeComplexity_analyzer/Checker.py)
   * Trees
+    * [Expression Tree](Algorithms_and_Data_Structures/Trees/Expression_Tree.py)
     * [Menu Driven Code For Redblack Tree](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_For_RedBlack_Tree.py)
     * [Menu Driven Code For Avl Tree](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Avl_Tree.py)
     * [Menu Driven Code For Bfs](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_BFS.py)
@@ -241,6 +250,8 @@
     * [Models](Automation_Tools/api_dev/models.py)
 
 ## Beginner Projects
+  * Amazon Product Availbility Checker
+    * [Amazon](Beginner_Projects/Amazon%20product%20availbility%20checker/amazon.py)
   * Anime Manga Tracker
     * [Anime Manga Tracker](Beginner_Projects/Anime_Manga_Tracker/Anime_Manga_Tracker.py)
   * Bmi Calculator
@@ -508,12 +519,18 @@
   * Gan-Based Art Generator Using Deep Learning
     * Model
       * [Gan-Based Art Generator Using Deep Learning](Deep_Learning/GAN-based%20Art%20Generator%20using%20Deep%20learning/Model/GAN-based%20Art%20Generator%20using%20Deep%20learning.ipynb)
+  * Handwritten Mthematical Equation Solver
+    * Model
+      * [Data Loading](Deep_Learning/Handwritten%20Mthematical%20Equation%20Solver/model/data_loading.ipynb)
+      * [Data Preparation](Deep_Learning/Handwritten%20Mthematical%20Equation%20Solver/model/data_preparation.ipynb)
   * Image Caption Generation With Audio Output
     * [App](Deep_Learning/Image%20Caption%20Generation%20with%20Audio%20Output/app.py)
   * Mnist Digit Classification Using Neural Networks
     * Model
       * [Ann Handwritten Digit Classification](Deep_Learning/MNIST%20Digit%20Classification%20using%20Neural%20Networks/model/ANN_Handwritten_Digit_Classification.ipynb)
       * [Cnn Handwritten Digit Recogniser](Deep_Learning/MNIST%20Digit%20Classification%20using%20Neural%20Networks/model/CNN_handwritten_digit_recogniser.ipynb)
+  * Malaria-Classification
+      * [Malaria-Classification](Deep_Learning/Malaria-Classification/model/malaria-classification.ipynb)
   * Medical Diagnoser
     * [Medical](Deep_Learning/Medical_diagnoser/medical.ipynb)
   * Nn From Scratch
@@ -703,6 +720,8 @@
     * [Train Model](Image%20processing/covid_face_mask/train_model.ipynb)
 
 ## Machine Learning
+  * Ai-Powered Study Assistant Python
+    * [App](Machine_Learning/AI-powered%20Study%20assistant%20python/app.py)
   * Ai Language Learning Assistant
     * [Ai-Language-Learning-Assistant](Machine_Learning/AI_Language_Learning_Assistant/AI-Language-Learning-Assistant.ipynb)
   * Absent Time Prediction Using Hyperparameter Tuning
@@ -747,6 +766,8 @@
   * Fake News Detection
     * Model
       * [Pridictionmodel](Machine_Learning/Fake%20News%20Detection/Model/PridictionModel.ipynb)
+  * Fake News Detection Project
+    * [Main](Machine_Learning/Fake%20news%20detection%20project/main.py)
   * Flight Delay Prediction
     * [Model](Machine_Learning/Flight_delay_prediction/model.ipynb)
   * Gradient Descent
