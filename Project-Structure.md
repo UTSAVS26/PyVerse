@@ -517,6 +517,10 @@
   * Gan-Based Art Generator Using Deep Learning
     * Model
       * [Gan-Based Art Generator Using Deep Learning](Deep_Learning/GAN-based%20Art%20Generator%20using%20Deep%20learning/Model/GAN-based%20Art%20Generator%20using%20Deep%20learning.ipynb)
+  * Handwritten Mthematical Equation Solver
+    * Model
+      * [Data Loading](Deep_Learning/Handwritten%20Mthematical%20Equation%20Solver/model/data_loading.ipynb)
+      * [Data Preparation](Deep_Learning/Handwritten%20Mthematical%20Equation%20Solver/model/data_preparation.ipynb)
   * Image Caption Generation With Audio Output
     * [App](Deep_Learning/Image%20Caption%20Generation%20with%20Audio%20Output/app.py)
   * Mnist Digit Classification Using Neural Networks
