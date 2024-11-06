@@ -764,6 +764,8 @@
   * Fake News Detection
     * Model
       * [Pridictionmodel](Machine_Learning/Fake%20News%20Detection/Model/PridictionModel.ipynb)
+  * Fake News Detection Project
+    * [Main](Machine_Learning/Fake%20news%20detection%20project/main.py)
   * Flight Delay Prediction
     * [Model](Machine_Learning/Flight_delay_prediction/model.ipynb)
   * Gradient Descent
