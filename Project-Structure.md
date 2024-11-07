@@ -602,6 +602,8 @@
     * [Covid-Detection-From-Cxr-Using-Explainable-Cnn](Explainable-AI/Covid_Detection_from_Explainable_cnn/covid-detection-from-cxr-using-explainable-cnn.ipynb)
   * Explainable Ai Research Methods
     * [Xai](Explainable-AI/Explainable%20AI%20Research%20Methods/xai.ipynb)
+  * Intro To Lime And Shap
+    * [Explainable-Ai-Intro-To-Lime-Shap](Explainable-AI/Intro_to_LIME_and_Shap/explainable-ai-intro-to-lime-shap.ipynb)
   * Xai On Cancer Dataset
     * [Cancer Dataset](Explainable-AI/XAI%20on%20Cancer%20Dataset/cancer_dataset.ipynb)
 
