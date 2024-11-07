@@ -412,6 +412,8 @@
     * [Ids Ips](Cybersecurity_Tools/IDS_IPS%20Tool/ids_ips.py)
   * Keylogger
     * [Keylogger](Cybersecurity_Tools/Keylogger/keylogger.py)
+  * Malware Scanner
+    * [Malware Scanner](Cybersecurity_Tools/Malware%20Scanner/malware_scanner.py)
   * Netwrok Packet Analyzer
     * [Packet Analyzer](Cybersecurity_Tools/Netwrok%20Packet%20Analyzer/packet_analyzer.py)
   * Pdf Malware Detection
