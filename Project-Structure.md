@@ -725,6 +725,8 @@
   * Covid Face Mask
     * [Test](Image%20processing/covid_face_mask/test.py)
     * [Train Model](Image%20processing/covid_face_mask/train_model.ipynb)
+  * Image-Resizer-Filter-Tool
+    * [App](Image%20processing/image-resizer-filter-tool/app.py)
 
 ## Machine Learning
   * Ai-Powered Study Assistant Python
