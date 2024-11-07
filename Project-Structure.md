@@ -379,6 +379,9 @@
       * [  Main  ](Blockchain_Development/Flask-Blockchain-app/client/__main__.py)
       * [App](Blockchain_Development/Flask-Blockchain-app/client/app.py)
       * [Transaction](Blockchain_Development/Flask-Blockchain-app/client/transaction.py)
+  * Pyvote
+    * Src
+      * [App](Blockchain_Development/PyVote/src/app.py)
 
 ## Computer Vision
   * Ball-Tracking
@@ -477,6 +480,8 @@
     * [Main](Data_Science/traffic_vs_zombie_game/main.py)
 
 ## Deep Learning
+  * Age Detection
+    * [Main](Deep_Learning/Age%20Detection/main.py)
   * Anomaly Detection In Time Series
     * Model
       * [Anomaly Detection In Time Series](Deep_Learning/Anomaly%20Detection%20in%20Time%20Series/Model/Anomaly%20Detection%20in%20Time%20Series.ipynb)
