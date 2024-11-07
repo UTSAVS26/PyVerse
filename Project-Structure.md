@@ -184,6 +184,7 @@
   * Timecomplexity Analyzer
     * [Checker](Algorithms_and_Data_Structures/TimeComplexity_analyzer/Checker.py)
   * Trees
+    * [Expression Tree](Algorithms_and_Data_Structures/Trees/Expression_Tree.py)
     * [Menu Driven Code For Redblack Tree](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_For_RedBlack_Tree.py)
     * [Menu Driven Code For Avl Tree](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Avl_Tree.py)
     * [Menu Driven Code For Bfs](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_BFS.py)
@@ -249,6 +250,8 @@
     * [Models](Automation_Tools/api_dev/models.py)
 
 ## Beginner Projects
+  * Amazon Product Availbility Checker
+    * [Amazon](Beginner_Projects/Amazon%20product%20availbility%20checker/amazon.py)
   * Anime Manga Tracker
     * [Anime Manga Tracker](Beginner_Projects/Anime_Manga_Tracker/Anime_Manga_Tracker.py)
   * Bmi Calculator
@@ -376,6 +379,9 @@
       * [  Main  ](Blockchain_Development/Flask-Blockchain-app/client/__main__.py)
       * [App](Blockchain_Development/Flask-Blockchain-app/client/app.py)
       * [Transaction](Blockchain_Development/Flask-Blockchain-app/client/transaction.py)
+  * Pyvote
+    * Src
+      * [App](Blockchain_Development/PyVote/src/app.py)
 
 ## Computer Vision
   * Ball-Tracking
@@ -383,6 +389,8 @@
     * [Project](Computer%20Vision/Ball-Tracking/Project.ipynb)
   * Drowsiness Detection System
     * [Main](Computer%20Vision/Drowsiness%20Detection%20System/main.py)
+  * Object Size Detection
+    * [App](Computer%20Vision/Object%20Size%20Detection/app.py)
   * Volume Control Using Hand Gesture
     * [Gesturevolume](Computer%20Vision/Volume%20Control%20Using%20Hand%20Gesture/GestureVolume.py)
     * [Handtrackingmodule](Computer%20Vision/Volume%20Control%20Using%20Hand%20Gesture/HandTrackingModule.py)
@@ -392,6 +400,8 @@
     * [Arp Spoofing Detection](Cybersecurity_Tools/ARP%20Spoofing%20Detection%20Tool/arp_spoofing_detection.py)
   * Cli-Based Port Scanner
     * [Port-Scanner](Cybersecurity_Tools/CLI-based%20Port%20Scanner/port-scanner.py)
+  * Cyber Threat Intelligence Dashboard
+    * [Coding](Cybersecurity_Tools/Cyber%20Threat%20Intelligence%20Dashboard/coding.py)
   * Encryption Decryption App
     * [Encrypt Decrypt](Cybersecurity_Tools/Encryption_Decryption%20app/encrypt_decrypt.py)
   * File Integrity Checker
@@ -474,6 +484,8 @@
     * [Main](Data_Science/traffic_vs_zombie_game/main.py)
 
 ## Deep Learning
+  * Age Detection
+    * [Main](Deep_Learning/Age%20Detection/main.py)
   * Anomaly Detection In Time Series
     * Model
       * [Anomaly Detection In Time Series](Deep_Learning/Anomaly%20Detection%20in%20Time%20Series/Model/Anomaly%20Detection%20in%20Time%20Series.ipynb)
@@ -516,6 +528,10 @@
   * Gan-Based Art Generator Using Deep Learning
     * Model
       * [Gan-Based Art Generator Using Deep Learning](Deep_Learning/GAN-based%20Art%20Generator%20using%20Deep%20learning/Model/GAN-based%20Art%20Generator%20using%20Deep%20learning.ipynb)
+  * Handwritten Mthematical Equation Solver
+    * Model
+      * [Data Loading](Deep_Learning/Handwritten%20Mthematical%20Equation%20Solver/model/data_loading.ipynb)
+      * [Data Preparation](Deep_Learning/Handwritten%20Mthematical%20Equation%20Solver/model/data_preparation.ipynb)
   * Image Caption Generation With Audio Output
     * [App](Deep_Learning/Image%20Caption%20Generation%20with%20Audio%20Output/app.py)
   * Mnist Digit Classification Using Neural Networks
@@ -584,8 +600,12 @@
     * [Toxicity](Deep_Learning/toxicity%20insult%20analyser/Toxicity.ipynb)
 
 ## Explainable-Ai
+  * Covid Detection From Explainable Cnn
+    * [Covid-Detection-From-Cxr-Using-Explainable-Cnn](Explainable-AI/Covid_Detection_from_Explainable_cnn/covid-detection-from-cxr-using-explainable-cnn.ipynb)
   * Explainable Ai Research Methods
     * [Xai](Explainable-AI/Explainable%20AI%20Research%20Methods/xai.ipynb)
+  * Intro To Lime And Shap
+    * [Explainable-Ai-Intro-To-Lime-Shap](Explainable-AI/Intro_to_LIME_and_Shap/explainable-ai-intro-to-lime-shap.ipynb)
   * Xai On Cancer Dataset
     * [Cancer Dataset](Explainable-AI/XAI%20on%20Cancer%20Dataset/cancer_dataset.ipynb)
 
@@ -711,8 +731,12 @@
   * Covid Face Mask
     * [Test](Image%20processing/covid_face_mask/test.py)
     * [Train Model](Image%20processing/covid_face_mask/train_model.ipynb)
+  * Image-Resizer-Filter-Tool
+    * [App](Image%20processing/image-resizer-filter-tool/app.py)
 
 ## Machine Learning
+  * Ai-Powered Study Assistant Python
+    * [App](Machine_Learning/AI-powered%20Study%20assistant%20python/app.py)
   * Ai Language Learning Assistant
     * [Ai-Language-Learning-Assistant](Machine_Learning/AI_Language_Learning_Assistant/AI-Language-Learning-Assistant.ipynb)
   * Absent Time Prediction Using Hyperparameter Tuning
@@ -757,6 +781,8 @@
   * Fake News Detection
     * Model
       * [Pridictionmodel](Machine_Learning/Fake%20News%20Detection/Model/PridictionModel.ipynb)
+  * Fake News Detection Project
+    * [Main](Machine_Learning/Fake%20news%20detection%20project/main.py)
   * Flight Delay Prediction
     * [Model](Machine_Learning/Flight_delay_prediction/model.ipynb)
   * Gradient Descent

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting DApp</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Voting DApp</h1>
+    
+    <!-- Section to load candidates -->
+    <div>
+        <button onclick="loadCandidates()">Load Candidates</button>
+        <ul id="candidatesList"></ul>
+    </div>
+    
+    <!-- Section to vote for a candidate -->
+    <div class="voting-section">
+        <input type="number" id="voteIndex" placeholder="Enter candidate index">
+        <button onclick="vote()">Vote</button>
+    </div>
+
+    <!-- Section for owner to add a new candidate (hidden for non-owners) -->
+    <div id="ownerActions" style="display: none;">
+        <h2>Owner Actions</h2>
+        <button onclick="addCandidate()">Add Candidate</button>
+    </div>
+
+    <script>
+        let web3;
+        let votingContract;
+        let ownerAddress;
+
+        // Load Web3 and initialize the contract
+        async function loadWeb3() {
+            if (window.ethereum) {
+                web3 = new Web3(window.ethereum);
+                await window.ethereum.request({ method: 'eth_requestAccounts' });
+            } else if (window.web3) {
+                web3 = new Web3(window.web3.currentProvider);
+            } else {
+                alert("Non-Ethereum browser detected. You should consider trying MetaMask!");
+            }
+        }
+
+        // Fetch contract ABI and address from the Flask server
+        async function loadContract() {
+            const response = await fetch('/contract');
+            const contractInfo = await response.json();
+            const contractABI = JSON.parse(contractInfo.abi);
+            const contractAddress = contractInfo.address;
+            
+            votingContract = new web3.eth.Contract(contractABI, contractAddress);
+
+            // Check if the connected account is the owner
+            ownerAddress = await votingContract.methods.owner().call();
+            const accounts = await web3.eth.getAccounts();
+
+            if (accounts[0].toLowerCase() === ownerAddress.toLowerCase()) {
+                document.getElementById('ownerActions').style.display = 'block';
+            }
+        }
+
+        // Load candidates from the contract
+        async function loadCandidates() {
+            const candidates = await votingContract.methods.getVotes().call();
+            const candidatesList = document.getElementById('candidatesList');
+            candidatesList.innerHTML = ''; // Clear the list
+
+            candidates.forEach((votes, index) => {
+                const listItem = document.createElement('li');
+                listItem.textContent = `Candidate ${index}: ${votes} votes`;
+                candidatesList.appendChild(listItem);
+            });
+        }
+
+        // Vote for a candidate
+        async function vote() {
+            const accounts = await web3.eth.getAccounts();
+            const voteIndex = document.getElementById('voteIndex').value;
+
+            try {
+                await votingContract.methods.vote(voteIndex).send({ from: accounts[0] });
+                alert("Vote cast successfully!");
+                loadCandidates(); // Reload the candidates to show updated votes
+            } catch (error) {
+                console.error(error);
+                alert("Error casting vote. Make sure you haven't already voted.");
+            }
+        }
+
+        // Add a new candidate (owner only)
+        async function addCandidate() {
+            const accounts = await web3.eth.getAccounts();
+            
+            try {
+                await votingContract.methods.addCandidate().send({ from: accounts[0] });
+                alert("Candidate added successfully!");
+                loadCandidates(); // Reload the candidates list
+            } catch (error) {
+                console.error(error);
+                alert("Error adding candidate. Ensure you are the contract owner.");
+            }
+        }
+
+        // Initialize the dApp
+        window.onload = async () => {
+            await loadWeb3();
+            await loadContract();
+        }
+    </script>
+</body>
+</html>
