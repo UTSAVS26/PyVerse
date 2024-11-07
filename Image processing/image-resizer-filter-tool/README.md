@@ -51,6 +51,15 @@ python app.py
 
 4. Open your web browser and navigate to `http://localhost:5000`
 
+**Note:**
+ - **Static URL Path**
+      - In this project, the `static_url_path` is set to an empty `string ''`, which means Flask will serve static files directly under the root. If you’d like to serve static files, you should use the `/static` path.
+
+To access static files, use the following URL structure:
+```
+/static/yourfile
+```
+
 ## Usage
 
 1. Upload an image using the "Choose an image" button.
