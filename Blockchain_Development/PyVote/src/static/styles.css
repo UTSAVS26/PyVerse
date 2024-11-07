@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+    width: 200px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #ecf0f1;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#candidatesList {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Styling for the owner actions section */
+#ownerActions {
+    margin-top: 30px;
+}
+
+#ownerActions h2 {
+    color: #2c3e50;
+}
+
+.voting-section {
+    margin-top: 20px;
+}
