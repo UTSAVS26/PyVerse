@@ -9,8 +9,8 @@ for i in range(120):
 
 # Print the welcome message
 print()
-print("\t\t\t                                            Welcome to")
-print("\t\t\t                                       Kaun Banega Crorepati")
+print("\t\t\t                               Welcome to")
+print("\t\t\t                           Kaun Banega Crorepati")
 
 # Print another line of asterisks
 for i in range(120):
@@ -125,27 +125,27 @@ while True:
         right_answer = "d"
 
     # Display the question and options
-    print("--------------------------------------------------------------------------------------------")
-    print("\t\t\tAmount Win - ", amount)
-    print("--------------------------------------------------------------------------------------------")
+    print("-"*120)
+    print("\t\t\tAmount Won - ", amount)
+    print("-"*120)
     time.sleep(1)
     print("\n\t\tQuestion ", count, " on your Screen")
-    print("--------------------------------------------------------------------------------------------")
+    print("-"*120)
     time.sleep(1)
     print("  |  Question - ", selectquestion)
-    print("--------------------------------------------------------------------------------------------")
+    print("\t"+("-"*80))
     time.sleep(1)
     print("\t|  A. ", optiontodisplay[0])
-    print("\t-----------------------------------------------------------------------------")
+    print("\t"+("-"*80))
     time.sleep(1)
     print("\t|  B. ", optiontodisplay[1])
-    print("\t-----------------------------------------------------------------------------")
+    print("\t"+("-"*80))
     time.sleep(1)
     print("\t|  C. ", optiontodisplay[2])
-    print("\t-----------------------------------------------------------------------------")
+    print("\t"+("-"*80))
     time.sleep(1)
     print("\t|  D. ", optiontodisplay[3])
-    print("\t-----------------------------------------------------------------------------")
+    print("\t"+("-"*80))
 
     # Ask the player for their answer
     useranswer = input("\t\tEnter Correct Option\t   or \t press Q to quit.\n\t\t\t...").lower()
@@ -174,32 +174,34 @@ while True:
         elif count == 10:
             amount = 10000000  # Maximum prize for answering all questions correctly
             print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
-            print("*********************************************************************************")
+            print("*"*120)
             print("\t\t\t !!!!!!!!!! Congratulations! !!!!!!!!!!")
             print("\t\t\t||||||||||| You Won The Game |||||||||||")
-            print("*********************************************************************************")
+            print("*"*120)
             print("\n\n\t\t You Won Rs. ", amount)
             print()
             break
 
         # Display message for correct answer and proceed to the next question
         print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
-        print("*********************************************************************************")
+        print("*"*120)
         print("\t\t\t !!!!!!!!!! Congratulations! !!!!!!!!!!")
         print("\t\t\t||||||||||||| Right Answer ||||||||||||||")
-        print("*********************************************************************************")
+        print("*"*120)
         count += 1
 
     # If the player chooses to quit
     elif useranswer == "q":
+        print("\t\tCorrect answer was "+right_answer.upper())
         print("\n\n\t\t You Won Rs. ", amount)
         break
 
     # If the player provides a wrong answer
     else:
-        print("*********************************************************************************")
+        print("*"*120)
         print("\t\t\t\t\t\t\t\t Wrong Answer")
-        print("*********************************************************************************")
+        print("\t\t\t\t\t\t\t\t Correct answer is "+right_answer.upper())
+        print("*"*120)
         print("\n\n\t\t \t\t\t\t\t\t You Won Rs. ", amount)
-        print("*********************************************************************************")
+        print("*"*120)
         break
