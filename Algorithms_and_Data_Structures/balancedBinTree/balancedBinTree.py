@@ -39,16 +39,16 @@ class Solution:
 
 
 # Creating a sample binary tree
-#root = Node(1)
-#root.left = Node(2)
-#root.right = Node(3)
-#root.left.left = Node(4)
-#root.left.right 
-# Creating an instance of the Solution class
-#solution = Solution()
+root = Node(1)
+root.left = Node(2)
+root.right = Node(3)
+root.left.left = Node(4)
+root.left.right 
+ #Creating an instance of the Solution class
+solution = Solution()
 
 # Checking if the tree is balanced
-#if solution.isBalanced(root):
-    #print("The tree is balanced.")
-#else:
-    #print("The tree is not balanced.")
+if solution.isBalanced(root):
+    print("The tree is balanced.")
+else:
+    print("The tree is not balanced.")
