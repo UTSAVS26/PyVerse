@@ -608,6 +608,8 @@
     * [Cancer Dataset](Explainable-AI/XAI%20on%20Cancer%20Dataset/cancer_dataset.ipynb)
 
 ## Game Development
+  * 2048
+    * [2048](Game_Development/2048/2048.py)
   * 2D Platformer
     * [Level Editor](Game_Development/2D%20Platformer/level_editor.py)
     * [Platformer](Game_Development/2D%20Platformer/platformer.py)
