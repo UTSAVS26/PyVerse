@@ -1,0 +1,10 @@
+streamlit
+pandas
+plotly
+matplotlib
+seaborn
+wordcloud
+nltk
+emoji
+requests
+numpy
