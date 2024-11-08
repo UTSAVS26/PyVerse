@@ -198,6 +198,8 @@
     * [Symmetric Tree](Algorithms_and_Data_Structures/Trees/Symmetric_Tree.py)
   * Avl Tree Visualizer
     * [Main](Algorithms_and_Data_Structures/avl_tree_visualizer/main.py)
+  * Balancedbintree
+    * [Balancedbintree](Algorithms_and_Data_Structures/balancedBinTree/balancedBinTree.py)
   * Bellman Ford
     * [Bellman Ford](Algorithms_and_Data_Structures/bellman_ford/Bellman_ford.py)
   * Closest Pair Of Points
