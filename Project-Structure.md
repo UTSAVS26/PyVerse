@@ -252,6 +252,8 @@
     * [Models](Automation_Tools/api_dev/models.py)
 
 ## Beginner Projects
+  * Atm Interface
+    * [Atm](Beginner_Projects/ATM%20Interface/ATM.py)
   * Amazon Product Availbility Checker
     * [Amazon](Beginner_Projects/Amazon%20product%20availbility%20checker/amazon.py)
   * Anime Manga Tracker
