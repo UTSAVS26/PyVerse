@@ -775,6 +775,8 @@
   * Diabetes-Prediction
     * [Diabetes Predictor - Deployment](Machine_Learning/Diabetes-Prediction/Diabetes%20Predictor%20-%20Deployment.py)
     * [App](Machine_Learning/Diabetes-Prediction/app.py)
+  * Distracted Driver Detection
+    * [Distrated Driver Detection](Machine_Learning/Distracted%20Driver%20Detection/Distrated%20Driver%20detection.ipynb)
   * Earthquake-Prediction-Using-Machine-Learning-Models
     * [Eda J Component](Machine_Learning/Earthquake-prediction-using-Machine-learning-models/EDA_J_Component.ipynb)
   * Economic Regime Detection Project
