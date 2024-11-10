@@ -777,6 +777,8 @@
   * Diabetes-Prediction
     * [Diabetes Predictor - Deployment](Machine_Learning/Diabetes-Prediction/Diabetes%20Predictor%20-%20Deployment.py)
     * [App](Machine_Learning/Diabetes-Prediction/app.py)
+  * Distracted Driver Detection
+    * [Distrated Driver Detection](Machine_Learning/Distracted%20Driver%20Detection/Distrated%20Driver%20detection.ipynb)
   * Earthquake-Prediction-Using-Machine-Learning-Models
     * [Eda J Component](Machine_Learning/Earthquake-prediction-using-Machine-learning-models/EDA_J_Component.ipynb)
   * Economic Regime Detection Project
@@ -802,6 +804,8 @@
     * [Main-Pc-Cam](Machine_Learning/Hand%20Game%20Controller/main-pc-cam.py)
   * Handwritten Text Recognition Model
     * [App](Machine_Learning/Handwritten%20Text%20Recognition%20Model/app.py)
+  * Heart Disease Prediction [End 2 End]
+    * [Heart Disease Prediction](Machine_Learning/Heart%20Disease%20Prediction%20[END%202%20END]/Heart%20Disease%20Prediction.ipynb)
   * House Price Prediction
     * [House Data Cleaning](Machine_Learning/House_Price_Prediction/house_data_cleaning.py)
     * [House Price Predicter](Machine_Learning/House_Price_Prediction/house_price_predicter.py)
