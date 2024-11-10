@@ -231,6 +231,8 @@
     * [Extract Aadhar Details](Automation_Tools/Autofill%20personal%20info%20using%20Aadhar%20Card%20Image/extract_aadhar_details.ipynb)
   * Image-Tool
     * [Image Tool](Automation_Tools/Image-Tool/Image_Tool.py)
+  * Iot Control
+    * [Iot Control](Automation_Tools/Iot_control/iot_control.py)
   * Playlist-Downloader
     * [Setup](Automation_Tools/Playlist-downloader/setup.py)
   * Web Scrapping
