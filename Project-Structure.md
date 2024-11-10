@@ -689,6 +689,8 @@
   * Cold-Email-Generator
     * App
       * [App](Generative-AI/Cold-Email-Generator/app/app.py)
+  * Object Detector
+    * [App](Generative-AI/Object%20Detector/app.py)
   * Pdf-Analyzer
     * [Flask-Server](Generative-AI/PDF-Analyzer/flask-server.py)
     * [Streamlit App](Generative-AI/PDF-Analyzer/streamlit_app.py)
