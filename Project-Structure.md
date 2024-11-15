@@ -264,6 +264,8 @@
     * [Bmi](Beginner_Projects/BMI%20Calculator/BMI.py)
   * Bar-Code-Generator
     * [Barcodegenerator](Beginner_Projects/Bar-Code-Generator/barCodeGenerator.py)
+  * Bird Image Classification
+    * [Bird-Classification-Using-Cnn-Efficientnetb0](Beginner_Projects/Bird%20image%20classification/bird-classification-using-cnn-efficientnetb0.ipynb)
   * Budget-Tracker
     * [Budget](Beginner_Projects/Budget-tracker/budget.py)
   * Calculator App
@@ -365,9 +367,6 @@
   * [Labbot](Beginner_Projects/labbot.ipynb)
   * Pomodoro Clock
     * [Main](Beginner_Projects/pomodoro_Clock/main.py)
-
-## Bird Image Classification
-  * [Bird-Classification-Using-Cnn-Efficientnetb0](Bird%20image%20classification/bird-classification-using-cnn-efficientnetb0.ipynb)
 
 ## Blockchain Development
   * Basic Python Blockchain Implementation
@@ -872,11 +871,15 @@
     * [Test](Machine_Learning/SVM/test.py)
   * Sentiment Analysis Using Machine Learning
     * [Code](Machine_Learning/Sentiment%20Analysis%20using%20machine%20learning/code.py)
+  * Sentiment-Analysis-Of-Restaurant-Reviews
+    * [Sentiment Analysis Of Restaurant Reviews](Machine_Learning/Sentiment-Analysis-Of-Restaurant-Reviews/Sentiment%20Analysis%20of%20Restaurant%20Reviews.ipynb)
   * Signature Verification Portal
     * [Dashboard](Machine_Learning/Signature_verification_portal/Dashboard.py)
     * [Validation](Machine_Learning/Signature_verification_portal/Validation.py)
     * [App](Machine_Learning/Signature_verification_portal/app.py)
     * [Db](Machine_Learning/Signature_verification_portal/db.py)
+  * Stock Market Analysis
+    * [Stock-Market-Analysis Final](Machine_Learning/Stock_Market_Analysis/stock-market-analysis_final.ipynb)
   * Style Transfer With Neural Network
     * [Style Transfer With Neural Networks](Machine_Learning/Style%20Transfer%20with%20Neural%20Network/Style%20Transfer%20with%20Neural%20Networks.ipynb)
   * Translator App
@@ -893,16 +896,12 @@
     * [Web Page Phishing Detection](Machine_Learning/Web%20Page%20Phishing%20Detection/web_page_phishing_detection.ipynb)
   * Zomato Restaurant Clustering And Sentiment Analysis
     * [Zomato Restaurant Clustering And Sentiment Analysis](Machine_Learning/Zomato%20Restaurant%20Clustering%20and%20Sentiment%20Analysis/Zomato_Restaurant_Clustering_and_Sentiment_Analysis.ipynb)
+  * Jamesweb
+    * [Galaxy-And-Nebula-Images-By-James-Web-Telescope](Machine_Learning/jamesweb/galaxy-and-nebula-images-by-james-web-telescope.ipynb)
   * Pokemon-Data-Analysis-And-Legendary-Classification-Main
     * [Data-Analysis-Advance-Modelling-On-Pokemons](Machine_Learning/pokemon-data-analysis-and-legendary-classification-main/data-analysis-advance-modelling-on-pokemons.ipynb)
   * Smartphone Rate Prediction
     * [Main](Machine_Learning/smartphone_rate_prediction/main.py)
-
-## Sentiment-Analysis-Of-Restaurant-Reviews
-  * [Sentiment Analysis Of Restaurant Reviews](Sentiment-Analysis-Of-Restaurant-Reviews/Sentiment%20Analysis%20of%20Restaurant%20Reviews.ipynb)
-
-## Stock Market Analysis
-  * [Stock-Market-Analysis Final](Stock_Market_Analysis/stock-market-analysis_final.ipynb)
 
 ## Tutorials
   * Data Science
@@ -1454,6 +1453,3 @@
   * Interactive-Code-Playground
     * [Main](Web_Development/interactive-code-playground/main.py)
     * [Temp Code](Web_Development/interactive-code-playground/temp_code.py)
-
-## Jamesweb
-  * [Galaxy-And-Nebula-Images-By-James-Web-Telescope](jamesweb/galaxy-and-nebula-images-by-james-web-telescope.ipynb)
