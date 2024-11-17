@@ -1,4 +1,7 @@
 import streamlit as st
+from googletrans import Translator
+import streamlit_authenticator as stauth
+
 
 # Function to encrypt using Caesar Cipher
 def caesar_encrypt(plaintext, shift):
@@ -70,3 +73,65 @@ else:  # Vigenère Cipher
         else:
             result = vignere_decrypt(message, key)
             st.success(f"Decrypted Message: {result}")
+#Defining translation and authentication functions
+# Authentication setup
+hashed_passwords = stauth.Hasher(['password1', 'password2']).generate()
+credentials = {
+    "usernames": {
+        "user1": {"name": "User One", "password": hashed_passwords[0]},
+        "user2": {"name": "User Two", "password": hashed_passwords[1]},
+    }
+}
+authenticator = stauth.Authenticate(
+    credentials,
+    "encryptionapp",
+    "auth_secret_key",  # Replace with a secure key
+    cookie_expiry_days=1,
+)
+
+name, authentication_status, username = authenticator.login("Login", "main")
+
+if not authentication_status:
+    st.error("Please log in to use the app.")
+    st.stop()
+else:
+    st.sidebar.success(f"Welcome, {name}!")
+    authenticator.logout("Logout", "sidebar")
+    
+#implemennting multi-language translation
+translator = Translator()
+
+def translate_text(text, src_language, dest_language):
+    try:
+        translation = translator.translate(text, src=src_language, dest=dest_language)
+        return translation.text
+    except Exception as e:
+        return f"Error in translation: {e}"
+#updating streamlit interface for language selection
+language_options = {
+    "English": "en",
+    "Spanish": "es",
+    "French": "fr",
+    "German": "de",
+    "Hindi": "hi",
+    "Chinese": "zh-cn",
+}
+
+st.sidebar.title("Language Options")
+src_language = st.sidebar.selectbox("Input Language:", list(language_options.keys()))
+dest_language = st.sidebar.selectbox("Output Language:", list(language_options.keys()))
+#adding encryption/decryption with translation
+if st.checkbox("Translate Before Processing"):
+    message = translate_text(message, language_options[src_language], "en")
+
+if st.button("Submit"):
+    if action == "Encrypt":
+        result = caesar_encrypt(message, shift) if method == "Caesar Cipher" else vignere_encrypt(message, key)
+        if st.checkbox("Translate After Processing"):
+            result = translate_text(result, "en", language_options[dest_language])
+        st.success(f"Result: {result}")
+    else:
+        result = caesar_decrypt(message, shift) if method == "Caesar Cipher" else vignere_decrypt(message, key)
+        if st.checkbox("Translate After Processing"):
+            result = translate_text(result, "en", language_options[dest_language])
+        st.success(f"Result: {result}")
