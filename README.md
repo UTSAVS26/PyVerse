@@ -183,8 +183,8 @@ This project is licensed under the **MIT License**. For more details, check out 
 </tr>
 </table>
 
-### Project Mentors✨
- 
+### Project Mentors of GSSOC'24-Extd.✨
+
 <table>
 <tr>
 <td align="center"><a href="https://github.com/shaansuraj"><img src="https://media.licdn.com/dms/image/v2/D5603AQGPxNguGmynZA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1718695838556?e=1734566400&v=beta&t=TP6Dpxblbh_pD63tpzdHLPeTjxKxAZVqu-hMhSZtMjI" width=150px height=150px /></a></br> <h4 style="color:red;">SURAJ SAHU
@@ -195,7 +195,7 @@ This project is licensed under the **MIT License**. For more details, check out 
 </h4>
  <a href="https://www.linkedin.com/in/arpit-mishra-87b943242/"><img src="https://img.icons8.com/fluency/2x/linkedin.png" width="32px" height="32px"></img></a>
 </td>
-<td align="center"><a href="https://www.github.com/ruhi47"><img src="https://media.licdn.com/dms/image/v2/D4E35AQEILO693y_M2w/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1718823506641?e=1729832400&v=beta&t=LoWlVhGGdjgPbDcJZqA_YNhTcmm4PVlvHnRJGz5snPM" width=150px height=150px /></a></br> <h4 style="color:red;">RUHI TYAGI
+<td align="center"><a href="https://www.github.com/ruhi47"><img src="https://github.com/user-attachments/assets/3a798249-a36e-4d06-afc0-d15843e8f5a0" width=150px height=150px /></a></br> <h4 style="color:red;">RUHI TYAGI
 </h4>
  <a href="https://www.linkedin.com/in/ruhityagi"><img src="https://img.icons8.com/fluency/2x/linkedin.png" width="32px" height="32px"></img></a>
 </td>
