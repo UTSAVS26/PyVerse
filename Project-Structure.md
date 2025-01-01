@@ -798,6 +798,10 @@
     * [Main](Machine_Learning/Fake%20news%20detection%20project/main.py)
   * Flight Delay Prediction
     * [Model](Machine_Learning/Flight_delay_prediction/model.ipynb)
+  * Forest-Fire-Prediction
+    * [Data Cleaning](Machine_Learning/Forest-Fire-Prediction/Data%20Cleaning.ipynb)
+    * [Exploratory Data Analysis](Machine_Learning/Forest-Fire-Prediction/Exploratory%20Data%20Analysis.ipynb)
+    * [Ml](Machine_Learning/Forest-Fire-Prediction/ML.ipynb)
   * Gradient Descent
     * [Gradientdescent](Machine_Learning/Gradient_descent/gradientdescent.ipynb)
   * Grammar Auto Corrector Model
