@@ -290,6 +290,8 @@
       * [Example](Beginner_Projects/File%20Sorter/Theme/example.py)
   * Financial Ai Assistant
     * [Main](Beginner_Projects/Financial%20AI%20Assistant/main.py)
+  * Grocery Inventory Management
+    * [Grocerymanagement](Beginner_Projects/Grocery%20Inventory%20Management/Grocerymanagement.py)
   * Morse Code Translator With Gui
     * [Main](Beginner_Projects/Morse%20Code%20Translator%20with%20GUI/main.py)
   * Number Guessing Game
