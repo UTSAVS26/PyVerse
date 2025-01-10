@@ -113,6 +113,9 @@ import theano.tensor           as tt
 [Matplotlib](https://github.com/matplotlib/matplotlib) - Most of the Matplotlib utilities lies under the pyplot submodule.
 
 [Seaborn](https://seaborn.pydata.org/) - An open-source Python library built on top of matplotlib. It is used for data visualization and exploratory data analysis.
+Closes: #issue-number - 1143
+
+#
 
 [Plotly](https://plotly.com/python/) - provides online graphing, analytics, and statistics tools for individuals and collaboration, as well as scientific graphing libraries for Python, R, MATLAB, Perl, Julia, Arduino, and REST.
 
