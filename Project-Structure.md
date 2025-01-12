@@ -817,6 +817,8 @@
     * [App](Machine_Learning/Handwritten%20Text%20Recognition%20Model/app.py)
   * Heart Disease Prediction [End 2 End]
     * [Heart Disease Prediction](Machine_Learning/Heart%20Disease%20Prediction%20[END%202%20END]/Heart%20Disease%20Prediction.ipynb)
+  * Heart-Disease-Detection-Using-Ml
+    * [End-To-End-Heart-Diease-Project](Machine_Learning/Heart-Disease-detection-using-ML/end-to-end-heart-diease-project.ipynb)
   * House Price Prediction
     * [House Data Cleaning](Machine_Learning/House_Price_Prediction/house_data_cleaning.py)
     * [House Price Predicter](Machine_Learning/House_Price_Prediction/house_price_predicter.py)
