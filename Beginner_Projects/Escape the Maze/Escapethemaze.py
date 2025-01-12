@@ -44,6 +44,11 @@ def play_game():
         # Get player input
         move = input("Choose your action (N/S/E/W): ").strip().upper()
 
+        # Validate input
+        if move not in ["N", "S", "E", "W"]:
+            print("Invalid move. Please enter 'N', 'S', 'E', or 'W'.")
+            continue
+
         # Calculate new position based on input
         new_position = position
         if move == "N":
@@ -54,9 +59,6 @@ def play_game():
             new_position = (position[0], position[1] + 1)
         elif move == "W":
             new_position = (position[0], position[1] - 1)
-        else:
-            print("Invalid move. Use 'N', 'S', 'E', or 'W'.")
-            continue
 
         # Check if the move is valid (within maze boundaries)
         if new_position[0] < 0 or new_position[0] >= size or new_position[1] < 0 or new_position[1] >= size:
