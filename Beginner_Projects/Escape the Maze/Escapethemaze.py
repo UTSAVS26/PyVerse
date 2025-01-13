@@ -18,7 +18,7 @@ def print_position(position):
     """Print the player's current position."""
     print(f"You are at position {position}.")
 
-def play_game():
+def play_game(predefined_moves=None):
     """Main game function."""
     size = 5  # Maze size (5x5)
     maze = generate_maze(size)
@@ -31,6 +31,8 @@ def play_game():
     print("Collect treasures to earn points and avoid traps to stay alive!")
     print("Commands: 'N' = North, 'S' = South, 'E' = East, 'W' = West.\n")
 
+    predefined_moves = iter(predefined_moves) if predefined_moves else None
+
     while True:
         print_position(position)
         print_stats(health, score)
@@ -41,8 +43,21 @@ def play_game():
             print(f"Your final score is {score}.")
             break
 
-        # Get player input
-        move = input("Choose your action (N/S/E/W): ").strip().upper()
+        # Get player input or use predefined moves
+        try:
+            if predefined_moves:
+                # Check if manual input is possible
+                move = input("Choose your action (N/S/E/W): ").strip().upper()
+            else:
+                # If no manual input, use automated moves
+                raise EOFError
+        except (EOFError, StopIteration):
+            try:
+                move = next(predefined_moves).strip().upper()
+                print(f"Automated Move: {move}")
+            except StopIteration:
+                print("No more moves available. Exiting the game.")
+                break
 
         # Validate input
         if move not in ["N", "S", "E", "W"]:
@@ -88,6 +103,8 @@ def play_game():
             print("You ran out of health! Game over!")
             break
 
-# Start the game
+# Run the game
 if __name__ == "__main__":
-    play_game()
+    # Predefined moves as a fallback for non-interactive environments
+    predefined_moves = ["E", "E", "S", "S", "S", "E", "E", "S"]
+    play_game(predefined_moves=predefined_moves)
