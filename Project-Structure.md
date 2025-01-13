@@ -896,6 +896,9 @@
     * [Utils](Machine_Learning/Translator%20App/utils.py)
   * Twitter Sentiment Analysis
     * [Twitter Sentiment Analysis](Machine_Learning/Twitter%20Sentiment%20Analysis/Twitter%20Sentiment%20Analysis.ipynb)
+  * Water-Quality-Analysis-Using-Ml-Main
+    * [ Testing Cpde In Py](Machine_Learning/Water-Quality-Analysis-using-ML-main/_testing_cpde_in_py.py)
+    * [Water Quality Model](Machine_Learning/Water-Quality-Analysis-using-ML-main/water_quality_model.ipynb)
   * Wecare
     * Datasets
       * [Train Mdl](Machine_Learning/WeCare/datasets/train_mdl.ipynb)
