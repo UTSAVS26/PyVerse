@@ -400,6 +400,9 @@
     * [Project](Computer%20Vision/Ball-Tracking/Project.ipynb)
   * Drowsiness Detection System
     * [Main](Computer%20Vision/Drowsiness%20Detection%20System/main.py)
+  * Leprosy Detection
+    * [Test](Computer%20Vision/Leprosy%20Detection/test.py)
+    * [Train](Computer%20Vision/Leprosy%20Detection/train.py)
   * Object Size Detection
     * [App](Computer%20Vision/Object%20Size%20Detection/app.py)
   * Volume Control Using Hand Gesture
