@@ -50,4 +50,4 @@
 
 ## 🌟 Have Fun!
 
-Test your vocabulary and decision-making skills in this fun and engaging Hangman game. Share it with friends and family for a friendly competition!
+Test your vocabulary and decision-making skills in this fun and engaging Hangman game. 
