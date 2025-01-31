@@ -618,6 +618,8 @@
     * [Covid-Detection-From-Cxr-Using-Explainable-Cnn](Explainable-AI/Covid_Detection_from_Explainable_cnn/covid-detection-from-cxr-using-explainable-cnn.ipynb)
   * Explainable Ai Research Methods
     * [Xai](Explainable-AI/Explainable%20AI%20Research%20Methods/xai.ipynb)
+  * Gradcam On Brain Tumor
+    * [Grad](Explainable-AI/GradCAM%20on%20Brain%20Tumor/grad.py)
   * Intro To Lime And Shap
     * [Explainable-Ai-Intro-To-Lime-Shap](Explainable-AI/Intro_to_LIME_and_Shap/explainable-ai-intro-to-lime-shap.ipynb)
   * Xai On Cancer Dataset
@@ -699,6 +701,8 @@
   * Cold-Email-Generator
     * App
       * [App](Generative-AI/Cold-Email-Generator/app/app.py)
+  * Gans On Brain Tumor
+    * [Gan](Generative-AI/GANs%20on%20brain%20tumor/gan.py)
   * Object Detector
     * [App](Generative-AI/Object%20Detector/app.py)
   * Pdf-Analyzer
