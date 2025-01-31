@@ -302,6 +302,8 @@
     * [App](Beginner_Projects/PDF%20Quering/app.py)
   * Password-Generator
     * [Passwordgenerator](Beginner_Projects/Password-Generator/passwordGenerator.py)
+  * Playlist Generator
+    * [Mood-Based-Playlist-Generator](Beginner_Projects/Playlist%20Generator/mood-based-playlist-generator.py)
   * Positive News Digest
     * [App Flask](Beginner_Projects/Positive_News_Digest/app_flask.py)
     * [Data Collection](Beginner_Projects/Positive_News_Digest/data_collection.py)
