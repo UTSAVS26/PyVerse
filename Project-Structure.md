@@ -298,6 +298,8 @@
     * [Main](Beginner_Projects/Morse%20Code%20Translator%20with%20GUI/main.py)
   * Number Guessing Game
     * [Number Guessing Game](Beginner_Projects/Number%20Guessing%20Game/number_guessing_game.py)
+  * Nutrition Planner
+    * [Diet](Beginner_Projects/Nutrition%20Planner/Diet.py)
   * Pdf Quering
     * [App](Beginner_Projects/PDF%20Quering/app.py)
   * Password-Generator
