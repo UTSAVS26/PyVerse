@@ -1,6 +1,7 @@
 import math
 import tkinter as tk
 from tkinter import ttk
+from math import factorial, log
 
 class ScientificCalculatorGUI:
     def __init__(self, master):
@@ -65,11 +66,12 @@ class ScientificCalculatorGUI:
 
         # Define button layout
         buttons = [
-            ('7', '8', '9', '/', 'sin'),
-            ('4', '5', '6', '*', 'cos'),
-            ('1', '2', '3', '-', 'tan'),
-            ('0', '.', '=', '+', 'sqrt'),
-            ('(', ')', 'C', 'exp', 'log')
+            ('7', '8', '9', '/', 'sin', 'sinr'),
+            ('4', '5', '6', '*', 'cos', 'cosr'),
+            ('1', '2', '3', '-', 'tan', 'tanr'),
+            ('0', '.', '=', '+', 'sqrt', 'logn'),
+            ('(', ')', 'C', 'exp', 'log', 'fact'),
+            ('pow', 'mod', ',', ' ')
         ]
 
         # Create buttons
@@ -83,12 +85,12 @@ class ScientificCalculatorGUI:
                 button.grid(row=i, column=j, sticky="nsew", padx=4, pady=4)
 
         # Configure grid
-        for i in range(5):
+        for i in range(6):
             button_frame.grid_rowconfigure(i, weight=1)
             button_frame.grid_columnconfigure(i, weight=1)
 
     def get_button_style(self, text):
-        if text in ['+', '-', '*', '/']:
+        if text in ['+', '-', '*', '/', 'pow', 'mod']:
             return 'Operator.TButton'
         elif text == '=':
             return 'Equal.TButton'
@@ -101,7 +103,7 @@ class ScientificCalculatorGUI:
             self.calculate_result()
         elif key == 'C':
             self.result_var.set("0")
-        elif key in ['sin', 'cos', 'tan', 'sqrt', 'log', 'exp']:
+        elif key in ['sin', 'cos', 'tan', 'sqrt', 'log', 'exp', 'sinr', 'cosr', 'tanr', 'fact', 'logn', 'pow', 'mod']:
             self.calculate_function(key)
         else:
             self.update_display(key)
@@ -109,22 +111,44 @@ class ScientificCalculatorGUI:
     def calculate_result(self):
         try:
             result = eval(self.result_var.get())
-            self.result_var.set(str(result))
+            self.result_var.set(f"{result:.10g}")
         except:
             self.result_var.set("Error")
 
     def calculate_function(self, func):
         try:
-            value = float(self.result_var.get())
-            result = {
-                'sin': math.sin(math.radians(value)),
-                'cos': math.cos(math.radians(value)),
-                'tan': math.tan(math.radians(value)),
-                'sqrt': math.sqrt(value),
-                'log': math.log10(value),
-                'exp': math.exp(value)
-            }[func]
-            self.result_var.set(str(result))
+            if func in ['pow', 'logn', 'mod']:
+                parts = self.result_var.get().split(',')
+                if len(parts) != 2:
+                    raise ValueError("Invalid input format")
+                value = float(parts[0])
+                second_value = float(parts[1])
+                if func == 'pow':
+                    result = math.pow(value, second_value)
+                elif func == 'logn':
+                    result = log(value, second_value)
+                elif func == 'mod':
+                    result = value % second_value
+            else:
+                value = float(self.result_var.get())
+                if func == 'sinr':
+                    result = math.sin(value)
+                elif func == 'cosr':
+                    result = math.cos(value)
+                elif func == 'tanr':
+                    result = math.tan(value)
+                elif func == 'fact':
+                    result = factorial(int(value))
+                else:
+                    result = {
+                        'sin': math.sin(math.radians(value)),
+                        'cos': math.cos(math.radians(value)),
+                        'tan': math.tan(math.radians(value)),
+                        'sqrt': math.sqrt(value),
+                        'log': math.log10(value),
+                        'exp': math.exp(value)
+                    }[func]
+            self.result_var.set(f"{result:.10g}")
         except:
             self.result_var.set("Error")
 
