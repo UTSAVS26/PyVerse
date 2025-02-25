@@ -279,6 +279,8 @@
     * [Currency Convertor](Beginner_Projects/Currency%20_Convertor/Currency_Convertor.py)
   * Digital Clock
     * [Digital Clock](Beginner_Projects/Digital%20Clock/digital_clock.py)
+  * E-Certificate Generator
+    * [Certificate](Beginner_Projects/E-certificate%20Generator/certificate.py)
   * [Egg Catcher Game](Beginner_Projects/Egg_Catcher_Game.py)
   * Email Automation
     * [Email Automation](Beginner_Projects/Email_Automation/email_automation.py)
