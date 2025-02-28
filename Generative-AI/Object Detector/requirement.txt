@@ -1,4 +1,0 @@
-transformers
-torch
-gradio
-timm

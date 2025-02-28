@@ -1,7 +1,0 @@
-Flask==2.3.2
-Pillow==10.0.0
-transformers==4.31.0
-torch==2.0.1
-gTTS==2.3.2
-Werkzeug==2.3.6
-gunicorn
