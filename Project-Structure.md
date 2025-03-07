@@ -496,6 +496,7 @@
     * [Main](Data_Science/analysis_covid_trends/main.py)
   * Customer Segmentation
     * [Customer Segmentation](Data_Science/customer_segmentation/Customer_Segmentation.ipynb)
+  * [Stock-Price-Eda](Data_Science/stock-price-eda.ipynb)
   * Stock Prediction
     * [Capm Famafrench](Data_Science/stock_prediction/CAPM_FamaFrench.ipynb)
   * Time Series Visualization
