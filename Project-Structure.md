@@ -279,6 +279,8 @@
     * [Currency Convertor](Beginner_Projects/Currency%20_Convertor/Currency_Convertor.py)
   * Digital Clock
     * [Digital Clock](Beginner_Projects/Digital%20Clock/digital_clock.py)
+  * E-Certificate Generator
+    * [Certificate](Beginner_Projects/E-certificate%20Generator/certificate.py)
   * [Egg Catcher Game](Beginner_Projects/Egg_Catcher_Game.py)
   * Email Automation
     * [Email Automation](Beginner_Projects/Email_Automation/email_automation.py)
@@ -404,6 +406,8 @@
     * [Project](Computer%20Vision/Ball-Tracking/Project.ipynb)
   * Drowsiness Detection System
     * [Main](Computer%20Vision/Drowsiness%20Detection%20System/main.py)
+  * Fitposetracker
+    * [Fit Pose](Computer%20Vision/FitPoseTracker/Fit_pose.ipynb)
   * Leprosy Detection
     * [Test](Computer%20Vision/Leprosy%20Detection/test.py)
     * [Train](Computer%20Vision/Leprosy%20Detection/train.py)
@@ -782,6 +786,8 @@
       * [Bitcoin Price Prediction](Machine_Learning/Bitcoin%20Price%20Prediction/Model/Bitcoin_Price_Prediction.ipynb)
   * Book Recommendation System
     * [Book Recommendation System](Machine_Learning/Book%20Recommendation%20System/Book_Recommendation_System.ipynb)
+  * Bulldozer-Price-Prediction-Using-Ml
+    * [End-To-End-Bulldozer-Prize-Prediction](Machine_Learning/Bulldozer-Price-Prediction-using-ML/end-to-end-bulldozer-prize-prediction.ipynb)
   * Credit Card Fraud Detection
     * [Credit Card Fraud Detection](Machine_Learning/Credit%20Card%20Fraud%20Detection/Credit_card_fraud_detection.ipynb)
   * Creditcardfrauddetection

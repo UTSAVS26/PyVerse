@@ -41,6 +41,10 @@ Welcome to **PyVerse**, your go-to open-source hub for exploring the limitless u
 </div>
 
 <div align="center">
+  <img src="https://github.com/user-attachments/assets/d1c72194-4a9e-422b-9c44-5f94e0bc2a15" alt="Apertre 2.0" width="80%">
+</div>
+
+<div align="center">
   <img src="https://raw.githubusercontent.com/alo7lika/PyVerse/refs/heads/main/Images/hacktober.png" alt="Hacktober fest 2024" width="80%">
 </div>
 
