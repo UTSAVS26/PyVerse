@@ -12,17 +12,27 @@ from dotenv import load_dotenv
 
 
 load_dotenv()
-os.getenv("GOOGLE_API_KEY")
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+api_key = os.getenv("GOOGLE_API_KEY")
+if not api_key:
+    raise ValueError("GOOGLE_API_KEY environment variable is missing. Please add it to your .env file.")
+genai.configure(api_key=api_key)
 
 
 ##Function that reads the pdd goes through each and every page
 def get_pdf_text(pdf_docs):
+    if not pdf_docs:
+        return ""
     text=""
     for pdf in pdf_docs:
         pdf_reader= PdfReader(pdf)
         for page in pdf_reader.pages:
             text+= page.extract_text()
+        try:
+            pdf_reader = PdfReader(pdf)
+            for page in pdf_reader.pages:
+                text += page.extract_text()
+        except Exception as e:
+            st.error(f"Error reading PDF '{pdf.name}': {str(e)}")
     return  text
 
 
@@ -36,16 +46,33 @@ def get_text_chunks(text):
 
 ##Function that saves the data we got from conversation to local(here), generally stored in data base
 #converting into chunks -> storing data in faiss vector
-def get_vector_store(text_chunks):
-    embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
-    vector_store = FAISS.from_texts(text_chunks, embedding=embeddings)
+def get_vector_store(text_chunks, embedding_model="models/embedding-001", store_dir="faiss_index"):
+    """Create and save vector store from text chunks.
     
-    # Ensure the directory exists
-    if not os.path.exists("faiss_index"):
-        os.makedirs("faiss_index")
+    Args:
+        text_chunks: List of text chunks to embed
+        embedding_model: Name of the embedding model to use
+        store_dir: Directory to save the vector store
     
-    # Save the vector store index in the directory
-    vector_store.save_local("faiss_index")
+    Returns:
+        None
+    """
+    if not text_chunks:
+        st.warning("No text to process. Please check the PDF content.")
+        return
+        
+    try:
+        embeddings = GoogleGenerativeAIEmbeddings(model=embedding_model)
+        vector_store = FAISS.from_texts(text_chunks, embedding=embeddings)
+        
+        # Ensure the directory exists
+        if not os.path.exists(store_dir):
+            os.makedirs(store_dir)
+        
+        # Save the vector store index in the directory
+        vector_store.save_local(store_dir)
+    except Exception as e:
+        st.error(f"Error creating vector store: {str(e)}")
 
 
 #Function to give the prompt and ask the bot to act accordingly, giving the gemini model
