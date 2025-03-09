@@ -712,6 +712,10 @@
     * [Gan](Generative-AI/GANs%20on%20brain%20tumor/gan.py)
   * Object Detector
     * [App](Generative-AI/Object%20Detector/app.py)
+  * Pdf Wizard
+    * [App](Generative-AI/PDF%20Wizard/app.py)
+    * Faiss Index
+      * [App](Generative-AI/PDF%20Wizard/faiss_index/app.py)
   * Pdf-Analyzer
     * [Flask-Server](Generative-AI/PDF-Analyzer/flask-server.py)
     * [Streamlit App](Generative-AI/PDF-Analyzer/streamlit_app.py)
