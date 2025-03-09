@@ -27,12 +27,13 @@ def get_pdf_text(pdf_docs):
         pdf_reader= PdfReader(pdf)
         for page in pdf_reader.pages:
             text+= page.extract_text()
-        try:
-            pdf_reader = PdfReader(pdf)
-            for page in pdf_reader.pages:
-                text += page.extract_text()
-        except Exception as e:
-            st.error(f"Error reading PDF '{pdf.name}': {str(e)}")
+        # Optionally wrap the above block in try-except if needed:
+        # try:
+        #     pdf_reader = PdfReader(pdf)
+        #     for page in pdf_reader.pages:
+        #         text += page.extract_text()
+        # except Exception as e:
+        #     st.error(f"Error reading PDF '{pdf.name}': {str(e)}")
     return  text
 
 
@@ -104,7 +105,7 @@ def user_input(user_question):
         st.error("FAISS index file not found. Please process the PDF files first.")
         return
     
-    new_db = FAISS.load_local("faiss_index", embeddings, allow_dangerous_deserialization=True)
+    new_db = FAISS.load_local("faiss_index", embeddings)
     docs = new_db.similarity_search(user_question)
 
     chain = get_conversational_chain()
