@@ -36,7 +36,6 @@ The ultimate goal is to enhance skills in data science through practical applica
 | hsc_s      | categorical(string) | Specialization in Higher Secondary Education |
 | degree_p    | float    | Degree Percentage |
 | degree_t    | categorical(string) | Under Graduation (Degree type) - Field of degree |
-| education   | categorical(string) | Work Experience |
 | workex      | categorical(string) | Work Experience |
 | etest_p     | float    | Employability test percentage (conducted by college) |
 | specialization | categorical(string) | Post Graduation (MBA) - Specialization |
@@ -44,4 +43,4 @@ The ultimate goal is to enhance skills in data science through practical applica
 | status      | categorical(string) | Status of placement - Placed/Not placed |
 | salary      | int      | Salary offered by corporate to candidates |
 
-This dataset provides a comprehensive view of the factors affecting campus placements.
+This dataset provides a comprehensive view of the factors affecting campus placements. You can access the project report to get comprehensive details by clicking [here](https://docs.google.com/document/d/11-dlwHMChNp7d57RGAZnkk98vhloI9S5/edit?usp=sharing&ouid=104504384502282201521&rtpof=true&sd=true)
