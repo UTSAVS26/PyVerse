@@ -5,10 +5,11 @@ This project is an analysis of campus recruitment data conducted by Manthan Baga
 
 ## Objective
 The primary objectives of this project are:
-- To determine which factors influence a candidate's placement.
-- To analyze the significance of percentage scores in securing placements.
-- To identify the degree specializations that are most in demand by corporations.
-- To conduct various statistical tests on the dataset.
+- Analyze historical placement data to uncover trends and patterns.
+- Identify key factors that influence student placement outcomes.
+- Develop predictive models for anticipating placement success.
+- Visualize insights through intuitive charts and graphs for better understanding.
+
 
 The ultimate goal is to enhance skills in data science through practical application.
 
@@ -23,6 +24,7 @@ The ultimate goal is to enhance skills in data science through practical applica
 - **Total Columns**: 15
 
 ### Column Descriptions
+
 | Column Name | Datatype | Description |
 |-------------|----------|-------------|
 | sl_no       | int      | Serial Number |
@@ -37,7 +39,7 @@ The ultimate goal is to enhance skills in data science through practical applica
 | education   | categorical(string) | Work Experience |
 | workex      | categorical(string) | Work Experience |
 | etest_p     | float    | Employability test percentage (conducted by college) |
-| specialisation | categorical(string) | Post Graduation (MBA) - Specialization |
+| specialization | categorical(string) | Post Graduation (MBA) - Specialization |
 | mba_p       | float    | MBA percentage |
 | status      | categorical(string) | Status of placement - Placed/Not placed |
 | salary      | int      | Salary offered by corporate to candidates |
