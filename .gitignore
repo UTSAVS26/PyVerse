@@ -21,3 +21,6 @@ aiml
 
 # Necessory files
 kaggle.json
+
+# Ignore macOS system files
+.DS_Store
