@@ -488,6 +488,8 @@
     * [Advanced-Eda](Data_Science/Lead%20Conversion%20Case%20Study/Advanced-EDA.ipynb)
     * [Eda Feature-Engineering Outlier-Analysis](Data_Science/Lead%20Conversion%20Case%20Study/EDA_Feature-Engineering_Outlier-Analysis.ipynb)
     * [Lead Score Model Building](Data_Science/Lead%20Conversion%20Case%20Study/Lead%20Score%20Model%20Building.ipynb)
+  * Placement Analysis
+    * [Placement Analysis](Data_Science/Placement%20Analysis/Placement_Analysis.ipynb)
   * Unemployment Analysis Due To Covid
     * [Unemployment Analysis](Data_Science/Unemployment%20Analysis%20due%20to%20COVID/UNEMPLOYMENT_ANALYSIS.ipynb)
   * Whatsapp Chat Analyzer
