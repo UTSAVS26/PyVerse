@@ -786,6 +786,11 @@
     * [Main](Machine_Learning/Analying_ML_model_using_maang/main.py)
   * Anomaly Based Ids
     * [Anomaly Based Ids](Machine_Learning/Anomaly_based_ids/Anomaly_based_IDS.ipynb)
+  * Apple Stock Price Prediction Based On 40 Years
+    * Models
+      * [Apple-Stock-Predictions-Lstm-Conv1D](Machine_Learning/Apple%20Stock%20Price%20Prediction%20Based%20on%2040%20Years/Models/apple-stock-predictions-lstm-conv1d.ipynb)
+      * [Apple-Stock-Predictions-Lstm](Machine_Learning/Apple%20Stock%20Price%20Prediction%20Based%20on%2040%20Years/Models/apple-stock-predictions-lstm.ipynb)
+      * [Apple-Stock-Predictions-Using-Prophet-Model](Machine_Learning/Apple%20Stock%20Price%20Prediction%20Based%20on%2040%20Years/Models/apple-stock-predictions-using-prophet-model.ipynb)
   * Automobile Sales Data Analysis And Prediction
     * Model
       * [Automobile Sales Prediction](Machine_Learning/Automobile%20Sales%20Data%20Analysis%20and%20Prediction/Model/Automobile_Sales_Prediction.ipynb)
