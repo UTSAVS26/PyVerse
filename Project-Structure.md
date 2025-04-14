@@ -531,9 +531,14 @@
       * [Blooddisease](Deep_Learning/Blood%20Disease%20Detection/Model/BloodDisease.ipynb)
   * Brain Tumor Detection
       * [Brain Tumor Model](Deep_Learning/Brain%20Tumor%20Detection/Model/brain_tumor_model.ipynb)
+  * Cataract Detection Using Dl
+      * [Cataract-Detect](Deep_Learning/Cataract%20Detection%20using%20DL/Model/cataract-detect.ipynb)
   * Deep-Learning-For-Animal-Identification
     * [Identify The Animal Colab](Deep_Learning/Deep-learning-for-Animal-Identification/Identify%20the%20Animal_colab.ipynb)
     * [Identify The Animal Novalid Colab](Deep_Learning/Deep-learning-for-Animal-Identification/Identify_the_Animal_novalid_colab.ipynb)
+  * Deepfake Images Detector
+    * Model
+      * [Deepfake Image Detector](Deep_Learning/Deepfake%20Images%20Detector/Model/Deepfake_Image_Detector.ipynb)
   * Detect Bad Posture Media Pipe
     * [Media Pipe Pose Checkpoint](Deep_Learning/Detect%20Bad%20Posture%20Media%20Pipe/Media_Pipe_Pose_checkpoint.ipynb)
   * Digital Image Tampering Detection
@@ -825,6 +830,9 @@
     * [Credit Card Fraud Detection](Machine_Learning/Credit%20Card%20Fraud%20Detection/Credit_card_fraud_detection.ipynb)
   * Creditcardfrauddetection
     * [Fraud Detection Machine Learning Project](Machine_Learning/CreditCardFraudDetection/Fraud_Detection_Machine_Learning_Project.ipynb)
+  * Cricket Shots Detection
+    * Model
+      * [Cricket Shots](Machine_Learning/Cricket%20Shots%20Detection/model/cricket%20shots.ipynb)
   * Customer Clust - Customer Segmentation Tool
     * [Customer Clust - Customer Segmentation Tool](Machine_Learning/Customer%20Clust%20-%20Customer%20Segmentation%20Tool/Customer%20Clust%20-%20Customer%20Segmentation%20Tool.ipynb)
   * Data Summarizer Nlp
