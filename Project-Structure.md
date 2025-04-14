@@ -535,6 +535,10 @@
       * [Cardiovascular Disease Risk Prediction Model](Deep_Learning/Cardiovascular%20Disease%20Risk%20Prediction%20Model/Model/Cardiovascular%20Disease%20Risk%20Prediction%20Model.ipynb)
   * Cataract Detection Using Dl
       * [Cataract-Detect](Deep_Learning/Cataract%20Detection%20using%20DL/Model/cataract-detect.ipynb)
+  * Chocolate Classification Using Dl
+      * [Chocolate Classification Using Dl](Deep_Learning/Chocolate%20Classification%20using%20DL/Model/Chocolate%20Classification%20using%20DL.ipynb)
+  * Colour Detection Using Dl
+      * [Colour Detection Using Dl](Deep_Learning/Colour%20Detection%20using%20DL/Model/Colour%20Detection%20using%20DL.ipynb)
   * Deep-Learning-For-Animal-Identification
     * [Identify The Animal Colab](Deep_Learning/Deep-learning-for-Animal-Identification/Identify%20the%20Animal_colab.ipynb)
     * [Identify The Animal Novalid Colab](Deep_Learning/Deep-learning-for-Animal-Identification/Identify_the_Animal_novalid_colab.ipynb)
@@ -831,6 +835,11 @@
   * Covid19-X Ray  Image Classification
     * Models
       * [Models Covid 19](Machine_Learning/COVID19-X%20Ray%20%20Image%20Classification/Models/models_COVID_19.ipynb)
+  * Car Price Prediction Using Dl
+    * Model
+      * [Car Price Prediction With Dl](Machine_Learning/Car%20Price%20Prediction%20using%20DL/Model/Car_Price_Prediction_with_DL.ipynb)
+  * Chatgpt Based Tweets Sentiment Analysis Using Dl
+      * [Updated Tweet Chatgpt Sentiment Analysis](Machine_Learning/ChatGPT%20Based%20Tweets%20Sentiment%20Analysis%20Using%20DL/Model/UPDATED%20tweet%20chatgpt%20sentiment%20analysis.ipynb)
   * Credit Card Fraud Detection
     * [Credit Card Fraud Detection](Machine_Learning/Credit%20Card%20Fraud%20Detection/Credit_card_fraud_detection.ipynb)
   * Creditcardfrauddetection
