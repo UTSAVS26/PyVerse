@@ -526,8 +526,10 @@
       * [Bird Species Classification](Deep_Learning/Bird%20Species%20Classification/Model/bird_species_classification.ipynb)
   * Black And White Images Into Colour
     * [P1](Deep_Learning/Black%20and%20White%20images%20into%20Colour/p1.py)
-  * Brain Tumor Detection
+  * Blood Disease Detection
     * Model
+      * [Blooddisease](Deep_Learning/Blood%20Disease%20Detection/Model/BloodDisease.ipynb)
+  * Brain Tumor Detection
       * [Brain Tumor Model](Deep_Learning/Brain%20Tumor%20Detection/Model/brain_tumor_model.ipynb)
   * Deep-Learning-For-Animal-Identification
     * [Identify The Animal Colab](Deep_Learning/Deep-learning-for-Animal-Identification/Identify%20the%20Animal_colab.ipynb)
@@ -809,6 +811,12 @@
   * Bitcoin Price Prediction
     * Model
       * [Bitcoin Price Prediction](Machine_Learning/Bitcoin%20Price%20Prediction/Model/Bitcoin_Price_Prediction.ipynb)
+  * Bone Fracture Detection
+    * Models
+      * [Bone Fracture Rcnn](Machine_Learning/Bone%20Fracture%20Detection/Models/Bone_Fracture_RCNN.ipynb)
+      * [Bone Fracture Yolo](Machine_Learning/Bone%20Fracture%20Detection/Models/Bone_Fracture_YOLO.ipynb)
+    * Web App
+      * [App](Machine_Learning/Bone%20Fracture%20Detection/Web%20App/app.py)
   * Book Recommendation System
     * [Book Recommendation System](Machine_Learning/Book%20Recommendation%20System/Book_Recommendation_System.ipynb)
   * Bulldozer-Price-Prediction-Using-Ml
