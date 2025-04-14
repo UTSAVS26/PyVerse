@@ -509,6 +509,11 @@
 ## Deep Learning
   * Age Detection
     * [Main](Deep_Learning/Age%20Detection/main.py)
+  * Alzheimers Detection
+    * Model
+      * [Alzheimer-Detection](Deep_Learning/Alzheimers%20Detection/Model/alzheimer-detection.ipynb)
+    * Web-App
+      * [App](Deep_Learning/Alzheimers%20Detection/Web-App/app.py)
   * Anomaly Detection In Time Series
     * Model
       * [Anomaly Detection In Time Series](Deep_Learning/Anomaly%20Detection%20in%20Time%20Series/Model/Anomaly%20Detection%20in%20Time%20Series.ipynb)
