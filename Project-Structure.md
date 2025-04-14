@@ -799,7 +799,13 @@
   * Automobile Sales Data Analysis And Prediction
     * Model
       * [Automobile Sales Prediction](Machine_Learning/Automobile%20Sales%20Data%20Analysis%20and%20Prediction/Model/Automobile_Sales_Prediction.ipynb)
+  * Bank Loan Approval Prediction
+      * [Fnn Tabnet Wdnn](Machine_Learning/Bank%20Loan%20Approval%20Prediction/Model/FNN_TabNet_WDNN.ipynb)
+      * [Bank-Loan-Approval-Using-Ai](Machine_Learning/Bank%20Loan%20Approval%20Prediction/Model/bank-loan-approval-using-AI.ipynb)
+    * Web App
+      * [App](Machine_Learning/Bank%20Loan%20Approval%20Prediction/Web%20App/app.py)
   * Bitcoin Price Prediction
+    * Model
       * [Bitcoin Price Prediction](Machine_Learning/Bitcoin%20Price%20Prediction/Model/Bitcoin_Price_Prediction.ipynb)
   * Book Recommendation System
     * [Book Recommendation System](Machine_Learning/Book%20Recommendation%20System/Book_Recommendation_System.ipynb)
