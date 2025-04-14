@@ -531,6 +531,8 @@
       * [Blooddisease](Deep_Learning/Blood%20Disease%20Detection/Model/BloodDisease.ipynb)
   * Brain Tumor Detection
       * [Brain Tumor Model](Deep_Learning/Brain%20Tumor%20Detection/Model/brain_tumor_model.ipynb)
+  * Cardiovascular Disease Risk Prediction Model
+      * [Cardiovascular Disease Risk Prediction Model](Deep_Learning/Cardiovascular%20Disease%20Risk%20Prediction%20Model/Model/Cardiovascular%20Disease%20Risk%20Prediction%20Model.ipynb)
   * Cataract Detection Using Dl
       * [Cataract-Detect](Deep_Learning/Cataract%20Detection%20using%20DL/Model/cataract-detect.ipynb)
   * Deep-Learning-For-Animal-Identification
@@ -826,6 +828,9 @@
     * [Book Recommendation System](Machine_Learning/Book%20Recommendation%20System/Book_Recommendation_System.ipynb)
   * Bulldozer-Price-Prediction-Using-Ml
     * [End-To-End-Bulldozer-Prize-Prediction](Machine_Learning/Bulldozer-Price-Prediction-using-ML/end-to-end-bulldozer-prize-prediction.ipynb)
+  * Covid19-X Ray  Image Classification
+    * Models
+      * [Models Covid 19](Machine_Learning/COVID19-X%20Ray%20%20Image%20Classification/Models/models_COVID_19.ipynb)
   * Credit Card Fraud Detection
     * [Credit Card Fraud Detection](Machine_Learning/Credit%20Card%20Fraud%20Detection/Credit_card_fraud_detection.ipynb)
   * Creditcardfrauddetection
