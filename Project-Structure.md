@@ -622,8 +622,17 @@
     * Model
       * [Data Loading](Deep_Learning/Handwritten%20Mthematical%20Equation%20Solver/model/data_loading.ipynb)
       * [Data Preparation](Deep_Learning/Handwritten%20Mthematical%20Equation%20Solver/model/data_preparation.ipynb)
+  * Human Action Recognition
+    * Model
+      * [Human Action Recognition](Deep_Learning/Human%20Action%20Recognition/Model/Human%20Action%20Recognition.ipynb)
+  * Human Detection Using Cctv Footages
+      * [Detect](Deep_Learning/Human%20Detection%20using%20CCTV%20Footages/Model/detect.py)
+      * [Yolo Model](Deep_Learning/Human%20Detection%20using%20CCTV%20Footages/Model/yolo_model.ipynb)
   * Image Caption Generation With Audio Output
     * [App](Deep_Learning/Image%20Caption%20Generation%20with%20Audio%20Output/app.py)
+  * Indian Currency Detection Using Dl
+    * Models
+      * [Models Indiancurrencydetection](Deep_Learning/Indian%20Currency%20Detection%20using%20DL/Models/models_IndianCurrencyDetection.ipynb)
   * Mnist Digit Classification Using Neural Networks
     * Model
       * [Ann Handwritten Digit Classification](Deep_Learning/MNIST%20Digit%20Classification%20using%20Neural%20Networks/model/ANN_Handwritten_Digit_Classification.ipynb)
@@ -849,6 +858,20 @@
   * Air Quality Prediction
     * Model
       * [Air-Quality-Eda-And-Classification](Machine_Learning/Air%20Quality%20Prediction/Model/air-quality-eda-and-classification.ipynb)
+  * American Sign Language Detection
+    * Web App
+      * [App](Machine_Learning/American%20Sign%20Language%20Detection/Web%20app/app.py)
+    * Models
+      * [Inceptionresnetv2(88%)](Machine_Learning/American%20Sign%20Language%20Detection/models/InceptionResNetV2(88%).ipynb)
+      * [Inceptionv3(88%)](Machine_Learning/American%20Sign%20Language%20Detection/models/InceptionV3(88%).ipynb)
+      * [Mobilenet(97%)](Machine_Learning/American%20Sign%20Language%20Detection/models/MobileNet(97%).ipynb)
+      * [Vgg16(97%)](Machine_Learning/American%20Sign%20Language%20Detection/models/VGG16(97%).ipynb)
+      * [American-Sign-Language-Inceptionv3](Machine_Learning/American%20Sign%20Language%20Detection/models/american-sign-language-inceptionv3.ipynb)
+      * [American-Sign-Language-Mobilenetv3Small](Machine_Learning/American%20Sign%20Language%20Detection/models/american-sign-language-mobilenetv3Small.ipynb)
+      * [American-Sign-Language-Mobilenetv3Large](Machine_Learning/American%20Sign%20Language%20Detection/models/american-sign-language-mobilenetv3large.ipynb)
+      * [American-Sign-Language-Nasnetmobile](Machine_Learning/American%20Sign%20Language%20Detection/models/american-sign-language-nasnetmobile.ipynb)
+      * [American-Sign-Language-Resnet101V2](Machine_Learning/American%20Sign%20Language%20Detection/models/american-sign-language-resnet101v2.ipynb)
+      * [American-Sign-Language-Resnet50V2](Machine_Learning/American%20Sign%20Language%20Detection/models/american-sign-language-resnet50v2.ipynb)
   * Analying Ml Model Using Maang
     * [Main](Machine_Learning/Analying_ML_model_using_maang/main.py)
   * Anomaly Based Ids
@@ -879,6 +902,12 @@
       * [App](Machine_Learning/Bone%20Fracture%20Detection/Web%20App/app.py)
   * Book Recommendation System
     * [Book Recommendation System](Machine_Learning/Book%20Recommendation%20System/Book_Recommendation_System.ipynb)
+  * Brand Sentiment Analysis Using Nlp
+    * Models
+      * [Analysis](Machine_Learning/Brand%20Sentiment%20Analysis%20using%20NLP/models/analysis.ipynb)
+      * [Model1](Machine_Learning/Brand%20Sentiment%20Analysis%20using%20NLP/models/model1.ipynb)
+      * [Model2](Machine_Learning/Brand%20Sentiment%20Analysis%20using%20NLP/models/model2.ipynb)
+      * [Model3](Machine_Learning/Brand%20Sentiment%20Analysis%20using%20NLP/models/model3.ipynb)
   * Bulldozer-Price-Prediction-Using-Ml
     * [End-To-End-Bulldozer-Prize-Prediction](Machine_Learning/Bulldozer-Price-Prediction-using-ML/end-to-end-bulldozer-prize-prediction.ipynb)
   * Covid19-X Ray  Image Classification
@@ -958,9 +987,17 @@
     * [Heart Disease Prediction](Machine_Learning/Heart%20Disease%20Prediction%20[END%202%20END]/Heart%20Disease%20Prediction.ipynb)
   * Heart-Disease-Detection-Using-Ml
     * [End-To-End-Heart-Diease-Project](Machine_Learning/Heart-Disease-detection-using-ML/end-to-end-heart-diease-project.ipynb)
+  * Honey Bee Pollen Detection
+    * Models
+      * [Cnn](Machine_Learning/Honey%20Bee%20Pollen%20detection/Models/CNN.ipynb)
+      * [Densenet](Machine_Learning/Honey%20Bee%20Pollen%20detection/Models/DenseNet.ipynb)
+      * [Vgg16](Machine_Learning/Honey%20Bee%20Pollen%20detection/Models/VGG16.ipynb)
   * House Price Prediction
     * [House Data Cleaning](Machine_Learning/House_Price_Prediction/house_data_cleaning.py)
     * [House Price Predicter](Machine_Learning/House_Price_Prediction/house_price_predicter.py)
+  * Indian Medicinal Plants Classification
+    * Models
+      * [Models Indian Medicinal Plant Classification(1)(1)(1)](Machine_Learning/Indian%20Medicinal%20Plants%20Classification/Models/models_Indian_Medicinal_Plant_Classification(1)(1)(1).ipynb)
   * Intrusion Detection System
     * [Network-Intrusion-Detection-Using-Arm](Machine_Learning/Intrusion%20Detection%20System/network-intrusion-detection-using-ARM.ipynb)
   * Iris Classification Using Knn
@@ -982,6 +1019,12 @@
         * [Predict Model](Machine_Learning/LungCancerDetection/src/models/predict_model.py)
         * [Train](Machine_Learning/LungCancerDetection/src/models/train.py)
         * [Visualize Model](Machine_Learning/LungCancerDetection/src/models/visualize_model.py)
+  * Malaria Cell Image Classification
+    * Model
+      * [Comparison Of Models](Machine_Learning/Malaria%20Cell%20Image%20Classification/Model/comparison_of_models.ipynb)
+      * [Malaria-Diagnosis Vgg](Machine_Learning/Malaria%20Cell%20Image%20Classification/Model/malaria-diagnosis_vgg.ipynb)
+      * [Malaria Diagnosis Efficientnet](Machine_Learning/Malaria%20Cell%20Image%20Classification/Model/malaria_diagnosis_efficientnet.ipynb)
+      * [Malaria Diagnosis Resnet](Machine_Learning/Malaria%20Cell%20Image%20Classification/Model/malaria_diagnosis_resnet.ipynb)
   * Movie Classification
     * [Movie Classification](Machine_Learning/Movie%20Classification/movie_classification.ipynb)
   * Multivitamine Prediction
@@ -1013,6 +1056,9 @@
       * [Applying Linear Regression Model To Predict Exam Score](Machine_Learning/Predicting%20Exam%20Score%20Using%20linear%20Regression/Model/Applying%20Linear%20Regression%20Model%20to%20Predict%20Exam%20Score.ipynb)
   * Red Wine Quality Detection
     * [Red Wine Quality (1)](Machine_Learning/Red%20Wine%20Quality%20Detection/Red_Wine_Quality%20(1).ipynb)
+  * Resume Screning Model
+    * Model
+      * [Resume-Classification 1](Machine_Learning/Resume%20Screning%20Model/Model/resume-classification_1.ipynb)
   * Sonar Rock  Mine Prediction
     * [Sonar](Machine_Learning/SONAR_Rock_%20Mine_Prediction/sonar.py)
   * Svm
@@ -1037,6 +1083,9 @@
     * [Utils](Machine_Learning/Translator%20App/utils.py)
   * Twitter Sentiment Analysis
     * [Twitter Sentiment Analysis](Machine_Learning/Twitter%20Sentiment%20Analysis/Twitter%20Sentiment%20Analysis.ipynb)
+  * Urdu Text Detection
+    * Model
+      * [Urdu-Text-Detection](Machine_Learning/Urdu_Text_Detection/Model/urdu-text-detection.ipynb)
   * Water-Quality-Analysis-Using-Ml-Main
     * [ Testing Cpde In Py](Machine_Learning/Water-Quality-Analysis-using-ML-main/_testing_cpde_in_py.py)
     * [Water Quality Model](Machine_Learning/Water-Quality-Analysis-using-ML-main/water_quality_model.ipynb)
