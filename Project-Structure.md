@@ -539,6 +539,10 @@
       * [Chocolate Classification Using Dl](Deep_Learning/Chocolate%20Classification%20using%20DL/Model/Chocolate%20Classification%20using%20DL.ipynb)
   * Colour Detection Using Dl
       * [Colour Detection Using Dl](Deep_Learning/Colour%20Detection%20using%20DL/Model/Colour%20Detection%20using%20DL.ipynb)
+  * Computed Tomography Analysis Using Dl
+      * [Dl Simplified Ct](Deep_Learning/Computed%20Tomography%20Analysis%20using%20DL/Model/dl_simplified_ct.ipynb)
+  * Cotton Disease Classification Using Dl
+      * [Cotton-Disease](Deep_Learning/Cotton%20Disease%20Classification%20using%20DL/Model/cotton-disease.ipynb)
   * Deep-Learning-For-Animal-Identification
     * [Identify The Animal Colab](Deep_Learning/Deep-learning-for-Animal-Identification/Identify%20the%20Animal_colab.ipynb)
     * [Identify The Animal Novalid Colab](Deep_Learning/Deep-learning-for-Animal-Identification/Identify_the_Animal_novalid_colab.ipynb)
@@ -549,19 +553,54 @@
     * [Media Pipe Pose Checkpoint](Deep_Learning/Detect%20Bad%20Posture%20Media%20Pipe/Media_Pipe_Pose_checkpoint.ipynb)
   * Digital Image Tampering Detection
     * [Notebook](Deep_Learning/Digital%20Image%20Tampering%20Detection/notebook.ipynb)
+  * Distracted Driver Detection
+    * Model
+      * [Distracted Driver Detection Using Dl](Deep_Learning/Distracted%20Driver%20Detection/Model/Distracted%20Driver%20Detection%20using%20DL.ipynb)
+  * Dog Breeds Classification
+    * Models
+      * [Mobilenet(96%)](Deep_Learning/Dog%20Breeds%20Classification/Models/MobileNet(96%).ipynb)
+      * [Resnet50V2(98%)](Deep_Learning/Dog%20Breeds%20Classification/Models/ResNet50v2(98%).ipynb)
+      * [Vgg19(91%)](Deep_Learning/Dog%20Breeds%20Classification/Models/Vgg19(91%).ipynb)
+      * [Comparison Of Models](Deep_Learning/Dog%20Breeds%20Classification/Models/comparison_of_models.ipynb)
+    * Web-App
+      * Backend
+        * [App](Deep_Learning/Dog%20Breeds%20Classification/web-app/backend/app.py)
+        * [Check](Deep_Learning/Dog%20Breeds%20Classification/web-app/backend/check.py)
+        * [Reverseproxy](Deep_Learning/Dog%20Breeds%20Classification/web-app/backend/reverseProxy.py)
+  * Dog Face Detection Using Dl
+    * Model
+      * [Dog-Face-Detection1](Deep_Learning/Dog%20Face%20Detection%20using%20DL/Model/dog-face-detection1.ipynb)
+      * [Dog-Face-Detection2](Deep_Learning/Dog%20Face%20Detection%20using%20DL/Model/dog-face-detection2.ipynb)
   * Dog Species Classification
     * Models
       * [Mobilenetv2](Deep_Learning/Dog%20Species%20Classification/Models/MobileNetV2.ipynb)
       * [Resnet50V2](Deep_Learning/Dog%20Species%20Classification/Models/ResNet50V2.ipynb)
       * [Vgg19](Deep_Learning/Dog%20Species%20Classification/Models/VGG19.ipynb)
+  * Drone Detection Using Yolo
+    * Model
+      * [Drone-Detection](Deep_Learning/Drone%20Detection%20Using%20YOLO/Model/Drone-Detection.ipynb)
   * Esrgan-Model For Enhanced Upscaling Of Image
     * [Rrdbnet Arch](Deep_Learning/ESRGAN-Model%20for%20Enhanced%20Upscaling%20of%20Image/RRDBNet_arch.py)
     * [Net Interp](Deep_Learning/ESRGAN-Model%20for%20Enhanced%20Upscaling%20of%20Image/net_interp.py)
     * [Test](Deep_Learning/ESRGAN-Model%20for%20Enhanced%20Upscaling%20of%20Image/test.py)
     * [Transer Rrdb Models](Deep_Learning/ESRGAN-Model%20for%20Enhanced%20Upscaling%20of%20Image/transer_RRDB_models.py)
-  * Face Mask Detection
+  * Electron Microscope Particle Segmentation
     * Model
+      * [Electron Microscopy Particle Segmentation Using Unet](Deep_Learning/Electron%20Microscope%20Particle%20Segmentation/Model/Electron%20Microscopy%20Particle%20Segmentation%20using%20UNet.ipynb)
+      * [Electron Microscopy Particle Segmentation](Deep_Learning/Electron%20Microscope%20Particle%20Segmentation/Model/Electron%20Microscopy%20Particle%20Segmentation.ipynb)
+  * Emotion Classifier
+      * [Emotion Classifier Ann Cnn Rnn](Deep_Learning/Emotion%20Classifier/Model/Emotion_Classifier_ann_cnn_rnn.ipynb)
+  * Face Mask Detection
       * [Detecting-Face-Masks-With-5-Models](Deep_Learning/Face%20Mask%20Detection/Model/detecting-face-masks-with-5-models.ipynb)
+  * Face Verification
+    * Models
+      * [Siamese Neural Network](Deep_Learning/Face%20Verification/Models/Siamese_Neural_Network.ipynb)
+  * Facial Emotion Detection
+    * Model
+      * [00 Baseline Cnn](Deep_Learning/Facial%20Emotion%20Detection/Model/00_baseline_cnn.ipynb)
+      * [01 Data Augmentation Cnn](Deep_Learning/Facial%20Emotion%20Detection/Model/01_data_augmentation_cnn.ipynb)
+      * [02 Transfer Learning Mobilenetv2](Deep_Learning/Facial%20Emotion%20Detection/Model/02_transfer_learning_mobilenetv2.ipynb)
+      * [03 Transfer Learning Efficientnetv2](Deep_Learning/Facial%20Emotion%20Detection/Model/03_transfer_learning_efficientnetv2.ipynb)
   * File-Locking-Mechanism
     * Face Recognition Script
       * [Face Recognition](Deep_Learning/File-Locking-Mechanism/Face_Recognition_Script/Face%20recognition.py)
@@ -569,6 +608,16 @@
   * Gan-Based Art Generator Using Deep Learning
     * Model
       * [Gan-Based Art Generator Using Deep Learning](Deep_Learning/GAN-based%20Art%20Generator%20using%20Deep%20learning/Model/GAN-based%20Art%20Generator%20using%20Deep%20learning.ipynb)
+  * Gender Classification Using Dl
+      * [Gender Classification Using Dl](Deep_Learning/Gender%20Classification%20using%20DL/Model/Gender%20Classification%20using%20DL.ipynb)
+  * Glass Bangle Defects Detection Using Dl
+      * [Custom-Model](Deep_Learning/Glass%20Bangle%20Defects%20Detection%20using%20DL/Model/Custom-Model.ipynb)
+      * [Glass-Bangle-Defect-Detection](Deep_Learning/Glass%20Bangle%20Defects%20Detection%20using%20DL/Model/Glass-Bangle-Defect-Detection.ipynb)
+  * Grape Plant Disease Recognition
+    * Models
+      * [Mobilenet(97%)](Deep_Learning/Grape%20Plant%20Disease%20Recognition/models/MobileNet(97%).ipynb)
+      * [Resnet50V2(93%)](Deep_Learning/Grape%20Plant%20Disease%20Recognition/models/ResNet50V2(93%).ipynb)
+      * [Vgg16(88%)](Deep_Learning/Grape%20Plant%20Disease%20Recognition/models/VGG16(88%).ipynb)
   * Handwritten Mthematical Equation Solver
     * Model
       * [Data Loading](Deep_Learning/Handwritten%20Mthematical%20Equation%20Solver/model/data_loading.ipynb)
@@ -849,10 +898,20 @@
       * [Cricket Shots](Machine_Learning/Cricket%20Shots%20Detection/model/cricket%20shots.ipynb)
   * Customer Clust - Customer Segmentation Tool
     * [Customer Clust - Customer Segmentation Tool](Machine_Learning/Customer%20Clust%20-%20Customer%20Segmentation%20Tool/Customer%20Clust%20-%20Customer%20Segmentation%20Tool.ipynb)
+  * Cyclone Detection
+    * Model
+      * [Cyclone](Machine_Learning/Cyclone%20Detection/Model/cyclone.ipynb)
+  * Dance-Form-Classification
+      * [01 Cnn From Scratch](Machine_Learning/Dance-Form-Classification/Model/01_cnn_from_scratch.ipynb)
+      * [02 Transfer Learning Feature Extraction](Machine_Learning/Dance-Form-Classification/Model/02_transfer_learning_feature_extraction.ipynb)
+      * [03 Transfer Learning Fine Tuning](Machine_Learning/Dance-Form-Classification/Model/03_transfer_learning_fine_tuning.ipynb)
   * Data Summarizer Nlp
     * [App](Machine_Learning/Data%20Summarizer%20NLP/app.py)
   * Decision Tree Classifier
     * [Decision Tree Classifier](Machine_Learning/Decision%20Tree%20Classifier/Decision_Tree_Classifier.ipynb)
+  * Defective Captcha Image Recognition
+    * Models
+      * [Models Defective Captcha Image Recognition ](Machine_Learning/Defective%20Captcha%20Image%20Recognition/Models/models_Defective_Captcha_Image_Recognition_.ipynb)
   * Diabetes-Prediction
     * [Diabetes Predictor - Deployment](Machine_Learning/Diabetes-Prediction/Diabetes%20Predictor%20-%20Deployment.py)
     * [App](Machine_Learning/Diabetes-Prediction/app.py)
@@ -872,12 +931,20 @@
       * [Pridictionmodel](Machine_Learning/Fake%20News%20Detection/Model/PridictionModel.ipynb)
   * Fake News Detection Project
     * [Main](Machine_Learning/Fake%20news%20detection%20project/main.py)
+  * Fire And Smoke Detection
+    * Model
+      * [Fire Detection](Machine_Learning/Fire%20And%20Smoke%20Detection/Model/Fire_Detection.ipynb)
   * Flight Delay Prediction
     * [Model](Machine_Learning/Flight_delay_prediction/model.ipynb)
   * Forest-Fire-Prediction
     * [Data Cleaning](Machine_Learning/Forest-Fire-Prediction/Data%20Cleaning.ipynb)
     * [Exploratory Data Analysis](Machine_Learning/Forest-Fire-Prediction/Exploratory%20Data%20Analysis.ipynb)
     * [Ml](Machine_Learning/Forest-Fire-Prediction/ML.ipynb)
+  * Fraudulent Transactions Detection
+    * Model
+      * [Fraud Transaction Detection](Machine_Learning/Fraudulent%20Transactions%20Detection/Model/fraud_transaction_detection.ipynb)
+  * Google Recaptcha Image Classification
+      * [Googlerecaptcha](Machine_Learning/Google%20Recaptcha%20Image%20Classification/Model/GoogleRecaptcha.ipynb)
   * Gradient Descent
     * [Gradientdescent](Machine_Learning/Gradient_descent/gradientdescent.ipynb)
   * Grammar Auto Corrector Model
