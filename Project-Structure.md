@@ -531,10 +531,14 @@
       * [Blooddisease](Deep_Learning/Blood%20Disease%20Detection/Model/BloodDisease.ipynb)
   * Brain Tumor Detection
       * [Brain Tumor Model](Deep_Learning/Brain%20Tumor%20Detection/Model/brain_tumor_model.ipynb)
+  * Canola Diseases Prediction
+      * [Canola Diseases Prediction](Deep_Learning/Canola%20Diseases%20Prediction/Model/Canola%20Diseases%20Prediction.ipynb)
   * Cardiovascular Disease Risk Prediction Model
       * [Cardiovascular Disease Risk Prediction Model](Deep_Learning/Cardiovascular%20Disease%20Risk%20Prediction%20Model/Model/Cardiovascular%20Disease%20Risk%20Prediction%20Model.ipynb)
   * Cataract Detection Using Dl
       * [Cataract-Detect](Deep_Learning/Cataract%20Detection%20using%20DL/Model/cataract-detect.ipynb)
+  * Cats Breed Classification Using Dl
+      * [Cat-Classify](Deep_Learning/Cats%20Breed%20Classification%20using%20DL/Model/cat-classify.ipynb)
   * Chocolate Classification Using Dl
       * [Chocolate Classification Using Dl](Deep_Learning/Chocolate%20Classification%20using%20DL/Model/Chocolate%20Classification%20using%20DL.ipynb)
   * Colour Detection Using Dl
@@ -590,6 +594,8 @@
       * [Electron Microscopy Particle Segmentation](Deep_Learning/Electron%20Microscope%20Particle%20Segmentation/Model/Electron%20Microscopy%20Particle%20Segmentation.ipynb)
   * Emotion Classifier
       * [Emotion Classifier Ann Cnn Rnn](Deep_Learning/Emotion%20Classifier/Model/Emotion_Classifier_ann_cnn_rnn.ipynb)
+  * Eye Disease Classification Using Dl
+      * [Eye-Disease-Classify](Deep_Learning/Eye%20Disease%20Classification%20using%20DL/Model/eye-disease-classify.ipynb)
   * Face Mask Detection
       * [Detecting-Face-Masks-With-5-Models](Deep_Learning/Face%20Mask%20Detection/Model/detecting-face-masks-with-5-models.ipynb)
   * Face Verification
@@ -618,12 +624,17 @@
       * [Mobilenet(97%)](Deep_Learning/Grape%20Plant%20Disease%20Recognition/models/MobileNet(97%).ipynb)
       * [Resnet50V2(93%)](Deep_Learning/Grape%20Plant%20Disease%20Recognition/models/ResNet50V2(93%).ipynb)
       * [Vgg16(88%)](Deep_Learning/Grape%20Plant%20Disease%20Recognition/models/VGG16(88%).ipynb)
+  * Hair Type Classifier
+    * Model
+      * [Hairclassifer](Deep_Learning/Hair%20Type%20Classifier/Model/Hairclassifer.ipynb)
   * Handwritten Mthematical Equation Solver
     * Model
       * [Data Loading](Deep_Learning/Handwritten%20Mthematical%20Equation%20Solver/model/data_loading.ipynb)
       * [Data Preparation](Deep_Learning/Handwritten%20Mthematical%20Equation%20Solver/model/data_preparation.ipynb)
-  * Human Action Recognition
+  * Heartbeat Classification Using Ecg
     * Model
+      * [Ecg-Cnn-Model01](Deep_Learning/Heartbeat%20Classification%20using%20ECG/Model/ecg-cnn-model01.ipynb)
+  * Human Action Recognition
       * [Human Action Recognition](Deep_Learning/Human%20Action%20Recognition/Model/Human%20Action%20Recognition.ipynb)
   * Human Detection Using Cctv Footages
       * [Detect](Deep_Learning/Human%20Detection%20using%20CCTV%20Footages/Model/detect.py)
@@ -692,6 +703,10 @@
     * [Disaster Tweet Classification Using Nlp And Deep Learning](Deep_Learning/Tweet_Classificaion_DL/Disaster%20Tweet%20Classification%20using%20NLP%20and%20Deep%20Learning.ipynb)
   * Yolo-Drowsiness-Detection-Main
     * [Drowsiness Detection Tutorial](Deep_Learning/YOLO-Drowsiness-Detection-main/Drowsiness%20Detection%20Tutorial.ipynb)
+  * Emotion Based Music Player Using Deep Learning
+    * [Accuracy-96-6](Deep_Learning/emotion%20based%20music%20player%20using%20deep%20learning/accuracy-96-6.ipynb)
+    * [Emotion-Based-Music-Recommender-Resnet50V2](Deep_Learning/emotion%20based%20music%20player%20using%20deep%20learning/emotion-based-music-recommender-resnet50v2.ipynb)
+    * [Music-Emotion-Recognition](Deep_Learning/emotion%20based%20music%20player%20using%20deep%20learning/music-emotion-recognition.ipynb)
   * Smart Attendance System
     * [Face Rec](Deep_Learning/smart_attendance_system/face_rec.py)
     * [Smart Attendance](Deep_Learning/smart_attendance_system/smart_attendance.py)
@@ -918,6 +933,8 @@
       * [Car Price Prediction With Dl](Machine_Learning/Car%20Price%20Prediction%20using%20DL/Model/Car_Price_Prediction_with_DL.ipynb)
   * Chatgpt Based Tweets Sentiment Analysis Using Dl
       * [Updated Tweet Chatgpt Sentiment Analysis](Machine_Learning/ChatGPT%20Based%20Tweets%20Sentiment%20Analysis%20Using%20DL/Model/UPDATED%20tweet%20chatgpt%20sentiment%20analysis.ipynb)
+  * Colon-And-Lung-Cancer-Type-Prediction
+      * [Lung-And-Colon-Cancer-Using-Deep-Learning](Machine_Learning/Colon-And-Lung-Cancer-Type-Prediction/Model/lung-and-colon-cancer-using-deep-learning.ipynb)
   * Credit Card Fraud Detection
     * [Credit Card Fraud Detection](Machine_Learning/Credit%20Card%20Fraud%20Detection/Credit_card_fraud_detection.ipynb)
   * Creditcardfrauddetection
@@ -981,6 +998,12 @@
   * Hand Game Controller
     * [Main-Mobile-Cam](Machine_Learning/Hand%20Game%20Controller/main-mobile-cam.py)
     * [Main-Pc-Cam](Machine_Learning/Hand%20Game%20Controller/main-pc-cam.py)
+  * Handwritten Equation Solver
+    * Models
+      * [Notebook](Machine_Learning/Handwritten%20Equation%20Solver/Models/Notebook.ipynb)
+    * Web App
+      * [App](Machine_Learning/Handwritten%20Equation%20Solver/Web_app/app.py)
+      * [Predict](Machine_Learning/Handwritten%20Equation%20Solver/Web_app/predict.py)
   * Handwritten Text Recognition Model
     * [App](Machine_Learning/Handwritten%20Text%20Recognition%20Model/app.py)
   * Heart Disease Prediction [End 2 End]
@@ -995,6 +1018,10 @@
   * House Price Prediction
     * [House Data Cleaning](Machine_Learning/House_Price_Prediction/house_data_cleaning.py)
     * [House Price Predicter](Machine_Learning/House_Price_Prediction/house_price_predicter.py)
+  * Image De-Photobombing
+    * Model
+      * [Image-De-Photobombing-1-2](Machine_Learning/Image%20De-Photobombing/Model/image-de-photobombing-1-2.ipynb)
+      * [Image-De-Photobombing-3](Machine_Learning/Image%20De-Photobombing/Model/image-de-photobombing-3.ipynb)
   * Indian Medicinal Plants Classification
     * Models
       * [Models Indian Medicinal Plant Classification(1)(1)(1)](Machine_Learning/Indian%20Medicinal%20Plants%20Classification/Models/models_Indian_Medicinal_Plant_Classification(1)(1)(1).ipynb)
