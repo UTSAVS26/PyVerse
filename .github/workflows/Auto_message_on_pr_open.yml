@@ -37,7 +37,7 @@ jobs:
       run: |
         REVIEWERS=$(cat <<EOF
         {
-          "reviewers": ["UTSAVS26", "TheChaoticor"]
+          "reviewers": ["UTSAVS26"]
         }
         EOF
         )
