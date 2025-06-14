@@ -1,46 +1,41 @@
 import os
 import csv
-
-
 import openpyxl
+from pathlib import Path
 
-
-def excelToCsv(folder):
-    """converts sheets in every excel file in a folder to csv
-    Args:
-        folder (str): folder containing excel files
-    Returns:
-        None
+def excel_to_csv(input_file, output_folder="output"):
     """
-    for excelFile in os.listdir(folder):
-        # Skip non-xlsx files, load the workbook object.
-        if not excelFile.endswith("xlsx"):
-            continue
-        wb = openpyxl.load_workbook(excelFile)
+    Convert an Excel file to CSV files, one per sheet.
 
-        for sheetName in wb.get_sheet_names():
-            # Loop through every sheet in the workbook.
-            sheet = wb.get_sheet_by_name(sheetName)
+    Args:
+        input_file (str): Path to the input Excel file (.xlsx).
+        output_folder (str, optional): Directory to save output CSV files. Defaults to "output".
 
-            # Create the CSV filename from the Excel filename and sheet title.
-            csvFilename = excelFile.split(".")[0] + "_" + sheet.title + ".csv"
-            csvFileObj = open(csvFilename, "w", newline="")
+    Returns:
+        None: Creates CSV files in the specified output folder or prints errors if they occur.
+    """
+    os.makedirs(output_folder, exist_ok=True)
 
-            # Create the csv.writer object for this CSV file.
-            csvWriter = csv.writer(csvFileObj)
+    try:
+        wb = openpyxl.load_workbook(input_file, data_only=True)
+    except Exception as e:
+        print(f"error opening workbook '{input_file}': {e}")
+        return
 
-            # Loop through every row in the sheet.
-            for rowObj in sheet.rows:
-                rowData = []  # append each cell to this list
-                # Loop through each cell in the row.
-                for cellObj in rowObj:
-                    # Append each cell's data to rowData.
-                    rowData.append(cellObj.value)
-                # Write the rowData list to the CSV file.
-                csvWriter.writerow(rowData)
+    for sheet_name in wb.sheetnames:
+        try:
+            sheet = wb[sheet_name]
+            csv_name = f"{Path(input_file).stem}_{sheet.title}.csv"
+            csv_path = os.path.join(output_folder, csv_name)
 
-            csvFileObj.close()
+            with open(csv_path, "w", newline="", encoding="utf-8") as f:
+                writer = csv.writer(f)
+                for row in sheet.iter_rows(values_only=True):
+                    writer.writerow(row)
 
+        except Exception as e:
+            print(f"error processing sheet '{sheet_name}' in '{input_file}': {e}")
 
 if __name__ == "__main__":
-    excelToCsv(".")
+    # hardcoded example - replace with your actual file and folder
+    excel_to_csv("input.xlsx", "output")
