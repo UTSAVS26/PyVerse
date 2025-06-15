@@ -247,10 +247,9 @@ class FileOrganizer:
                         f"Destination folder is not writable: {dest_path}"
                     )
                     return False
-            else:
-                # If destination doesn't exist, try to create it to test writability
-                os.makedirs(dest_path, exist_ok=True)
-                # Test write access by creating a temporary file
+            elif os.access(os.path.dirname(dest_path) or ".", os.W_OK):
+                # Destination missing → only probe parent dir; defer creation
+                pass
                 test_file = os.path.join(dest_path, ".write_test_temp")
                 try:
                     with open(test_file, 'w') as f:
