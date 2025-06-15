@@ -289,7 +289,7 @@
   * Escape The Maze
     * [Escapethemaze](Beginner_Projects/Escape%20the%20Maze/Escapethemaze.py)
   * Excel To Csv
-    * [Exceltocsv](Beginner_Projects/Excel%20to%20CSV/excelToCsv.py)
+    * [Excel To Csv](Beginner_Projects/Excel%20to%20CSV/excel_to_csv.py)
   * File Sorter
     * [App](Beginner_Projects/File%20Sorter/App.py)
     * Theme
