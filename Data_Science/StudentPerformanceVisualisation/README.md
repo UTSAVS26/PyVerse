@@ -133,7 +133,7 @@ Here are some examples of visualisations demonstrated in the notebooks:
 - **Bar Charts**: Compare performance metrics across different categories
 - **Group Comparisons**: Analyze how different groups perform on various metrics
 - **Statistical Summaries**: Understand the distribution and central tendencies of scores
-- **Aggregated Data Visualizations**: View summarized data to identify patterns
+- **Aggregated Data Visualisations**: View summarized data to identify patterns
 - **Performance Analysis**: Visualise factors that influence academic performance
 
 ## 🤝 Contributing
@@ -196,7 +196,7 @@ pip install ipywidgets
 jupyter nbextension enable --py widgetsnbextension
 ```
 
-**Issue**: ImportError for visualization libraries
+**Issue**: ImportError for visualisation libraries
 ```bash
 pip install --upgrade matplotlib seaborn pandas numpy
 ```
@@ -208,7 +208,7 @@ pip install --upgrade matplotlib seaborn pandas numpy
 **Issue**: Memory issues with large dataframes
 - Use data sampling for initial exploration
 - Apply filters to work with relevant subsets of data
-- Use efficient aggregation methods before visualization
+- Use efficient aggregation methods before visualisation
 
 ## 📞 Support
 
@@ -242,4 +242,4 @@ Future additions planned:
 
 ⭐ **Star this repository** if you find it helpful!
 
-📧 **Contact**: bhanavee123@gmail.com for questions or collaboration opportunities
+📧 **Contact**: [bhanavee123@gmail.com](mailto:bhanavee123@gmail.com)  or [LinkedIn](https://www.linkedin.com/in/bhaanavee-c-s-/) for questions or collaboration opportunities
