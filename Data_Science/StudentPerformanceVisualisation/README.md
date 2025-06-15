@@ -37,8 +37,8 @@ DataVisualisation-Python/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/Bhaanavee/DataVisualisation-Python.git
-   cd DataVisualisation-Python
+   git clone https://github.com/<org>/PyVerse.git
+   cd PyVerse/Data_Science/StudentPerformanceVisualisation
    ```
 
 2. **Create a virtual environment (recommended):**
