@@ -12,9 +12,7 @@ except ImportError:
     print("Required libraries missing. Make sure you're using Python 3.x.")
     sys.exit(1)
 
-from datetime import datetime
 from pathlib import Path
-
 BASE_DIR = Path(__file__).resolve().parent
 
 # ---------- File paths ----------
