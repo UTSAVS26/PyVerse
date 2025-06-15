@@ -12,11 +12,15 @@ except ImportError:
     print("Required libraries missing. Make sure you're using Python 3.x.")
     sys.exit(1)
 
-# ---------- File paths ----------
-CONTACTS_FILE = "contacts.csv"
-SENT_FILE = "sent.csv"
-TEMPLATE_FILE = "template.html"
+from datetime import datetime
+from pathlib import Path
 
+BASE_DIR = Path(__file__).resolve().parent
+
+# ---------- File paths ----------
+CONTACTS_FILE  = BASE_DIR / "contacts.csv"
+SENT_FILE      = BASE_DIR / "sent.csv"
+TEMPLATE_FILE  = BASE_DIR / "template.html"
 # ---------- Load contacts ----------
 def load_contacts(file_path):
     if not os.path.exists(file_path):
