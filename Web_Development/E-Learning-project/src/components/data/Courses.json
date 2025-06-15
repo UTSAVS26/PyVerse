@@ -44,7 +44,7 @@
     "rating": 4.8,
     "image": "https://raw.githubusercontent.com/SrigadaAkshayKumar/images/main/dataScience.jpg",
     "videoUrl": "https://player.vimeo.com/video/105154173",
-    "level": "Begineer",
+    "level": "Beginner",
     "language": "English"
   },
   {
@@ -56,7 +56,7 @@
     "rating": 4.9,
     "image": "https://raw.githubusercontent.com/SrigadaAkshayKumar/images/main/python.png",
     "videoUrl": "https://player.vimeo.com/video/105154173",
-    "level": "Begineer",
+    "level": "Beginner",
     "language": "English"
   },
   {
@@ -68,7 +68,7 @@
     "rating": 4.6,
     "image": "https://raw.githubusercontent.com/SrigadaAkshayKumar/images/main/machine.jpg",
     "videoUrl": "https://player.vimeo.com/video/105154173",
-    "level": "Begineer",
+    "level": "Beginner",
     "language": "English"
   }
 ]
