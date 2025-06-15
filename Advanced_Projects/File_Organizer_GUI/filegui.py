@@ -43,9 +43,11 @@ class FileOrganizer:
         try:
             while not self._queue.empty():
                 callback = self._queue.get_nowait()
-                callback()
-        except queue.Empty:
-            pass
+                try:
+                    callback()
+                except Exception as exc:
+                    # Keep UI alive and surface the error
+                    self.log_message(f"UI callback error: {exc}")
         finally:
             # Schedule next queue check
             self.root.after(50, self._process_queue)
