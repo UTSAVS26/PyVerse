@@ -74,7 +74,7 @@ def load_template(file_path):
         return f.read()
 
 # ---------- Send email ----------
-def send_email(to_email, subject, html_content, sender_email, sender_password):
+def send_email(to_email, subject, html_content, sender_email, sender_password) -> bool:
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
     msg["From"] = sender_email
@@ -88,9 +88,10 @@ def send_email(to_email, subject, html_content, sender_email, sender_password):
             server.login(sender_email, sender_password)
             server.sendmail(sender_email, to_email, msg.as_string())
         print(f"[✓] Sent email to {to_email}")
+        return True
     except Exception as e:
         print(f"[✗] Failed to send email to {to_email}: {e}")
-
+        return False
 # ---------- Validate credentials ----------
 def validate_credentials(email, password):
     if not email or not password:
