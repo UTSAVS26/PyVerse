@@ -1,16 +1,16 @@
 # Data Visualisation with Python
 
-A comprehensive project demonstrating advanced data visualization techniques using Python libraries for educational data analysis.
+A comprehensive project demonstrating advanced data visualisation techniques using Python libraries for educational data analysis.
 
 ## 📊 Goal
 
-This repository contains Jupyter notebooks that demonstrate data analysis and visualization techniques using Python. The project focuses on analyzing educational data (student performance) to extract meaningful insights through various visualization methods, from basic plots to advanced statistical visualizations.
+This repository contains Jupyter notebooks that demonstrate data analysis and visualisation techniques using Python. The project focuses on analyzing educational data (student performance) to extract meaningful insights through various visualisation methods, from basic plots to advanced statistical visualisations.
 
 ## 🛠️ Technologies Used
 
 - **Python 3.x** - Core programming language
-- **Matplotlib** - Fundamental plotting library for creating static visualizations
-- **Seaborn** - Statistical data visualization library built on Matplotlib
+- **Matplotlib** - Fundamental plotting library for creating static visualisations
+- **Seaborn** - Statistical data visualisation library built on Matplotlib
 - **Pandas** - Data manipulation and analysis library
 - **NumPy** - Numerical computing library for handling arrays and mathematical operations
 - **Jupyter Notebook** - Interactive computing environment for creating and sharing documents
@@ -20,7 +20,7 @@ This repository contains Jupyter notebooks that demonstrate data analysis and vi
 
 ```
 PyVerse/Data_Science/StudentPerformanceVisualisation/
-├── Visualisation.ipynb - Jupyter notebook with data analysis and visualizations
+├── Visualisation.ipynb - Jupyter notebook with data analysis and visualisations
 ├── Viz_usingSQL.ipynb - Additional Jupyter notebook with data exploration
 └── README.md - Project documentation
 ```
@@ -60,8 +60,8 @@ PyVerse/Data_Science/StudentPerformanceVisualisation/
 ### Quick Start
 
 1. Open `Visualisation.ipynb` in Jupyter Notebook
-2. Run the cells to see the data analysis and visualizations in action
-3. The notebook analyzes student performance data and creates visualizations to identify patterns
+2. Run the cells to see the data analysis and visualisations in action
+3. The notebook analyzes student performance data and creates visualisations to identify patterns
 
 ## 📚 What You'll Learn
 
@@ -73,8 +73,8 @@ PyVerse/Data_Science/StudentPerformanceVisualisation/
 
 ### Visualisation Techniques
 - Creating bar charts to compare categorical data
-- Using statistical visualizations to understand data distributions
-- Visualizing relationships between variables
+- Using statistical visualisations to understand data distributions
+- Visualising relationships between variables
 - Customizing plots with proper titles, labels, and styling
 
 ### Educational Data Analysis
@@ -89,7 +89,7 @@ PyVerse/Data_Science/StudentPerformanceVisualisation/
 Analysis of student test scores across different demographics, including math, reading, and writing scores.
 
 ### 2. Lunch Type Impact on Academic Performance
-Visualization showing how different lunch types (standard vs. free/reduced) correlate with academic performance.
+Visualisation showing how different lunch types (standard vs. free/reduced) correlate with academic performance.
 
 ### 3. Ethnicity Group Performance Comparison
 Comparison of academic performance across different ethnicity groups to identify patterns and disparities.
@@ -128,21 +128,21 @@ plt.show()
 
 ## 📊 Sample Visualisations
 
-Here are some examples of visualizations demonstrated in the notebooks:
+Here are some examples of visualisations demonstrated in the notebooks:
 
 - **Bar Charts**: Compare performance metrics across different categories
 - **Group Comparisons**: Analyze how different groups perform on various metrics
 - **Statistical Summaries**: Understand the distribution and central tendencies of scores
 - **Aggregated Data Visualizations**: View summarized data to identify patterns
-- **Performance Analysis**: Visualize factors that influence academic performance
+- **Performance Analysis**: Visualise factors that influence academic performance
 
 ## 🤝 Contributing
 
 Contributions to improve and expand this project are welcome! Here's how you can help:
 
 1. **Fork the repository**
-2. **Create a feature branch:** `git checkout -b feature/new-visualization`
-3. **Add your own analysis or visualization examples**
+2. **Create a feature branch:** `git checkout -b feature/new-visualisation`
+3. **Add your own analysis or visualisation examples**
 4. **Include clear documentation and comments**
 5. **Test your code thoroughly**
 6. **Submit a pull request**
@@ -151,7 +151,7 @@ Contributions to improve and expand this project are welcome! Here's how you can
 - Follow PEP 8 style guidelines for Python code
 - Include descriptive markdown cells explaining your analysis
 - Add meaningful comments to your code
-- Use clear and informative visualization titles and labels
+- Use clear and informative visualisation titles and labels
 - If using additional packages, document them in your notebook
 
 ## 📋 Requirements
@@ -182,7 +182,7 @@ pip install pandas numpy matplotlib seaborn jupyter
 - [Python Graph Gallery](https://python-graph-gallery.com/)
 
 ### Online Courses
-- [Data Visualization with Python](https://www.coursera.org/learn/python-for-data-visualization) (Coursera)
+- [Data Visualisation with Python](https://www.coursera.org/learn/python-for-data-visualization) (Coursera)
 - [Data Visualization with Matplotlib and Seaborn](https://www.datacamp.com/courses/introduction-to-data-visualization-with-seaborn) (DataCamp)
 - [Python for Data Science and Machine Learning](https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/) (Udemy)
 
@@ -214,7 +214,7 @@ pip install --upgrade matplotlib seaborn pandas numpy
 
 If you encounter any issues or have questions:
 
-1. Check the [Issues](https://github.com/Bhaanavee/DataVisualisation-Python/issues) page
+1. Check the [Issues](https://github.com/<org>/PyVerse/issues) page
 2. Search existing discussions
 3. Create a new issue with a detailed description
 4. Include error messages and your environment information
@@ -225,21 +225,21 @@ This project is available for educational and personal use.
 
 ## 🙏 Acknowledgments
 
-- Thanks to the open-source community for the amazing data analysis and visualization libraries
+- Thanks to the open-source community for the amazing data analysis and visualisation libraries
 - The dataset used in this project is from [Kaggle](https://www.kaggle.com/datasets/spscientist/students-performance-in-exams)
 - Inspiration from educational data analysis projects and tutorials
 
 ## 📈 Roadmap
 
 Future additions planned:
-- [ ] Add more advanced visualization examples
+- [ ] Add more advanced visualisation examples
 - [ ] Include additional datasets for diverse analysis
 - [ ] Create a comprehensive data preprocessing guide
 - [ ] Add correlation analysis between different factors
-- [ ] Implement interactive visualization examples
+- [ ] Implement interactive visualisation examples
 
 ---
 
 ⭐ **Star this repository** if you find it helpful!
 
-📧 **Contact**: bhaanavee@example.com for questions or collaboration opportunities
+📧 **Contact**: bhanavee123@gmail.com for questions or collaboration opportunities
