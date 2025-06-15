@@ -12,7 +12,8 @@ import pandas as pd
 def excel_to_csv(input_file, output_folder):
     """Convert Excel sheets to CSV using pandas with safe filenames and error handling."""
     try:
-        xls = pd.read_excel(input_file, sheet_name=None, engine='openpyxl')
+        # Let pandas auto-select the engine for .xls or .xlsx
+        xls = pd.read_excel(input_file, sheet_name=None)
         os.makedirs(output_folder, exist_ok=True)
         results = []
 
@@ -137,10 +138,10 @@ class ExcelToCSVApp:
         )
         self.convert_btn.grid(row=4, column=0, columnspan=2, pady=30, sticky="ew")
         self.convert_btn.bind(
-            "<Enter>", lambda e: self.animate_button(self.convert_btn, "#1a8cff")
+            "<Enter>", lambda e: self.highlight_button("Primary.TButton", "#1a8cff")
         )
         self.convert_btn.bind(
-            "<Leave>", lambda e: self.animate_button(self.convert_btn, "#007acc")
+            "<Leave>", lambda e: self.highlight_button("Primary.TButton", "#007acc")
         )
 
         self.progress = ttk.Progressbar(self.input_frame, mode='indeterminate')
@@ -163,10 +164,9 @@ class ExcelToCSVApp:
         self.output_entry.configure(width=entry_width)
         self.progress.configure(length=progress_length)
 
-    def animate_button(self, button, color):
-        button.configure(style="Primary.TButton")
+    def highlight_button(self, style_name, color):
         style = ttk.Style()
-        style.configure("Primary.TButton", background=color)
+        style.configure(style_name, background=color)
 
     def browse_input(self):
         file = filedialog.askopenfilename(filetypes=[("Excel files", "*.xlsx *.xls")])
