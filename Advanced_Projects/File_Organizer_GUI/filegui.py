@@ -5,6 +5,7 @@ import shutil
 from pathlib import Path
 from datetime import datetime
 import threading
+import queue
 
 class FileOrganizer:
     def __init__(self, root):
@@ -18,6 +19,9 @@ class FileOrganizer:
         self.dest_folder = tk.StringVar()
         self.organize_method = tk.StringVar(value="type")
         
+        # Thread-safe queue for UI updates
+        self._queue = queue.Queue()
+        
         # File type mappings
         self.file_types = {
             'Images': ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.svg', '.webp'],
@@ -30,6 +34,21 @@ class FileOrganizer:
         }
         
         self.setup_ui()
+        
+        # Start queue processing
+        self.root.after(50, self._process_queue)
+        
+    def _process_queue(self):
+        """Process UI update callbacks from worker thread"""
+        try:
+            while not self._queue.empty():
+                callback = self._queue.get_nowait()
+                callback()
+        except queue.Empty:
+            pass
+        finally:
+            # Schedule next queue check
+            self.root.after(50, self._process_queue)
         
     def setup_ui(self):
         # Main frame
@@ -218,10 +237,10 @@ class FileOrganizer:
         try:
             files = self.get_files_to_organize()
             if not files:
-                self.log_message("No files found in source folder")
+                self._queue.put(lambda: self.log_message("No files found in source folder"))
                 return
             
-            self.log_message(f"Starting organization of {len(files)} files...")
+            self._queue.put(lambda: self.log_message(f"Starting organization of {len(files)} files..."))
             
             organized_count = 0
             error_count = 0
@@ -253,24 +272,24 @@ class FileOrganizer:
                         shutil.move(file_path, dest_path)
                         action = "Moved"
                     
-                    self.log_message(f"{action}: {filename} → {dest_folder}")
+                    self._queue.put(lambda f=filename, d=dest_folder, a=action: self.log_message(f"{a}: {f} → {d}"))
                     organized_count += 1
                     
                 except Exception as e:
-                    self.log_message(f"Error processing {os.path.basename(file_path)}: {str(e)}")
+                    self._queue.put(lambda f=os.path.basename(file_path), err=str(e): self.log_message(f"Error processing {f}: {err}"))
                     error_count += 1
             
-            self.log_message("-" * 50)
-            self.log_message(f"Organization complete!")
-            self.log_message(f"Files organized: {organized_count}")
+            self._queue.put(lambda: self.log_message("-" * 50))
+            self._queue.put(lambda: self.log_message("Organization complete!"))
+            self._queue.put(lambda c=organized_count: self.log_message(f"Files organized: {c}"))
             if error_count > 0:
-                self.log_message(f"Errors encountered: {error_count}")
+                self._queue.put(lambda e=error_count: self.log_message(f"Errors encountered: {e}"))
             
         except Exception as e:
-            self.log_message(f"Fatal error: {str(e)}")
+            self._queue.put(lambda err=str(e): self.log_message(f"Fatal error: {err}"))
         finally:
-            self.progress.stop()
-            self.status_label.config(text="Organization complete")
+            self._queue.put(self.progress.stop)
+            self._queue.put(lambda: self.status_label.config(text="Organization complete"))
     
     def organize_files(self):
         if not self.validate_inputs():
