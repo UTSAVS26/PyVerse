@@ -1,6 +1,6 @@
 # Excel to CSV Converter
 
-converts every sheet of a `.xlsx` excel file into separate csv files.
+converts every sheet of a `.xlsx` Excel file into separate CSV files.
 
 ## requirements
 
@@ -16,7 +16,7 @@ pip install openpyxl
 
 ### cli usage
 
-make sure your excel file (e.g., `input.xlsx`) is in the same directory or provide the full path:
+make sure your Excel file (e.g., `input.xlsx`) is in the same directory or provide the full path:
 
 ```bash
 python excel_to_csv.py input.xlsx -o output
