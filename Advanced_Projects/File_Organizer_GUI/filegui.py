@@ -263,7 +263,6 @@ class FileOrganizer:
                     
                     # Handle file name conflicts
                     counter = 1
-                    original_dest_path = dest_path
                     while os.path.exists(dest_path):
                         name, ext = os.path.splitext(filename)
                         dest_path = os.path.join(dest_folder, f"{name}_{counter}{ext}")
@@ -281,7 +280,9 @@ class FileOrganizer:
                     organized_count += 1
                     
                 except Exception as e:
-                    self._queue.put(lambda f=os.path.basename(file_path), err=str(e): self.log_message(f"Error processing {f}: {err}"))
+                    basename = os.path.basename(file_path)
+                    error_msg = str(e)
+                    self._queue.put(lambda f=basename, err=error_msg: self.log_message(f"Error processing {f}: {err}"))
                     error_count += 1
             
             self._queue.put(lambda: self.log_message("-" * 50))
