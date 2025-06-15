@@ -236,6 +236,39 @@ class FileOrganizer:
             )
             return False
         
+        # Validate destination writability
+        dest_path = self.dest_folder.get()
+        try:
+            # If destination exists, check if it's writable
+            if os.path.exists(dest_path):
+                if not os.access(dest_path, os.W_OK):
+                    messagebox.showerror(
+                        "Error",
+                        f"Destination folder is not writable: {dest_path}"
+                    )
+                    return False
+            else:
+                # If destination doesn't exist, try to create it to test writability
+                os.makedirs(dest_path, exist_ok=True)
+                # Test write access by creating a temporary file
+                test_file = os.path.join(dest_path, ".write_test_temp")
+                try:
+                    with open(test_file, 'w') as f:
+                        f.write("test")
+                    os.remove(test_file)
+                except (OSError, IOError):
+                    messagebox.showerror(
+                        "Error",
+                        f"Cannot write to destination folder: {dest_path}"
+                    )
+                    return False
+        except (OSError, IOError) as e:
+            messagebox.showerror(
+                "Error",
+                f"Cannot access or create destination folder: {dest_path}\n{str(e)}"
+            )
+            return False
+        
         return True
     
     def organize_files_thread(self, settings):
