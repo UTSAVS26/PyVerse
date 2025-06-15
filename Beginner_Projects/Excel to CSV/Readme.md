@@ -1,57 +1,111 @@
-# Excel to CSV Converter
+# Excel to CSV Converter (GUI)
 
-converts every sheet of a `.xlsx` Excel file into separate CSV files.
+A simple and elegant Python desktop application that converts every sheet in an Excel (`.xlsx` or `.xls`) file into individual CSV files.
+
+Built with **Tkinter** for the GUI and **pandas + openpyxl** for Excel processing.
+
+---
 
 ## Requirements
 
-- Python 3.x  
-- Library: `openpyxl`
+- Python 3.7+
+- Libraries:
+  - `pandas`
+  - `openpyxl`
 
-install:
+Install with:
+
 ```bash
-pip install openpyxl
+pip install pandas openpyxl
 ````
 
-## usage
+---
 
-### cli usage
+## Usage
 
-make sure your Excel file (e.g., `input.xlsx`) is in the same directory or provide the full path:
+### GUI Application
 
-```bash
-python excel_to_csv.py input.xlsx -o output
-```
+1. Run the application:
 
-this will generate csv files in the `output/` folder (created if it doesn't exist).
+   ```bash
+   python excel_to_csv.py
+   ```
 
-### python api usage
+2. Use the interface to:
 
-you can also import and use the function in your own python code:
+   - Browse and select an Excel file.
+   - Choose an output folder.
+   - Click **"Convert to CSV"**.
+
+3. One CSV will be created per sheet in the selected output folder.
+
+---
+
+## Function Overview
+
+The core logic is handled by this function, also reusable in other Python projects:
 
 ```python
-from excel_to_csv import excel_to_csv
-
-excel_to_csv("your_file.xlsx", "your_output_folder")
+def excel_to_csv(input_file: str, output_folder: str) -> tuple[bool, str]
 ```
 
-## function overview
+- **input\_file**: path to the Excel file
+- **output\_folder**: target directory for CSV files
 
-```python
-def excel_to_csv(input_file: str, output_folder: str = "output") -> list[str]
-```
+Returns a tuple:
 
-- **input_file**: path to `.xlsx` Excel file  
-- **output_folder** *(optional)*: directory where CSVs will be stored  
-- Outputs one CSV per sheet, named as:
-  `<input_file_stem>_<sanitized_sheet_name>.csv`
+- `True, message` on success
+- `False, error_message` on failure
 
-## output
+It:
 
-for an input file like `data.xlsx` with sheets `sheet1` and `2023/stats`, the output will be:
+- Converts each sheet to a `.csv`
+- Sanitizes sheet names to safe filenames
+- Replaces null/NaN cells with empty strings
+
+---
+
+## Output Structure
+
+For an Excel file like `sales.xlsx` with sheets `Q1`, `Q2/2023`, and an unnamed sheet:
 
 ```text
 output/
-├── data_Sheet1.csv
-└── data_2023_Stats.csv
+├── sales_Q1.csv
+├── sales_Q2_2023.csv
+└── sales_Sheet3.csv
+```
+
+---
+
+## Error Handling
+
+The application gracefully handles:
+
+- File not found
+- File permission errors (e.g. open in Excel)
+- Invalid or empty sheet names
+- Unexpected exceptions
+
+Error messages are shown both in the GUI and as popups.
+
+---
+
+## Features
+
+- Easy-to-use modern GUI
+- Dark theme styling
+- Real-time progress indicator
+- Multi-threaded conversion (no freezing UI)
+- Automatic folder creation if needed
+
+---
+
+## Project Structure
+
+```text
+Excel to CSV/
+├── excel_to_csv.py              # GUI application
+└── Readme.md            # Project readme
 ```
 ---
