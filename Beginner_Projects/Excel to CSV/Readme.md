@@ -2,10 +2,10 @@
 
 converts every sheet of a `.xlsx` Excel file into separate CSV files.
 
-## requirements
+## Requirements
 
-- python 3.x  
-- library: `openpyxl`
+- Python 3.x  
+- Library: `openpyxl`
 
 install:
 ```bash
@@ -40,9 +40,9 @@ excel_to_csv("your_file.xlsx", "your_output_folder")
 def excel_to_csv(input_file: str, output_folder: str = "output") -> list[str]
 ```
 
-* **input\_file**: path to `.xlsx` excel file
-* **output\_folder** *(optional)*: directory where csvs will be stored
-* outputs one csv per sheet named as:
+- **input_file**: path to `.xlsx` Excel file  
+- **output_folder** *(optional)*: directory where CSVs will be stored  
+- Outputs one CSV per sheet, named as:
   `<input_file_stem>_<sanitized_sheet_name>.csv`
 
 ## output
