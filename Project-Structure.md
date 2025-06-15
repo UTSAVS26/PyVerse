@@ -469,6 +469,12 @@
     * [Virtualpainter](Data_Science/AI%20Virtual%20Painter/VirtualPainter.py)
   * Analysis Of Mortality Rate
     * [Left Handers Vs Right Handers](Data_Science/Analysis%20of%20Mortality%20Rate/LEFT_HANDERS_vs_RIGHT_HANDERS.ipynb)
+  * Analysis Of Mortality Rate
+    * [Left Handers Vs Right Handers](Data_Science/Analysis_of_Mortality_Rate/LEFT_HANDERS_vs_RIGHT_HANDERS.ipynb)
+    * Refactored
+      * [Data Utils](Data_Science/Analysis_of_Mortality_Rate/refactored/data_utils.py)
+      * [Main](Data_Science/Analysis_of_Mortality_Rate/refactored/main.py)
+      * [Plot Utils](Data_Science/Analysis_of_Mortality_Rate/refactored/plot_utils.py)
   * Datavizlearnig
     * [Dataviz Snippets](Data_Science/DataVizLearnig/DataViz_Snippets.ipynb)
     * Movie Data Visualization
