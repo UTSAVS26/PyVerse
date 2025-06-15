@@ -27,8 +27,8 @@ A simple, elegant desktop application that converts currencies using real-time e
 ## 🖼️ App Preview
 
 > Example:  
-> ![screenshot](assets/Light Mode.png)
-> ![screenshot](assets/Dark Mode.png)
+> ![screenshot](assets/light_mode.png)
+> ![screenshot](assets/dark_mode.png)
 
 ---
 
