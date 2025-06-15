@@ -10,6 +10,8 @@
     * [Generate Keys](Advanced_Projects/EdgeLock-X/generate_keys.py)
     * [Tee Server](Advanced_Projects/EdgeLock-X/tee_server.py)
     * [Web Server](Advanced_Projects/EdgeLock-X/web_server.py)
+  * File Organizer Gui
+    * [Filegui](Advanced_Projects/File_Organizer_GUI/filegui.py)
   * Gui Based Taskmanager
     * [Mang](Advanced_Projects/GUI%20Based%20TaskManager/mang.py)
   * Navibot-Voice-Assistant
