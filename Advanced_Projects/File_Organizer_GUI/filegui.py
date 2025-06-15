@@ -229,8 +229,11 @@ class FileOrganizer:
             messagebox.showerror("Error", "Source folder does not exist")
             return False
         
-        if not os.path.exists(self.dest_folder.get()):
-            messagebox.showerror("Error", "Destination folder does not exist")
+        if os.path.abspath(self.source_folder.get()) == os.path.abspath(self.dest_folder.get()):
+            messagebox.showerror(
+                "Error",
+                "Destination folder must be different from source folder",
+            )
             return False
         
         return True
