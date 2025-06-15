@@ -110,27 +110,32 @@ def run_bot(sender_email, sender_password):
     sent_emails = load_sent(SENT_FILE)
     template = load_template(TEMPLATE_FILE)
 
-    for contact in contacts:
-        email = contact["email"].strip()
-        name = contact["name"].strip()
-        birthdate = contact["birthdate"].strip()
+import html
 
-        if not email or not name or not birthdate:
-            continue
+for contact in contacts:
+    email = contact["email"].strip()
+    name = contact["name"].strip()
+    birthdate = contact["birthdate"].strip()
 
-        if email in sent_emails:
-            continue
+    if not email or not name or not birthdate:
+        continue
 
-        try:
-            contact_date = datetime.strptime(birthdate, "%Y-%m-%d").strftime("%m-%d")
-        except ValueError:
-            print(f"[!] Invalid birthdate format for {email}. Skipping.")
-            continue
+    if email in sent_emails:
+        continue
 
-        if contact_date == today:
-            personalized_html = template.replace("{{name}}", name)
-            subject = f"🎉 Happy Birthday, {name}!"
-            send_email(email, subject, personalized_html, sender_email, sender_password)
+    try:
+        contact_date = datetime.strptime(birthdate, "%Y-%m-%d").strftime("%m-%d")
+    except ValueError:
+        print(f"[!] Invalid birthdate format for {email}. Skipping.")
+        continue
+
+    if contact_date == today:
+        # escape the user-supplied name before injecting into HTML
+        safe_name = html.escape(name, quote=True)
+        personalized_html = template.replace("{{name}}", safe_name)
+
+        subject = f"🎉 Happy Birthday, {name}!"
+        send_email(email, subject, personalized_html, sender_email, sender_password)
             save_sent(email)
 
 # ---------- CLI ----------
