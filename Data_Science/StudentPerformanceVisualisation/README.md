@@ -1,4 +1,4 @@
-# Data Visualization with Python
+# Data Visualisation with Python
 
 A comprehensive project demonstrating advanced data visualization techniques using Python libraries for educational data analysis.
 
@@ -19,7 +19,7 @@ This repository contains Jupyter notebooks that demonstrate data analysis and vi
 ## 📁 Repository Structure
 
 ```
-DataVisualisation-Python/
+PyVerse/Data_Science/StudentPerformanceVisualisation/
 ├── Visualisation.ipynb - Jupyter notebook with data analysis and visualizations
 ├── Viz_usingSQL.ipynb - Additional Jupyter notebook with data exploration
 └── README.md - Project documentation
@@ -71,7 +71,7 @@ DataVisualisation-Python/
 - Creating derived metrics from raw data
 - Grouping and aggregating data for analysis
 
-### Visualization Techniques
+### Visualisation Techniques
 - Creating bar charts to compare categorical data
 - Using statistical visualizations to understand data distributions
 - Visualizing relationships between variables
@@ -126,7 +126,7 @@ plt.ylabel('Average Math Score')
 plt.show()
 ```
 
-## 📊 Sample Visualizations
+## 📊 Sample Visualisations
 
 Here are some examples of visualizations demonstrated in the notebooks:
 
