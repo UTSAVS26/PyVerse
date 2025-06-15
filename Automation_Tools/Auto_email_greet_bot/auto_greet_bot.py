@@ -73,24 +73,16 @@ def load_template(file_path):
 
 # ---------- Send email ----------
 def send_email(to_email, subject, html_content, sender_email, sender_password) -> bool:
-    msg = MIMEMultipart("alternative")
-    msg["Subject"] = subject
-    msg["From"] = sender_email
-    msg["To"] = to_email
+-from email.mime.multipart import MIMEMultipart
++from email.mime.multipart import MIMEMultipart
++from email.header import Header
 
-    part = MIMEText(html_content, "html")
-    msg.attach(part)
-
-    try:
-        with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
-            server.login(sender_email, sender_password)
-            server.sendmail(sender_email, to_email, msg.as_string())
-        print(f"[✓] Sent email to {to_email}")
-        return True
-    except Exception as e:
-        print(f"[✗] Failed to send email to {to_email}: {e}")
-        return False
-# ---------- Validate credentials ----------
+     msg = MIMEMultipart("alternative")
+-    msg["Subject"] = subject
++    clean_subject = subject.replace("\n", " ").replace("\r", " ")
++    msg["Subject"] = Header(clean_subject, "utf-8")
+     msg["From"] = sender_email
+     msg["To"] = to_email
 def validate_credentials(email, password):
     if not email or not password:
         print("[✗] Email and password must be provided.")
