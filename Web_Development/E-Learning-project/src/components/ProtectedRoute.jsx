@@ -8,7 +8,8 @@ const ProtectedRoute = ({ user, children }) => {
   useEffect(() => {
     if (!user) {
       setShowAlert(true);
-      setTimeout(() => setRedirect(true), 2000); // Redirect after 2 seconds
+      const id = setTimeout(() => setRedirect(true), 2000); // Redirect after 2s
+      return () => clearTimeout(id);            // 🔑 cancel on unmount/update
     }
   }, [user]);
 
