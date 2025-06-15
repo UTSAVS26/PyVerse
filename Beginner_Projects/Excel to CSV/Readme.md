@@ -1,55 +1,55 @@
 # Excel to CSV Converter
 
-Converts every sheet of a `.xlsx` Excel file into separate CSV files.
+converts every sheet of a `.xlsx` excel file into separate csv files.
 
-## 📦 Requirements
+## requirements
 
-- Python 3.x
-- Library: `openpyxl`
+- python 3.x  
+- library: `openpyxl`
 
-Install:
+install:
 ```bash
 pip install openpyxl
 ````
 
-## 🚀 Usage
+## usage
 
-### CLI Usage
+### cli usage
 
-Make sure your Excel file (e.g., `input.xlsx`) is in the same directory or provide the path:
+make sure your excel file (e.g., `input.xlsx`) is in the same directory or provide the full path:
 
 ```bash
-python excelToCsv.py input.xlsx -o output
+python excel_to_csv.py input.xlsx -o output
 ```
 
-This will generate CSV files in the `output/` folder (created if it doesn't exist).
+this will generate csv files in the `output/` folder (created if it doesn't exist).
 
-### Python API Usage
+### python api usage
 
-You can also import and use the function in your own Python code:
+you can also import and use the function in your own python code:
 
 ```python
-from excelToCsv import excel_to_csv
+from excel_to_csv import excel_to_csv
 
 excel_to_csv("your_file.xlsx", "your_output_folder")
 ```
 
-## 🧠 Function Overview
+## function overview
 
 ```python
-def excel_to_csv(input_file: str, output_folder: str = "output") -> None
+def excel_to_csv(input_file: str, output_folder: str = "output") -> list[str]
 ```
 
-* **input\_file**: Path to `.xlsx` Excel file
-* **output\_folder** *(optional)*: Directory where CSVs will be stored
-* Outputs one CSV per sheet named as:
+* **input\_file**: path to `.xlsx` excel file
+* **output\_folder** *(optional)*: directory where csvs will be stored
+* outputs one csv per sheet named as:
   `<input_file_stem>_<sanitized_sheet_name>.csv`
 
-## 📁 Output
+## output
 
-For an input file like `data.xlsx` with sheets `Sheet1` and `2023/Stats`, the output will be:
+for an input file like `data.xlsx` with sheets `sheet1` and `2023/stats`, the output will be:
 
-```
+```text
 output/
 ├── data_Sheet1.csv
 └── data_2023_Stats.csv
