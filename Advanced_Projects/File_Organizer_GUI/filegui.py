@@ -238,9 +238,44 @@ class FileOrganizer:
         
         return True
     
-    def organize_files_thread(self):
+    def organize_files_thread(self, settings):
+        """
+        Worker thread that organizes files using captured settings dict.
+        This avoids accessing Tkinter variables from non-main thread.
+        """
         try:
-            files = self.get_files_to_organize()
+            source = settings["source"]
+            dest_base = settings["dest"]
+            method = settings["method"]
+            copy_files = settings["copy"]
+            subfolders = settings["subfolders"]
+            
+            # Helper function to get destination path using captured settings
+            def _get_destination_path(file_path):
+                if method == "type":
+                    folder_name = self.get_file_category(file_path)
+                elif method == "date":
+                    folder_name = self.get_date_folder(file_path)
+                else:  # extension
+                    folder_name = self.get_extension_folder(file_path)
+                
+                if subfolders:
+                    dest_folder = os.path.join(dest_base, folder_name)
+                else:
+                    dest_folder = dest_base
+                    
+                return dest_folder
+            
+            # Get files to organize without using Tkinter variables
+            if not source or not os.path.exists(source):
+                files = []
+            else:
+                files = [
+                    os.path.join(source, item)
+                    for item in os.listdir(source)
+                    if os.path.isfile(os.path.join(source, item))
+                ]
+            
             if not files:
                 self._queue.put(lambda: self.log_message("No files found in source folder"))
                 return
@@ -252,7 +287,7 @@ class FileOrganizer:
             
             for file_path in files:
                 try:
-                    dest_folder = self.get_destination_path(file_path)
+                    dest_folder = _get_destination_path(file_path)
                     
                     # Create destination folder if it doesn't exist
                     os.makedirs(dest_folder, exist_ok=True)
@@ -269,7 +304,7 @@ class FileOrganizer:
                         counter += 1
                     
                     # Copy or move file
-                    if self.copy_files.get():
+                    if copy_files:
                         shutil.copy2(file_path, dest_path)
                         action = "Copied"
                     else:
@@ -309,8 +344,20 @@ class FileOrganizer:
         self.progress.start()
         self.status_label.config(text="Organizing files...")
         
+        # Capture GUI state BEFORE spawning worker thread
+        settings = {
+            "source": self.source_folder.get(),
+            "dest": self.dest_folder.get(),
+            "method": self.organize_method.get(),
+            "copy": self.copy_files.get(),
+            "subfolders": self.create_subfolders.get(),
+        }
+        
         # Run organization in a separate thread to prevent GUI freezing
-        thread = threading.Thread(target=self.organize_files_thread)
+        thread = threading.Thread(
+            target=self.organize_files_thread,
+            args=(settings,),
+        )
         thread.daemon = True
         thread.start()
 
