@@ -227,6 +227,8 @@
     * [Tree Traversal Visualizer](Algorithms_and_Data_Structures/visualizer/tree_traversal_visualizer.py)
 
 ## Automation Tools
+  * Auto Email Greet Bot
+    * [Auto Greet Bot](Automation_Tools/Auto_email_greet_bot/auto_greet_bot.py)
   * Autofill Personal Info Using Aadhar Card Image
     * Ocr Adhaar Api
       * [App](Automation_Tools/Autofill%20personal%20info%20using%20Aadhar%20Card%20Image/OCR%20ADHAAR%20API/app.py)
