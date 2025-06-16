@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Snake Plant",
+    "frequency": 5,
+    "last_watered": "2025-06-12"
+  },
+  {
+    "name": "Aloe Vera",
+    "frequency": 7,
+    "last_watered": "2025-06-10"
+  },
+  {
+    "name": "Peace Lily",
+    "frequency": 3,
+    "last_watered": "2025-06-15"
+  },
+  {
+    "name": "Spider Plant",
+    "frequency": 4,
+    "last_watered": "2025-06-14"
+  }
+]
