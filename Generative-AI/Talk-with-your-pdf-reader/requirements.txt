@@ -1,0 +1,10 @@
+streamlit==1.45.1
+PyMuPDF==1.24.1
+pypdf
+langchain==0.3.25
+langchain-community==0.3.23
+langchain-core==0.3.58
+langchain-google-genai==2.1.4
+langchain-text-splitters==0.3.8
+python-dotenv==1.0.0
+docarray
