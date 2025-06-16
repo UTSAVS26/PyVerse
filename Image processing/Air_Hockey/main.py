@@ -49,11 +49,12 @@ def main():
         left_paddle.draw(frame)
         right_paddle.draw(frame)
 
-        # Display score on frame
+        # Update physics & collisions first
+        handle_collision(ball, left_paddle, right_paddle, frame)
+
+        # Now evaluate scoring / render HUD
         score.show(ball, frame)
 
-        # Handle collision between ball and paddles
-        handle_collision(ball, left_paddle, right_paddle, frame)
         cv2.imshow("Hand Gesture Slider", frame)
 
         # Exit
