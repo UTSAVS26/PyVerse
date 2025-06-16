@@ -1,8 +1,9 @@
 # Excel to CSV Converter (GUI)
 
 A simple and elegant Python desktop application that converts every sheet in an Excel (`.xlsx` or `.xls`) file into individual CSV files.
+![GUI image](image.png)
 
-Built with **Tkinter** for the GUI and **pandas + openpyxl** for Excel processing.
+Built with **Tkinter** for the GUI and **pandas + openpyxl + xlrd** for Excel processing.
 
 ---
 
