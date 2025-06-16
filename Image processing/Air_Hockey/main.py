@@ -49,15 +49,11 @@ def main():
         left_paddle.draw(frame)
         right_paddle.draw(frame)
 
-        # Start move ball
-        ball.move(frame)
-
         # Display score on frame
         score.show(ball, frame)
 
         # Handle collision between ball and paddles
         handle_collision(ball, left_paddle, right_paddle, frame)
-
         cv2.imshow("Hand Gesture Slider", frame)
 
         # Exit
