@@ -40,6 +40,9 @@ def excel_to_csv(input_file, output_folder):
         results = []
 
         total_sheets = len(xls)
+        if total_sheets == 0:
+            yield -1, "Workbook contains no sheets."
+            return
 
         for idx, (sheet_name, df) in enumerate(xls.items(), start=1):
             safe_title = re.sub(r'[^A-Za-z0-9._-]', "_", sheet_name)
@@ -58,17 +61,18 @@ def excel_to_csv(input_file, output_folder):
                 df.to_csv(f, index=False)
 
             progress_percent = (idx / total_sheets) * 100
-            yield progress_percent, ""  # Regular progress update
+            yield progress_percent, ""
 
             results.append(candidate)
 
         yield 100, f"Successfully converted {len(results)} sheet(s) to CSV."
+
     except FileNotFoundError:
         yield -1, "Error: Input file not found."
     except PermissionError:
         yield -1, "Error: File is open or access is denied."
     except Exception as e:
-        yield -1, f"Error: {str(e)}"
+        yield -1, f"Error: {e}"
 
 
 class ExcelToCSVApp:
@@ -166,14 +170,15 @@ class ExcelToCSVApp:
                     if isinstance(result, tuple):
                         percent, msg = result
                         if percent == -1:
-                            self.root.after(0, lambda: self.finish_conversion(False, msg))
+                            self.root.after(0, lambda m=msg: self.finish_conversion(False, m))
                             return
                         elif percent == 100 and msg:
-                            self.root.after(0, lambda: self.finish_conversion(True, msg))
+                            self.root.after(0, lambda m=msg: self.finish_conversion(True, m))
                             return
                         self.root.after(0, lambda p=percent: self.progress.configure(value=p))
             except Exception as e:
-                self.root.after(0, lambda: self.finish_conversion(False, f"Error: {str(e)}"))
+                err_msg = f"Error: {e}"
+                self.root.after(0, lambda m=err_msg: self.finish_conversion(False, m))
 
         Thread(target=convert, daemon=True).start()
 
