@@ -65,9 +65,7 @@ class Score:
                 2,
             )
 
-            cv2.imshow("Hand Gesture Slider", frame)
-            cv2.waitKey(5000)
-            self.reset()
+            self.reset()   # keep the reset, drop GUI calls
             
 
     pass
