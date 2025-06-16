@@ -51,8 +51,9 @@ class HandDetection():
         return approx_contours
 
     def clean_image(self, mask):
-        img_eroded = cv2.erode(mask, (3, 3), iterations=1)
-        img_dilated = cv2.dilate(img_eroded, (3, 3), iterations=1)
+        kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))
+        img_eroded = cv2.erode(mask, kernel, iterations=1)
+        img_dilated = cv2.dilate(img_eroded, kernel, iterations=1)
         return img_dilated
 
     def centroid(self, contour):
