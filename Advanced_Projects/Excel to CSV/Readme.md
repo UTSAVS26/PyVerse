@@ -11,11 +11,13 @@ Built with **Tkinter** for the GUI and **pandas + openpyxl** for Excel processin
 - Python 3.7+
 - Libraries:
   - `pandas`
+  - `openpyxl`
+  - `xlrd`
 
 Install with:
 
 ```bash
-pip install pandas 
+pip install pandas openpyxl xlrd
 ````
 
 ---

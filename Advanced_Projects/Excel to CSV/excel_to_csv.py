@@ -2,21 +2,44 @@ import os
 import re
 import tkinter as tk
 from threading import Thread
-from itertools import count
 from pathlib import Path
 from tkinter import filedialog, messagebox, ttk
-
 import pandas as pd
 
 
 def excel_to_csv(input_file, output_folder):
+    """
+    Convert an Excel file to CSV files, one per sheet.
+
+    Args:
+        input_file (str | Path): Path to the input Excel file (.xls or .xlsx).
+        output_folder (str | Path): Directory to save output CSV files.
+
+    Yields:
+        tuple[float, str]: A tuple where the first value is the progress percentage (0–100),
+                           or -1 for errors, and the second value is a status or error message.
+    """
     try:
-        xls = pd.read_excel(input_file, sheet_name=None)
+        _, ext = os.path.splitext(input_file.lower())
+        if ext not in [".xls", ".xlsx"]:
+            yield -1, "Unsupported file format. Only .xls and .xlsx are supported."
+            return
+
+        if ext == ".xls":
+            try:
+                xls = pd.read_excel(input_file, sheet_name=None, engine="xlrd")
+            except ImportError as exc:
+                raise RuntimeError(
+                    "The xlrd package is required for .xls files. "
+                    "Run `pip install xlrd` and retry."
+                ) from exc
+        else:
+            xls = pd.read_excel(input_file, sheet_name=None)
+
         os.makedirs(output_folder, exist_ok=True)
         results = []
 
         total_sheets = len(xls)
-        current_sheet = 0
 
         for idx, (sheet_name, df) in enumerate(xls.items(), start=1):
             safe_title = re.sub(r'[^A-Za-z0-9._-]', "_", sheet_name)
@@ -24,22 +47,21 @@ def excel_to_csv(input_file, output_folder):
                 safe_title = f"Sheet{idx}"
 
             base_name = f"{Path(input_file).stem}_{safe_title}"
-            for i in count():
+            for i in range(1000):  # limit retries
                 suffix = f"_{i}" if i > 0 else ""
                 candidate = os.path.join(output_folder, f"{base_name}{suffix}.csv")
                 if not os.path.exists(candidate):
                     break
 
             df = df.where(pd.notnull(df), "")
-            df.to_csv(candidate, index=False, encoding='utf-8')
+            with open(candidate, 'w', encoding='utf-8', newline='') as f:
+                df.to_csv(f, index=False)
 
-            current_sheet += 1
-            progress_percent = (current_sheet / total_sheets) * 100
-            yield progress_percent
+            progress_percent = (idx / total_sheets) * 100
+            yield progress_percent, ""  # Regular progress update
 
             results.append(candidate)
 
-        # Sentinel yield for completion message
         yield 100, f"Successfully converted {len(results)} sheet(s) to CSV."
     except FileNotFoundError:
         yield -1, "Error: Input file not found."
@@ -53,7 +75,7 @@ class ExcelToCSVApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Excel to CSV Converter")
-        self.root.geometry("500x500")
+        self.root.geometry("600x500")
         self.root.configure(bg="#252526")
         self.root.minsize(600, 400)
 
@@ -62,7 +84,7 @@ class ExcelToCSVApp:
 
         self.style.configure("Primary.TButton", background="#007acc", foreground="#ffffff", font=("Arial", 11, "bold"))
         self.style.map("Primary.TButton", background=[('active', '#005f99')])
-        self.style.configure("Hover.TButton", background="#1a8cff", foreground="#ffffff", font=("Arial", 11, "bold"))
+        self.style.configure("Hover.TButton", background="#1a8cff", foreground="#4169e1", font=("Arial", 11, "bold"))
         self.style.configure("Secondary.TButton", background="#505050", foreground="#ffffff")
         self.style.map("Secondary.TButton", background=[('active', '#606060')])
         self.style.configure("TLabel", font=("Arial", 12), background="#252526", foreground="#d4d4d4")
@@ -80,13 +102,8 @@ class ExcelToCSVApp:
         self.header_frame.grid(row=0, column=0, sticky="ew", pady=(0, 20))
         self.main_frame.columnconfigure(0, weight=1)
 
-        ttk.Label(
-            self.header_frame,
-            text="Excel to CSV Converter",
-            font=("Arial", 20, "bold"),
-            foreground="#ffffff",
-            background="#2d2d2d"
-        ).pack(pady=10)
+        ttk.Label(self.header_frame, text="Excel to CSV Converter",
+                  font=("Arial", 20, "bold"), foreground="#ffffff", background="#2d2d2d").pack(pady=10)
 
         self.input_frame = ttk.Frame(self.main_frame, style="Card.TFrame")
         self.input_frame.grid(row=1, column=0, sticky="ew", padx=50)
@@ -104,6 +121,7 @@ class ExcelToCSVApp:
 
         self.convert_btn = ttk.Button(self.input_frame, text="Convert to CSV", command=self.start_conversion, style="Primary.TButton")
         self.convert_btn.grid(row=4, column=0, columnspan=2, pady=30, sticky="ew")
+
         self.convert_btn.bind("<Enter>", lambda e: self.convert_btn.configure(style="Hover.TButton"))
         self.convert_btn.bind("<Leave>", lambda e: self.convert_btn.configure(style="Primary.TButton"))
 
@@ -116,12 +134,7 @@ class ExcelToCSVApp:
         self.root.bind("<Configure>", self.on_resize)
 
     def on_resize(self, event):
-        width = max(600, event.width)
-        entry_width = int(width // 20)
-        progress_length = int(width * 0.6)
-        self.input_entry.configure(width=entry_width)
-        self.output_entry.configure(width=entry_width)
-        self.progress.configure(length=progress_length)
+        self.progress.configure(length=max(300, int(event.width * 0.6)))
 
     def browse_input(self):
         file = filedialog.askopenfilename(filetypes=[("Excel files", "*.xlsx *.xls")])
@@ -145,19 +158,27 @@ class ExcelToCSVApp:
 
         self.convert_btn.config(state='disabled')
         self.progress.configure(mode='determinate', value=0)
+        self.status_label.config(text="Converting...", foreground="#cccccc")
 
         def convert():
-            for result in excel_to_csv(input_file, output_folder):
-                if isinstance(result, tuple):  # Final result (100, message) or error (-1, message)
-                    percent, msg = result
-                    self.root.after(0, lambda m=msg, s=(percent != -1): self.finish_conversion(s, m))
-                    return
-                else:
-                    self.root.after(0, lambda p=result: self.progress.configure(value=p))
+            try:
+                for result in excel_to_csv(input_file, output_folder):
+                    if isinstance(result, tuple):
+                        percent, msg = result
+                        if percent == -1:
+                            self.root.after(0, lambda: self.finish_conversion(False, msg))
+                            return
+                        elif percent == 100 and msg:
+                            self.root.after(0, lambda: self.finish_conversion(True, msg))
+                            return
+                        self.root.after(0, lambda p=percent: self.progress.configure(value=p))
+            except Exception as e:
+                self.root.after(0, lambda: self.finish_conversion(False, f"Error: {str(e)}"))
 
         Thread(target=convert, daemon=True).start()
 
     def finish_conversion(self, success, message):
+        self.progress.configure(mode='determinate', value=0 if not success else 100)
         self.convert_btn.config(state='normal')
         self.status_label.config(text=message, foreground="#007acc" if success else "#ff5555")
         if success:
