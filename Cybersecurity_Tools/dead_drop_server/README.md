@@ -10,7 +10,7 @@
 - 📁 Files stored in a `/drops` folder — not directly accessible by the host due to encrpytion
 - 🔒 Web UI for uploads and secure delivery  
 - 🧠 Creates a log of activity for auditing  
-- 💣 Support for self-destructing files (self destructs in 10 minutes or after pick-up)  
+- 💣 Support for self-destructing files (self destructs in 15 minutes or after pick-up)  
 - 🧊 Clean HTML/CSS frontend, minimal and functional
 
 ---
@@ -29,6 +29,17 @@ whispernode/
 │       └── success.html # Confirmation page
 └── README.md
 ```
+## 🔓 Downloading Files
+Once a file is uploaded, the server returns a unique token.
+To download the file, visit:
+
+http://127.0.0.1:8080/download/<token>
+Replace <token> with the actual token provided after upload.
+
+On visiting the link, you’ll be prompted to enter the same passphrase used during upload. This passphrase is required to decrypt and access the file securely.
+
+If the token is invalid or has expired (after 15 minutes), or if the passphrase is incorrect, access will be denied.
+
 ## 🔐 Notes
 
 - Files are **not accessible by direct link** — they're kept in a secure backend folder.
