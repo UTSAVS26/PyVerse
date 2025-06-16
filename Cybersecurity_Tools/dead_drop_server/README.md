@@ -1,4 +1,3 @@
-```markdown
 # 🕵️ WhisperNode – Offline LAN File Drop Server
 
 **WhisperNode** is a lightweight, Flask-based file drop server designed for secure and private file sharing over a local network. It operates completely offline, making it ideal for isolated environments, secure labs, or CTF-style dead drops.
@@ -17,9 +16,6 @@
 ---
 
 ## 📁 Project Structure
-
-```
-
 whispernode/
 ├── backend/
 │   ├── drops/           # Secure file storage (not exposed, created automatically)
@@ -31,10 +27,6 @@ whispernode/
 │       ├── index.html   # Upload page
 │       └── success.html # Confirmation page
 └── README.md
-
-```
-
----
 
 ## 🔐 Notes
 
