@@ -39,13 +39,14 @@ def excel_to_csv(input_file, output_folder):
 
             results.append(candidate)
 
-        return True, f"Successfully converted {len(results)} sheet(s) to CSV."
+        # Sentinel yield for completion message
+        yield 100, f"Successfully converted {len(results)} sheet(s) to CSV."
     except FileNotFoundError:
-        return False, "Error: Input file not found."
+        yield -1, "Error: Input file not found."
     except PermissionError:
-        return False, "Error: File is open or access is denied."
+        yield -1, "Error: File is open or access is denied."
     except Exception as e:
-        return False, f"Error: {str(e)}"
+        yield -1, f"Error: {str(e)}"
 
 
 class ExcelToCSVApp:
@@ -59,15 +60,11 @@ class ExcelToCSVApp:
         self.style = ttk.Style()
         self.style.theme_use('clam')
 
-        # Define default and hover styles
         self.style.configure("Primary.TButton", background="#007acc", foreground="#ffffff", font=("Arial", 11, "bold"))
         self.style.map("Primary.TButton", background=[('active', '#005f99')])
-
         self.style.configure("Hover.TButton", background="#1a8cff", foreground="#ffffff", font=("Arial", 11, "bold"))
-
         self.style.configure("Secondary.TButton", background="#505050", foreground="#ffffff")
         self.style.map("Secondary.TButton", background=[('active', '#606060')])
-
         self.style.configure("TLabel", font=("Arial", 12), background="#252526", foreground="#d4d4d4")
         self.style.configure("TEntry", padding=10, font=("Arial", 11), fieldbackground="#3c3c3c", foreground="#ffffff")
         self.style.map("TEntry", fieldbackground=[('disabled', '#3c3c3c')], selectbackground=[('focus', '#007acc')])
@@ -96,27 +93,21 @@ class ExcelToCSVApp:
         self.input_frame.columnconfigure(0, weight=1)
 
         ttk.Label(self.input_frame, text="Excel File", font=("Arial", 12, "bold")).grid(row=0, column=0, sticky="w", pady=(0, 8))
-
         self.input_entry = ttk.Entry(self.input_frame)
         self.input_entry.grid(row=1, column=0, sticky="ew", padx=(0, 10))
-
         ttk.Button(self.input_frame, text="Browse", command=self.browse_input, style="Secondary.TButton").grid(row=1, column=1, padx=5)
 
         ttk.Label(self.input_frame, text="Output Folder", font=("Arial", 12, "bold")).grid(row=2, column=0, sticky="w", pady=(20, 8))
-
         self.output_entry = ttk.Entry(self.input_frame)
         self.output_entry.grid(row=3, column=0, sticky="ew", padx=(0, 10))
-
         ttk.Button(self.input_frame, text="Browse", command=self.browse_output, style="Secondary.TButton").grid(row=3, column=1, padx=5)
 
         self.convert_btn = ttk.Button(self.input_frame, text="Convert to CSV", command=self.start_conversion, style="Primary.TButton")
         self.convert_btn.grid(row=4, column=0, columnspan=2, pady=30, sticky="ew")
-
-        # Hover effect using style switch
         self.convert_btn.bind("<Enter>", lambda e: self.convert_btn.configure(style="Hover.TButton"))
         self.convert_btn.bind("<Leave>", lambda e: self.convert_btn.configure(style="Primary.TButton"))
 
-        self.progress = ttk.Progressbar(self.input_frame, mode='indeterminate')
+        self.progress = ttk.Progressbar(self.input_frame, mode='determinate', maximum=100, value=0)
         self.progress.grid(row=5, column=0, columnspan=2, pady=15, sticky="ew")
 
         self.status_label = ttk.Label(self.input_frame, text="Ready", foreground="#007acc")
@@ -153,23 +144,20 @@ class ExcelToCSVApp:
             return
 
         self.convert_btn.config(state='disabled')
-        self.progress.configure(mode='determinate')
-        self.progress.start()
+        self.progress.configure(mode='determinate', value=0)
 
         def convert():
-            try:
-                for progress_percent in excel_to_csv(input_file, output_folder):
-                    self.progress['value'] = progress_percent
-                    self.progress.update_idletasks()
-                self.finish_conversion(True, f"Successfully converted all sheets to CSV in {output_folder}.")
-            except Exception as e:
-                self.finish_conversion(False, f"Error: {str(e)}")
+            for result in excel_to_csv(input_file, output_folder):
+                if isinstance(result, tuple):  # Final result (100, message) or error (-1, message)
+                    percent, msg = result
+                    self.root.after(0, lambda m=msg, s=(percent != -1): self.finish_conversion(s, m))
+                    return
+                else:
+                    self.root.after(0, lambda p=result: self.progress.configure(value=p))
 
         Thread(target=convert, daemon=True).start()
 
     def finish_conversion(self, success, message):
-        self.progress.stop()
-        self.progress.configure(mode='indeterminate')
         self.convert_btn.config(state='normal')
         self.status_label.config(text=message, foreground="#007acc" if success else "#ff5555")
         if success:
