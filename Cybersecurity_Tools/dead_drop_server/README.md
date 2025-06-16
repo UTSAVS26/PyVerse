@@ -39,6 +39,7 @@ Replace <token> with the actual token provided after upload.
 On visiting the link, you’ll be prompted to enter the same passphrase used during upload. This passphrase is required to decrypt and access the file securely.
 
 If the token is invalid or has expired (after 15 minutes), or if the passphrase is incorrect, access will be denied.
+note: the downloaded file has a .bin extension replace it with the actual extension to acess the file
 
 ## 🔐 Notes
 
