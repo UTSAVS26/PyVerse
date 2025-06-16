@@ -55,9 +55,12 @@ def excel_to_csv(input_file, output_folder):
                 candidate = os.path.join(output_folder, f"{base_name}{suffix}.csv")
                 if not os.path.exists(candidate):
                     break
+            else:
+                yield -1, "Too many files with the same base name; aborting to avoid overwrite."
+                return
 
             df = df.where(pd.notnull(df), "")
-            with open(candidate, 'w', encoding='utf-8') as f:
+            with open(candidate, 'w', encoding='utf-8', newline='') as f:
                 df.to_csv(f, index=False)
 
             progress_percent = (idx / total_sheets) * 100
@@ -66,7 +69,6 @@ def excel_to_csv(input_file, output_folder):
 
             results.append(candidate)
 
-        # Final 100% yield with message
         yield 100, f"Successfully converted {len(results)} sheet(s) to CSV."
 
     except FileNotFoundError:
