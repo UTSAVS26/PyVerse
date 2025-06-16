@@ -32,7 +32,9 @@ class HandDetection():
         return mask
     
     def threshold(self, mask):
-        _, thresh_img = cv2.threshold(mask, 127, 255, cv2.THRESH_OTSU)
+        _, thresh_img = cv2.threshold(
+            mask, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU
+        )
         return thresh_img
     
     def find_contours(self, thresh_img):
