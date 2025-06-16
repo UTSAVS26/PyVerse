@@ -11,14 +11,14 @@ This dashboard allows you to explore key economic indicators for BRICS countries
 Select a country from the sidebar to view trends, insights, and period-wise summaries.
 """)
 
-# Sidebar: Country Selector
+#Sidebar Country Selector
 countries = df['Country'].unique()
 country = st.sidebar.selectbox("Select Country", sorted(countries))
 
 # Filter data for selected country
 country_df = df[df['Country'] == country].sort_values('date')
 
-# Show most recent stats
+# most recent stats
 latest = country_df.sort_values('date').iloc[-1]
 st.header(f"Latest Data for {country} ({latest['date'][:4]})")
 st.write({
@@ -28,13 +28,13 @@ st.write({
     "Current Account Balance": latest["Current Account Balance"]
 })
 
-# Line plots for key indicators
+#key indicators
 indicators = ['GDP', 'Unemployment Rate', 'Inflation Rate', 'Current Account Balance']
 for col in indicators:
     st.subheader(f"{col} Over Time")
     fig = px.line(country_df, x='date', y=col, markers=True, title=f"{col} Over Time ({country})")
     st.plotly_chart(fig, use_container_width=True)
-    # Annotate insights for specific years if you like
+    # Annotate insights for specific years
     if col == 'GDP':
         max_year = country_df.loc[country_df['GDP'].idxmax()]['date'][:4]
         min_year = country_df.loc[country_df['GDP'].idxmin()]['date'][:4]
