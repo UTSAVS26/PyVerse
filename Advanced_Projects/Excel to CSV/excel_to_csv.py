@@ -20,7 +20,7 @@ def excel_to_csv(input_file, output_folder):
                            or -1 for errors, and the second value is a status or error message.
     """
     try:
-        _, ext = os.path.splitext(input_file.lower())
+        _, ext = os.path.splitext(str(input_file).lower())
         if ext not in [".xls", ".xlsx"]:
             yield -1, "Unsupported file format. Only .xls and .xlsx are supported."
             return
@@ -57,14 +57,16 @@ def excel_to_csv(input_file, output_folder):
                     break
 
             df = df.where(pd.notnull(df), "")
-            with open(candidate, 'w', encoding='utf-8', newline='') as f:
+            with open(candidate, 'w', encoding='utf-8') as f:
                 df.to_csv(f, index=False)
 
             progress_percent = (idx / total_sheets) * 100
-            yield progress_percent, ""
+            if idx < total_sheets:
+                yield progress_percent, ""
 
             results.append(candidate)
 
+        # Final 100% yield with message
         yield 100, f"Successfully converted {len(results)} sheet(s) to CSV."
 
     except FileNotFoundError:
@@ -172,7 +174,7 @@ class ExcelToCSVApp:
                         if percent == -1:
                             self.root.after(0, lambda m=msg: self.finish_conversion(False, m))
                             return
-                        elif percent == 100 and msg:
+                        if percent == 100 and msg:
                             self.root.after(0, lambda m=msg: self.finish_conversion(True, m))
                             return
                         self.root.after(0, lambda p=percent: self.progress.configure(value=p))
