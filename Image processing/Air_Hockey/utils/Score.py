@@ -1,5 +1,6 @@
 import cv2
-from utils.constants import LEFT_OFFSET,RIGHT_OFFSET,WIDTH,MAX_SCORE
+-from utils.constants import LEFT_OFFSET,RIGHT_OFFSET,WIDTH,MAX_SCORE
++from .constants import LEFT_OFFSET, RIGHT_OFFSET, WIDTH, MAX_SCORE
 
 
 class Score:
