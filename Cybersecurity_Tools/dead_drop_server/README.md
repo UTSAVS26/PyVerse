@@ -16,6 +16,7 @@
 ---
 
 ## 📁 Project Structure
+```
 whispernode/
 ├── backend/
 │   ├── drops/           # Secure file storage (not exposed, created automatically)
@@ -27,7 +28,7 @@ whispernode/
 │       ├── index.html   # Upload page
 │       └── success.html # Confirmation page
 └── README.md
-
+```
 ## 🔐 Notes
 
 - Files are **not accessible by direct link** — they're kept in a secure backend folder.
