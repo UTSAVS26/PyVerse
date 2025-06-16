@@ -1141,6 +1141,10 @@
   * Smartphone Rate Prediction
     * [Main](Machine_Learning/smartphone_rate_prediction/main.py)
 
+## Real-Time Object Tracker
+  * [Main](Real-Time%20Object%20Tracker/main.py)
+  * [Short](Real-Time%20Object%20Tracker/short.py)
+
 ## Tutorials
   * Data Science
     * Part 4 Python
