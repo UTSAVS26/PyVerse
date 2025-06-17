@@ -1,5 +1,5 @@
 # 💼 Smart ATS for Resumes  
-> 📁 Project: ATS-PROJECT_SKILLCRED
+> 📁 Project: Resume-Analyzer
 
 🎯 Welcome to **Smart ATS for Resumes** – an intelligent resume screening and analysis tool designed to help job seekers enhance their resumes for Applicant Tracking Systems (ATS), ensuring they shine in the competitive job market.
 
@@ -28,6 +28,16 @@
 Watch the project in action:
 
 [📽️ Click to Watch Demo Video](Demo_Video.mp4)
+
+---
+
+## 📷 Application Preview
+
+### Dashboard
+![UI Screen](Dashboard.png)
+
+### Response
+![Response](Response.png)
 
 ---
 
