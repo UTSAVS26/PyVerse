@@ -171,6 +171,7 @@
     * [Ternarysearch](Algorithms_and_Data_Structures/SearchingAlgorithms/TernarySearch.py)
   * Stack
     * [Balanced Parentheses Checker](Algorithms_and_Data_Structures/Stack/Balanced_parentheses_checker.py)
+    * [Implement Stack Using Queue](Algorithms_and_Data_Structures/Stack/Implement_Stack_Using_Queue.py)
     * [Infixtopostifix](Algorithms_and_Data_Structures/Stack/InfixToPostifix.py)
     * [Infixtoprefix](Algorithms_and_Data_Structures/Stack/InfixToPrefix.py)
     * [Min Stack](Algorithms_and_Data_Structures/Stack/Min_Stack.py)
