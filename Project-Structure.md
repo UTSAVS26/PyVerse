@@ -10,6 +10,8 @@
     * [Generate Keys](Advanced_Projects/EdgeLock-X/generate_keys.py)
     * [Tee Server](Advanced_Projects/EdgeLock-X/tee_server.py)
     * [Web Server](Advanced_Projects/EdgeLock-X/web_server.py)
+  * Excel To Csv
+    * [Excel To Csv](Advanced_Projects/Excel%20to%20CSV/excel_to_csv.py)
   * File Organizer Gui
     * [Filegui](Advanced_Projects/File_Organizer_GUI/filegui.py)
   * Gui Based Taskmanager
@@ -291,8 +293,6 @@
     * [Email Automation](Beginner_Projects/Email_Automation/email_automation.py)
   * Escape The Maze
     * [Escapethemaze](Beginner_Projects/Escape%20the%20Maze/Escapethemaze.py)
-  * Excel To Csv
-    * [Excel To Csv](Beginner_Projects/Excel%20to%20CSV/excel_to_csv.py)
   * File Sorter
     * [App](Beginner_Projects/File%20Sorter/App.py)
     * Theme
