@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import time
 from ultralytics import YOLO
-from short import Sort  # Your custom tracker
+from sort import Sort  # Simple Online & Realtime Tracking
 
 def run_tracker(cap, model, tracker, mode="cpu"):
     total_frames = 0
