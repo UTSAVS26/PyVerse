@@ -40,10 +40,9 @@ def run_tracker(cap, model, tracker, mode="cpu"):
         tracks = tracker.update(dets).astype(int)
 
         for xmin, ymin, xmax, ymax, track_id in tracks:
-            …
-                cv2.rectangle(frame, (xmin, ymin), (xmax, ymax), (0, 255, 0), 2)
-                cv2.putText(frame, f"ID: {track_id}", (xmin, ymin - 10),
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
+            cv2.rectangle(frame, (xmin, ymin), (xmax, ymax), (0, 255, 0), 2)
+            cv2.putText(frame, f"ID: {track_id}", (xmin, ymin - 10),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
 
         total_frames += 1
         elapsed = time.time() - start_time
