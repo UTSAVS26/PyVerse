@@ -17,6 +17,8 @@ def run_tracker(cap, model, tracker, mode="cpu"):
 
         results = model(frame, stream=True, verbose=False)
 
+        # always call update(), even if there are no detections this frame
+        dets = np.empty((0, 5))          # xmin, ymin, xmax, ymax, score
         for res in results:
             if not hasattr(res, "boxes") or res.boxes is None:
                 continue
@@ -31,11 +33,14 @@ def run_tracker(cap, model, tracker, mode="cpu"):
 
             boxes = res.boxes.xyxy[mask].cpu().numpy()
             scores = conf[mask].cpu().numpy().reshape(-1, 1)
-            dets = np.hstack((boxes, scores))
+            # accumulate detections from every result
+            dets = np.vstack((dets, np.hstack((boxes, scores))))
 
-            tracks = tracker.update(dets).astype(int)
+        # now update once per frame, even if dets is empty
+        tracks = tracker.update(dets).astype(int)
 
-            for xmin, ymin, xmax, ymax, track_id in tracks:
+        for xmin, ymin, xmax, ymax, track_id in tracks:
+            …
                 cv2.rectangle(frame, (xmin, ymin), (xmax, ymax), (0, 255, 0), 2)
                 cv2.putText(frame, f"ID: {track_id}", (xmin, ymin - 10),
                             cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
