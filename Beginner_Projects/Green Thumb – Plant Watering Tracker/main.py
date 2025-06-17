@@ -1,81 +1,86 @@
 import json
-from datetime import datetime, timedelta
+import argparse
+from datetime import datetime, timedelta, date
+from colorama import init, Fore, Style
 import os
+
+# Initialize colorama
+init(autoreset=True)
 
 DATA_FILE = "plants.json"
 
-def load_plants():
+def load_data():
     if not os.path.exists(DATA_FILE):
         return []
     with open(DATA_FILE, "r") as f:
         return json.load(f)
 
-def save_plants(plants):
+def save_data(plants):
     with open(DATA_FILE, "w") as f:
         json.dump(plants, f, indent=4)
 
-def add_plant():
-    name = input("🌱 Enter plant name: ")
-    freq = int(input("💧 Water every how many days? "))
-    today = datetime.today().strftime("%Y-%m-%d")
+def add_plant(name, frequency, last_watered):
+    plants = load_data()
     plant = {
         "name": name,
-        "frequency": freq,
-        "last_watered": today
+        "frequency": frequency,
+        "last_watered": last_watered
     }
-    plants = load_plants()
     plants.append(plant)
-    save_plants(plants)
-    print(f"✅ '{name}' added to your garden!")
+    save_data(plants)
+    print(Fore.GREEN + f"Plant '{name}' added successfully.")
 
 def list_plants():
-    plants = load_plants()
+    plants = load_data()
     if not plants:
-        print("No plants added yet!")
+        print(Fore.YELLOW + "No plants found.")
         return
-    print("\n🪴 Your Plants:")
-    today = datetime.today()
-    for p in plants:
-        last = datetime.strptime(p["last_watered"], "%Y-%m-%d")
-        next_due = last + timedelta(days=p["frequency"])
-        status = "✅ On track" if next_due > today else "⚠️ Needs water!"
-        print(f"- {p['name']} | Water every {p['frequency']} days | Last: {p['last_watered']} | Next: {next_due.date()} | {status}")
 
-def water_plant():
-    name = input("Enter plant name to mark as watered: ")
-    plants = load_plants()
-    found = False
-    for p in plants:
-        if p["name"].lower() == name.lower():
-            p["last_watered"] = datetime.today().strftime("%Y-%m-%d")
-            found = True
-            break
-    if found:
-        save_plants(plants)
-        print(f"💧 {name} marked as watered today!")
-    else:
-        print("❌ Plant not found.")
+    today = date.today()
+    for plant in plants:
+        last_watered_date = datetime.strptime(plant['last_watered'], "%Y-%m-%d").date()
+        next_watering_date = last_watered_date + timedelta(days=plant['frequency'])
+
+        if next_watering_date < today:
+            print(Fore.RED + f"{plant['name']} is overdue for watering! (Next: {next_watering_date})")
+        else:
+            print(Fore.GREEN + f"{plant['name']} is on track. (Next: {next_watering_date})")
+
+def water_plant(name):
+    plants = load_data()
+    for plant in plants:
+        if plant['name'].lower() == name.lower():
+            plant['last_watered'] = str(date.today())
+            save_data(plants)
+            print(Fore.CYAN + f"{name} has been watered today.")
+            return
+    print(Fore.RED + f"No plant named '{name}' found.")
 
 def main():
-    while True:
-        print("\n===== Green Thumb =====")
-        print("1. Add Plant")
-        print("2. List Plants")
-        print("3. Mark Plant as Watered")
-        print("4. Exit")
-        choice = input("Choose an option: ")
+    parser = argparse.ArgumentParser(description="Green Thumb – Plant Watering Tracker")
+    subparsers = parser.add_subparsers(dest="command", required=True)
 
-        if choice == "1":
-            add_plant()
-        elif choice == "2":
-            list_plants()
-        elif choice == "3":
-            water_plant()
-        elif choice == "4":
-            print("Goodbye! 🌿")
-            break
-        else:
-            print("❗ Invalid choice.")
+    # Add command
+    add_parser = subparsers.add_parser("add", help="Add a new plant")
+    add_parser.add_argument("name", help="Name of the plant")
+    add_parser.add_argument("frequency", type=int, help="Watering frequency in days")
+    add_parser.add_argument("--last_watered", default=str(date.today()), help="Last watered date (YYYY-MM-DD)")
+
+    # List command
+    subparsers.add_parser("list", help="List all plants with next watering dates")
+
+    # Water command
+    water_parser = subparsers.add_parser("water", help="Mark a plant as watered")
+    water_parser.add_argument("name", help="Name of the plant to mark as watered")
+
+    args = parser.parse_args()
+
+    if args.command == "add":
+        add_plant(args.name, args.frequency, args.last_watered)
+    elif args.command == "list":
+        list_plants()
+    elif args.command == "water":
+        water_plant(args.name)
 
 if __name__ == "__main__":
     main()
