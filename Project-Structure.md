@@ -10,6 +10,10 @@
     * [Generate Keys](Advanced_Projects/EdgeLock-X/generate_keys.py)
     * [Tee Server](Advanced_Projects/EdgeLock-X/tee_server.py)
     * [Web Server](Advanced_Projects/EdgeLock-X/web_server.py)
+  * Excel To Csv
+    * [Excel To Csv](Advanced_Projects/Excel%20to%20CSV/excel_to_csv.py)
+  * File Organizer Gui
+    * [Filegui](Advanced_Projects/File_Organizer_GUI/filegui.py)
   * Gui Based Taskmanager
     * [Mang](Advanced_Projects/GUI%20Based%20TaskManager/mang.py)
   * Navibot-Voice-Assistant
@@ -169,6 +173,7 @@
     * [Ternarysearch](Algorithms_and_Data_Structures/SearchingAlgorithms/TernarySearch.py)
   * Stack
     * [Balanced Parentheses Checker](Algorithms_and_Data_Structures/Stack/Balanced_parentheses_checker.py)
+    * [Implement Stack Using Queue](Algorithms_and_Data_Structures/Stack/Implement_Stack_Using_Queue.py)
     * [Infixtopostifix](Algorithms_and_Data_Structures/Stack/InfixToPostifix.py)
     * [Infixtoprefix](Algorithms_and_Data_Structures/Stack/InfixToPrefix.py)
     * [Min Stack](Algorithms_and_Data_Structures/Stack/Min_Stack.py)
@@ -225,6 +230,8 @@
     * [Tree Traversal Visualizer](Algorithms_and_Data_Structures/visualizer/tree_traversal_visualizer.py)
 
 ## Automation Tools
+  * Auto Email Greet Bot
+    * [Auto Greet Bot](Automation_Tools/Auto_email_greet_bot/auto_greet_bot.py)
   * Autofill Personal Info Using Aadhar Card Image
     * Ocr Adhaar Api
       * [App](Automation_Tools/Autofill%20personal%20info%20using%20Aadhar%20Card%20Image/OCR%20ADHAAR%20API/app.py)
@@ -286,8 +293,6 @@
     * [Email Automation](Beginner_Projects/Email_Automation/email_automation.py)
   * Escape The Maze
     * [Escapethemaze](Beginner_Projects/Escape%20the%20Maze/Escapethemaze.py)
-  * Excel To Csv
-    * [Exceltocsv](Beginner_Projects/Excel%20to%20CSV/excelToCsv.py)
   * File Sorter
     * [App](Beginner_Projects/File%20Sorter/App.py)
     * Theme
@@ -467,6 +472,12 @@
     * [Virtualpainter](Data_Science/AI%20Virtual%20Painter/VirtualPainter.py)
   * Analysis Of Mortality Rate
     * [Left Handers Vs Right Handers](Data_Science/Analysis%20of%20Mortality%20Rate/LEFT_HANDERS_vs_RIGHT_HANDERS.ipynb)
+  * Analysis Of Mortality Rate
+    * [Left Handers Vs Right Handers](Data_Science/Analysis_of_Mortality_Rate/LEFT_HANDERS_vs_RIGHT_HANDERS.ipynb)
+    * Refactored
+      * [Data Utils](Data_Science/Analysis_of_Mortality_Rate/refactored/data_utils.py)
+      * [Main](Data_Science/Analysis_of_Mortality_Rate/refactored/main.py)
+      * [Plot Utils](Data_Science/Analysis_of_Mortality_Rate/refactored/plot_utils.py)
   * Datavizlearnig
     * [Dataviz Snippets](Data_Science/DataVizLearnig/DataViz_Snippets.ipynb)
     * Movie Data Visualization
@@ -1130,6 +1141,10 @@
     * [Data-Analysis-Advance-Modelling-On-Pokemons](Machine_Learning/pokemon-data-analysis-and-legendary-classification-main/data-analysis-advance-modelling-on-pokemons.ipynb)
   * Smartphone Rate Prediction
     * [Main](Machine_Learning/smartphone_rate_prediction/main.py)
+
+## Real-Time Object Tracker
+  * [Main](Real-Time%20Object%20Tracker/main.py)
+  * [Short](Real-Time%20Object%20Tracker/short.py)
 
 ## Tutorials
   * Data Science
