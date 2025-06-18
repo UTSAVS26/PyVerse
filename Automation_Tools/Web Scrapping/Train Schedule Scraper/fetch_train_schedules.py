@@ -146,8 +146,9 @@ if st.button("🔍 Search Trains"):
         st.warning("Please enter both 'From' and 'To' locations.")
     else:
         with st.spinner("Launching browser and fetching train data..."):
+            driver = init_driver()
+            trains = []
             try:
-                driver = init_driver()
                 driver.get("https://www.goibibo.com/trains/")
                 driver.maximize_window()
                 time.sleep(5)
@@ -157,14 +158,17 @@ if st.button("🔍 Search Trains"):
                 select_date(driver, date.day)
                 click_search(driver)
                 trains = fetch_train_data(driver)
-                driver.quit()
-                if trains:
-                    st.success("✅ Train data fetched successfully!")
-                    st.json(trains)
-                    with open("train_data_with_prices.json", "w", encoding="utf-8") as f:
-                        json.dump(trains, f, indent=4, ensure_ascii=False)
-                    st.download_button("📥 Download JSON", data=json.dumps(trains, indent=2), file_name="train_data.json")
-                else:
-                    st.info("No trains found for the given route/date.")
             except Exception as e:
                 st.error(f"❌ Unexpected error: {e}")
+            finally:
+                driver.quit()
+
+            if trains:
+                st.success("✅ Train data fetched successfully!")
+                st.json(trains)
+                with open("train_data_with_prices.json", "w", encoding="utf-8") as f:
+                    json.dump(trains, f, indent=4, ensure_ascii=False)
+                st.download_button("📥 Download JSON", data=json.dumps(trains, indent=2), file_name="train_data.json")
+            else:
+                st.info("No trains found for the given route/date.")
+
