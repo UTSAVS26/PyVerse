@@ -108,7 +108,11 @@ def fetch_train_data(driver):
                 departure = train.find_element(By.CSS_SELECTOR, 'div:nth-child(3) > p').text
                 to_loc = train.find_element(By.CSS_SELECTOR, 'p.font16.grayText7.appendLeft6.textRight.rubik400').text
                 prices = train.find_elements(By.CSS_SELECTOR, 'p.font16.blackText2.rubik400')
-                price_vals = [int(p.text.replace("₹", "").strip()) for p in prices if "₹" in p.text]
+                price_vals = []
+                for p in prices:
+                    txt = p.text.replace("₹", "").strip()
+                    if txt.isdigit():
+                        price_vals.append(int(txt))
                 min_price = f"₹ {min(price_vals)}" if price_vals else "N/A"
                 result.append({
                     "train_no": no,
