@@ -12,10 +12,12 @@ from webdriver_manager.chrome import ChromeDriverManager
 # Function to initialize the Selenium driver
 def init_driver():
     options = webdriver.ChromeOptions()
+    options.add_argument("--headless=new")   # renders without X server
     options.add_argument("--disable-gpu")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+    service = Service(ChromeDriverManager(cache_valid_range=30).install())  # cache 30 days
+    driver = webdriver.Chrome(service=service, options=options)
     return driver
 
 # Function to close login/signup pop-up
