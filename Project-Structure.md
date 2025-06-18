@@ -243,6 +243,8 @@
   * Playlist-Downloader
     * [Setup](Automation_Tools/Playlist-downloader/setup.py)
   * Web Scrapping
+    * Train Schedule Scraper
+      * [Fetch Train Schedules](Automation_Tools/Web%20Scrapping/Train%20Schedule%20Scraper/fetch_train_schedules.py)
     * [Webscrapping](Automation_Tools/Web%20Scrapping/WebScrapping.ipynb)
     * Linkedin Scraper
       * Linkedin Scraper
