@@ -52,7 +52,8 @@ def merge_sorted_batches_gpu(arr1, arr2):
     merge_kernel((blocks,), (threads_per_block,),
                  (arr1, arr2, C, np.int32(m), np.int32(n)))
 
-    cp.cuda.Device(0).synchronize()
+-   cp.cuda.Device(0).synchronize()
++   cp.cuda.get_current_device().synchronize()
     return C
 
 # -------------------------------
