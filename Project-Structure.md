@@ -504,8 +504,9 @@
     * [Lead Score Model Building](Data_Science/Lead%20Conversion%20Case%20Study/Lead%20Score%20Model%20Building.ipynb)
   * Placement Analysis
     * [Placement Analysis](Data_Science/Placement%20Analysis/Placement_Analysis.ipynb)
-  * Student Performance Visualisation
+  * Studentperformancevisualisation
     * [Visualisation](Data_Science/StudentPerformanceVisualisation/Visualisation.ipynb)
+    * [Viz Usingsql](Data_Science/StudentPerformanceVisualisation/Viz_usingSQL.ipynb)
   * Unemployment Analysis Due To Covid
     * [Unemployment Analysis](Data_Science/Unemployment%20Analysis%20due%20to%20COVID/UNEMPLOYMENT_ANALYSIS.ipynb)
   * Whatsapp Chat Analyzer
@@ -828,6 +829,8 @@
   * Pdf-Analyzer
     * [Flask-Server](Generative-AI/PDF-Analyzer/flask-server.py)
     * [Streamlit App](Generative-AI/PDF-Analyzer/streamlit_app.py)
+  * Talk-With-Your-Pdf-Reader
+    * [Main](Generative-AI/Talk-with-your-pdf-reader/main.py)
   * Turn Pictures Into Story
     * [App](Generative-AI/Turn%20Pictures%20Into%20Story/app.py)
   * Image-To-3D Model
