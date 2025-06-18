@@ -64,11 +64,16 @@ Then open the provided local URL (e.g., `http://localhost:8501`) in your browser
 
 ---
 
+## Implementation Results
+
+![image](https://github.com/user-attachments/assets/0efcaeca-3c50-4bee-9f1d-4c5a1c91a11f)
+![image](https://github.com/user-attachments/assets/efb5f55e-9ca2-403b-9b28-ca65ec98cd15)
+![image](https://github.com/user-attachments/assets/491d542b-ef06-48b6-b5bb-c727a6328d69)
+
+---
 ## 💻 Connect With Me
 
 * 👨‍💻 GitHub: [Tanishq-789](https://github.com/Tanishq-789)
 * 🔗 LinkedIn: [Tanishq Shinde](https://www.linkedin.com/in/tanishq-shinde977)
 
 ---
-
-⭐ If you find this project helpful, consider giving it a star!
