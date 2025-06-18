@@ -19,7 +19,8 @@ country = st.sidebar.selectbox("Select Country", sorted(countries))
 country_df = df[df['Country'] == country].sort_values('date')
 
 # most recent stats
-latest = country_df.sort_values('date').iloc[-1]
+latest = country_df.iloc[-1]
+
 st.header(f"Latest Data for {country} ({latest['date'][:4]})")
 st.write({
     "GDP": latest["GDP"],
