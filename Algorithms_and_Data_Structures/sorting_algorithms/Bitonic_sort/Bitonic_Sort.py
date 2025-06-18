@@ -74,6 +74,9 @@ def recursive_gpu_merge(batches):
 # Full Pipeline: Sort + Merge
 # -------------------------------
 def full_gpu_sort_large_array(arr_np, batch_size=50_000_000):
+    # Ensure input is int32 for compatibility with merge kernel
+    if arr_np.dtype != np.int32:
+        arr_np = arr_np.astype(np.int32)
     total_size = arr_np.size
     num_batches = math.ceil(total_size / batch_size)
 
@@ -86,6 +89,7 @@ def full_gpu_sort_large_array(arr_np, batch_size=50_000_000):
         print(f"🔢 Sorting batch {i+1}/{num_batches} [{start}:{end}]...")
         batch = cp.asarray(arr_np[start:end])
         sorted_batch = cp.sort(batch)
+        # …
         sorted_batches_gpu.append(sorted_batch)
 
     print("🔁 Merging all GPU batches recursively...")
