@@ -39,10 +39,13 @@ merge_kernel = cp.RawKernel(merge_kernel_code, 'merge_kernel')
 # Merge Two Sorted Batches on GPU
 # -------------------------------
 def merge_sorted_batches_gpu(arr1, arr2):
+    if arr1.dtype != cp.int32 or arr2.dtype != cp.int32:
+        raise TypeError("merge_kernel expects int32 arrays; got "
+                        f"{arr1.dtype} and {arr2.dtype}")
     m, n = arr1.size, arr2.size
     total = m + n
     C = cp.empty(total, dtype=arr1.dtype)
-
+    # … rest of implementation …
     threads_per_block = 256
     blocks = (total + threads_per_block - 1) // threads_per_block
 
