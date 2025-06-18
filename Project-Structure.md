@@ -829,6 +829,8 @@
   * Pdf-Analyzer
     * [Flask-Server](Generative-AI/PDF-Analyzer/flask-server.py)
     * [Streamlit App](Generative-AI/PDF-Analyzer/streamlit_app.py)
+  * Resume-Analyzer
+    * [Resume Analyzer](Generative-AI/Resume-Analyzer/resume_analyzer.py)
   * Talk-With-Your-Pdf-Reader
     * [Main](Generative-AI/Talk-with-your-pdf-reader/main.py)
   * Turn Pictures Into Story
