@@ -470,6 +470,9 @@
   * Ai Virtual Painter
     * [Handtrackingmodule](Data_Science/AI%20Virtual%20Painter/HandTrackingModule.py)
     * [Virtualpainter](Data_Science/AI%20Virtual%20Painter/VirtualPainter.py)
+  * Advanced Animated Time Series Analysis
+    * [Water Cycle Disruption](Data_Science/Advanced%20animated%20time%20series%20analysis/water_cycle_disruption.py)
+    * [Water Cycle Disruption Graph Only](Data_Science/Advanced%20animated%20time%20series%20analysis/water_cycle_disruption_graph_only.py)
   * Analysis Of Mortality Rate
     * [Left Handers Vs Right Handers](Data_Science/Analysis%20of%20Mortality%20Rate/LEFT_HANDERS_vs_RIGHT_HANDERS.ipynb)
   * Analysis Of Mortality Rate
