@@ -47,8 +47,7 @@ scatters = {}
 lines = {}
 reg_lines = {}
 
-from matplotlib.animation import FuncAnimation, PillowWriter
-
+# (no need for a second import – first one at the top is enough)
 def plot_graph(data, interpolated_data, regression_lines, regression_results, future_years):
     fig, ax = plt.subplots(figsize=(12, 8))
     for idx, param in enumerate(parameters):
