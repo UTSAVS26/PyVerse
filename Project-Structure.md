@@ -243,6 +243,8 @@
   * Playlist-Downloader
     * [Setup](Automation_Tools/Playlist-downloader/setup.py)
   * Web Scrapping
+    * Train Schedule Scraper
+      * [Fetch Train Schedules](Automation_Tools/Web%20Scrapping/Train%20Schedule%20Scraper/fetch_train_schedules.py)
     * [Webscrapping](Automation_Tools/Web%20Scrapping/WebScrapping.ipynb)
     * Linkedin Scraper
       * Linkedin Scraper
@@ -470,6 +472,9 @@
   * Ai Virtual Painter
     * [Handtrackingmodule](Data_Science/AI%20Virtual%20Painter/HandTrackingModule.py)
     * [Virtualpainter](Data_Science/AI%20Virtual%20Painter/VirtualPainter.py)
+  * Advanced Animated Time Series Analysis
+    * [Water Cycle Disruption](Data_Science/Advanced%20animated%20time%20series%20analysis/water_cycle_disruption.py)
+    * [Water Cycle Disruption Graph Only](Data_Science/Advanced%20animated%20time%20series%20analysis/water_cycle_disruption_graph_only.py)
   * Analysis Of Mortality Rate
     * [Left Handers Vs Right Handers](Data_Science/Analysis%20of%20Mortality%20Rate/LEFT_HANDERS_vs_RIGHT_HANDERS.ipynb)
   * Analysis Of Mortality Rate
@@ -501,6 +506,9 @@
     * [Lead Score Model Building](Data_Science/Lead%20Conversion%20Case%20Study/Lead%20Score%20Model%20Building.ipynb)
   * Placement Analysis
     * [Placement Analysis](Data_Science/Placement%20Analysis/Placement_Analysis.ipynb)
+  * Studentperformancevisualisation
+    * [Visualisation](Data_Science/StudentPerformanceVisualisation/Visualisation.ipynb)
+    * [Viz Usingsql](Data_Science/StudentPerformanceVisualisation/Viz_usingSQL.ipynb)
   * Unemployment Analysis Due To Covid
     * [Unemployment Analysis](Data_Science/Unemployment%20Analysis%20due%20to%20COVID/UNEMPLOYMENT_ANALYSIS.ipynb)
   * Whatsapp Chat Analyzer
@@ -823,6 +831,10 @@
   * Pdf-Analyzer
     * [Flask-Server](Generative-AI/PDF-Analyzer/flask-server.py)
     * [Streamlit App](Generative-AI/PDF-Analyzer/streamlit_app.py)
+  * Resume-Analyzer
+    * [Resume Analyzer](Generative-AI/Resume-Analyzer/resume_analyzer.py)
+  * Talk-With-Your-Pdf-Reader
+    * [Main](Generative-AI/Talk-with-your-pdf-reader/main.py)
   * Turn Pictures Into Story
     * [App](Generative-AI/Turn%20Pictures%20Into%20Story/app.py)
   * Image-To-3D Model
