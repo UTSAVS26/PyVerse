@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 import time
+import torch
 from ultralytics import YOLO
 from sort import Sort  # Simple Online & Realtime Tracking
 
