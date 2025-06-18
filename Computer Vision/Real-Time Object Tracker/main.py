@@ -29,9 +29,9 @@ def run_tracker(cap, model, tracker, mode="cpu"):
                 continue
 
             mask = conf > 0.3
-            if mask.sum() == 0:
+            # no boxes above confidence threshold
+            if mask.sum().item() == 0:
                 continue
-
             boxes = res.boxes.xyxy[mask].cpu().numpy()
             scores = conf[mask].cpu().numpy().reshape(-1, 1)
             # accumulate detections from every result
