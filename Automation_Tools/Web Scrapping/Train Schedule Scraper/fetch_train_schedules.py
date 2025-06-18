@@ -147,7 +147,6 @@ if st.button("🔍 Search Trains"):
     else:
         with st.spinner("Launching browser and fetching train data..."):
             driver = init_driver()
-            trains = []
             try:
                 driver.get("https://www.goibibo.com/trains/")
                 driver.maximize_window()
