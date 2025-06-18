@@ -27,9 +27,11 @@ def close_popup(driver):
             EC.element_to_be_clickable((By.XPATH, "/html/body/div/div/div[2]/div[1]"))
         )
         close.click()
-    except:
-        pass
-
+-    except:
+-        pass
++    except TimeoutException:
++        # Popup did not appear – nothing to close.
++        pass
 def enter_from_location(driver, location):
     try:
         from_box = WebDriverWait(driver, 10).until(
