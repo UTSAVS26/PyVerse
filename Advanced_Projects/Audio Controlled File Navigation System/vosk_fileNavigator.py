@@ -28,14 +28,16 @@ class FileNavigator:
                          "list", "up", "down", "rename", 
                          "delete", "create", 
                          "close"]
+        #add more commands and make their functions to increase and add functionality
         
         self.system_folders = {
             "downloads": str(Path.home() / "Downloads"),
-            "documents": str('C:/Users/khann/OneDrive/Documents'),
+            "documents": str(Path.home() / "Documents"),
             "desktop": str(Path.home() / "Desktop"),
             "pictures": str(Path.home() / "Pictures"),
             "music": str(Path.home() / "Music"),
             "videos": str(Path.home() / "Videos"),
+            #add more appropriate folder paths that you want to use
         }
 
 
