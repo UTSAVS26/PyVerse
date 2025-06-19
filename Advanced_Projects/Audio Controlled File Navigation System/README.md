@@ -13,7 +13,7 @@ This project allows you to control file navigation and basic file operations on 
 
 ### 1. Clone the Repository
 ```
-git clone <repo-url>
+git clone https://github.com/UjjWaL-0911/PyVerse.git
 cd Audio-Controlled-File-Navigation-System
 ```
 
