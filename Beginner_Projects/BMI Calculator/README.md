@@ -33,7 +33,7 @@ Users can input their weight and height, and the app calculates the BMI and disp
 4. Run the script using:
 
 ```bash
-python bmi_calculator.py
+python BMI.py
 ```
 
 ---
