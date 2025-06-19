@@ -1,0 +1,5 @@
+#For Using Vosk
+vosk
+sounddevice
+pyaudio
+pyautogui
