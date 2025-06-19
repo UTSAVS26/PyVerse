@@ -6,7 +6,6 @@ This is a beginner-friendly **Body Mass Index (BMI) Calculator** built with Pyth
 Users can input their weight and height, and the app calculates the BMI and displays the corresponding weight category.
 
 ---
-
 ## ✅ Features
 
 - Simple and clean GUI interface
