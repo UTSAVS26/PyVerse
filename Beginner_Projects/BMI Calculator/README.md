@@ -28,7 +28,7 @@ Users can input their weight and height, and the app calculates the BMI and disp
 
 1. Download or clone this repository.
 2. Open a terminal or command prompt.
-3. Navigate to the directory where `bmi_calculator.py` is saved.
+3. Navigate to the directory where `BMI.py` is saved.
 4. Run the script using:
 
 ```bash
