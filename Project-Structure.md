@@ -215,6 +215,8 @@
     * [All](Algorithms_and_Data_Structures/queue_visualizer/all.py)
     * [Circular](Algorithms_and_Data_Structures/queue_visualizer/circular.py)
   * Sorting Algorithms
+    * Bitonic Sort
+      * [Bitonic Sort](Algorithms_and_Data_Structures/sorting_algorithms/Bitonic_sort/Bitonic_Sort.py)
     * [Bubble Sort](Algorithms_and_Data_Structures/sorting_algorithms/Bubble_Sort.py)
     * [Counting Sort](Algorithms_and_Data_Structures/sorting_algorithms/Counting_sort.py)
     * [Heap Sort](Algorithms_and_Data_Structures/sorting_algorithms/Heap_sort.py)
@@ -222,6 +224,7 @@
     * [Merge Sort](Algorithms_and_Data_Structures/sorting_algorithms/Merge_Sort.py)
     * [Quick Sort](Algorithms_and_Data_Structures/sorting_algorithms/Quick_sort.py)
     * [Radix Sort](Algorithms_and_Data_Structures/sorting_algorithms/Radix_Sort.py)
+    * [Shell Sort](Algorithms_and_Data_Structures/sorting_algorithms/Shell_sort.py)
     * [Tim Sort](Algorithms_and_Data_Structures/sorting_algorithms/Tim_Sort.py)
   * Visualizer
     * [Binary Search Tree Visualizer](Algorithms_and_Data_Structures/visualizer/binary_search_tree_visualizer.py)
