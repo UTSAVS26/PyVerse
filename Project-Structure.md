@@ -427,6 +427,9 @@
     * [Train](Computer%20Vision/Leprosy%20Detection/train.py)
   * Object Size Detection
     * [App](Computer%20Vision/Object%20Size%20Detection/app.py)
+  * Real-Time Object Tracker
+    * [Main](Computer%20Vision/Real-Time%20Object%20Tracker/main.py)
+    * [Short](Computer%20Vision/Real-Time%20Object%20Tracker/short.py)
   * Volume Control Using Hand Gesture
     * [Gesturevolume](Computer%20Vision/Volume%20Control%20Using%20Hand%20Gesture/GestureVolume.py)
     * [Handtrackingmodule](Computer%20Vision/Volume%20Control%20Using%20Hand%20Gesture/HandTrackingModule.py)
@@ -1160,10 +1163,6 @@
     * [Data-Analysis-Advance-Modelling-On-Pokemons](Machine_Learning/pokemon-data-analysis-and-legendary-classification-main/data-analysis-advance-modelling-on-pokemons.ipynb)
   * Smartphone Rate Prediction
     * [Main](Machine_Learning/smartphone_rate_prediction/main.py)
-
-## Real-Time Object Tracker
-  * [Main](Real-Time%20Object%20Tracker/main.py)
-  * [Short](Real-Time%20Object%20Tracker/short.py)
 
 ## Tutorials
   * Data Science
