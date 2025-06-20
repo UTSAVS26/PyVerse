@@ -12,8 +12,11 @@ def sha256_hash(password: str) -> bytes:
 
 def get_file_hash(filepath: str) -> str:
     """Return SHA-256 hash of the given file."""
-    with open(filepath, "rb") as f:
-        return hashlib.sha256(f.read()).hexdigest()
+    try:
+        with open(filepath, "rb") as f:
+            return hashlib.sha256(f.read()).hexdigest()
+    except (FileNotFoundError, PermissionError) as e:
+        raise ValueError(f"Cannot read file {filepath}: {e}")
 
 # === Encryption ===
 
