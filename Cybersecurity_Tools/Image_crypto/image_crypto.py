@@ -21,11 +21,19 @@ def get_file_hash(filepath: str) -> str:
 # === Encryption ===
 
 def encrypt_image(image_path: str, password: str, output_path: str = None):
+    if not os.path.exists(image_path):
+        raise FileNotFoundError(f"Input file not found: {image_path}")
+    if not password.strip():
+        raise ValueError("Password cannot be empty")
+
     key = sha256_hash(password)
     iv = get_random_bytes(16)
 
-    with open(image_path, "rb") as f:
-        plaintext = f.read()
+    try:
+        with open(image_path, "rb") as f:
+            plaintext = f.read()
+    except (PermissionError, IOError) as e:
+        raise ValueError(f"Cannot read input file: {e}")
 
     cipher = AES.new(key, AES.MODE_CBC, iv)
     ciphertext = cipher.encrypt(pad(plaintext, AES.block_size))
@@ -35,12 +43,14 @@ def encrypt_image(image_path: str, password: str, output_path: str = None):
     if not output_path:
         output_path = image_path + ".enc"
 
-    with open(output_path, "wb") as f:
-        f.write(encrypted_data)
+    try:
+        with open(output_path, "wb") as f:
+            f.write(encrypted_data)
+    except (PermissionError, IOError) as e:
+        raise ValueError(f"Cannot write output file: {e}")
 
     print(f"[+] Encrypted image saved to: {output_path}")
     print(f"[✓] Original image SHA-256 hash: {hashlib.sha256(plaintext).hexdigest()}")
-
 # === Decryption ===
 
 def decrypt_image(enc_path: str, password: str, output_path: str = None):
