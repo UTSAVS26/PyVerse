@@ -54,28 +54,51 @@ def encrypt_image(image_path: str, password: str, output_path: str = None):
 # === Decryption ===
 
 def decrypt_image(enc_path: str, password: str, output_path: str = None):
+    if not os.path.exists(enc_path):
+        raise FileNotFoundError(f"Encrypted file not found: {enc_path}")
+    if not password.strip():
+        raise ValueError("Password cannot be empty")
+        
     key = sha256_hash(password)
 
-    with open(enc_path, "rb") as f:
-        enc_data = f.read()
+    try:
+        with open(enc_path, "rb") as f:
+            enc_data = f.read()
+    except (PermissionError, IOError) as e:
+        raise ValueError(f"Cannot read encrypted file: {e}")
+    
+    if len(enc_data) < 16:
+        raise ValueError("Invalid encrypted file: too short to contain IV")
 
     iv = enc_data[:16]
     ciphertext = enc_data[16:]
 
-    cipher = AES.new(key, AES.MODE_CBC, iv)
-    plaintext = unpad(cipher.decrypt(ciphertext), AES.block_size)
+    try:
+        cipher = AES.new(key, AES.MODE_CBC, iv)
+        plaintext = unpad(cipher.decrypt(ciphertext), AES.block_size)
+    except ValueError as e:
+        raise ValueError("Decryption failed. Check password or file integrity.") from e
 
     if not output_path:
-        # Try to restore original filename if possible
-        base = enc_path.replace(".enc", "")
-        output_path = base + ".dec.png"
+        # Preserve original extension instead of hardcoding .png
+        if enc_path.endswith(".enc"):
+            base = enc_path[:-4]  # Remove .enc
+            output_path = (
+                base + ".dec" + os.path.splitext(base)[1]
+                if os.path.splitext(base)[1]
+                else base + ".dec"
+            )
+        else:
+            output_path = enc_path + ".dec"
 
-    with open(output_path, "wb") as f:
-        f.write(plaintext)
+    try:
+        with open(output_path, "wb") as f:
+            f.write(plaintext)
+    except (PermissionError, IOError) as e:
+        raise ValueError(f"Cannot write decrypted file: {e}")
 
     print(f"[+] Decrypted image saved to: {output_path}")
     print(f"[✓] Decrypted image SHA-256 hash: {hashlib.sha256(plaintext).hexdigest()}")
-
 # === CLI Interface ===
 
 import getpass
