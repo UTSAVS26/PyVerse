@@ -201,6 +201,10 @@
     * [Menu Driven Code For Tree Traversals](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Tree_Traversals.py)
     * [Sum Tree](Algorithms_and_Data_Structures/Trees/Sum_Tree.py)
     * [Symmetric Tree](Algorithms_and_Data_Structures/Trees/Symmetric_Tree.py)
+  * Trie
+    * [Test Trie](Algorithms_and_Data_Structures/Trie/test_trie.py)
+    * [Trie](Algorithms_and_Data_Structures/Trie/trie.py)
+    * [Trie Example](Algorithms_and_Data_Structures/Trie/trie_example.py)
   * Avl Tree Visualizer
     * [Main](Algorithms_and_Data_Structures/avl_tree_visualizer/main.py)
   * Balancedbintree
