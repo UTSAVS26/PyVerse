@@ -78,22 +78,37 @@ def decrypt_image(enc_path: str, password: str, output_path: str = None):
 
 # === CLI Interface ===
 
+import getpass
+
 def main():
     print("=== SHA-256 + AES Image Encrypter/Decrypter ===")
-    mode = input("Choose mode (encrypt/decrypt): ").strip().lower()
 
-    if mode == "encrypt":
-        image_path = input("Enter image path: ").strip()
-        password = input("Enter password: ").strip()
-        encrypt_image(image_path, password)
+    try:
+        mode = input("Choose mode (encrypt/decrypt): ").strip().lower()
 
-    elif mode == "decrypt":
-        enc_path = input("Enter encrypted file path: ").strip()
-        password = input("Enter password: ").strip()
-        decrypt_image(enc_path, password)
+        if mode == "encrypt":
+            image_path = input("Enter image path: ").strip()
+            if not image_path:
+                print("Error: Image path cannot be empty")
+                return
+            password = getpass.getpass("Enter password: ")
+            encrypt_image(image_path, password)
 
-    else:
-        print("Invalid mode. Please choose 'encrypt' or 'decrypt'.")
+        elif mode == "decrypt":
+            enc_path = input("Enter encrypted file path: ").strip()
+            if not enc_path:
+                print("Error: Encrypted file path cannot be empty")
+                return
+            password = getpass.getpass("Enter password: ")
+            decrypt_image(enc_path, password)
+
+        else:
+            print("Invalid mode. Please choose 'encrypt' or 'decrypt'.")
+
+    except KeyboardInterrupt:
+        print("\nOperation cancelled by user.")
+    except Exception as e:
+        print(f"Error: {e}")
 
 if __name__ == "__main__":
     main()
