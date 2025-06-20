@@ -34,7 +34,7 @@ class FileNavigator:
         if path.exists():
             os.startfile(path)
             print(f"Opened: {path}")
-            self.current_dir=path;
+            self.current_dir=path
         else:
             print(f"Path not found: {path}")
 
@@ -129,7 +129,7 @@ class FileNavigator:
                 if name != 'delete':
                     self.delete(name)
                 else:
-                    print(f"\nContent to be deleted not Found")
+                    print("\nContent to be deleted not Found")
 
             elif "create" in recognized_text:
                 name = recognized_text.split()[-1];

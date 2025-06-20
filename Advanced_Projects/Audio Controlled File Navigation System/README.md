@@ -12,14 +12,14 @@ This project allows you to control file navigation and basic file operations on 
 ## Setup Instructions
 
 ### 1. Clone the Repository
-```
-git clone https://github.com/UjjWaL-0911/PyVerse.git
+```bash
+git clone https://github.com/UTSAVS26/PyVerse.git
 cd Audio-Controlled-File-Navigation-System
 ```
 
 ### 2. Install Python Dependencies
 Make sure you have Python 3.7+ installed. Then run:
-```
+```bash
 pip install -r requirements.txt
 ```
 
@@ -30,7 +30,7 @@ pip install -r requirements.txt
 ### Download and Setup Vosk Model
 1. Download the Vosk English model (e.g., `vosk-model-en-in-0.5`) from the [Vosk Models page](https://alphacephei.com/vosk/models).
 2. Extract the downloaded model folder into your project directory so that you have:
-   ```
+   ```text
    Audio Controlled File Navigation System/
      vosk-model-en-in-0.5/
        am/
@@ -40,7 +40,7 @@ pip install -r requirements.txt
 3. The code expects the model folder to be named exactly `vosk-model-en-in-0.5` in the project root. If you use a different model, update the path in the code accordingly.
 
 ### Run the Vosk Application
-```
+```bash
 python vosk_fileNavigator.py
 ```
 
@@ -53,7 +53,7 @@ python vosk_fileNavigator.py
 - For best performance, a CUDA-compatible GPU is recommended. If you do not have one, set `device="cpu"` in the script.
 
 ### Run the Whisper Application
-```
+```bash
 python whisper_fileNavigator.py
 ```
 
@@ -117,3 +117,23 @@ python whisper_fileNavigator.py
 - You can change the Whisper model size by editing the `model_size` variable in `whisper_fileNavigator.py`.
 - If you encounter issues with CUDA, you can set `device="cpu"` in the script.
 - The script prints debug information to help diagnose issues with audio input or model inference.
+
+
+## Troubleshooting
+
+### Common Issues
+
+#### "Model Not Found" Error
+- Ensure the vosk model is downloaded and extracted to the correct directory.
+- Check that the model folder name match exactly what's expected in the code.
+
+#### "CUDA not available" Error
+- The project uses CUDA by default.Go to whisper_navigator.py file and on line 12 change device="cuda" to device="cpu".
+
+#### "Microphone"
+- Check Windows privacy settings for microphone access.
+
+#### "Audio Input Problems
+- Test your microphone with other applications.
+- Try adjusting the `blocksize` parameter in the audio stream configuration.
+- ensure no other application are using the microphone exclusively.
