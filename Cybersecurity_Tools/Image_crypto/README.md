@@ -19,10 +19,8 @@ This project is a Python-based CLI tool that securely encrypts and decrypts imag
 
 1. **Clone the repository**
 
-```bash
-git clone https://github.com/yourusername/secure-image-encryption.git
-cd secure-image-encryption
-```
+git clone https://github.com/UTSAVS26/PyVerse.git
+cd PyVerse/Cybersecurity_Tools/Image_crypto
 
 2. **Create a virtual environment (recommended)**
 
