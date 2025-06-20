@@ -21,7 +21,7 @@ country_df = df[df['Country'] == country].sort_values('date')
 # most recent stats
 latest = country_df.iloc[-1]
 
-st.header(f"Latest Data for {country} ({latest['date'][:4]})")
+st.header(f"Latest Data for {country} ({latest['date'].year})")
 st.write({
     "GDP": latest["GDP"],
     "Unemployment Rate": latest["Unemployment Rate"],
