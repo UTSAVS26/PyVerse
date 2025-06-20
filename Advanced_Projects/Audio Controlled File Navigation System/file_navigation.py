@@ -13,7 +13,7 @@ class FileNavigator:
         
         self.system_folders = {
             "downloads": str(Path.home() / "Downloads"),
-            "documents": str('C:/Users/khann/OneDrive/Documents'),
+            "documents": str(Path.home() / "Documents"),
             "desktop": str(Path.home() / "Desktop"),
             "pictures": str(Path.home() / "Pictures"),
             "music": str(Path.home() / "Music"),
