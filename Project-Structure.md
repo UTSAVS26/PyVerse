@@ -201,6 +201,10 @@
     * [Menu Driven Code For Tree Traversals](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Tree_Traversals.py)
     * [Sum Tree](Algorithms_and_Data_Structures/Trees/Sum_Tree.py)
     * [Symmetric Tree](Algorithms_and_Data_Structures/Trees/Symmetric_Tree.py)
+  * Trie
+    * [Test Trie](Algorithms_and_Data_Structures/Trie/test_trie.py)
+    * [Trie](Algorithms_and_Data_Structures/Trie/trie.py)
+    * [Trie Example](Algorithms_and_Data_Structures/Trie/trie_example.py)
   * Avl Tree Visualizer
     * [Main](Algorithms_and_Data_Structures/avl_tree_visualizer/main.py)
   * Balancedbintree
@@ -215,6 +219,8 @@
     * [All](Algorithms_and_Data_Structures/queue_visualizer/all.py)
     * [Circular](Algorithms_and_Data_Structures/queue_visualizer/circular.py)
   * Sorting Algorithms
+    * Bitonic Sort
+      * [Bitonic Sort](Algorithms_and_Data_Structures/sorting_algorithms/Bitonic_sort/Bitonic_Sort.py)
     * [Bubble Sort](Algorithms_and_Data_Structures/sorting_algorithms/Bubble_Sort.py)
     * [Counting Sort](Algorithms_and_Data_Structures/sorting_algorithms/Counting_sort.py)
     * [Heap Sort](Algorithms_and_Data_Structures/sorting_algorithms/Heap_sort.py)
@@ -222,6 +228,7 @@
     * [Merge Sort](Algorithms_and_Data_Structures/sorting_algorithms/Merge_Sort.py)
     * [Quick Sort](Algorithms_and_Data_Structures/sorting_algorithms/Quick_sort.py)
     * [Radix Sort](Algorithms_and_Data_Structures/sorting_algorithms/Radix_Sort.py)
+    * [Shell Sort](Algorithms_and_Data_Structures/sorting_algorithms/Shell_sort.py)
     * [Tim Sort](Algorithms_and_Data_Structures/sorting_algorithms/Tim_Sort.py)
   * Visualizer
     * [Binary Search Tree Visualizer](Algorithms_and_Data_Structures/visualizer/binary_search_tree_visualizer.py)
@@ -420,6 +427,9 @@
     * [Train](Computer%20Vision/Leprosy%20Detection/train.py)
   * Object Size Detection
     * [App](Computer%20Vision/Object%20Size%20Detection/app.py)
+  * Real-Time Object Tracker
+    * [Main](Computer%20Vision/Real-Time%20Object%20Tracker/main.py)
+    * [Short](Computer%20Vision/Real-Time%20Object%20Tracker/short.py)
   * Volume Control Using Hand Gesture
     * [Gesturevolume](Computer%20Vision/Volume%20Control%20Using%20Hand%20Gesture/GestureVolume.py)
     * [Handtrackingmodule](Computer%20Vision/Volume%20Control%20Using%20Hand%20Gesture/HandTrackingModule.py)
@@ -439,6 +449,8 @@
     * [Encryption](Cybersecurity_Tools/File_encryption_tool/Encryption.py)
   * Ids Ips Tool
     * [Ids Ips](Cybersecurity_Tools/IDS_IPS%20Tool/ids_ips.py)
+  * Image Crypto
+    * [Image Crypto](Cybersecurity_Tools/Image_crypto/image_crypto.py)
   * Keylogger
     * [Keylogger](Cybersecurity_Tools/Keylogger/keylogger.py)
   * Netwrok Packet Analyzer
@@ -1153,10 +1165,6 @@
     * [Data-Analysis-Advance-Modelling-On-Pokemons](Machine_Learning/pokemon-data-analysis-and-legendary-classification-main/data-analysis-advance-modelling-on-pokemons.ipynb)
   * Smartphone Rate Prediction
     * [Main](Machine_Learning/smartphone_rate_prediction/main.py)
-
-## Real-Time Object Tracker
-  * [Main](Real-Time%20Object%20Tracker/main.py)
-  * [Short](Real-Time%20Object%20Tracker/short.py)
 
 ## Tutorials
   * Data Science
