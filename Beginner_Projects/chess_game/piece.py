@@ -17,6 +17,12 @@ class Piece:
     def get_color(self):
         return self.color
     
+    def get_piece_image(piece, images):
+    if piece is None:
+        return None
+    key = f"{piece.color}_{piece.__class__.__name__.lower()}"
+    return images.get(key)
+    
 class Pawn(Piece):
     
     def __init__(self ,color) -> None:

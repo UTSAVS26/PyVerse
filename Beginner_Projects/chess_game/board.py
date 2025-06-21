@@ -96,3 +96,7 @@ class Board:
                 print(f"{piece.symbol() if piece else '.'}  ", end='')
             print()  # Newline after each row
 
+    def getBoard(self):
+        return self.board
+
+
