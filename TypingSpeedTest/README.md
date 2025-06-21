@@ -25,6 +25,7 @@ The goal is to allow users to:
 2. Open terminal and navigate to the project folder.
 3. Run:
 ```bash
+pip install tk
 python typing_speed_test.py
 
 ## Sample Output
