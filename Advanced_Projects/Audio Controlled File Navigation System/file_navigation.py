@@ -2,6 +2,9 @@ from pathlib import Path
 import os
 import json
 import pyautogui
+import sys
+import subprocess
+import shutil
 
 class FileNavigator:
     def __init__(self):
@@ -20,6 +23,14 @@ class FileNavigator:
             "videos": str(Path.home() / "Videos"),
         }
 
+    def _open_cross_platform(self, path):
+        if sys.platform == "win32":
+            os.startfile(path)
+        elif sys.platform == "darwin":
+            subprocess.run(["open", str(path)])
+        else:
+            subprocess.run(["xdg-open", str(path)])
+
     def list_dir(self, path=None):
         path = Path(path) if path else self.current_dir
         if path.exists() and path.is_dir():
@@ -32,7 +43,7 @@ class FileNavigator:
     def open_path(self, path):
         path = Path(path)
         if path.exists():
-            os.startfile(path)
+            self._open_cross_platform(path)
             print(f"Opened: {path}")
             self.current_dir=path
         else:
@@ -40,14 +51,14 @@ class FileNavigator:
 
     def navigate_up(self):
         self.current_dir = self.current_dir.parent
-        os.startfile(self.current_dir)
+        self._open_cross_platform(self.current_dir)
 
     def navigate_down(self, folder):
         new_dir = self.current_dir / folder
         if new_dir.exists() and new_dir.is_dir():
             self.current_dir = new_dir
             print(f"Moved down to: {self.current_dir}")
-            os.startfile(self.current_dir)
+            self._open_cross_platform(self.current_dir)
         else:
             print(f"Folder not found: {folder}")
 
@@ -64,15 +75,15 @@ class FileNavigator:
         path = self.current_dir / name
         if path.exists():
             if path.is_dir():
-                for sub in path.iterdir():
-                    if sub.is_file():
-                        sub.unlink()
-                    else:
-                        print(f"Skipping subfolder: {sub}")
-                path.rmdir()
+                confirm = input(f"Delete directory '{name}' and all its contents? [y/N]: ")
+                if confirm.lower() == 'y':
+                    shutil.rmtree(path)
+                    print(f"Deleted: {name}")
+                else:
+                    print("Deletion cancelled.")
             else:
                 path.unlink()
-            print(f"Deleted: {name}")
+                print(f"Deleted: {name}")
         else:
             print(f"File/Folder not found: {name}")
 
