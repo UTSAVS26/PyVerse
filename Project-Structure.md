@@ -171,6 +171,10 @@
     * [Linearsearch](Algorithms_and_Data_Structures/SearchingAlgorithms/LinearSearch.py)
     * [Sublistsearch](Algorithms_and_Data_Structures/SearchingAlgorithms/SublistSearch.py)
     * [Ternarysearch](Algorithms_and_Data_Structures/SearchingAlgorithms/TernarySearch.py)
+  * Segment Tree
+    * [Segment Tree](Algorithms_and_Data_Structures/Segment_Tree/segment_tree.py)
+    * [Segment Tree Example](Algorithms_and_Data_Structures/Segment_Tree/segment_tree_example.py)
+    * [Test Segment Tree](Algorithms_and_Data_Structures/Segment_Tree/test_segment_tree.py)
   * Stack
     * [Balanced Parentheses Checker](Algorithms_and_Data_Structures/Stack/Balanced_parentheses_checker.py)
     * [Implement Stack Using Queue](Algorithms_and_Data_Structures/Stack/Implement_Stack_Using_Queue.py)
