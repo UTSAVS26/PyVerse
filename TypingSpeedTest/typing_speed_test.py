@@ -1,55 +1,61 @@
-import time
+import tkinter as tk
+from timeit import default_timer as timer
 import random
-import sys
-import os
 
-sentences=[
-    "Typing speed tests are fun and useful.",
-    "Did you know that the shortest complete sentence in the English language is 'I am'?",
-    "Another interesting fact is that 'rhythm' is the longest English word without a vowel.",
-    "The word 'set' has more definitions than any other word in the English dictionary, boasting hundreds of meanings.",
-    "These linguistic quirks highlight the rich and often surprising nature of the English vocabulary." 
-]
+class SpeedTypingTest:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Typing Speed Test")
+        self.root.geometry("600x350")
 
-def countDown(seconds=3):
-    print("\n Get Ready!!")
-    for i in range (seconds,0,-1):
-        print(f"{i}...")
-        time.sleep(1)
-    print("GO!!")
+        self.sentences = [
+            "The quick brown fox jumps over the lazy dog.",
+            "Speed typing improves accuracy and efficiency.",
+            "Python is a powerful programming language.",
+            "Practice makes perfect in typing speed."
+        ]
 
-def clear_console():
-    os.system('cls' if os.name == 'nt' else 'clear')
+        self.start_time = None
+        self.setup_ui()
 
-def typing_speed_test():
-    sentence=random.choice(sentences)
-    print("\n Type the following sentence:\n")
-    print(f" {sentence}\n")
-    input("Press Enter to start...")
+    def setup_ui(self):
+        self.sentence = random.choice(self.sentences)
+        self.label_sentence = tk.Label(self.root, text=self.sentence, font=("Arial", 14), wraplength=500)
+        self.label_sentence.pack(pady=20)
 
-    clear_console()
-    countDown()
+        self.entry = tk.Entry(self.root, width=60)
+        self.entry.pack(pady=10)
+        self.entry.bind("<Return>", lambda e: self.check_result())
 
-    start_time=end_time-start_time
-    time_in_minutes=elapsed_time/60
-    words_typed=len(user_input.split())
-    wpm=words_typed/time_in_minutes
+        self.button_done = tk.Button(self.root, text="Done", command=self.check_result, width=12, bg="lightblue")
+        self.button_done.pack(pady=5)
 
-    correct_chars=0
-    total_chars=len(sentence)
-    for i in range (min(len(user_input),total_chars)):
-        if user_input[i]==sentence[i]:
-            correct_chars+=1
-    accuracy=(correct_chars/total_chars)*100
-    print("\n Typing Report")
-    print("------------------------")
-    print("Original Sentence: ", sentence)
-    print("Your input : ", user_input)
-    print("Time Taken : {:.2f} seconds".format(elapsed_time))
-    print("📊 Typing Speed      : {:.2f} WPM".format(wpm))
-    print("🎯 Accuracy          : {:.2f}%".format(accuracy))
-    print("🔢 Correct Characters: {}/{}".format(correct_chars, total_chars))
+        self.button_retry = tk.Button(self.root, text="Try Again", command=self.reset_test, width=12, bg="lightgray")
+        self.button_retry.pack(pady=5)
 
-if __name__=="__main__":
-    typing_speed_test()
+        self.result_label = tk.Label(self.root, text="", font=("Arial", 12))
+        self.result_label.pack(pady=20)
 
+        self.start_time = timer()
+
+    def check_result(self):
+        typed = self.entry.get().strip()
+        if typed == self.sentence:
+            end = timer()
+            elapsed = round(end - self.start_time, 2)
+            wpm = round((len(self.sentence.split()) / elapsed) * 60, 2)
+            self.result_label.config(text=f"Time: {elapsed} sec | WPM: {wpm}", fg="green")
+        else:
+            self.result_label.config(text="Incorrect! Please try again.", fg="red")
+
+    def reset_test(self):
+        self.sentence = random.choice(self.sentences)
+        self.label_sentence.config(text=self.sentence)
+        self.entry.delete(0, tk.END)
+        self.result_label.config(text="")
+        self.start_time = timer()
+
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = SpeedTypingTest(root)
+    root.mainloop()
