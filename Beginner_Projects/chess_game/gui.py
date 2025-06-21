@@ -1,21 +1,23 @@
 import pygame
 from board import Board
+from game import Game
 
 def load_piece_images():
-    """Load all piece images and return a dictionary."""
+    """Load and scale all piece images to 60x60 and return a dictionary."""
+    size = (60, 60)
     return {
-        'white_pawn': pygame.image.load('images/white_pawn.png'),
-        'black_pawn': pygame.image.load('images/black_pawn.png'),
-        'white_rook': pygame.image.load('images/white_rook.png'),
-        'black_rook': pygame.image.load('images/black_rook.png'),
-        'white_knight': pygame.image.load('images/white_knight.png'),
-        'black_knight': pygame.image.load('images/black_knight.png'),
-        'white_bishop': pygame.image.load('images/white_bishop.png'),
-        'black_bishop': pygame.image.load('images/black_bishop.png'),
-        'white_queen': pygame.image.load('images/white_queen.png'),
-        'black_queen': pygame.image.load('images/black_queen.png'),
-        'white_king': pygame.image.load('images/white_king.png'),
-        'black_king': pygame.image.load('images/black_king.png'),
+        'white_pawn': pygame.transform.scale(pygame.image.load('pieces/wP.png'), size),
+        'black_pawn': pygame.transform.scale(pygame.image.load('pieces/bP.png'), size),
+        'white_rook': pygame.transform.scale(pygame.image.load('pieces/wR.png'), size),
+        'black_rook': pygame.transform.scale(pygame.image.load('pieces/bR.png'), size),
+        'white_knight': pygame.transform.scale(pygame.image.load('pieces/wN.png'), size),
+        'black_knight': pygame.transform.scale(pygame.image.load('pieces/bN.png'), size),
+        'white_bishop': pygame.transform.scale(pygame.image.load('pieces/wB.png'), size),
+        'black_bishop': pygame.transform.scale(pygame.image.load('pieces/bB.png'), size),
+        'white_queen': pygame.transform.scale(pygame.image.load('pieces/wQ.png'), size),
+        'black_queen': pygame.transform.scale(pygame.image.load('pieces/bQ.png'), size),
+        'white_king': pygame.transform.scale(pygame.image.load('pieces/wK.png'), size),
+        'black_king': pygame.transform.scale(pygame.image.load('pieces/bK.png'), size),
     }
 
 def get_piece_image(piece, images):
@@ -48,11 +50,35 @@ def initialize_game():
     return screen, board_obj, images
 
 def main():
-    screen, board_obj, images = initialize_game()
+    screen, _, images = initialize_game()
+    game = Game(color='white')
+    selected = None
     running = True
     while running:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
-        draw_board(screen, board_obj.board, images)
+            elif event.type == pygame.MOUSEBUTTONDOWN:
+                x, y = event.pos
+                row, col = y // 60, x // 60
+                if selected is None:
+                    piece = game.board.board[row][col]
+                    if piece is not None and piece.color == game.current_color:
+                        selected = (row, col)
+                else:
+                    moved = game.board.move_pieces(selected, (row, col))
+                    if moved:
+                        # Check for check, checkmate, or stalemate after a move
+                        if game.is_checkmate(game.current_color):
+                            print(f"Checkmate! {game.current_color} loses.")
+                            running = False
+                        elif game.is_in_check(game.current_color):
+                            print(f"{game.current_color} is in check!")
+                        game.switch_turns()
+                    selected = None
+
+        draw_board(screen, game.board.board, images)
     pygame.quit()
+
+if __name__ == "__main__":
+    main()

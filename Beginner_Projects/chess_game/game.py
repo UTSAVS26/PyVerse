@@ -31,7 +31,7 @@ class Game:
             for j in range(8):
                 piece = self.board.board[i][j]
                 if piece is not None and piece.color == opponent_color:
-                    if piece.is_valid_move((i,j),king_position,self.board):
+                    if piece.is_valid_move((i,j),king_position,self.board.board):
                         return True # king is in check
         
         return False
