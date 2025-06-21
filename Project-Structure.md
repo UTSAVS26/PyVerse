@@ -505,7 +505,9 @@
     * Model
       * [Logistic+Decision+Random Forest](Data_Science/Diabetes%20Analysis/Model/Logistic+Decision+Random_Forest.ipynb)
   * Economic Analysis
+    * [Economicanalysis](Data_Science/Economic%20Analysis/EconomicAnalysis.ipynb)
     * [Global Econoviz](Data_Science/Economic%20Analysis/Global_EconoViz.py)
+    * [App](Data_Science/Economic%20Analysis/app.py)
   * Google Search Analysis With Python
     * [Google Search Analysis With Python](Data_Science/Google%20Search%20Analysis%20with%20python/Google_Search_Analysis_with_python.ipynb)
   * Hotel Demand Eda And Forecasting Using Arima Model
