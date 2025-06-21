@@ -17,6 +17,8 @@ class Piece:
     def get_color(self):
         return self.color
     
+    
+    
 class Pawn(Piece):
     
     def __init__(self ,color) -> None:
@@ -151,7 +153,7 @@ class Bishop(Piece):
         row_initial ,col_initial = start_position[0] ,start_position[1]
         row_final ,col_final = end_position[0] ,end_position[1]
         
-        if not (0 <= row_final < 8) or (0 <= col_final < 8):
+        if not (0 <= row_final < 8 and 0 <= col_final < 8):
             return False
          # Check if the move is diagonal
         if abs(row_final - row_initial) != abs(col_final - col_initial):
