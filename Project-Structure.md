@@ -171,6 +171,10 @@
     * [Linearsearch](Algorithms_and_Data_Structures/SearchingAlgorithms/LinearSearch.py)
     * [Sublistsearch](Algorithms_and_Data_Structures/SearchingAlgorithms/SublistSearch.py)
     * [Ternarysearch](Algorithms_and_Data_Structures/SearchingAlgorithms/TernarySearch.py)
+  * Segment Tree
+    * [Segment Tree](Algorithms_and_Data_Structures/Segment_Tree/segment_tree.py)
+    * [Segment Tree Example](Algorithms_and_Data_Structures/Segment_Tree/segment_tree_example.py)
+    * [Test Segment Tree](Algorithms_and_Data_Structures/Segment_Tree/test_segment_tree.py)
   * Stack
     * [Balanced Parentheses Checker](Algorithms_and_Data_Structures/Stack/Balanced_parentheses_checker.py)
     * [Implement Stack Using Queue](Algorithms_and_Data_Structures/Stack/Implement_Stack_Using_Queue.py)
@@ -473,6 +477,9 @@
     * [Waf](Cybersecurity_Tools/Web%20Application%20Firewall/waf.py)
   * Bruteforce Password Cracking
     * [Main](Cybersecurity_Tools/bruteforce_password_cracking/main.py)
+  * Dead Drop Server
+    * Backend
+      * [Main](Cybersecurity_Tools/dead_drop_server/backend/main.py)
   * Network Scanner
     * [Main](Cybersecurity_Tools/network_Scanner/main.py)
   * Phishing Detection
@@ -505,7 +512,9 @@
     * Model
       * [Logistic+Decision+Random Forest](Data_Science/Diabetes%20Analysis/Model/Logistic+Decision+Random_Forest.ipynb)
   * Economic Analysis
+    * [Economicanalysis](Data_Science/Economic%20Analysis/EconomicAnalysis.ipynb)
     * [Global Econoviz](Data_Science/Economic%20Analysis/Global_EconoViz.py)
+    * [App](Data_Science/Economic%20Analysis/app.py)
   * Google Search Analysis With Python
     * [Google Search Analysis With Python](Data_Science/Google%20Search%20Analysis%20with%20python/Google_Search_Analysis_with_python.ipynb)
   * Hotel Demand Eda And Forecasting Using Arima Model
