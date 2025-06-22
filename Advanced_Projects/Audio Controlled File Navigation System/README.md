@@ -1,4 +1,5 @@
-# Audio Controlled File Navigation System
+<h1 align="center">Audio Controlled File Navigation System</h1>
+
 
 This project allows you to control file navigation and basic file operations on your computer using voice commands. It leverages both the Vosk speech recognition toolkit and OpenAI's Whisper model (via faster-whisper) to interpret spoken commands and perform actions such as opening folders, listing directory contents, navigating directories, and basic file operations (rename, delete, create).
 
@@ -12,9 +13,9 @@ This project allows you to control file navigation and basic file operations on 
 ## Setup Instructions
 
 ### 1. Clone the Repository
-```bash
+```
 git clone https://github.com/UTSAVS26/PyVerse.git
-cd Audio-Controlled-File-Navigation-System
+cd Advanced_Projects/Audio-Controlled-File-Navigation-System
 ```
 
 ### 2. Install Python Dependencies
@@ -106,10 +107,14 @@ python whisper_fileNavigator.py
 
 ---
 
-## Notes on Command Format
-- The code extracts command arguments by splitting the recognized text and using the last or second-to-last word for file/folder names. For best results, speak commands in the formats shown above.
-- Avoid extra words or filler in your commands (e.g., say `delete cat.txt` instead of `please delete cat.txt`).
+## Notes on Command Format and Parsing
+- The system uses a robust command parsing logic, allowing for more natural speech variations and extra words in your commands. For best results, try to keep the command structure similar to the examples above, but the system is more tolerant of phrases like "please delete cat.txt" or "could you open downloads".
+- Command detection is modular, with each command handled by a dedicated method. This makes the codebase easier to maintain and extend with new commands in the future.
 - Folder and file names are case-insensitive but must match the actual names in the directory.
+
+## Codebase Maintainability
+- The command parsing logic has been refactored for clarity and maintainability. Each command (list, open, rename, etc.) is handled by a separate method, making it easier to add or modify commands.
+- The system uses the mechanism of keyword matching and argument extraction. This makes the system more robust to natural language variations.
 
 ---
 
@@ -117,7 +122,6 @@ python whisper_fileNavigator.py
 - You can change the Whisper model size by editing the `model_size` variable in `whisper_fileNavigator.py`.
 - If you encounter issues with CUDA, you can set `device="cpu"` in the script.
 - The script prints debug information to help diagnose issues with audio input or model inference.
-
 
 ## Troubleshooting
 
