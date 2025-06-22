@@ -24,12 +24,15 @@ class FileNavigator:
         }
 
     def _open_cross_platform(self, path):
-        if sys.platform == "win32":
-            os.startfile(path)
-        elif sys.platform == "darwin":
-            subprocess.run(["open", str(path)])
-        else:
-            subprocess.run(["xdg-open", str(path)])
+        try:
+            if sys.platform == "win32":
+                os.startfile(path)
+            elif sys.platform == "darwin":
+                subprocess.run(["open", str(path)])
+            else:
+                subprocess.run(["xdg-open", str(path)])
+        except Exception as e:
+            print(f"Failed to open {path}: {e}")
 
     def list_dir(self, path=None):
         path = Path(path) if path else self.current_dir
@@ -45,7 +48,8 @@ class FileNavigator:
         if path.exists():
             self._open_cross_platform(path)
             print(f"Opened: {path}")
-            self.current_dir=path
+            if path.is_dir():
+                self.current_dir = path
         else:
             print(f"Path not found: {path}")
 
