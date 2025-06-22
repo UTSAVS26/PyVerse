@@ -13,7 +13,7 @@ This project allows you to control file navigation and basic file operations on 
 ## Setup Instructions
 
 ### 1. Clone the Repository
-```
+```bash
 git clone https://github.com/UTSAVS26/PyVerse.git
 cd Advanced_Projects/Audio-Controlled-File-Navigation-System
 ```
@@ -79,7 +79,7 @@ python whisper_fileNavigator.py
 - **Say:** `open downloads`, `open documents`, `open desktop`, etc.
 - **Effect:** Opens the specified system folder.
 
-### Opening a File or Folder in Current Directory
+### Opening a File or Folder in the Current Directory
 - **Say:** `open <name>`
   - Example: `open cat.txt`
 - **Effect:** Opens the specified file or folder in the current directory.
@@ -108,9 +108,9 @@ python whisper_fileNavigator.py
 ---
 
 ## Notes on Command Format and Parsing
-- The system uses a robust command parsing logic, allowing for more natural speech variations and extra words in your commands. For best results, try to keep the command structure similar to the examples above, but the system is more tolerant of phrases like "please delete cat.txt" or "could you open downloads".
+- The system uses a robust command parsing logic, allowing for more natural speech variations and extra words in your commands. For best results, try to keep the command structure similar to the examples above, but the system is more tolerant of phrases like "please delete cat.txt" or "could you open downloads?"
 - Command detection is modular, with each command handled by a dedicated method. This makes the codebase easier to maintain and extend with new commands in the future.
-- Folder and file names are case-insensitive but must match the actual names in the directory.
+- Folder and file names are case-insensitive, but must match the actual names in the directory.
 
 ## Codebase Maintainability
 - The command parsing logic has been refactored for clarity and maintainability. Each command (list, open, rename, etc.) is handled by a separate method, making it easier to add or modify commands.
@@ -129,7 +129,7 @@ python whisper_fileNavigator.py
 
 #### "Model Not Found" Error
 - Ensure the vosk model is downloaded and extracted to the correct directory.
-- Check that the model folder name match exactly what's expected in the code.
+- Check that the model folder name matches exactly what's expected in the code.
 
 #### "CUDA not available" Error
 - The project uses CUDA by default.Go to whisper_navigator.py file and on line 12 change device="cuda" to device="cpu".
