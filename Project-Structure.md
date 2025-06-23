@@ -1699,6 +1699,8 @@
 
 ## Video Processing
   * Online Video Editor
+    * Emotion Detector
+      * [Face Detect](Video%20Processing/Online%20Video%20Editor/Emotion_Detector/face_detect.py)
     * [Edits](Video%20Processing/Online%20Video%20Editor/edits.py)
 
 ## Web Development
