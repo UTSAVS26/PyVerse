@@ -213,6 +213,10 @@
     * [Test Trie](Algorithms_and_Data_Structures/Trie/test_trie.py)
     * [Trie](Algorithms_and_Data_Structures/Trie/trie.py)
     * [Trie Example](Algorithms_and_Data_Structures/Trie/trie_example.py)
+  * Unionfind
+    * [Test Union Find](Algorithms_and_Data_Structures/UnionFind/test_union_find.py)
+    * [Union Find](Algorithms_and_Data_Structures/UnionFind/union_find.py)
+    * [Union Find Example](Algorithms_and_Data_Structures/UnionFind/union_find_example.py)
   * Avl Tree Visualizer
     * [Main](Algorithms_and_Data_Structures/avl_tree_visualizer/main.py)
   * Balancedbintree
