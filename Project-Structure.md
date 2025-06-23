@@ -1,5 +1,9 @@
 
 ## Advanced Projects
+  * Audio Controlled File Navigation System
+    * [File Navigation](Advanced_Projects/Audio%20Controlled%20File%20Navigation%20System/file_navigation.py)
+    * [Vosk Filenavigator](Advanced_Projects/Audio%20Controlled%20File%20Navigation%20System/vosk_fileNavigator.py)
+    * [Whisper Filenavigator](Advanced_Projects/Audio%20Controlled%20File%20Navigation%20System/whisper_fileNavigator.py)
   * Chat-Gpt-Discord-Bot
     * [Chat Gpt Function](Advanced_Projects/Chat-GPT-Discord-Bot/Chat_GPT_Function.py)
     * [Main](Advanced_Projects/Chat-GPT-Discord-Bot/main.py)
