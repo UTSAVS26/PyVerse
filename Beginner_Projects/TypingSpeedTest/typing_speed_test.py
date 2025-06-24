@@ -34,9 +34,9 @@ class TypingSpeedTest:
 
     def _start_test(self):
         # Reset any previous state, as suggested in the screenshot
-        self.entry.config(state=tk.NORMAL) # Ensure entry is enabled
-        self.result_label.config(text="") # Clear previous results
-        self.button_start.config(state=tk.DISABLED, text="Test in Progress...") # Disable button during test
+        self.entry.config(state=tk.NORMAL)  # Ensure entry is enabled
+        self.result_label.config(text="")  # Clear previous results
+        self.button_start.config(state=tk.DISABLED, text="Test in Progress...")  # Disable button during test
 
         self.sentence = random.choice(self.sentences)
         self.label_sentence.config(text=self.sentence)
@@ -47,7 +47,7 @@ class TypingSpeedTest:
     def _finish_test(self):
         # Handle case where test hasn't started
         if not self.start_time:
-            return # Test not started
+            return  # Test not started
 
         user_input = self.entry.get()
         self.entry.config(state=tk.DISABLED)
@@ -58,8 +58,7 @@ class TypingSpeedTest:
         elapsed = end_time - self.start_time
 
         # Prevent division by zero and handle very short times
-        if elapsed < 0.1:
-            elapsed = 0.1
+        elapsed = max(elapsed, 0.1)
 
         # Words per minute (WPM) - use the standard formula: (characters/5)/minutes
         # This accounts for varying word lengths more accurately
