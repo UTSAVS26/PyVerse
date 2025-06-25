@@ -385,6 +385,8 @@
     * [Rainbow Spiral](Beginner_Projects/Turtle/rainbow_spiral.py)
     * [Turtle](Beginner_Projects/Turtle/turtle.py)
     * [Turtle Spiral](Beginner_Projects/Turtle/turtle_spiral.py)
+  * Typingspeedtest
+    * [Typing Speed Test](Beginner_Projects/TypingSpeedTest/typing_speed_test.py)
   * Url Shortener
     * [Url Shortener](Beginner_Projects/URL_Shortener/url_shortener.py)
   * Voice Assistant
