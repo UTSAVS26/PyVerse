@@ -1,0 +1,10 @@
+streamlit
+streamlit-extras
+google-generativeai
+python-dotenv
+langchain
+langchain-community==0.2.7
+langchain-google-genai
+PyPDF2
+
+

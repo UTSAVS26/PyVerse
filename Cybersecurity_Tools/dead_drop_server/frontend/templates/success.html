@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Successful ✅</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>File Uploaded Successfully 🎉</h1>
+        <p>Your upload was secured with your passphrase.</p>
+        <p><strong>Access Token:</strong> <code>{{ token }}</code></p>
+        <p><strong>Uploader IP:</strong> {{ ip }}</p>
+        <a href="/">🔙 Back to Upload</a>
+    </div>
+</body>
+</html>

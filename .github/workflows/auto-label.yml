@@ -6,6 +6,8 @@ on:
 
 jobs:
   label_issue:
+    # 🚦 Only continue if the issue author is UTSAVS26
+    if: ${{ github.event.issue.user.login == 'UTSAVS26' }}
     runs-on: ubuntu-latest
     permissions:
       issues: write
@@ -26,3 +28,4 @@ jobs:
             });
 
             console.log(`Added labels: ${labelsToAdd.join(', ')}`);
+            

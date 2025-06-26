@@ -1,5 +1,9 @@
 
 ## Advanced Projects
+  * Audio Controlled File Navigation System
+    * [File Navigation](Advanced_Projects/Audio%20Controlled%20File%20Navigation%20System/file_navigation.py)
+    * [Vosk Filenavigator](Advanced_Projects/Audio%20Controlled%20File%20Navigation%20System/vosk_fileNavigator.py)
+    * [Whisper Filenavigator](Advanced_Projects/Audio%20Controlled%20File%20Navigation%20System/whisper_fileNavigator.py)
   * Chat-Gpt-Discord-Bot
     * [Chat Gpt Function](Advanced_Projects/Chat-GPT-Discord-Bot/Chat_GPT_Function.py)
     * [Main](Advanced_Projects/Chat-GPT-Discord-Bot/main.py)
@@ -10,6 +14,10 @@
     * [Generate Keys](Advanced_Projects/EdgeLock-X/generate_keys.py)
     * [Tee Server](Advanced_Projects/EdgeLock-X/tee_server.py)
     * [Web Server](Advanced_Projects/EdgeLock-X/web_server.py)
+  * Excel To Csv
+    * [Excel To Csv](Advanced_Projects/Excel%20to%20CSV/excel_to_csv.py)
+  * File Organizer Gui
+    * [Filegui](Advanced_Projects/File_Organizer_GUI/filegui.py)
   * Gui Based Taskmanager
     * [Mang](Advanced_Projects/GUI%20Based%20TaskManager/mang.py)
   * Navibot-Voice-Assistant
@@ -167,8 +175,13 @@
     * [Linearsearch](Algorithms_and_Data_Structures/SearchingAlgorithms/LinearSearch.py)
     * [Sublistsearch](Algorithms_and_Data_Structures/SearchingAlgorithms/SublistSearch.py)
     * [Ternarysearch](Algorithms_and_Data_Structures/SearchingAlgorithms/TernarySearch.py)
+  * Segment Tree
+    * [Segment Tree](Algorithms_and_Data_Structures/Segment_Tree/segment_tree.py)
+    * [Segment Tree Example](Algorithms_and_Data_Structures/Segment_Tree/segment_tree_example.py)
+    * [Test Segment Tree](Algorithms_and_Data_Structures/Segment_Tree/test_segment_tree.py)
   * Stack
     * [Balanced Parentheses Checker](Algorithms_and_Data_Structures/Stack/Balanced_parentheses_checker.py)
+    * [Implement Stack Using Queue](Algorithms_and_Data_Structures/Stack/Implement_Stack_Using_Queue.py)
     * [Infixtopostifix](Algorithms_and_Data_Structures/Stack/InfixToPostifix.py)
     * [Infixtoprefix](Algorithms_and_Data_Structures/Stack/InfixToPrefix.py)
     * [Min Stack](Algorithms_and_Data_Structures/Stack/Min_Stack.py)
@@ -196,6 +209,14 @@
     * [Menu Driven Code For Tree Traversals](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Tree_Traversals.py)
     * [Sum Tree](Algorithms_and_Data_Structures/Trees/Sum_Tree.py)
     * [Symmetric Tree](Algorithms_and_Data_Structures/Trees/Symmetric_Tree.py)
+  * Trie
+    * [Test Trie](Algorithms_and_Data_Structures/Trie/test_trie.py)
+    * [Trie](Algorithms_and_Data_Structures/Trie/trie.py)
+    * [Trie Example](Algorithms_and_Data_Structures/Trie/trie_example.py)
+  * Unionfind
+    * [Test Union Find](Algorithms_and_Data_Structures/UnionFind/test_union_find.py)
+    * [Union Find](Algorithms_and_Data_Structures/UnionFind/union_find.py)
+    * [Union Find Example](Algorithms_and_Data_Structures/UnionFind/union_find_example.py)
   * Avl Tree Visualizer
     * [Main](Algorithms_and_Data_Structures/avl_tree_visualizer/main.py)
   * Balancedbintree
@@ -210,6 +231,8 @@
     * [All](Algorithms_and_Data_Structures/queue_visualizer/all.py)
     * [Circular](Algorithms_and_Data_Structures/queue_visualizer/circular.py)
   * Sorting Algorithms
+    * Bitonic Sort
+      * [Bitonic Sort](Algorithms_and_Data_Structures/sorting_algorithms/Bitonic_sort/Bitonic_Sort.py)
     * [Bubble Sort](Algorithms_and_Data_Structures/sorting_algorithms/Bubble_Sort.py)
     * [Counting Sort](Algorithms_and_Data_Structures/sorting_algorithms/Counting_sort.py)
     * [Heap Sort](Algorithms_and_Data_Structures/sorting_algorithms/Heap_sort.py)
@@ -217,6 +240,7 @@
     * [Merge Sort](Algorithms_and_Data_Structures/sorting_algorithms/Merge_Sort.py)
     * [Quick Sort](Algorithms_and_Data_Structures/sorting_algorithms/Quick_sort.py)
     * [Radix Sort](Algorithms_and_Data_Structures/sorting_algorithms/Radix_Sort.py)
+    * [Shell Sort](Algorithms_and_Data_Structures/sorting_algorithms/Shell_sort.py)
     * [Tim Sort](Algorithms_and_Data_Structures/sorting_algorithms/Tim_Sort.py)
   * Visualizer
     * [Binary Search Tree Visualizer](Algorithms_and_Data_Structures/visualizer/binary_search_tree_visualizer.py)
@@ -225,6 +249,8 @@
     * [Tree Traversal Visualizer](Algorithms_and_Data_Structures/visualizer/tree_traversal_visualizer.py)
 
 ## Automation Tools
+  * Auto Email Greet Bot
+    * [Auto Greet Bot](Automation_Tools/Auto_email_greet_bot/auto_greet_bot.py)
   * Autofill Personal Info Using Aadhar Card Image
     * Ocr Adhaar Api
       * [App](Automation_Tools/Autofill%20personal%20info%20using%20Aadhar%20Card%20Image/OCR%20ADHAAR%20API/app.py)
@@ -236,6 +262,8 @@
   * Playlist-Downloader
     * [Setup](Automation_Tools/Playlist-downloader/setup.py)
   * Web Scrapping
+    * Train Schedule Scraper
+      * [Fetch Train Schedules](Automation_Tools/Web%20Scrapping/Train%20Schedule%20Scraper/fetch_train_schedules.py)
     * [Webscrapping](Automation_Tools/Web%20Scrapping/WebScrapping.ipynb)
     * Linkedin Scraper
       * Linkedin Scraper
@@ -286,8 +314,6 @@
     * [Email Automation](Beginner_Projects/Email_Automation/email_automation.py)
   * Escape The Maze
     * [Escapethemaze](Beginner_Projects/Escape%20the%20Maze/Escapethemaze.py)
-  * Excel To Csv
-    * [Exceltocsv](Beginner_Projects/Excel%20to%20CSV/excelToCsv.py)
   * File Sorter
     * [App](Beginner_Projects/File%20Sorter/App.py)
     * Theme
@@ -359,6 +385,8 @@
     * [Rainbow Spiral](Beginner_Projects/Turtle/rainbow_spiral.py)
     * [Turtle](Beginner_Projects/Turtle/turtle.py)
     * [Turtle Spiral](Beginner_Projects/Turtle/turtle_spiral.py)
+  * Typingspeedtest
+    * [Typing Speed Test](Beginner_Projects/TypingSpeedTest/typing_speed_test.py)
   * Url Shortener
     * [Url Shortener](Beginner_Projects/URL_Shortener/url_shortener.py)
   * Voice Assistant
@@ -413,6 +441,9 @@
     * [Train](Computer%20Vision/Leprosy%20Detection/train.py)
   * Object Size Detection
     * [App](Computer%20Vision/Object%20Size%20Detection/app.py)
+  * Real-Time Object Tracker
+    * [Main](Computer%20Vision/Real-Time%20Object%20Tracker/main.py)
+    * [Short](Computer%20Vision/Real-Time%20Object%20Tracker/short.py)
   * Volume Control Using Hand Gesture
     * [Gesturevolume](Computer%20Vision/Volume%20Control%20Using%20Hand%20Gesture/GestureVolume.py)
     * [Handtrackingmodule](Computer%20Vision/Volume%20Control%20Using%20Hand%20Gesture/HandTrackingModule.py)
@@ -432,6 +463,8 @@
     * [Encryption](Cybersecurity_Tools/File_encryption_tool/Encryption.py)
   * Ids Ips Tool
     * [Ids Ips](Cybersecurity_Tools/IDS_IPS%20Tool/ids_ips.py)
+  * Image Crypto
+    * [Image Crypto](Cybersecurity_Tools/Image_crypto/image_crypto.py)
   * Keylogger
     * [Keylogger](Cybersecurity_Tools/Keylogger/keylogger.py)
   * Netwrok Packet Analyzer
@@ -454,6 +487,9 @@
     * [Waf](Cybersecurity_Tools/Web%20Application%20Firewall/waf.py)
   * Bruteforce Password Cracking
     * [Main](Cybersecurity_Tools/bruteforce_password_cracking/main.py)
+  * Dead Drop Server
+    * Backend
+      * [Main](Cybersecurity_Tools/dead_drop_server/backend/main.py)
   * Network Scanner
     * [Main](Cybersecurity_Tools/network_Scanner/main.py)
   * Phishing Detection
@@ -465,8 +501,17 @@
   * Ai Virtual Painter
     * [Handtrackingmodule](Data_Science/AI%20Virtual%20Painter/HandTrackingModule.py)
     * [Virtualpainter](Data_Science/AI%20Virtual%20Painter/VirtualPainter.py)
+  * Advanced Animated Time Series Analysis
+    * [Water Cycle Disruption](Data_Science/Advanced%20animated%20time%20series%20analysis/water_cycle_disruption.py)
+    * [Water Cycle Disruption Graph Only](Data_Science/Advanced%20animated%20time%20series%20analysis/water_cycle_disruption_graph_only.py)
   * Analysis Of Mortality Rate
     * [Left Handers Vs Right Handers](Data_Science/Analysis%20of%20Mortality%20Rate/LEFT_HANDERS_vs_RIGHT_HANDERS.ipynb)
+  * Analysis Of Mortality Rate
+    * [Left Handers Vs Right Handers](Data_Science/Analysis_of_Mortality_Rate/LEFT_HANDERS_vs_RIGHT_HANDERS.ipynb)
+    * Refactored
+      * [Data Utils](Data_Science/Analysis_of_Mortality_Rate/refactored/data_utils.py)
+      * [Main](Data_Science/Analysis_of_Mortality_Rate/refactored/main.py)
+      * [Plot Utils](Data_Science/Analysis_of_Mortality_Rate/refactored/plot_utils.py)
   * Datavizlearnig
     * [Dataviz Snippets](Data_Science/DataVizLearnig/DataViz_Snippets.ipynb)
     * Movie Data Visualization
@@ -477,7 +522,9 @@
     * Model
       * [Logistic+Decision+Random Forest](Data_Science/Diabetes%20Analysis/Model/Logistic+Decision+Random_Forest.ipynb)
   * Economic Analysis
+    * [Economicanalysis](Data_Science/Economic%20Analysis/EconomicAnalysis.ipynb)
     * [Global Econoviz](Data_Science/Economic%20Analysis/Global_EconoViz.py)
+    * [App](Data_Science/Economic%20Analysis/app.py)
   * Google Search Analysis With Python
     * [Google Search Analysis With Python](Data_Science/Google%20Search%20Analysis%20with%20python/Google_Search_Analysis_with_python.ipynb)
   * Hotel Demand Eda And Forecasting Using Arima Model
@@ -490,6 +537,9 @@
     * [Lead Score Model Building](Data_Science/Lead%20Conversion%20Case%20Study/Lead%20Score%20Model%20Building.ipynb)
   * Placement Analysis
     * [Placement Analysis](Data_Science/Placement%20Analysis/Placement_Analysis.ipynb)
+  * Studentperformancevisualisation
+    * [Visualisation](Data_Science/StudentPerformanceVisualisation/Visualisation.ipynb)
+    * [Viz Usingsql](Data_Science/StudentPerformanceVisualisation/Viz_usingSQL.ipynb)
   * Unemployment Analysis Due To Covid
     * [Unemployment Analysis](Data_Science/Unemployment%20Analysis%20due%20to%20COVID/UNEMPLOYMENT_ANALYSIS.ipynb)
   * Whatsapp Chat Analyzer
@@ -812,6 +862,10 @@
   * Pdf-Analyzer
     * [Flask-Server](Generative-AI/PDF-Analyzer/flask-server.py)
     * [Streamlit App](Generative-AI/PDF-Analyzer/streamlit_app.py)
+  * Resume-Analyzer
+    * [Resume Analyzer](Generative-AI/Resume-Analyzer/resume_analyzer.py)
+  * Talk-With-Your-Pdf-Reader
+    * [Main](Generative-AI/Talk-with-your-pdf-reader/main.py)
   * Turn Pictures Into Story
     * [App](Generative-AI/Turn%20Pictures%20Into%20Story/app.py)
   * Image-To-3D Model
@@ -1651,6 +1705,8 @@
 
 ## Video Processing
   * Online Video Editor
+    * Emotion Detector
+      * [Face Detect](Video%20Processing/Online%20Video%20Editor/Emotion_Detector/face_detect.py)
     * [Edits](Video%20Processing/Online%20Video%20Editor/edits.py)
 
 ## Web Development
