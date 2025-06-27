@@ -1,39 +1,218 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Risk Predictor</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #4e73df;
+            --secondary-color: #1cc88a;
+            --dark-color: #5a5c69;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f8f9fc 0%, #e9ecef 100%);
+            min-height: 100vh;
+            font-family: 'Nunito', sans-serif;
+        }
+        
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+            border: none;
+        }
+        
+        .card-header {
+            background: var(--primary-color);
+            color: white;
+            border-radius: 15px 15px 0 0 !important;
+            padding: 1.5rem;
+        }
+        
+        .form-control {
+            border-radius: 10px;
+            padding: 12px 15px;
+            border: 1px solid #d1d3e2;
+        }
+        
+        .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            border-radius: 10px;
+            padding: 12px 25px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        
+        .btn-primary:hover {
+            background-color: #2e59d9;
+            border-color: #2653d4;
+        }
+        
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            background-color: rgba(78, 115, 223, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: var(--primary-color);
+            font-size: 1.25rem;
+        }
+        
+        .input-group-text {
+            background-color: #f8f9fc;
+            border-radius: 10px 0 0 10px;
+        }
+        
+        .info-tooltip {
+            cursor: pointer;
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-xl-8 col-lg-10">
+                <div class="card shadow-lg">
+                    <div class="card-header text-center">
+                        <h2><i class="fas fa-heartbeat me-2"></i> Diabetes Risk Assessment</h2>
+                        <p class="mb-0">Fill in your health details to assess diabetes risk</p>
+                    </div>
+                    <div class="card-body p-5">
+                        <form action="/predict" method="POST">
+                            <!-- Pregnancy -->
+                            <div class="mb-4">
+                                <label for="pregnancies" class="form-label fw-bold">Pregnancies</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fas fa-baby"></i></span>
+                                    <input type="number" class="form-control" id="pregnancies" name="pregnancies" 
+                                           min="0" max="20" required>
+                                </div>
+                                <div class="form-text">Number of times pregnant</div>
+                            </div>
+                            
+                            <!-- Glucose -->
+                            <div class="mb-4">
+                                <label for="glucose" class="form-label fw-bold">Glucose Level</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fas fa-tint"></i></span>
+                                    <input type="number" class="form-control" id="glucose" name="glucose" 
+                                           min="0" max="300" required>
+                                    <span class="input-group-text">mg/dL</span>
+                                </div>
+                                <div class="form-text">Plasma glucose concentration</div>
+                            </div>
+                            
+                            <!-- Blood Pressure -->
+                            <div class="mb-4">
+                                <label for="bloodpressure" class="form-label fw-bold">Blood Pressure</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fas fa-heartbeat"></i></span>
+                                    <input type="number" class="form-control" id="bloodpressure" name="bloodpressure" 
+                                           min="0" max="150" required>
+                                    <span class="input-group-text">mmHg</span>
+                                </div>
+                                <div class="form-text">Diastolic blood pressure</div>
+                            </div>
+                            
+                            <!-- Skin Thickness -->
+                            <div class="mb-4">
+                                <label for="skinthickness" class="form-label fw-bold">Skin Thickness</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fas fa-ruler-vertical"></i></span>
+                                    <input type="number" class="form-control" id="skinthickness" name="skinthickness" 
+                                           min="0" max="100" required>
+                                    <span class="input-group-text">mm</span>
+                                </div>
+                                <div class="form-text">Triceps skin fold thickness</div>
+                            </div>
+                            
+                            <!-- Insulin -->
+                            <div class="mb-4">
+                                <label for="insulin" class="form-label fw-bold">Insulin Level</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fas fa-syringe"></i></span>
+                                    <input type="number" class="form-control" id="insulin" name="insulin" 
+                                           min="0" max="900" required>
+                                    <span class="input-group-text">μU/mL</span>
+                                </div>
+                                <div class="form-text">2-Hour serum insulin</div>
+                            </div>
+                            
+                            <!-- BMI -->
+                            <div class="mb-4">
+                                <label for="bmi" class="form-label fw-bold">Body Mass Index (BMI)</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fas fa-weight"></i></span>
+                                    <input type="number" step="0.1" class="form-control" id="bmi" name="bmi" 
+                                           min="0" max="70" required>
+                                </div>
+                                <div class="form-text">Weight in kg/(height in m)²</div>
+                            </div>
+                            
+                            <!-- Diabetes Pedigree Function -->
+                            <div class="mb-4">
+                                <label for="dpf" class="form-label fw-bold">Diabetes Pedigree Function</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fas fa-dna"></i></span>
+                                    <input type="number" step="0.001" class="form-control" id="dpf" name="dpf" 
+                                           min="0" max="3" required>
+                                </div>
+                                <div class="form-text">Diabetes family history likelihood</div>
+                            </div>
+                            
+                            <!-- Age -->
+                            <div class="mb-4">
+                                <label for="age" class="form-label fw-bold">Age</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                    <input type="number" class="form-control" id="age" name="age" 
+                                           min="1" max="120" required>
+                                    <span class="input-group-text">years</span>
+                                </div>
+                            </div>
+                            
+                            <div class="d-grid mt-4">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-calculator me-2"></i> Calculate Risk
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-4 text-muted">
+                    <p>This assessment uses machine learning to predict diabetes risk based on clinical data.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Diabetes Predictor</title>
-        <link rel="shortcut icon" href="{{ url_for('static', filename='diabetes-favicon.ico') }}">
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
-        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    </head>
-
-    <body>
-
-        <!-- Website Title -->
-    	<div class="container">
-            <h2 class='container-heading'><span class="heading_font">Diabetes Predictor</span></h2>
-            <div class='description'>
-    			<p>A Machine Learning Web App.</p>
-    		</div>
-    	</div>
-
-        <!-- Text Area -->
-    	<div class="ml-container">
-    		<form action="{{ url_for('predict') }}" method="POST">
-                <input class="form-input" type="text" name="pregnancies" placeholder="Number of Pregnancies eg. 0"><br>
-                <input class="form-input" type="text" name="glucose" placeholder="Glucose (mg/dL) eg. 80"><br>
-                <input class="form-input" type="text" name="bloodpressure" placeholder="Blood Pressure (mmHg) eg. 80"><br>
-                <input class="form-input" type="text" name="skinthickness" placeholder="Skin Thickness (mm) eg. 20"><br>
-                <input class="form-input" type="text" name="insulin" placeholder="Insulin Level (IU/mL) eg. 80"><br>
-                <input class="form-input" type="text" name="bmi" placeholder="Body Mass Index (kg/m²) eg. 23.1"><br>
-                <input class="form-input" type="text" name="dpf" placeholder="Diabetes Pedigree Function eg. 0.52"><br>
-                <input class="form-input" type="text" name="age" placeholder="Age (years) eg. 34"><br>
-
-        		<input type="submit" class="my-cta-button" value="Predict">
-        	</form>
-    	</div>
-    </body>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        // Add input validation if needed
+        document.querySelectorAll('input[type="number"]').forEach(input => {
+            input.addEventListener('change', (e) => {
+                if (e.target.value < 0) e.target.value = 0;
+            });
+        });
+    </script>
+</body>
 </html>
