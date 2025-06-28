@@ -2,6 +2,9 @@
 import numpy as np
 from numba import cuda
 
+# WARNING: XOR encryption is NOT cryptographically secure
+# This implementation prioritizes performance over security
+# For production use, implement AES encryption on GPU
 @cuda.jit
 def xor_encrypt_kernel(frame, key, out):
     i = cuda.grid(1)
