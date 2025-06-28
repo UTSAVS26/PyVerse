@@ -14,9 +14,17 @@ def main():
     parser.add_argument("--gpu", action="store_true")
     args = parser.parse_args()
 
-    key = derive_key(args.password)
-    iv = generate_iv()
-    frames = extract_frames(args.video_path)
+# At the top of Video Processing/gpu_video_encryptor/main.py
+import argparse
+import hashlib
+from encryptor import encrypt_frame, decrypt_frame
+
+# …
+
+key = derive_key(args.password)
+# For demo purposes – in production, store IV with encrypted data
+iv = hashlib.sha256(args.password.encode() + b"iv_salt").digest()[:16]
+frames = extract_frames(args.video_path)
     processed_frames = []
 
     for frame in frames:
