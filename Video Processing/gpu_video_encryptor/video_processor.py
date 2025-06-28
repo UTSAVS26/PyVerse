@@ -19,8 +19,14 @@ def extract_frames(video_path):
     return frames
 
 def save_video(frames, path, fps=30):
+    if not frames:
+        raise ValueError("Frames list cannot be empty")
+    
     h, w, _ = frames[0].shape
     out = cv2.VideoWriter(path, cv2.VideoWriter_fourcc(*'XVID'), fps, (w, h))
+    if not out.isOpened():
+        raise ValueError(f"Unable to create video file: {path}")
+    
     for f in frames:
         out.write(f)
     out.release()
