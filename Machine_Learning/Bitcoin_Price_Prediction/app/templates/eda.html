@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-10 offset-md-1">
+        <h2 class="text-center mb-4">Exploratory Data Analysis</h2>
+        
+        <div class="card mb-4">
+            <div class="card-header">
+                <h4>Time Series Trends</h4>
+            </div>
+            <div class="card-body">
+                <img src="data:image/png;base64,{{ ts_plot }}" class="img-fluid" alt="Time Series Plot">
+                <p class="mt-2">
+                    This plot shows the trends of key Bitcoin metrics over time including total bitcoins in circulation,
+                    trade volume, and blockchain size.
+                </p>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                <h4>Feature Correlations</h4>
+            </div>
+            <div class="card-body">
+                <img src="data:image/png;base64,{{ corr_plot }}" class="img-fluid" alt="Correlation Matrix">
+                <p class="mt-2">
+                    The correlation matrix shows relationships between different features in the dataset.
+                    Strong positive correlations appear in red, while strong negative correlations appear in blue.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h4>Key Insights</h4>
+            </div>
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <strong>Market Price Trends:</strong> Bitcoin price shows exponential growth with periodic corrections
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Strong Correlations:</strong> Price correlates strongly with trade volume and mining difficulty
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Seasonality:</strong> Some metrics show periodic patterns, especially around holidays
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Outliers:</strong> Several features contain outliers that may need treatment before modeling
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

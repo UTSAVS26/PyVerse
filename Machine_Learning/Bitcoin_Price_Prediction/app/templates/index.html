@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <div class="jumbotron text-center mt-4">
+            <h1 class="display-4">Bitcoin Price Prediction</h1>
+            <p class="lead">Machine learning models to predict Bitcoin market prices</p>
+            <hr class="my-4">
+            <p>Explore the data analysis and train different regression models.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <a href="{{ url_for('main.eda') }}" class="btn btn-primary btn-lg px-4 gap-3">View EDA</a>
+                <a href="{{ url_for('main.model') }}" class="btn btn-outline-secondary btn-lg px-4">Train Models</a>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">About the Project</h5>
+                        <p class="card-text">
+                            This project analyzes historical Bitcoin data and builds predictive models 
+                            using various regression techniques including Linear Regression, 
+                            Ridge Regression, Lasso Regression, and Support Vector Regression.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Dataset Information</h5>
+                        <p class="card-text">
+                            The dataset contains various Bitcoin metrics from 2013 to 2023 including:
+                            <ul>
+                                <li>Market price (target variable)</li>
+                                <li>Trade volume</li>
+                                <li>Blockchain statistics</li>
+                                <li>Mining difficulty</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
