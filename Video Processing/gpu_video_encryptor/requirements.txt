@@ -1,0 +1,6 @@
+
+numpy
+opencv-python
+pycryptodome
+numba
+cupy-cuda12x ; platform_system=="Linux" or platform_system=="Windows"
