@@ -1,6 +1,5 @@
-
+import os
 import cv2
-
 def extract_frames(video_path):
     if not os.path.exists(video_path):
         raise FileNotFoundError(f"Video file not found: {video_path}")
