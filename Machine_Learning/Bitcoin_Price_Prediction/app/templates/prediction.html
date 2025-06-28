@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <h2 class="text-center mb-4">Bitcoin Price Prediction</h2>
+        
+        <div class="card mb-4">
+            <div class="card-header">
+                <h4>Enter Prediction Parameters</h4>
+            </div>
+            <div class="card-body">
+                <form method="POST" action="{{ url_for('main.predict') }}">
+                    {{ form.hidden_tag() }}
+                    
+                    <div class="mb-3">
+                        {{ form.model_name.label(class="form-label") }}
+                        {{ form.model_name(class="form-select") }}
+                    </div>
+                    
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            {{ form.total_bitcoins.label(class="form-label") }}
+                            {{ form.total_bitcoins(class="form-control") }}
+                        </div>
+                        <div class="col-md-6">
+                            {{ form.trade_volume.label(class="form-label") }}
+                            {{ form.trade_volume(class="form-control") }}
+                        </div>
+                        <div class="col-md-6">
+                            {{ form.blocks_size.label(class="form-label") }}
+                            {{ form.blocks_size(class="form-control") }}
+                        </div>
+                        <div class="col-md-6">
+                            {{ form.avg_block_size.label(class="form-label") }}
+                            {{ form.avg_block_size(class="form-control") }}
+                        </div>
+                        <div class="col-md-6">
+                            {{ form.transactions_per_block.label(class="form-label") }}
+                            {{ form.transactions_per_block(class="form-control") }}
+                        </div>
+                        <div class="col-md-6">
+                            {{ form.difficulty.label(class="form-label") }}
+                            {{ form.difficulty(class="form-control") }}
+                        </div>
+                    </div>
+                    
+                    <div class="d-grid mt-4">
+                        {{ form.submit(class="btn btn-primary") }}
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        {% if prediction %}
+        <div class="card">
+            <div class="card-header bg-success text-white">
+                <h4>Prediction Result</h4>
+            </div>
+            <div class="card-body text-center">
+                <h3 class="display-4">${{ "%.2f"|format(prediction) }}</h3>
+                <p class="lead">Predicted Bitcoin Price</p>
+                
+                {% if plot_url %}
+                <div class="mt-4">
+                    <img src="data:image/png;base64,{{ plot_url }}" class="img-fluid" alt="Prediction Plot">
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,28 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    font-weight: bold;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
