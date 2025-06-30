@@ -1,3 +1,7 @@
+# This workflow is intentionally commented out to prevent automated commits
+# in the public repository. The actual automation runs from a private repository.
+# This file serves as documentation/reference for the workflow structure.
+
 # name: Scheduled News Fetcher
 
 # on:
@@ -28,9 +32,11 @@
 #       - name: 📰 Run News Fetcher
 #         run: |
 #           echo "🔐 Available ENV: $NEWS_API"
-#           python backend/news_fetcher.py
+#           cd Deep_Learning/FeedFlash
+#           python -m backend.news_fetcher
 #         env:
 #           NEWS_API: ${{ secrets.NEWS_API }}
+#           PYTHONPATH: ${{ github.workspace }}/Deep_Learning/FeedFlash
           
 #       - name: 💾 Commit updates to GitHub using GH_PAT
 #         run: |
