@@ -1,41 +1,66 @@
-# BMI Calculator with GUI
 
-### 🎯 **Goal**
-The aim of this GUI-based BMI calculator is to provide a simple, interactive tool that helps users quickly calculate their Body Mass Index (BMI).
+# 🧮 BMI Calculator (Tkinter GUI)
 
+This is a beginner-friendly **Body Mass Index (BMI) Calculator** built with Python's `tkinter` GUI library.
 
-### 🚀 **How it works**
-Here's a brief explanation of how the GUI-based BMI calculator works:
+Users can input their weight and height, and the app calculates the BMI and displays the corresponding weight category.
 
-**User Input:** The user enters their weight in kilograms and height in meters into two text fields provided in the graphical user interface (GUI).
+---
+## ✅ Features
 
-**Calculation:** When the user clicks the "Calculate BMI" button, the program retrieves the input values, converts them to numerical form, and applies the BMI formula.
+- Simple and clean GUI interface
+- Instant BMI calculation based on user input
+- Categorizes BMI: Underweight, Normal, Overweight, Obesity
+- Input validation with helpful error messages
+- Built using only standard Python libraries
 
-**Result Display:** 
-- The calculated BMI is displayed on the screen.
-- Based on the BMI value, the program categorizes the result as:
-   * Underweight (BMI < 18.5)
-   * Normal weight (BMI 18.5 - 24.9)
-   * Overweight (BMI 25 - 29.9)
-   * Obesity (BMI ≥ 30)
-
-**Error Handling:** If the user enters invalid or non-numerical values, the program shows an error message prompting the user to input valid data.
-
-### 📚 **Libraries Used**
-- `tkinter`
-
-
-## 🔧 How to Run
-
-1. Clone the repository and navigate to the project folder:
-   ```bash
-   git clone <repository-url>
-   cd <project-folder>
-   ```
-
-2. Install dependencies (if any) and then run the program:
-   ```bash
-   python3 BMI.py
-   ```
 ---
 
+## 🧰 Requirements
+
+- Python 3.x installed
+
+`tkinter` is included with Python by default. No additional installations required.
+
+---
+
+## 🚀 How to Run
+
+1. Download or clone this repository.
+2. Open a terminal or command prompt.
+3. Navigate to the directory where `BMI.py` is saved.
+4. Run the script using:
+
+```bash
+python BMI.py
+```
+
+---
+
+## 📊 BMI Formula
+
+```
+BMI = weight (kg) / (height (m))²
+```
+
+### Categories:
+
+| BMI Range | Category       |
+|-----------|----------------|
+| < 18.5    | Underweight    |
+| 18.5–24.9 | Normal weight  |
+| 25–29.9   | Overweight     |
+| 30+       | Obesity        |
+
+---
+
+## 👩‍💻 Author
+
+- **Poushali Mitra**
+- 👩‍🎓 SSOC Contributor
+
+---
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
