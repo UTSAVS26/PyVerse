@@ -1,5 +1,9 @@
 
 ## Advanced Projects
+  * Audio Controlled File Navigation System
+    * [File Navigation](Advanced_Projects/Audio%20Controlled%20File%20Navigation%20System/file_navigation.py)
+    * [Vosk Filenavigator](Advanced_Projects/Audio%20Controlled%20File%20Navigation%20System/vosk_fileNavigator.py)
+    * [Whisper Filenavigator](Advanced_Projects/Audio%20Controlled%20File%20Navigation%20System/whisper_fileNavigator.py)
   * Chat-Gpt-Discord-Bot
     * [Chat Gpt Function](Advanced_Projects/Chat-GPT-Discord-Bot/Chat_GPT_Function.py)
     * [Main](Advanced_Projects/Chat-GPT-Discord-Bot/main.py)
@@ -171,6 +175,10 @@
     * [Linearsearch](Algorithms_and_Data_Structures/SearchingAlgorithms/LinearSearch.py)
     * [Sublistsearch](Algorithms_and_Data_Structures/SearchingAlgorithms/SublistSearch.py)
     * [Ternarysearch](Algorithms_and_Data_Structures/SearchingAlgorithms/TernarySearch.py)
+  * Segment Tree
+    * [Segment Tree](Algorithms_and_Data_Structures/Segment_Tree/segment_tree.py)
+    * [Segment Tree Example](Algorithms_and_Data_Structures/Segment_Tree/segment_tree_example.py)
+    * [Test Segment Tree](Algorithms_and_Data_Structures/Segment_Tree/test_segment_tree.py)
   * Stack
     * [Balanced Parentheses Checker](Algorithms_and_Data_Structures/Stack/Balanced_parentheses_checker.py)
     * [Implement Stack Using Queue](Algorithms_and_Data_Structures/Stack/Implement_Stack_Using_Queue.py)
@@ -201,6 +209,14 @@
     * [Menu Driven Code For Tree Traversals](Algorithms_and_Data_Structures/Trees/Menu_Driven_Code_for_Tree_Traversals.py)
     * [Sum Tree](Algorithms_and_Data_Structures/Trees/Sum_Tree.py)
     * [Symmetric Tree](Algorithms_and_Data_Structures/Trees/Symmetric_Tree.py)
+  * Trie
+    * [Test Trie](Algorithms_and_Data_Structures/Trie/test_trie.py)
+    * [Trie](Algorithms_and_Data_Structures/Trie/trie.py)
+    * [Trie Example](Algorithms_and_Data_Structures/Trie/trie_example.py)
+  * Unionfind
+    * [Test Union Find](Algorithms_and_Data_Structures/UnionFind/test_union_find.py)
+    * [Union Find](Algorithms_and_Data_Structures/UnionFind/union_find.py)
+    * [Union Find Example](Algorithms_and_Data_Structures/UnionFind/union_find_example.py)
   * Avl Tree Visualizer
     * [Main](Algorithms_and_Data_Structures/avl_tree_visualizer/main.py)
   * Balancedbintree
@@ -369,6 +385,8 @@
     * [Rainbow Spiral](Beginner_Projects/Turtle/rainbow_spiral.py)
     * [Turtle](Beginner_Projects/Turtle/turtle.py)
     * [Turtle Spiral](Beginner_Projects/Turtle/turtle_spiral.py)
+  * Typingspeedtest
+    * [Typing Speed Test](Beginner_Projects/TypingSpeedTest/typing_speed_test.py)
   * Url Shortener
     * [Url Shortener](Beginner_Projects/URL_Shortener/url_shortener.py)
   * Voice Assistant
@@ -423,6 +441,9 @@
     * [Train](Computer%20Vision/Leprosy%20Detection/train.py)
   * Object Size Detection
     * [App](Computer%20Vision/Object%20Size%20Detection/app.py)
+  * Real-Time Object Tracker
+    * [Main](Computer%20Vision/Real-Time%20Object%20Tracker/main.py)
+    * [Short](Computer%20Vision/Real-Time%20Object%20Tracker/short.py)
   * Volume Control Using Hand Gesture
     * [Gesturevolume](Computer%20Vision/Volume%20Control%20Using%20Hand%20Gesture/GestureVolume.py)
     * [Handtrackingmodule](Computer%20Vision/Volume%20Control%20Using%20Hand%20Gesture/HandTrackingModule.py)
@@ -442,6 +463,8 @@
     * [Encryption](Cybersecurity_Tools/File_encryption_tool/Encryption.py)
   * Ids Ips Tool
     * [Ids Ips](Cybersecurity_Tools/IDS_IPS%20Tool/ids_ips.py)
+  * Image Crypto
+    * [Image Crypto](Cybersecurity_Tools/Image_crypto/image_crypto.py)
   * Keylogger
     * [Keylogger](Cybersecurity_Tools/Keylogger/keylogger.py)
   * Netwrok Packet Analyzer
@@ -464,6 +487,9 @@
     * [Waf](Cybersecurity_Tools/Web%20Application%20Firewall/waf.py)
   * Bruteforce Password Cracking
     * [Main](Cybersecurity_Tools/bruteforce_password_cracking/main.py)
+  * Dead Drop Server
+    * Backend
+      * [Main](Cybersecurity_Tools/dead_drop_server/backend/main.py)
   * Network Scanner
     * [Main](Cybersecurity_Tools/network_Scanner/main.py)
   * Phishing Detection
@@ -496,7 +522,9 @@
     * Model
       * [Logistic+Decision+Random Forest](Data_Science/Diabetes%20Analysis/Model/Logistic+Decision+Random_Forest.ipynb)
   * Economic Analysis
+    * [Economicanalysis](Data_Science/Economic%20Analysis/EconomicAnalysis.ipynb)
     * [Global Econoviz](Data_Science/Economic%20Analysis/Global_EconoViz.py)
+    * [App](Data_Science/Economic%20Analysis/app.py)
   * Google Search Analysis With Python
     * [Google Search Analysis With Python](Data_Science/Google%20Search%20Analysis%20with%20python/Google_Search_Analysis_with_python.ipynb)
   * Hotel Demand Eda And Forecasting Using Arima Model
@@ -985,8 +1013,8 @@
     * Models
       * [Models Defective Captcha Image Recognition ](Machine_Learning/Defective%20Captcha%20Image%20Recognition/Models/models_Defective_Captcha_Image_Recognition_.ipynb)
   * Diabetes-Prediction
-    * [Diabetes Predictor - Deployment](Machine_Learning/Diabetes-Prediction/Diabetes%20Predictor%20-%20Deployment.py)
     * [App](Machine_Learning/Diabetes-Prediction/app.py)
+    * [Notebook](Machine_Learning/Diabetes-Prediction/notebook.py)
   * Distracted Driver Detection
     * [Distrated Driver Detection](Machine_Learning/Distracted%20Driver%20Detection/Distrated%20Driver%20detection.ipynb)
   * Earthquake-Prediction-Using-Machine-Learning-Models
@@ -1156,10 +1184,6 @@
     * [Data-Analysis-Advance-Modelling-On-Pokemons](Machine_Learning/pokemon-data-analysis-and-legendary-classification-main/data-analysis-advance-modelling-on-pokemons.ipynb)
   * Smartphone Rate Prediction
     * [Main](Machine_Learning/smartphone_rate_prediction/main.py)
-
-## Real-Time Object Tracker
-  * [Main](Real-Time%20Object%20Tracker/main.py)
-  * [Short](Real-Time%20Object%20Tracker/short.py)
 
 ## Tutorials
   * Data Science
@@ -1681,6 +1705,8 @@
 
 ## Video Processing
   * Online Video Editor
+    * Emotion Detector
+      * [Face Detect](Video%20Processing/Online%20Video%20Editor/Emotion_Detector/face_detect.py)
     * [Edits](Video%20Processing/Online%20Video%20Editor/edits.py)
 
 ## Web Development
