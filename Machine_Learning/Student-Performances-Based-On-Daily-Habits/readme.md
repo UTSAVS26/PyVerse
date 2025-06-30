@@ -1,31 +1,57 @@
-# Project Title
-Predicting Academic Performance from Student Lifestyle Habits using Regression
+# Student Habits vs Academic Performance
 
-# Description
-This project aims to build a regression-based machine learning model to predict students’ academic performance based on their lifestyle and study habits. Using the publicly available dataset Student Habits vs Academic Performance, the model will analyze factors such as sleep patterns, study time, screen time, physical activity, and dietary habits to determine their impact on GPA (Grade Point Average).
+This project analyzes how different lifestyle and behavioral factors influence students' academic performance using regression techniques. The dataset includes features like study hours, screen time, sleep patterns, part-time job status, diet quality, and exercise frequency.
 
-# Objectives
--Clean and preprocess the dataset for effective regression analysis
+## Objective
 
--Perform exploratory data analysis (EDA) to uncover patterns and correlations
+To build a regression model that predicts students' academic performance (likely as a continuous variable such as GPA or score) based on their daily habits and lifestyle choices.
 
--Build multiple regression models (Linear Regression, Ridge, Lasso, etc.)
+## Dataset Features
 
--Evaluate models using metrics such as R² score, MAE, RMSE
+| Feature                 | Description |
+|-------------------------|-------------|
+| `student_id`            | Unique identifier for each student |
+| `age`                   | Student's age |
+| `gender`                | Gender identity (Male, Female, Other) |
+| `study_hours_per_day`   | Average daily study hours |
+| `social_media_hours`    | Average daily social media usage |
+| `netflix_hours`         | Average daily time spent watching Netflix or similar |
+| `part_time_job`         | Whether the student has a part-time job |
+| `attendance_percentage` | Attendance in class (0–100%) |
+| `sleep_hours`           | Average daily sleep duration |
+| `diet_quality`          | Categorical: Poor, Fair, Good, Excellent |
+| `exercise_frequency`    | Number of workouts per week |
+| `academic_performance`  | Target variable (e.g., GPA or final score) |
 
--Select the best-performing model and optimize it
+## Tools & Libraries
 
--Visualize the relationship between key habits and academic scores
+- **Python**
+- **pandas**, **numpy** — Data manipulation
+- **matplotlib**, **seaborn** — Visualization
+- **scikit-learn** — Modeling (regression)
+- **Jupyter Notebook** — Development environment
+
+## Approach
+
+- Handled missing values and cleaned data
+- Performed exploratory data analysis (EDA)
+- Encoded categorical features
+- Applied regression models (e.g., Linear Regression, Ridge, Lasso, ElasticNet)
+- Evaluated model performance using metrics like MAE and R² score
+
+## Results
+
+- **Mean Absolute Error (MAE):** 0.5642305340105693
+- **R² Score:** 0.9842993364555513
+
+## Future Improvements
+
+- Try tree-based regressors like RandomForest or XGBoost
+- Add SHAP values for interpretability
+- Collect a larger or more diverse dataset
 
 
-# Why this Project?
-Understanding how lifestyle affects academic outcomes can help students make data-driven decisions to improve their performance. This project bridges machine learning with educational insights and contributes to the open-source ecosystem by providing a reproducible, beginner-friendly regression case study.
 
-# Skills Required
--Python
+---
 
--Pandas, NumPy
 
--Scikit-learn
-
--Matplotlib / Seaborn
