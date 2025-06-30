@@ -14,7 +14,7 @@ def _load_model():
             _model = AutoModelForSeq2SeqLM.from_pretrained(MODEL_NAME)  
             _tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)  
         except Exception as e:  
-            raise RuntimeError(f"Failed to load model {MODEL_NAME}: {e}")  
+            raise RuntimeError(f"Failed to load model {MODEL_NAME}: {e}") from e  
     return _model, _tokenizer
 
 def summarize_text(text):
@@ -48,4 +48,4 @@ def summarize_text(text):
             )  
         return tokenizer.decode(outputs[0], skip_special_tokens=True)  
     except Exception as e:  
-        raise RuntimeError(f"Summarization failed: {str(e)}")  
+        raise RuntimeError(f"Summarization failed: {str(e)}") from e

@@ -13,6 +13,7 @@ client = NewsApiClient(api_key=API_KEY)
 
 def fetch_news():  
     """Fetch news articles from the last 24 hours."""  
+
     try:  
         from_date = (datetime.utcnow() - timedelta(days=1)).strftime("%Y-%m-%d")  
         to_date = datetime.utcnow().strftime("%Y-%m-%d")  
@@ -33,6 +34,7 @@ def fetch_news():
 
 def extract_full_article(url):  
     """Extract full text content from a news article URL."""  
+
     try:  
         article = Article(url)  
         article.download()  
@@ -44,6 +46,7 @@ def extract_full_article(url):
 
 def main():  
     """Main function to fetch, process, and save news summaries."""  
+    
     print("🚀 Starting news fetching and summarization...")  
 
     articles = fetch_news()  
