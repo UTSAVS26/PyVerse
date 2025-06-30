@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import messagebox
 from random import randint
 
-#Configuration 
+# Configuration 
 MAX_SCORE = 20  
 BG_COLOR = "#1f1f2e"
 FG_COLOR = "#f0f0f0"
@@ -11,7 +11,7 @@ FONT = ("Helvetica", 14, "bold")
 SCORE_FONT = ("Helvetica", 12)
 BUTTON_STYLE = {"font": FONT, "bg": "#333", "fg": FG_COLOR, "activebackground": "#444", "bd": 0, "width": 12}
 
-#Varibales
+# Varibales
 player_scores = []
 current_player = 0
 num_players = 0
@@ -31,17 +31,16 @@ welcome_label.pack(pady=10)
 status_label = tk.Label(frame, text="First to roll a 20 wins!", font=("Helvetica", 18, "bold"), fg=ACCENT, bg=BG_COLOR)
 status_label.pack(pady=10)
 
-#Dice roll 
+# Dice roll 
 dice_label = tk.Label(frame, text="", font=("Helvetica", 30), fg=ACCENT, bg=BG_COLOR)
 dice_label.pack(pady=10)
 
-#Score
+# Score
 score_frame = tk.Frame(frame, bg=BG_COLOR)
 score_frame.pack(pady=10)
 
-#Logic
+# Logic
 def roll_dice():
-    global current_player
 
     dice = randint(1, 6)
     dice_label.config(text=f"🎲 {dice}")
@@ -58,15 +57,18 @@ def roll_dice():
             dice_label.config(text="🎉")
             roll_button.pack_forget()
             pass_button.pack_forget()
-            return
+
+
 
 def pass_turn():
     next_turn()
+
 
 def next_turn():
     global current_player
     current_player = (current_player + 1) % num_players
     update_turn_display()
+
 
 def update_scores():
     for i in range(num_players):
@@ -75,13 +77,16 @@ def update_scores():
             fg=ACCENT if i == current_player else FG_COLOR
         )
 
+
 def update_turn_display():
     status_label.config(text=f"Player {current_player + 1}'s Turn", fg="#93c5fd")
     update_scores()
     dice_label.config(text="")
 
+
+
 def start_game():
-    global num_players, player_scores, score_labels, current_player
+    global num_players, player_scores, current_player
 
     try:
         num_players = int(player_entry.get())
@@ -96,7 +101,7 @@ def start_game():
     current_player = 0
     score_labels.clear()
 
-    #Clear old labels if replayed
+    # Clear old labels if replayed
     for widget in score_frame.winfo_children():
         widget.destroy()
 
@@ -109,7 +114,9 @@ def start_game():
     pass_button.pack(pady=5)
     update_turn_display()
 
-#Player Entry UI
+
+
+# Player Entry UI
 player_entry_frame = tk.Frame(frame, bg=BG_COLOR)
 player_entry_frame.pack(pady=20)
 
@@ -118,9 +125,9 @@ player_entry = tk.Entry(player_entry_frame, width=5, font=FONT)
 player_entry.pack(side="left", padx=5)
 tk.Button(player_entry_frame, text="🎮 Start", command=start_game, **BUTTON_STYLE).pack(side="left", padx=5)
 
-#Roll and pass buttons
+# Roll and pass buttons
 roll_button = tk.Button(frame, text="🎲 Roll", command=roll_dice, **BUTTON_STYLE)
 pass_button = tk.Button(frame, text="⏭️ Pass", command=pass_turn, **BUTTON_STYLE)
 
-#Run App
+# Run App
 root.mainloop()
