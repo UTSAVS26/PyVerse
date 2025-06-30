@@ -26,11 +26,10 @@ root.configure(bg=BG_COLOR)
 frame = tk.Frame(root, bg=BG_COLOR)
 frame.pack(padx=30, pady=30)
 
-status_label = tk.Label(frame, text="Welcome to Dice Game!", font=("Helvetica", 18, "bold"), fg=ACCENT, bg=BG_COLOR)
-status_label.pack(pady=10)
+welcome_label = tk.Label(frame, text="Welcome to Dice Game!", font=("Helvetica", 18, "bold"), fg=ACCENT, bg=BG_COLOR)
+welcome_label.pack(pady=10)
 status_label = tk.Label(frame, text="First to roll a 20 wins!", font=("Helvetica", 18, "bold"), fg=ACCENT, bg=BG_COLOR)
 status_label.pack(pady=10)
-
 
 #Dice roll 
 dice_label = tk.Label(frame, text="", font=("Helvetica", 30), fg=ACCENT, bg=BG_COLOR)
