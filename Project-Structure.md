@@ -1013,8 +1013,8 @@
     * Models
       * [Models Defective Captcha Image Recognition ](Machine_Learning/Defective%20Captcha%20Image%20Recognition/Models/models_Defective_Captcha_Image_Recognition_.ipynb)
   * Diabetes-Prediction
-    * [Diabetes Predictor - Deployment](Machine_Learning/Diabetes-Prediction/Diabetes%20Predictor%20-%20Deployment.py)
     * [App](Machine_Learning/Diabetes-Prediction/app.py)
+    * [Notebook](Machine_Learning/Diabetes-Prediction/notebook.py)
   * Distracted Driver Detection
     * [Distrated Driver Detection](Machine_Learning/Distracted%20Driver%20Detection/Distrated%20Driver%20detection.ipynb)
   * Earthquake-Prediction-Using-Machine-Learning-Models
