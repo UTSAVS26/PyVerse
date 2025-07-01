@@ -15,8 +15,8 @@ This project implements a deep learning-based detector for identifying deepfake 
 
 ### 1. Clone the Repository
 ```
-git clone <repo-url>
-cd <repo-directory>
+git clone https://github.com/UTSAVS26/PyVerse.git
+cd PyVerse/Deep_Learning/'Deepfake Images Detector'
 ```
 
 ### 2. Download the Dataset
