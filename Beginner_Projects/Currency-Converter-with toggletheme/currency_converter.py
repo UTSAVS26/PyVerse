@@ -1,6 +1,17 @@
 import tkinter as tk
 import requests # type: ignore
 from tkinter import messagebox
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+API_KEY =os.getenv("API_KEY")
+
+
+#Adding placeholders to avoid hardcoding
+PLACEHOLDER_FROM = "eg: USD"
+PLACEHOLDER_TO ="eg: INR"
+PLACEHOLDER_AMOUNT = "eg: 250.00"
 
 #keeping the intial theme as light
 is_dark_mode = False
@@ -12,14 +23,14 @@ Themes = {
         "foreground_color": "#333333",
         "entry_bg": "#F0F0F0",
         "button_background": "#4CAF50",
-        "button_forrground": "#F0F0F0"
+        "button_foreground": "#F0F0F0" #fixed typo
     },
     "dark":{
         "background_color": "#2C2C2C",
         "foreground_color": "#EEEEEE",
         "entry_bg": "#292929",
         "button_background": "#FFB300",
-        "button_forrground": "#F0F7FA"
+        "button_foreground": "#F0F7FA" #fixed typo
     }
 }
 
@@ -42,10 +53,10 @@ def apply_theme(theme_name):
         if cls == "Entry":
             widget.configure(bg=theme["entry_bg"], fg=theme["foreground_color"])
         elif cls == "Button":
-            if widget['text'] == "Switch Theme":
+            if widget['text'] == "Toggle Theme":
                 widget.configure(bg="#888", fg="#F0F0F0")
             else:
-                widget.configure(bg=theme["button_background"], fg=theme["button_forrground"])
+                widget.configure(bg=theme["button_background"], fg=theme["button_foreground"])
         elif cls == "Label":
             widget.configure(bg=theme["background_color"], fg=theme["foreground_color"])
 
@@ -57,13 +68,14 @@ def toggle_theme():
     apply_theme(theme)
 
 #conversion logic
+#modified this so that error message resets after a success and hadles the edge cases better
 def convert_currency():
     #definig them
     from_curr = entry_from.get().upper().strip()
     to_curr = entry_to.get().upper().strip()
     amount = entry_amount.get().strip()
 
-    if from_curr in ["", "eg: USD"] or to_curr in ["", "eg: INR"] or amount in ["", "eg: 250.00"]:
+    if from_curr in ["", PLACEHOLDER_FROM] or to_curr in ["", PLACEHOLDER_TO] or amount in ["", PLACEHOLDER_AMOUNT]:
         error_label.config(text="Please fill all fields with valid values.")
         return
     
@@ -74,22 +86,39 @@ def convert_currency():
         return
     
     #api url
-    url = f"https://api.frankfurter.app/latest?amount={amount}&from={from_curr}&to={to_curr}"
+    url = f"https://api.currencyfreaks.com/latest?apikey={API_KEY}&symbols={from_curr},{to_curr}"
 
     try:
         response = requests.get(url)
+        response.raise_for_status()
         data = response.json()
 
-        print(data)
+        base_currency = data.get("base", "")
+        rates = data.get("rates",{})
 
-        converted = data["rates"].get(to_curr)
-        if converted:
-            result_label.config(text=f"{amount} {from_curr} = {round(converted, 2)} {to_curr}")
-            error_label.config(text="") 
-        else:
-            error_label.config(text="Conversion failed. Check currency codes.")
-    except Exception as e:
-        error_label.config(text="An error occurred. Check your internet connection and try again.")
+        #taking care of base case and falling back to usd incase either from or t_curr is the base currrency.
+        rate_from = float(rates.get(from_curr)) if from_curr !=base_currency else 1.0
+        rate_to = float(rates.get(to_curr)) if to_curr != base_currency else 1.0
+
+        if not rate_from or not rate_to:
+            error_label.config(text="Invalid currency codes or Unvailable rate. \n Please try again.")
+            return
+        
+        #since it used usd as base we convert using usd as base
+        usd_amount = amount/rate_from #converted to usd
+        converted = round(usd_amount * rate_to, 2) #converted to to_curr
+
+        result_label.config(text=f"{amount} {from_curr} = {converted} {to_curr}")
+        error_label.config(text="")#error cleared after a success
+
+    except requests.RequestException:
+        error_label.config(text="Network error. Check your internet or API key.")
+    except ValueError:
+        error_label.config(text="Error processing the exchange rate.")
+        #here since the earlier one (frankfurt) changed their documents (inr isn't included anymore) i had to ended switching over currencyfreaks. 
+        #however to access the converstion i would have to buy the starter plan so to avoid that i removed the base case. But since it's possible 
+        #that some currencies might be the base so to counter that i used the above logic that runs independent of what the base currency is and will work 
+        #even in the case of the from_curr and to_curr beign one of the base currencies.
 
 
 #label+entry func
@@ -115,17 +144,18 @@ def labeled_entry(labe_text, placeholder):
     return entry
 
 #Input fields:
-entry_from = labeled_entry("From Currency Code (3 letters):", "eg: USD")
-entry_to = labeled_entry("To Currency Code (3 letters):", "eg: INR")
-entry_amount = labeled_entry("Amount:", "e.g. 250.00")
+#modified for placeholder
+entry_from = labeled_entry("From Currency Code (3 letters):", PLACEHOLDER_FROM)
+entry_to = labeled_entry("To Currency Code (3 letters):", PLACEHOLDER_TO)
+entry_amount = labeled_entry("Amount:", PLACEHOLDER_AMOUNT)
 
-#convrtion button
+#convertion button
 convert_button = tk.Button(root, text="Convert", command=convert_currency, font=FONT_LABEL, width=15)
 convert_button.pack(pady=15)
 
 #result label:
 result_label = tk.Label(root, text="", font=FONT_RESULT)
-result_label.pack(pady=10)
+result_label.pack(pady=15)
 
 #error label:
 error_label = tk.Label(root, text="", fg="red", font=("Helvetica", 10, "italic"))
@@ -136,5 +166,8 @@ toggle_button = tk.Button(root, text="Toggle Theme", command=toggle_theme, font=
 toggle_button.pack(pady=5)
 
 apply_theme("light")
+
+#to start the conversion (instead onf clicking on convert just simply pressing enter):
+root.bind("<Return>", lambda event:convert_currency())
 
 root.mainloop()

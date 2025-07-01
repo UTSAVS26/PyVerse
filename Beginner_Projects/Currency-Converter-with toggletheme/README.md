@@ -20,7 +20,6 @@ A simple, elegant desktop application that converts currencies using real-time e
 - 🌗 Toggle between **light and dark themes**
 - ✅ Validates user input with helpful error messages
 - 💡 Beginner-friendly GUI design using Tkinter
-- 📶 No API key required — uses [Frankfurter API](https://frankfurter.app/)
 
 ---
 
@@ -40,18 +39,30 @@ A simple, elegant desktop application that converts currencies using real-time e
    cd PyVerse/Beginner_Projects/API-key_free_Currency_Converter
    ```
 
-2. **Install dependencies**
-   -Make sure Python 3.6+ is Installed
-   -(Only `requests` is needed)
+2. **Create a Virtual Environment**
+   ```bash
+   python -m venv venv
+   source venv/Scripts/activate ----> for ac use: venv/bin/activate
+   ```
+3. **Install dependencies**
+   - Make sure Python 3.6+ is Installed
+   - (Only `requests` is needed)
       ```bash
       pip install requests
       ```
-   -Tkinter is usually pre-installed with Python. If not:
-      -On Windows: Install Python from the official website
-      -On Linux: sudo apt-get install python3-tk
-      -On Mac: Already included with Python
+   - Tkinter is usually pre-installed with Python. If not:
+      - On Windows: Install Python from the official website
+      - On Linux: sudo apt-get install python3-tk
+      - On Mac: Already included with Python
 
-3. **Run the application**
+4. **Set your API-Key**
+   - Create a file called `.env` in the project folder
+   - Add your CurrencyFreaks key:
+      ```ini
+      API_KEY=your_key_here
+      ```
+
+5. **Run the application**
    ```bash
    currency_converter.py
    ```
@@ -60,22 +71,21 @@ A simple, elegant desktop application that converts currencies using real-time e
 
 ## 🔐 API Access Notes
 
-This app currently uses the **[Frankfurter API](https://www.frankfurter.app/)**, which is free and does **not** require an API key.  
-If this changes in the future, follow these steps:
+This app currently uses the **[CurrencyFreaks API](https://www.currencyfreaks.com/)** 
+Follow these steps:
 
-1. **Check the official docs:** [frankfurter.app/docs](https://www.frankfurter.app/docs)  
-2. **If an API key is required**:
-   - Register for one on their website
-   - Update the API call in your code:
-     ```python
-     url = f"https://api.frankfurter.app/latest?amount={amount}&from={from_curr}&to={to_curr}&apikey=YOUR_API_KEY"
-     ```
+1. **Check the official docs:**
+2. **API key is required**:
+   - Register for one on their website. Copy your API Key
+   - Create a file named `.env` in the project folder. (if it dooesn't alr exist)
+   - Add your CurrencyFreaks key:
+      ```ini
+      API_KEY=your_key_here
+      ```
    - For security:
-     - Store the key in a `.env` file using the `python-dotenv` package
      - Never commit API keys to GitHub
 
 3. **Alternative APIs you can switch to**:
-   - [CurrencyFreaks](https://currencyfreaks.com/)
    - [Open Exchange Rates](https://openexchangerates.org/)
 
 ---
