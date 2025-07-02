@@ -1,0 +1,80 @@
+# This workflow is intentionally commented out to prevent automated commits
+# in the public repository. The actual automation runs from a private repository.
+# This file serves as documentation/reference for the workflow structure.
+
+# name: Scheduled News Fetcher
+
+# on:
+#   schedule:
+#     - cron: "30 2 * * *"  # Runs daily at 2:30 AM UTC (8:00 AM IST)
+#   workflow_dispatch:  # Allows manual triggering
+
+# jobs:
+#   run-fetcher:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: ⬇ Checkout GitHub Repo
+#         uses: actions/checkout@v4
+#         with:
+#           token: ${{ secrets.GH_PAT }}
+          
+#       - name: 🐍 Set up Python
+#         uses: actions/setup-python@v4
+#         with:
+#           python-version: "3.10"
+
+#       - name: 📦 Install Dependencies
+#         run: |
+#           python -m pip install --upgrade pip
+#           pip install -r requirements.txt
+
+#       - name: 📰 Run News Fetcher
+#         run: |
+#           echo "🔐 Available ENV: $NEWS_API"
+#           cd Deep_Learning/FeedFlash
+#           python -m backend.news_fetcher
+#         env:
+#           NEWS_API: ${{ secrets.NEWS_API }}
+#           PYTHONPATH: ${{ github.workspace }}/Deep_Learning/FeedFlash
+          
+#       - name: 💾 Commit updates to GitHub using GH_PAT
+#         run: |
+#           git config --global user.email "action@github.com"
+#           git config --global user.name "GitHub Action"
+
+#           git remote set-url origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/${{ github.repository }}
+
+#           git add app/summaries.json backend/fetch_log.json
+
+#           if git diff --staged --quiet; then
+#             echo "✅ No changes to commit"
+#           else
+#             git commit -m "🔄 Updated summaries and logs [AUTO] $(date '+%Y-%m-%d %H:%M:%S')"
+#             git push origin HEAD
+#           fi
+#         env:
+#           GH_PAT: ${{ secrets.GH_PAT }}
+          
+#       - name: 🚀 Sync to Hugging Face Space
+#         run: |
+#           git clone https://oauth2:${{ secrets.HF_TOKEN }}@huggingface.co/spaces/Arihant-Bhandari/FeedFlash hf_space
+
+#           mkdir -p hf_space/app hf_space/backend
+#           cp app/summaries.json hf_space/app/ || echo "summaries.json not found"
+#           cp backend/fetch_log.json hf_space/backend/ || echo "fetch_log.json not found"
+
+#           cd hf_space
+#           git config user.name "GitHub Action"
+#           git config user.email "action@github.com"
+#           git add app/summaries.json backend/fetch_log.json
+
+#           if git diff --staged --quiet; then
+#             echo "✅ No changes to sync to Hugging Face"
+#           else
+#             git commit -m "🔁 Auto-sync from GitHub: $(date '+%Y-%m-%d %H:%M:%S')"
+#             git push
+#             echo "✅ Successfully synced to Hugging Face!"
+#           fi
+#         env:
+#           HF_TOKEN: ${{ secrets.HF_TOKEN }}
