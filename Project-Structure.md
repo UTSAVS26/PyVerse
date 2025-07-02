@@ -608,8 +608,7 @@
     * [Identify The Animal Colab](Deep_Learning/Deep-learning-for-Animal-Identification/Identify%20the%20Animal_colab.ipynb)
     * [Identify The Animal Novalid Colab](Deep_Learning/Deep-learning-for-Animal-Identification/Identify_the_Animal_novalid_colab.ipynb)
   * Deepfake Images Detector
-    * Model
-      * [Deepfake Image Detector](Deep_Learning/Deepfake%20Images%20Detector/Model/Deepfake_Image_Detector.ipynb)
+    * [Deepfake Image Detector](Deep_Learning/Deepfake%20Images%20Detector/Deepfake_Image_Detector.ipynb)
   * Detect Bad Posture Media Pipe
     * [Media Pipe Pose Checkpoint](Deep_Learning/Detect%20Bad%20Posture%20Media%20Pipe/Media_Pipe_Pose_checkpoint.ipynb)
   * Digital Image Tampering Detection
