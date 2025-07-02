@@ -65,6 +65,19 @@ async def handle_client(websocket):
 
     filename = metadata['filename']
     filesize = metadata['filesize']
+
+    # Sanitize filename to prevent path traversal
+    filename = os.path.basename(filename)
+    # Remove any remaining path separators
+    filename = filename.replace('/', '_').replace('\\', '_')
+
+    # Limit file size to prevent DoS (e.g., 100MB)
+    MAX_FILE_SIZE = 100 * 1024 * 1024
+    if filesize > MAX_FILE_SIZE:
+        await websocket.send("File too large")
+        await websocket.close()
+        return
+
     sha256_hash = metadata['sha256']
     key = bytes.fromhex(metadata['key'])
     iv = bytes.fromhex(metadata['iv'])
