@@ -28,18 +28,20 @@ def sha256_file(filepath):
 def get_cipher(key, iv):
     return Cipher(algorithms.AES(key), modes.CBC(iv), backend=default_backend())
 
-def encrypt_chunk(chunk, cipher):
+def encrypt_chunk(chunk, key, iv):
+    cipher = get_cipher(key, iv)
     padder = padding.PKCS7(128).padder()
     padded_data = padder.update(chunk) + padder.finalize()
     encryptor = cipher.encryptor()
     return encryptor.update(padded_data) + encryptor.finalize()
 
-def decrypt_chunk(chunk, cipher):
+
+def decrypt_chunk(chunk, key, iv):
+    cipher = get_cipher(key, iv)
     decryptor = cipher.decryptor()
     padded_data = decryptor.update(chunk) + decryptor.finalize()
     unpadder = padding.PKCS7(128).unpadder()
     return unpadder.update(padded_data) + unpadder.finalize()
-
 def compress_file(filepath):
     zip_path = filepath + ".zip"
     with zipfile.ZipFile(zip_path, 'w') as zipf:
