@@ -657,6 +657,14 @@
       * [01 Data Augmentation Cnn](Deep_Learning/Facial%20Emotion%20Detection/Model/01_data_augmentation_cnn.ipynb)
       * [02 Transfer Learning Mobilenetv2](Deep_Learning/Facial%20Emotion%20Detection/Model/02_transfer_learning_mobilenetv2.ipynb)
       * [03 Transfer Learning Efficientnetv2](Deep_Learning/Facial%20Emotion%20Detection/Model/03_transfer_learning_efficientnetv2.ipynb)
+  * Feedflash
+    * [App](Deep_Learning/FeedFlash/app.py)
+    * App
+      * [Summarizer](Deep_Learning/FeedFlash/app/summarizer.py)
+    * Backend
+      * [News Fetcher](Deep_Learning/FeedFlash/backend/news_fetcher.py)
+    * Model
+      * [Feedflash-Model](Deep_Learning/FeedFlash/model/feedflash-model.ipynb)
   * File-Locking-Mechanism
     * Face Recognition Script
       * [Face Recognition](Deep_Learning/File-Locking-Mechanism/Face_Recognition_Script/Face%20recognition.py)
