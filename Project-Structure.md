@@ -379,6 +379,8 @@
   * [Tasker](Beginner_Projects/Tasker.py)
   * Temperature
     * [Temp](Beginner_Projects/Temperature/Temp.py)
+  * Tune Tracker
+    * [Tune Tracker](Beginner_Projects/Tune_Tracker/Tune_tracker.py)
   * Turtle
     * Turtle-Art
       * [Turlte-Art](Beginner_Projects/Turtle/Turtle-Art/Turlte-Art.py)
@@ -516,6 +518,8 @@
     * [Dataviz Snippets](Data_Science/DataVizLearnig/DataViz_Snippets.ipynb)
     * Movie Data Visualization
       * [Maincode](Data_Science/DataVizLearnig/Movie%20Data%20Visualization/maincode.py)
+  * Descriptive-Analysis-Cricket-Player-Stats
+    * [Player-Stats-Analysis](Data_Science/Descriptive-Analysis-cricket-player-stats/Player-stats-Analysis.ipynb)
   * Diabetes Analysis
     * Eda
       * [Detailed Eda](Data_Science/Diabetes%20Analysis/EDA/Detailed%20EDA.ipynb)
