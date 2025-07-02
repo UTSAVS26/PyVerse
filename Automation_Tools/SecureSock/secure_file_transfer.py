@@ -179,12 +179,19 @@ if __name__ == '__main__':
         asyncio.get_event_loop().run_forever()
 
     elif len(sys.argv) > 1 and sys.argv[1] == 'client':
+        if len(sys.argv) < 3:
+            print("Usage: python secure_file_transfer.py client <filepath>")
+            sys.exit(1)
         filepath = sys.argv[2]
+        if not os.path.exists(filepath):
+            print(f"Error: File not found: {filepath}")
+            sys.exit(1)
         key = secrets.token_bytes(32)
         iv = secrets.token_bytes(16)
         token = jwt.encode({'user': 'cli'}, SECRET, algorithm='HS256')
-        asyncio.get_event_loop().run_until_complete(send_file('ws://localhost:8765', filepath, key, iv, token))
-
+        asyncio.get_event_loop().run_until_complete(
+            send_file('ws://localhost:8765', filepath, key, iv, token)
+        )
     else:
         app = QApplication(sys.argv)
         gui = FileTransferGUI()
