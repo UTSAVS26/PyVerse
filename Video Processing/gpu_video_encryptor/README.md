@@ -30,4 +30,5 @@ See `requirements.txt`
 
 ## Author
 
-**Shivansh Katiyar** – PyVerse SSOC
+**Shivansh Katiyar** SSOC
+GitHub: @SK8-infi
