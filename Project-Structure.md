@@ -332,6 +332,8 @@
     * [App](Beginner_Projects/PDF%20Quering/app.py)
   * Password-Generator
     * [Passwordgenerator](Beginner_Projects/Password-Generator/passwordGenerator.py)
+  * Pig Gui Game
+    * [Pig Gui](Beginner_Projects/Pig%20GUI%20game/pig_gui.py)
   * Playlist Generator
     * [Mood-Based-Playlist-Generator](Beginner_Projects/Playlist%20Generator/mood-based-playlist-generator.py)
   * Positive News Digest
@@ -407,6 +409,7 @@
   * [Labbot](Beginner_Projects/labbot.ipynb)
   * Pomodoro Clock
     * [Main](Beginner_Projects/pomodoro_Clock/main.py)
+  * [Pomodoro Timer](Beginner_Projects/pomodoro_timer.py)
 
 ## Blockchain Development
   * Basic Python Blockchain Implementation
