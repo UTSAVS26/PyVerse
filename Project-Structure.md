@@ -1171,6 +1171,8 @@
     * [Db](Machine_Learning/Signature_verification_portal/db.py)
   * Stock Market Analysis
     * [Stock-Market-Analysis Final](Machine_Learning/Stock_Market_Analysis/stock-market-analysis_final.ipynb)
+  * Student-Performances-Based-On-Daily-Habits
+    * [Model](Machine_Learning/Student-Performances-Based-On-Daily-Habits/Model.ipynb)
   * Style Transfer With Neural Network
     * [Style Transfer With Neural Networks](Machine_Learning/Style%20Transfer%20with%20Neural%20Network/Style%20Transfer%20with%20Neural%20Networks.ipynb)
   * Translator App
