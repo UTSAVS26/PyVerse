@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cap†ionTags - Instagram Caption & Hashtag Generator</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Archivo+Black&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&family=Rubik+Broken+Fax&family=Rubik+Doodle+Shadow&family=Rubik+Maps&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #a259ff;
+      --accent: #38cfff;
+      --bg-gradient: linear-gradient(135deg, #181a20 0%, #23243a 100%);
+      --card-bg: #23243a;
+      --shadow: 0 8px 32px 0 rgba(20, 20, 40, 0.25);
+      --border: 2px solid #23243a;
+      --radius: 1.5rem;
+      --input-bg: #181a20;
+      --input-border: #393a4f;
+      --input-focus: #38cfff;
+      --caption-bg: #181a20;
+      --caption-border: #a259ff;
+      --hashtag-bg: #23243a;
+      --hashtag-chip-bg: #181a20;
+      --hashtag-chip-border: #38cfff;
+      --hashtag-chip-color: #38cfff;
+      --text-main: #fff;
+      --text-muted: #bfc9d1;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-gradient);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+    }
+    .container {
+      position: relative;
+      z-index: 1;
+      background: var(--card-bg);
+      padding: 2.2rem 2rem 2rem 2rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      max-width: 430px;
+      width: 95%;
+      border: var(--border);
+      text-align: center;
+    }
+    .logo {
+      font-family: "Orbitron", sans-serif;
+      font-size: 2.3rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.7rem;
+      background: linear-gradient(90deg, #a259ff 0%, #38cfff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-shadow: 0 2px 16px #38cfff55, 0 0 2px #a259ff;
+      user-select: none;
+      line-height: 1.1;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-top: 1rem;
+      margin-bottom: 0.3rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      text-align: left;
+    }
+    input[type="text"], select {
+      padding: 0.8rem;
+      border: 1.5px solid var(--input-border);
+      background: var(--input-bg);
+      color: var(--text-main);
+      border-radius: 10px;
+      font-size: 1rem;
+      outline: none;
+      margin-bottom: 0.7rem;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      box-shadow: 0 2px 8px 0 rgba(56,207,255,0.08);
+    }
+    input:focus, select:focus {
+      border-color: var(--input-focus);
+      box-shadow: 0 0 0 2px #38cfff33;
+    }
+    button {
+      margin-top: 1.5rem;
+      padding: 0.85rem;
+      background: linear-gradient(90deg, #a259ff 0%, #38cfff 100%);
+      color: #fff;
+      font-size: 1.08rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 16px 0 #38cfff33;
+      letter-spacing: 0.04em;
+    }
+    button:hover {
+      background: linear-gradient(90deg, #38cfff 0%, #a259ff 100%);
+      box-shadow: 0 6px 20px 0 #a259ff44;
+    }
+    .caption-box {
+      margin-top: 2.2em;
+      background: var(--caption-bg);
+      padding: 1.1em 1em;
+      border-left: 5px solid var(--caption-border);
+      border-radius: 10px;
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 1.1rem;
+      box-shadow: 0 2px 12px 0 #a259ff22;
+      word-break: break-word;
+      border: 1.5px solid #393a4f;
+    }
+    .caption-box h3 {
+      margin: 0 0 0.5em 0;
+      color: var(--text-muted);
+      font-size: 0.98rem;
+      font-weight: 600;
+    }
+    .caption-box p {
+      margin: 0;
+      font-size: 1.13rem;
+      font-weight: 600;
+      color: var(--text-main);
+      letter-spacing: 0.01em;
+    }
+    .hashtags-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5em 0.7em;
+      margin-top: 1.2em;
+      justify-content: flex-start;
+    }
+    .hashtag-chip {
+      background: var(--hashtag-chip-bg);
+      color: var(--hashtag-chip-color);
+      border-radius: 7px;
+      padding: 0.32em 1em;
+      font-size: 1.01em;
+      font-weight: 600;
+      border: 1.5px solid var(--hashtag-chip-border);
+      box-shadow: 0 1px 6px #38cfff22;
+      margin-bottom: 0.2em;
+      letter-spacing: 0.01em;
+      transition: background 0.2s, color 0.2s;
+    }
+    .hashtag-chip:hover {
+      background: #38cfff;
+      color: #23243a;
+      border-color: #a259ff;
+    }
+    @media (max-width: 500px) {
+      .container {
+        padding: 1.2rem 0.5rem 1.5rem 0.5rem;
+        border-radius: 1rem;
+      }
+      .logo {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">Cap†ionTags</div>
+    <form method="POST">
+      <label for="description">Post Description</label>
+      <input type="text" id="description" name="description" placeholder="e.g., Sunset on the beach" required />
+
+      <label for="mood">Select Mood</label>
+      <select id="mood" name="mood" required>
+        <option value="">-- Select Mood --</option>
+        <option value="Happy">Happy</option>
+        <option value="Sad">Sad</option>
+        <option value="Funny">Funny</option>
+        <option value="Romantic">Romantic</option>
+        <option value="Motivational">Motivational</option>
+        <option value="Chill">Chill</option>
+        <option value="Adventurous">Adventurous</option>
+        <option value="Sassy">Sassy</option>
+      </select>
+
+      <button type="submit">Generate Caption & Hashtags</button>
+    </form>
+
+    {% if caption %}
+      <div class="caption-box">
+        <h3>Generated Caption:</h3>
+        <p id="captionText">{{ caption }}</p>
+        <button type="button" onclick="copyCaption()" style="margin-top: 0.8rem; padding: 0.4rem 0.8rem; font-size: 0.9rem; border-radius: 7px; background: var(--accent); color: #23243a; font-weight: 700; border: none; cursor: pointer;">Copy</button>
+      </div>
+    {% endif %}
+    {% if hashtags %}
+      <div class="hashtags-row">
+        {% for tag in hashtags %}
+          <span class="hashtag-chip">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+    <script>
+      function copyCaption() {
+        const text = document.getElementById("captionText").innerText;
+        navigator.clipboard.writeText(text)
+          .then(() => alert("Caption copied to clipboard!"))
+          .catch(err => alert("Failed to copy caption."));
+      }
+    </script>
+  </div>
+</body>
+</html>
