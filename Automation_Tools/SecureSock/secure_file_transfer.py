@@ -42,12 +42,16 @@ def decrypt_chunk(chunk, key, iv):
     padded_data = decryptor.update(chunk) + decryptor.finalize()
     unpadder = padding.PKCS7(128).unpadder()
     return unpadder.update(padded_data) + unpadder.finalize()
-def compress_file(filepath):
-    zip_path = filepath + ".zip"
-    with zipfile.ZipFile(zip_path, 'w') as zipf:
-        zipf.write(filepath, os.path.basename(filepath))
-    return zip_path
-
+async def send_file(uri, filepath, key, iv, token):
+    cipher = get_cipher(key, iv)
+    original_filepath = filepath
+    compressed_filepath = compress_file(filepath)
+    filepath = compressed_filepath
+    # ... rest of the function ...
+        print("File sent successfully.")
+    # Clean up temporary zip file
+    if os.path.exists(compressed_filepath):
+        os.remove(compressed_filepath)
 # Server
 
 async def handle_client(websocket):
