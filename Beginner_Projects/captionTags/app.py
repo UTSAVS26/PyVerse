@@ -8,7 +8,7 @@ load_dotenv()
 gemini_api_key = os.getenv("GOOGLE_API_KEY")
 
 if not gemini_api_key:
-   raise ValueError("GOOGLE_API_KEY environment variable is required")
+    raise ValueError("GOOGLE_API_KEY environment variable is required")
 genai.configure(api_key=gemini_api_key)
 app = Flask(__name__)
 
@@ -43,7 +43,12 @@ def index():
                 hashtag_prompt = f"Generate 5 to 6 relevant, popular Instagram hashtags (without # symbol) for a post with this description: '{description}' and mood: '{mood}'. Separate each hashtag with a comma. Do not include any caption, only the hashtags."
                 hashtag_response = model.generate_content(hashtag_prompt, generation_config={"temperature": 0.8})
                 hashtags_raw = hashtag_response.text.strip()
-                hashtags = [f"#{tag.strip().replace(' ', '')}" for tag in hashtags_raw.split(',') if tag.strip()]
+                hashtags = []
+                for tag in hashtags_raw.split(','):
+                   clean_tag = re.sub(r'[^a-zA-Z0-9_]', '', tag.strip())
+                   if clean_tag:
+                      hashtags.append(f"#{clean_tag}")
+                      
             except Exception as e:
                 error = f"Error: {str(e)}"
                 caption = ""
@@ -53,6 +58,6 @@ def index():
 
 
 if __name__ == "__main__":
-     debug_mode = os.getenv("FLASK_DEBUG", "False").lower() == "true"
-     app.run(debug=debug_mode)
+    debug_mode = os.getenv("FLASK_DEBUG", "False").lower() == "true"
+    app.run(debug=debug_mode)
    
