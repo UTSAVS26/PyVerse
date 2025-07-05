@@ -1,0 +1,9 @@
+opencv-python
+mediapipe
+numpy
+scikit-learn
+tensorflow
+keras
+pickle5
+Pillow
+tk
