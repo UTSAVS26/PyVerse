@@ -81,9 +81,10 @@ def encode_message(img_path: str, message: str, output_path: str) -> bool:
         encoded.save(output_path)
         return True
         
+    except (FileNotFoundError, ValueError, OSError):
+        raise
     except Exception as e:
-        raise e
-
+        raise OSError(f"Failed to encode message: {e}")
 def decode_message(img_path: str) -> str:
     """
     Decode a message from an image using LSB steganography.
