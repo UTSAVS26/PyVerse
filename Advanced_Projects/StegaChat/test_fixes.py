@@ -88,8 +88,11 @@ def test_steganography_fixes():
         
         # Test 4: Error handling for empty message
         try:
-            encode_message(test_image_path, "", output_path)
-            assert False, "Should raise ValueError for empty message"
+         try:
+             encode_message(test_image_path, "", output_path)
+             raise AssertionError("Should raise ValueError for empty message")
+         except ValueError:
+             pass  # Expected
         except ValueError:
             pass  # Expected
         
