@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <h2 class="text-center mb-4">Bitcoin Price Prediction Model</h2>
+        
+        <div class="card mb-4">
+            <div class="card-header">
+                <h4>Model Configuration</h4>
+            </div>
+            <div class="card-body">
+                <form method="POST" action="{{ url_for('main.model') }}">
+                    {{ form.hidden_tag() }}
+                    <div class="mb-3">
+                        {{ form.model_type.label(class="form-label") }}
+                        {{ form.model_type(class="form-select") }}
+                        {% if form.model_type.errors %}
+                            <div class="text-danger">
+                                {% for error in form.model_type.errors %}
+                                    <small>{{ error }}</small>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    </div>
+                    <div class="mb-3">
+                        {{ form.alpha.label(class="form-label") }}
+                        {{ form.alpha(class="form-control") }}
+                        {% if form.alpha.errors %}
+                            <div class="text-danger">
+                                {% for error in form.alpha.errors %}
+                                    <small>{{ error }}</small>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    </div>
+                    <div class="d-grid">
+                        {{ form.submit(class="btn btn-primary") }}
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        {% if show_results %}
+        <div class="card mb-4">
+            <div class="card-header">
+                <h4>Model Results: {{ model_name }}</h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card text-white bg-success mb-3">
+                            <div class="card-header">Training Score</div>
+                            <div class="card-body">
+                                <h5 class="card-title">{{ "%.4f"|format(train_score) }}</h5>
+                                <p class="card-text">R² Score</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card text-white bg-info mb-3">
+                            <div class="card-header">Test Score</div>
+                            <div class="card-body">
+                                <h5 class="card-title">{{ "%.4f"|format(test_score) }}</h5>
+                                <p class="card-text">R² Score</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {% if fi_plot %}
+                <div class="mt-4">
+                    <h5>Feature Importance</h5>
+                    <img src="data:image/png;base64,{{ fi_plot }}" class="img-fluid" alt="Feature Importance">
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
