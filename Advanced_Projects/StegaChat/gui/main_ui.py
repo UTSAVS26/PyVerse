@@ -123,7 +123,8 @@ class StegaChatUI:
                 try:
                     self.current_fernet, self.current_salt = generate_key(password)
                     encrypted_message = encrypt_message(self.current_fernet, message)
-                    message = encrypted_message.decode('latin-1')  # Convert bytes to string for steganography
+                    import base64
+                    message = base64.b64encode(encrypted_message).decode('ascii')
                     self.log_status("Message encrypted successfully")
                 except Exception as e:
                     messagebox.showerror("Error", f"Encryption failed: {e}")
