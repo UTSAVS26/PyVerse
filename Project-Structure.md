@@ -986,6 +986,18 @@
   * Bitcoin Price Prediction
     * Model
       * [Bitcoin Price Prediction](Machine_Learning/Bitcoin%20Price%20Prediction/Model/Bitcoin_Price_Prediction.ipynb)
+  * Bitcoin Price Prediction
+    * App
+      * [Forms](Machine_Learning/Bitcoin_Price_Prediction/app/forms.py)
+      * [Routes](Machine_Learning/Bitcoin_Price_Prediction/app/routes.py)
+    * Notebooks
+      * [Eda](Machine_Learning/Bitcoin_Price_Prediction/notebooks/EDA.ipynb)
+      * [Model Training](Machine_Learning/Bitcoin_Price_Prediction/notebooks/model_training.ipynb)
+    * [Run](Machine_Learning/Bitcoin_Price_Prediction/run.py)
+    * Src
+      * [Data Processing](Machine_Learning/Bitcoin_Price_Prediction/src/data_processing.py)
+      * [Models](Machine_Learning/Bitcoin_Price_Prediction/src/models.py)
+      * [Visualization](Machine_Learning/Bitcoin_Price_Prediction/src/visualization.py)
   * Bone Fracture Detection
     * Models
       * [Bone Fracture Rcnn](Machine_Learning/Bone%20Fracture%20Detection/Models/Bone_Fracture_RCNN.ipynb)
