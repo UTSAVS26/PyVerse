@@ -4,9 +4,20 @@ import cv2
 import tensorflow as tf
 import matplotlib.pyplot as plt
 from PIL import Image
+import os
+import base64
 
-# Load the trained model
-model = tf.keras.models.load_model("waste_classifier_model.keras")
+# Load the trained model with error handling and path validation
+model_path = "waste_classifier_model.keras"
+model = None
+if not os.path.exists(model_path):
+    st.error(f"Model file not found at '{model_path}'. Please ensure the model file exists.")
+    st.stop()
+try:
+    model = tf.keras.models.load_model(model_path)
+except Exception as e:
+    st.error(f"Failed to load model: {e}")
+    st.stop()
 
 # Function to make predictions
 def predict_fun(img):
@@ -83,9 +94,11 @@ if st.session_state.page == "Home":
             st.markdown("[GitHub](https://github.com/GxAditya)")
     
     # Add app icon below social links
-    st.markdown("""
+    with open("waste.png", "rb") as img_file:
+        img_base64 = base64.b64encode(img_file.read()).decode()
+    st.markdown(f"""
         <div style='text-align: center;'>
-            <img src='https://raw.githubusercontent.com/GxAditya/Waste-Classification/main/waste.png' class='app-icon'>
+            <img src='data:image/png;base64,{img_base64}' class='app-icon'>
         </div>
     """, unsafe_allow_html=True)
     
@@ -132,6 +145,9 @@ elif st.session_state.page == "Classification":
             st.image(image, caption="Uploaded Image", use_column_width=True)
             
             if st.button("Classify Image", use_container_width=True):
-                result = predict_fun(image)
-                st.markdown(f"<h3 style='text-align: center;'>Prediction:</h3>", unsafe_allow_html=True)
-                st.markdown(f"<p style='text-align: center;'>{result}</p>", unsafe_allow_html=True)
+                try:
+                    result = predict_fun(image)
+                    st.markdown("<h3 style='text-align: center;'>Prediction:</h3>", unsafe_allow_html=True)
+                    st.markdown("<p style='text-align: center;'>" + result + "</p>", unsafe_allow_html=True)
+                except Exception as e:
+                    st.error(f"An error occurred during classification: {e}")

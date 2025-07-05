@@ -3,7 +3,7 @@
 This project uses a Convolutional Neural Network (CNN) trained to classify waste images into two categories: Organic and Recyclable. The model was trained on a curated dataset containing labeled images of various waste items. Key details:
 
 - **Architecture:** Custom CNN with multiple convolutional and pooling layers, followed by dense layers for classification.
-- **Input Size:** Images are resized to 128x128 pixels before being fed to the model.
+- **Input Size:** Images are resized to 96x96 pixels before being fed to the model.
 - **Classes:**
   - Organic: Includes food scraps, leaves, and other biodegradable materials.
   - Recyclable: Includes plastics, metals, paper, and other materials suitable for recycling.
@@ -12,7 +12,7 @@ This project uses a Convolutional Neural Network (CNN) trained to classify waste
   - The model was trained using categorical cross-entropy loss and Adam optimizer.
   - Achieved high accuracy on a held-out validation set.
 - **Deployment:**
-  - The trained model is saved in HDF5 format (`model/model.h5`) and loaded by the Streamlit app for inference.
+  - The trained model is saved in Keras format (`waste_classifier_model.keras`) and loaded by the Streamlit app for inference.
 
 # Waste Classification App
 
@@ -77,7 +77,7 @@ The app is deployed on Streamlit Community Cloud:
 ## Usage
 1. **Run the Streamlit app:**
    ```bash
-   streamlit run app.py
+   streamlit run web.py
    ```
 2. **Open your browser and go to:**
    [http://localhost:8501](http://localhost:8501)
