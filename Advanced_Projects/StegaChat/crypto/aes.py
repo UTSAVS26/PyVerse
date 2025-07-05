@@ -58,7 +58,7 @@ def decrypt_message(fernet: Fernet, token: bytes) -> str:
     try:
         return fernet.decrypt(token).decode()
     except Exception as e:
-        raise ValueError(f"Decryption failed: {e}")
+        raise ValueError(f"Decryption failed: {e}") from e
 
 def save_key_info(fernet: Fernet, salt: bytes, filepath: str):
     """Save key information (salt) to a file for later use."""
