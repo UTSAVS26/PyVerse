@@ -190,7 +190,9 @@ class StegaChatUI:
                         fernet, _ = generate_key(password)
                     
                     # Decrypt the message
-                    encrypted_bytes = message.encode('latin-1')
+                    # Decrypt the message (assuming base64 encoding)
+                    import base64
+                    encrypted_bytes = base64.b64decode(message)
                     decrypted_message = decrypt_message(fernet, encrypted_bytes)
                     message = decrypted_message
                     self.log_status("Message decrypted successfully")
