@@ -243,7 +243,7 @@ async def send_message(message: str, uri: str = "ws://localhost:8765",
                       client_id: str = "default_client", secret_key: Optional[str] = None):
     """Legacy function to send a single message"""
     if secret_key is None:
-        secret_key = "default_secret_key"
+        raise ValueError("Secret key is required for secure communication")
     
     client = SecureWebSocketClient(uri, client_id, secret_key)
     if await client.connect():
