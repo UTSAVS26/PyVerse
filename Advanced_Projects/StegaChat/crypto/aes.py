@@ -42,7 +42,7 @@ def encrypt_message(fernet: Fernet, message: str) -> bytes:
     try:
         return fernet.encrypt(message.encode())
     except Exception as e:
-        raise ValueError(f"Encryption failed: {e}")
+        raise ValueError(f"Encryption failed: {e}") from e
 
 def decrypt_message(fernet: Fernet, token: bytes) -> str:
     """
