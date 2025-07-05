@@ -79,8 +79,11 @@ def test_steganography_fixes():
         
         # Test 3: Error handling for non-existent file
         try:
+        try:
             encode_message("nonexistent.png", "test", output_path)
-            assert False, "Should raise FileNotFoundError"
+            raise AssertionError("Should raise FileNotFoundError")
+        except FileNotFoundError:
+            pass  # Expected
         except FileNotFoundError:
             pass  # Expected
         
