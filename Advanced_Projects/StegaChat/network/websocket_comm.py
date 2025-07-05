@@ -143,7 +143,11 @@ class SecureWebSocketServer:
             if self.use_ssl:
                 # Create SSL context (you would need proper certificates in production)
                 ssl_context = ssl.create_default_context(ssl.Purpose.CLIENT_AUTH)
-                # ssl_context.load_cert_chain('cert.pem', 'key.pem')  # Uncomment for real certificates
+                if os.path.exists('cert.pem') and os.path.exists('key.pem'):
+                    ssl_context.load_cert_chain('cert.pem', 'key.pem')
+                else:
+                    logger.warning("SSL certificates not found. SSL disabled.")
+                    return websockets.serve(self.handle_client, self.host, self.port)
                 return websockets.serve(self.handle_client, self.host, self.port, ssl=ssl_context)
             else:
                 return websockets.serve(self.handle_client, self.host, self.port)
