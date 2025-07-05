@@ -69,9 +69,11 @@ def save_key_info(fernet: Fernet, salt: bytes, filepath: str):
         raise ValueError(f"Failed to save key info: {e}")
 
 def load_key_info(filepath: str) -> bytes:
-    """Load salt from a file."""
-    try:
-        with open(filepath, 'rb') as f:
-            return f.read()
-    except Exception as e:
-        raise ValueError(f"Failed to load key info: {e}")
+
+ def load_key_info(filepath: str) -> bytes:
+     """Load salt from a file."""
+     try:
+         with open(filepath, 'rb') as f:
+             return f.read()
+     except Exception as e:
+         raise ValueError(f"Failed to load key info: {e}") from e
