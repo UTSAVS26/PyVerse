@@ -5,9 +5,7 @@ Test script to verify StegaChat security fixes
 
 import os
 import tempfile
-import shutil
 from PIL import Image
-import numpy as np
 
 # Import our modules
 from crypto.aes import generate_key, encrypt_message, decrypt_message, save_key_info, load_key_info
