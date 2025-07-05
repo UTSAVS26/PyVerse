@@ -130,7 +130,16 @@ def test_integration():
         # Encrypt
         fernet, salt = generate_key(password)
         encrypted = encrypt_message(fernet, original_message)
-        encrypted_str = encrypted.decode('latin-1')
+        # Encrypt
+        fernet, salt = generate_key(password)
+        encrypted = encrypt_message(fernet, original_message)
+        import base64
+        encrypted_str = base64.b64encode(encrypted).decode('ascii')
+
+        # Decrypt
+        loaded_salt = load_key_info(key_file)
+        fernet2, _ = generate_key(password, loaded_salt)
+        decrypted_message = decrypt_message(fernet2, base64.b64decode(decoded_encrypted))
         
         # Encode
         success = encode_message(test_image_path, encrypted_str, output_path)
