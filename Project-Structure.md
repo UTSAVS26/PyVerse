@@ -26,6 +26,9 @@
     * [Map](Advanced_Projects/NaviBot-Voice-Assistant/map.py)
   * Plagiarism-Checker
     * [App](Advanced_Projects/Plagiarism-checker/app.py)
+  * Resume Scanner
+    * [Extractor](Advanced_Projects/Resume%20Scanner/extractor.py)
+    * [Resume Scanner](Advanced_Projects/Resume%20Scanner/resume_scanner.py)
   * Telegram Bot
     * [App](Advanced_Projects/Telegram_Bot/app.py)
 
@@ -402,6 +405,8 @@
     * [Web Scraper](Beginner_Projects/Web%20Scraper/web_scraper.py)
   * Background-Remover
     * [App](Beginner_Projects/background-remover/app.py)
+  * Captiontags
+    * [App](Beginner_Projects/captionTags/app.py)
   * Chess Game
     * [Board](Beginner_Projects/chess_game/board.py)
     * [Game](Beginner_Projects/chess_game/game.py)
