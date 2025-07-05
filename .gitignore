@@ -24,3 +24,10 @@ kaggle.json
 
 # Ignore macOS system files
 .DS_Store
+
+#For the Currency converter project of SSoC S4
+Beginner_Projects/Currency-Converter-with toggletheme/.env
+Beginner_Projects/Currency-Converter-with toggletheme/venv/
+#(also some general python ignorances)
+__pycache__/
+*.pyc
