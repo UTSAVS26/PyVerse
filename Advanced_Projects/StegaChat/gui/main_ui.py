@@ -172,7 +172,18 @@ class StegaChatUI:
             message = decode_message(img_path)
             
             # Check if message is encrypted
-            if message.startswith('gAAAAA'):  # Fernet encrypted messages start with this
+            # Check if message is encrypted (assuming base64 encoding)
+            try:
+                import base64
+                decoded = base64.b64decode(message)
+                if decoded.startswith(b'gAAAAA'):  # Fernet encrypted messages start with this
+                    is_encrypted = True
+                else:
+                    is_encrypted = False
+            except Exception:
+                is_encrypted = False
+
+            if is_encrypted:
                 # Ask for password
                 password = simpledialog.askstring("Password Required", 
                                                 "This message appears to be encrypted. Enter the password:")
