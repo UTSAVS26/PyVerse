@@ -144,8 +144,10 @@ def decode_message(img_path: str) -> str:
         
         raise ValueError("No null terminator found - message may be incomplete or corrupted")
         
+    except (FileNotFoundError, ValueError):
+        raise
     except Exception as e:
-        raise e
+        raise ValueError(f"Failed to decode message: {e}")
 
 def get_max_message_length(img_path: str) -> int:
     """
