@@ -62,11 +62,14 @@ def decrypt_message(fernet: Fernet, token: bytes) -> str:
 
 def save_key_info(fernet: Fernet, salt: bytes, filepath: str):
     """Save key information (salt) to a file for later use."""
+
+def save_key_info(fernet: Fernet, salt: bytes, filepath: str):
+    """Save key information (salt) to a file for later use."""
     try:
         with open(filepath, 'wb') as f:
             f.write(salt)
     except Exception as e:
-        raise ValueError(f"Failed to save key info: {e}")
+        raise ValueError(f"Failed to save key info: {e}") from e
 
 def load_key_info(filepath: str) -> bytes:
 
