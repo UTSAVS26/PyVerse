@@ -152,6 +152,8 @@
     * [Naive Pattern Search](Algorithms_and_Data_Structures/Pattern%20Search/naive_pattern_search.py)
     * [Rabin Karp](Algorithms_and_Data_Structures/Pattern%20Search/rabin_karp.py)
     * [Suffix Array](Algorithms_and_Data_Structures/Pattern%20Search/suffix_array.py)
+  * Prefix Sum
+    * [Prefix-Sum](Algorithms_and_Data_Structures/Prefix_Sum/prefix-sum.py)
   * Queue
     * [Circular Queue](Algorithms_and_Data_Structures/Queue/Circular_Queue.py)
     * [Deque](Algorithms_and_Data_Structures/Queue/Deque.py)
