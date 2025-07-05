@@ -166,4 +166,4 @@ def get_max_message_length(img_path: str) -> int:
         # 3 bits per pixel, 8 bits per character, minus 1 for null terminator
         return (width * height * 3 // 8) - 1
     except Exception as e:
-        raise ValueError(f"Could not calculate max message length: {e}")
+        raise ValueError(f"Could not calculate max message length: {e}") from e
