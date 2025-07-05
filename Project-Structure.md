@@ -264,6 +264,8 @@
     * [Iot Control](Automation_Tools/Iot_control/iot_control.py)
   * Playlist-Downloader
     * [Setup](Automation_Tools/Playlist-downloader/setup.py)
+  * Securesock
+    * [Secure File Transfer](Automation_Tools/SecureSock/secure_file_transfer.py)
   * Web Scrapping
     * Train Schedule Scraper
       * [Fetch Train Schedules](Automation_Tools/Web%20Scrapping/Train%20Schedule%20Scraper/fetch_train_schedules.py)
