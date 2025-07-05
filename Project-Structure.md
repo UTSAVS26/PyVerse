@@ -1733,6 +1733,12 @@
     * Emotion Detector
       * [Face Detect](Video%20Processing/Online%20Video%20Editor/Emotion_Detector/face_detect.py)
     * [Edits](Video%20Processing/Online%20Video%20Editor/edits.py)
+  * Gpu Video Encryptor
+    * [Encryptor](Video%20Processing/gpu_video_encryptor/encryptor.py)
+    * [Gpu Acceleration](Video%20Processing/gpu_video_encryptor/gpu_acceleration.py)
+    * [Main](Video%20Processing/gpu_video_encryptor/main.py)
+    * [Utils](Video%20Processing/gpu_video_encryptor/utils.py)
+    * [Video Processor](Video%20Processing/gpu_video_encryptor/video_processor.py)
 
 ## Web Development
   * Fastapi Control Panel
