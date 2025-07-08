@@ -36,7 +36,7 @@ def extract_full_article(url):
         return article.text.strip()
     except Exception as e:
         print(f"⚠️ Failed to extract article from {url}: {e}")
-        return ""
+        return None
 
 def main():
     print("🚀 Starting news fetching and summarization...")
@@ -70,8 +70,10 @@ def main():
                 if not url:
                     continue
                 full_text = extract_full_article(url)
+                if not full_text:
+                    continue
                 word_count = len(full_text.split())
-                if not full_text or word_count < 150 or word_count > 2500:
+                if word_count < 150 or word_count > 2500:
                     continue
                 prompt_text = "Summarize the following news article: " + full_text
                 results.append({
@@ -86,6 +88,9 @@ def main():
                 if collected % 5 == 0:
                     print(f"✅ Collected {collected} {category} articles so far.")
             attempts += 1
+
+        if collected < count:
+            print(f"⚠️ Only collected {collected}/{count} {category} articles after {attempts} attempts")
 
     print(f"✅ Finished collecting {len(results)} articles. Starting summarization...")
 
