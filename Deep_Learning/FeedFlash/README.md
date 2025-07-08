@@ -77,15 +77,15 @@ FeedFlash addresses information overload by creating a concise, readable digest 
 
 *Add your own screenshots here:*
 
-- ![Project Folder Structure](https://github.com/Arihant-Bhandari/PyVerse/blob/FeedFlash-2.0/Deep_Learning/FeedFlash/images/directory-structure.png)
+![Project Folder Structure](https://github.com/Arihant-Bhandari/PyVerse/blob/FeedFlash-2.0/Deep_Learning/FeedFlash/images/directory-structure.png)
 
-- ![Website](https://github.com/Arihant-Bhandari/PyVerse/blob/FeedFlash-2.0/Deep_Learning/FeedFlash/images/hf-space.png)
+![Website](https://github.com/Arihant-Bhandari/PyVerse/blob/FeedFlash-2.0/Deep_Learning/FeedFlash/images/hf-space.png)
 
-- ![Summary 1](https://github.com/Arihant-Bhandari/PyVerse/blob/FeedFlash-2.0/Deep_Learning/FeedFlash/images/summary-1.png)
+![Summary 1](https://github.com/Arihant-Bhandari/PyVerse/blob/FeedFlash-2.0/Deep_Learning/FeedFlash/images/summary-1.png)
 
-- ![Summary 2](https://github.com/Arihant-Bhandari/PyVerse/blob/FeedFlash-2.0/Deep_Learning/FeedFlash/images/summary-2.png)
+![Summary 2](https://github.com/Arihant-Bhandari/PyVerse/blob/FeedFlash-2.0/Deep_Learning/FeedFlash/images/summary-2.png)
 
-- ![Summary 3](https://github.com/Arihant-Bhandari/PyVerse/blob/FeedFlash-2.0/Deep_Learning/FeedFlash/images/summary-3.png)
+![Summary 3](https://github.com/Arihant-Bhandari/PyVerse/blob/FeedFlash-2.0/Deep_Learning/FeedFlash/images/summary-3.png)
 
 ---
 
@@ -93,6 +93,7 @@ FeedFlash addresses information overload by creating a concise, readable digest 
 
 | Model                        | Loss  | Training Steps | Notes                                                   |
 |------------------------------|-------|---------------|---------------------------------------------------------|
+| T5-Base   | 1.59  | 9375        | Base model, 412→100 tokens    |
 | Flan-T5-Base (LoRA, 4-bit)   | 1.95  | 14,517        | Quantized 4-bit, dequantized for CPU, 600→300 tokens    |
 
 ---
