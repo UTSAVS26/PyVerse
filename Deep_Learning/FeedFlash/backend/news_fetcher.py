@@ -11,102 +11,157 @@ if not API_KEY:
 
 client = NewsApiClient(api_key=API_KEY)
 
-def fetch_news():  
-    """Fetch news articles from the last 24 hours."""  
-
-    try:  
-        from_date = (datetime.utcnow() - timedelta(days=1)).strftime("%Y-%m-%d")  
-        to_date = datetime.utcnow().strftime("%Y-%m-%d")  
-
-        response = client.get_everything(  
-            q="technology OR politics OR world",  
-            from_param=from_date,  
-            to=to_date,  
-            language="en",  
-            sort_by="relevancy",  
-            page_size=50,  
-        )  
-
-        return response.get("articles", [])  
-    except Exception as e:  
-        print(f"❌ Error fetching news: {e}")  
+def fetch_news(q, from_date, to_date, page_size=50):
+    """Fetch news articles for a given query and date range."""
+    try:
+        response = client.get_everything(
+            q=q,
+            from_param=from_date,
+            to=to_date,
+            language="en",
+            sort_by="relevancy",
+            page_size=page_size,
+        )
+        return response.get("articles", [])
+    except Exception as e:
+        print(f"❌ Error fetching news: {e}")
         return []
 
-def extract_full_article(url):  
-    """Extract full text content from a news article URL."""  
+def extract_full_article(url):
+    """Extract full text content from a news article URL."""
+    try:
+        article = Article(url)
+        article.download()
+        article.parse()
+        return article.text.strip()
+    except Exception as e:
+        print(f"⚠️ Failed to extract article from {url}: {e}")
+        return None
 
-    try:  
-        article = Article(url)  
-        article.download()  
-        article.parse()  
-        return article.text.strip()  
-    except Exception as e:  
-        print(f"⚠️ Failed to extract article from {url}: {e}")  
-        return ""
+def chunk_text(text, min_words=450, max_words=500):
+    """
+    Chunk text into pieces for summarization.
+    Each chunk will have up to max_words (default 500) and at least min_words (default 450) if possible.
+    """
+    words = text.split()
+    chunks = []
+    start = 0
+    n = len(words)
+    while start < n:
+        end = min(start + max_words, n)
+        if end - start < min_words and end < n:
+            end = min(start + min_words, n)
+        chunk = " ".join(words[start:end])
+        chunks.append(chunk)
+        start = end
+    return chunks
 
-def main():  
-    """Main function to fetch, process, and save news summaries."""  
-    
-    print("🚀 Starting news fetching and summarization...")  
+def summarize_long_article(full_text):
+    """
+    Summarizes a long article by:
+    1. Splitting into chunks,
+    2. Summarizing each chunk,
+    3. Summarizing the concatenated chunk summaries for coherence.
+    """
+    chunks = chunk_text(full_text)
+    chunk_summaries = []
+    for chunk in chunks:
+        try:
+            summary = summarize_text("Summarize the following news article: " + chunk)
+        except Exception as e:
+            print(f"⚠️ Failed to summarize chunk: {e}")
+            summary = ""
+        chunk_summaries.append(summary)
+    combined = " ".join(chunk_summaries)
+    try:
+        final_summary = summarize_text("Summarize the following combined summaries: " + combined)
+    except Exception as e:
+        print(f"⚠️ Failed to summarize combined summary: {e}")
+        final_summary = combined  # fallback
+    return final_summary
 
-    articles = fetch_news()  
-    if not articles:  
-        print("❌ No articles fetched. Exiting.")  
-        return  
+def main():
+    print("🚀 Starting news fetching and summarization...")
 
-    results = []  
-    logs = []  
+    from_date = (datetime.utcnow() - timedelta(days=1)).strftime("%Y-%m-%d")
+    to_date = datetime.utcnow().strftime("%Y-%m-%d")
 
-    print(f"📰 Processing {len(articles)} articles...")  
+    # Set target counts: 20 international, 10 Indian, no genre restrictions
+    target_counts = {"international": 20, "india": 10}
+    queries = {
+        "international": "news OR world OR global OR politics OR economy OR technology",
+        "india": "India OR Indian OR Bharat OR Desh"
+    }
+    results = []
+    logs = []
 
-    for art in articles:  
-        url = art.get("url")  
-        if not url:  
-            continue  
+    for category, count in target_counts.items():
+        collected = 0
+        attempts = 0
+        while collected < count and attempts < 10:
+            articles = fetch_news(
+                q=queries[category],
+                from_date=from_date,
+                to_date=to_date,
+                page_size=50
+            )
+            for art in articles:
+                if collected >= count:
+                    break
+                url = art.get("url")
+                if not url:
+                    continue
+                full_text = extract_full_article(url)
+                if not full_text:
+                    continue
+                word_count = len(full_text.split())
+                # Strictly enforce word count between 200 and 1500
+                if word_count < 200 or word_count > 1500:
+                    print(f"⚠️ Skipping article ({word_count} words) not in 200-1500 word range: {url}")
+                    continue
 
-        full_text = extract_full_article(url)  
+                # Summarize long articles with chunking and recursive summarization
+                if word_count > 450:
+                    combined_summary = summarize_long_article(full_text)
+                else:
+                    try:
+                        combined_summary = summarize_text("Summarize the following news article: " + full_text)
+                    except Exception as e:
+                        print(f"⚠️ Failed to summarize article: {e}")
+                        combined_summary = "Summary not available due to error."
 
-        if not full_text or len(full_text.split()) < 100:  
-            continue  
+                results.append({
+                    "title": art.get("title"),
+                    "source": art.get("source", {}).get("name"),
+                    "publishedAt": art.get("publishedAt"),
+                    "url": url,
+                    "prompt_text": full_text,
+                    "summary": combined_summary,
+                    "category": category
+                })
+                collected += 1
+                if collected % 5 == 0:
+                    print(f"✅ Collected {collected} {category} articles so far.")
+            attempts += 1
 
-        try:  
-            summary = summarize_text(full_text)  
-        except Exception as e:  
-            print(f"⚠️ Failed to summarize article {url}: {e}")  
-            continue  
+        if collected < count:
+            print(f"⚠️ Only collected {collected}/{count} {category} articles after {attempts} attempts")
 
-        results.append({  
-            "title": art.get("title"),  
-            "source": art.get("source", {}).get("name"),  
-            "publishedAt": art.get("publishedAt"),  
-            "url": url,  
-            "summary": summary  
-        })  
+    print(f"✅ Finished collecting {len(results)} articles. Summaries generated.")
 
-        logs.append({  
-            "title": art.get("title"),  
-            "url": url,  
-            "word_count": len(full_text.split()),  
-            "summary_length": len(summary.split())  
-        })  
+    # Save summaries and logs
+    os.makedirs("app", exist_ok=True)
+    os.makedirs("backend", exist_ok=True)
 
-        if len(results) >= 30:  
-            break  
+    with open("app/summaries.json", "w", encoding="utf-8") as f:
+        json.dump(results, f, indent=2)
 
-    print(f"✅ Successfully processed {len(results)} articles")  
-
-    os.makedirs("app", exist_ok=True)  
-    os.makedirs("backend", exist_ok=True)  
-
-    with open("app/summaries.json", "w", encoding="utf-8") as f:  
-        json.dump(results, f, indent=2)  
-
-    with open("backend/fetch_log.json", "w", encoding="utf-8") as f:  
-        json.dump({  
-            "timestamp": datetime.utcnow().isoformat(),  
-            "article_count": len(results),  
-            "logs": logs  
-        }, f, indent=2)  
+    with open("backend/fetch_log.json", "w", encoding="utf-8") as f:
+        json.dump({
+            "timestamp": datetime.utcnow().isoformat(),
+            "article_count": len(results),
+            "logs": logs
+        }, f, indent=2)
 
     print("💾 Results saved to app/summaries.json and backend/fetch_log.json")
 

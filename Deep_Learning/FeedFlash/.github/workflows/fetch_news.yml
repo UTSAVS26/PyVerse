@@ -3,76 +3,75 @@
 # This file serves as documentation/reference for the workflow structure.
 
 # name: Scheduled News Fetcher
-
 # on:
 #   schedule:
-#     - cron: "30 2 * * *"  # Runs daily at 2:30 AM UTC (8:00 AM IST)
-#   workflow_dispatch:  # Allows manual triggering
+#     - cron: "30 1 * * *"   # 1:30 AM UTC (7:00 AM IST) - Morning commute
+#     - cron: "0 6 * * *"    # 6:00 AM UTC (11:30 AM IST) - Pre-lunch
+#     - cron: "30 9 * * *"   # 9:30 AM UTC (3:00 PM IST) - Afternoon
+#     - cron: "0 13 * * *"   # 1:00 PM UTC (6:30 PM IST) - Evening
+#     - cron: "30 16 * * *"  # 4:30 PM UTC (10:00 PM IST) - Night wrap-up
+#   workflow_dispatch:
 
 # jobs:
 #   run-fetcher:
 #     runs-on: ubuntu-latest
-
 #     steps:
 #       - name: ⬇ Checkout GitHub Repo
 #         uses: actions/checkout@v4
-#         with:
-#           token: ${{ secrets.GH_PAT }}
-          
+        
 #       - name: 🐍 Set up Python
 #         uses: actions/setup-python@v4
 #         with:
 #           python-version: "3.10"
-
+          
 #       - name: 📦 Install Dependencies
 #         run: |
 #           python -m pip install --upgrade pip
 #           pip install -r requirements.txt
-
+          
 #       - name: 📰 Run News Fetcher
 #         run: |
 #           echo "🔐 Available ENV: $NEWS_API"
-#           cd Deep_Learning/FeedFlash
+#           echo "🕐 Current time: $(date)"
+#           echo "🌍 Fetching latest news updates..."
 #           python -m backend.news_fetcher
 #         env:
 #           NEWS_API: ${{ secrets.NEWS_API }}
 #           PYTHONPATH: ${{ github.workspace }}/Deep_Learning/FeedFlash
           
-#       - name: 💾 Commit updates to GitHub using GH_PAT
-#         run: |
-#           git config --global user.email "action@github.com"
-#           git config --global user.name "GitHub Action"
-
-#           git remote set-url origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/${{ github.repository }}
-
-#           git add app/summaries.json backend/fetch_log.json
-
-#           if git diff --staged --quiet; then
-#             echo "✅ No changes to commit"
-#           else
-#             git commit -m "🔄 Updated summaries and logs [AUTO] $(date '+%Y-%m-%d %H:%M:%S')"
-#             git push origin HEAD
-#           fi
-#         env:
-#           GH_PAT: ${{ secrets.GH_PAT }}
-          
 #       - name: 🚀 Sync to Hugging Face Space
 #         run: |
+#           echo "🔄 Syncing to Hugging Face Space..."
 #           git clone https://oauth2:${{ secrets.HF_TOKEN }}@huggingface.co/spaces/Arihant-Bhandari/FeedFlash hf_space
-
+          
+#           # Create directories if they don't exist
 #           mkdir -p hf_space/app hf_space/backend
-#           cp app/summaries.json hf_space/app/ || echo "summaries.json not found"
-#           cp backend/fetch_log.json hf_space/backend/ || echo "fetch_log.json not found"
-
+          
+#           # Copy files with better error handling
+#           if [ -f "app/summaries.json" ]; then
+#             cp app/summaries.json hf_space/app/
+#             echo "✅ Copied summaries.json"
+#           else
+#             echo "⚠️ summaries.json not found"
+#           fi
+          
+#           if [ -f "backend/fetch_log.json" ]; then
+#             cp backend/fetch_log.json hf_space/backend/
+#             echo "✅ Copied fetch_log.json"
+#           else
+#             echo "⚠️ fetch_log.json not found"
+#           fi
+          
+#           # Navigate to HF space and commit
 #           cd hf_space
 #           git config user.name "GitHub Action"
 #           git config user.email "action@github.com"
 #           git add app/summaries.json backend/fetch_log.json
-
+          
 #           if git diff --staged --quiet; then
 #             echo "✅ No changes to sync to Hugging Face"
 #           else
-#             git commit -m "🔁 Auto-sync from GitHub: $(date '+%Y-%m-%d %H:%M:%S')"
+#             git commit -m "🔁 Auto-sync latest news: $(date '+%Y-%m-%d %H:%M:%S UTC')"
 #             git push
 #             echo "✅ Successfully synced to Hugging Face!"
 #           fi
