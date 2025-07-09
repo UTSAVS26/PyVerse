@@ -36,6 +36,11 @@ Welcome to **PyVerse**, your go-to open-source hub for exploring the limitless u
 
 ### This project is now OFFICIALLY accepted for
 
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Sejal-collection/PyVerse/update/Images/Screenshot%202025-07-05%20181726.png" alt="SSOC 2025" width="80%">
+</div>
+   
 <div align="center">
   <img src="https://raw.githubusercontent.com/alo7lika/PyVerse/refs/heads/main/Images/329829127-e79eb6de-81b1-4ffb-b6ed-f018bb977e88.png" alt="GSSoC 2024 Extd" width="80%">
 </div>
