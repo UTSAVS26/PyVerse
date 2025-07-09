@@ -29,6 +29,17 @@
   * Resume Scanner
     * [Extractor](Advanced_Projects/Resume%20Scanner/extractor.py)
     * [Resume Scanner](Advanced_Projects/Resume%20Scanner/resume_scanner.py)
+  * Stegachat
+    * [App](Advanced_Projects/StegaChat/app.py)
+    * Crypto
+      * [Aes](Advanced_Projects/StegaChat/crypto/aes.py)
+    * Gui
+      * [Main Ui](Advanced_Projects/StegaChat/gui/main_ui.py)
+    * Network
+      * [Websocket Comm](Advanced_Projects/StegaChat/network/websocket_comm.py)
+    * Steg
+      * [Image Steg](Advanced_Projects/StegaChat/steg/image_steg.py)
+    * [Test Fixes](Advanced_Projects/StegaChat/test_fixes.py)
   * Telegram Bot
     * [App](Advanced_Projects/Telegram_Bot/app.py)
 
