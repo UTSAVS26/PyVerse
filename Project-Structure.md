@@ -690,6 +690,7 @@
     * Backend
       * [News Fetcher](Deep_Learning/FeedFlash/backend/news_fetcher.py)
     * Model
+      * [Feedflash-Model-2.0](Deep_Learning/FeedFlash/model/feedflash-model-2.0.ipynb)
       * [Feedflash-Model](Deep_Learning/FeedFlash/model/feedflash-model.ipynb)
   * File-Locking-Mechanism
     * Face Recognition Script
