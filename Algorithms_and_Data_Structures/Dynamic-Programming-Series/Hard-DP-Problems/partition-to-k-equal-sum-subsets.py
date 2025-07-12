@@ -1,6 +1,9 @@
 """
 Partition to K Equal Sum Subsets
 Given an array of positive integers and an integer k, find out if it's possible to divide the array into k non-empty subsets whose sums are all equal.
+
+Approach:
+First, check if the total sum of the array is divisible by k. If not, it's impossible to partition. If it is, use backtracking to try to fill each subset to the target sum (total // k). Track which numbers are used. For each subset, try to add unused numbers without exceeding the target. If a subset is filled, move to the next. If only one subset is left, the rest must form the last subset. If all subsets are filled correctly, return True; otherwise, return False.
 """
 
 class Solution:
