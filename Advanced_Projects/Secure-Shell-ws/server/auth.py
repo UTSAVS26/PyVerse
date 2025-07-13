@@ -6,8 +6,10 @@ from cryptography.hazmat.primitives import hashes
 
 KEY_SIZE = 32
 
+import hmac
+
 def verify_token(provided_token: str, expected_token: str) -> bool:
-    return provided_token == expected_token
+    return hmac.compare_digest(provided_token.encode(), expected_token.encode())
 
 def derive_key(password: str, salt: bytes) -> bytes:
     kdf = PBKDF2HMAC(
