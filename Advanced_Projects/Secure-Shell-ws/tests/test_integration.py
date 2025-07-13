@@ -25,11 +25,31 @@ CLIENT_CMD = [
     '--command', 'echo integration_test'
 ]
 
+import psutil
+
 def test_integration():
+    server_proc = None
+    client_proc = None
     # Start server
-    server_proc = subprocess.Popen(SERVER_CMD, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    time.sleep(2)  # Give server time to start
     try:
+        server_proc = subprocess.Popen(SERVER_CMD, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        
+        # Wait for server to be ready (more reliable than fixed sleep)
+        import socket
+        for _ in range(30):  # 30 second timeout
+            try:
+                sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                sock.settimeout(1)
+                result = sock.connect_ex(('127.0.0.1', 8765))
+                sock.close()
+                if result == 0:
+                    break
+            except:
+                pass
+            time.sleep(0.1)
+        else:
+            raise Exception("Server failed to start within timeout")
+        
         # Start client and capture output
         client_proc = subprocess.Popen(CLIENT_CMD, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         try:
@@ -37,15 +57,26 @@ def test_integration():
         except subprocess.TimeoutExpired:
             client_proc.kill()
             stdout, stderr = client_proc.communicate()
+            raise Exception("Client timed out")
+        
+        if client_proc.returncode != 0:
+            raise Exception(f"Client failed with exit code {client_proc.returncode}: {stderr.decode()}")
+            
         output = stdout.decode(errors='ignore') + stderr.decode(errors='ignore')
         assert 'integration_test' in output
     finally:
-        if os.name == 'nt':
-            server_proc.send_signal(signal.CTRL_BREAK_EVENT)
-        else:
-            server_proc.terminate()
-        server_proc.wait(timeout=5)
-
+        # Clean up processes more reliably
+        for proc in [client_proc, server_proc]:
+            if proc and proc.poll() is None:
+                try:
+                    if os.name == 'nt':
+                        proc.send_signal(signal.CTRL_BREAK_EVENT)
+                    else:
+                        proc.terminate()
+                    proc.wait(timeout=5)
+                except:
+                    proc.kill()
+                    proc.wait()
 if __name__ == '__main__':
     test_integration()
     print('Integration test passed!') 
