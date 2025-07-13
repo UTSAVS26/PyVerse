@@ -1,6 +1,6 @@
 import asyncio
 import websockets
-from utils import encrypt, decrypt, derive_key
+from client.utils import encrypt, decrypt, derive_key
 from auth import check_token
 import subprocess
 import argparse
