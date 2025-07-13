@@ -10,7 +10,12 @@ clients = {}
 
 async def handle_connection(websocket, path, token, key):
     encrypted_auth = await websocket.recv()
-    auth_data = json.loads(decrypt(encrypted_auth, key))
+    try:
+        decrypted_data = decrypt(encrypted_auth, key)
+        auth_data = json.loads(decrypted_data.decode('utf-8'))
+    except Exception as e:
+        await websocket.send(encrypt(b"AUTH_FAILED", key))
+        return
     if not check_token(auth_data.get("token"), token):
         await websocket.send(encrypt("AUTH_FAILED", key))
         return
