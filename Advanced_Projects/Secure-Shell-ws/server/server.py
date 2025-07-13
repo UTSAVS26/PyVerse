@@ -30,7 +30,9 @@ async def handle_connection(websocket, path, token, key):
             break
 
 async def main(host, port, token, password):
-    key = derive_key(password)
+    # TODO: in production, generate a random salt and persist it securely
+    salt = b'secure-shell-salt'
+    key = derive_key(password, salt)
     async with websockets.serve(lambda ws, path: handle_connection(ws, path, token, key), host, port):
         print(f"[*] Server running on {host}:{port}")
         await asyncio.Future()  # Run forever
