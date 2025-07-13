@@ -39,6 +39,12 @@ Secure Remote Shell Over WebSockets is a secure, real-time, bidirectional comman
 - **Authentication**: Token-based handshake before shell access is granted.
 - **Replay Attack Prevention**: Nonce or timestamp system can be implemented for extra protection.
 
+⚠️ **Warning**: The current implementation allows unrestricted remote command execution. For production use, implement:
+- Command whitelisting or sandboxing
+- User privilege separation
+- Audit logging
+- Rate limiting
+
 ---
 
 ##  Project Structure
