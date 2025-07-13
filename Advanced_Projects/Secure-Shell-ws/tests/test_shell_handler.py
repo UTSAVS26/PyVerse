@@ -8,7 +8,12 @@ class TestShellHandler(unittest.TestCase):
 
     def test_invalid_command(self):
         output = shell_handler.execute_command('nonexistentcommand1234')
-        self.assertTrue('Error' in output or output)
+        # Should contain error indication or be a known error pattern
+        self.assertTrue(
+            'Error' in output
+            or 'not found' in output
+            or 'command not found' in output.lower()
+        )
 
 if __name__ == '__main__':
     unittest.main() 
