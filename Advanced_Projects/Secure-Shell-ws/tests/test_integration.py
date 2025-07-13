@@ -4,18 +4,24 @@ import time
 import os
 import signal
 
+import os
+
+# Get credentials from environment or use test defaults
+TEST_TOKEN = os.getenv('TEST_TOKEN', 'test_token_' + os.urandom(8).hex())
+TEST_PASSWORD = os.getenv('TEST_PASSWORD', 'test_pass_' + os.urandom(8).hex())
+
 SERVER_CMD = [
     sys.executable, 'server/server.py',
     '--port', '8765',
-    '--token', 'SECRET123',
-    '--password', 'mypass'
+    '--token', TEST_TOKEN,
+    '--password', TEST_PASSWORD
 ]
 CLIENT_CMD = [
     sys.executable, 'client/client.py',
     '--host', '127.0.0.1',
     '--port', '8765',
-    '--token', 'SECRET123',
-    '--password', 'mypass',
+    '--token', TEST_TOKEN,
+    '--password', TEST_PASSWORD,
     '--command', 'echo integration_test'
 ]
 
