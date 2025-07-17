@@ -1,0 +1,5 @@
+# Advanced_Projects/Secure-Shell-ws/requirements.txt
+
+websockets>=11.0,<12.0
+cryptography>=41.0.0,<42.0.0
+jsonschema>=4.17.0,<5.0.0

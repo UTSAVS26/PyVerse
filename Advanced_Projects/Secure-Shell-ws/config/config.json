@@ -1,0 +1,6 @@
+{
+  "host": "0.0.0.0",
+  "port": 8765,
+  "token": "SECRET123",
+  "password": "mypass"
+} 
