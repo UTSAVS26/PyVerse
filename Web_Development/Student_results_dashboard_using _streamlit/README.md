@@ -50,8 +50,8 @@ Directory structure:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/student-results-dashboard.git
-cd student-results-dashboard
+git clone https://github.com/UTSAVS26/PyVerse.git
+cd PyVerse/Web_Development/Student_results_dashboard_using_streamlit
 ```
 
 ## Install Dependencies
