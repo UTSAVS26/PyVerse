@@ -29,6 +29,19 @@
   * Resume Scanner
     * [Extractor](Advanced_Projects/Resume%20Scanner/extractor.py)
     * [Resume Scanner](Advanced_Projects/Resume%20Scanner/resume_scanner.py)
+  * Secure-Shell-Ws
+    * Client
+      * [Client](Advanced_Projects/Secure-Shell-ws/client/client.py)
+      * [Utils](Advanced_Projects/Secure-Shell-ws/client/utils.py)
+    * Server
+      * [Auth](Advanced_Projects/Secure-Shell-ws/server/auth.py)
+      * [Server](Advanced_Projects/Secure-Shell-ws/server/server.py)
+      * [Shell Handler](Advanced_Projects/Secure-Shell-ws/server/shell_handler.py)
+    * Tests
+      * [Test Auth](Advanced_Projects/Secure-Shell-ws/tests/test_auth.py)
+      * [Test Integration](Advanced_Projects/Secure-Shell-ws/tests/test_integration.py)
+      * [Test Shell Handler](Advanced_Projects/Secure-Shell-ws/tests/test_shell_handler.py)
+      * [Test Utils](Advanced_Projects/Secure-Shell-ws/tests/test_utils.py)
   * Stegachat
     * [App](Advanced_Projects/StegaChat/app.py)
     * Crypto
