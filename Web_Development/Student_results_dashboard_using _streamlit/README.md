@@ -18,7 +18,7 @@ A **Streamlit-based web application** to analyze and visualize student results d
 
 ```bash
 Directory structure:
-└── github username-student-results-dashboard/
+└── Web_Development/Student_results_dashboard_using_streamlit/
   ├── README.md
   ├── app.py
   ├── requirements.txt
