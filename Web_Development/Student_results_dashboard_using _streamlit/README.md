@@ -1,6 +1,6 @@
 # Student Results Dashboard
 
-A **Streamlit-based web application** to analyze and visualize student results data for the **Data Science Department**. This dashboard provides section-wise and subject-wise performance insights, pass/fail statistics, top performers, and interactive charts.
+A **Streamlit-based web application** to analyze and visualize student results data for the **Universities**. This dashboard provides section-wise and subject-wise performance insights, pass/fail statistics, top performers, and interactive charts.
 
 ---
 
