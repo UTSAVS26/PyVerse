@@ -42,4 +42,12 @@ class Config:
         return self.config.get(key, self.defaults.get(key))
 
     def set(self, key, value):
+        # Validate threshold values
+        if key.endswith('_threshold') and (not isinstance(value, (int, float)) or not 0 <= value <= 100):
+            raise ValueError(f"Threshold values must be numeric between 0 and 100, got {value}")
+        
+        # Validate interval values  
+        if key.endswith('_interval') and (not isinstance(value, (int, float)) or value <= 0):
+            raise ValueError(f"Interval values must be positive numbers, got {value}")
+            
         self.config[key] = value
