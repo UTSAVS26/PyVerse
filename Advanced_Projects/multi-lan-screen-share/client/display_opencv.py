@@ -9,7 +9,11 @@ def display_loop(frame_queue, headless=False):
         raise TypeError("frame_queue must support pop() method")
     # …rest of the function…
     if not headless:
-        cv2.namedWindow('Screen Share - OpenCV', cv2.WINDOW_NORMAL)
+        try:
+            cv2.namedWindow('Screen Share - OpenCV', cv2.WINDOW_NORMAL)
+        except cv2.error as e:
+            print(f"[ERROR] Failed to create OpenCV window: {e}")
+            return
     while frame_queue:
         frame_data = frame_queue.pop(0)
         try:
