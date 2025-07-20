@@ -1,0 +1,9 @@
+
+mss
+pyvirtualdisplay
+Pillow
+lz4
+numpy
+opencv-python
+# tkinter is included with Python standard library
+# argparse, threading, time are standard library
