@@ -5,8 +5,8 @@ import sys
 # Get per-core and total CPU usage (%)
 def get_cpu_usage():
     return {
-        'per_core': psutil.cpu_percent(percpu=True),
-        'total': psutil.cpu_percent()
+        'per_core': psutil.cpu_percent(interval=0.1, percpu=True),
+        'total': psutil.cpu_percent(interval=0.1)
     }
 
 # Get CPU temperature (if available)
