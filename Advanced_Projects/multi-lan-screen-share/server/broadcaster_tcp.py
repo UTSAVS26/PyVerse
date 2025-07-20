@@ -18,11 +18,16 @@ def handle_client(conn, addr, get_frame):
         conn.close()
 
 def main():
-    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-    sock.bind((config.DEFAULT_HOST, config.DEFAULT_PORT_TCP))
-    sock.listen(5)
-    print(f"[TCP] Broadcasting on {config.DEFAULT_HOST}:{config.DEFAULT_PORT_TCP}")
+def main():
+    try:
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        sock.bind((config.DEFAULT_HOST, config.DEFAULT_PORT_TCP))
+        sock.listen(5)
+        print(f"[TCP] Broadcasting on {config.DEFAULT_HOST}:{config.DEFAULT_PORT_TCP}")
+    except OSError as e:
+        print(f"[TCP] Failed to start server: {e}")
+        return
     
     display = capture.start_virtual_display(config.FRAME_WIDTH, config.FRAME_HEIGHT)
     latest_frame = b''
