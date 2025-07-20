@@ -41,10 +41,8 @@ def run_dashboard(mode='qt'):
         try:
             import streamlit as st
         except ImportError:
-try:
-    import streamlit as st
-except ImportError:
-    raise ImportError("Streamlit is not installed. Please install it with 'pip install streamlit'.")
+            raise ImportError("Streamlit is not installed. Please install it with 'pip install streamlit'.")
+
         # Note: Streamlit apps should be run with `streamlit run script.py`
         # This function should create a Streamlit script file or use subprocess
         print("To run in web mode, use: streamlit run <streamlit_script.py>")
