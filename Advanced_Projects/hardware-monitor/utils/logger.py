@@ -1,9 +1,6 @@
 import csv
 import time
 
-class MetricsLogger:
-    def __init__(self):
-        self.logs = []
 
 import threading
 
