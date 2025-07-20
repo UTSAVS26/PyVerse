@@ -16,8 +16,15 @@ class Config:
             self.load(path)
 
     def load(self, path):
-        with open(path, 'r') as f:
-            self.config = json.load(f)
+        try:
+            with open(path, 'r') as f:
+                loaded_config = json.load(f)
+                # Merge with defaults to ensure all keys exist
+                self.config = self.defaults.copy()
+                self.config.update(loaded_config)
+        except (json.JSONDecodeError, IOError) as e:
+            print(f"Failed to load config from {path}: {e}. Using defaults.")
+            self.config = self.defaults.copy()
 
     def save(self, path=None):
         path = path or self.path
