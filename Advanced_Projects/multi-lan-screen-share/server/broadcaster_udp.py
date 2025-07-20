@@ -14,9 +14,15 @@ def main():
     display = capture.start_virtual_display(config.FRAME_WIDTH, config.FRAME_HEIGHT)
     try:
         while True:
-            img = capture.capture_screen()
-            frame = encoder.encode_jpeg(img)
-            data = encoder.compress_data(frame)
+            try:
+                img = capture.capture_screen()
+                frame = encoder.encode_jpeg(img)
+                data = encoder.compress_data(frame)
+            except Exception as e:
+                print(f"[ERROR] Failed to capture/encode frame: {e}")
+                time.sleep(1 / config.FRAME_RATE)
+                continue
+
             # UDP max size
             if len(data) > config.UDP_BUFFER_SIZE:
                 print(f"[WARN] Frame too large for UDP: {len(data)} bytes")
