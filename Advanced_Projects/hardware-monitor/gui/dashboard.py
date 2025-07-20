@@ -41,8 +41,10 @@ def run_dashboard(mode='qt'):
         try:
             import streamlit as st
         except ImportError:
-            print("Streamlit is not installed. Please install it with 'pip install streamlit'.")
-            sys.exit(1)
+try:
+    import streamlit as st
+except ImportError:
+    raise ImportError("Streamlit is not installed. Please install it with 'pip install streamlit'.")
         st.title("Dynamic Hardware Resource Monitor")
         st.write("[Streamlit dashboard coming soon]")
     else:
