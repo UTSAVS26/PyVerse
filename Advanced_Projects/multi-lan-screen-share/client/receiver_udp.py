@@ -31,9 +31,16 @@ def main():
     else:
         display_loop = importlib.import_module('client.display_opencv').display_loop
 
-    frame_queue = []
+from queue import Queue
+
+    if args.display == 'tk':
+        display_loop = importlib.import_module('client.display_tkinter').display_loop
+    else:
+        display_loop = importlib.import_module('client.display_opencv').display_loop
+
+    frame_queue = Queue()
     def display_callback(frame):
-        frame_queue.append(frame)
+        frame_queue.put(frame)
 
     threading.Thread(target=receive_frames, args=(args.host, display_callback), daemon=True).start()
     display_loop(frame_queue)
