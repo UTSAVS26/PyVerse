@@ -39,11 +39,28 @@ def main():
     else:
         display_loop = importlib.import_module('client.display_opencv').display_loop
 
-    frame_queue = []
-    def display_callback(frame):
-        frame_queue.append(frame)
+from queue import Queue
 
-    threading.Thread(target=receive_frames, args=(args.host, display_callback), daemon=True).start()
+def main():
+    parser = argparse.ArgumentParser(description='TCP Screen Receiver')
+    parser.add_argument('--host', type=str, required=True, help='Server host to connect to')
+    parser.add_argument('--display', type=str, default='tk', choices=['tk', 'cv'], help='Display method: tk or cv')
+    args = parser.parse_args()
+
+    if args.display == 'tk':
+        display_loop = importlib.import_module('client.display_tkinter').display_loop
+    else:
+        display_loop = importlib.import_module('client.display_opencv').display_loop
+
+    frame_queue = Queue()
+    def display_callback(frame):
+        frame_queue.put(frame)
+
+    threading.Thread(
+        target=receive_frames,
+        args=(args.host, display_callback),
+        daemon=True
+    ).start()
     display_loop(frame_queue)
 
 if __name__ == '__main__':
