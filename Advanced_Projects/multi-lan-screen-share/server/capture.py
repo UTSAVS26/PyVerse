@@ -15,8 +15,16 @@ def start_virtual_display(width=1280, height=720):
     return None
 
 def capture_screen(region=None):
-    with mss.mss() as sct:
-        monitor = sct.monitors[1] if region is None else region
-        sct_img = sct.grab(monitor)
-        img = Image.frombytes('RGB', sct_img.size, sct_img.rgb)
-        return img
+    try:
+        with mss.mss() as sct:
+            if region is None:
+                if len(sct.monitors) < 2:
+                    raise RuntimeError("No monitors available for capture")
+                monitor = sct.monitors[1]
+            else:
+                monitor = region
+            sct_img = sct.grab(monitor)
+            img = Image.frombytes('RGB', sct_img.size, sct_img.rgb)
+            return img
+    except Exception as e:
+        raise RuntimeError(f"Screen capture failed: {e}") from e
