@@ -13,9 +13,6 @@ def main():
         run_dashboard(mode='qt')
     elif args.mode == 'web':
         run_dashboard(mode='web')
-    else:
-        print("Invalid mode. Use --mode=qt or --mode=web.")
-        sys.exit(1)
 
 if __name__ == "__main__":
     main()
