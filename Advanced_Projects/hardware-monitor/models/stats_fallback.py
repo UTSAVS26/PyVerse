@@ -23,7 +23,19 @@ class StatsFallbackPredictor:
             raise RuntimeError(f"Failed to fit ARIMA model: {e}")
 
     def predict(self, series):
+        # ensure input is a NumPy array
+        if not isinstance(series, np.ndarray):
+            series = np.asarray(series)
+        if len(series) == 0:
+            raise ValueError("Cannot predict from empty series")
+        
+        # auto-fit if model isn’t already trained
         if not self.fitted:
             self.fit(series)
-        forecast = self.model.forecast(steps=self.pred_steps)
-        return np.array(forecast)
+
+        # perform forecast with error handling
+        try:
+            forecast = self.model.forecast(steps=self.pred_steps)
+            return np.array(forecast)
+        except Exception as e:
+            raise RuntimeError(f"Prediction failed: {e}")
