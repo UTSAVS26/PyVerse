@@ -3,6 +3,11 @@ import numpy as np
 import io
 
 def display_loop(frame_queue, headless=False):
+    if frame_queue is None:
+        raise ValueError("frame_queue cannot be None")
+    if not hasattr(frame_queue, 'pop'):
+        raise TypeError("frame_queue must support pop() method")
+    # …rest of the function…
     if not headless:
         cv2.namedWindow('Screen Share - OpenCV', cv2.WINDOW_NORMAL)
     while frame_queue:
