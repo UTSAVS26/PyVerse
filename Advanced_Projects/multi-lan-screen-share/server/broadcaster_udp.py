@@ -5,10 +5,17 @@ from . import capture, encoder
 from utils import config
 
 def main():
-    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    target = ('<broadcast>', config.DEFAULT_PORT_UDP)
-    sock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
-    print(f"[UDP] Broadcasting on {target}")
+def main():
+    try:
+        sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        sock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
+        target = ('<broadcast>', config.DEFAULT_PORT_UDP)
+        print(f"[UDP] Broadcasting on {target}")
+    except OSError as e:
+        print(f"[ERROR] Failed to create UDP socket: {e}")
+        return
+
+    # … rest of your broadcasting loop …
     
     # Optionally start virtual display for headless
     display = capture.start_virtual_display(config.FRAME_WIDTH, config.FRAME_HEIGHT)
