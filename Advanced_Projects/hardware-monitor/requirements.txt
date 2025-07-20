@@ -1,0 +1,9 @@
+PyQt5
+streamlit
+psutil
+pynvml
+matplotlib
+plotly
+torch
+statsmodels
+numpy 
