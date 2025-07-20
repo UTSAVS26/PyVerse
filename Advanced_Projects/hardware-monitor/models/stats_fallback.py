@@ -10,8 +10,17 @@ class StatsFallbackPredictor:
 
     def fit(self, series):
         # series: 1D numpy array
-        self.model = ARIMA(series, order=self.order).fit()
-        self.fitted = True
+        if len(series) < max(self.order) + 10:  # Minimum data requirement
+            raise ValueError(
+                f"Insufficient data for ARIMA({self.order}). "
+                f"Need at least {max(self.order) + 10} points, got {len(series)}"
+            )
+        
+        try:
+            self.model = ARIMA(series, order=self.order).fit()
+            self.fitted = True
+        except Exception as e:
+            raise RuntimeError(f"Failed to fit ARIMA model: {e}")
 
     def predict(self, series):
         if not self.fitted:
