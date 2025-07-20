@@ -30,8 +30,13 @@ class Config:
         path = path or self.path
         if not path:
             raise ValueError("No path specified for saving config.")
-        with open(path, 'w') as f:
-            json.dump(self.config, f, indent=2)
+        try:
+            with open(path, 'w') as f:
+                json.dump(self.config, f, indent=2)
+            return True
+        except Exception as e:
+            print(f"Failed to save config to {path}: {e}")
+            return False
 
     def get(self, key):
         return self.config.get(key, self.defaults.get(key))
