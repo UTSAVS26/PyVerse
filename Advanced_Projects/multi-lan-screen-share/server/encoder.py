@@ -24,9 +24,12 @@ def compress_data(data, method=None):
 
 def decompress_data(data, method=None):
     method = method or config.COMPRESSION
-    if method == 'zlib':
-        return zlib.decompress(data)
-    elif method == 'lz4' and _has_lz4:
-        return lz4.frame.decompress(data)
-    else:
-        return data
+    try:
+        if method == 'zlib':
+            return zlib.decompress(data)
+        elif method == 'lz4' and _has_lz4:
+            return lz4.frame.decompress(data)
+        else:
+            return data
+    except Exception as e:
+        raise RuntimeError(f"Decompression failed with {method}: {e}") from e
