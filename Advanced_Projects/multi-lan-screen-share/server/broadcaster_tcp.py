@@ -35,11 +35,14 @@ def main():
     def capture_loop():
         nonlocal latest_frame
         while True:
-            img = capture.capture_screen()
-            frame = encoder.encode_jpeg(img)
-            data = encoder.compress_data(frame)
-            with lock:
-                latest_frame = data
+            try:
+                img = capture.capture_screen()
+                frame = encoder.encode_jpeg(img)
+                data = encoder.compress_data(frame)
+                with lock:
+                    latest_frame = data
+            except Exception as e:
+                print(f"[TCP] Capture error: {e}")
             time.sleep(1 / config.FRAME_RATE)
 
     threading.Thread(target=capture_loop, daemon=True).start()
