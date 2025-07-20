@@ -15,7 +15,11 @@ def display_loop(frame_queue, headless=False):
             print(f"[ERROR] Failed to create OpenCV window: {e}")
             return
     while frame_queue:
-        frame_data = frame_queue.pop(0)
+        try:
+            frame_data = frame_queue.pop(0)
+        except IndexError:
+            # Queue was emptied by another thread
+            break
         try:
             arr = np.frombuffer(frame_data, dtype=np.uint8)
             img = cv2.imdecode(arr, cv2.IMREAD_COLOR)
