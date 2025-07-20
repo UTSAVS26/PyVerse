@@ -33,10 +33,10 @@ def run_dashboard(mode='qt'):
                 tab.setLayout(layout)
                 return tab
 
-        app = QApplication(sys.argv)
+        app = QApplication(sys.argv if not QApplication.instance() else [])
         window = DashboardWindow()
         window.show()
-        sys.exit(app.exec_())
+        return app
     elif mode == 'web':
         try:
             import streamlit as st
