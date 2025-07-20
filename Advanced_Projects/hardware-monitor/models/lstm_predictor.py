@@ -57,8 +57,14 @@ class LSTMPredictor:
 
     def predict(self, series):
         # Predict next pred_steps values
+        if len(series) < self.window_size:
+            raise ValueError(
+                f"Series length ({len(series)}) must be at least window_size ({self.window_size})"
+            )
         self.model.eval()
-        input_seq = torch.tensor(series[-self.window_size:], dtype=torch.float32).unsqueeze(0).unsqueeze(-1).to(self.device)
+        input_seq = torch.tensor(
+            series[-self.window_size:], dtype=torch.float32
+        ).unsqueeze(0).unsqueeze(-1).to(self.device)
         preds = []
         seq = input_seq.clone()
         for _ in range(self.pred_steps):
