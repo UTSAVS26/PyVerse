@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>One-Time-View File Server</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔒 One-Time-View File Server</h1>
+        <form id="uploadForm" action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" required>
+            <label>Expiry (seconds): <input type="number" name="expiry" value="600" min="10" max="3600"></label>
+            <button type="submit">Upload</button>
+        </form>
+        {% if file_url %}
+        <div class="result">
+            <p>Share this one-time link:</p>
+            <a href="{{ file_url }}" target="_blank">{{ file_url }}</a>
+            <p>Or scan QR code:</p>
+            <img src="{{ qr_code }}" alt="QR Code">
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
