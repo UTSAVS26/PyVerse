@@ -26,15 +26,33 @@ class LSTMPredictor:
     def fit(self, series, epochs=10):
         # series: 1D numpy array
         X, y = self._create_dataset(series)
-        X = torch.tensor(X, dtype=torch.float32).unsqueeze(-1).to(self.device)
-        y = torch.tensor(y, dtype=torch.float32).unsqueeze(-1).to(self.device)
+        # Split data for validation (80/20 split)
+        split_idx = int(0.8 * len(X))
+        X_train, X_val = X[:split_idx], X[split_idx:]
+        y_train, y_val = y[:split_idx], y[split_idx:]
+
+        X_train = torch.tensor(X_train, dtype=torch.float32).unsqueeze(-1).to(self.device)
+        y_train = torch.tensor(y_train, dtype=torch.float32).unsqueeze(-1).to(self.device)
+        X_val   = torch.tensor(X_val,   dtype=torch.float32).unsqueeze(-1).to(self.device)
+        y_val   = torch.tensor(y_val,   dtype=torch.float32).unsqueeze(-1).to(self.device)
+
+        best_val_loss = float('inf')
         for _ in range(epochs):
             self.model.train()
             self.optimizer.zero_grad()
-            output = self.model(X)
-            loss = self.criterion(output, y)
+            output = self.model(X_train)
+            loss = self.criterion(output, y_train)
             loss.backward()
             self.optimizer.step()
+
+            # Validation
+            self.model.eval()
+            with torch.no_grad():
+                val_output = self.model(X_val)
+                val_loss   = self.criterion(val_output, y_val)
+                if val_loss < best_val_loss:
+                    best_val_loss = val_loss
+
         self.trained = True
 
     def predict(self, series):
