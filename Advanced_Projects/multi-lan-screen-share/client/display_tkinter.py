@@ -3,6 +3,11 @@ from PIL import Image, ImageTk
 import io
 
 def display_loop(frame_queue, headless=False):
+    if frame_queue is None:
+        raise ValueError("frame_queue cannot be None")
+    if not hasattr(frame_queue, 'pop'):
+        raise TypeError("frame_queue must support pop() method")
+    # …rest of the function…
     root = tk.Tk()
     root.title('Screen Share - Tkinter')
     label = tk.Label(root)
