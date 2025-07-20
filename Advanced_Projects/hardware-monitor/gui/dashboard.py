@@ -45,7 +45,9 @@ try:
     import streamlit as st
 except ImportError:
     raise ImportError("Streamlit is not installed. Please install it with 'pip install streamlit'.")
-        st.title("Dynamic Hardware Resource Monitor")
-        st.write("[Streamlit dashboard coming soon]")
+        # Note: Streamlit apps should be run with `streamlit run script.py`
+        # This function should create a Streamlit script file or use subprocess
+        print("To run in web mode, use: streamlit run <streamlit_script.py>")
+        print("Web dashboard functionality needs to be implemented in a separate Streamlit script.")
     else:
         print(f"Unknown mode: {mode}")
