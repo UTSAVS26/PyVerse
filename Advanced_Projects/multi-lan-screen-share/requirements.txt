@@ -1,0 +1,9 @@
+
+mss>=6.1.0,<7.0.0
+pyvirtualdisplay>=3.0.0,<4.0.0
+Pillow>=11.2.1,<12.0.0
+lz4>=4.3.2,<5.0.0
+numpy>=1.25.0,<2.0.0
+opencv-python>=4.12.0.88,<5.0.0
+# tkinter is included with Python standard library
+# argparse, threading, time are standard library
