@@ -1044,9 +1044,6 @@
     * Web App
       * [App](Machine_Learning/Bank%20Loan%20Approval%20Prediction/Web%20App/app.py)
   * Bitcoin Price Prediction
-    * Model
-      * [Bitcoin Price Prediction](Machine_Learning/Bitcoin%20Price%20Prediction/Model/Bitcoin_Price_Prediction.ipynb)
-  * Bitcoin Price Prediction
     * App
       * [Forms](Machine_Learning/Bitcoin_Price_Prediction/app/forms.py)
       * [Routes](Machine_Learning/Bitcoin_Price_Prediction/app/routes.py)
@@ -1135,6 +1132,7 @@
     * [Data Cleaning](Machine_Learning/Forest-Fire-Prediction/Data%20Cleaning.ipynb)
     * [Exploratory Data Analysis](Machine_Learning/Forest-Fire-Prediction/Exploratory%20Data%20Analysis.ipynb)
     * [Ml](Machine_Learning/Forest-Fire-Prediction/ML.ipynb)
+    * [App](Machine_Learning/Forest-Fire-Prediction/app.py)
   * Fraudulent Transactions Detection
     * Model
       * [Fraud Transaction Detection](Machine_Learning/Fraudulent%20Transactions%20Detection/Model/fraud_transaction_detection.ipynb)
@@ -1250,7 +1248,10 @@
     * [App](Machine_Learning/Signature_verification_portal/app.py)
     * [Db](Machine_Learning/Signature_verification_portal/db.py)
   * Stock Market Analysis
-    * [Stock-Market-Analysis Final](Machine_Learning/Stock_Market_Analysis/stock-market-analysis_final.ipynb)
+    * [Analyzer](Machine_Learning/Stock_Market_Analysis/analyzer.py)
+    * [Data Loader](Machine_Learning/Stock_Market_Analysis/data_loader.py)
+    * [Main](Machine_Learning/Stock_Market_Analysis/main.py)
+    * [Visualizer](Machine_Learning/Stock_Market_Analysis/visualizer.py)
   * Student-Performances-Based-On-Daily-Habits
     * [Model](Machine_Learning/Student-Performances-Based-On-Daily-Habits/Model.ipynb)
   * Style Transfer With Neural Network
