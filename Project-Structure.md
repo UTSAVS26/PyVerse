@@ -55,6 +55,20 @@
     * [Test Fixes](Advanced_Projects/StegaChat/test_fixes.py)
   * Telegram Bot
     * [App](Advanced_Projects/Telegram_Bot/app.py)
+  * Multi-Lan-Screen-Share
+    * Client
+      * [Display Opencv](Advanced_Projects/multi-lan-screen-share/client/display_opencv.py)
+      * [Display Tkinter](Advanced_Projects/multi-lan-screen-share/client/display_tkinter.py)
+      * [Receiver Tcp](Advanced_Projects/multi-lan-screen-share/client/receiver_tcp.py)
+      * [Receiver Udp](Advanced_Projects/multi-lan-screen-share/client/receiver_udp.py)
+    * Server
+      * [Broadcaster Tcp](Advanced_Projects/multi-lan-screen-share/server/broadcaster_tcp.py)
+      * [Broadcaster Udp](Advanced_Projects/multi-lan-screen-share/server/broadcaster_udp.py)
+      * [Capture](Advanced_Projects/multi-lan-screen-share/server/capture.py)
+      * [Encoder](Advanced_Projects/multi-lan-screen-share/server/encoder.py)
+    * [Test Screen Share](Advanced_Projects/multi-lan-screen-share/test_screen_share.py)
+    * Utils
+      * [Config](Advanced_Projects/multi-lan-screen-share/utils/config.py)
 
 ## Algorithms And Data Structures
   * Arrays
@@ -1808,3 +1822,9 @@
   * Interactive-Code-Playground
     * [Main](Web_Development/interactive-code-playground/main.py)
     * [Temp Code](Web_Development/interactive-code-playground/temp_code.py)
+  * One-Time-View-Server
+    * [Server](Web_Development/one-time-view-server/server.py)
+    * [Test Server](Web_Development/one-time-view-server/test_server.py)
+    * Utils
+      * [Cleanup Scheduler](Web_Development/one-time-view-server/utils/cleanup_scheduler.py)
+      * [Token Generator](Web_Development/one-time-view-server/utils/token_generator.py)
