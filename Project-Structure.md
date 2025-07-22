@@ -55,6 +55,24 @@
     * [Test Fixes](Advanced_Projects/StegaChat/test_fixes.py)
   * Telegram Bot
     * [App](Advanced_Projects/Telegram_Bot/app.py)
+  * Hardware-Monitor
+    * Gui
+      * [Dashboard](Advanced_Projects/hardware-monitor/gui/dashboard.py)
+    * [Main](Advanced_Projects/hardware-monitor/main.py)
+    * Models
+      * [Lstm Predictor](Advanced_Projects/hardware-monitor/models/lstm_predictor.py)
+      * [Stats Fallback](Advanced_Projects/hardware-monitor/models/stats_fallback.py)
+    * Sensors
+      * [Cpu](Advanced_Projects/hardware-monitor/sensors/cpu.py)
+      * [Gpu](Advanced_Projects/hardware-monitor/sensors/gpu.py)
+      * [Memory](Advanced_Projects/hardware-monitor/sensors/memory.py)
+    * [Test Project](Advanced_Projects/hardware-monitor/test_project.py)
+    * Utils
+      * [Config](Advanced_Projects/hardware-monitor/utils/config.py)
+      * [Logger](Advanced_Projects/hardware-monitor/utils/logger.py)
+    * Visualizations
+      * [Live Plot](Advanced_Projects/hardware-monitor/visualizations/live_plot.py)
+      * [Prediction Overlay](Advanced_Projects/hardware-monitor/visualizations/prediction_overlay.py)
   * Multi-Lan-Screen-Share
     * Client
       * [Display Opencv](Advanced_Projects/multi-lan-screen-share/client/display_opencv.py)
@@ -1811,6 +1829,10 @@
     * [Info](Web_Development/Movie_Recommendation/info.py)
     * [Pythonapplication](Web_Development/Movie_Recommendation/pythonApplication.py)
     * [Test](Web_Development/Movie_Recommendation/test.py)
+  * Student Results Dashboard Using  Streamlit
+    * [App](Web_Development/Student_results_dashboard_using%20_streamlit/app.py)
+    * Utils
+      * [Data Loader](Web_Development/Student_results_dashboard_using%20_streamlit/utils/data_loader.py)
   * Test Sumarrization Nlp
     * [Textsummary](Web_Development/Test_Sumarrization_NLP/textsummary.py)
   * Chatbot
