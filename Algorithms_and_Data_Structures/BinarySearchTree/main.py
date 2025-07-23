@@ -100,7 +100,7 @@ def main():
                 break
 
             else:
-                print("Invalid choice. Please select a number between 1 and 11.")
+                print("Invalid choice. Please select a number between 1 and 12.")
 
         except (EmptyTreeError, InvalidValueError) as e:
             print(f"Error: {e}")
