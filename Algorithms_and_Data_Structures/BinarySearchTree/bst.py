@@ -88,6 +88,8 @@ class BST:
 
     def find_min(self) -> BSTNode: 
         """Get the minimum node in the tree"""
+        if self.root is None:
+            raise EmptyTreeError("Cannot find minimum in empty tree")
         return self._find_min(self.root)
     
     def _find_min(self, node: BSTNode) -> BSTNode:
