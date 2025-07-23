@@ -135,6 +135,7 @@ class BST:
         """Mirror the Binary Search Tree"""
         mirrored_bst = BST()
         mirrored_bst.root = self._mirror_bst_helper(self.root)
+        mirrored_bst.num_nodes = self.num_nodes
         return mirrored_bst
     
     def _mirror_bst_helper(self, node: BSTNode) -> BSTNode:
