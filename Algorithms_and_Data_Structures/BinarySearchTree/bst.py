@@ -100,6 +100,8 @@ class BST:
     
     def find_max(self) -> BSTNode:
         """Get the maximum node in the tree"""
+        if self.root is None:
+            raise EmptyTreeError("Cannot find maximum in empty tree")
         return self._find_max(self.root)
 
     def _find_max(self, node: BSTNode) -> BSTNode:
