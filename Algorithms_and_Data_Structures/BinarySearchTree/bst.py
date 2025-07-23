@@ -227,14 +227,12 @@ class BST:
                 q.append((node.rightPtr,level+1,x+seg,'r'))
 
         for i, level_nodes in enumerate(levels):
-            for n in level_nodes:
-                # … rest of loop body …
             pre=0
             preline=0
             linestr=''
             pstr=''
             seg= width//(pow(2,i+1))
-            for n in l:
+            for n in level_nodes:
                 valstr= str(n[0].value)
                 if n[3]=='r':
                     linestr+=' '*(n[2]-preline-1-seg-seg//2)+ '¯'*(seg +seg//2)+'\\'
