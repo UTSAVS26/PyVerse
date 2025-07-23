@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Voice Agent PoC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 1em;
+            color: #0077cc;
+        }
+        section {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 2em;
+            box-shadow: 0 0 10px #ddd;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0.5em;
+        }
+        input[type="file"], input[type="text"], button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 1em;
+            font-size: 1em;
+        }
+        button {
+            cursor: pointer;
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #005fa3;
+        }
+        #transcript, #tts-status {
+            min-height: 2em;
+            margin-bottom: 1em;
+            font-style: italic;
+        }
+        audio {
+            width: 100%;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>AI Voice Agent PoC</h1>
+
+    <section>
+        <h2>Speech-to-Text (Transcription)</h2>
+        <label for="audio-upload">Upload audio file (mp3/wav):</label>
+        <input type="file" id="audio-upload" accept="audio/*" />
+        <button id="transcribe-btn">Transcribe Audio</button>
+        <p id="transcript"></p>
+    </section>
+
+    <section>
+        <h2>Text-to-Speech (TTS)</h2>
+        <label for="tts-input">Enter text to convert to speech:</label>
+        <input type="text" id="tts-input" placeholder="Type something here..." />
+        <button id="tts-btn">Generate & Play Audio</button>
+        <p id="tts-status"></p>
+        <audio id="audio-player" controls></audio>
+    </section>
+
+<script>
+    const transcribeBtn = document.getElementById('transcribe-btn');
+    const audioUpload = document.getElementById('audio-upload');
+    const transcriptDisplay = document.getElementById('transcript');
+
+    transcribeBtn.addEventListener('click', async () => {
+        transcriptDisplay.textContent = "Transcribing...";
+        const file = audioUpload.files[0];
+        if (!file) {
+            transcriptDisplay.textContent = "Please upload an audio file first.";
+            return;
+        }
+
+        // Create FormData and send to /transcribe endpoint
+        const formData = new FormData();
+        formData.append('file', file);
+
+        try {
+            const res = await fetch('/transcribe', {
+                method: 'POST',
+                body: formData
+            });
+            const data = await res.json();
+            if (res.ok) {
+                transcriptDisplay.textContent = data.transcript;
+            } else {
+                transcriptDisplay.textContent = `Error: ${data.detail || 'Failed to transcribe'}`;
+            }
+        } catch (err) {
+            transcriptDisplay.textContent = 'Error: ' + err.message;
+        }
+    });
+
+    // TTS part
+    const ttsBtn = document.getElementById('tts-btn');
+    const ttsInput = document.getElementById('tts-input');
+    const ttsStatus = document.getElementById('tts-status');
+    const audioPlayer = document.getElementById('audio-player');
+
+    ttsBtn.addEventListener('click', async () => {
+        const text = ttsInput.value.trim();
+        if (!text) {
+            ttsStatus.textContent = "Please enter some text first.";
+            return;
+        }
+        ttsStatus.textContent = "Generating audio...";
+        audioPlayer.src = "";  // reset player
+
+        try {
+            const res = await fetch('/tts', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ text })
+            });
+            const data = await res.json();
+            if (res.ok && data.audio_url) {
+                ttsStatus.textContent = "Audio ready! Playing...";
+                audioPlayer.src = data.audio_url + "?t=" + Date.now();
+                audioPlayer.play();
+            } else {
+                ttsStatus.textContent = `Error: ${data.detail || 'Failed to generate audio'}`;
+            }
+        } catch (err) {
+            ttsStatus.textContent = 'Error: ' + err.message;
+        }
+    });
+</script>
+</body>
+</html>
