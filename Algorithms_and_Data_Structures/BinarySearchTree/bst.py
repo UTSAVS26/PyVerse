@@ -114,6 +114,7 @@ class BST:
         """Clone the Binary Search Tree"""
         cloned_bst = BST()
         cloned_bst.root = self._clone_bst_helper(self.root)
+        cloned_bst.num_nodes = self.num_nodes
         return cloned_bst
     
     def _clone_bst_helper(self, node: BSTNode) -> BSTNode:
