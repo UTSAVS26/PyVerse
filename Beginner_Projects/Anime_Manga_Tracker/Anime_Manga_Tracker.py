@@ -77,13 +77,13 @@ def main():
         print("5. Get Anime Recommendations")
         print("6. Get Manga Recommendations")
         print("7. Exit")
-        choice = input("Enter your choice: ")
+        choice = input("Enter your choice: ").strip()
 
         match choice:
           case '1':
               title = input("Enter anime title: ")
-              episode = input("Enter current episode: ")
-              rating = input("Enter rating (1-10): ")
+              episode = int(input("Enter current episode: "))
+              rating = float(input("Enter rating (1-10): "))
               add_anime_to_tracker(title, episode, rating)
           case '2':
               title = input("Enter manga title: ")
