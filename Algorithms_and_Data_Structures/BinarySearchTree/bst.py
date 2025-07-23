@@ -204,8 +204,10 @@ class BST:
             
     def print_tree(self) -> None:
         "Pretty print Binary Search Tree"
+        if self.root is None:
+            print("Tree is empty!")
+            return
         self._print_tree_helper(self.root)
-        
     def _print_tree_helper(self, node: BSTNode) -> None:
         nlevels = self._get_height(self.root)
         width =  pow(2,nlevels+1)
