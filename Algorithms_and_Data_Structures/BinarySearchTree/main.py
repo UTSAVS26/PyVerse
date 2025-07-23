@@ -11,7 +11,12 @@ def print_menu():
     print("4. Display all traversals")
     print("5. Get tree height")
     print("6. Get total nodes")
-    print("7. Exit")
+    print("7. Get maximum value in the tree")
+    print("8. Get minimum value in the tree")
+    print("9. Clone the Binary Search Tree")
+    print("10. Mirror the Binary Search Tree")
+    print("11. Pretty print the Binary Search Tree")
+    print("12. Exit")
     print("="*40)
 
 def main():
@@ -20,9 +25,9 @@ def main():
     while True:
         print_menu()
         try:
-            choice = int(input("Enter your choice (1-7): "))
+            choice = int(input("Enter your choice (1-12): "))
         except ValueError:
-            print("Invalid input. Please enter a number between 1 and 7.")
+            print("Invalid input. Please enter a number between 1 and 12.")
             continue
 
         try:
@@ -64,11 +69,33 @@ def main():
                 print(f"Total nodes in the BST: {bst.num_nodes}")
 
             elif choice == 7:
+                node = bst.find_max()
+                print(f"Value of the maximum node : {node.value}")
+                
+            elif choice == 8:
+                node = bst.find_min()
+                print(f"Value of the minimum node : {node.value}")
+                
+            elif choice == 9:
+                cloned_bst = bst.clone_bst()
+                print("\nCloned Binary Search Tree :")
+                cloned_bst.print_tree()
+                
+            elif choice == 10:
+                mirrored_tree = bst.mirror_bst()
+                print("\n Mirrored Tree :")
+                mirrored_tree.print_tree()
+                
+            elif choice == 11:
+                print("\nBinary Search Tree :")
+                bst.print_tree()
+                
+            elif choice == 12:
                 print("Thank you for using the BST program!")
                 break
 
             else:
-                print("Invalid choice. Please select a number between 1 and 7.")
+                print("Invalid choice. Please select a number between 1 and 11.")
 
         except (EmptyTreeError, InvalidValueError) as e:
             print(f"Error: {e}")
