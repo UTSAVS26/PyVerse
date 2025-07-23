@@ -197,6 +197,7 @@ class BST:
             result.extend([root.value] * root.count)
             
     def print_tree(self) -> None:
+        "Pretty print Binary Search Tree"
         self._print_tree_helper(self.root)
         
     def _print_tree_helper(self, node: BSTNode) -> None:
