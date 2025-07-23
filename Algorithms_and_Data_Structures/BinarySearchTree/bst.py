@@ -220,7 +220,9 @@ class BST:
                 q.append((node.leftPtr,level+1,x-seg,'l'))
                 q.append((node.rightPtr,level+1,x+seg,'r'))
 
-        for i,l in enumerate(levels):
+        for i, level_nodes in enumerate(levels):
+            for n in level_nodes:
+                # … rest of loop body …
             pre=0
             preline=0
             linestr=''
