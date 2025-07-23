@@ -69,13 +69,18 @@ def main():
                 print(f"Total nodes in the BST: {bst.num_nodes}")
 
             elif choice == 7:
+                if bst.root is None:
+                    print("Tree is empty!")
+                    continue
                 node = bst.find_max()
                 print(f"Value of the maximum node : {node.value}")
                 
             elif choice == 8:
+                if bst.root is None:
+                    print("Tree is empty!")
+                    continue
                 node = bst.find_min()
                 print(f"Value of the minimum node : {node.value}")
-                
             elif choice == 9:
                 cloned_bst = bst.clone_bst()
                 print("\nCloned Binary Search Tree :")
