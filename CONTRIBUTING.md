@@ -192,7 +192,7 @@ When submitting a pull request, please adhere to the following:
 
 # Issue Report Process 📌            
 
-To report an issue, follow these steps:                   			 
+To report an issue, follow these steps:                   			
 1. Navigate to the project's issues section :- [Issues](https://github.com/UTSAVS26/PyVerse/issues)
 2. Provide a clear and concise description of the issue.
 3. **Avoid spamming** to claim an issue. Patience is key! 

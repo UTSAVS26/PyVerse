@@ -1,0 +1,7 @@
+streamlit
+Sklearn
+imblearn
+pandas 
+joblib
+numpy
+ydata_profiling
