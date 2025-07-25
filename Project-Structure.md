@@ -931,6 +931,34 @@
     * [Spaceinvader](Game_Development/space_invaders/spaceinvader.py)
 
 ## Generative-Ai
+  * Ai Chat Agent
+    * Agents
+      * [Intent Classifier](Generative-AI/Ai_chat_agent/agents/intent_classifier.py)
+      * [Notifier](Generative-AI/Ai_chat_agent/agents/notifier.py)
+      * [Router](Generative-AI/Ai_chat_agent/agents/router.py)
+      * [Support Account](Generative-AI/Ai_chat_agent/agents/support_account.py)
+      * [Support Faq](Generative-AI/Ai_chat_agent/agents/support_faq.py)
+      * [Support Ticket](Generative-AI/Ai_chat_agent/agents/support_ticket.py)
+    * Db
+      * [Database](Generative-AI/Ai_chat_agent/db/database.py)
+      * [Models](Generative-AI/Ai_chat_agent/db/models.py)
+    * [Main](Generative-AI/Ai_chat_agent/main.py)
+    * Utils
+      * [  Init](Generative-AI/Ai_chat_agent/utils/__init.py)
+      * [Logger](Generative-AI/Ai_chat_agent/utils/logger.py)
+      * [Templates](Generative-AI/Ai_chat_agent/utils/templates.py)
+  * Ai Voice Agent
+    * App
+      * [Call Logic](Generative-AI/Ai_voice_agent/app/call_logic.py)
+      * [Db](Generative-AI/Ai_voice_agent/app/db.py)
+      * [Intent](Generative-AI/Ai_voice_agent/app/intent.py)
+      * [Main](Generative-AI/Ai_voice_agent/app/main.py)
+      * [Models](Generative-AI/Ai_voice_agent/app/models.py)
+      * [Schemas](Generative-AI/Ai_voice_agent/app/schemas.py)
+      * [Stt](Generative-AI/Ai_voice_agent/app/stt.py)
+      * [Test](Generative-AI/Ai_voice_agent/app/test.py)
+      * [Tts](Generative-AI/Ai_voice_agent/app/tts.py)
+      * [Utils](Generative-AI/Ai_voice_agent/app/utils.py)
   * Code-Llm-Bot
     * [App](Generative-AI/Code-LLM-bot/app.py)
   * Cold-Email-Generator
