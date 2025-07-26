@@ -34,11 +34,13 @@ def evaluate_fitness(individual):
     return total_value
 
 def select_parents(population):
-    fitness_values=[evaluate_fitness(individual) for individual in population]
-    total_fitness=sum(fitness_values)
-    probabilities=[fitness/total_fitness for fitness in fitness_values]
-    parents=random.choices(population,weights=probabilities,k=2)
-    return parents[0],parents[1]
+    fitness_values = [evaluate_fitness(individual) for individual in population]
+    total_fitness = sum(fitness_values)
+    if total_fitness == 0:
+        return random.sample(population, 2)
+    probabilities = [fitness/total_fitness for fitness in fitness_values]
+    parents = random.choices(population, weights=probabilities, k=2)
+    return parents[0], parents[1]
 
 def crossover(parent1, parent2):
     crossover_point=random.randint(1,len(parent1)-1)
