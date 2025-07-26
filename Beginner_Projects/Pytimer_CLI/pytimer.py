@@ -18,3 +18,6 @@ def run():
     parser.add_argument('--seconds', type=int, help="Time in seconds", default=60)
     args = parser.parse_args()
     countdown_timer(args.seconds)
+
+if __name__ == "__main__":
+    run()
