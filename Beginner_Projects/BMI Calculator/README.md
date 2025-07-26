@@ -48,3 +48,8 @@ Calculate WHR and cardiovascular risk level
 
     Men: High risk if WHR > 0.90
     Women: High risk if WHR > 0.85
+
+# Authors
+
+* Jyanu Ratna (Contributer for Revamped version | GSSOC Contributer)
+* Poushali Mitra (Original Contributor | SSOC Contributer)
