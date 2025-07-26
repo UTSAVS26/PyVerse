@@ -4,7 +4,7 @@ Advanced BMI calculator with age-specific assessment using WHO LMS reference dat
 # Features
 - BMI calculation with multiple unit support (kg/lb, m/cm/in)
 - Age-specific BMI assessment using WHO LMS data (0-19 years)
-- Adult BMI classification (18.5+ years)
+- Adult BMI classification (19+ years)
 - Waist-to-Hip Ratio (WHR) calculation and risk assessment
 - Z-score and percentile calculation for children
 - Clean tkinter GUI
@@ -37,7 +37,7 @@ Calculate WHR and cardiovascular risk level
     Overweight: Z-score 1 to 2
     Obese: Z-score > 2
 
-- Adults (18.5+ years):
+- Adults (19+ years):
 
     Underweight: BMI < 18.5
     Normal: BMI 18.5-24.9
@@ -51,5 +51,5 @@ Calculate WHR and cardiovascular risk level
 
 # Authors
 
-* Jyanu Ratna (Contributer for Revamped version | GSSOC Contributer)
+* Jyanu Ratna (Current Contributer | GSSOC Contributer)
 * Poushali Mitra (Original Contributor | SSOC Contributer)

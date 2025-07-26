@@ -4,20 +4,29 @@ import pandas as pd
 import numpy as np
 from scipy.stats import norm
 import os
+import sys  
 
-# Get the directory where this script is located
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
-# Load LMS reference data using safe, relative paths
-lms_0_5 = pd.read_csv(os.path.join(BASE_DIR, 'data', 'children_0_5_data.csv'))      # Month, Sex, L, M, S
-lms_5_19 = pd.read_csv(os.path.join(BASE_DIR, 'data', 'children_5_19_data.csv'))    # Month, Sex, L, M, S
+try:
+    lms_0_5 = pd.read_csv(os.path.join(BASE_DIR, 'data', 'children_0_5_data.csv'))
+    lms_5_19 = pd.read_csv(os.path.join(BASE_DIR, 'data', 'children_5_19_data.csv'))
+except FileNotFoundError as e:
+    print(f"File not found: {e.filename}")
+    print("Please ensure the WHO LMS data files are located in the 'data' folder relative to the script.")
+    sys.exit(1)
+except Exception as e:
+    print(f"Unexpected error while loading data: {e}")
+    sys.exit(1)
 
 
 def get_lms_0_5(age_months, sex):
-    row = lms_0_5[(lms_0_5['Month'] == age_months) & (lms_0_5['Sex'] == sex)]
+    ages = lms_0_5['Month'].unique()
+    nearest_age = min(ages, key=lambda x: abs(x - age_months))
+    row = lms_0_5[(lms_0_5['Month'] == nearest_age) & (lms_0_5['Sex'] == sex)]
     if row.empty:
         return None
     return row.iloc[0]['L'], row.iloc[0]['M'], row.iloc[0]['S']
+
 
 def get_lms_5_19(age_months, sex):
     ages = lms_5_19['Age'].unique()
@@ -26,6 +35,7 @@ def get_lms_5_19(age_months, sex):
     if row.empty:
         return None
     return row.iloc[0]['L'], row.iloc[0]['M'], row.iloc[0]['S']
+
 
 def classify_bmi_child(z):
     if z < -2:
@@ -94,7 +104,7 @@ def calculate_bmi():
         # Determine age group for LMS
         if age_months <= 60:
             lms = get_lms_0_5(age_months, sex)
-        elif 60 < age_months < 228:  # 5 to 19 years in months
+        elif 60 < age_months <= 228:  # 5 to 19 years in months
             lms = get_lms_5_19(age_months, sex)
         else:
             category = classify_bmi_adult(bmi)
@@ -117,9 +127,7 @@ def calculate_bmi():
         category = classify_bmi_child(z)
         category_result.config(text=f"{category} (Z: {z:.2f}, Percentile: {percentile:.1f}%)")
 
-        # WHR calculation
-        whr = waist / hip if hip > 0 else 0
-        whr_result.config(text=f"WHR: {whr:.2f} ({interpret_whr(whr, sex)})")
+       
 
     except ValueError:
         messagebox.showerror("Error", "Please enter valid numbers.")
