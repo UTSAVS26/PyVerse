@@ -56,7 +56,7 @@ def mutate(individual):
 
 def genetic_algorithm():
     population=create_population()
-    for generation in range(num_generations):
+    for _generation in range(num_generations):
         new_population=[]
     
         for _ in range(population_size//2):
