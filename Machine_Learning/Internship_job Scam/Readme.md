@@ -29,10 +29,32 @@ Given only the title and description of a job/internship posting, build a machin
 - TfidfVectorizer
 - SMOTE (imbalanced-learn)
 - GridSearchCV
-
+- Jupyter Notebook
 ---
+## 🚀 Setup & Usage
 
-## 🔍 Workflow
+### Installation
+```bash
+# Clone the repository
+git clone <https://github.com/Fatimibee/PyVerse>
+cd "Machine_Learning/Internship_job Scam"
+
+# Install dependencies
+pip install -r requirement.txt
+
+# Download dataset from Kaggle
+# Place fake_job_postings.csv in the project directory
+
+### Trainng the model
+# Run the Jupyter notebook
+jupyter notebook job_internship_spam_GSSOC.ipynb
+
+
+### Running the Web App
+# Ensure the model file exists
+streamlit run page.py
+
+### 🔍 Workflow
 
 1. **Preprocessing:**
    - Removed missing or null values in `Title` and `Description`
@@ -47,7 +69,7 @@ Given only the title and description of a job/internship posting, build a machin
      - `RandomForestClassifier`
      - `SVC`
      - `ComplementNB`
-   - **Best model selected:** `LogisticRegression` (based on F1 score)
+   - **Best model selected:** `LogisticRegression` (based on recall score)
 
 4. **Pipeline:**
    - Combined all steps (TF-IDF, SMOTE, classifier) using `Pipeline` and `ColumnTransformer`
@@ -65,16 +87,19 @@ Given only the title and description of a job/internship posting, build a machin
 
 ---
 
-## 📈 Results
+## 📊 Final Classification Report
 
-| Metric        | Value             |
-|---------------|-------------------|
-| Accuracy      | ~97%              |
-| Precision     | 0.69 (fraud class) |
-| Recall        | 0.59  (fraud class) |
-| F1 Score      | 0.64  (fraud class) |
+After hyperparameter tuning and model selection, the best model yielded the following results:
 
-> **Note:** Due to class imbalance, precision is high but recall for fraud class is lower.
+
+              precision    recall  f1-score   support
+
+           0       0.99      0.80      0.88      3023
+           1       0.16      0.86      0.27       135
+
+    accuracy                           0.80      3158
+   macro avg       0.58      0.83      0.58      3158
+weighted avg       0.96      0.80      0.86      3158
 
 ---
 
@@ -85,3 +110,11 @@ job_title = "Earn $200 daily from home!"
 description = "No experience required. Just 2 hours a day. Immediate joining. Limited seats."
 pipeline.predict([[job_title, description]]) 
 # Output: [1] -> Scam
+
+### 📬 Future Improvements
+
+Improve precision for class 1 (fake internships)
+
+Add more contextual features (company profile, website link)
+
+Use transformer-based models for better text understanding
