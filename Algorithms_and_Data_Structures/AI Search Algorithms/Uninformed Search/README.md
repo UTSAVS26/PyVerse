@@ -34,5 +34,12 @@ Uninformed search algorithms explore the search space **without using problem-sp
 | Completeness  | ✅ Yes            | ❌ No (not always)|
 | Optimality    | ✅ Yes            | ❌ No             |
 | Memory Usage  | ❌ High           | ✅ Low            |
+| Time Complexity  | O(b^d)           | O(b^m)            |
+| Space Complexity  | O(b^d)      | O(m)            |
+
+**Legend:**
+- `b` = branching factor
+- `d` = depth of the goal node
+- `m` = maximum depth of the search space
 
 These are foundational algorithms that are essential to understanding more advanced AI techniques.
