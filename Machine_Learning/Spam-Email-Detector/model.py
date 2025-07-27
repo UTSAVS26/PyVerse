@@ -7,22 +7,22 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix, classification_report
 import seaborn as sns
 import matplotlib.pyplot as plt
-
+import os
 # 1. Load dataset
-+import os
-+
-+csv_path = os.path.join(os.path.dirname(__file__), "synthetic_sms_data.csv")
-+try:
-+    df = pd.read_csv(csv_path)
-+    print("Dataset loaded successfully.")
-+    print(f"Dataset shape: {df.shape}")
-+    print(df.head())
-+except FileNotFoundError:
-+    print(f"Error: Could not find {csv_path}")
-+    exit(1)
-+except Exception as e:
-+    print(f"Error loading dataset: {e}")
-+    exit(1)
+
+
+csv_path = os.path.join(os.path.dirname(__file__), "synthetic_sms_data.csv")
+try:
+   df = pd.read_csv(csv_path)
+   print("Dataset loaded successfully.")
+   print(f"Dataset shape: {df.shape}")
+    print(df.head())
+except FileNotFoundError:
+    print(f"Error: Could not find {csv_path}")
+    exit(1)
+except Exception as e:
+   print(f"Error loading dataset: {e}")
+    exit(1)
 # 2. Train-test split
 X = df['text']
 y = df['spam']
