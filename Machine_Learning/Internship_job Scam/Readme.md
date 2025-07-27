@@ -92,14 +92,14 @@ streamlit run page.py
 After hyperparameter tuning and model selection, the best model yielded the following results:
 
 
-              precision    recall  f1-score   support
+                precision    recall  f1-score   support
 
-           0       0.99      0.80      0.88      3023
-           1       0.16      0.86      0.27       135
+           0       0.98      0.99      0.98      3023
+           1       0.69      0.59      0.64       135
 
-    accuracy                           0.80      3158
-   macro avg       0.58      0.83      0.58      3158
-weighted avg       0.96      0.80      0.86      3158
+    accuracy                           0.97      3158
+   macro avg       0.84      0.79      0.81      3158
+weighted avg       0.97      0.97      0.97      3158
 
 ---
 
@@ -113,7 +113,7 @@ pipeline.predict([[job_title, description]])
 
 ### 📬 Future Improvements
 
-Improve precision for class 1 (fake internships)
+Improve recall for class 1 (fake internships)
 
 Add more contextual features (company profile, website link)
 
