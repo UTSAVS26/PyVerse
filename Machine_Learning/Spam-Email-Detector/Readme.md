@@ -96,15 +96,11 @@ matplotlib
 
 seaborn
 
-🚀 Future Scope
-Add more real-world noisy data
-
-Compare with Naive Bayes, SVM, or ensemble models
-
-Deploy on Streamlit Cloud / Hugging Face
-
-Add .eml or .txt file parsing for real email detection
-
+## 🚀 Future Scope
++- Add more real-world noisy data
++- Compare with Naive Bayes, SVM, or ensemble models  
++- Deploy on Streamlit Cloud / Hugging Face
++- Add .eml or .txt file parsing for real email detection
 
 +## 📝 Conclusion 
 
