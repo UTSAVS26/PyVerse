@@ -9,10 +9,20 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # 1. Load dataset
-df = pd.read_csv("synthetic_sms_data.csv")  # Ensure the CSV is in the same directory
-print("Dataset loaded successfully.")
-print(df.head())
-
++import os
++
++csv_path = os.path.join(os.path.dirname(__file__), "synthetic_sms_data.csv")
++try:
++    df = pd.read_csv(csv_path)
++    print("Dataset loaded successfully.")
++    print(f"Dataset shape: {df.shape}")
++    print(df.head())
++except FileNotFoundError:
++    print(f"Error: Could not find {csv_path}")
++    exit(1)
++except Exception as e:
++    print(f"Error loading dataset: {e}")
++    exit(1)
 # 2. Train-test split
 X = df['text']
 y = df['spam']
