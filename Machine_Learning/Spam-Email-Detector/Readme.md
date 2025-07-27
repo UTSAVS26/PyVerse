@@ -80,25 +80,25 @@ To develop a reliable and efficient spam detector that:
 ### ▶️ Run the Streamlit App
 ```bash
 streamlit run app.py
-'''
+```
 📊 Run the Evaluation Script
 
 bash-python model.py
 
 ## 📚 Libraries Used
-+- pandas
-+- scikit-learn  
-+- streamlit
-+- matplotlib
-+- seaborn
+- pandas
+- scikit-learn  
+- streamlit
+- matplotlib
+- seaborn
 
 ## 🚀 Future Scope
-+- Add more real-world noisy data
-+- Compare with Naive Bayes, SVM, or ensemble models  
-+- Deploy on Streamlit Cloud / Hugging Face
-+- Add .eml or .txt file parsing for real email detection
+- Add more real-world noisy data
+- Compare with Naive Bayes, SVM, or ensemble models  
+- Deploy on Streamlit Cloud / Hugging Face
+- Add .eml or .txt file parsing for real email detection
 
-+## 📝 Conclusion 
+## 📝 Conclusion 
 
 This Spam Email Detector project showcases how a simple yet powerful machine learning pipeline can be used to accurately classify messages. With a custom dataset and 100% evaluation metrics, it demonstrates the effectiveness of logistic regression in text classification tasks. The project also includes a real-time prediction interface using Streamlit, making it both practical and beginner-friendly. Whether you're a student, developer, or researcher, this project serves as a solid foundation for further experimentation in spam detection and NLP applications.
 
