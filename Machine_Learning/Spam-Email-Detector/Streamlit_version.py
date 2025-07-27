@@ -22,7 +22,7 @@ pipeline = Pipeline([
 pipeline.fit(X_train, y_train)
 
 # Streamlit app
-st.title("📬 SPAM SHIELD-Spam Email Predictor")
+st.title(" SPAM SHIELD-Spam Email Predictor")
 
 st.subheader("Paste your email text below:")
 user_input = st.text_area("Email Text", height=200)
@@ -35,6 +35,6 @@ if st.button("Check if Spam"):
         probability = pipeline.predict_proba([user_input])[0][1]
 
         if prediction == 1:
-            st.error(f"🔴 This email is **Spam** (Confidence: {probability:.2%})")
+            st.error(f" This email is **Spam** (Confidence: {probability:.2%})")
         else:
-            st.success(f"🟢 This email is **Not Spam** (Confidence: {(1 - probability):.2%})")
+            st.success(f" This email is **Not Spam** (Confidence: {(1 - probability):.2%})")
