@@ -78,7 +78,7 @@ To develop a reliable and efficient spam detector that:
 ## 🖥️ How to Use
 
 ### ▶️ Run the Streamlit App
-'''bash
+```bash
 streamlit run app.py
 '''
 📊 Run the Evaluation Script
