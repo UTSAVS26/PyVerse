@@ -85,16 +85,12 @@ streamlit run app.py
 
 bash-python model.py
 
-📚 Libraries Used
-pandas
-
-scikit-learn
-
-streamlit
-
-matplotlib
-
-seaborn
+## 📚 Libraries Used
++- pandas
++- scikit-learn  
++- streamlit
++- matplotlib
++- seaborn
 
 ## 🚀 Future Scope
 +- Add more real-world noisy data
