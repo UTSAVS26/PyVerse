@@ -470,7 +470,7 @@ def preprocess_single_input(data, label_encoders, scaler):
         if col in label_encoders:
             # Handle unknown categories
             le = label_encoders[col]
-            data[col] = data[col].apply(lambda x: x if x in le.classes_ else le.classes_[0])
+            data[col] = data[col].apply(lambda x, encoder=le: x if x in encoder.classes_ else encoder.classes_[0])
             data[col] = le.transform(data[col])
         else:
             # If encoder doesn't exist, use simple label encoding
@@ -511,7 +511,7 @@ def preprocess_batch_input(data, label_encoders, scaler, feature_names):
             if col in label_encoders:
                 # Handle unknown categories
                 le = label_encoders[col]
-                data[col] = data[col].apply(lambda x: x if x in le.classes_ else le.classes_[0])
+                data[col] = data[col].apply(lambda x, encoder=le: x if x in encoder.classes_ else encoder.classes_[0])
                 data[col] = le.transform(data[col])
             else:
                 # If encoder doesn't exist, use simple label encoding
