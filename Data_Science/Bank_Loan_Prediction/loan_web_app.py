@@ -136,33 +136,36 @@ def create_sample_model():
 def main():
     st.title("🏦 Bank Loan Eligibility Predictor")
     st.markdown("---")
-    
+
     # Load or create model
     model_data = load_model()
-    
+
     if model_data is None:
-       
-        
+        st.warning("No trained model found. Creating a sample model...")
         with st.spinner("Creating sample model..."):
             model_data = create_sample_model()
-        
-         
+        if model_data is None:
+            st.error("❌ Failed to create sample model. Please check the logs.")
+            st.stop()  # Stop execution safely
+
+    # Proceed if model is available
     model = model_data['model']
     scaler = model_data['scaler']
     label_encoders = model_data['label_encoders']
     feature_names = model_data['feature_names']
-    
+
     # Sidebar for navigation
     st.sidebar.title("Navigation")
     page = st.sidebar.selectbox("Choose a page", 
                                ["Single Prediction", "Batch Prediction", "Model Info"])
-    
+
     if page == "Single Prediction":
         single_prediction_page(model, scaler, label_encoders, feature_names)
     elif page == "Batch Prediction":
         batch_prediction_page(model, scaler, label_encoders, feature_names)
     else:
         model_info_page(model, feature_names)
+
 
 def single_prediction_page(model, scaler, label_encoders, feature_names):
     st.header("Single Loan Application Prediction")
