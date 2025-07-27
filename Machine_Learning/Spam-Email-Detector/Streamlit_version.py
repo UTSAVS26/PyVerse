@@ -6,7 +6,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 # Load and train on built-in sample dataset
-df=pd.read_csv("/content/synthetic_sms_data.csv")  # Make sure this file is in the same folder
+df=pd.read_csv("synthetic_sms_data.csv")  # Make sure this file is in the same folder
 
 # Split dataset
 X_train, X_test, y_train, y_test = train_test_split(df['text'], df['spam'], test_size=0.2, random_state=42)
