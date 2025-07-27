@@ -23,6 +23,14 @@ except FileNotFoundError:
 except Exception as e:
    print(f"Error loading dataset: {e}")
     exit(1)
+# Validate required columns
+required_columns = ['text', 'spam']
+missing_columns = [col for col in required_columns if col not in df.columns]
+if missing_columns:
+   print(f"Error: Missing required columns: {missing_columns}")
+   print(f"Available columns: {list(df.columns)}")
+   exit(1)
+
 # 2. Train-test split
 X = df['text']
 y = df['spam']
