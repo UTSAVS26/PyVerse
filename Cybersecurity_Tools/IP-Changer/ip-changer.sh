@@ -64,7 +64,7 @@ cat << EOF
 EOF
 
 while true; do
-    read -rp $'\033[34mEnter time interval in seconds (type 0 for infinite IP changes): \033[0m' interval
+    read -rp $'\033[34mEnter time interval in seconds (type 0 for irandom interval): \033[0m' interval
     read -rp $'\033[34mEnter number of times to change IP address (type 0 for infinite IP changes): \033[0m' times
 
     if [ "$interval" -eq "0" ] || [ "$times" -eq "0" ]; then
