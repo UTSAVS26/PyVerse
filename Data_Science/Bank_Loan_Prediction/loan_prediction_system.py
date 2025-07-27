@@ -340,7 +340,7 @@ class LoanPredictionSystem:
                         roc_auc = roc_auc_score(y_val_split, y_pred_proba, multi_class='ovr', average='weighted')
                     except (ValueError, TypeError):
                         roc_auc = 0.0
-                        
+                   
                 results[name] = {
                     'Accuracy': accuracy,
                     'Precision': precision,

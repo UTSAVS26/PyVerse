@@ -167,6 +167,7 @@ def main():
         model_info_page(model, feature_names)
 
 
+
 def single_prediction_page(model, scaler, label_encoders, feature_names):
     st.header("Single Loan Application Prediction")
     st.write("Enter the applicant's details to predict loan eligibility.")
