@@ -4,9 +4,11 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text import TfidfVectorizer
-
+import os
 # Load and train on built-in sample dataset
-df=pd.read_csv("synthetic_sms_data.csv")  # Make sure this file is in the same folder
+
+csv_path = os.path.join(os.path.dirname(__file__), "synthetic_sms_data.csv")
+df = pd.read_csv(csv_path)  # Make sure this file is in the same folder
 
 # Split dataset
 X_train, X_test, y_train, y_test = train_test_split(df['text'], df['spam'], test_size=0.2, random_state=42)
