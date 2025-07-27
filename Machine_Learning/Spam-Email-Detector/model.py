@@ -43,7 +43,7 @@ print(f" Precision: {precision:.4f}")
 print(f" Recall:    {recall:.4f}")
 print(f" F1 Score:  {f1:.4f}")
 
-print("\n📋 Classification Report:")
+print("\n Classification Report:")
 print(classification_report(y_test, y_pred, target_names=['Ham', 'Spam']))
 
 # 7. Confusion Matrix Plot
@@ -51,6 +51,6 @@ plt.figure(figsize=(5, 4))
 sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=['Ham', 'Spam'], yticklabels=['Ham', 'Spam'])
 plt.xlabel('Predicted')
 plt.ylabel('Actual')
-plt.title('📌 Confusion Matrix')
+plt.title(' Confusion Matrix')
 plt.tight_layout()
 plt.show()
