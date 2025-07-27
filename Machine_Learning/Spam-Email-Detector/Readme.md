@@ -83,8 +83,9 @@ streamlit run app.py
 ```
 📊 Run the Evaluation Script
 
-bash-python model.py
-
+```bash
+-python model.py
+```
 ## 📚 Libraries Used
 - pandas
 - scikit-learn  
