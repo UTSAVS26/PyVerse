@@ -81,10 +81,10 @@ To develop a reliable and efficient spam detector that:
 ```bash
 streamlit run app.py
 ```
-##📊 Run the Evaluation Script
+###📊 Run the Evaluation Script
 
 ```bash
--python model.py
+python model.py
 ```
 ## 📚 Libraries Used
 - pandas
