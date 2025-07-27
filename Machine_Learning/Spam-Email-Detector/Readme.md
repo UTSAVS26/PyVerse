@@ -65,11 +65,10 @@ To develop a reliable and efficient spam detector that:
 - Trained a **Logistic Regression model** via Scikit-learn Pipeline
 - Model trained using `train_test_split`
 
-### 📊 Evaluation Script (`spam_classifier_evaluation.py`)
+### 📊 Evaluation Script (`model.py`)
 - Displays Accuracy, Precision, Recall, F1-Score
 - Confusion Matrix plotted using `seaborn`
-
-### 🌐 Streamlit App (`app.py`)
+### 📲 Streamlit App (`Streamlit_version.py`)
 - Input: Custom message
 - Output: Spam / Not Spam + Confidence score
 - UI: Minimal and clean, ideal for demonstrations or learning
