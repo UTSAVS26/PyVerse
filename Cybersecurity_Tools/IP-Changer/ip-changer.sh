@@ -5,7 +5,7 @@
     exit 1
 }
 
-install_pacakage_according_to_OS() {
+package_installer() {
     local distro
     distro=$(awk -F= '/^NAME/{print $2}' /etc/os-release)
     distro=${distro//\"/}
@@ -16,11 +16,11 @@ install_pacakage_according_to_OS() {
             apt-get install -y curl tor
             ;;
         *"Fedora"* | *"CentOS"* | *"Red Hat"* | *"Amazon Linux"*)
-            yum update
-            yum install -y curl tor
+            yum -y update
+            yum -y install curl tor
             ;;
         *"Arch"*)
-            pacman -S --noconfirm curl tor
+            pacman -Sy --noconfirm curl tor
             ;;
         *) 
         # give warning if not in above distro to install torand curl manually
@@ -32,7 +32,7 @@ install_pacakage_according_to_OS() {
 
 if ! command -v curl &> /dev/null || ! command -v tor &> /dev/null; then
     echo "Installing curl and tor"
-    install_pacakage_according_to_OS
+    package_installer
 fi
 
 if ! systemctl --quiet is-active tor.service; then
@@ -64,22 +64,42 @@ cat << EOF
    |___|_|         \____|_| |_/_/   \_\_| \_|\____|_____|_| \_\
 EOF
 # main modifcation done below
+
 while true; do
-    read -rp $'\033[34mEnter time interval in seconds (type 0 for irandom interval): \033[0m' interval
-    read -rp $'\033[34mEnter number of times to change IP address (type 0 for infinite IP changes): \033[0m' times
-    # now if user give 0 for interval a random interval assigned
-    # and if 0 for how many changes then infinite changes
-    if [ "$interval" -eq "0" ] || [ "$times" -eq "0" ]; then
-        echo "Starting infinite IP changes"
+    read -rp $'\033[34m  Enter time interval in seconds (0 for random 5–30 sec): \033[0m' interval
+    read -rp $'\033[34m Enter number of IP changes (0 for infinite): \033[0m' times
+
+    echo ""
+    echo "✅ Starting with settings: "
+    [[ "$interval" -eq 0 ]] && echo "• Random interval between 5–30 seconds" || echo "• Interval: $interval seconds"
+    [[ "$times" -eq 0 ]] && echo "• Infinite IP changes" || echo "• Number of changes: $times"
+    echo ""
+
+    if [ "$times" -eq 0 ]; then
+        # Infinite changes
         while true; do
             change_ip
-            interval=$(shuf -i 10-20 -n 1)
-            sleep "$interval"
+            sleep_interval=$interval
+            if [ "$interval" -eq 0 ]; then
+                sleep_interval=$(shuf -i 5-30 -n 1)
+            fi
+            sleep "$sleep_interval"
         done
     else
-        for ((i=0; i< times; i++)); do
+        # Finite changes
+        for ((i = 1; i <= times; i++)); do
             change_ip
-            sleep "$interval"
+            if [ "$i" -lt "$times" ]; then
+                sleep_interval=$interval
+                if [ "$interval" -eq 0 ]; then
+                    sleep_interval=$(shuf -i 5-30 -n 1)
+                fi
+                sleep "$sleep_interval"
+            fi
         done
+        echo -e "\n✅ Completed $times IP change(s)."
+        echo -e "🌐 Final IP: \033[32m$(get_ip)\033[0m"
+        echo "👋 Exiting script."
+        exit 0
     fi
 done
