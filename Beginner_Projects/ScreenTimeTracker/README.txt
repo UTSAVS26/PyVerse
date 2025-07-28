@@ -94,6 +94,6 @@ Include:
 - Weekly goal setting & reminders
 - Mobile app conversion with touch gestures
 
-### YOUR NAME
+###  NAME
 Ariyan
 www.linkedin.com/in/ariyan-pal-590b0b321
