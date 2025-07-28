@@ -318,6 +318,10 @@
     * Ocr Adhaar Api
       * [App](Automation_Tools/Autofill%20personal%20info%20using%20Aadhar%20Card%20Image/OCR%20ADHAAR%20API/app.py)
     * [Extract Aadhar Details](Automation_Tools/Autofill%20personal%20info%20using%20Aadhar%20Card%20Image/extract_aadhar_details.ipynb)
+  * Autopost
+    * [Devto Api Client](Automation_Tools/Autopost/devto_api_client.py)
+    * [Gemini Client](Automation_Tools/Autopost/gemini_client.py)
+    * [Main](Automation_Tools/Autopost/main.py)
   * Image-Tool
     * [Image Tool](Automation_Tools/Image-Tool/Image_Tool.py)
   * Iot Control
