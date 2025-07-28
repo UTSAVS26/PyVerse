@@ -1207,6 +1207,9 @@
   * Indian Medicinal Plants Classification
     * Models
       * [Models Indian Medicinal Plant Classification(1)(1)(1)](Machine_Learning/Indian%20Medicinal%20Plants%20Classification/Models/models_Indian_Medicinal_Plant_Classification(1)(1)(1).ipynb)
+  * Internship Job Scam
+    * [Job Internship Spam Gssoc](Machine_Learning/Internship_job%20Scam/job_internship_spam_GSSOC.ipynb)
+    * [Page](Machine_Learning/Internship_job%20Scam/page.py)
   * Intrusion Detection System
     * [Network-Intrusion-Detection-Using-Arm](Machine_Learning/Intrusion%20Detection%20System/network-intrusion-detection-using-ARM.ipynb)
   * Iris Classification Using Knn
