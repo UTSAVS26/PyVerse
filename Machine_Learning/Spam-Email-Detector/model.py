@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import make_pipeline
 #Load the dataset and split into train_test split
-df=pd.read_csv("/content/spambase.csv")
+df=pd.read_csv("spambase.csv")
 X=df.drop(columns='spam',axis=1)
 y=df['spam']
 X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.2,stratify=y,random_state=42)
