@@ -18,7 +18,7 @@ To develop a reliable and efficient spam detector that:
 ##  Dataset
 
 - **Name**: `spambase.csv`  
-- **Created by**: Shirsha Nag  
+- **Created by**: Kaggle
 - **Description**: Manually curated dataset mimicking real-world SMS and email messages.
   -  Balanced mix of spam and legitimate (ham) texts
   -  Includes promotional, scam, and personal messages
