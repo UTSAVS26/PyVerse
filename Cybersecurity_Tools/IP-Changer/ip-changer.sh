@@ -12,15 +12,15 @@ package_installer() {
     
     case "$distro" in
         *"Ubuntu"* | *"Debian"*)
-           sudo apt-get update
-           sudo apt-get install -y curl tor
+            apt-get update
+            apt-get install -y curl tor
             ;;
         *"Fedora"* | *"CentOS"* | *"Red Hat"* | *"Amazon Linux"*)
-          sudo  yum -y update
-          sudo yum -y install curl tor
+            yum -y update
+           yum -y install curl tor
             ;;
         *"Arch"*)
-           sudo pacman -Sy --noconfirm curl tor
+            pacman -Sy --noconfirm curl tor
             ;;
         *) 
         # give warning if not in above distro to install torand curl manually
