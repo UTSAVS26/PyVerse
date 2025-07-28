@@ -68,7 +68,10 @@ EOF
 while true; do
     read -rp $'\033[34m  Enter time interval in seconds (0 for random 5–30 sec): \033[0m' interval
     read -rp $'\033[34m Enter number of IP changes (0 for infinite): \033[0m' times
-
+    if ! [[ "$interval" =~ ^[0-9]+$ ]] || ! [[ "$times" =~ ^[0-9]+$ ]]; then
+       echo -e "\033[31m❌ Error: Both inputs must be numeric. Exiting.\033[0m"
+       exit 1
+    fi
     echo ""
     echo "✅ Starting with settings: "
     [[ "$interval" -eq 0 ]] && echo "• Random interval between 5–30 seconds" || echo "• Interval: $interval seconds"
