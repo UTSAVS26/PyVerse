@@ -5,8 +5,7 @@ goal_state = [[1,2,3],[4,5,6],[7,8,0]]
 def find_zero(state):
     for i in range(3):
         for j in range(3):
-            value = state[i][j]
-            if value == 0:
+            if state[i][j] == 0:
                 return i, j
     return None, None
 

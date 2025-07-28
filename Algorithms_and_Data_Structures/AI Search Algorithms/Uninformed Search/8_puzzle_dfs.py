@@ -7,7 +7,7 @@ def find_zero(state):
         for j in range(3):
             if state[i][j] == 0:
                 return i, j
-    return None
+    return None, None
 
 def successor(state):
     moves = []
