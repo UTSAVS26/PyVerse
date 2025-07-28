@@ -1,4 +1,4 @@
-#  Spam Email Detector — Machine Learning & Streamlit App
+#  Spam Email Detector — Machine Learning 
 
 A powerful and lightweight **spam message detector** built with **Logistic Regression** and **Natural Language Processing (NLP)**.  
 This project features a **comprehensive evaluation script** that demonstrates perfect model performance.
