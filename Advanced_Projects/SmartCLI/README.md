@@ -34,7 +34,8 @@ into safe, executable shell commands. SmartCLI leverages NLP models (local trans
 
 1. Clone the repository:
 
-    git clone https://github.com/yourusername/SmartCLI
+    git clone https://github.com/UTSAVS26/PyVerse
+    cd PyVerse/Advanced_Projects/SmartCLI
     cd SmartCLI
 
 2. Install dependencies:
