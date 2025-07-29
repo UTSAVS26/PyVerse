@@ -3,4 +3,3 @@ rich
 openai
 llama-cpp-python
 mistral-common
-sqlite3 
