@@ -41,7 +41,9 @@ class CommandMapper:
             elif 'yesterday' in time_str:
                 mtime = '-mtime 1'
             elif 'older than' in time_str:
-                import re
+import os
+import re
+from core.utils import get_system_path
                 match = re.search(r'older than (\d+) (day|week|month)s?', time_str)
                 if match:
                     num, unit = match.groups()
