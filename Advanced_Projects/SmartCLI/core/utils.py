@@ -14,19 +14,25 @@ def get_system_path(name: str) -> str:
     return SYSTEM_PATHS.get(name.lower(), name)
 
 def parse_size(size_str: str) -> int:
-    """Parse a human-friendly file size string (e.g., '10MB', '2GB') to bytes."""
+    """Parse a human-friendly file size string (e.g., '10MB', '2GB', '1TB') to bytes."""
     size_str = size_str.strip().upper()
-    units = {'B': 1, 'KB': 1024, 'MB': 1024**2, 'GB': 1024**3}
+    units = {
+        'B': 1,
+        'KB': 1024,
+        'MB': 1024**2,
+        'GB': 1024**3,
+        'TB': 1024**4
+    }
     for unit in units:
         if size_str.endswith(unit):
             try:
                 return int(float(size_str[:-len(unit)]) * units[unit])
-            except Exception:
-                return 0
+            except ValueError:
+                raise ValueError(f"Invalid size format: {size_str}")
     try:
         return int(size_str)
-    except Exception:
-        return 0
+    except ValueError:
+        raise ValueError(f"Invalid size format: {size_str}")
 
 def log_command(command: str, approved: bool, logfile: str = 'smartcli.log'):
     """Log the command with timestamp, approval status, user, and cwd."""
