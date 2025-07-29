@@ -1,23 +1,29 @@
 import time
 import argparse
 
-def countdown_timer(seconds):
+def countdown_timer(total_seconds):
+    original_seconds = total_seconds  # Store original input for summary message
+
     try:
-        while seconds:
-            mins, secs = divmod(seconds, 60)
+        while total_seconds:
+            mins, secs = divmod(total_seconds, 60)
             timer = f"{mins:02d}:{secs:02d}"
             print(f"\r⏳ Time Left: {timer}", end="", flush=True)
             time.sleep(1)
-            seconds -= 1
+            total_seconds -= 1
+
         print("\n🚨 Time's up!\a")  # Terminal beep
-        if seconds < 30:
+
+        # Display a session-completion message based on original time
+        if original_seconds < 30:
             print("⏰ Quick session complete!")
-        elif seconds <= 300:
+        elif original_seconds <= 300:
             print("✅ Short break over. Back to work!")
         else:
             print("🎉 Great job finishing your session!")
+
     except KeyboardInterrupt:
-        print("\n⛔ Timer interrupted.")
+        print("\n⛔ Timer interrupted by user.")
 
 def run():
     parser = argparse.ArgumentParser(description="Start a countdown timer from CLI.")
@@ -29,7 +35,7 @@ def run():
 
     args = parser.parse_args()
 
-    # Predefined modes
+    # Predefined modes take priority
     if args.pomodoro:
         total_seconds = 25 * 60
     elif args.short_break:
@@ -45,5 +51,5 @@ def run():
 
     countdown_timer(total_seconds)
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     run()
