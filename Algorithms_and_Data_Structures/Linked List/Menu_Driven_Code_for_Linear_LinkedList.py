@@ -232,40 +232,6 @@ class LinkedList(Generic[T]):
             self.length -= 1
             return temp.data
 
-    def __str__(self) -> str:
-        """
-        Returns a string representation of the linked list.
-
-        Returns:
-            str: A string representation of the linked list elements.
-        """
-        elements = []
-        current = self.head
-        while current:
-            elements.append(f"[{current.data}]")
-            current = current.next
-
-        return "HEAD -> " + " -> ".join(elements) + " <- TAIL"
-
-    def __len__(self) -> int:
-        """
-        Returns the length of the linked list.
-
-        Returns:
-            int: The number of elements in the linked list.
-        """
-        return self.length
-    
-    def __contains__(self, item: T) -> bool:
-        return self.searchlist(item) != -1
-    
-
-    def __iter__(self):
-        current = self.head
-        while current:
-            yield current.data
-            current = current.next
-
 
     def searchlist(self, data: T) -> int:
         """
@@ -343,6 +309,46 @@ class LinkedList(Generic[T]):
             delNode.next = None
             self.length -= 1
             return delNode.data
+        
+    def __str__(self) -> str:
+        """
+        Returns a string representation of the linked list.
+
+        Returns:
+            str: A string representation of the linked list elements.
+        """
+        elements = []
+        current = self.head
+        while current:
+            elements.append(f"[{current.data}]")
+            current = current.next
+
+        return "HEAD -> " + " -> ".join(elements) + " <- TAIL"
+
+    def __len__(self) -> int:
+        """
+        Returns the length of the linked list.
+
+        Returns:
+            int: The number of elements in the linked list.
+        """
+        return self.length
+    
+    def __contains__(self, item: T) -> bool:
+        """
+        Checks if an item is in the linked list.
+        """
+        return self.searchlist(item) != -1
+    
+
+    def __iter__(self):
+        """
+        Returns an iterator for the linked list elements.
+        """
+        current = self.head
+        while current:
+            yield current.data
+            current = current.next
 
 if __name__ == "__main__":
     """
@@ -352,7 +358,7 @@ if __name__ == "__main__":
     """
 
     # Menu-driven interaction to perform linked list operations.
-    obj = LinkedList()
+    obj = LinkedList[int]()
 
     while True:
         print('----------------------')
@@ -361,16 +367,13 @@ if __name__ == "__main__":
 
         try:
             ch = int(input('\nEnter your choice: '))
-        except ValueError:
-            print("Invalid input. Please enter a number.")
-            continue
-        except TypeError as e:
-            print(f"Error: {e}")
+        except Exception as e:  
+            print(f'\nInvalid input. Please enter an integer. Error: {e}')
             continue
 
         if ch == 1:
             # Insert at the beginning of the list.
-            data = input('\nEnter value to be inserted in left: ')
+            data = int(input('\nEnter value to be inserted in left: '))
             # Check if the input is of the correct type.
             try:
                 obj._check_type(data) 
@@ -381,7 +384,7 @@ if __name__ == "__main__":
 
         elif ch == 2:
             # Insert at the end of the list.
-            data = input('\nEnter value to be inserted in right: ')
+            data = int(input('\nEnter value to be inserted in right: '))
             try:
                 obj._check_type(data)
             except TypeError as e:
@@ -405,7 +408,7 @@ if __name__ == "__main__":
 
         elif ch == 5:
             # Delete a specific element.
-            x = input('\nEnter the value of Element x: ')
+            x = int(input('\nEnter the value of Element x: '))
             try:
                 obj._check_type(x)
             except TypeError as e:
@@ -425,7 +428,7 @@ if __name__ == "__main__":
 
         elif ch == 7:
             # Search for a specific element.
-            data = input('Enter the value of Element x: ')
+            data = int(input('Enter the value of Element x: '))
             try:
                 obj._check_type(data) 
             except TypeError as e:
