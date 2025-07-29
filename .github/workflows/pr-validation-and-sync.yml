@@ -1,4 +1,4 @@
-name: PR Validation and Sync
+name: PR Validation and Label Sync
 
 on:
   pull_request_target:
@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
-      issues: read
+      issues: read # Needs to read issue labels and assignees
 
     steps:
       - name: Validate PR Body and Sync from Issue
@@ -21,82 +21,72 @@ jobs:
             const pr = context.payload.pull_request;
             const prNumber = pr.number;
             const body = pr.body;
-
+            
+            // --- 1. VALIDATE PR BODY ---
             const errorMessages = [];
-
-            // --- 1. VALIDATION ---
             if (body.includes("*Enter your name here.*")) errorMessages.push("- The 'Name' field is missing.");
             if (body.includes("*Enter your GitHub ID here.*")) errorMessages.push("- The 'GitHub ID' field is missing.");
             if (body.includes("*Enter your email ID here.*")) errorMessages.push("- The 'Email ID' field is missing.");
-
+            
             const issueRegex = /Closes:?\s*#(\d+)/i;
             const issueMatch = body.match(issueRegex);
-
+            
             if (!issueMatch) {
-              errorMessages.push("- The PR does not properly close an issue. Use the format `Closes: #123` in your description.");
+              errorMessages.push("- The PR does not properly close an issue. Use the format `Closes: #123`.");
             }
-
+            
             // --- 2. POST COMMENT AND FAIL IF INVALID ---
             if (errorMessages.length > 0) {
               const fullErrorMessage = `❌ **PR Validation Failed!**\n\nPlease fix the following issues in your PR description:\n${errorMessages.join('\n')}`;
-              
-              await github.rest.issues.createComment({
-                owner,
-                repo,
-                issue_number: prNumber,
-                body: fullErrorMessage
-              });
-
-              core.setFailed("PR validation failed. See the comment for details.");
+              await github.rest.issues.createComment({ owner, repo, issue_number: prNumber, body: fullErrorMessage });
+              core.setFailed("PR validation failed.");
               return;
             }
 
-            await github.rest.issues.createComment({
-              owner,
-              repo,
-              issue_number: prNumber,
-              body: "✅ PR validation passed! Syncing information from the linked issue..."
-            });
+            await github.rest.issues.createComment({ owner, repo, issue_number: prNumber, body: "✅ PR validation passed! Syncing labels and assignees from the linked issue..." });
 
-            // --- 3. SYNC FROM LINKED ISSUE ---
+            // --- 3. SYNC LABELS AND ASSIGNEES FROM ISSUE ---
             const issueNumber = parseInt(issueMatch[1], 10);
             console.log(`Fetching data from linked issue #${issueNumber}`);
-
-            const { data: issue } = await github.rest.issues.get({
-              owner,
-              repo,
-              issue_number: issueNumber,
-            });
-
-            // Sync all assignees from issue to PR
+            
+            const { data: issue } = await github.rest.issues.get({ owner, repo, issue_number: issueNumber });
+            
+            // Sync Assignees
             const issueAssignees = issue.assignees.map(assignee => assignee.login);
             if (issueAssignees.length > 0) {
-              await github.rest.issues.addAssignees({
-                owner,
-                repo,
-                issue_number: prNumber,
-                assignees: issueAssignees
-              });
+              await github.rest.issues.addAssignees({ owner, repo, issue_number: prNumber, assignees: issueAssignees });
               console.log(`Synced assignees: ${issueAssignees.join(', ')}`);
             }
 
-            // Sync all labels from issue to PR
-            const issueLabels = issue.labels.map(label => label.name);
-            const labelsToAdd = [...issueLabels];
+            // --- CORRECTED LABEL SYNC LOGIC ---
 
-            // Add 'review ongoing' if 'assigned' label is present
-            if (issueLabels.some(label => label.toLowerCase() === 'Status: Assigned💻')) {
-              labelsToAdd.push('Status: Requested Changes⚙️');
+            const issueLabels = issue.labels.map(label => label.name);
+            
+            // Define your exact label names
+            const assignedLabel = 'Status: Assigned💻';
+            const reviewLabel = 'Status: Review Ongoing 🔄';
+            
+            // Define labels that should ONLY exist on issues, not on PRs
+            const labelsToIgnore = [
+                'Status: Up for Grabs🤲',
+                'good first issue',
+                'help wanted',
+                assignedLabel // Explicitly ignore the "Assigned" label
+            ];
+
+            // Copy all labels from the issue, except for the ones in the ignore list
+            const labelsToAdd = issueLabels.filter(label => !labelsToIgnore.includes(label));
+
+            // If the issue has the specific 'Assigned' label, add the 'Review Ongoing' label to the PR
+            if (issueLabels.includes(assignedLabel)) {
+              labelsToAdd.push(reviewLabel);
             }
 
             if (labelsToAdd.length > 0) {
-              await github.rest.issues.addLabels({
-                owner,
-                repo,
-                issue_number: prNumber,
-                labels: labelsToAdd
-              });
-              console.log(`Added labels to PR: ${labelsToAdd.join(', ')}`);
+              // Using a Set removes any potential duplicates before adding
+              const finalLabels = [...new Set(labelsToAdd)];
+              await github.rest.issues.addLabels({ owner, repo, issue_number: prNumber, labels: finalLabels });
+              console.log(`Added labels to PR: ${finalLabels.join(', ')}`);
             }
 
             console.log("PR sync complete!");
