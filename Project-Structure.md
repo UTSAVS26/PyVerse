@@ -18,6 +18,7 @@
   * [Multi-Lan-Screen-Share](./Advanced_Projects/multi-lan-screen-share)
 
 * **Algorithms And Data Structures**
+  * [Ai Search Algorithms](./Algorithms_and_Data_Structures/AI%20Search%20Algorithms)
   * [Arrays](./Algorithms_and_Data_Structures/Arrays)
   * [Binarysearchtree](./Algorithms_and_Data_Structures/BinarySearchTree)
   * [Design And Analysis Of Algorithms](./Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms)
@@ -134,6 +135,7 @@
   * [File Integrity Checker](./Cybersecurity_Tools/File%20Integrity%20Checker)
   * [File Encryption Tool](./Cybersecurity_Tools/File_encryption_tool)
   * [Ids Ips Tool](./Cybersecurity_Tools/IDS_IPS%20Tool)
+  * [Ip-Changer](./Cybersecurity_Tools/IP-Changer)
   * [Image Crypto](./Cybersecurity_Tools/Image_crypto)
   * [Keylogger](./Cybersecurity_Tools/Keylogger)
   * [Netwrok Packet Analyzer](./Cybersecurity_Tools/Netwrok%20Packet%20Analyzer)
