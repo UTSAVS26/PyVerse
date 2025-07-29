@@ -36,5 +36,10 @@ def parse_size(size_str: str) -> int:
 
 def log_command(command: str, approved: bool, logfile: str = 'smartcli.log'):
     """Log the command with timestamp, approval status, user, and cwd."""
-    with open(logfile, 'a') as f:
-        f.write(f"{datetime.now().isoformat()} | {getpass.getuser()} | {os.getcwd()} | {'APPROVED' if approved else 'BLOCKED'} | {command}\n") 
+    try:
+        with open(logfile, 'a') as f:
+            f.write(f"{datetime.now().isoformat()} | {getpass.getuser()} | {os.getcwd()} | {'APPROVED' if approved else 'BLOCKED'} | {command}\n")
+    except IOError as e:
+        # Log to stderr if file writing fails
+        import sys
+        print(f"Warning: Failed to log command: {e}", file=sys.stderr)
