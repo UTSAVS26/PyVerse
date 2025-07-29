@@ -56,7 +56,7 @@ from core.utils import get_system_path
         elif intent == 'delete':
             cmd = f"find {location} -name '{file_pattern}' {mtime} -delete".strip()
         elif intent == 'compress':
-            out_name = f"archive.zip"
+            out_name = "archive.zip"
             cmd = f"cd {location} && zip -r {out_name} {file_pattern}"
         else:
             cmd = "echo 'Command mapping not implemented.'"
