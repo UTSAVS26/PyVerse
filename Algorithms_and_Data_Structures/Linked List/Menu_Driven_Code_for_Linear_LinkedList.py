@@ -1,15 +1,18 @@
 from __future__ import annotations
-from typing import Generic, TypeVar, Optional, Any
+from typing import Generic, TypeVar, Optional, Any, Iterator
 
 T = TypeVar("T")
 
 class Node(Generic[T]):
     """
-    Node class to represent each element in the linked list.
-    
-    Args:
-        data (T): The value to be stored in the node.
-        next (Optional[Node[T]]): Pointer to the next node in the linked list, defaults to None.
+    Node class for a singly linked list.
+
+    Parameters
+    ----------
+    data : T
+        The data to be stored in the node.
+    next : Optional[Node[T]], optional
+        Pointer to the next node, by default None.
     """
     def __init__(
             self,
@@ -18,13 +21,6 @@ class Node(Generic[T]):
         ) -> None:
         """
         Initializes a new node with the given data and an optional next node.
-
-        Parameters
-        ----------
-        data : T
-            The value to be stored in the node.
-        next : Optional[Node[T]]
-            Pointer to the next node in the linked list, defaults to None.
         """
         self.data = data
         self.next = next
@@ -45,6 +41,15 @@ class LinkedList(Generic[T]):
         self._type: Optional[type] = None
 
     def _init_first_node(self, node: Node[T]) -> None:
+        """
+        Initializes the first node of the linked list.
+        
+        Parameters
+        ----------
+        node : Node[T]
+            The node to be set as the first node of the linked list.
+        """
+        
         self.head = node
         self.tail = node
         self.length = 1
@@ -114,31 +119,31 @@ class LinkedList(Generic[T]):
         """
         Deletes the element from the beginning(left) of the linked list.
 
+        Returns
+        -------
+            T: The removed node's data.
+
         Raises
         ------
         IndexError
             If trying to pop from an empty linked list.
-
-        Returns
-        -------
-            T: The removed node's data.
         """
         # raise an error if trying to remove from an empty list.
         if self.head is None:
             raise IndexError("Cannot delete from an empty linked list.")
         
         temp = self.head
-        if(self.head.next == None):
+        if(self.head is self.tail):
             # If there's only one node, remove it and set head to None.  
             self.head = None
             self.tail = None
-            
+            self.length = 0
         else:
             # Remove the first node and update the head to the next node.
             self.head = self.head.next
-            temp.next = None  
+            temp.next = None 
+            self.length -= 1 
         
-        self.length -= 1
         return temp.data
 
     def insertRight(
@@ -167,13 +172,12 @@ class LinkedList(Generic[T]):
         node = Node(data)
         if self.head is None:
             self._init_first_node(node)
-            return self.length
         else:
             # Insert the new node at the end.
             self.tail.next = node
             self.tail = node
             self.length += 1
-            return self.length
+        return self.length
         
 
 
@@ -181,27 +185,28 @@ class LinkedList(Generic[T]):
         """
         Deletes the element from the end(right) of the linked list.
 
-        Raises
-        ------
-        IndexError
-            If trying to pop from an empty linked list.
-
         Returns
         -------
         T
             The removed node's data. 
+        
+        Raises
+        ------
+        IndexError
+            If trying to pop from an empty linked list.
         """
         if self.head is None:
             raise IndexError("Cannot delete from an empty linked list.")
+        
         temp = self.head
-        if self.head.next == None:  
+        if self.head is self.tail:  
             # If there's only one node, remove it and set head to None.
             self.head = None
             self.tail = None
             self.length = 0
         else:
             # Traverse to the second last node.
-            while temp.next.next != None:
+            while temp.next is not self.tail:
                 temp = temp.next
             # Remove the last node and update the tail.
             self.tail = temp
@@ -235,17 +240,18 @@ class LinkedList(Generic[T]):
 
         self._check_type(data)
 
-        current = self.head
+        temp = self.head
         pos = 0 
-        while current:
-            if current.data == data:
+        while temp is not self.tail:
+            if temp.data == data:
                 return pos
-            current = current.next
+            temp = temp.next
             pos += 1
-
+        if temp.data == data:
+            return pos
         return -1
 
-    def deleteElement(self, data: T) -> Optional[T]:
+    def deleteElement(self, data: T) -> T:
         """
         Deletes a specific element from the linked list.
 
@@ -256,7 +262,7 @@ class LinkedList(Generic[T]):
 
         Returns
         ------- 
-        Optional[T]
+        T
             The data of the deleted node, or None if the element was not found.
 
         Raises
@@ -292,15 +298,20 @@ class LinkedList(Generic[T]):
         """
         Returns a string representation of the linked list.
 
-        Returns:
-            str: A string representation of the linked list elements.
+        Returns
+        -------
+            str
+                A string representation of the linked list elements.
         """
-        elements = []
-        current = self.head
-        while current:
-            elements.append(f"[{current.data}]")
-            current = current.next
+        if self.head is None:
+            return "HEAD ->  <- TAIL"
 
+        elements = []
+        temp = self.head
+        while temp is not self.tail:
+            elements.append(f"[{temp.data}]")
+            temp = temp.next
+        elements.append(f"[{temp.data}]")
         return "HEAD -> " + " -> ".join(elements) + " <- TAIL"
 
     def __len__(self) -> int:
@@ -315,18 +326,36 @@ class LinkedList(Generic[T]):
     def __contains__(self, item: T) -> bool:
         """
         Checks if an item is in the linked list.
+
+        Parameters
+        ----------
+        item : T
+            The value to check for presence in the linked list.
+
+        Returns
+        -------
+        bool
+            True if the item is found, False otherwise.
         """
         return self.searchlist(item) != -1
     
 
-    def __iter__(self):
+    def __iter__(self) -> Iterator[T]:
         """
         Returns an iterator for the linked list elements.
+
+        Yields
+        ------
+        T
+            The data of each node in the linked list.
         """
-        current = self.head
-        while current:
-            yield current.data
-            current = current.next
+        if self.head is None:
+            return
+        temp = self.head
+        while temp is not self.tail:
+            yield temp.data
+            temp = temp.next
+        yield temp.data
 
 if __name__ == "__main__":
     """
@@ -346,14 +375,14 @@ if __name__ == "__main__":
         try:
             ch = int(input('\nEnter your choice: '))
         except Exception as e:  
-            print(f'\nInvalid input. Please enter an integer. Error: {e}')
+            print(f'\nInvalid input.\nError: {e}')
             continue
 
         if ch == 1:
             # Insert at the beginning of the list.
             try:
                 data = int(input('\nEnter value to be inserted in left: '))
-            except TypeError as e:
+            except Exception as e:
                 print(f"Error: {e}")
                 continue
             obj.insertLeft(data)
@@ -362,7 +391,7 @@ if __name__ == "__main__":
             # Insert at the end of the list.
             try:
                 data = int(input('\nEnter value to be inserted in right: '))
-            except TypeError as e:
+            except Exception as e:
                 print(f"Error: {e}")
                 continue
             obj.insertRight(data)
@@ -371,7 +400,7 @@ if __name__ == "__main__":
             # Delete from the beginning of the list.
             try:
                 print(f"Deleted {obj.deleteLeft()} from the beginning of the list.")
-            except IndexError as e:
+            except Exception as e:
                 print(f"Error: {e}")
 
         elif ch == 4:
@@ -385,7 +414,7 @@ if __name__ == "__main__":
             # Delete a specific element.
             try:
                 x = int(input('\nEnter the value of Element x: '))
-            except TypeError as e:
+            except Exception as e:
                 print(f"Error: {e}")
                 continue
 
@@ -405,7 +434,7 @@ if __name__ == "__main__":
             
             try:
                 data = int(input('Enter the value of Element x: '))
-            except TypeError as e:
+            except Exception as e:
                 print(f"Error: {e}")
                 continue
             index = obj.searchlist(data)

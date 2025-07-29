@@ -67,8 +67,8 @@ class LinkedList(Generic[T]):
 
         Parameters
         ----------
-            data : Any
-                The value to be checked for type consistency.
+        data : Any
+            The value to be checked for type consistency.
 
         Raises
         ------
@@ -123,7 +123,7 @@ class LinkedList(Generic[T]):
         if self.head is None:
             raise IndexError("Cannot delete from an empty list.")
         temp = self.head
-        if self.head.next is None:
+        if self.head is self.tail:
             self.head = None
             self.tail = None
             self.length = 0
@@ -181,7 +181,7 @@ class LinkedList(Generic[T]):
         if self.tail is None:
             raise IndexError("Cannot delete from an empty list.")
         temp = self.tail
-        if self.tail.prev is None:
+        if self.tail is self.head:
             # If only one node is present, set tail to None.
             self.tail = None
             self.head = None
@@ -214,18 +214,20 @@ class LinkedList(Generic[T]):
             If the type of `data` does not match the expected element type.
         """
         self._check_type(data)
-        current = self.head
+        temp = self.head
         pos = 0
-        while current:
-            if current.data == data:
+        while temp is not self.tail:
+            if temp.data == data:
                 return pos
-            current = current.next
+            temp = temp.next
             pos += 1
+        if temp.data == data:
+            return pos
         return -1
     
     def deleteElement(self, data: T) -> Optional[T]:
         """
-        Deletes the first occurrence of a node with the specified data from the doubly linked list.
+        Deletes the first occurrence of an element with the specified data from the doubly linked list.
 
         Parameters
         ----------
@@ -246,21 +248,21 @@ class LinkedList(Generic[T]):
         pos = self.searchlist(data)
         if pos == -1:
             return None
+        elif pos == 0:
+            return self.deleteLeft()
+        elif pos == len(self) - 1:
+            return self.deleteRight()
         
         temp = self.head
         for _ in range(pos):
             temp = temp.next
-        if temp is self.head:
-            return self.deleteLeft()
-        elif temp is self.tail:
-            return self.deleteRight()
-        else:
-            temp.prev.next = temp.next
-            temp.next.prev = temp.prev
-            temp.prev = None
-            temp.next = None
-            self.length -= 1
-            return temp.data
+
+        temp.prev.next = temp.next
+        temp.next.prev = temp.prev
+        temp.prev = None
+        temp.next = None
+        self.length -= 1
+        return temp.data
 
     def __str__(self) -> str:
         """
@@ -271,13 +273,17 @@ class LinkedList(Generic[T]):
         str
             A string representation of the linked list, showing each node's data.
         """
-        result = []
+        if self.head is None:
+            return "HEAD -> <- TAIL"
+
+        elements = []
         str = "HEAD -> "
-        current = self.head
-        while current:
-            result.append(f"[{current.data}]")
-            current = current.next
-        return str + " <-> ".join(result) + " <- Tail"
+        temp = self.head
+        while temp is not self.tail:
+            elements.append(f"[{temp.data}]")
+            temp = temp.next
+        elements.append(f"[{temp.data}]")
+        return str + " <-> ".join(elements) + " <- Tail"
     
     def __len__(self) -> int:
         """
@@ -299,10 +305,14 @@ class LinkedList(Generic[T]):
         T
             The data of each node in the linked list.
         """
-        current = self.head
-        while current:
-            yield current.data
-            current = current.next
+        if self.head is None:
+            return
+        
+        temp = self.head
+        while temp is not self.tal:
+            yield temp.data
+            temp = temp.next
+        yield temp.data
 
     def __contains__(self, item: T) -> bool:
         """
@@ -318,12 +328,15 @@ class LinkedList(Generic[T]):
         bool
             True if the item is found, False otherwise.
         """
-        current = self.head
-        while current:
-            if current.data == item:
+        if self.head is None:
+            return False
+        temp = self.head
+        while temp is not self.tail:
+            if temp.data == item:
                 return True
-            current = current.next
-        return False
+            temp = temp.next
+
+        return temp.data == data
 
 if __name__ == "__main__":
     """
@@ -340,14 +353,14 @@ if __name__ == "__main__":
         try:
             ch = int(input('\nEnter your choice: '))
         except Exception as e:  
-            print(f'\nInvalid input. Please enter an integer. Error: {e}')
+            print(f'Error: {e}')
             continue
 
         if ch == 1:
             # Check if the input is of the correct type.
             try:
                 data = int(input('\nEnter value to be inserted in left: '))
-            except TypeError as e:
+            except Exception as e:
                 print(f"Error: {e}")
                 continue
             obj.insertLeft(data)
@@ -356,7 +369,7 @@ if __name__ == "__main__":
             # Check if the input is of the correct type.
             try:
                 data = int(input('\nEnter value to be inserted in right: '))
-            except TypeError as e:
+            except Exception as e:
                 print(f"Error: {e}")
                 continue
             obj.insertRight(data)
@@ -364,20 +377,20 @@ if __name__ == "__main__":
         elif ch == 3:
             try:
                 print(f"Deleted {obj.deleteLeft()} from the beginning of the list.")
-            except IndexError as e:
+            except Exception as e:
                 print(f"Error: {e}")
 
         elif ch == 4:
             try:
                 print(f"Deleted {obj.deleteRight()} from the end of the list.")
-            except IndexError as e:
+            except Exception as e:
                 print(f"Error: {e}")
                 continue
         elif ch == 5:
             # Delete a specific element.
             try:
                 x = int(input('\nEnter the value of Element x: '))
-            except TypeError as e:
+            except Exception as e:
                 print(f"Error: {e}")
                 continue
 
@@ -395,7 +408,7 @@ if __name__ == "__main__":
             # Search for a specific element.        
             try:
                 data = int(input('Enter the value of Element x: '))
-            except TypeError as e:
+            except Exception as e:
                 print(f"Error: {e}")
                 continue
             index = obj.searchlist(data)

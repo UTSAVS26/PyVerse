@@ -1,5 +1,5 @@
 from __future__ import annotations
-from typing import TypeVar, Generic, Optional
+from typing import TypeVar, Generic, Optional, Iterator
 from Menu_Driven_Code_for_Linear_LinkedList import LinkedList
 
 T = TypeVar('T')
@@ -51,11 +51,9 @@ class DynamicQueue(Generic[T]):
         IndexError
             If the queue is empty.
         """
-        try:
-            return self._queue.deleteLeft()
-        except IndexError:
+        if self._queue.head is None:
             raise IndexError("Cannot dequeue from an empty queue.")
-
+        return self._queue.deleteLeft()
     def peek(self) -> Optional[T]:
         """
         Returns the front element of the queue without removing it.
@@ -70,7 +68,7 @@ class DynamicQueue(Generic[T]):
         IndexError
             If the queue is empty.
         """
-        if len(self._queue) == 0:
+        if self._queue.head is None:
             raise IndexError("Cannot peek from an empty queue.")
         return self._queue.head.data
 
@@ -138,7 +136,12 @@ if __name__ == "__main__":
         print('\n1. Enqueue\n2. Dequeue\n3. Print\n0. Exit')
         print('-----------')
 
-        ch = int(input('\nEnter your choice: '))
+        try:
+            ch = int(input('\nEnter your choice: '))
+        except Exception as e:
+            print(f'Error: {e}')
+            continue
+
 
         if ch == 1:
             # Enqueue operation

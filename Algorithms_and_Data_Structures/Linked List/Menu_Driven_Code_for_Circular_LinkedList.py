@@ -21,7 +21,7 @@ class CircularLinkedList(LinkedList[T]):
 
     def insertLeft(self, data: T) -> int:
         """
-        Insert an element at the beginning (left) of the linked list.
+        Insert an element at the beginning (left) of the circular linked list.
 
         Parameters
         ----------
@@ -35,7 +35,7 @@ class CircularLinkedList(LinkedList[T]):
 
         Raises
         ------
-        TypeError
+        Exception
             If the type of `data` does not match the expected element type.
         """
         # Check if the data type matches the expected type.
@@ -54,7 +54,7 @@ class CircularLinkedList(LinkedList[T]):
 
     def deleteLeft(self) -> T:
         """
-        Deletes the element from the beginning(left) of the linked list.
+        Deletes the element from the beginning(left) of the circular linked list.
 
         Returns
         -------
@@ -62,11 +62,11 @@ class CircularLinkedList(LinkedList[T]):
 
         Raises
         ------
-        IndexError
+        Exception
             If trying to pop from an empty linked list.
         """
         if self.head is None:
-            raise IndexError("Cannot delete from an empty linked list.")
+            raise Exception("Cannot delete from an empty linked list.")
         
         temp = self.head
         if self.head is self.tail:
@@ -98,7 +98,7 @@ class CircularLinkedList(LinkedList[T]):
 
         Raises
         ------
-        TypeError
+        Exception
             If the type of `data` does not match the expected element type.
         
         """
@@ -126,97 +126,27 @@ class CircularLinkedList(LinkedList[T]):
         
         Raises
         ------
-        IndexError
+        Exception
             If trying to pop from an empty linked list.
         """
         if self.head is None:
-            raise IndexError("Cannot delete from an empty linked list.")
+            raise Exception("Cannot delete from an empty linked list.")
     
         temp = self.tail
         if self.head is self.tail:
             # If there is only one node, set head and tail to None.
             self.head = self.tail = None
-            temp.next = None
             self.length = 0
         else:
             # Traverse to the node before tail to update tail and its next pointer.
-            current = self.head
-            while current.next is not self.tail:
-                current = current.next
-            current.next = self.head
-            self.tail = current
+            temp = self.head
+            while temp.next is not self.tail:
+                temp = temp.next
+            temp.next = self.head
+            self.tail = temp
             temp.next = None
             self.length -= 1
         return temp.data    
-
-    def searchlist(self, data: T) -> int:
-        """
-        Searches for a specific element in the linked list.
-        
-        Parameters
-        ----------  
-        data : T
-            The value to be searched in the linked list.
-
-        Returns
-        ------- 
-        int
-            The position of the element if found, -1 otherwise.
-
-        Raises
-        ------
-        TypeError
-            If the type of `data` does not match the expected element type.
-        """
-        self._check_type(data)
-
-        if self.length == 0:
-            return -1
-
-        current = self.head
-        pos = 0 
-        while current is not self.tail:
-            if current.data == data:
-                return pos
-            current = current.next
-            pos += 1
-        if current.data == data:
-            return pos
-        return -1
-
-    def __str__(self) -> str:
-        """
-        Returns a string representation of the linked list.
-
-        Returns:
-            str: A string representation of the linked list elements.
-        """
-        if self.head is None:
-            return "HEAD ->  <- TAIL"
-        elements = []
-        current = self.head
-        while current is not self.tail :
-            elements.append(f"[{current.data}]")
-            current = current.next
-        elements.append(f"[{self.tail.data}]")
-        return "HEAD -> " + " -> ".join(elements) + " <- TAIL"
-
-    def __iter__(self):
-        """
-        Returns an iterator for the linked list elements.
-
-        Yields
-        ------
-        T
-            The data of each node in the linked list
-        """
-        current = self.head
-        if current is None:
-            yield
-        while current is not self.tail:
-            yield current.data
-            current = current.next
-        yield current.data
 
 if __name__ == "__main__":
 
@@ -231,14 +161,14 @@ if __name__ == "__main__":
         try:
             ch = int(input('\nEnter your choice: '))
         except Exception as e:  
-            print(f'\nInvalid input. Please enter an integer. Error: {e}')
+            print(f'Error: {e}')
             continue
 
 
         if ch == 1:
             try:
                 data = int(input('\nEnter value to be inserted in left: '))
-            except TypeError as e:
+            except Exception as e:
                 print(f"Error: {e}")
                 continue
             obj.insertLeft(data)
@@ -246,7 +176,7 @@ if __name__ == "__main__":
         elif ch == 2:
             try:
                 data = int(input('\nEnter value to be inserted in right: '))
-            except TypeError as e:
+            except Exception as e:
                 print(f"Error: {e}")
                 continue
             obj.insertRight(data)
@@ -254,19 +184,19 @@ if __name__ == "__main__":
         elif ch == 3:
             try:
                 print(f"Deleted {obj.deleteLeft()} from the beginning of the list.")
-            except IndexError as e:
+            except Exception as e:
                 print(f"Error: {e}")
 
         elif ch == 4:
             try:
                 print(f"Deleted {obj.deleteRight()} from the end of the list.")
-            except IndexError as e:
+            except Exception as e:
                 print(f"Error: {e}")
 
         elif ch == 5:
             try:
                 x = int(input('\nEnter the value of Element x: '))
-            except TypeError as e:
+            except Exception as e:
                 print(f"Error: {e}")
                 continue
 
@@ -284,7 +214,7 @@ if __name__ == "__main__":
             # Search for a specific element.        
             try:
                 data = int(input('Enter the value of Element x: '))
-            except TypeError as e:
+            except Exception as e:
                 print(f"Error: {e}")
                 continue
             index = obj.searchlist(data)

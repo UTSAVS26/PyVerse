@@ -1,5 +1,5 @@
 from __future__ import annotations
-from typing import TypeVar, Generic, Optional
+from typing import TypeVar, Generic, Optional, Iterator
 from Menu_Driven_Code_for_Linear_LinkedList import LinkedList  
 
 T = TypeVar("T")
@@ -51,10 +51,10 @@ class DynamicStack(Generic[T]):
         IndexError
             If the stack is empty.
         """
-        try:
-            return self._stack.deleteLeft()
-        except IndexError:
+        if self._stack.head is None:
             raise IndexError("Cannot pop from an empty stack.")
+        return self._stack.deleteLeft()
+            
 
     def peek(self) -> Optional[T]:
         """
@@ -62,10 +62,10 @@ class DynamicStack(Generic[T]):
 
         Returns
         -------
-        Optional[T]
+        T
             The data of the top element, or None if the stack is empty.
         """
-        if len(self._stack) == 0:
+        if self._stack.head is None:
             raise IndexError("Cannot peek from an empty stack.")
         return self._stack.head.data
 
@@ -73,24 +73,47 @@ class DynamicStack(Generic[T]):
     def __len__(self) -> int:
         """
         Returns the number of elements in the stack.
+
+        Returns:
+            int: The number of elements in the stack.
         """
         return len(self._stack)
 
     def __iter__(self):
         """
         Returns an iterator for the stack elements.
+
+        Yields
+        ------
+        T
+            The data of each node in the stack.
         """
         return iter(self._stack)
 
     def __contains__(self, item: T) -> bool:
         """
         Checks if an item is in the stack.
+
+        Parameters
+        ----------
+        item : T
+            The value to check for presence in the stack.
+
+        Returns
+        -------
+        bool
+            True if the item is found, False otherwise.
         """
         return item in self._stack
     
     def __str__(self) -> str:
         """
         Returns a string representation of the stack.
+
+        Returns
+        -------
+            str
+                A string representation of the stack elements.
         """
         return "TOP -> " + " -> ".join(f"[{item}]" for item in self._stack)
 
@@ -108,12 +131,17 @@ if __name__ == "__main__":
 
         try:
             ch = int(input('\nEnter your choice: '))
-        except TypeError:
-            print('\nInvalid input. Please enter an integer.')
+        except Exception as e:
+            print('ERROR: {e}')
             continue
         if ch == 1:
             # Push operation
-            data = int(input('\nEnter value to push in stack: '))
+            try:
+                data = int(input('\nEnter value to push in stack: '))
+            except Exception as e:
+                print(f"Error: {e}")
+                continue
+
             obj.push(data)
 
         elif ch == 2:
