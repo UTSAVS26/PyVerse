@@ -23,20 +23,19 @@ def main():
     print(f"  Intent: {parsed['intent']}")
     print(f"  Entities: {parsed['entities']}")
     print(f"  Shell: {command}\n")
-    approved = ce.is_safe(command)
-    if approved:
-        confirm = input("\u2705 Proceed? [Y/n] ").strip().lower()
-        if confirm in ('y', 'yes', ''):
-            ce.execute(command, preview=False)
-            log_command(command, True)
-            print("[i] Command executed and logged to smartcli.log.")
-        else:
-            print("[i] Command execution cancelled.")
-            log_command(command, False)
-    else:
-        print("[!] Command blocked for safety.")
+    # Execute with safety checks and user confirmation
+    result = ce.execute(command, preview=True)
+    
+    if result == 0:
+        log_command(command, True)
+        print("[i] Command executed and logged to smartcli.log.")
+    elif result == -1:
         log_command(command, False)
-        print("[i] Blocked command was logged to smartcli.log.")
+        print("[i] Blocked/failed command logged to smartcli.log.")
+    else:
+        # User cancelled
+        log_command(command, False)
+        print("[i] Cancelled command logged to smartcli.log.")
 
 if __name__ == '__main__':
     main() 
