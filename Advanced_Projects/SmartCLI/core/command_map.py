@@ -59,5 +59,5 @@ from core.utils import get_system_path
             out_name = f"archive.zip"
             cmd = f"cd {location} && zip -r {out_name} {file_pattern}"
         else:
-            cmd = f"echo 'Command mapping not implemented.'"
+            cmd = "echo 'Command mapping not implemented.'"
         return cmd 
