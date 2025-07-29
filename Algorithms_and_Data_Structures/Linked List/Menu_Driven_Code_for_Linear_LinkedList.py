@@ -33,26 +33,6 @@ class Node(Generic[T]):
 class LinkedList(Generic[T]):
     """
     LinkedList class to implement a generic linear singly linked list with common operations.
-
-    This class supports operations to insert elements at both ends, delete elements from both ends,
-    search for elements, and print the entire list. It is type-generic and ensures all elements
-    added are of the same type, defined by the first insertion.
-
-    Parameters
-    ---------------
-    T : TypeVar
-        The type of data stored in the linked list nodes.
-
-    Attributes
-    ----------
-    head : Optional[Node[T]]
-        The first node in the linked list.
-    tail : Optional[Node[T]]
-        The last node in the linked list.
-    length : int
-        The number of elements in the linked list.
-    _type : Optional[type]
-        The expected type of data stored in the list, inferred from the first insertion.
     """
 
     def __init__(self) -> None:
@@ -219,7 +199,6 @@ class LinkedList(Generic[T]):
             self.head = None
             self.tail = None
             self.length = 0
-            return temp.data
         else:
             # Traverse to the second last node.
             while temp.next.next != None:
@@ -229,7 +208,7 @@ class LinkedList(Generic[T]):
             temp = temp.next
             self.tail.next = None
             self.length -= 1
-            return temp.data
+        return temp.data
 
 
     def searchlist(self, data: T) -> int:
