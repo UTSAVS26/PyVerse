@@ -1,5 +1,5 @@
 from __future__ import annotations
-from typing import Generic, TypeVar, Optional
+from typing import Generic, TypeVar, Optional, Any
 
 T = TypeVar("T")
 
@@ -59,10 +59,10 @@ class LinkedList(Generic[T]):
         """
         Initializes an empty linked list with head set to None.
         """
-        self.head = None
-        self.tail = None
-        self.length = 0
-        self._type = None
+        self.head: Optional[Node[T]] = None
+        self.tail: Optional[Node[T]] = None
+        self.length: int = 0
+        self._type: Optional[type] = None
 
     def _init_first_node(self, node: Node[T]) -> None:
         self.head = node
@@ -71,7 +71,7 @@ class LinkedList(Generic[T]):
         
     def _check_type(
             self, 
-            data: T
+            data: Any
         ) -> None:
         """
         Check whether the given value matches the expected type for the linked list.
@@ -123,13 +123,12 @@ class LinkedList(Generic[T]):
         if self.head is None:
             # If the list is empty, initialize the first node.
             self._init_first_node(node)
-            return self.length
         else:
             # Insert the new node at the beginning.
             node.next = self.head
             self.head = node
             self.length += 1
-            return self.length
+        return len(self)
 
     def deleteLeft(self) -> T:
         """
@@ -373,10 +372,8 @@ if __name__ == "__main__":
 
         if ch == 1:
             # Insert at the beginning of the list.
-            data = int(input('\nEnter value to be inserted in left: '))
-            # Check if the input is of the correct type.
             try:
-                obj._check_type(data) 
+                data = int(input('\nEnter value to be inserted in left: '))
             except TypeError as e:
                 print(f"Error: {e}")
                 continue
@@ -384,9 +381,8 @@ if __name__ == "__main__":
 
         elif ch == 2:
             # Insert at the end of the list.
-            data = int(input('\nEnter value to be inserted in right: '))
             try:
-                obj._check_type(data)
+                data = int(input('\nEnter value to be inserted in right: '))
             except TypeError as e:
                 print(f"Error: {e}")
                 continue
@@ -408,9 +404,8 @@ if __name__ == "__main__":
 
         elif ch == 5:
             # Delete a specific element.
-            x = int(input('\nEnter the value of Element x: '))
             try:
-                obj._check_type(x)
+                x = int(input('\nEnter the value of Element x: '))
             except TypeError as e:
                 print(f"Error: {e}")
                 continue
@@ -428,9 +423,9 @@ if __name__ == "__main__":
 
         elif ch == 7:
             # Search for a specific element.
-            data = int(input('Enter the value of Element x: '))
+            
             try:
-                obj._check_type(data) 
+                data = int(input('Enter the value of Element x: '))
             except TypeError as e:
                 print(f"Error: {e}")
                 continue
