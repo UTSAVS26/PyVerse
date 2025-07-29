@@ -68,16 +68,17 @@ class QueryParser:
         entities = self.extract_entities(query)
         # Use OpenAI API if enabled
         if self.use_openai:
-            openai.api_key = os.getenv('OPENAI_API_KEY')
+            from openai import OpenAI
+            client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
             prompt = f"Extract the main action (find, delete, compress, list, move, copy, rename), file type, location, and any time or size filters from this query: '{query}'. Respond as JSON."
             try:
-                response = openai.ChatCompletion.create(
+                response = client.chat.completions.create(
                     model="gpt-3.5-turbo",
                     messages=[{"role": "user", "content": prompt}],
                     max_tokens=150
                 )
                 import json
-                result = json.loads(response['choices'][0]['message']['content'])
+                result = json.loads(response.choices[0].message.content)
                 action = result.get('action')
                 if action in self.ACTIONS:
                     intent = action
