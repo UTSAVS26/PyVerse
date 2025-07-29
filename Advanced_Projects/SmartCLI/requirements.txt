@@ -1,6 +1,5 @@
 transformers
 rich
-argparse
 openai
 llama-cpp-python
 mistral-common
