@@ -1,0 +1,9 @@
+sounddevice
+numpy
+onnxruntime
+gradio
+PyQt5
+matplotlib
+python-rnnoise
+demucs
+torch 
