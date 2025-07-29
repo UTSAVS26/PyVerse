@@ -42,8 +42,16 @@ class CommandExecutor:
                 print("[i] Command execution cancelled.")
                 return 0
         try:
-            result = subprocess.run(command, shell=True, check=True)
+            # Use shlex.split for safer command parsing
+            import shlex
+            cmd_parts = shlex.split(command)
+            result = subprocess.run(cmd_parts, check=True, capture_output=True, text=True)
+            if result.stdout:
+                print(result.stdout)
             return result.returncode
-        except Exception as e:
+        except subprocess.CalledProcessError as e:
+            print(f"[!] Command failed with exit code {e.returncode}: {e.stderr}")
+            return e.returncode
+        except (ValueError, OSError) as e:
             print(f"[!] Error executing command: {e}")
-            return -1 
+            return -1
