@@ -22,7 +22,8 @@ class RNNoiseFilter(BaseNoiseFilter):
         self.rnnoise = rnnoise.RNNoise()
 
     def process(self, audio_block):
-        import rnnoise
+ def process(self, audio_block):
+     frame_size = 480
         frame_size = 480
         audio_block = audio_block.astype(np.float32)
         out = np.zeros_like(audio_block)
