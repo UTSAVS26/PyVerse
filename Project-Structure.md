@@ -416,6 +416,9 @@
   * [Pokemon-Data-Analysis-And-Legendary-Classification-Main](./Machine_Learning/pokemon-data-analysis-and-legendary-classification-main)
   * [Smartphone Rate Prediction](./Machine_Learning/smartphone_rate_prediction)
 
+* **Optimization Algorithms**
+  * [Genetic Algorithms](./Optimization_Algorithms/Genetic_Algorithms)
+
 * **Tutorials**
   * [Data Science](./Tutorials/Data%20Science)
   * [Python Data Engineering](./Tutorials/Python_Data_Engineering)
