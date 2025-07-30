@@ -2,8 +2,6 @@ import unittest
 import tempfile
 import os
 import sys
-from PIL import Image
-import numpy as np
 
 # Add parent directory to path for imports
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
