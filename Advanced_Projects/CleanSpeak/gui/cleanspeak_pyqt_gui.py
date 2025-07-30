@@ -1,6 +1,5 @@
 import sys
 import numpy as np
-from PyQt5 import QtWidgets, QtCore
 from PyQt5.QtWidgets import QMainWindow, QApplication, QLabel, QPushButton, QComboBox, QVBoxLayout, QWidget, QHBoxLayout
 from PyQt5.QtCore import QThread, pyqtSignal
 import sounddevice as sd
