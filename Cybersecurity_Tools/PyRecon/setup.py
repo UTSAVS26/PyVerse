@@ -23,7 +23,12 @@ setup(
     description="High-Speed Port Scanner & Service Fingerprinter",
     long_description=read_readme(),
     long_description_content_type="text/markdown",
-    url="https://github.com/shivanshkatiyar/pyrecon",
+    url="https://github.com/<correct-owner>/pyrecon",
+
+    project_urls={
+        "Bug Tracker": "https://github.com/<correct-owner>/pyrecon/issues",
+        "Source Code": "https://github.com/<correct-owner>/pyrecon",
+    },
     packages=find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",
