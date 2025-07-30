@@ -17,9 +17,15 @@ class AudioOutput:
             dtype='float32'
         )
 
+import logging
+
 # Stub for virtual mic output
 class VirtualMicOutput(AudioOutput):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         # TODO: Implement using VB-Cable, PulseAudio, or BlackHole
-        print("Virtual mic output is a stub. Please route output to a virtual cable device.") 
+        logging.warning("Virtual mic output is not implemented. Please route output to a virtual cable device.")
+
+    def stream(self):
+        # Return the base stream for now, but users need manual routing
+        return super().stream()
