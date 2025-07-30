@@ -392,9 +392,10 @@ class TLSParser:
             cert_info = self.parse_certificate(host, port)
             
             if 'validity' in cert_info:
+                from datetime import timezone
                 not_before = datetime.fromisoformat(cert_info['validity']['not_before'])
                 not_after = datetime.fromisoformat(cert_info['validity']['not_after'])
-                now = datetime.now()
+                now = datetime.now(timezone.utc)
                 
                 result['issue_date'] = not_before.isoformat()
                 result['expiry_date'] = not_after.isoformat()
