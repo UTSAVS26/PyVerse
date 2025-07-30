@@ -193,11 +193,11 @@ class MainWindow(QMainWindow):
                 self.list_widget.addItem(f)
 
     def remove_selected(self):
-        for item in self.list_widget.selectedItems():
-            idx = self.list_widget.row(item)
+        # Remove items in reverse order to avoid index shifting
+        items = [(self.list_widget.row(item), item) for item in self.list_widget.selectedItems()]
+        for idx, item in sorted(items, reverse=True):
             self.list_widget.takeItem(idx)
             del self.pdf_list[idx]
-
     def clear_list(self):
         self.list_widget.clear()
         self.pdf_list = []
