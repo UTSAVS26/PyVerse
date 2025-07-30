@@ -1,0 +1,7 @@
+pyperclip==1.8.2
+cryptography==41.0.7
+rich==13.7.0
+click==8.1.7
+keyboard==0.13.5
+pytest==7.4.3
+pytest-cov==4.1.0 
