@@ -289,7 +289,7 @@ class MainWindow(QMainWindow):
                 ollama_model=self.ollama_model_combo.currentText(),
                 filename=base
             )
-            out_path = os.path.join(pdf_dir, base + '.txt')
+            out_path = os.path.join(self.output_dir, base + '.txt')
             with open(out_path, 'w', encoding='utf-8') as f:
                 f.write(text)
             preview_text += f'--- {base}.txt ---\n{text}\n\n'
