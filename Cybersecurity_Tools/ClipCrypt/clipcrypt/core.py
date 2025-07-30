@@ -7,7 +7,7 @@ Main interface for the ClipCrypt clipboard manager.
 import os
 import sys
 from pathlib import Path
-from typing import List, Dict, Any, Optional, Tuple
+from typing import Optional
 from rich.console import Console
 from rich.table import Table
 from rich.panel import Panel
