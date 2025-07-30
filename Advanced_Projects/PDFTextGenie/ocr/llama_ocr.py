@@ -7,7 +7,9 @@ import torch
 from PIL import Image
 
 class EasyOCREngine:
-    def __init__(self, languages=['en'], gpu=False):
+    def __init__(self, languages=None, gpu=False):
+        if languages is None:
+            languages = ['en']
         self.reader = easyocr.Reader(languages, gpu=gpu)
 
     def recognize(self, images, preserve_layout=False):
