@@ -77,31 +77,35 @@ def main():
         print("5. Get Anime Recommendations")
         print("6. Get Manga Recommendations")
         print("7. Exit")
-        choice = input("Enter your choice: ")
-
-        if choice == '1':
-            title = input("Enter anime title: ")
-            episode = input("Enter current episode: ")
-            rating = input("Enter rating (1-10): ")
-            add_anime_to_tracker(title, episode, rating)
-        elif choice == '2':
-            title = input("Enter manga title: ")
-            chapter = input("Enter current chapter: ")
-            rating = input("Enter rating (1-10): ")
-            add_manga_to_tracker(title, chapter, rating)
-        elif choice == '3':
-            show_tracked_anime()
-        elif choice == '4':
-            show_tracked_manga()
-        elif choice == '5':
-            recommend_anime()
-        elif choice == '6':
-            recommend_manga()
-        elif choice == '7':
-            print("Exiting...")
-            break
-        else:
-            print("Invalid choice. Please try again.")
+        try:
+            choice = int(input("Enter your choice: "))
+        except ValueError:
+            print("Invalid input.Please enter a number.")
+            continue
+        match choice:
+            case 1:
+                title = input("Enter anime title: ")
+                episode = input("Enter current episode: ")
+                rating = input("Enter rating (1-10): ")
+                add_anime_to_tracker(title, episode, rating)
+            case 2:
+                title = input("Enter manga title: ")
+                chapter = input("Enter current chapter: ")
+                rating = input("Enter rating (1-10): ")
+                add_manga_to_tracker(title, chapter, rating)
+            case 3:
+                show_tracked_anime()
+            case 4:
+                show_tracked_manga()
+            case 5:
+                recommend_anime()
+            case 6:
+                recommend_manga()
+            case 7:
+                print("Exiting...")
+                break
+            case _:
+                print("Invalid choice. Please try again.")
 
 # Run the application
 if __name__ == '__main__':

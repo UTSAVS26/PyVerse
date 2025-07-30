@@ -1,0 +1,37 @@
+name: Update Project Structure File
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetches all history for git commit
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      
+      - name: Generate Project Structure File
+        run: python .github/scripts/update_dir_structure.py > Project-Structure.md
+
+      - name: Commit and Push if Changed
+        run: |
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+          git add Project-Structure.md
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            # Add [skip ci] to the commit message to prevent workflow loops
+            git commit -m "docs: auto-update project structure [skip ci]"
+            git push
+          fi

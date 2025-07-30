@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h4>Input Parameters</h4>
+            </div>
+            <div class="card-body">
+                <form id="predictionForm">
+                    <div class="mb-3">
+                        <label for="temperature" class="form-label">Temperature (°C)</label>
+                        <input type="number" step="0.1" class="form-control" id="temperature" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="humidity" class="form-label">Relative Humidity (%)</label>
+                        <input type="number" step="0.1" class="form-control" id="humidity" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="wind" class="form-label">Wind Speed (km/h)</label>
+                        <input type="number" step="0.1" class="form-control" id="wind" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="rain" class="form-label">Rain (mm/m²)</label>
+                        <input type="number" step="0.1" class="form-control" id="rain" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Predict Burned Area</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header bg-success text-white">
+                <h4>Prediction Results</h4>
+            </div>
+            <div class="card-body">
+                <div id="results" class="text-center" style="display: none;">
+                    <h5>Predicted Burned Area (hectares):</h5>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <div class="card mb-3">
+                                <div class="card-header bg-info text-white">
+                                    Ridge Regression
+                                </div>
+                                <div class="card-body">
+                                    <h3 id="ridgePrediction">0.00</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card mb-3">
+                                <div class="card-header bg-warning text-white">
+                                    Polynomial Regression
+                                </div>
+                                <div class="card-body">
+                                    <h3 id="polyPrediction">0.00</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <canvas id="predictionChart" width="400" height="200"></canvas>
+                    </div>
+                </div>
+                <div id="loading" class="text-center" style="display: none;">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <p class="mt-2">Processing prediction...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header bg-secondary text-white">
+                <h4>Prediction Insights</h4>
+            </div>
+            <div class="card-body">
+                <div id="insights">
+                    <p class="text-muted">Submit parameters to see prediction insights.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

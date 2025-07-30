@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhisperNode 💻</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to WhisperNode 🗂️</h1>
+        <p class="description">Securely upload your files with ease! 🌐</p>
+
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <label for="file">Choose a file to upload 📂:</label>
+            <input type="file" name="file" id="file" required><br><br>
+
+            <label for="passphrase">Enter a passphrase 🔐:</label>
+            <input type="password" name="passphrase" id="passphrase" placeholder="Secret passphrase" required><br><br>
+
+            <button type="submit">Upload 🔼</button>
+        </form>
+
+        <div class="status">
+            <p id="status-message"></p>
+        </div>
+    </div>
+</body>
+</html>
