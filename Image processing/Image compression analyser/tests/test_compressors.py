@@ -289,7 +289,7 @@ class TestCompressionComparison(unittest.TestCase):
         }
         
         for format_name, compressor in compressors.items():
-            output_path = os.path.join(self.temp_dir, f"test.{compressor.extension}")
+            output_path = os.path.join(self.temp_dir, f"test{compressor.extension}")
             result = compressor.compress(self.test_image, output_path, quality)
             sizes[format_name] = result['compressed_size']
         
