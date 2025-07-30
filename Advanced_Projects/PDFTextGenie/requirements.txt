@@ -1,6 +1,0 @@
-PyQt5
-pdf2image
-Pillow
-PyMuPDF
-EasyOCR
-numpy 
