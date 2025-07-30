@@ -23,16 +23,38 @@ class AudioThread(QThread):
         self.channels = 1
     def run(self):
         self.running = True
-        noise_filter = get_filter(self.model_name, self.model_path)
-        input_stream = sd.InputStream(samplerate=self.samplerate, blocksize=self.blocksize, device=self.device, channels=self.channels, dtype='float32')
-        output_stream = sd.OutputStream(samplerate=self.samplerate, blocksize=self.blocksize, device=self.device, channels=self.channels, dtype='float32')
-        with input_stream, output_stream:
-            while self.running:
-                indata, _ = input_stream.read(self.blocksize)
-                filtered = noise_filter.process(indata.flatten())
-                output_stream.write(filtered.reshape(-1, self.channels))
-                self.update_waveform.emit(filtered)
-                self.update_db.emit(rms_db(filtered))
+        try:
+            noise_filter = get_filter(self.model_name, self.model_path)
+            input_stream = sd.InputStream(
+                samplerate=self.samplerate,
+                blocksize=self.blocksize,
+                device=self.device,
+                channels=self.channels,
+                dtype='float32'
+            )
+            output_stream = sd.OutputStream(
+                samplerate=self.samplerate,
+                blocksize=self.blocksize,
+                device=self.device,
+                channels=self.channels,
+                dtype='float32'
+            )
+            with input_stream, output_stream:
+                while self.running:
+                    try:
+                        indata, _ = input_stream.read(self.blocksize)
+                        filtered = noise_filter.process(indata.flatten())
+                        output_stream.write(filtered.reshape(-1, self.channels))
+                        self.update_waveform.emit(filtered)
+                        self.update_db.emit(rms_db(filtered))
+                    except Exception as e:
+                        print(f"Error processing audio: {e}")
+                        break
+        except Exception as e:
+            print(f"Error initializing audio processing: {e}")
+        finally:
+            self.running = False
+
     def stop(self):
         self.running = False
         self.wait()
