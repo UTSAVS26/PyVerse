@@ -117,7 +117,7 @@ class EncryptionManager:
             plaintext = aesgcm.decrypt(nonce_bytes, ciphertext, None)
             return plaintext.decode('utf-8')
         except Exception as e:
-            raise ValueError(f"Decryption failed: {e}")
+            raise ValueError(f"Decryption failed: {e}") from e
     
     def is_encrypted(self, data: Dict[str, Any]) -> bool:
         """Check if data is encrypted.
