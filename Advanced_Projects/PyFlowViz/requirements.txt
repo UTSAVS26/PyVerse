@@ -1,0 +1,9 @@
+graphviz==0.20.1
+pyvis==0.3.2
+gradio==4.15.0
+PyQt5==5.15.10
+pytest==7.4.3
+pytest-cov==4.1.0
+black==23.11.0
+flake8==6.1.0
+numpy>=1.21.0 
