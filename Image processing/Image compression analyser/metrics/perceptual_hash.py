@@ -142,7 +142,11 @@ class PerceptualHash:
         Returns:
             Dictionary with perceptual hash analysis added
         """
-        original_image = Image.open(original_path)
+        try:
+            original_image = Image.open(original_path)
+        except Exception as e:
+            print(f"Error loading original image: {e}")
+            return compression_results
         
         for format_name, result in compression_results.items():
             if 'output_path' in result:
@@ -170,4 +174,4 @@ class PerceptualHash:
                         'similarity_assessment': 'Error'
                     })
         
-        return compression_results 
+        return compression_results
