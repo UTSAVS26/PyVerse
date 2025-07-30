@@ -224,7 +224,7 @@ class MainWindow(QMainWindow):
 
     def show_about(self):
         QMessageBox.information(self, 'About PDFTextGenie',
-            'PDFTextGenie\n\nSmart GUI PDF-to-Text Converter\n\nBatch convert scanned/image PDFs to clean text using OCR.\n\nDeveloped with PyQt5.\n\nhttps://github.com/yourusername/pdftextgenie')
+            'PDFTextGenie\n\nSmart GUI PDF-to-Text Converter\n\nBatch convert scanned/image PDFs to clean text using OCR.\n\nDeveloped with PyQt5.\n\nhttps://github.com/UTSAVS26/PyVerse')
 
     def dragEnterEvent(self, event):
         if event.mimeData().hasUrls():
