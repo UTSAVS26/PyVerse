@@ -1,0 +1,10 @@
+ast
+inspect
+dis
+tokenize
+sys
+linecache
+tracemalloc
+curses; sys_platform != 'win32'
+urwid; extra == 'tui'
+textual; extra == 'tui' 

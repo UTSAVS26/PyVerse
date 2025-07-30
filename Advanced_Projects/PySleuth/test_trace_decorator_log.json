@@ -1,0 +1,37 @@
+[
+  {
+    "file": "C:\\Github\\pypers\\PySleuth\\tests\\test_tracer_and_decorator.py",
+    "line_no": 34,
+    "code": "a = 5",
+    "locals": {},
+    "reason": ""
+  },
+  {
+    "file": "C:\\Github\\pypers\\PySleuth\\tests\\test_tracer_and_decorator.py",
+    "line_no": 35,
+    "code": "if a > 2:",
+    "locals": {
+      "a": 5
+    },
+    "reason": "Entered 'if' because a > 2 \u2192 True (locals: {'a': 5})"
+  },
+  {
+    "file": "C:\\Github\\pypers\\PySleuth\\tests\\test_tracer_and_decorator.py",
+    "line_no": 36,
+    "code": "b = 10",
+    "locals": {
+      "a": 5
+    },
+    "reason": ""
+  },
+  {
+    "file": "C:\\Github\\pypers\\PySleuth\\tests\\test_tracer_and_decorator.py",
+    "line_no": 37,
+    "code": "return b",
+    "locals": {
+      "a": 5,
+      "b": 10
+    },
+    "reason": ""
+  }
+]
