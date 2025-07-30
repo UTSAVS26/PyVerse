@@ -1,0 +1,9 @@
+{
+  "workflow_name": "test_python_workflow",
+  "timestamp": "2025-07-30T15:33:16.493039",
+  "completed_tasks": {
+    "task1": "TaskResult(task_name='task1', success=True, output='Hello from Python\\n', error=None, duration=0.0002548694610595703, exit_code=0)"
+  },
+  "total_tasks": 1,
+  "version": "1.0"
+}

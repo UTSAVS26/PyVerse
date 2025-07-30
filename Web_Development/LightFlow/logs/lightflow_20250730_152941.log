@@ -1,0 +1,52 @@
+2025-07-30 15:29:41,253 - lightflow - INFO - No checkpoint found for workflow: python_workflow
+2025-07-30 15:29:41,253 - lightflow - INFO - No checkpoint found for workflow: python_workflow
+2025-07-30 15:29:41,253 - lightflow - INFO - No checkpoint found for workflow: python_workflow
+2025-07-30 15:29:41,253 - lightflow - INFO - No checkpoint found for workflow: python_workflow
+2025-07-30 15:29:41,286 - lightflow - INFO - Starting workflow execution with 4 tasks
+2025-07-30 15:29:41,286 - lightflow - INFO - Starting workflow execution with 4 tasks
+2025-07-30 15:29:41,286 - lightflow - INFO - Starting workflow execution with 4 tasks
+2025-07-30 15:29:41,286 - lightflow - INFO - Starting workflow execution with 4 tasks
+2025-07-30 15:29:41,312 - lightflow - INFO - Execution mode: thread
+2025-07-30 15:29:41,312 - lightflow - INFO - Execution mode: thread
+2025-07-30 15:29:41,312 - lightflow - INFO - Execution mode: thread
+2025-07-30 15:29:41,312 - lightflow - INFO - Execution mode: thread
+2025-07-30 15:29:41,323 - lightflow - INFO - Max parallel tasks: 4
+2025-07-30 15:29:41,323 - lightflow - INFO - Max parallel tasks: 4
+2025-07-30 15:29:41,323 - lightflow - INFO - Max parallel tasks: 4
+2025-07-30 15:29:41,323 - lightflow - INFO - Max parallel tasks: 4
+2025-07-30 15:29:41,335 - lightflow - INFO - Executing batch: ['setup']
+2025-07-30 15:29:41,335 - lightflow - INFO - Executing batch: ['setup']
+2025-07-30 15:29:41,335 - lightflow - INFO - Executing batch: ['setup']
+2025-07-30 15:29:41,335 - lightflow - INFO - Executing batch: ['setup']
+2025-07-30 15:29:41,354 - lightflow - INFO - Task setup completed successfully
+2025-07-30 15:29:41,354 - lightflow - INFO - Task setup completed successfully
+2025-07-30 15:29:41,354 - lightflow - INFO - Task setup completed successfully
+2025-07-30 15:29:41,354 - lightflow - INFO - Task setup completed successfully
+2025-07-30 15:29:41,375 - lightflow - INFO - Executing batch: ['generate_data']
+2025-07-30 15:29:41,375 - lightflow - INFO - Executing batch: ['generate_data']
+2025-07-30 15:29:41,375 - lightflow - INFO - Executing batch: ['generate_data']
+2025-07-30 15:29:41,375 - lightflow - INFO - Executing batch: ['generate_data']
+2025-07-30 15:29:41,404 - lightflow - INFO - Task generate_data completed successfully
+2025-07-30 15:29:41,404 - lightflow - INFO - Task generate_data completed successfully
+2025-07-30 15:29:41,404 - lightflow - INFO - Task generate_data completed successfully
+2025-07-30 15:29:41,404 - lightflow - INFO - Task generate_data completed successfully
+2025-07-30 15:29:41,430 - lightflow - INFO - Executing batch: ['process_data']
+2025-07-30 15:29:41,430 - lightflow - INFO - Executing batch: ['process_data']
+2025-07-30 15:29:41,430 - lightflow - INFO - Executing batch: ['process_data']
+2025-07-30 15:29:41,430 - lightflow - INFO - Executing batch: ['process_data']
+2025-07-30 15:29:41,875 - lightflow - INFO - Task process_data completed successfully
+2025-07-30 15:29:41,875 - lightflow - INFO - Task process_data completed successfully
+2025-07-30 15:29:41,875 - lightflow - INFO - Task process_data completed successfully
+2025-07-30 15:29:41,875 - lightflow - INFO - Task process_data completed successfully
+2025-07-30 15:29:41,903 - lightflow - INFO - Executing batch: ['create_report']
+2025-07-30 15:29:41,903 - lightflow - INFO - Executing batch: ['create_report']
+2025-07-30 15:29:41,903 - lightflow - INFO - Executing batch: ['create_report']
+2025-07-30 15:29:41,903 - lightflow - INFO - Executing batch: ['create_report']
+2025-07-30 15:29:41,970 - lightflow - INFO - Task create_report completed successfully
+2025-07-30 15:29:41,970 - lightflow - INFO - Task create_report completed successfully
+2025-07-30 15:29:41,970 - lightflow - INFO - Task create_report completed successfully
+2025-07-30 15:29:41,970 - lightflow - INFO - Task create_report completed successfully
+2025-07-30 15:29:41,987 - lightflow - INFO - Checkpoint saved: .lightflow-checkpoints\python_workflow_20250730_152941_981108.json
+2025-07-30 15:29:41,987 - lightflow - INFO - Checkpoint saved: .lightflow-checkpoints\python_workflow_20250730_152941_981108.json
+2025-07-30 15:29:41,987 - lightflow - INFO - Checkpoint saved: .lightflow-checkpoints\python_workflow_20250730_152941_981108.json
+2025-07-30 15:29:41,987 - lightflow - INFO - Checkpoint saved: .lightflow-checkpoints\python_workflow_20250730_152941_981108.json

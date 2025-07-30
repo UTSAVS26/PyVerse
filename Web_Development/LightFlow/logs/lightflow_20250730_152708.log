@@ -1,0 +1,60 @@
+2025-07-30 15:27:08,564 - lightflow - INFO - No checkpoint found for workflow: basic_workflow
+2025-07-30 15:27:08,564 - lightflow - INFO - No checkpoint found for workflow: basic_workflow
+2025-07-30 15:27:08,564 - lightflow - INFO - No checkpoint found for workflow: basic_workflow
+2025-07-30 15:27:08,564 - lightflow - INFO - No checkpoint found for workflow: basic_workflow
+2025-07-30 15:27:08,602 - lightflow - INFO - Starting workflow execution with 5 tasks
+2025-07-30 15:27:08,602 - lightflow - INFO - Starting workflow execution with 5 tasks
+2025-07-30 15:27:08,602 - lightflow - INFO - Starting workflow execution with 5 tasks
+2025-07-30 15:27:08,602 - lightflow - INFO - Starting workflow execution with 5 tasks
+2025-07-30 15:27:08,632 - lightflow - INFO - Execution mode: thread
+2025-07-30 15:27:08,632 - lightflow - INFO - Execution mode: thread
+2025-07-30 15:27:08,632 - lightflow - INFO - Execution mode: thread
+2025-07-30 15:27:08,632 - lightflow - INFO - Execution mode: thread
+2025-07-30 15:27:08,649 - lightflow - INFO - Max parallel tasks: 4
+2025-07-30 15:27:08,649 - lightflow - INFO - Max parallel tasks: 4
+2025-07-30 15:27:08,649 - lightflow - INFO - Max parallel tasks: 4
+2025-07-30 15:27:08,649 - lightflow - INFO - Max parallel tasks: 4
+2025-07-30 15:27:08,665 - lightflow - INFO - Executing batch: ['fetch_data']
+2025-07-30 15:27:08,665 - lightflow - INFO - Executing batch: ['fetch_data']
+2025-07-30 15:27:08,665 - lightflow - INFO - Executing batch: ['fetch_data']
+2025-07-30 15:27:08,665 - lightflow - INFO - Executing batch: ['fetch_data']
+2025-07-30 15:27:08,814 - lightflow - INFO - Task fetch_data completed successfully
+2025-07-30 15:27:08,814 - lightflow - INFO - Task fetch_data completed successfully
+2025-07-30 15:27:08,814 - lightflow - INFO - Task fetch_data completed successfully
+2025-07-30 15:27:08,814 - lightflow - INFO - Task fetch_data completed successfully
+2025-07-30 15:27:08,829 - lightflow - INFO - Executing batch: ['preprocess']
+2025-07-30 15:27:08,829 - lightflow - INFO - Executing batch: ['preprocess']
+2025-07-30 15:27:08,829 - lightflow - INFO - Executing batch: ['preprocess']
+2025-07-30 15:27:08,829 - lightflow - INFO - Executing batch: ['preprocess']
+2025-07-30 15:27:09,021 - lightflow - INFO - Task preprocess completed successfully
+2025-07-30 15:27:09,021 - lightflow - INFO - Task preprocess completed successfully
+2025-07-30 15:27:09,021 - lightflow - INFO - Task preprocess completed successfully
+2025-07-30 15:27:09,021 - lightflow - INFO - Task preprocess completed successfully
+2025-07-30 15:27:09,033 - lightflow - INFO - Executing batch: ['train_model']
+2025-07-30 15:27:09,033 - lightflow - INFO - Executing batch: ['train_model']
+2025-07-30 15:27:09,033 - lightflow - INFO - Executing batch: ['train_model']
+2025-07-30 15:27:09,033 - lightflow - INFO - Executing batch: ['train_model']
+2025-07-30 15:27:09,204 - lightflow - INFO - Task train_model completed successfully
+2025-07-30 15:27:09,204 - lightflow - INFO - Task train_model completed successfully
+2025-07-30 15:27:09,204 - lightflow - INFO - Task train_model completed successfully
+2025-07-30 15:27:09,204 - lightflow - INFO - Task train_model completed successfully
+2025-07-30 15:27:09,231 - lightflow - INFO - Executing batch: ['evaluate']
+2025-07-30 15:27:09,231 - lightflow - INFO - Executing batch: ['evaluate']
+2025-07-30 15:27:09,231 - lightflow - INFO - Executing batch: ['evaluate']
+2025-07-30 15:27:09,231 - lightflow - INFO - Executing batch: ['evaluate']
+2025-07-30 15:27:09,446 - lightflow - INFO - Task evaluate completed successfully
+2025-07-30 15:27:09,446 - lightflow - INFO - Task evaluate completed successfully
+2025-07-30 15:27:09,446 - lightflow - INFO - Task evaluate completed successfully
+2025-07-30 15:27:09,446 - lightflow - INFO - Task evaluate completed successfully
+2025-07-30 15:27:09,469 - lightflow - INFO - Executing batch: ['notify']
+2025-07-30 15:27:09,469 - lightflow - INFO - Executing batch: ['notify']
+2025-07-30 15:27:09,469 - lightflow - INFO - Executing batch: ['notify']
+2025-07-30 15:27:09,469 - lightflow - INFO - Executing batch: ['notify']
+2025-07-30 15:27:09,719 - lightflow - INFO - Task notify completed successfully
+2025-07-30 15:27:09,719 - lightflow - INFO - Task notify completed successfully
+2025-07-30 15:27:09,719 - lightflow - INFO - Task notify completed successfully
+2025-07-30 15:27:09,719 - lightflow - INFO - Task notify completed successfully
+2025-07-30 15:27:09,759 - lightflow - INFO - Checkpoint saved: .lightflow-checkpoints\basic_workflow_20250730_152709_754653.json
+2025-07-30 15:27:09,759 - lightflow - INFO - Checkpoint saved: .lightflow-checkpoints\basic_workflow_20250730_152709_754653.json
+2025-07-30 15:27:09,759 - lightflow - INFO - Checkpoint saved: .lightflow-checkpoints\basic_workflow_20250730_152709_754653.json
+2025-07-30 15:27:09,759 - lightflow - INFO - Checkpoint saved: .lightflow-checkpoints\basic_workflow_20250730_152709_754653.json

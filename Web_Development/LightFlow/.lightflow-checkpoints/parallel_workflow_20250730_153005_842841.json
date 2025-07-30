@@ -1,0 +1,17 @@
+{
+  "workflow_name": "parallel_workflow",
+  "timestamp": "2025-07-30T15:30:05.842819",
+  "completed_tasks": {
+    "setup": "TaskResult(task_name='setup', success=True, output='\"Setting up environment...\"\\n', error=None, duration=0.22262310981750488, exit_code=0)",
+    "process_data_b": "TaskResult(task_name='process_data_b', success=True, output='\"Processing dataset B...\"\\n', error=None, duration=0.2223062515258789, exit_code=0)",
+    "process_data_c": "TaskResult(task_name='process_data_c', success=True, output='\"Processing dataset C...\"\\n', error=None, duration=0.2875030040740967, exit_code=0)",
+    "process_data_a": "TaskResult(task_name='process_data_a', success=True, output='\"Processing dataset A...\"\\n', error=None, duration=0.3180358409881592, exit_code=0)",
+    "train_model_y": "TaskResult(task_name='train_model_y', success=True, output='\"Training model Y...\"\\n', error=None, duration=0.19343352317810059, exit_code=0)",
+    "train_model_x": "TaskResult(task_name='train_model_x', success=True, output='\"Training model X...\"\\n', error=None, duration=0.2422800064086914, exit_code=0)",
+    "train_model_z": "TaskResult(task_name='train_model_z', success=True, output='\"Training model Z...\"\\n', error=None, duration=0.28289294242858887, exit_code=0)",
+    "aggregate_results": "TaskResult(task_name='aggregate_results', success=True, output='\"Aggregating results from all models...\"\\n', error=None, duration=0.12580418586730957, exit_code=0)",
+    "generate_report": "TaskResult(task_name='generate_report', success=True, output='\"Generating final report...\"\\n', error=None, duration=0.15204095840454102, exit_code=0)"
+  },
+  "total_tasks": 9,
+  "version": "1.0"
+}

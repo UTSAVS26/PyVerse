@@ -1,0 +1,14 @@
+2025-07-30 15:33:16,600 - lightflow - INFO - No checkpoint found for workflow: test_failing_workflow
+2025-07-30 15:33:16,600 - lightflow - INFO - No checkpoint found for workflow: test_failing_workflow
+2025-07-30 15:33:16,758 - lightflow - INFO - Starting workflow execution with 1 tasks
+2025-07-30 15:33:16,758 - lightflow - INFO - Starting workflow execution with 1 tasks
+2025-07-30 15:33:16,871 - lightflow - INFO - Execution mode: thread
+2025-07-30 15:33:16,871 - lightflow - INFO - Execution mode: thread
+2025-07-30 15:33:16,987 - lightflow - INFO - Max parallel tasks: 2
+2025-07-30 15:33:16,987 - lightflow - INFO - Max parallel tasks: 2
+2025-07-30 15:33:17,112 - lightflow - INFO - Executing batch: ['task1']
+2025-07-30 15:33:17,112 - lightflow - INFO - Executing batch: ['task1']
+2025-07-30 15:33:17,300 - lightflow - INFO - Task task1 completed successfully
+2025-07-30 15:33:17,300 - lightflow - INFO - Task task1 completed successfully
+2025-07-30 15:33:17,449 - lightflow - INFO - Checkpoint saved: .lightflow-checkpoints\test_failing_workflow_20250730_153317_445480.json
+2025-07-30 15:33:17,449 - lightflow - INFO - Checkpoint saved: .lightflow-checkpoints\test_failing_workflow_20250730_153317_445480.json
