@@ -91,7 +91,24 @@ class CleanSpeakGUI(QMainWindow):
             self.device_combo.addItem(f"{i}: {d['name']}", i)
     def start_audio(self):
         model = self.model_combo.currentText()
-        model_path = 'models/deepfilternet.onnx' if model == 'deepfilternet' else None
+# at the top of the file
+import os
+
+    def start_audio(self):
+        model = self.model_combo.currentText()
+-        model_path = 'models/deepfilternet.onnx' if model == 'deepfilternet' else None
++        model_path = None
++        if model == 'deepfilternet':
++            model_path = 'models/deepfilternet.onnx'
++            if not os.path.exists(model_path):
++                QtWidgets.QMessageBox.warning(
++                    self,
++                    "Model Not Found",
++                    f"DeepFilterNet model not found at {model_path}. Please download it first."
++                )
++                return
+        device = self.device_combo.currentData()
+        # … rest of the method …
         device = self.device_combo.currentData()
         self.audio_thread = AudioThread(model, model_path, device)
         self.audio_thread.update_waveform.connect(self.waveform.update_waveform)
