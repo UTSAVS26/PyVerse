@@ -1,5 +1,5 @@
 from __future__ import annotations
-from typing import TypeVar, Generic, Optional, Iterator
+from typing import TypeVar, Generic, Optional
 from Menu_Driven_Code_for_Linear_LinkedList import LinkedList  
 
 T = TypeVar("T")
@@ -56,14 +56,18 @@ class DynamicStack(Generic[T]):
         return self._stack.deleteLeft()
             
 
-    def peek(self) -> Optional[T]:
+    def peek(self) -> T:
         """
         Peeks at the top element of the stack without removing it.
 
         Returns
         -------
         T
-            The data of the top element, or None if the stack is empty.
+            The data of the top element.
+
+        Raises
+        ------
+            If the stack is empty.
         """
         if self._stack.head is None:
             raise IndexError("Cannot peek from an empty stack.")
@@ -132,45 +136,40 @@ if __name__ == "__main__":
         try:
             ch = int(input('\nEnter your choice: '))
         except Exception as e:
-            print('ERROR: {e}')
+            print(f'\nInvalid input.\nError: {e}')
             continue
-        if ch == 1:
-            # Push operation
-            try:
+        
+        try:
+            if ch == 1:
+                # Push operation
                 data = int(input('\nEnter value to push in stack: '))
-            except Exception as e:
-                print(f"Error: {e}")
-                continue
+                obj.push(data)
 
-            obj.push(data)
-
-        elif ch == 2:
-            # Pop operation
-            try:
+            elif ch == 2:
+                # Pop operation
                 ele = obj.pop()
                 print(f'\nPopped element: {ele}')
-            except Exception as e:
-                print(f"Error: {e}")
 
-        elif ch == 3:
-            # Peek operation
-            try:
+            elif ch == 3:
+                # Peek operation
                 ele = obj.peek()
                 print(f'\nTop element: {ele}')
-            except Exception as e:
-                print(f"Error: {e}")
 
-        elif ch == 4:
-            # Print all stack elements
-            print("TOP -> ", end="")
-            for item in obj:
-                print(f'[{item}]', end=' ')
-            print("")
-        elif ch == 0:
-            # Exit the program
-            print('You are out of the program..!!')
-            break
+            elif ch == 4:
+                # Print all stack elements
+                print("TOP -> ", end="")
+                for item in obj:
+                    print(f'[{item}]', end=' ')
+                print("")
+            elif ch == 0:
+                # Exit the program
+                print('You are out of the program..!!')
+                break
 
-        else:
-            # Handle incorrect input
-            print('\nWrong Input..\nEnter the correct choice..!!\n')
+            else:
+                # Handle incorrect input
+                print('\nWrong Input..\nEnter the correct choice..!!\n')
+
+        except Exception as e:
+            print(f'ERROR: {e}')
+            continue

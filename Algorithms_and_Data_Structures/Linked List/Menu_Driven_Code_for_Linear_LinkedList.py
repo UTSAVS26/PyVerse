@@ -35,10 +35,10 @@ class LinkedList(Generic[T]):
         """
         Initializes an empty linked list with head set to None.
         """
-        self.head: Optional[Node[T]] = None
-        self.tail: Optional[Node[T]] = None
+        self.head = None
+        self.tail = None
         self.length: int = 0
-        self._type: Optional[type] = None
+        self._type = None
 
     def _init_first_node(self, node: Node[T]) -> None:
         """
@@ -235,23 +235,20 @@ class LinkedList(Generic[T]):
         TypeError
             If the type of `data` does not match the expected element type.
         """
-        if self.length == 0:
-            return -1
-
         self._check_type(data)
 
         temp = self.head
         pos = 0 
-        while temp is not self.tail:
+        while temp:
             if temp.data == data:
                 return pos
             temp = temp.next
             pos += 1
-        if temp.data == data:
-            return pos
+            if temp is self.head:
+                break
         return -1
 
-    def deleteElement(self, data: T) -> T:
+    def deleteElement(self, data: T) -> Optional[T]:
         """
         Deletes a specific element from the linked list.
 
@@ -262,7 +259,7 @@ class LinkedList(Generic[T]):
 
         Returns
         ------- 
-        T
+        Optional[T]
             The data of the deleted node, or None if the element was not found.
 
         Raises
@@ -303,15 +300,13 @@ class LinkedList(Generic[T]):
             str
                 A string representation of the linked list elements.
         """
-        if self.head is None:
-            return "HEAD ->  <- TAIL"
-
         elements = []
         temp = self.head
-        while temp is not self.tail:
+        while temp:
             elements.append(f"[{temp.data}]")
             temp = temp.next
-        elements.append(f"[{temp.data}]")
+            if temp is self.head:
+                break
         return "HEAD -> " + " -> ".join(elements) + " <- TAIL"
 
     def __len__(self) -> int:
@@ -346,16 +341,15 @@ class LinkedList(Generic[T]):
 
         Yields
         ------
-        T
+        Optional[T]
             The data of each node in the linked list.
         """
-        if self.head is None:
-            return
         temp = self.head
-        while temp is not self.tail:
+        while temp:
             yield temp.data
             temp = temp.next
-        yield temp.data
+            if temp is self.head:
+                break
 
 if __name__ == "__main__":
     """
@@ -378,78 +372,58 @@ if __name__ == "__main__":
             print(f'\nInvalid input.\nError: {e}')
             continue
 
-        if ch == 1:
-            # Insert at the beginning of the list.
-            try:
+        try:
+            if ch == 1:
+                # Insert at the beginning of the list.
                 data = int(input('\nEnter value to be inserted in left: '))
-            except Exception as e:
-                print(f"Error: {e}")
-                continue
-            obj.insertLeft(data)
+                obj.insertLeft(data)
 
-        elif ch == 2:
-            # Insert at the end of the list.
-            try:
+            elif ch == 2:
+                # Insert at the end of the list.
                 data = int(input('\nEnter value to be inserted in right: '))
-            except Exception as e:
-                print(f"Error: {e}")
-                continue
-            obj.insertRight(data)
+ 
+                obj.insertRight(data)
 
-        elif ch == 3:
-            # Delete from the beginning of the list.
-            try:
+            elif ch == 3:
+                # Delete from the beginning of the list.
                 print(f"Deleted {obj.deleteLeft()} from the beginning of the list.")
-            except Exception as e:
-                print(f"Error: {e}")
 
-        elif ch == 4:
-            # Delete from the end of the list.
-            try:
+            elif ch == 4:
+                # Delete from the end of the list.
                 print(f"Deleted {obj.deleteRight()} from the end of the list.")
-            except Exception as e:
-                print(f"Error: {e}")
-
-        elif ch == 5:
-            # Delete a specific element.
-            try:
-                x = int(input('\nEnter the value of Element x: '))
-            except Exception as e:
-                print(f"Error: {e}")
-                continue
-
-            ele = obj.deleteElement(x)
-            if ele is None:
-                print(f"Element {x} not found in the list.")
-            else:
-                # If the element was found and deleted.
-                print(f"Deleted {ele} from the list.")
-
-        elif ch == 6:
-            # Print the entire list.
-            print(f'\n{str(obj)}')
-
-        elif ch == 7:
-            # Search for a specific element.
             
-            try:
+            elif ch == 5:
+                # Delete a specific element.
+                x = int(input('\nEnter the value of Element x: '))
+                ele = obj.deleteElement(x)
+                if ele is None:
+                    print(f"Element {x} not found in the list.")
+                else:
+                    # If the element was found and deleted.
+                    print(f"Deleted {ele} from the list.")
+
+            elif ch == 6:
+                # Print the entire list.
+                print(f'\n{str(obj)}')
+
+            elif ch == 7:
+                # Search for a specific element.
                 data = int(input('Enter the value of Element x: '))
-            except Exception as e:
-                print(f"Error: {e}")
-                continue
-            index = obj.searchlist(data)
-            if index == -1:
-                print(f"Element {data} not found.")
+                index = obj.searchlist(data)
+                if index == -1:
+                    print(f"Element {data} not found.")
+                else:
+                    print(f"Found at Index: {index}")
+
+            elif ch == 0:
+                # Exit the program.
+                print('You are out of the program..!!')
+                break
+
             else:
-                print(f"Found at Index: {index}")
-
-        elif ch == 0:
-            # Exit the program.
-            print('You are out of the program..!!')
-            break
-
-        else:
-            # Handle incorrect input.
-            print('\nWrong Input..\nEnter the correct choice..!!\n')
-
-
+                # Handle incorrect input.
+                print('\nWrong Input..\nEnter the correct choice..!!\n')
+        
+        except Exception as e:
+            print(f"Error: {e}")
+            continue

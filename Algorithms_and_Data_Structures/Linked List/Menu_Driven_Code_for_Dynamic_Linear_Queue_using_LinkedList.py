@@ -1,5 +1,5 @@
 from __future__ import annotations
-from typing import TypeVar, Generic, Optional, Iterator
+from typing import TypeVar, Generic 
 from Menu_Driven_Code_for_Linear_LinkedList import LinkedList
 
 T = TypeVar('T')
@@ -54,14 +54,14 @@ class DynamicQueue(Generic[T]):
         if self._queue.head is None:
             raise IndexError("Cannot dequeue from an empty queue.")
         return self._queue.deleteLeft()
-    def peek(self) -> Optional[T]:
+    def peek(self) -> T:
         """
         Returns the front element of the queue without removing it.
 
         Returns
         -------
         Optional[T]
-            The front element, or None if the queue is empty.
+            The front element.
 
         Raises
         ------
@@ -133,53 +133,48 @@ if __name__ == "__main__":
 
     while True:
         print('-----------')
-        print('\n1. Enqueue\n2. Dequeue\n3. Print\n0. Exit')
+        print('\n1. Enqueue\n2. Dequeue\n3. Print\n4. Peek\n0. Exit')
         print('-----------')
 
         try:
             ch = int(input('\nEnter your choice: '))
         except Exception as e:
-            print(f'Error: {e}')
+            print(f'\nInvalid input.\nError: {e}')
             continue
 
-
-        if ch == 1:
-            # Enqueue operation
-            try:
+        try:
+            if ch == 1:
+                # Enqueue operation
                 data = int(input('\nEnter value to enqueue in Queue: '))
                 obj.enqueue(data)
                 print(f"\nElement Enqueued in Queue: {data}")
-            except Exception as e:
-                print(f"Error: {e}")
 
-        elif ch == 2:
-            # Dequeue operation
-            try:
+            elif ch == 2:
+                # Dequeue operation
                 data = obj.dequeue()
                 print(f"\nElement Dequeued from Queue: {data}")
-            except Exception as e:
-                print(f"Error: {e}")
 
-        elif ch == 3:
-            # Print queue elements
-            print("FRONT -> ", end="")
-            for item in obj:
-                print(f"[{item}]", end=" ")
-            print("<- REAR")
+            elif ch == 3:
+                # Print queue elements
+                print("FRONT -> ", end="")
+                for item in obj:
+                    print(f"[{item}]", end=" ")
+                print("<- REAR")
 
-        elif ch == 4:
-            # Peek operation
-            try:
+            elif ch == 4:
+                # Peek operation
                 data = obj.peek()
                 print(f"\nFront of Queue: {data}")
-            except Exception as e:
-                print(f"Error: {e}")
         
-        elif ch == 0:
-            # Exit the program
-            print('You are out of the program..!!')
-            break
+            elif ch == 0:
+                # Exit the program
+                print('You are out of the program..!!')
+                break
 
-        else:
-            # Handle incorrect input
-            print('\nWrong Input..\nEnter the correct choice..!!\n')
+            else:
+                # Handle incorrect input
+                print('\nWrong Input..\nEnter the correct choice..!!\n')
+        
+        except Exception as e:
+            print(f"Error: {e}")
+            continue

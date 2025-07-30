@@ -19,8 +19,6 @@ class CircularLinkedList(LinkedList[T]):
     def _init_first_node(self, node: Node[T]) -> None:
         self.head = node
         self.tail = node
-        self.tail.next = self.head
-        self.head.prev = self.tail
         self.length = 1
 
     def insertLeft(self, data: T) -> int:
@@ -51,12 +49,11 @@ class CircularLinkedList(LinkedList[T]):
         else:
             # Insert the new node at the beginning and update head and tail.next.
             node.next = self.head
-            node.prev = self.tail
             self.head.prev = node
             self.head = self.head.prev
-            self.tail.next = self.head
-            self.head.prev = self.tail
             self.length += 1
+        self.tail.next = self.head
+        self.head.prev = self.tail
         return len(self)
 
 
@@ -80,17 +77,15 @@ class CircularLinkedList(LinkedList[T]):
         if self.head is self.tail:
             # If there is only one node, set head and tail to None.
             self.tail = self.head = None
-            temp.next = None
-            temp.prev = None
             self.length = 0
         else:
             # Update head to the next node and adjust the tail.next pointer.
             self.head = self.head.next
             self.tail.next = self.head
             self.head.prev = self.tail
-            temp.next = None
-            temp.prev = None
             self.length -= 1
+        temp.next = None
+        temp.prev = None
         return temp.data
 
     def insertRight(self, data: T) -> int:
@@ -120,12 +115,11 @@ class CircularLinkedList(LinkedList[T]):
         else:
             # Insert the new node at the end and update last and last.next.
             node.prev = self.tail
-            node.next = self.head
             self.tail.next = node
             self.tail = self.tail.next
-            self.tail.next = self.head
-            self.head.prev = self.tail
             self.length += 1
+        self.tail.next = self.head
+        self.head.prev = self.tail
         return len(self)
 
     def deleteRight(self) -> T:
@@ -155,15 +149,14 @@ class CircularLinkedList(LinkedList[T]):
             self.tail = self.tail.prev
             self.tail.next = self.head
             self.head.prev = self.tail
-
-            temp.next = None
-            temp.prev = None
             self.length -= 1
+        temp.next = None
+        temp.prev = None
         return temp.data  
 
 if __name__=="__main__":
     # Main menu-driven code to interact with the linked list.
-    obj = LinkedList()
+    obj = CircularLinkedList()
 
     while True:
         print('----------------------')
@@ -173,71 +166,52 @@ if __name__=="__main__":
         try:
             ch = int(input('\nEnter your choice: '))
         except Exception as e:  
-            print(f'Error: {e}')
+            print(f'\nInvalid input.\nError: {e}')
             continue
 
 
-        if ch == 1:
-            try:
+        try:
+            if ch == 1:
                 data = int(input('\nEnter value to be inserted in left: '))
-            except Exception as e:
-                print(f"Error: {e}")
-                continue
-            obj.insertLeft(data)
+                obj.insertLeft(data)
 
-        elif ch == 2:
-            try:
+            elif ch == 2:
                 data = int(input('\nEnter value to be inserted in right: '))
-            except Exception as e:
-                print(f"Error: {e}")
-                continue
-            obj.insertRight(data)
+                obj.insertRight(data)
 
-        elif ch == 3:
-            try:
+            elif ch == 3:
                 print(f"Deleted {obj.deleteLeft()} from the beginning of the list.")
-            except Exception as e:
-                print(f"Error: {e}")
-
-        elif ch == 4:
-            try:
+            elif ch == 4:
                 print(f"Deleted {obj.deleteRight()} from the end of the list.")
-            except Exception as e:
-                print(f"Error: {e}")
 
-        elif ch == 5:
-            try:
+            elif ch == 5:
                 x = int(input('\nEnter the value of Element x: '))
-            except Exception as e:
-                print(f"Error: {e}")
-                continue
+                ele = obj.deleteElement(x)
+                if ele is None:
+                    print(f"Element {x} not found in the list.")
+                else:
+                    # If the element was found and deleted.
+                    print(f"Deleted {ele} from the list.")
 
-            ele = obj.deleteElement(x)
-            if ele is None:
-                print(f"Element {x} not found in the list.")
-            else:
-                # If the element was found and deleted.
-                print(f"Deleted {ele} from the list.")
-
-        elif ch == 6:
-            print(f'\n{str(obj)}')
+            elif ch == 6:
+                print(f'\n{str(obj)}')
         
-        elif ch == 7:
-            # Search for a specific element.        
-            try:
+            elif ch == 7:
+                # Search for a specific element.        
                 data = int(input('Enter the value of Element x: '))
-            except Exception as e:
+                index = obj.searchlist(data)
+                if index == -1:
+                    print(f"Element {data} not found.")
+                else:
+                    print(f"Found at Index: {index}")
+
+            elif ch == 0:
+                print('You are out of the program..!!')
+                break
+
+            else:
+                print('\nWrong Input..\nEnter the correct choice..!!\n')
+        
+        except Exception as e:
                 print(f"Error: {e}")
                 continue
-            index = obj.searchlist(data)
-            if index == -1:
-                print(f"Element {data} not found.")
-            else:
-                print(f"Found at Index: {index}")
-
-        elif ch == 0:
-            print('You are out of the program..!!')
-            break
-
-        else:
-            print('\nWrong Input..\nEnter the correct choice..!!\n')

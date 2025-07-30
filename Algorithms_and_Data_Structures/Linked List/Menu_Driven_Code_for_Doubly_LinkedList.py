@@ -214,18 +214,16 @@ class LinkedList(Generic[T]):
             If the type of `data` does not match the expected element type.
         """
         self._check_type(data)
-        if self.head is None:
-            return -1
-        
+
         temp = self.head
         pos = 0
-        while temp is not self.tail:
+        while temp:
             if temp.data == data:
                 return pos
             temp = temp.next
             pos += 1
-        if temp.data == data:
-            return pos
+            if temp is self.head:
+                break
         return -1
     
     def deleteElement(self, data: T) -> Optional[T]:
@@ -247,7 +245,6 @@ class LinkedList(Generic[T]):
         TypeError
             If the type of `data` does not match the expected element type.
         """
-        self._check_type(data)
         pos = self.searchlist(data)
         if pos == -1:
             return None
@@ -276,17 +273,15 @@ class LinkedList(Generic[T]):
         str
             A string representation of the linked list, showing each node's data.
         """
-        if self.head is None:
-            return "HEAD -> <- TAIL"
 
         elements = []
-        str = "HEAD -> "
         temp = self.head
-        while temp is not self.tail:
+        while temp:
             elements.append(f"[{temp.data}]")
             temp = temp.next
-        elements.append(f"[{temp.data}]")
-        return str + " <-> ".join(elements) + " <- Tail"
+            if temp is self.head:
+                break
+        return "HEAD -> " + " <-> ".join(elements) + " <- Tail"
     
     def __len__(self) -> int:
         """
@@ -299,7 +294,7 @@ class LinkedList(Generic[T]):
         """
         return self.length
     
-    def __iter__(self) -> Iterator[T]: 
+    def __iter__(self): 
         """
         Returns an iterator for the doubly linked list.
 
@@ -308,14 +303,12 @@ class LinkedList(Generic[T]):
         T
             The data of each node in the linked list.
         """
-        if self.head is None:
-            return
-        
         temp = self.head
-        while temp is not self.tail:
+        while temp:
             yield temp.data
             temp = temp.next
-        yield temp.data
+            if temp is self.head:
+                break
 
     def __contains__(self, item: T) -> bool:
         """
@@ -331,15 +324,15 @@ class LinkedList(Generic[T]):
         bool
             True if the item is found, False otherwise.
         """
-        if self.head is None:
-            return False
         temp = self.head
-        while temp is not self.tail:
+        while temp:
             if temp.data == item:
                 return True
             temp = temp.next
+            if temp is self.head:
+                break
 
-        return temp.data == data
+        return False
 
 if __name__ == "__main__":
     """
@@ -356,73 +349,56 @@ if __name__ == "__main__":
         try:
             ch = int(input('\nEnter your choice: '))
         except Exception as e:  
-            print(f'Error: {e}')
+            print(f'\nInvalid input.\nError: {e}')
             continue
 
-        if ch == 1:
-            # Check if the input is of the correct type.
-            try:
+        try:
+            if ch == 1:
+                # Check if the input is of the correct type.
                 data = int(input('\nEnter value to be inserted in left: '))
-            except Exception as e:
-                print(f"Error: {e}")
-                continue
-            obj.insertLeft(data)
+                obj.insertLeft(data)
 
-        elif ch == 2: 
-            # Check if the input is of the correct type.
-            try:
+            elif ch == 2: 
+                # Check if the input is of the correct type.
                 data = int(input('\nEnter value to be inserted in right: '))
-            except Exception as e:
-                print(f"Error: {e}")
-                continue
-            obj.insertRight(data)
+                obj.insertRight(data)
 
-        elif ch == 3:
-            try:
+            elif ch == 3:
                 print(f"Deleted {obj.deleteLeft()} from the beginning of the list.")
-            except Exception as e:
-                print(f"Error: {e}")
-
-        elif ch == 4:
-            try:
+            
+            elif ch == 4:
                 print(f"Deleted {obj.deleteRight()} from the end of the list.")
-            except Exception as e:
-                print(f"Error: {e}")
-                continue
-        elif ch == 5:
-            # Delete a specific element.
-            try:
+
+            elif ch == 5:
+                # Delete a specific element.
                 x = int(input('\nEnter the value of Element x: '))
-            except Exception as e:
-                print(f"Error: {e}")
-                continue
+                ele = obj.deleteElement(x)
+                if ele is None:
+                    print(f"Element {x} not found in the list.")
+                else:
+                    # If the element was found and deleted.
+                    print(f"Deleted {ele} from the list.")
 
-            ele = obj.deleteElement(x)
-            if ele is None:
-                print(f"Element {x} not found in the list.")
-            else:
-                # If the element was found and deleted.
-                print(f"Deleted {ele} from the list.")
-
-        elif ch == 6:
-            print(f'\n{str(obj)}')
-        
-        elif ch == 7:
-            # Search for a specific element.        
-            try:
+            elif ch == 6:
+                print(f'\n{str(obj)}')
+            
+            elif ch == 7:
+                # Search for a specific element.        
                 data = int(input('Enter the value of Element x: '))
-            except Exception as e:
-                print(f"Error: {e}")
-                continue
-            index = obj.searchlist(data)
-            if index == -1:
-                print(f"Element {data} not found.")
+            
+                index = obj.searchlist(data)
+                if index == -1:
+                    print(f"Element {data} not found.")
+                else:
+                    print(f"Found at Index: {index}")
+
+            elif ch == 0:
+                print('You are out of the program..!!')
+                break
+
             else:
-                print(f"Found at Index: {index}")
+                print('\nWrong Input..\nEnter the correct choice..!!\n')
 
-        elif ch == 0:
-            print('You are out of the program..!!')
-            break
-
-        else:
-            print('\nWrong Input..\nEnter the correct choice..!!\n')
+        except Exception as e :
+            print(f"Error: {e}")
+            continue
