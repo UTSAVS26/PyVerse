@@ -48,5 +48,5 @@ def test_ocr_images_blank(monkeypatch):
     assert 'dummy text' in result
 
 def test_pdf_to_images_invalid():
-    with pytest.raises(Exception):
-        pdf_to_images('nonexistent.pdf') 
+    with pytest.raises((FileNotFoundError, ValueError)):
+        pdf_to_images('nonexistent.pdf')
