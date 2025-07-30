@@ -22,7 +22,22 @@ class TestLogger(unittest.TestCase):
         os.remove(filename)
 
     def test_log_event_html(self):
-        filename = 'test_log.html'
+         os.remove(filename)
+
+    def test_log_event_plain_text(self):
+        filename = 'test_log.txt'
+        logger = Logger(filename)
+        logger.log_event('file.py', 4, 'w = 4', {'w': 4}, 'reason4')
+        del logger
+        self.assertTrue(os.path.exists(filename))
+        with open(filename) as f:
+            content = f.read()
+            self.assertIn('file.py:4', content)
+            self.assertIn('w = 4', content)
+            self.assertIn('reason4', content)
+        os.remove(filename)
+
+ if __name__ == '__main__':
         logger = Logger(filename)
         logger.log_event('file.py', 3, 'z = 3', {'z': 3}, 'reason3')
         del logger
