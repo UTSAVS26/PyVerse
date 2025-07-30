@@ -25,7 +25,19 @@ class Logger:
         self.logs.append(log)
         print(f"{file}:{lineno} => {line}\n  Locals: {safe_locals}\n  Reason: {reason}\n")
 
-    def __del__(self):
+    def close(self):
+        """Explicitly write logs to file and close logger."""
+        if self.filename and self.logs:
+            self._write_logs()
+            self.logs.clear()
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        self.close()
+
+    def _write_logs(self):
         if self.filename:
             with open(self.filename, 'w', encoding='utf-8') as f:
                 if self.filename.endswith('.json'):
@@ -33,8 +45,15 @@ class Logger:
                 elif self.filename.endswith('.html'):
                     f.write('<html><body><h2>PySleuth Trace Log</h2><ul>')
                     for log in self.logs:
-                        f.write(f"<li><b>{log['file']}:{log['line_no']}</b>: {log['code']}<br>Locals: {log['locals']}<br>Reason: {log['reason']}</li>")
+                        f.write(
+                            f"<li><b>{log['file']}:{log['line_no']}</b>: "
+                            f"{log['code']}<br>Locals: {log['locals']}<br>"
+                            f"Reason: {log['reason']}</li>"
+                        )
                     f.write('</ul></body></html>')
                 else:
                     for log in self.logs:
-                        f.write(f"{log['file']}:{log['line_no']} | {log['code']} | Locals: {log['locals']} | Reason: {log['reason']}\n")
+                        f.write(
+                            f"{log['file']}:{log['line_no']} | {log['code']} | "
+                            f"Locals: {log['locals']} | Reason: {log['reason']}\n"
+                        )
