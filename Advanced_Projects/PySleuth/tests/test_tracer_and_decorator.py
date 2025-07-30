@@ -4,6 +4,12 @@ from core.tracer import Tracer
 from decorators.trace import trace
 
 class TestTracerAndDecorator(unittest.TestCase):
+    def tearDown(self):
+        # Clean up any test files that might exist
+        for filename in ['test_trace_log.json', 'test_trace_decorator_log.json']:
+            if os.path.exists(filename):
+                os.remove(filename)
+
     def test_trace_function(self):
         filename = 'test_trace_log.json'
         tracer = Tracer(log_file=filename)
@@ -14,17 +20,17 @@ class TestTracerAndDecorator(unittest.TestCase):
             return y
         # Simulate tracing
         import sys
-        sys.settrace(tracer.trace_calls)
-        result = test_fn()
-        sys.settrace(None)
+        try:
+            sys.settrace(tracer.trace_calls)
+            result = test_fn()
+        finally:
+            sys.settrace(None)
         self.assertEqual(result, 2)
-        del tracer
+        tracer.close()  # Assumes explicit cleanup method
         self.assertTrue(os.path.exists(filename))
         with open(filename) as f:
-            import json
             data = json.load(f)
             self.assertTrue(any('Entered' in log['reason'] for log in data))
-        os.remove(filename)
 
     def test_trace_decorator(self):
         filename = 'test_trace_decorator_log.json'
