@@ -57,7 +57,9 @@ class TrOCREngine:
                 text += f'\n[OCR ERROR: {e}]\n'
         return text
 
-def ocr_images(images, model='easyocr', languages=['en'], gpu=False, preserve_layout=False):
+def ocr_images(images, model='easyocr', languages=None, gpu=False, preserve_layout=False):
+    if languages is None:
+        languages = ['en']
     if model == 'easyocr':
         engine = EasyOCREngine(languages=languages, gpu=gpu)
         return engine.recognize(images, preserve_layout=preserve_layout)
@@ -65,4 +67,4 @@ def ocr_images(images, model='easyocr', languages=['en'], gpu=False, preserve_la
         engine = TrOCREngine(gpu=gpu)
         return engine.recognize(images)
     else:
-        raise NotImplementedError(f'OCR model {model} not implemented yet.') 
+        raise NotImplementedError(f'OCR model {model} not implemented yet.')
