@@ -4,9 +4,15 @@ class BaseNoiseFilter:
     def process(self, audio_block):
         raise NotImplementedError
 
+import os
+
 class DeepFilterNetONNX(BaseNoiseFilter):
     def __init__(self, model_path):
         import onnxruntime as ort
+        if not model_path:
+            raise ValueError("Model path is required for DeepFilterNet")
+        if not os.path.exists(model_path):
+            raise FileNotFoundError(f"Model file not found: {model_path}")
         self.session = ort.InferenceSession(model_path)
         self.input_name = self.session.get_inputs()[0].name
         self.output_name = self.session.get_outputs()[0].name
@@ -15,7 +21,6 @@ class DeepFilterNetONNX(BaseNoiseFilter):
         input_audio = audio_block.astype(np.float32)[None, :]
         output = self.session.run([self.output_name], {self.input_name: input_audio})[0]
         return output.flatten()
-
 class RNNoiseFilter(BaseNoiseFilter):
     def __init__(self):
         import rnnoise
