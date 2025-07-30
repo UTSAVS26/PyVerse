@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 800px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#4CAF50", "font": {"color": "#000000"}, "id": "node_0", "label": "Start", "shape": "ellipse", "title": "Type: start\u003cbr\u003eLine: 1"}, {"color": "#2196F3", "font": {"color": "#000000"}, "id": "node_1", "label": "def calculate_grade()", "shape": "box", "title": "Type: function\u003cbr\u003eLine: 1"}, {"color": "#E0E0E0", "font": {"color": "#000000"}, "id": "node_2", "label": "Expression: \u0027Calculate letter grade based on numerical score.\u0027", "shape": "box", "title": "Type: expression\u003cbr\u003eLine: 2"}, {"color": "#FF9800", "font": {"color": "#000000"}, "id": "node_3", "label": "if score GtE 90", "shape": "diamond", "title": "Type: condition\u003cbr\u003eLine: 3"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_4", "label": "Statement: Return", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 4"}, {"color": "#FF9800", "font": {"color": "#000000"}, "id": "node_5", "label": "if score GtE 80", "shape": "diamond", "title": "Type: condition\u003cbr\u003eLine: 5"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_6", "label": "Statement: Return", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 6"}, {"color": "#FF9800", "font": {"color": "#000000"}, "id": "node_7", "label": "if score GtE 70", "shape": "diamond", "title": "Type: condition\u003cbr\u003eLine: 7"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_8", "label": "Statement: Return", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 8"}, {"color": "#FF9800", "font": {"color": "#000000"}, "id": "node_9", "label": "if score GtE 60", "shape": "diamond", "title": "Type: condition\u003cbr\u003eLine: 9"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_10", "label": "Statement: Return", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 10"}, {"color": "#FF9800", "font": {"color": "#000000"}, "id": "node_11", "label": "else", "shape": "diamond", "title": "Type: condition\u003cbr\u003eLine: 12"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_12", "label": "Statement: Return", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 12"}, {"color": "#2196F3", "font": {"color": "#000000"}, "id": "node_13", "label": "def process_student_data()", "shape": "box", "title": "Type: function\u003cbr\u003eLine: 14"}, {"color": "#E0E0E0", "font": {"color": "#000000"}, "id": "node_14", "label": "Expression: \u0027Process student scores and return summary.\u0027", "shape": "box", "title": "Type: expression\u003cbr\u003eLine: 15"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_15", "label": "Statement: Assign", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 16"}, {"color": "#9C27B0", "font": {"color": "#000000"}, "id": "node_16", "label": "for \u003cTuple\u003e in student_scores.items()", "shape": "box", "title": "Type: loop\u003cbr\u003eLine: 18"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_17", "label": "Statement: Assign", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 19"}, {"color": "#00BCD4", "font": {"color": "#000000"}, "id": "node_18", "label": "Call: results.append()", "shape": "box", "title": "Type: function_call\u003cbr\u003eLine: 20"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_19", "label": "Statement: Return", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 26"}, {"color": "#FF9800", "font": {"color": "#000000"}, "id": "node_20", "label": "if __name__ Eq \u0027__main__\u0027", "shape": "diamond", "title": "Type: condition\u003cbr\u003eLine: 29"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_21", "label": "Statement: Assign", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 30"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_22", "label": "Statement: Assign", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 37"}, {"color": "#9C27B0", "font": {"color": "#000000"}, "id": "node_23", "label": "for result in results", "shape": "box", "title": "Type: loop\u003cbr\u003eLine: 38"}, {"color": "#00BCD4", "font": {"color": "#000000"}, "id": "node_24", "label": "Call: print()", "shape": "box", "title": "Type: function_call\u003cbr\u003eLine: 39"}, {"color": "#F44336", "font": {"color": "#000000"}, "id": "node_25", "label": "End", "shape": "ellipse", "title": "Type: end\u003cbr\u003eLine: 40"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "color": "#000000", "from": "node_0", "title": "Flow", "to": "node_1"}, {"arrows": "to", "color": "#000000", "from": "node_1", "title": "Flow", "to": "node_2"}, {"arrows": "to", "color": "#4CAF50", "from": "node_1", "title": "Condition: True", "to": "node_3"}, {"arrows": "to", "color": "#000000", "from": "node_3", "title": "Flow", "to": "node_4"}, {"arrows": "to", "color": "#4CAF50", "from": "node_1", "title": "Condition: True", "to": "node_5"}, {"arrows": "to", "color": "#000000", "from": "node_5", "title": "Flow", "to": "node_6"}, {"arrows": "to", "color": "#4CAF50", "from": "node_1", "title": "Condition: True", "to": "node_7"}, {"arrows": "to", "color": "#000000", "from": "node_7", "title": "Flow", "to": "node_8"}, {"arrows": "to", "color": "#4CAF50", "from": "node_1", "title": "Condition: True", "to": "node_9"}, {"arrows": "to", "color": "#000000", "from": "node_9", "title": "Flow", "to": "node_10"}, {"arrows": "to", "color": "#F44336", "from": "node_1", "title": "Condition: False", "to": "node_11"}, {"arrows": "to", "color": "#000000", "from": "node_11", "title": "Flow", "to": "node_12"}, {"arrows": "to", "color": "#000000", "from": "node_0", "title": "Flow", "to": "node_13"}, {"arrows": "to", "color": "#000000", "from": "node_13", "title": "Flow", "to": "node_14"}, {"arrows": "to", "color": "#000000", "from": "node_13", "title": "Flow", "to": "node_15"}, {"arrows": "to", "color": "#000000", "from": "node_13", "title": "Flow", "to": "node_16"}, {"arrows": "to", "color": "#000000", "from": "node_16", "title": "Flow", "to": "node_17"}, {"arrows": "to", "color": "#000000", "from": "node_16", "title": "Flow", "to": "node_18"}, {"arrows": "to", "color": "#9C27B0", "from": "node_16", "title": "Condition: next", "to": "node_16"}, {"arrows": "to", "color": "#000000", "from": "node_13", "title": "Flow", "to": "node_19"}, {"arrows": "to", "color": "#4CAF50", "from": "node_0", "title": "Condition: True", "to": "node_20"}, {"arrows": "to", "color": "#000000", "from": "node_20", "title": "Flow", "to": "node_21"}, {"arrows": "to", "color": "#000000", "from": "node_20", "title": "Flow", "to": "node_22"}, {"arrows": "to", "color": "#000000", "from": "node_20", "title": "Flow", "to": "node_23"}, {"arrows": "to", "color": "#000000", "from": "node_23", "title": "Flow", "to": "node_24"}, {"arrows": "to", "color": "#9C27B0", "from": "node_23", "title": "Condition: next", "to": "node_23"}, {"arrows": "to", "color": "#000000", "from": "node_2", "title": "Flow", "to": "node_25"}, {"arrows": "to", "color": "#000000", "from": "node_4", "title": "Flow", "to": "node_25"}, {"arrows": "to", "color": "#000000", "from": "node_6", "title": "Flow", "to": "node_25"}, {"arrows": "to", "color": "#000000", "from": "node_8", "title": "Flow", "to": "node_25"}, {"arrows": "to", "color": "#000000", "from": "node_10", "title": "Flow", "to": "node_25"}, {"arrows": "to", "color": "#000000", "from": "node_12", "title": "Flow", "to": "node_25"}, {"arrows": "to", "color": "#000000", "from": "node_14", "title": "Flow", "to": "node_25"}, {"arrows": "to", "color": "#000000", "from": "node_15", "title": "Flow", "to": "node_25"}, {"arrows": "to", "color": "#000000", "from": "node_17", "title": "Flow", "to": "node_25"}, {"arrows": "to", "color": "#000000", "from": "node_18", "title": "Flow", "to": "node_25"}, {"arrows": "to", "color": "#000000", "from": "node_19", "title": "Flow", "to": "node_25"}, {"arrows": "to", "color": "#000000", "from": "node_21", "title": "Flow", "to": "node_25"}, {"arrows": "to", "color": "#000000", "from": "node_22", "title": "Flow", "to": "node_25"}, {"arrows": "to", "color": "#000000", "from": "node_24", "title": "Flow", "to": "node_25"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"nodes": {"font": {"size": 12, "face": "Arial"}, "borderWidth": 2, "shadow": true}, "edges": {"font": {"size": 10, "face": "Arial"}, "shadow": true, "smooth": {"type": "continuous"}}, "physics": {"enabled": true, "solver": "forceAtlas2Based", "forceAtlas2Based": {"gravitationalConstant": -50, "centralGravity": 0.01, "springLength": 100, "springConstant": 0.08}}, "interaction": {"hover": true, "tooltipDelay": 200}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
