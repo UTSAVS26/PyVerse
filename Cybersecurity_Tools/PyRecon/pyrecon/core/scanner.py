@@ -145,7 +145,7 @@ class PortScanner:
                     result = future.result()
                     if result:
                         results.append(result)
-                except Exception as e:
+                except Exception:
                     # Create basic result if fingerprinting fails
                     result = ScanResult(
                         host=host,
@@ -155,7 +155,6 @@ class PortScanner:
                         service=get_service_name(port)
                     )
                     results.append(result)
-        
         return sorted(results, key=lambda x: x.port)
     
     def _fingerprint_single_port(self, host: str, port: int, 
