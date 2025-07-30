@@ -9,8 +9,12 @@ class Logger:
         # Convert frame locals to a regular dict if needed
         try:
             safe_locals = dict(locals_)
-        except Exception:
-            safe_locals = str(locals_)
+        except (TypeError, ValueError) as e:
+            # Handle cases where locals can't be converted to dict
+            safe_locals = f"<unconvertible: {type(locals_).__name__}>"
+        except Exception as e:
+            # Log unexpected errors but continue
+            safe_locals = f"<error converting locals: {e}>"
         log = {
             'file': file,
             'line_no': lineno,
