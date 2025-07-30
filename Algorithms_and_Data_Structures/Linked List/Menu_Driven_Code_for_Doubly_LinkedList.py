@@ -214,6 +214,9 @@ class LinkedList(Generic[T]):
             If the type of `data` does not match the expected element type.
         """
         self._check_type(data)
+        if self.head is None:
+            return -1
+        
         temp = self.head
         pos = 0
         while temp is not self.tail:
@@ -309,7 +312,7 @@ class LinkedList(Generic[T]):
             return
         
         temp = self.head
-        while temp is not self.tal:
+        while temp is not self.tail:
             yield temp.data
             temp = temp.next
         yield temp.data

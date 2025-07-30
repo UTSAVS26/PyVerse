@@ -9,7 +9,7 @@ class CircularLinkedList(LinkedList[T]):
     """
     def __init__(self):
         """
-        Initializes an empty circular linked list with root and last pointers set to None.
+        Initializes an empty circular linked list with head, next and prev pointers set to None.
         """
         super().__init__()
     
