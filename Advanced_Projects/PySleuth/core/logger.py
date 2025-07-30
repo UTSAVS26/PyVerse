@@ -39,7 +39,11 @@ class Logger:
 
     def _write_logs(self):
         if self.filename:
-            with open(self.filename, 'w', encoding='utf-8') as f:
+            try:
+                with open(self.filename, 'w', encoding='utf-8') as f:
+                    # ... existing file writing code ...
+            except (IOError, OSError) as e:
+                print(f"Warning: Failed to write log file {self.filename}: {e}", file=sys.stderr)
                 if self.filename.endswith('.json'):
                     json.dump(self.logs, f, indent=2)
                 elif self.filename.endswith('.html'):
