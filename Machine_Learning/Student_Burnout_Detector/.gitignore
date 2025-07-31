@@ -1,0 +1,25 @@
+# Python cache / compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Dataset & trained model files (optional, if they're large or generated)
+*.csv
+*.joblib
+*.pkl
+
+# Environment variables / sensitive files
+.env
+
+# OS-specific
+.DS_Store
+Thumbs.db
