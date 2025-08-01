@@ -311,6 +311,7 @@
 * **Image Processing**
   * [Ai Super-Resolution And Image Restoration](./Image%20processing/AI%20Super-Resolution%20and%20Image%20Restoration)
   * [Cat Dog Cnn Classifier](./Image%20processing/Cat_Dog_CNN_classifier)
+  * [Garbage Detection Yolo](./Image%20processing/Garbage_Detection_YOLO)
   * [Lane Line Detection [Open Cv]](./Image%20processing/Lane%20Line%20Detection%20[OPEN%20CV])
   * [Mask-Detection](./Image%20processing/Mask-detection)
   * [Number Plate Detection](./Image%20processing/Number%20plate%20detection)
