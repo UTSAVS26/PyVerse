@@ -3,12 +3,16 @@ import socket , json , base64
 class Listener :
 
     def __init__(self , ip , port):
-        listener = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        listener.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-        listener.bind((ip, port))
-        listener.listen(0)
+        self.listener = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.listener.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        try:
+            self.listener.bind((ip, port))
+            self.listener.listen(0)
+        except Exception as e:
+            print(f"[!] Error binding to {ip}:{port} - {e}")
+            return
         print("[*] Listening for incoming connections...")
-        self.connection , self.address = listener.accept()
+        self.connection , self.address = self.listener.accept()
         print("[*] Connection established!")
 
     def reliable_send(self , data):
