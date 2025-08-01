@@ -164,7 +164,7 @@ html_template = f"""
 <head>
     <title>{html.escape(workflow_name)} DAG</title>
     <script src="https://unpkg.com/vis-network@9.1.2/standalone/umd/vis-network.min.js"
-            integrity="sha384-..." 
+            integrity="sha384-GbzfludOrzCE1rDoNAJqwlW4ZhytkPlu66df3zSVpLQrC61zzQdtNFSPj2W3vMtV"
             crossorigin="anonymous"></script>
     <style>
         #dag-container {{
