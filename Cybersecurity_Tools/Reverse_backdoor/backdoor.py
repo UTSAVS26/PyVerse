@@ -35,9 +35,6 @@ class Backdoor:
                     return json.loads(json_data)
                 except json.JSONDecodeError:
                     continue
-            except json.JSONDecodeError as e:
-                print(f"[!] JSON decode error: {e}")
-                continue
             except Exception as e:
                 print(f"[!] Connection error: {e}")
                 break
