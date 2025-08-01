@@ -18,7 +18,10 @@ Comparing and evaluating three classification models:
 ---
 
 ## 📂 Dataset  
-**Source:** https://www.kaggle.com/datasets/cherngs/heart-disease-cleveland-uci
+**Source:** [Heart Disease UCI Dataset by Cherngs on Kaggle](https://www.kaggle.com/datasets/chernsg/heart-disease-cleveland-uci)  
+**License:** Open Database License (ODbL) 
+
+
 **Target Variable:** `target` (1 = disease, 0 = no disease)
 
 **Features:**
@@ -98,5 +101,13 @@ However, test accuracy dropped to 86.6%, indicating over-regularization or under
 Although Random Forest is powerful and widely used, Logistic Regression performed best on this dataset with minimal tuning. It provided 91% accuracy and is interpretable, efficient, and generalizes well.
 
 ---
+
+## ⚠️ Medical Disclaimer
+This project is intended **for research and educational purposes only**.  
+It is **not** intended to be used for medical diagnosis, treatment, or decision-making.  
+Always consult a licensed medical professional for any health-related concerns.
+
+--- 
+
 ## 👤 Author
 GitHub: archangel2006
