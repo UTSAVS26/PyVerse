@@ -3,15 +3,21 @@
 * **Advanced Projects**
   * [Audio Controlled File Navigation System](./Advanced_Projects/Audio%20Controlled%20File%20Navigation%20System)
   * [Chat-Gpt-Discord-Bot](./Advanced_Projects/Chat-GPT-Discord-Bot)
+  * [Cleanspeak](./Advanced_Projects/CleanSpeak)
   * [Eduhelper](./Advanced_Projects/EDUHELPER)
   * [Edgelock-X](./Advanced_Projects/EdgeLock-X)
   * [Excel To Csv](./Advanced_Projects/Excel%20to%20CSV)
   * [File Organizer Gui](./Advanced_Projects/File_Organizer_GUI)
   * [Gui Based Taskmanager](./Advanced_Projects/GUI%20Based%20TaskManager)
   * [Navibot-Voice-Assistant](./Advanced_Projects/NaviBot-Voice-Assistant)
+  * [Pdftextgenie](./Advanced_Projects/PDFTextGenie)
   * [Plagiarism-Checker](./Advanced_Projects/Plagiarism-checker)
+  * [Pyflowviz](./Advanced_Projects/PyFlowViz)
+  * [Pysleuth](./Advanced_Projects/PySleuth)
+  * [Pyterminus](./Advanced_Projects/PyTerminus)
   * [Resume Scanner](./Advanced_Projects/Resume%20Scanner)
   * [Secure-Shell-Ws](./Advanced_Projects/Secure-Shell-ws)
+  * [Smartcli](./Advanced_Projects/SmartCLI)
   * [Stegachat](./Advanced_Projects/StegaChat)
   * [Telegram Bot](./Advanced_Projects/Telegram_Bot)
   * [Hardware-Monitor](./Advanced_Projects/hardware-monitor)
@@ -130,6 +136,7 @@
 * **Cybersecurity Tools**
   * [Arp Spoofing Detection Tool](./Cybersecurity_Tools/ARP%20Spoofing%20Detection%20Tool)
   * [Cli-Based Port Scanner](./Cybersecurity_Tools/CLI-based%20Port%20Scanner)
+  * [Clipcrypt](./Cybersecurity_Tools/ClipCrypt)
   * [Cyber Threat Intelligence Dashboard](./Cybersecurity_Tools/Cyber%20Threat%20Intelligence%20Dashboard)
   * [Encryption Decryption App](./Cybersecurity_Tools/Encryption_Decryption%20app)
   * [File Integrity Checker](./Cybersecurity_Tools/File%20Integrity%20Checker)
@@ -144,6 +151,7 @@
   * [Password Strength Checker](./Cybersecurity_Tools/Password%20Strength%20Checker)
   * [Phishing Detection Tool](./Cybersecurity_Tools/Phishing%20detection%20tool)
   * [Pixel Decoder](./Cybersecurity_Tools/Pixel_Decoder)
+  * [Pyrecon](./Cybersecurity_Tools/PyRecon)
   * [Vidforensicstool](./Cybersecurity_Tools/VidForensicsTool)
   * [Web Application Firewall](./Cybersecurity_Tools/Web%20Application%20Firewall)
   * [Bruteforce Password Cracking](./Cybersecurity_Tools/bruteforce_password_cracking)
@@ -306,6 +314,8 @@
 * **Image Processing**
   * [Ai Super-Resolution And Image Restoration](./Image%20processing/AI%20Super-Resolution%20and%20Image%20Restoration)
   * [Cat Dog Cnn Classifier](./Image%20processing/Cat_Dog_CNN_classifier)
+  * [Garbage Detection Yolo](./Image%20processing/Garbage_Detection_YOLO)
+  * [Image Compression Analyser](./Image%20processing/Image%20compression%20analyser)
   * [Lane Line Detection [Open Cv]](./Image%20processing/Lane%20Line%20Detection%20[OPEN%20CV])
   * [Mask-Detection](./Image%20processing/Mask-detection)
   * [Number Plate Detection](./Image%20processing/Number%20plate%20detection)
@@ -410,6 +420,9 @@
   * [Jamesweb](./Machine_Learning/jamesweb)
   * [Pokemon-Data-Analysis-And-Legendary-Classification-Main](./Machine_Learning/pokemon-data-analysis-and-legendary-classification-main)
   * [Smartphone Rate Prediction](./Machine_Learning/smartphone_rate_prediction)
+
+* **Optimization Algorithms**
+  * [Genetic Algorithms](./Optimization_Algorithms/Genetic_Algorithms)
 
 * **Tutorials**
   * [Data Science](./Tutorials/Data%20Science)

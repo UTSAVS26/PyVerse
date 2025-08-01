@@ -1,0 +1,7 @@
+# PyTerminus Session Log
+# Started: 2025-07-30T14:35:21.769424
+
+{"timestamp": "2025-07-30T14:35:21.805263", "type": "session_started", "data": {"session_name": "demo-session", "panes_count": 0}}
+{"timestamp": "2025-07-30T14:35:24.989014", "type": "session_started", "data": {"session_name": "demo", "panes_count": 2}}
+{"timestamp": "2025-07-30T14:35:24.992515", "type": "pane_created", "data": {"pane_name": "pane1", "command": "bash", "cwd": "/home"}}
+{"timestamp": "2025-07-30T14:35:24.994742", "type": "pane_created", "data": {"pane_name": "pane2", "command": "zsh", "cwd": "/tmp"}}
