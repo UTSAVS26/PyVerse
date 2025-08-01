@@ -116,11 +116,14 @@ def main():
         print("✅ All required files present")
     
     # Run unit tests
+    # Run unit tests
     test_success = run_tests()
     
     # Run CLI tests
-    test_cli_functionality()
+    cli_success = test_cli_functionality()
     
+    # Combine results
+    test_success = test_success and cli_success
     # Summary
     print("\n" + "=" * 60)
     if test_success:
