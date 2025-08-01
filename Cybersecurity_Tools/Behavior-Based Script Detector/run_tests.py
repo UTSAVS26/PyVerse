@@ -75,11 +75,28 @@ def test_cli_functionality():
     if result.returncode == 0:
         print("✅ Report generation completed")
         # Check if reports were created
-        if os.path.exists("test_reports/"):
-            reports = list(Path("test_reports/").glob("*.json")) + list(Path("test_reports/").glob("*.md"))
-            print(f"📄 Generated {len(reports)} report files")
-    else:
-        print(f"❌ Report generation failed: {result.stderr}")
+        if result.returncode == 0:
+            print("✅ Report generation completed")
+            # Check if reports were created
+            if os.path.exists("test_reports/"):
+                reports = list(Path("test_reports/").glob("*.json")) + list(Path("test_reports/").glob("*.md"))
+                print(f"📄 Generated {len(reports)} report files")
+                # Validate report content
+                for report_file in reports:
+                    if report_file.suffix == '.json':
+                        with open(report_file) as f:
+                            import json
+                            try:
+                                data = json.load(f)
+                                if 'risk_score' not in data:
+                                    print(f"❌ Invalid JSON report: missing risk_score")
+                            except json.JSONDecodeError:
+                                print(f"❌ Invalid JSON format in {report_file}")
+                # Clean up test artifacts
+                import shutil
+                shutil.rmtree("test_reports/")
+        else:
+            print(f"❌ Report generation failed: {result.stderr}")
 
 def main():
     """Main test runner function."""
