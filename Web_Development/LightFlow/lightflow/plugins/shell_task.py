@@ -3,8 +3,8 @@ Shell Task Plugin - Executes shell commands as tasks.
 """
 
 import subprocess
-import os
-import shlex
+import subprocess
+from typing import Dict, Any, Tuple
 from typing import Dict, Any, Tuple
 
 
