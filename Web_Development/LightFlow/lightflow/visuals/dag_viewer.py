@@ -155,12 +155,17 @@ class DAGViewer:
                 })
                 
             # Create HTML template
-            html_template = f"""
+import html
+
+# Create HTML template
+html_template = f"""
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{workflow_name} DAG</title>
-    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <title>{html.escape(workflow_name)} DAG</title>
+    <script src="https://unpkg.com/vis-network@9.1.2/standalone/umd/vis-network.min.js"
+            integrity="sha384-..." 
+            crossorigin="anonymous"></script>
     <style>
         #dag-container {{
             width: 100%;
@@ -170,15 +175,15 @@ class DAGViewer:
     </style>
 </head>
 <body>
-    <h1>{workflow_name} DAG</h1>
+    <h1>{html.escape(workflow_name)} DAG</h1>
     <div id="dag-container"></div>
     
     <script>
         // Create nodes
-        const nodes = new vis.DataSet({json.dumps(nodes)});
+        const nodes = new vis.DataSet({json.dumps(nodes, ensure_ascii=True)});
         
         // Create edges
-        const edges = new vis.DataSet({json.dumps(edges)});
+        const edges = new vis.DataSet({json.dumps(edges, ensure_ascii=True)});
         
         // Create network
         const container = document.getElementById('dag-container');
