@@ -34,8 +34,22 @@ class FileLoader:
             ValueError: If file is not a Python file
         """
         # Validate file path
+    def validate_file(self, file_path: str) -> bool:
+        """
+        """
+        # Prevent directory-traversal in relative paths
+        from pathlib import Path
+        path_obj = Path(file_path)
+        if not path_obj.is_absolute():
+            # resolve against current directory without requiring existence
+            target = (Path.cwd() / path_obj).resolve()
+            if not str(target).startswith(str(Path.cwd())):
+                return False
+
+        # existing sanity checks…
         if not os.path.exists(file_path):
             raise FileNotFoundError(f"File not found: {file_path}")
+        # …rest of validate_file’s logic…
         
         # Check file extension
         file_ext = Path(file_path).suffix.lower()
