@@ -21,9 +21,12 @@ def run_tests():
     except ImportError:
         print("❌ pytest not found. Installing dependencies...")
         subprocess.run([sys.executable, "-m", "pip", "install", "-r", "requirements.txt"])
-        try:
-            import pytest
-        except ImportError:
+        # Verify pytest can now be imported
+        result = subprocess.run(
+            [sys.executable, "-c", "import pytest"],
+            capture_output=True
+        )
+        if result.returncode != 0:
             print("❌ Failed to install pytest")
             return False
     
