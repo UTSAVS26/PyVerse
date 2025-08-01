@@ -57,7 +57,7 @@ class FileLoader:
             atok = asttokens.ASTTokens(file_content, tree=tree)
             return file_content, tree, atok
         except SyntaxError as e:
-            raise SyntaxError(f"Syntax error in {file_path}: {e}")
+            raise SyntaxError(f"Syntax error in {file_path}: {e}") from e
     
     def load_directory(self, directory_path: str) -> List[Tuple[str, str, ast.AST, asttokens.ASTTokens]]:
         """
