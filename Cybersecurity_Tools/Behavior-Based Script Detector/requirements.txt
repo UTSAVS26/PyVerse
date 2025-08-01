@@ -1,5 +1,5 @@
-asttokens>=2.4.0
-rich>=13.0.0
-textual>=0.40.0
-pytest>=8.0.0
-pytest-cov>=4.0.0 
+asttokens==2.4.0
+rich==13.7.0
+textual==0.40.0        # tested version
+pytest==8.0.2
+pytest-cov==4.1.0
