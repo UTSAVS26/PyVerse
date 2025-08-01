@@ -248,8 +248,9 @@ html_template = f"""
                 # Use NetworkX to find longest path
                 longest_path = nx.dag_longest_path(dag)
                 stats['max_depth'] = len(longest_path)
-            except:
+            except (nx.NetworkXError, ValueError, TypeError) as e:
                 # Fallback calculation
+                self.logger.debug(f"Failed to compute longest path: {e}")
                 levels = {}
                 for node in nx.topological_sort(dag):
                     level = max([levels.get(pred, 0) for pred in dag.predecessors(node)], default=0) + 1
