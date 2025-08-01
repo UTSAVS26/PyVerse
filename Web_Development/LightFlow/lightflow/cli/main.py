@@ -147,7 +147,10 @@ def logs(workflow_name, task, checkpoint):
                 click.echo(f"  {key}: {value}")
         else:
             # Show latest checkpoint
-            checkpoint_data = checkpoint_manager.load_checkpoint(workflow_name)
+         else:
+             # Show latest checkpoint
+             
+             if task:
             
             if task:
                 # Show specific task result
