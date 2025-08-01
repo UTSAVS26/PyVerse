@@ -1,0 +1,20 @@
+name: web-dev
+created_at: 2024-01-01 12:00:00
+last_modified: 2024-01-01 12:00:00
+panes:
+  - name: frontend
+    command: npm run dev
+    cwd: ~/projects/webapp/frontend
+    shell: bash
+  - name: backend
+    command: python app.py
+    cwd: ~/projects/webapp/backend
+    shell: bash
+  - name: database
+    command: psql -d myapp
+    cwd: ~
+    shell: bash
+  - name: shell
+    command: bash
+    cwd: ~/projects/webapp
+    shell: bash 
