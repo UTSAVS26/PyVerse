@@ -14,6 +14,7 @@
   * [Plagiarism-Checker](./Advanced_Projects/Plagiarism-checker)
   * [Pyflowviz](./Advanced_Projects/PyFlowViz)
   * [Pysleuth](./Advanced_Projects/PySleuth)
+  * [Pyterminus](./Advanced_Projects/PyTerminus)
   * [Resume Scanner](./Advanced_Projects/Resume%20Scanner)
   * [Secure-Shell-Ws](./Advanced_Projects/Secure-Shell-ws)
   * [Smartcli](./Advanced_Projects/SmartCLI)
