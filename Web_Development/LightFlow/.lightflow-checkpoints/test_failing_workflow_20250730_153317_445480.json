@@ -1,9 +1,0 @@
-{
-  "workflow_name": "test_failing_workflow",
-  "timestamp": "2025-07-30T15:33:17.445470",
-  "completed_tasks": {
-    "task1": "TaskResult(task_name='task1', success=False, output='', error=None, duration=0.06772899627685547, exit_code=1)"
-  },
-  "total_tasks": 1,
-  "version": "1.0"
-}
