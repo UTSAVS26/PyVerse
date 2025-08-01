@@ -3,10 +3,9 @@ LightFlow CLI - Command line interface for LightFlow framework.
 """
 
 import click
-import os
+import click
 import sys
 from pathlib import Path
-from typing import Optional
 
 # Add parent directory to path for imports
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
@@ -14,7 +13,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 from lightflow.engine.executor import WorkflowExecutor, ExecutionMode
 from lightflow.engine.dag_builder import DAGBuilder
 from lightflow.engine.checkpoint import CheckpointManager
-from lightflow.engine.logger import Logger
+from lightflow.parser.workflow_loader import WorkflowLoader
 from lightflow.parser.workflow_loader import WorkflowLoader
 
 
