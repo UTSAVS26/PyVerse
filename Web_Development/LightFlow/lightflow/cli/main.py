@@ -192,24 +192,36 @@ def resume(workflow_file):
         workflow_name = workflow.get('workflow_name', 'default')
         checkpoint_data = checkpoint_manager.load_checkpoint(workflow_name)
         
-        if not checkpoint_data.get('completed_tasks'):
-            click.echo("No checkpoint found. Running workflow from start.")
-            ctx = click.get_current_context()
-            ctx.invoke(run, workflow_file=workflow_file, mode='thread', 
-                      max_workers=4, resume=True, dry_run=False)
-            return
-        
-        # Show checkpoint info
-        completed_tasks = list(checkpoint_data.get('completed_tasks', {}).keys())
-        click.echo(f"Found checkpoint with {len(completed_tasks)} completed tasks:")
-        for task in completed_tasks:
-            click.echo(f"  - {task}")
-        
-        # Resume workflow
-        click.echo("\nResuming workflow...")
-        ctx = click.get_current_context()
-        ctx.invoke(run, workflow_file=workflow_file, mode='thread', 
-                  max_workers=4, resume=True, dry_run=False)
+ @main.command()
+ @click.argument('workflow_file', type=click.Path(exists=True))
+ @click.option('--mode', type=click.Choice(['thread', 'process', 'async']),
+               default='thread', help='Execution mode')
+ @click.option('--max-workers', type=int, default=4,
+               help='Maximum number of parallel workers')
+ def resume(workflow_file, mode, max_workers):
+     """Resume a workflow from checkpoint."""
+     try:
+         # Load workflow
+         loader = WorkflowLoader()
+         workflow = loader.load_workflow(workflow_file)
+         
+         # Check for checkpoint
+         checkpoint_manager = CheckpointManager()
+         workflow_name = workflow.get('workflow_name', 'default')
+         checkpoint_data = checkpoint_manager.load_checkpoint(workflow_name)
+         
+         completed_tasks = list(checkpoint_data.get('completed_tasks', {}).keys())
+         if completed_tasks:
+             click.echo(f"Found checkpoint with {len(completed_tasks)} completed tasks:")
+             for task in completed_tasks:
+                 click.echo(f"  - {task}")
+             click.echo("\nResuming workflow...")
+         else:
+             click.echo("No checkpoint found. Running workflow from start.")
+         
+         ctx = click.get_current_context()
+         ctx.invoke(run, workflow_file=workflow_file, mode=mode,
+                   max_workers=max_workers, dry_run=False)
         
     except Exception as e:
         click.echo(f"Error: {e}", err=True)
