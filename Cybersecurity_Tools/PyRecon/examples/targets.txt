@@ -1,0 +1,18 @@
+# Example targets for PyRecon testing
+# Lines starting with # are comments and will be ignored
+
+# Single IP addresses
+192.168.1.1
+10.0.0.1
+
+# Domain names
+scanme.nmap.org
+example.com
+
+# CIDR ranges
+192.168.1.0/24
+10.0.0.0/16
+
+# Localhost for testing
+127.0.0.1
+localhost 
