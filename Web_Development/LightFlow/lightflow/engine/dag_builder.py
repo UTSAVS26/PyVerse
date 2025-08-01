@@ -167,25 +167,28 @@ class DAGBuilder:
         """
         # Find entry and exit points
         entry_points = [node for node in dag.nodes() if dag.in_degree(node) == 0]
-        exit_points = [node for node in dag.nodes() if dag.out_degree(node) == 0]
+        exit_points  = [node for node in dag.nodes() if dag.out_degree(node) == 0]
         
         if not entry_points or not exit_points:
             raise ValueError("Cannot find critical path: missing entry or exit points")
-            
+        
         # Find longest path from each entry to each exit
         longest_path = []
-        max_length = 0
+        max_length   = 0
         
         for entry in entry_points:
             for exit_point in exit_points:
                 try:
-                    path = nx.dag_longest_path(dag, weight='duration')
-                    if len(path) > max_length:
-                        max_length = len(path)
-                        longest_path = path
+                    # Check if a path exists between entry and exit
+                    if nx.has_path(dag, entry, exit_point):
+                        # Examine all simple paths and pick the longest (by number of nodes)
+                        for path in nx.all_simple_paths(dag, entry, exit_point):
+                            if len(path) > max_length:
+                                max_length   = len(path)
+                                longest_path = path
                 except nx.NetworkXError:
                     continue
-                    
+        
         return longest_path
     
     def estimate_workflow_duration(self, dag: nx.DiGraph) -> float:
