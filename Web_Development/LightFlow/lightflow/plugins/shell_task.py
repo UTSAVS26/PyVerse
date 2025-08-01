@@ -48,11 +48,11 @@ class ShellTaskPlugin:
                 stderr=subprocess.PIPE,
                 text=True,
                 cwd=cwd,
-                env=env,
-                timeout=timeout
+                env=env
             )
             
-            stdout, stderr = process.communicate()
+            # Apply timeout to communicate(), not to Popen()
+            stdout, stderr = process.communicate(timeout=timeout)
             exit_code = process.returncode
             
             # Combine output
