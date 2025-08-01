@@ -180,7 +180,10 @@ class PatternRules:
         
         return findings
     
-    def _check_imports(self, node: ast.Import, atok: asttokens.ASTTokens) -> List[Dict[str, Any]]:
+-from typing import List, Dict, Any
++from typing import List, Dict, Any, Union
+
+     def _check_imports(self, node: Union[ast.Import, ast.ImportFrom], atok: asttokens.ASTTokens) -> List[Dict[str, Any]]:
         """Check import statements for suspicious modules."""
         findings = []
         
