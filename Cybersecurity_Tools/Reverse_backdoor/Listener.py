@@ -23,12 +23,21 @@ class Listener :
         json_data = ""
         while True:
             try:
-                json_data = json_data + self.connection.recv(4096).decode()
-                return json.loads(json_data)
+                chunk = self.connection.recv(4096).decode()
+                if not chunk:
+                    break
+                json_data += chunk
+                try:
+                    return json.loads(json_data)
+                except json.JSONDecodeError:
+                    continue
             except json.JSONDecodeError as e:
                 print(f"JSON decode error: {e}")
                 continue
-            
+            except Exception as e:
+                print(f"Connection error: {e}")
+                break
+        return None
     def execute_remotely(self, command):
         self.reliable_send(command)
         if command[0] == "exit":
