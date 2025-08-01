@@ -8,7 +8,6 @@ script detector by analyzing example files and showing results.
 
 import sys
 import os
-from pathlib import Path
 
 # Add current directory to path
 sys.path.insert(0, os.path.dirname(__file__))
