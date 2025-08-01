@@ -7,7 +7,7 @@ This module handles loading and parsing Python files for analysis.
 import os
 import ast
 import asttokens
-from typing import Tuple, Optional, List
+from typing import Tuple, List
 from pathlib import Path
 
 
