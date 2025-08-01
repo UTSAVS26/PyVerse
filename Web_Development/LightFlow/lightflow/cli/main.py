@@ -118,10 +118,9 @@ def dag(workflow_file, output, format):
         # Generate visualization
         if output:
             output_file = f"{output}.{format}"
-            dot_source = dag_builder.visualize_dag(dag, output_file)
+            dag_builder.visualize_dag(dag, output_file)
         else:
-            dot_source = dag_builder.visualize_dag(dag)
-            
+            dag_builder.visualize_dag(dag)
         click.echo("DAG visualization generated successfully!")
         if output:
             click.echo(f"Output saved to: {output_file}")
