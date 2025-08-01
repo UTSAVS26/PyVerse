@@ -31,6 +31,8 @@ class ShellTaskPlugin:
         
         # Parse command if it's a string
         if isinstance(command, str):
+            # WARNING: shell=True can be dangerous with untrusted input
+            # Ensure commands are validated/sanitized before execution
             # Use shell=True for complex commands
             use_shell = True
             cmd = command
