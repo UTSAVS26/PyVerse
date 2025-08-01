@@ -18,6 +18,9 @@ class PythonTaskPlugin:
         """
         Execute Python code.
         
+        WARNING: This executes arbitrary Python code. Use with caution and only
+        with trusted workflow definitions.
+        
         Args:
             task_config: Task configuration dictionary
             
@@ -25,7 +28,7 @@ class PythonTaskPlugin:
             Tuple of (output, exit_code)
         """
         code = task_config['run']
-        cwd = task_config.get('cwd', None)
+        cwd = task_config.get('cwd')
         
         # Capture stdout and stderr
         old_stdout = sys.stdout
@@ -33,9 +36,12 @@ class PythonTaskPlugin:
         output_buffer = StringIO()
         error_buffer = StringIO()
         
+        old_cwd = None
         try:
             # Change working directory if specified
             if cwd:
+                if not os.path.exists(cwd):
+                    return f"Error: Working directory '{cwd}' does not exist", 1
                 old_cwd = os.getcwd()
                 os.chdir(cwd)
             
@@ -72,9 +78,8 @@ class PythonTaskPlugin:
             sys.stderr = old_stderr
             
             # Restore working directory
-            if cwd:
+            if old_cwd is not None:
                 os.chdir(old_cwd)
-    
     def validate(self, task_config: Dict[str, Any]) -> bool:
         """
         Validate Python task configuration.
