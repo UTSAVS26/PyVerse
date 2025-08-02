@@ -62,20 +62,24 @@ pip install -r requirements.txt
 ```
 ### ✅ 3. Train the model
 ```bash
-python train_model.py  
-```
+jupyter notebook predict.ipynb
+# Or run all cells programmatically:
+jupyter nbconvert --to notebook --execute predict.ipynb
+``` 
+
 ### ✅ 4. Run the app
 ```bash
 streamlit run app.py
 
 ```
 ### 📊 **Dataset**
-- Synthetic balanced dataset with:
-- 200 Healthy
-- 200 Mild Burnout Risk
-- 200 High Burnout Risk
-- Based on sleep, screen time, activity, mood, assignments, caffeine, and social hours
-- Stored as: synthetic_burnout_data_int.csv
+- Synthetic balanced dataset with 600 samples:
+  - 200 Healthy (class 0)
+  - 200 Mild Burnout Risk (class 1) 
+  - 200 High Burnout Risk (class 2)
+- Features: sleep hours, screen time, physical activity, mood level, assignments, caffeine intake, social interaction
+- Stored as: burnout_dataset.csv
+
 
 ### 🌱 **How It Works**
 -  Collect daily inputs

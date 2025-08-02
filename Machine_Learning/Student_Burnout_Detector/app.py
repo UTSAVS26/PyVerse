@@ -6,7 +6,15 @@ import numpy as np
 import joblib
 
 # Load trained model
-model = joblib.load('burnout_model_dt.joblib')
+
+try:
+   model = joblib.load('Machine_Learning/Student_Burnout_Detector/burnout_model_dt.joblib')
+except FileNotFoundError:
+   st.error("❌ Model file not found. Please ensure 'burnout_model_dt.joblib' exists in the project directory.")
+   st.stop()
+except Exception as e:
+    st.error(f"❌ Error loading model: {str(e)}")
+    st.stop()
 
 
 st.set_page_config(page_title="🧠 Burnout Risk Detector")
@@ -24,9 +32,12 @@ caffeine = st.slider("Caffeine intake (cups)", 0, 5, 1)
 social = st.slider("Social interaction (hours)", 0, 10, 2)
 
 if st.button("🔍 Predict Burnout Risk"):
-    # Match feature order used during training
+   # Match feature order used during training: sleep_hours, screen_time, physical_activity, mood_level, assignments, caffeine, social_interaction
+    feature_names = ['sleep_hours', 'screen_time', 'physical_activity', 'mood_level', 'assignments', ' caffeine', 'social_interaction']
     user_data = np.array([[sleep, screen, activity, mood, assignments, caffeine, social]])
-    prediction = model.predict(user_data)[0]
+        # Validate feature count
+    if user_data.shape[1] != len(feature_names):        st.error(f"Feature count mismatch: expected {len   (feature_names)}, got {user_data.shape[1]}")
+    st.stop()
 
     if prediction == 0:
         st.success("✅ You seem healthy! Keep it up!")
