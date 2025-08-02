@@ -1,0 +1,1 @@
+# Compressors package for Image Compression Analyzer 

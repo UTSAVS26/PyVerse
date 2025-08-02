@@ -1,0 +1,4 @@
+# PyTerminus Command Log
+# Started: 2025-07-30T14:35:21.787446
+
+{"timestamp": "2025-07-30T14:35:24.996380", "type": "command_executed", "data": {"pane_name": "pane1", "command": "ls -la", "success": true}}
