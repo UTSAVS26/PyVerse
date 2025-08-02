@@ -3,12 +3,12 @@ max_size = 20
 def create(arr, n):
     print("\nEnter elements:")
     for i in range(n):
-        try:
-            arr.append(int(input(f"Element {i + 1}: ")))
-        except ValueError:
-            print("Invalid input! Please enter an integer.")
-            arr.clear()  # Clear partially created array
-            return
+        while True:
+            try:
+                arr.append(int(input(f"Element {i + 1}: ")))
+                break
+            except ValueError:
+                print("Invalid input! Please enter an integer. Try again.")
 
 def remove(arr):
     if arr:
@@ -81,8 +81,8 @@ if __name__ == "__main__":
                     print("Array size cannot be negative!")
                     continue
             except ValueError:
-                 print("Invalid input! Please enter a valid number.")
-                 continue
+                print("Invalid input! Please enter a valid number.")
+                continue
 
             a.clear()
             create(a, n)
@@ -96,11 +96,11 @@ if __name__ == "__main__":
             try:
                 m = int(input("Enter number of elements in Array B: "))
                 if m < 0:
-                     print("Array size cannot be negative!")
-                     continue
+                    print("Array size cannot be negative!")
+                    continue
             except ValueError:
-                 print("Invalid input! Please enter a valid number.")
-                 continue
+                print("Invalid input! Please enter a valid number.")
+                continue
             b.clear()
             create(b, m)
         elif choice == '6':
