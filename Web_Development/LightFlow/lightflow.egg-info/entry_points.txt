@@ -1,0 +1,2 @@
+[console_scripts]
+lightflow = lightflow.cli.main:main
