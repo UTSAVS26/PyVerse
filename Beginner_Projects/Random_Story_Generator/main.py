@@ -10,9 +10,9 @@ sentence_starters = [
 
 characters = [
     "there lived a humble farmer named Jack.",
-    "there was a kind old king in the land.",
-    "a curious young girl named Lily lived nearby.",
-    "there dwelled a brave knight known as Sir Robert."
+    "there was a kind old king named Henry.",
+   "a curious young girl named Lily lived nearby.",
+    "there dwelled a brave knight named Emma."
 ]
 
 times = [
@@ -23,12 +23,10 @@ times = [
 ]
 
 activities = [
-    "he decided to take a stroll through the garden.",
-    "she ventured out to explore the nearby forest.",
-    "he was passing by the old mill.",
-    "she was collecting herbs near the river."
-]
-
+   "they decided to take a stroll through the garden.",
+   "they ventured out to explore the nearby forest.",
+   "they were passing by the old mill.",
+   "they were collecting herbs near the river."]
 encounters = [
     "Suddenly, he saw a young lady standing alone under a tall oak tree.",
     "Out of nowhere, she noticed a mysterious glowing flower.",
