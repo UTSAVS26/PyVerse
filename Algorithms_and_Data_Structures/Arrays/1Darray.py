@@ -7,6 +7,7 @@ def create(arr, n):
             arr.append(int(input(f"Element {i + 1}: ")))
         except ValueError:
             print("Invalid input! Please enter an integer.")
+            arr.clear()  # Clear partially created array
             return
 
 def remove(arr):
@@ -74,7 +75,15 @@ if __name__ == "__main__":
         choice = input("Enter your choice: ")
 
         if choice == '1':
-            n = int(input("Enter number of elements in Array A: "))
+            try:
+                n = int(input("Enter number of elements in Array A: "))
+                if n < 0:
+                    print("Array size cannot be negative!")
+                    continue
+            except ValueError:
+                 print("Invalid input! Please enter a valid number.")
+                 continue
+
             a.clear()
             create(a, n)
         elif choice == '2':
@@ -84,7 +93,14 @@ if __name__ == "__main__":
         elif choice == '4':
             replace(a)
         elif choice == '5':
-            m = int(input("Enter number of elements in Array B: "))
+            try:
+                m = int(input("Enter number of elements in Array B: "))
+                if m < 0:
+                     print("Array size cannot be negative!")
+                     continue
+            except ValueError:
+                 print("Invalid input! Please enter a valid number.")
+                 continue
             b.clear()
             create(b, m)
         elif choice == '6':
