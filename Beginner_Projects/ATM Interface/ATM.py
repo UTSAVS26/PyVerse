@@ -13,24 +13,30 @@ def check_balance(balance):
 
 
 def deposit_money(balance):
-    amount = float(input("Enter amount to deposit: $"))
-    if amount > 0:
-        balance += amount
-        print(f"${amount} deposited successfully.")
-    else:
-        print("Invalid deposit amount!")
+    try:
+        amount = float(input("Enter amount to deposit: $"))
+        if amount > 0:
+            balance += amount
+            print(f"${amount} deposited successfully.")
+        else:
+            print("Invalid deposit amount!")
+    except ValueError:
+        print("Please enter a valid number.")
     return balance
 
 
 def withdraw_money(balance):
-    amount = float(input("Enter amount to withdraw: $"))
-    if amount > 0 and amount <= balance:
-        balance -= amount
-        print(f"${amount} withdrawn successfully.")
-    elif amount > balance:
-        print("Insufficient funds!")
-    else:
-        print("Invalid withdrawal amount!")
+    try:
+        amount = float(input("Enter amount to withdraw: $"))
+        if amount > 0 and amount <= balance:
+            balance -= amount
+            print(f"${amount} withdrawn successfully.")
+        elif amount > balance:
+            print("Insufficient funds!")
+        else:
+            print("Invalid withdrawal amount!")
+    except ValueError:
+        print("Please enter a valid number.")
     return balance
 
 
