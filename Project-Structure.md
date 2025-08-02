@@ -137,6 +137,7 @@
 
 * **Cybersecurity Tools**
   * [Arp Spoofing Detection Tool](./Cybersecurity_Tools/ARP%20Spoofing%20Detection%20Tool)
+  * [Behavior-Based Script Detector](./Cybersecurity_Tools/Behavior-Based%20Script%20Detector)
   * [Cli-Based Port Scanner](./Cybersecurity_Tools/CLI-based%20Port%20Scanner)
   * [Clipcrypt](./Cybersecurity_Tools/ClipCrypt)
   * [Cyber Threat Intelligence Dashboard](./Cybersecurity_Tools/Cyber%20Threat%20Intelligence%20Dashboard)
@@ -381,6 +382,7 @@
   * [Hand Game Controller](./Machine_Learning/Hand%20Game%20Controller)
   * [Handwritten Equation Solver](./Machine_Learning/Handwritten%20Equation%20Solver)
   * [Handwritten Text Recognition Model](./Machine_Learning/Handwritten%20Text%20Recognition%20Model)
+  * [Heart Disease Prediction](./Machine_Learning/Heart%20Disease%20Prediction)
   * [Heart Disease Prediction [End 2 End]](./Machine_Learning/Heart%20Disease%20Prediction%20[END%202%20END])
   * [Heart-Disease-Detection-Using-Ml](./Machine_Learning/Heart-Disease-detection-using-ML)
   * [Honey Bee Pollen Detection](./Machine_Learning/Honey%20Bee%20Pollen%20detection)
@@ -411,6 +413,7 @@
   * [Signature Verification Portal](./Machine_Learning/Signature_verification_portal)
   * [Stock Market Analysis](./Machine_Learning/Stock_Market_Analysis)
   * [Student-Performances-Based-On-Daily-Habits](./Machine_Learning/Student-Performances-Based-On-Daily-Habits)
+  * [Student Burnout Detector](./Machine_Learning/Student_Burnout_Detector)
   * [Style Transfer With Neural Network](./Machine_Learning/Style%20Transfer%20with%20Neural%20Network)
   * [Texttotalk](./Machine_Learning/TextToTalk)
   * [Translator App](./Machine_Learning/Translator%20App)
