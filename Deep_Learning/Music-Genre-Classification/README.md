@@ -54,8 +54,7 @@ https://github.com/user-attachments/assets/b972ef58-335c-4851-955c-32258bb2543f
 3. **Visualize a Spectrogram (Optional)**
     - Use the `visualize.py` script to generate a spectrogram for any audio file:
     ```bash
-    python visualize.py "path/to/your/song.wav"
-
+python visualize.py "path/to/your/song.wav"
 ## Technologies Used
 - Python 3.11
 - TensorFlow / Keras
