@@ -43,7 +43,7 @@ https://github.com/user-attachments/assets/b972ef58-335c-4851-955c-32258bb2543f
 
 ## Usage
 1.  **Train the Model:**
-    - Open and run all the cells in the `01_data_and_training.ipynb` notebook.
+    - Open and run all the cells in the `data_and_training.ipynb` notebook.
     - This will create two files: `data.json` and `music_genre_classifier.keras`.
 
 2.  **Predict a Genre:**
