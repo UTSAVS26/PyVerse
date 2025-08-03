@@ -1,0 +1,4 @@
+# PyTerminus Output Log
+# Started: 2025-07-30T14:35:21.782908
+
+{"timestamp": "2025-07-30T14:35:24.997929", "type": "pane_output", "data": {"pane_name": "pane1", "output": "Hello, World!\n", "output_length": 14}}

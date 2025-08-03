@@ -1,0 +1,39 @@
+{
+  "document_type": "invoice",
+  "invoice_number": "INV-2024-001",
+  "dates": {
+    "invoice_date": "2024-01-15",
+    "due_date": "2024-02-15"
+  },
+  "amounts": {
+    "total": 1750.0,
+    "subtotal": 1750.0,
+    "tax": 175.0
+  },
+  "parties": {
+    "sender": "ABC Company Inc.",
+    "recipient": "XYZ Corporation"
+  },
+  "line_items": [
+    {
+      "description": "Web Development 10 hours $100.00",
+      "amount": "$1,000.00"
+    },
+    {
+      "description": "Database Design 5 hours $150.00",
+      "amount": "$750.00"
+    },
+    {
+      "description": "Subtotal:",
+      "amount": "$1,750.00"
+    },
+    {
+      "description": "Tax:",
+      "amount": "$175.00"
+    },
+    {
+      "description": "Total:",
+      "amount": "$1,925.00"
+    }
+  ]
+}
