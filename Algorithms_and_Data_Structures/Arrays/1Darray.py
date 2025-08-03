@@ -1,39 +1,50 @@
 max_size = 20
 
 def create(arr, n):
+    print("\nEnter elements:")
     for i in range(n):
-        arr.append(int(input("Enter: ")))
+        while True:
+            try:
+                arr.append(int(input(f"Element {i + 1}: ")))
+                break
+            except ValueError:
+                print("Invalid input! Please enter an integer. Try again.")
 
 def remove(arr):
-    if len(arr) > 0:
+    if arr:
         arr.pop(0)
-        print("\nAfter removing the first element:")
-        print(arr)
+        print("\nAfter removing the first element:", arr)
     else:
         print("Array is empty!")
 
 def remove_at(arr):
-    x = int(input("\nEnter the element you want to delete: "))
-    if x in arr:
-        i = arr.index(x)
-        print(f"\nElement {x} found at index {i}, after removing it:")
-        arr.pop(i)
-        print(arr)
-    else:
-        print("\nElement not found!")
+    try:
+        x = int(input("\nEnter the element you want to delete: "))
+        if x in arr:
+            i = arr.index(x)
+            arr.pop(i)
+            print(f"Removed {x}. New array:", arr)
+        else:
+            print("Element not found!")
+    except ValueError:
+        print("Invalid input!")
 
 def replace(arr):
-    x1 = int(input("\nEnter an element you want to replace: "))
-    if x1 in arr:
-        i = arr.index(x1)
-        print("\nElement is found! Now enter the replacing element:")
-        x2 = int(input())
-        arr[i] = x2
-        print(arr)
-    else:
-        print("Element not found!")
+    try:
+        x1 = int(input("\nEnter element to replace: "))
+        if x1 in arr:
+            i = arr.index(x1)
+            x2 = int(input("Enter new element: "))
+            arr[i] = x2
+            print("Updated array:", arr)
+        else:
+            print("Element not found!")
+    except ValueError:
+        print("Invalid input!")
 
 def merge(a, b):
+    a.sort()
+    b.sort()
     c = []
     i = j = 0
     while i < len(a) and j < len(b):
@@ -43,28 +54,62 @@ def merge(a, b):
         else:
             c.append(b[j])
             j += 1
-    while i < len(a):
-        c.append(a[i])
-        i += 1
-    while j < len(b):
-        c.append(b[j])
-        j += 1
-    print(c)
-
+    c.extend(a[i:])
+    c.extend(b[j:])
+    print("Merged array:", c)
 
 if __name__ == "__main__":
-    a = []
-    b = []
-    n = int(input("Enter number of elements in array 1: "))
-    create(a, n)
-    print(a)
+    a, b = [], []
 
-    # Uncomment these to test removal and replacement
-    # remove(a)
-    # remove_at(a)
-    # replace(a)
+    while True:
+        print("\n---- Menu ----")
+        print("1. Create Array A")
+        print("2. Remove first element from A")
+        print("3. Remove specific element from A")
+        print("4. Replace element in A")
+        print("5. Create Array B")
+        print("6. Merge A and B")
+        print("7. Show Arrays")
+        print("8. Exit")
 
-    m = int(input("Enter number of elements in array 2: "))
-    create(b, m)
-    print(b)
-    merge(a, b)
+        choice = input("Enter your choice: ")
+
+        if choice == '1':
+            try:
+                n = int(input("Enter number of elements in Array A: "))
+                if n < 0:
+                    print("Array size cannot be negative!")
+                    continue
+            except ValueError:
+                print("Invalid input! Please enter a valid number.")
+                continue
+
+            a.clear()
+            create(a, n)
+        elif choice == '2':
+            remove(a)
+        elif choice == '3':
+            remove_at(a)
+        elif choice == '4':
+            replace(a)
+        elif choice == '5':
+            try:
+                m = int(input("Enter number of elements in Array B: "))
+                if m < 0:
+                    print("Array size cannot be negative!")
+                    continue
+            except ValueError:
+                print("Invalid input! Please enter a valid number.")
+                continue
+            b.clear()
+            create(b, m)
+        elif choice == '6':
+            merge(a, b)
+        elif choice == '7':
+            print("Array A:", a)
+            print("Array B:", b)
+        elif choice == '8':
+            print("Exiting...")
+            break
+        else:
+            print("Invalid choice!")
