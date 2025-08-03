@@ -1,185 +1,217 @@
-class Node:
+from __future__ import annotations
+from typing import Generic, TypeVar, Optional, Any
+from Menu_Driven_Code_for_Doubly_LinkedList import LinkedList, Node
+
+T =  TypeVar('T')
+
+class CircularLinkedList(LinkedList[T]):
     """
-    Node class for circular doubly linked list.
-
-    Args:
-        data (int): The value to be stored in the node.
-    """
-
-    def __init__(self, data):
-        """
-        Initializes a new node with the given data and sets the left and right pointers to None.
-        """
-        self.data = data
-        self.right = None
-        self.left = None
-
-
-class LinkedList:
-    """
-    Circular Doubly Linked List implementation with various operations.
+    Circular Doubly Linked List implementation with insertion, deletion, and traversal operations.
     """
 
     def __init__(self):
         """
-        Initializes an empty circular doubly linked list with root and last pointers set to None.
+        Initializes an empty circular doubly linked list with head, next and prev pointers set to None.
         """
-        self.root = None
-        self.last = None
+        super().__init__()
 
-    def insertLeft(self, data):
-        """
-        Inserts a new node at the left (beginning) of the circular doubly linked list.
 
-        Args:
-            data (int): The value to be inserted at the left.
+    def _init_first_node(self, node: Node[T]) -> None:
+        self.head = node
+        self.tail = node
+        self.length = 1
+
+    def insertLeft(self, data: T) -> int:
         """
-        n = Node(data)
-        if self.root == None:
-            # If list is empty, initialize both root and last to the new node.
-            self.root = n
-            self.last = n
-            self.last.right = self.root
-            self.root.left = self.last
+        Insert an element at the beginning (left) of the circular linked list.
+
+        Parameters
+        ----------
+        data : T
+            The value to be inserted at the head of the list.
+
+        Returns
+        -------
+        int
+            The new length of the linked list.
+
+        Raises
+        ------
+        Exception
+            If the type of `data` does not match the expected element type.
+        """
+        # Check if the data type matches the expected type.
+        self._check_type(data)
+        node = Node(data)
+        if self.head is None:
+            # If the list is empty, initialize the first node.
+            self._init_first_node(node)
         else:
-            # Insert the new node to the left of root and update pointers.
-            n.right = self.root
-            self.root.left = n
-            self.root = n
-            self.last.right = self.root
-            self.root.left = self.last
-        print('\nInserted Element: ', self.root.data)
-        self.printList()
+            # Insert the new node at the beginning and update head and tail.next.
+            node.next = self.head
+            self.head.prev = node
+            self.head = self.head.prev
+            self.length += 1
+        self.tail.next = self.head
+        self.head.prev = self.tail
+        return len(self)
 
-    def deleteLeft(self):
+
+    def deleteLeft(self) -> T:
         """
-        Deletes a node from the left (beginning) of the circular doubly linked list.
+        Deletes the element from the beginning(left) of the circular linked list.
+
+        Returns
+        -------
+            T: The removed node's data.
+
+        Raises
+        ------
+        Exception
+            If trying to pop from an empty linked list.
         """
-        if self.root == None:
-            print('\nLinked List is empty..!!')
+        if self.head is None:
+            raise Exception("Cannot delete from an empty linked list.")
+        
+        temp = self.head
+        if self.head is self.tail:
+            # If there is only one node, set head and tail to None.
+            self.tail = self.head = None
+            self.length = 0
         else:
-            temp = self.root
-            if self.root == self.last:
-                # If there is only one node, set root and last to None.
-                self.root = None
-            else:
-                # Delete the root and update pointers.
-                self.root = self.root.right
-                self.root.left = self.last
-                self.last.right = self.root
-            print('\nDeleted element: ', temp.data)
-        self.printList()
+            # Update head to the next node and adjust the tail.next pointer.
+            self.head = self.head.next
+            self.tail.next = self.head
+            self.head.prev = self.tail
+            self.length -= 1
+        temp.next = None
+        temp.prev = None
+        return temp.data
 
-    def insertRight(self, data):
+    def insertRight(self, data: T) -> int:
         """
-        Inserts a new node at the right (end) of the circular doubly linked list.
+        Insert an element at the end (right) of the linked list.
 
-        Args:
-            data (int): The value to be inserted at the right.
+        Parameters
+        ----------
+        data : T
+            The value to be inserted at the end of the list.
+
+        Returns
+        -------
+        int
+            The new length of the linked list.
+
+        Raises
+        ------
+        Exception
+            If the type of `data` does not match the expected element type.
+        
         """
-        n = Node(data)
-        if self.root == None:
-            # If list is empty, initialize both root and last to the new node.
-            self.root = n
-            self.last = n
-            self.last.right = self.root
-            self.root.left = self.last
+        self._check_type(data)
+        node = Node(data)
+        if self.head is None:
+            self._init_first_node(node)
         else:
-            # Insert the new node to the right of the last node and update pointers.
-            self.last.right = n
-            n.left = self.last
-            self.last = n
-            self.last.right = self.root
-            self.root.left = self.last
-        print('\nInserted Element: ', n.data)
-        self.printList()
+            # Insert the new node at the end and update last and last.next.
+            node.prev = self.tail
+            self.tail.next = node
+            self.tail = self.tail.next
+            self.length += 1
+        self.tail.next = self.head
+        self.head.prev = self.tail
+        return len(self)
 
-    def deleteRight(self):
+    def deleteRight(self) -> T:
         """
-        Deletes a node from the right (end) of the circular doubly linked list.
+        Deletes the element from the end(right) of the linked list.
+
+        Returns
+        -------
+        T
+            The removed node's data.
+        
+        Raises
+        ------
+        Exception
+            If trying to pop from an empty linked list.
         """
-        if self.root == None:
-            print('\nLinked List is empty..!!')
+        if self.head is None:
+            raise Exception("Cannot delete from an empty linked list.")
+    
+        temp = self.tail
+        if self.head is self.tail:
+            # If there is only one node, set head and tail to None.
+            self.head = self.tail = None
+            self.length = 0
         else:
-            if self.root == self.last:
-                # If there is only one node, set root and last to None.
-                self.root = None
-            else:
-                # Delete the last node and update pointers.
-                print('Deleted Element: ', self.last.data)
-                self.last = self.last.left
-                self.last.right = self.root
-                self.root.left = self.last
-        self.printList()
+            # Traverse to the node before tail to update tail and its next pointer.
+            self.tail = self.tail.prev
+            self.tail.next = self.head
+            self.head.prev = self.tail
+            self.length -= 1
+        temp.next = None
+        temp.prev = None
+        return temp.data  
 
-    def printList(self):
-        """
-        Prints all elements in the circular doubly linked list in forward order.
-        """
-        if self.root == None:
-            print('\nLinked List is empty..!!')
-            return
-        temp = self.root
-        print('\nElements in Linked List are: ')
-        while True:
-            print('|', temp.data, '| <-> ', end='')
-            temp = temp.right
-            if temp == self.root:
+if __name__=="__main__":
+    # Main menu-driven code to interact with the linked list.
+    obj = CircularLinkedList()
+
+    while True:
+        print('----------------------')
+        print('\n1. Insert from Left\n2. Insert from Right\n3. Delete from Left\n4. Delete from Right\n5. Delete Element x\n6. Print Linked List\n7. Search Element x\n0. Exit')
+        print('----------------------')
+
+        try:
+            ch = int(input('\nEnter your choice: '))
+        except Exception as e:  
+            print(f'\nInvalid input.\nError: {e}')
+            continue
+
+
+        try:
+            if ch == 1:
+                data = int(input('\nEnter value to be inserted in left: '))
+                obj.insertLeft(data)
+
+            elif ch == 2:
+                data = int(input('\nEnter value to be inserted in right: '))
+                obj.insertRight(data)
+
+            elif ch == 3:
+                print(f"Deleted {obj.deleteLeft()} from the beginning of the list.")
+            elif ch == 4:
+                print(f"Deleted {obj.deleteRight()} from the end of the list.")
+
+            elif ch == 5:
+                x = int(input('\nEnter the value of Element x: '))
+                ele = obj.deleteElement(x)
+                if ele is None:
+                    print(f"Element {x} not found in the list.")
+                else:
+                    # If the element was found and deleted.
+                    print(f"Deleted {ele} from the list.")
+
+            elif ch == 6:
+                print(f'\n{str(obj)}')
+        
+            elif ch == 7:
+                # Search for a specific element.        
+                data = int(input('Enter the value of Element x: '))
+                index = obj.searchlist(data)
+                if index == -1:
+                    print(f"Element {data} not found.")
+                else:
+                    print(f"Found at Index: {index}")
+
+            elif ch == 0:
+                print('You are out of the program..!!')
                 break
-        print('Root')
-        print()
 
-    def printReverseList(self):
-        """
-        Prints all elements in the circular doubly linked list in reverse order.
-        """
-        if self.root == None:
-            print('\nLinked List is empty..!!')
-            return
-        temp = self.last
-        print('\nElements in Linked List are: ')
-        while True:
-            print('|', temp.data, '| <-> ', end='')
-            temp = temp.left
-            if temp == self.last:
-                break
-        print('Last')
-        print()
-
-
-# Main menu-driven code to interact with the linked list.
-o = LinkedList()
-
-while True:
-    print('----------------------')
-    print('\n1. Insert from Left\n2. Insert from Right\n3. Delete from Left\n4. Delete from Right\n5. Print Linked List\n6. Print Reverse Linked List\n0. Exit')
-    print('----------------------')
-
-    ch = int(input('\nEnter your choice: '))
-
-    if ch == 1:
-        data = int(input('\nEnter value to be inserted in left: '))
-        o.insertLeft(data)
-
-    elif ch == 2:
-        data = int(input('\nEnter value to be inserted in right: '))
-        o.insertRight(data)
-
-    elif ch == 3:
-        o.deleteLeft()
-
-    elif ch == 4:
-        o.deleteRight()
-
-    elif ch == 5:
-        o.printList()
-
-    elif ch == 6:
-        o.printReverseList()
-
-    elif ch == 0:
-        print('You are out of the program..!!')
-        break
-
-    else:
-        print('\nWrong Input..\nEnter the correct choice..!!\n')
+            else:
+                print('\nWrong Input..\nEnter the correct choice..!!\n')
+        
+        except Exception as e:
+                print(f"Error: {e}")
+                continue

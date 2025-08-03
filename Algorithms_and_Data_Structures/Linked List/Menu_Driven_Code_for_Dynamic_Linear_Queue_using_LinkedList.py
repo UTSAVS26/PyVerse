@@ -1,109 +1,180 @@
-class Node:
+from __future__ import annotations
+from typing import TypeVar, Generic 
+from Menu_Driven_Code_for_Linear_LinkedList import LinkedList
+
+T = TypeVar('T')
+
+class DynamicQueue(Generic[T]):
     """
-    Node class for the Dynamic Queue.
-    
-    Args:
-        data (int): The value to be stored in the node.
+    Dynamic Queue implementation using a linked list.
+    This class supports enqueue, dequeue, peek, and printing operations.
     """
-    def __init__(self, data):
+
+    def __init__(self) -> None:
         """
-        Initializes a new node with the given data and sets the next pointer to None.
-
-        Args:
-            data (int): The data to store in the node.
+        Initializes an empty queue.
         """
-        self.data = data
-        self.next = None
+        self._queue = LinkedList[T]()
 
-
-class DynamicQueue:
-    """
-    Dynamic Queue implementation using linked list structure for efficient memory management.
-    """
-    def __init__(self):
+    def enqueue(self, data: T) -> int:
         """
-        Initializes an empty queue with front and rear pointers set to None.
+        Adds an element to the rear of the queue.
+
+        Parameters
+        ----------
+        data : T
+            The data to enqueue.
+
+        Returns
+        -------
+        int
+            New length of the queue after insertion.
+
+        Raises
+        ------
+        TypeError
+            If the data type does not match the queue's type.
         """
-        self.front = None
-        self.rear = None
+        return self._queue.insertRight(data)
 
-    def enqueue(self, data):
+    def dequeue(self) -> T:
         """
-        Adds a new element to the rear of the queue.
+        Removes and returns the front element from the queue.
 
-        Args:
-            data (int): The value to be enqueued.
+        Returns
+        -------
+        T
+            The dequeued element.
+
+        Raises
+        ------
+        IndexError
+            If the queue is empty.
         """
-        n = Node(data)
-        if self.front == None:
-            # If queue is empty, both front and rear point to the new node.
-            self.front = self.rear = n
-        else:
-            # Add the new node at the rear and update the rear pointer.
-            self.rear.next = n
-            self.rear = n
-        print('\nElement Enqueued in Queue: ', data)
-
-    def dequeue(self):
+        if self._queue.head is None:
+            raise IndexError("Cannot dequeue from an empty queue.")
+        return self._queue.deleteLeft()
+    def peek(self) -> T:
         """
-        Removes an element from the front of the queue.
+        Returns the front element of the queue without removing it.
+
+        Returns
+        -------
+        Optional[T]
+            The front element.
+
+        Raises
+        ------
+        IndexError
+            If the queue is empty.
         """
-        if self.front == None:
-            # If queue is empty, print a message.
-            print('\nQueue is empty..!!')
-        else:
-            # Remove the front element and move the front pointer to the next node.
-            temp = self.front
-            self.front = self.front.next
-            print('\nElement Dequeued from Queue: ', temp.data)
-            # If the queue is now empty, reset the rear to None.
-            if self.front == None:
-                self.rear = None
+        if self._queue.head is None:
+            raise IndexError("Cannot peek from an empty queue.")
+        return self._queue.head.data
 
-    def printQueue(self):
+    def __len__(self) -> int:
         """
-        Prints all elements in the queue.
+        Returns the number of elements in the queue.
+
+        Returns
+        ------- 
+        int
+            The number of elements currently in the queue.
         """
-        if self.front == None:
-            # If queue is empty, print a message.
-            print('\nQueue is empty..!!')
-        else:
-            # Traverse from front to rear and print each element.
-            temp = self.front
-            while temp != None:
-                print(temp.data, ' --> ', end='')
-                temp = temp.next
-            print()
+        return len(self._queue)
 
+    def __iter__(self):
+        """
+        Returns an iterator over the elements of the queue.
 
-# Main menu-driven code to interact with the dynamic queue.
-o = DynamicQueue()
+        Returns
+        -------
+        Iterator[T]
+            An iterator that allows iteration over the queue elements.
+        """
+        return iter(self._queue)
 
-while True:
-    print('-----------')
-    print('\n1. Enqueue\n2. Dequeue\n3. Print\n0. Exit')
-    print('-----------')
+    def __contains__(self, item: T) -> bool:
+        """
+        Checks if an item exists in the queue.
 
-    ch = int(input('\nEnter your choice: '))
+        Parameters
+        ----------
+        item : T
+            The item to check for existence in the queue.
 
-    if ch == 1:
-        # Enqueue operation
-        data = int(input('\nEnter value to enqueue in Queue: '))
-        o.enqueue(data)
+        Returns
+        -------
+        bool
+            True if the item is in the queue, False otherwise.
 
-    elif ch == 2:
-        # Dequeue operation
-        o.dequeue()
+        Raises
+        ------
+        TypeError
+            If the item type does not match the queue's type.
+        """
+        return item in self._queue
 
-    elif ch == 3:
-        # Print queue elements
-        o.printQueue()
+    def __str__(self) -> str:
+        """
+        Returns a string representation of the queue.
 
-    elif ch == 0:
-        # Exit the program
-        print('You are out of the program..!!')
-        break
+        Returns
+        -------
+        str
+            A string showing the front and rear of the queue with elements in between.
+        """
+        return "FRONT -> " + " -> ".join(f"[{item}]" for item in self._queue) + " <- REAR"
 
-    else:
-        # Handle incorrect input
-        print('\nWrong Input..\nEnter the correct choice..!!\n')
+if __name__ == "__main__":
+
+    # Main menu-driven code to interact with the dynamic queue.
+    obj = DynamicQueue[int]()
+
+    while True:
+        print('-----------')
+        print('\n1. Enqueue\n2. Dequeue\n3. Print\n4. Peek\n0. Exit')
+        print('-----------')
+
+        try:
+            ch = int(input('\nEnter your choice: '))
+        except Exception as e:
+            print(f'\nInvalid input.\nError: {e}')
+            continue
+
+        try:
+            if ch == 1:
+                # Enqueue operation
+                data = int(input('\nEnter value to enqueue in Queue: '))
+                obj.enqueue(data)
+                print(f"\nElement Enqueued in Queue: {data}")
+
+            elif ch == 2:
+                # Dequeue operation
+                data = obj.dequeue()
+                print(f"\nElement Dequeued from Queue: {data}")
+
+            elif ch == 3:
+                # Print queue elements
+                print("FRONT -> ", end="")
+                for item in obj:
+                    print(f"[{item}]", end=" ")
+                print("<- REAR")
+
+            elif ch == 4:
+                # Peek operation
+                data = obj.peek()
+                print(f"\nFront of Queue: {data}")
+        
+            elif ch == 0:
+                # Exit the program
+                print('You are out of the program..!!')
+                break
+
+            else:
+                # Handle incorrect input
+                print('\nWrong Input..\nEnter the correct choice..!!\n')
+        
+        except Exception as e:
+            print(f"Error: {e}")
+            continue
