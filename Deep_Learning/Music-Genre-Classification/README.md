@@ -20,8 +20,8 @@ https://github.com/user-attachments/assets/b972ef58-335c-4851-955c-32258bb2543f
 ## Setup and Installation
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/debug-soham/Music-Genre-Classification.git
-    cd music-genre-classification
+    git clone https://github.com/UTSAVS26/PyVerse.git
+    cd PyVerse/Deep_Learning/Music-Genre-Classification
     ```
 
 2.  **Download the Dataset:**
