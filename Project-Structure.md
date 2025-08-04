@@ -241,6 +241,7 @@
   * [Mnist Handwritten Digit Classifier](./Deep_Learning/MNIST%20Handwritten%20digit%20classifier)
   * [Malaria-Classification](./Deep_Learning/Malaria-Classification)
   * [Medical Diagnoser](./Deep_Learning/Medical_diagnoser)
+  * [Music-Genre-Classification](./Deep_Learning/Music-Genre-Classification)
   * [Nn From Scratch](./Deep_Learning/NN_FROM_SCRATCH)
   * [Object Detection](./Deep_Learning/Object%20detection)
   * [Paddy Disease Classification](./Deep_Learning/Paddy%20Disease%20Classification)
