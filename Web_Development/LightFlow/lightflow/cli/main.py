@@ -14,7 +14,6 @@ from lightflow.engine.executor import WorkflowExecutor, ExecutionMode
 from lightflow.engine.dag_builder import DAGBuilder
 from lightflow.engine.checkpoint import CheckpointManager
 from lightflow.parser.workflow_loader import WorkflowLoader
-from lightflow.parser.workflow_loader import WorkflowLoader
 
 
 @click.group()
