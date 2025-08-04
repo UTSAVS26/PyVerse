@@ -29,8 +29,7 @@ def three_sum(arr, n, triplets):
                 right -= 1
             else:
                 # Found a valid triplet
-                triplets[k] = [arr[i], arr[left], arr[right]]
-                k += 1
+                triplets.append([arr[i],arr[left],arr[right]])
 
                 # Skip duplicates
                 while left < right and arr[left] == triplets[k - 1][1]:
@@ -53,7 +52,7 @@ def display_triplets(triplets, count):
 
 if __name__ == "__main__":
     arr = []
-    triplets = [[0] * 3 for _ in range(100)]  # You can increase size if needed
+    triplets = []  # use dynamic list
 
     n = int(input("Enter the number of elements in array: "))
     input_array(arr, n)
