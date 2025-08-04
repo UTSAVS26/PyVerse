@@ -146,25 +146,21 @@ def logs(workflow_name, task, checkpoint):
             for key, value in checkpoint_info.items():
                 click.echo(f"  {key}: {value}")
         else:
-            # Show latest checkpoint
          else:
              # Show latest checkpoint
-             
              if task:
-            
-            if task:
-                # Show specific task result
-                task_result = checkpoint_manager.get_task_result(workflow_name, task)
-                if task_result:
-                    click.echo(f"Task: {task}")
-                    click.echo(f"Success: {task_result.get('success', False)}")
-                    click.echo(f"Duration: {task_result.get('duration', 0):.2f}s")
-                    click.echo(f"Exit Code: {task_result.get('exit_code', 0)}")
-                    if task_result.get('output'):
-                        click.echo(f"Output:\n{task_result['output']}")
-                else:
-                    click.echo(f"Task '{task}' not found in checkpoint")
-            else:
+                 # Show specific task result
+                 task_result = checkpoint_manager.get_task_result(workflow_name, task)
+                 if task_result:
+                     click.echo(f"Task: {task}")
+                     click.echo(f"Success: {task_result.get('success', False)}")
+                     click.echo(f"Duration: {task_result.get('duration', 0):.2f}s")
+                     click.echo(f"Exit Code: {task_result.get('exit_code', 0)}")
+                     if task_result.get('output'):
+                         click.echo(f"Output:\n{task_result['output']}")
+                 else:
+                     click.echo(f"Task '{task}' not found in checkpoint")
+             else:
                 # Show all completed tasks
                 completed_tasks = checkpoint_manager.get_completed_tasks(workflow_name)
                 if completed_tasks:
