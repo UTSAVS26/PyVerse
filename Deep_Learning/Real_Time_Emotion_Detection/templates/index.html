@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Detection - AI-Powered Text Analysis</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --success-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --warning-gradient: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            --danger-gradient: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .main-container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .hero-section {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: var(--primary-gradient);
+            color: white;
+            border-radius: 20px 20px 0 0;
+        }
+        
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+        
+        .input-section {
+            padding: 2rem;
+        }
+        
+        .text-input {
+            border: 2px solid #e9ecef;
+            border-radius: 15px;
+            padding: 1.5rem;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            resize: vertical;
+            min-height: 150px;
+        }
+        
+        .text-input:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+        }
+        
+        .analyze-btn {
+            background: var(--primary-gradient);
+            border: none;
+            color: white;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        .analyze-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        }
+        
+        .analyze-btn:disabled {
+            background: #6c757d;
+            transform: none;
+            box-shadow: none;
+        }
+        
+        .results-section {
+            padding: 2rem;
+            background: #f8f9fa;
+        }
+        
+        .emotion-card {
+            background: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .emotion-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .dominant-emotion {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            color: white;
+            font-weight: 600;
+        }
+        
+        .emotion-emoji {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        
+        .emotion-name {
+            font-size: 2rem;
+            text-transform: capitalize;
+            margin-bottom: 0.5rem;
+        }
+        
+        .emotion-confidence {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .emotion-bar {
+            background: #e9ecef;
+            border-radius: 10px;
+            height: 30px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+        
+        .emotion-fill {
+            height: 100%;
+            border-radius: 10px;
+            transition: width 0.8s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+        }
+        
+        .stats-card {
+            background: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .history-section {
+            padding: 2rem;
+        }
+        
+        .history-item {
+            background: white;
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid #667eea;
+        }
+        
+        .loading-spinner {
+            display: none;
+            margin: 0 auto;
+        }
+        
+        .error-message {
+            background: var(--danger-gradient);
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            display: none;
+        }
+        
+        .success-message {
+            background: var(--success-gradient);
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            display: none;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #667eea;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+            
+            .main-container {
+                margin: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-container">
+            <!-- Hero Section -->
+            <div class="hero-section">
+                <div class="hero-title">
+                    <i class="fas fa-brain"></i> Emotion Detection
+                </div>
+                <div class="hero-subtitle">
+                    Discover the emotions hidden in your text with advanced AI analysis
+                </div>
+                <div class="mt-4">
+                    <span class="badge bg-light text-dark me-2">Real-time Analysis</span>
+                    <span class="badge bg-light text-dark me-2">AI-Powered</span>
+                    <span class="badge bg-light text-dark">Detailed Insights</span>
+                </div>
+            </div>
+            
+            <!-- Input Section -->
+            <div class="input-section">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="mb-3">
+                            <label for="textInput" class="form-label h5">
+                                <i class="fas fa-comment-alt"></i> Enter your text for analysis
+                            </label>
+                            <textarea 
+                                id="textInput" 
+                                class="form-control text-input" 
+                                placeholder="Type or paste your text here... (e.g., 'I am so excited about the new project!')"
+                                maxlength="5000"
+                            ></textarea>
+                            <div class="form-text">
+                                <span id="charCount">0</span>/5000 characters
+                            </div>
+                        </div>
+                        
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <button 
+                                id="analyzeBtn" 
+                                class="btn analyze-btn"
+                                onclick="analyzeEmotion()"
+                            >
+                                <i class="fas fa-search"></i> Analyze Emotions
+                            </button>
+                            <button 
+                                id="clearBtn" 
+                                class="btn btn-outline-secondary"
+                                onclick="clearInput()"
+                            >
+                                <i class="fas fa-eraser"></i> Clear
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Examples -->
+                    <div class="col-md-4">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h5>Quick Examples</h5>
+                            <div class="text-start">
+                                <button class="btn btn-sm btn-outline-primary mb-2 w-100" onclick="setExample('I am absolutely thrilled about this opportunity!')">
+                                    😊 Positive Example
+                                </button>
+                                <button class="btn btn-sm btn-outline-primary mb-2 w-100" onclick="setExample('I am really worried about the upcoming presentation.')">
+                                    😨 Worried Example
+                                </button>
+                                <button class="btn btn-sm btn-outline-primary mb-2 w-100" onclick="setExample('This traffic is making me so frustrated!')">
+                                    😠 Frustrated Example
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Messages -->
+                <div id="errorMessage" class="error-message">
+                    <i class="fas fa-exclamation-triangle"></i> <span id="errorText"></span>
+                </div>
+                <div id="successMessage" class="success-message">
+                    <i class="fas fa-check-circle"></i> <span id="successText"></span>
+                </div>
+                
+                <!-- Loading Spinner -->
+                <div class="loading-spinner" id="loadingSpinner">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Analyzing...</span>
+                    </div>
+                    <div class="mt-2" id="loadingMessage">Analyzing emotions...</div>
+                    <div class="mt-2">
+                        <small class="text-muted">This may take up to 2 minutes. Please wait...</small>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Results Section -->
+            <div id="resultsSection" class="results-section" style="display: none;">
+                <h3 class="mb-4">
+                    <i class="fas fa-chart-bar"></i> Analysis Results
+                </h3>
+                
+                <!-- Dominant Emotion -->
+                <div id="dominantEmotion" class="dominant-emotion">
+                    <div class="emotion-emoji" id="dominantEmoji"></div>
+                    <div class="emotion-name" id="dominantName"></div>
+                    <div class="emotion-confidence" id="dominantConfidence"></div>
+                </div>
+                
+                <!-- Emotion Breakdown -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="emotion-card">
+                            <h5><i class="fas fa-chart-line"></i> Emotion Breakdown</h5>
+                            <div id="emotionBars"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="emotion-card">
+                            <h5><i class="fas fa-info-circle"></i> Text Analysis</h5>
+                            <div id="textStats"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Suggestions -->
+                <div class="emotion-card">
+                    <h5><i class="fas fa-lightbulb"></i> Suggestions</h5>
+                    <div id="suggestions"></div>
+                </div>
+            </div>
+            
+            <!-- History Section -->
+            <div class="history-section">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h4><i class="fas fa-history"></i> Analysis History</h4>
+                    <button class="btn btn-sm btn-outline-secondary" onclick="loadHistory()">
+                        <i class="fas fa-sync"></i> Refresh
+                    </button>
+                </div>
+                <div id="historyContainer">
+                    <div class="text-center text-muted">
+                        <i class="fas fa-clock fa-3x mb-3"></i>
+                        <p>No analysis history yet. Start by analyzing some text!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Character counter
+        const textInput = document.getElementById('textInput');
+        const charCount = document.getElementById('charCount');
+        
+        textInput.addEventListener('input', function() {
+            charCount.textContent = this.value.length;
+        });
+        
+        // Loading messages array
+        const loadingMessages = [
+            'Analyzing emotions...',
+            'Processing your text...',
+            'Connecting to Watson NLP...',
+            'Extracting emotional patterns...',
+            'Almost done, please wait...',
+            'Finalizing analysis...'
+        ];
+        
+        let loadingInterval;
+        
+        // Analyze emotion function
+        async function analyzeEmotion() {
+            const text = textInput.value.trim();
+            
+            if (!text) {
+                showError('Please enter some text to analyze');
+                return;
+            }
+            
+            // Show loading state
+            const analyzeBtn = document.getElementById('analyzeBtn');
+            const loadingSpinner = document.getElementById('loadingSpinner');
+            const loadingMessage = document.getElementById('loadingMessage');
+            
+            analyzeBtn.disabled = true;
+            loadingSpinner.style.display = 'block';
+            hideMessages();
+            
+            // Start rotating loading messages
+            let messageIndex = 0;
+            loadingMessage.textContent = loadingMessages[messageIndex];
+            loadingInterval = setInterval(() => {
+                messageIndex = (messageIndex + 1) % loadingMessages.length;
+                loadingMessage.textContent = loadingMessages[messageIndex];
+            }, 3000); // Change message every 3 seconds
+            
+            try {
+                const response = await fetch('/analyze', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ text: text })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    displayResults(data.result);
+                    showSuccess('Analysis completed successfully!');
+                    loadHistory();
+                } else {
+                    showError(data.error || 'Analysis failed. The service might be temporarily unavailable.');
+                }
+            } catch (error) {
+                showError('Network error or timeout. Please check your connection and try again.');
+            } finally {
+                // Clear loading interval and reset button
+                clearInterval(loadingInterval);
+                analyzeBtn.disabled = false;
+                loadingSpinner.style.display = 'none';
+            }
+        }
+        
+        // Display results
+        function displayResults(result) {
+            const resultsSection = document.getElementById('resultsSection');
+            const dominantEmotion = document.getElementById('dominantEmotion');
+            const dominantEmoji = document.getElementById('dominantEmoji');
+            const dominantName = document.getElementById('dominantName');
+            const dominantConfidence = document.getElementById('dominantConfidence');
+            
+            // Set dominant emotion display
+            dominantEmotion.style.backgroundColor = result.color;
+            dominantEmoji.textContent = result.emoji;
+            dominantName.textContent = result.dominant_emotion;
+            dominantConfidence.textContent = `${result.confidence}% confidence • ${result.intensity} intensity`;
+            
+            // Create emotion bars
+            const emotionBars = document.getElementById('emotionBars');
+            const emotions = ['anger', 'disgust', 'fear', 'joy', 'sadness'];
+            const emotionColors = {
+                anger: '#ff4444',
+                disgust: '#8b4513',
+                fear: '#9932cc',
+                joy: '#ffd700',
+                sadness: '#4169e1'
+            };
+            
+            emotionBars.innerHTML = '';
+            emotions.forEach(emotion => {
+                const score = result[emotion];
+                const percentage = Math.round(score * 100);
+                
+                const barContainer = document.createElement('div');
+                barContainer.className = 'mb-3';
+                barContainer.innerHTML = `
+                    <div class="d-flex justify-content-between mb-1">
+                        <span class="text-capitalize">${emotion}</span>
+                        <span>${percentage}%</span>
+                    </div>
+                    <div class="emotion-bar">
+                        <div class="emotion-fill" style="width: ${percentage}%; background-color: ${emotionColors[emotion]}">
+                        </div>
+                    </div>
+                `;
+                emotionBars.appendChild(barContainer);
+            });
+            
+            // Display text stats
+            const textStats = document.getElementById('textStats');
+            textStats.innerHTML = `
+                <p><strong>Characters:</strong> ${result.text_length}</p>
+                <p><strong>Words:</strong> ${result.word_count}</p>
+                <p><strong>Analyzed:</strong> ${new Date(result.timestamp).toLocaleString()}</p>
+            `;
+            
+            // Display suggestions
+            const suggestions = document.getElementById('suggestions');
+            suggestions.innerHTML = getSuggestions(result.dominant_emotion);
+            
+            resultsSection.style.display = 'block';
+        }
+        
+        // Get suggestions based on emotion
+        function getSuggestions(emotion) {
+            const suggestions = {
+                anger: 'Try taking deep breaths or engaging in physical exercise to release tension.',
+                disgust: 'Consider focusing on positive aspects or removing yourself from the situation.',
+                fear: 'Break down your concerns into manageable steps and seek support if needed.',
+                joy: 'Enjoy this positive moment and consider sharing your happiness with others.',
+                sadness: 'Allow yourself to feel these emotions and consider reaching out for support.'
+            };
+            return suggestions[emotion] || 'Take time to reflect on your emotions.';
+        }
+        
+        // Load history
+        async function loadHistory() {
+            try {
+                const response = await fetch('/history');
+                const data = await response.json();
+                
+                if (data.success) {
+                    displayHistory(data.history);
+                }
+            } catch (error) {
+                console.error('Error loading history:', error);
+            }
+        }
+        
+        // Display history
+        function displayHistory(history) {
+            const historyContainer = document.getElementById('historyContainer');
+            
+            if (history.length === 0) {
+                historyContainer.innerHTML = `
+                    <div class="text-center text-muted">
+                        <i class="fas fa-clock fa-3x mb-3"></i>
+                        <p>No analysis history yet. Start by analyzing some text!</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            historyContainer.innerHTML = '';
+            history.reverse().forEach(item => {
+                const historyItem = document.createElement('div');
+                historyItem.className = 'history-item';
+                historyItem.innerHTML = `
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <div>
+                            <span class="badge" style="background-color: ${item.color}">${item.emoji} ${item.dominant_emotion}</span>
+                            <span class="badge bg-secondary ms-2">${item.confidence}%</span>
+                        </div>
+                        <small class="text-muted">${new Date(item.timestamp).toLocaleString()}</small>
+                    </div>
+                    <p class="mb-0">${item.original_text.substring(0, 100)}${item.original_text.length > 100 ? '...' : ''}</p>
+                `;
+                historyContainer.appendChild(historyItem);
+            });
+        }
+        
+        // Utility functions
+        function showError(message) {
+            const errorMessage = document.getElementById('errorMessage');
+            const errorText = document.getElementById('errorText');
+            errorText.textContent = message;
+            errorMessage.style.display = 'block';
+        }
+        
+        function showSuccess(message) {
+            const successMessage = document.getElementById('successMessage');
+            const successText = document.getElementById('successText');
+            successText.textContent = message;
+            successMessage.style.display = 'block';
+        }
+        
+        function hideMessages() {
+            document.getElementById('errorMessage').style.display = 'none';
+            document.getElementById('successMessage').style.display = 'none';
+        }
+        
+        function clearInput() {
+            textInput.value = '';
+            charCount.textContent = '0';
+            document.getElementById('resultsSection').style.display = 'none';
+            hideMessages();
+        }
+        
+        function setExample(text) {
+            textInput.value = text;
+            charCount.textContent = text.length;
+        }
+        
+        // Load history on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            loadHistory();
+        });
+        
+        // Enter key support
+        textInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter' && e.ctrlKey) {
+                analyzeEmotion();
+            }
+        });
+    </script>
+</body>
+</html>

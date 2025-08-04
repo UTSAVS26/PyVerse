@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analyzer - AI-Powered Text Analysis</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-brain"></i>
+                <h1>Sentiment Analyzer</h1>
+            </div>
+            <p class="subtitle">AI-Powered Text Sentiment Analysis</p>
+        </header>
+
+        <main class="main-content">
+            <div class="analysis-card">
+                <div class="card-header">
+                    <h2><i class="fas fa-comment-alt"></i> Analyze Your Text</h2>
+                    <p>Enter any text below to analyze its emotional sentiment</p>
+                </div>
+                
+                <div class="input-section">
+                    <label for="textToAnalyze">Your Text</label>
+                    <textarea 
+                        id="textToAnalyze" 
+                        placeholder="Type or paste your text here... (e.g., 'I love this product!', 'This is terrible')"
+                        rows="4"
+                    ></textarea>
+                    <div class="char-counter">
+                        <span id="charCount">0</span> characters
+                    </div>
+                </div>
+
+                <div class="button-section">
+                    <button id="analyzeBtn" class="analyze-button" onclick="analyzeSentiment()">
+                        <i class="fas fa-magic"></i>
+                        <span>Analyze Sentiment</span>
+                        <div class="loading-spinner" id="loadingSpinner"></div>
+                    </button>
+                </div>
+
+                <div id="results" class="results-section" style="display: none;">
+                    <h3><i class="fas fa-chart-line"></i> Analysis Results</h3>
+                    <div class="result-card">
+                        <div class="sentiment-badge" id="sentimentBadge">
+                            <i class="sentiment-icon" id="sentimentIcon"></i>
+                            <span id="sentimentLabel"></span>
+                        </div>
+                        <div class="confidence-section">
+                            <div class="confidence-label">Confidence Score</div>
+                            <div class="confidence-bar">
+                                <div class="confidence-fill" id="confidenceFill"></div>
+                            </div>
+                            <div class="confidence-text">
+                                <span id="confidenceScore"></span>%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="error" class="error-message" style="display: none;">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <span id="errorText"></span>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 Sentiment Analyzer. Powered by AI & Machine Learning</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
