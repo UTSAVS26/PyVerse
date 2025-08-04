@@ -3,7 +3,7 @@ LightFlow CLI - Command line interface for LightFlow framework.
 """
 
 import click
-import click
+import sys
 import sys
 from pathlib import Path
 
