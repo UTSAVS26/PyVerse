@@ -102,6 +102,7 @@
   * [Random Story Generator](./Beginner_Projects/Random_Story_Generator)
   * [Recipe Finder](./Beginner_Projects/Recipe_Finder)
   * [Research-Snap](./Beginner_Projects/Research-Snap)
+  * [Screentimetracker](./Beginner_Projects/ScreenTimeTracker)
   * [Skillsync](./Beginner_Projects/SkillSync)
   * [Spell Checker](./Beginner_Projects/Spell%20Checker)
   * [Stock App](./Beginner_Projects/Stock%20App)
@@ -451,4 +452,10 @@
   * [Chatbot](./Web_Development/chatbot)
   * [Interactive-Code-Playground](./Web_Development/interactive-code-playground)
   * [One-Time-View-Server](./Web_Development/one-time-view-server)
+
+* **Assets**
+  * (No projects found in this category)
+
+* **Logs**
+  * (No projects found in this category)
 
