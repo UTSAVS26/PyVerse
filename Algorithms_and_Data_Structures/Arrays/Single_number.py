@@ -15,6 +15,17 @@ def find_single_element(nums, n):
         twice &= common_mask
 
     return once
+    
+def input_array(arr, n):
+    for i in range(n):
+       num = int(input(f"Enter element {i + 1}: "))
+       arr.append(num)
+
+def display_array(arr):
+    print("\nInput array is:")
+    for x in arr:
+        print(f"{x}\t", end="")
+    print()
 
 if __name__ == "__main__":
     nums = []
