@@ -99,6 +99,7 @@
   * [Pytimer Cli](./Beginner_Projects/Pytimer_CLI)
   * [Qr Generator](./Beginner_Projects/QR%20Generator)
   * [Quick Notes Application](./Beginner_Projects/Quick_Notes_application)
+  * [Random Story Generator](./Beginner_Projects/Random_Story_Generator)
   * [Recipe Finder](./Beginner_Projects/Recipe_Finder)
   * [Research-Snap](./Beginner_Projects/Research-Snap)
   * [Skillsync](./Beginner_Projects/SkillSync)
