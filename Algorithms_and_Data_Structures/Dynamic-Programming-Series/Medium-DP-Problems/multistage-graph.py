@@ -1,3 +1,8 @@
+"""
+multistage graph
+given a directed acyclic graph divided into stages, find the shortest path from source to sink.
+"""
+
 INF = 99
 
 def shortestDist(graph, n, source, target):
@@ -44,3 +49,15 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+class Solution:
+    def shortestPath(self, graph, stages):
+        n = len(graph)  # get the number of nodes
+        dp = [float('inf')] * n  # create a dp array to store shortest distances
+        dp[-1] = 0  # distance to sink is 0
+        for i in range(n - 2, -1, -1):  # loop backwards from second last node
+            for j in range(i + 1, n):  # check all possible next nodes
+                if graph[i][j] != 0:  # if there is an edge
+                    # update the shortest distance to sink from node i
+                    dp[i] = min(dp[i], graph[i][j] + dp[j])
+        return dp[0]  # return the shortest distance from source
