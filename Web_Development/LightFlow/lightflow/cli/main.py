@@ -212,7 +212,14 @@ def resume(workflow_file, mode, max_workers):
 @main.command()
 @click.argument('workflow_name')
 @click.option('--all', is_flag=True, help='Clear all checkpoints')
-def clear(workflow_name, all):
+def clear(workflow_name, clear_all):
+    """Clear checkpoints for a workflow."""
+    try:
+        checkpoint_manager = CheckpointManager()
+
+        if clear_all:
+            # existing logic for clearing all workflows
+        # …
     """Clear checkpoints for a workflow."""
     try:
         checkpoint_manager = CheckpointManager()
