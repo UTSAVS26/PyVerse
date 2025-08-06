@@ -1,8 +1,0 @@
-streamlit
-numpy
-pandas
-scikit-learn
-requests
-folium
-streamlit-folium
-pickle5
