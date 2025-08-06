@@ -1,0 +1,10 @@
+settings:
+  log_dir: logs
+  max_parallel_tasks: 4
+  retries: 2
+tasks:
+  example_task:
+    depends_on: []
+    run: echo "Hello, LightFlow!"
+    type: shell
+workflow_name: my_test_workflow

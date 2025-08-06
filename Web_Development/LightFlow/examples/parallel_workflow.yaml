@@ -1,0 +1,79 @@
+workflow_name: parallel_workflow
+tasks:
+  # Initial setup
+  setup:
+    run: echo "Setting up environment..."
+    type: shell
+    depends_on: []
+  
+  # Parallel data processing tasks
+  process_data_a:
+    run: |
+      echo "Processing dataset A..."
+      sleep 2
+      echo "Dataset A processing complete!"
+    type: shell
+    depends_on: [setup]
+  
+  process_data_b:
+    run: |
+      echo "Processing dataset B..."
+      sleep 3
+      echo "Dataset B processing complete!"
+    type: shell
+    depends_on: [setup]
+  
+  process_data_c:
+    run: |
+      echo "Processing dataset C..."
+      sleep 1
+      echo "Dataset C processing complete!"
+    type: shell
+    depends_on: [setup]
+  
+  # Parallel model training tasks
+  train_model_x:
+    run: |
+      echo "Training model X..."
+      sleep 4
+      echo "Model X training complete!"
+    type: shell
+    depends_on: [process_data_a]
+  
+  train_model_y:
+    run: |
+      echo "Training model Y..."
+      sleep 3
+      echo "Model Y training complete!"
+    type: shell
+    depends_on: [process_data_b]
+  
+  train_model_z:
+    run: |
+      echo "Training model Z..."
+      sleep 2
+      echo "Model Z training complete!"
+    type: shell
+    depends_on: [process_data_c]
+  
+  # Final aggregation
+  aggregate_results:
+    run: |
+      echo "Aggregating results from all models..."
+      sleep 1
+      echo "Results aggregation complete!"
+    type: shell
+    depends_on: [train_model_x, train_model_y, train_model_z]
+  
+  generate_report:
+    run: |
+      echo "Generating final report..."
+      sleep 1
+      echo "Report generation complete!"
+    type: shell
+    depends_on: [aggregate_results]
+
+settings:
+  max_parallel_tasks: 4
+  retries: 1
+  log_dir: logs/ 

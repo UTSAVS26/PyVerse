@@ -99,8 +99,10 @@
   * [Pytimer Cli](./Beginner_Projects/Pytimer_CLI)
   * [Qr Generator](./Beginner_Projects/QR%20Generator)
   * [Quick Notes Application](./Beginner_Projects/Quick_Notes_application)
+  * [Random Story Generator](./Beginner_Projects/Random_Story_Generator)
   * [Recipe Finder](./Beginner_Projects/Recipe_Finder)
   * [Research-Snap](./Beginner_Projects/Research-Snap)
+  * [Screentimetracker](./Beginner_Projects/ScreenTimeTracker)
   * [Skillsync](./Beginner_Projects/SkillSync)
   * [Spell Checker](./Beginner_Projects/Spell%20Checker)
   * [Stock App](./Beginner_Projects/Stock%20App)
@@ -239,6 +241,7 @@
   * [Mnist Handwritten Digit Classifier](./Deep_Learning/MNIST%20Handwritten%20digit%20classifier)
   * [Malaria-Classification](./Deep_Learning/Malaria-Classification)
   * [Medical Diagnoser](./Deep_Learning/Medical_diagnoser)
+  * [Music-Genre-Classification](./Deep_Learning/Music-Genre-Classification)
   * [Nn From Scratch](./Deep_Learning/NN_FROM_SCRATCH)
   * [Object Detection](./Deep_Learning/Object%20detection)
   * [Paddy Disease Classification](./Deep_Learning/Paddy%20Disease%20Classification)
@@ -443,6 +446,7 @@
 
 * **Web Development**
   * [Fastapi Control Panel](./Web_Development/FastAPI_Control_Panel)
+  * [Lightflow](./Web_Development/LightFlow)
   * [Movie Recommendation](./Web_Development/Movie_Recommendation)
   * [Student Results Dashboard Using  Streamlit](./Web_Development/Student_results_dashboard_using%20_streamlit)
   * [Test Sumarrization Nlp](./Web_Development/Test_Sumarrization_NLP)
@@ -450,4 +454,10 @@
   * [Chatbot](./Web_Development/chatbot)
   * [Interactive-Code-Playground](./Web_Development/interactive-code-playground)
   * [One-Time-View-Server](./Web_Development/one-time-view-server)
+
+* **Assets**
+  * (No projects found in this category)
+
+* **Logs**
+  * (No projects found in this category)
 
