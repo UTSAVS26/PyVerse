@@ -40,6 +40,9 @@ def select_item(menu):
             while True:
                 try:
                     qty=int(input(f"enter the quantity of {item} you want:"))
+                    if qty<=0:
+                        print("enter positive value of quantity")
+                        continue
                     orders.append(item)
                     prices=menu.get(item)
                     value.append(prices)
@@ -73,13 +76,13 @@ def receipt(orders,quantities,amounts,has_coupon,value):
         print(f"{ite:<20} {quantitie:<20} {val:<20} {amt:>10}")
     print('-' * 75)
     if has_coupon:
-        discount = sum(amounts) * 10/100
+        discount = round(sum(amounts) * 0.10,2)
         
         total =sum(amounts) - discount
         print(f"{'discount':<20} {'10%':<20} {discount:>20}")
     else:
         total=sum(amounts)
-    print(f"{'TOTAL':<20} {total:>50}")
+    print(f"{'TOTAL':<20} {round(total,2):>50}")
 
 def time_date():
      
