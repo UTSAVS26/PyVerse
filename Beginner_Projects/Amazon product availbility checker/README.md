@@ -32,14 +32,14 @@ The script performs the following steps:
 
 1. Clone the repo or download the script.
 
-2. Open `amazon_checker.py` and replace the product URL with your own:
+2. Open `amazon.py` and replace the product URL placeholder with your own:
    ```python
-   product_url = "https://www.amazon.in/dp/B0C7BGGRB6"
+   product_url = "https://www.amazon.in/dp/B0C7BGGRB6"  # or replace the placeholder in the file
    ```
 
 3. Run the script:
    ```bash
-   python amazon_checker.py
+   python amazon.py
    ```
 
 4. Example output:
