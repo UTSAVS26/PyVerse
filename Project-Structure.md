@@ -141,6 +141,7 @@
   * [Arp Spoofing Detection Tool](./Cybersecurity_Tools/ARP%20Spoofing%20Detection%20Tool)
   * [Behavior-Based Script Detector](./Cybersecurity_Tools/Behavior-Based%20Script%20Detector)
   * [Cli-Based Port Scanner](./Cybersecurity_Tools/CLI-based%20Port%20Scanner)
+  * [Chroot Lite](./Cybersecurity_Tools/Chroot%20Lite)
   * [Clipcrypt](./Cybersecurity_Tools/ClipCrypt)
   * [Cyber Threat Intelligence Dashboard](./Cybersecurity_Tools/Cyber%20Threat%20Intelligence%20Dashboard)
   * [Encryption Decryption App](./Cybersecurity_Tools/Encryption_Decryption%20app)
