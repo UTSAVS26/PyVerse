@@ -418,6 +418,7 @@
   * [Sentiment-Analysis-Of-Restaurant-Reviews](./Machine_Learning/Sentiment-Analysis-Of-Restaurant-Reviews)
   * [Signature Verification Portal](./Machine_Learning/Signature_verification_portal)
   * [Stock Market Analysis](./Machine_Learning/Stock_Market_Analysis)
+  * [Student Social Media Addiction Analysis](./Machine_Learning/Student%20Social%20Media%20Addiction%20Analysis)
   * [Student-Performances-Based-On-Daily-Habits](./Machine_Learning/Student-Performances-Based-On-Daily-Habits)
   * [Student Burnout Detector](./Machine_Learning/Student_Burnout_Detector)
   * [Style Transfer With Neural Network](./Machine_Learning/Style%20Transfer%20with%20Neural%20Network)
