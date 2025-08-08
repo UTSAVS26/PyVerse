@@ -31,6 +31,13 @@ This project is a **Retrieval-Augmented Generation (RAG)** chatbot built with **
 
 ## 📦 Installation
 
+### 1. Clone the repository
+```bash
+git clone https://github.com/UTSAVS26/PyVerse.git
+cd PyVerse/Generative-AI/Youtube_Rag_Chatbot
+```
+
+
 ### 2. Create and activate a virtual environment
 ```bash
 python -m venv venv
@@ -58,7 +65,7 @@ It will be available at: http://127.0.0.1:8000/docs
 
 ### ➤ Start the Streamlit frontend
 ```bash
-streamlit run streamlit_app.py
+streamlit run app.py
 ```
 ### 💡 How It Works
 
@@ -97,5 +104,5 @@ YouTube_Rag_ChatBot
 ### 🙋‍♂️ Contributor
 👤 Divyanshu Giri
 GitHub: [Divyanshu-hash](https://github.com/Divyanshu-hash)
-Email: [email](rishugiri056@gmail.com)
+Email: [rishugiri056@gmail.com](mailto:rishugiri056@gmail.com)
 

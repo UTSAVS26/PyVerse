@@ -1,8 +1,12 @@
 import streamlit as st
 import requests
 import re
+import os
+from dotenv import load_dotenv
 
-API_URL = "http://127.0.0.1:8000"
+load_dotenv()
+API_URL = os.getenv("API_URL", "http://127.0.0.1:8000")
+
 
 st.set_page_config(page_title="🎥 YouTube RAG Chatbot", page_icon="🤖", layout="centered")
 
@@ -37,7 +41,7 @@ if submitted and url:
     else:
         with st.spinner("🔍 Extracting transcript and generating embeddings..."):
             try:
-                response = requests.post(f"{API_URL}/extract", json={"video_id": video_id})
+                response = requests.post(f"{API_URL}/extract", json={"video_id": video_id}, timeout=30)
                 if response.status_code == 200:
                     st.success(f"✅ Transcript processed. **{response.json()['chunks']}** chunks created.")
                     st.session_state.video_id = video_id
@@ -58,7 +62,8 @@ if "video_id" in st.session_state:
                 res = requests.post(f"{API_URL}/ask", json={
                     "video_id": st.session_state.video_id,
                     "question": question
-                })
+                }, timeout=30)
+                
                 if res.status_code == 200:
                     answer = res.json()['answer']
                     st.success("✅ Gemini says:")

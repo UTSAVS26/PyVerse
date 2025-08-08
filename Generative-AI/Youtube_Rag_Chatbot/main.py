@@ -17,6 +17,9 @@ import os
 # Load environment variables
 load_dotenv()
 
+
+allowed_origins = os.getenv("ALLOWED_ORIGINS", "*").split(",")
+
 # FastAPI app setup
 app = FastAPI(
     title="YouTube RAG Chatbot API",
@@ -24,10 +27,19 @@ app = FastAPI(
     version="1.0.0"
 )
 
+
+@app.on_event("startup")
+async def startup_event():
+    # Initialize the YouTube transcript API
+    required_keys = ["GOOGLE_API_KEY", "HUGGINGFACEHUB_API_TOKEN"]
+    missing_keys = [key for key in required_keys if not os.getenv(key)]
+    if missing_keys:
+        raise ValueError(f"Missing required environment variables: {', '.join(missing_keys)}")
+
 # Enable CORS for all origins
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=allowed_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -63,11 +75,11 @@ async def extract_transcript(data: ExtractRequest):
     try:
         transcript = YouTubeTranscriptApi.get_transcript(video_id)
     except VideoUnavailable:
-        raise HTTPException(status_code=404, detail="Video is unavailable.")
+        raise HTTPException(status_code=404, detail="Video is unavailable.") from None
     except TranscriptsDisabled:
-        raise HTTPException(status_code=403, detail="Transcripts are disabled for this video.")
+        raise HTTPException(status_code=403, detail="Transcripts are disabled for this video.") from None
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        raise HTTPException(status_code=500, detail=str(e)) from e
 
     full_text = " ".join(entry['text'] for entry in transcript)
     splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
@@ -122,4 +134,4 @@ async def ask_question(data: AskRequest):
         result = chain.invoke(question)
         return {"answer": result.strip()}
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error while processing question: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Error while processing question: {str(e)}") from e
