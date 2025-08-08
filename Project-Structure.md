@@ -141,6 +141,7 @@
   * [Arp Spoofing Detection Tool](./Cybersecurity_Tools/ARP%20Spoofing%20Detection%20Tool)
   * [Behavior-Based Script Detector](./Cybersecurity_Tools/Behavior-Based%20Script%20Detector)
   * [Cli-Based Port Scanner](./Cybersecurity_Tools/CLI-based%20Port%20Scanner)
+  * [Chroot Lite](./Cybersecurity_Tools/Chroot%20Lite)
   * [Clipcrypt](./Cybersecurity_Tools/ClipCrypt)
   * [Cyber Threat Intelligence Dashboard](./Cybersecurity_Tools/Cyber%20Threat%20Intelligence%20Dashboard)
   * [Encryption Decryption App](./Cybersecurity_Tools/Encryption_Decryption%20app)
@@ -417,6 +418,7 @@
   * [Sentiment-Analysis-Of-Restaurant-Reviews](./Machine_Learning/Sentiment-Analysis-Of-Restaurant-Reviews)
   * [Signature Verification Portal](./Machine_Learning/Signature_verification_portal)
   * [Stock Market Analysis](./Machine_Learning/Stock_Market_Analysis)
+  * [Student Social Media Addiction Analysis](./Machine_Learning/Student%20Social%20Media%20Addiction%20Analysis)
   * [Student-Performances-Based-On-Daily-Habits](./Machine_Learning/Student-Performances-Based-On-Daily-Habits)
   * [Student Burnout Detector](./Machine_Learning/Student_Burnout_Detector)
   * [Style Transfer With Neural Network](./Machine_Learning/Style%20Transfer%20with%20Neural%20Network)
@@ -446,6 +448,7 @@
 
 * **Web Development**
   * [Fastapi Control Panel](./Web_Development/FastAPI_Control_Panel)
+  * [Lightflow](./Web_Development/LightFlow)
   * [Movie Recommendation](./Web_Development/Movie_Recommendation)
   * [Student Results Dashboard Using  Streamlit](./Web_Development/Student_results_dashboard_using%20_streamlit)
   * [Test Sumarrization Nlp](./Web_Development/Test_Sumarrization_NLP)

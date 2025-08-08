@@ -1,0 +1,86 @@
+workflow_name: python_workflow
+tasks:
+  setup:
+    run: |
+      import os
+      print("Setting up environment...")
+      os.makedirs("data", exist_ok=True)
+      print("Environment setup complete!")
+    type: python
+    depends_on: []
+  
+  generate_data:
+    run: |
+      import random
+      import json
+      
+      print("Generating sample data...")
+      data = [random.randint(1, 100) for _ in range(10)]
+      
+      with open("data/sample.json", "w") as f:
+          json.dump(data, f)
+      
+      print(f"Generated {len(data)} data points")
+    type: python
+    depends_on: [setup]
+  
+  process_data:
+    run: |
+      import json
+      import statistics
+      
+      print("Processing data...")
+      
+      with open("data/sample.json", "r") as f:
+          data = json.load(f)
+      
+      mean = statistics.mean(data)
+      median = statistics.median(data)
+      std_dev = statistics.stdev(data)
+      
+      results = {
+          "mean": mean,
+          "median": median,
+          "std_dev": std_dev,
+          "count": len(data)
+      }
+      
+      with open("data/results.json", "w") as f:
+          json.dump(results, f)
+      
+      print(f"Processed data - Mean: {mean:.2f}, Median: {median}, Std Dev: {std_dev:.2f}")
+    type: python
+    depends_on: [generate_data]
+  
+  create_report:
+    run: |
+      import json
+      from datetime import datetime
+      
+      print("Creating report...")
+      
+      with open("data/results.json", "r") as f:
+          results = json.load(f)
+      
+      report = f"""
+      Data Analysis Report
+      Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+      
+      Statistics:
+      - Mean: {results['mean']:.2f}
+      - Median: {results['median']}
+      - Standard Deviation: {results['std_dev']:.2f}
+      - Data Points: {results['count']}
+      """
+      
+      with open("data/report.txt", "w") as f:
+          f.write(report)
+      
+      print("Report created successfully!")
+    type: python
+    depends_on: [process_data]
+
+settings:
+  max_parallel_tasks: 2
+  retries: 1
+  log_dir: logs/ 
