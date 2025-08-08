@@ -1,4 +1,4 @@
-# 🛒 Amazon Product Availability Checker
+# 🛒 Amazon Product Availbility Checker
 
 This is a Python script that checks whether a product on Amazon is **in stock** or **out of stock** by scraping the product page using `requests` and `BeautifulSoup`.
 
@@ -14,8 +14,15 @@ This is a Python script that checks whether a product on Amazon is **in stock** 
 
 ## 📦 Requirements
 
-- Python 3.6 
-- libraries like requests,BeautifulSoup
+- Python 3.8+ (recommended)
+- Dependencies:
+   - requests
+   - beautifulsoup4
+- Install:
+  ```bash
+  pip install requests beautifulsoup4
+  ```
+
 ---
 
 ## 🧠 How It Works
