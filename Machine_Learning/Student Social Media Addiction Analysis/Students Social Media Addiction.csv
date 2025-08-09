@@ -1,0 +1,706 @@
+Student_ID,Age,Gender,Academic_Level,Country,Avg_Daily_Usage_Hours,Most_Used_Platform,Affects_Academic_Performance,Sleep_Hours_Per_Night,Mental_Health_Score,Relationship_Status,Conflicts_Over_Social_Media,Addicted_Score
+1,19,Female,Undergraduate,Bangladesh,5.2,Instagram,Yes,6.5,6,In Relationship,3,8
+2,22,Male,Graduate,India,2.1,Twitter,No,7.5,8,Single,0,3
+3,20,Female,Undergraduate,USA,6.0,TikTok,Yes,5.0,5,Complicated,4,9
+4,18,Male,High School,UK,3.0,YouTube,No,7.0,7,Single,1,4
+5,21,Male,Graduate,Canada,4.5,Facebook,Yes,6.0,6,In Relationship,2,7
+6,19,Female,Undergraduate,Australia,7.2,Instagram,Yes,4.5,4,Complicated,5,9
+7,23,Male,Graduate,Germany,1.5,LinkedIn,No,8.0,9,Single,0,2
+8,20,Female,Undergraduate,Brazil,5.8,Snapchat,Yes,6.0,6,In Relationship,2,8
+9,18,Male,High School,Japan,4.0,TikTok,No,6.5,7,Single,1,5
+10,21,Female,Graduate,South Korea,3.3,Instagram,No,7.0,7,In Relationship,1,4
+11,19,Male,Undergraduate,France,4.8,Snapchat,Yes,6.2,5,Complicated,3,7
+12,20,Female,Undergraduate,Spain,5.5,TikTok,Yes,5.8,6,In Relationship,2,8
+13,22,Male,Graduate,Italy,2.8,LinkedIn,No,7.2,8,Single,1,4
+14,18,Female,High School,Mexico,6.5,Instagram,Yes,5.5,5,Single,4,9
+15,21,Male,Undergraduate,Russia,3.7,YouTube,No,6.8,7,In Relationship,2,5
+16,20,Female,Undergraduate,China,4.2,TikTok,Yes,6.0,6,Complicated,3,7
+17,24,Male,Graduate,Sweden,2.0,LinkedIn,No,7.8,8,Single,0,3
+18,19,Female,High School,Norway,5.0,Instagram,Yes,5.7,5,In Relationship,3,8
+19,21,Male,Undergraduate,Denmark,3.5,Facebook,No,6.7,7,Single,1,5
+20,20,Female,Undergraduate,Netherlands,4.7,Snapchat,Yes,5.9,6,Complicated,3,7
+21,18,Male,High School,Belgium,5.3,TikTok,Yes,5.5,5,Single,4,8
+22,23,Female,Graduate,Switzerland,2.5,LinkedIn,No,7.3,8,In Relationship,1,4
+23,19,Male,Undergraduate,Austria,4.9,Instagram,Yes,5.8,6,Complicated,3,7
+24,20,Female,Undergraduate,Portugal,5.7,TikTok,Yes,5.4,5,Single,4,8
+25,22,Male,Graduate,Greece,3.2,Facebook,No,6.9,7,In Relationship,2,5
+26,19,Female,High School,Ireland,6.1,Instagram,Yes,5.2,5,Complicated,4,9
+27,21,Male,Undergraduate,New Zealand,3.8,YouTube,No,6.6,7,Single,1,5
+28,20,Female,Undergraduate,Singapore,4.4,TikTok,Yes,5.9,6,In Relationship,3,7
+29,24,Male,Graduate,Malaysia,2.2,LinkedIn,No,7.4,8,Single,0,3
+30,19,Female,High School,Thailand,5.9,Instagram,Yes,5.3,5,Complicated,4,8
+31,21,Male,Undergraduate,Vietnam,3.6,Facebook,No,6.7,7,Single,1,5
+32,20,Female,Undergraduate,Philippines,4.8,Snapchat,Yes,5.7,6,In Relationship,3,7
+33,18,Male,High School,Indonesia,5.4,TikTok,Yes,5.4,5,Complicated,4,8
+34,23,Female,Graduate,Taiwan,2.6,LinkedIn,No,7.2,8,Single,1,4
+35,19,Male,Undergraduate,Hong Kong,4.7,Instagram,Yes,5.8,6,In Relationship,3,7
+36,20,Female,Undergraduate,Turkey,5.6,TikTok,Yes,5.5,5,Complicated,4,8
+37,22,Male,Graduate,Israel,3.1,Facebook,No,6.8,7,Single,1,5
+38,19,Female,High School,UAE,6.2,Instagram,Yes,5.1,5,In Relationship,4,9
+39,21,Male,Undergraduate,Egypt,3.9,YouTube,No,6.5,7,Complicated,2,6
+40,20,Female,Undergraduate,Morocco,4.5,TikTok,Yes,5.8,6,Single,3,7
+41,24,Male,Graduate,South Africa,2.3,LinkedIn,No,7.3,8,In Relationship,1,4
+42,19,Female,High School,Nigeria,5.8,Instagram,Yes,5.4,5,Complicated,4,8
+43,21,Male,Undergraduate,Kenya,3.7,Facebook,No,6.6,7,Single,2,5
+44,20,Female,Undergraduate,Ghana,4.6,Snapchat,Yes,5.7,6,In Relationship,3,7
+45,18,Male,High School,Argentina,5.5,TikTok,Yes,5.3,5,Single,4,8
+46,23,Female,Graduate,Chile,2.7,LinkedIn,No,7.1,8,Complicated,1,4
+47,19,Male,Undergraduate,Colombia,4.8,Instagram,Yes,5.9,6,In Relationship,3,7
+48,20,Female,Undergraduate,Peru,5.5,TikTok,Yes,5.6,5,Single,4,8
+49,22,Male,Graduate,Venezuela,3.3,Facebook,No,6.7,7,In Relationship,2,5
+50,19,Female,High School,Ecuador,6.3,Instagram,Yes,5.2,5,Complicated,4,9
+51,21,Male,Undergraduate,Uruguay,3.8,YouTube,No,6.4,7,Single,2,6
+52,20,Female,Undergraduate,Paraguay,4.7,TikTok,Yes,5.8,6,In Relationship,3,7
+53,24,Male,Graduate,Bolivia,2.4,LinkedIn,No,7.2,8,Complicated,1,4
+54,19,Female,High School,Costa Rica,5.7,Instagram,Yes,5.5,5,Single,4,8
+55,21,Male,Undergraduate,Panama,3.6,Facebook,No,6.5,7,In Relationship,2,5
+56,20,Female,Undergraduate,Jamaica,4.9,Snapchat,Yes,5.6,6,Complicated,3,7
+57,18,Male,High School,Trinidad,5.6,TikTok,Yes,5.2,5,Single,4,8
+58,23,Female,Graduate,Bahamas,2.8,LinkedIn,No,7.0,8,In Relationship,1,4
+59,19,Male,Undergraduate,Iceland,4.6,Instagram,Yes,5.9,6,Complicated,3,7
+60,20,Female,Undergraduate,Finland,5.4,TikTok,Yes,5.7,5,Single,4,8
+61,22,Male,Graduate,Poland,3.1,Facebook,No,7.1,7,Single,1,5
+62,19,Female,Undergraduate,Romania,5.6,Instagram,Yes,5.6,5,In Relationship,3,8
+63,20,Male,Undergraduate,Hungary,4.2,TikTok,Yes,6.0,6,Complicated,3,7
+64,18,Female,High School,Czech Republic,6.1,Snapchat,Yes,5.2,4,Single,4,9
+65,23,Male,Graduate,Slovakia,2.3,LinkedIn,No,7.4,8,In Relationship,1,3
+66,21,Female,Undergraduate,Croatia,4.8,Instagram,Yes,5.8,6,Single,3,7
+67,20,Male,Undergraduate,Serbia,3.9,YouTube,No,6.5,7,Complicated,2,6
+68,19,Female,High School,Slovenia,5.7,TikTok,Yes,5.4,5,In Relationship,4,8
+69,22,Male,Graduate,Bulgaria,2.8,LinkedIn,No,7.2,8,Single,1,4
+70,20,Female,Undergraduate,Estonia,4.5,Instagram,Yes,5.9,6,Complicated,3,7
+71,18,Male,High School,Latvia,5.4,Snapchat,Yes,5.5,5,Single,4,8
+72,21,Female,Graduate,Lithuania,3.2,Facebook,No,6.8,7,In Relationship,2,5
+73,19,Male,Undergraduate,Ukraine,4.9,TikTok,Yes,5.7,6,Complicated,3,7
+74,20,Female,Undergraduate,Moldova,5.8,Instagram,Yes,5.3,5,Single,4,8
+75,23,Male,Graduate,Belarus,2.5,LinkedIn,No,7.3,8,In Relationship,1,4
+76,21,Female,Undergraduate,Kazakhstan,4.6,Snapchat,Yes,5.8,6,Single,3,7
+77,19,Male,High School,Uzbekistan,5.5,TikTok,Yes,5.4,5,Complicated,4,8
+78,22,Female,Graduate,Kyrgyzstan,2.9,Facebook,No,7.0,7,In Relationship,2,5
+79,20,Male,Undergraduate,Tajikistan,4.7,YouTube,Yes,5.9,6,Single,3,7
+80,18,Female,High School,Armenia,5.9,Instagram,Yes,5.2,5,Complicated,4,9
+81,21,Male,Graduate,Georgia,3.0,LinkedIn,No,7.1,8,In Relationship,1,4
+82,19,Female,Undergraduate,Azerbaijan,4.8,TikTok,Yes,5.7,6,Single,3,7
+83,20,Male,Undergraduate,Cyprus,3.8,Facebook,No,6.6,7,Complicated,2,6
+84,22,Female,Graduate,Malta,2.7,LinkedIn,No,7.2,8,In Relationship,1,4
+85,18,Male,High School,Luxembourg,5.6,Snapchat,Yes,5.3,5,Single,4,8
+86,21,Female,Undergraduate,Monaco,4.5,Instagram,Yes,5.8,6,Complicated,3,7
+87,19,Male,High School,Andorra,5.3,TikTok,Yes,5.5,5,In Relationship,4,8
+88,23,Female,Graduate,San Marino,2.6,LinkedIn,No,7.3,8,Single,1,4
+89,20,Male,Undergraduate,Vatican City,4.4,YouTube,Yes,6.0,6,Complicated,3,7
+90,18,Female,High School,Liechtenstein,5.8,Instagram,Yes,5.2,5,Single,4,9
+91,22,Male,Graduate,Montenegro,2.9,Facebook,No,7.0,7,In Relationship,2,5
+92,19,Female,Undergraduate,Albania,4.7,TikTok,Yes,5.8,6,Complicated,3,7
+93,21,Male,Undergraduate,North Macedonia,3.7,Snapchat,No,6.5,7,Single,2,6
+94,20,Female,High School,Kosovo,5.5,Instagram,Yes,5.4,5,In Relationship,4,8
+95,23,Male,Graduate,Bosnia,2.4,LinkedIn,No,7.4,8,Complicated,1,4
+96,19,Female,Undergraduate,Qatar,4.9,TikTok,Yes,5.7,6,Single,3,7
+97,18,Male,High School,Kuwait,5.7,Snapchat,Yes,5.3,5,In Relationship,4,8
+98,22,Female,Graduate,Bahrain,2.8,LinkedIn,No,7.1,8,Complicated,1,4
+99,20,Male,Undergraduate,Oman,4.6,Instagram,Yes,5.9,6,Single,3,7
+100,21,Female,Undergraduate,Jordan,5.4,TikTok,Yes,5.5,5,In Relationship,4,8
+101,19,Male,High School,Lebanon,5.8,YouTube,Yes,5.2,5,Complicated,4,9
+102,23,Female,Graduate,Iraq,2.5,LinkedIn,No,7.3,8,Single,1,4
+103,20,Male,Undergraduate,Yemen,4.7,Facebook,Yes,5.8,6,In Relationship,3,7
+104,18,Female,High School,Syria,5.6,Instagram,Yes,5.4,5,Single,4,8
+105,22,Male,Graduate,Afghanistan,2.9,LinkedIn,No,7.0,7,Complicated,2,5
+106,19,Female,Undergraduate,Pakistan,4.8,TikTok,Yes,5.7,6,In Relationship,3,7
+107,21,Male,Undergraduate,Nepal,3.8,YouTube,No,6.6,7,Single,2,6
+108,20,Female,High School,Bhutan,5.5,Snapchat,Yes,5.5,5,Complicated,4,8
+109,23,Male,Graduate,Sri Lanka,2.6,LinkedIn,No,7.2,8,In Relationship,1,4
+110,19,Female,Undergraduate,Maldives,4.9,Instagram,Yes,5.8,6,Single,3,7
+111,20,Male,Undergraduate,Bangladesh,6.1,Instagram,Yes,6.2,5,Single,4,8
+112,21,Female,Undergraduate,India,5.8,TikTok,Yes,5.9,6,In Relationship,3,7
+113,19,Male,Undergraduate,Nepal,4.9,Facebook,No,7.1,7,Single,2,5
+114,22,Female,Graduate,Pakistan,5.5,Instagram,Yes,6.0,5,Single,4,8
+115,20,Male,Undergraduate,Sri Lanka,5.2,TikTok,Yes,6.3,6,In Relationship,3,7
+116,19,Female,Undergraduate,Maldives,4.8,Instagram,No,7.2,8,Single,2,5
+117,21,Male,Graduate,Bangladesh,6.0,Facebook,Yes,5.8,5,In Relationship,4,8
+118,20,Female,Undergraduate,India,5.7,Instagram,Yes,6.1,6,Single,3,7
+119,22,Male,Graduate,Nepal,4.7,TikTok,No,7.3,7,Single,2,5
+120,19,Female,Undergraduate,Pakistan,5.4,Instagram,Yes,6.2,5,In Relationship,4,8
+121,20,Male,Undergraduate,Sri Lanka,5.9,Facebook,Yes,5.9,6,Single,3,7
+122,21,Female,Graduate,Maldives,4.6,Instagram,No,7.4,8,In Relationship,2,5
+123,19,Male,Undergraduate,Bangladesh,5.3,TikTok,Yes,6.3,5,Single,4,8
+124,22,Female,Graduate,India,5.8,Instagram,Yes,5.8,6,In Relationship,3,7
+125,20,Male,Undergraduate,Nepal,4.5,Facebook,No,7.5,7,Single,2,5
+126,21,Female,Graduate,Pakistan,5.2,Instagram,Yes,6.4,5,In Relationship,4,8
+127,19,Male,Undergraduate,Sri Lanka,5.7,TikTok,Yes,5.7,6,Single,3,7
+128,20,Female,Undergraduate,Maldives,4.4,Instagram,No,7.6,8,In Relationship,2,5
+129,22,Male,Graduate,Bangladesh,5.1,Facebook,Yes,6.5,5,Single,4,8
+130,21,Female,Graduate,India,5.6,Instagram,Yes,5.6,6,In Relationship,3,7
+131,19,Male,Undergraduate,Nepal,4.3,TikTok,No,7.7,7,Single,2,5
+132,20,Female,Undergraduate,Pakistan,5.0,Instagram,Yes,6.6,5,In Relationship,4,8
+133,22,Male,Graduate,Sri Lanka,5.5,Facebook,Yes,5.5,6,Single,3,7
+134,21,Female,Graduate,Maldives,4.2,Instagram,No,7.8,8,In Relationship,2,5
+135,19,Male,Undergraduate,Bangladesh,4.9,TikTok,Yes,6.7,5,Single,4,8
+136,20,Female,Undergraduate,India,5.4,Instagram,Yes,5.4,6,In Relationship,3,7
+137,22,Male,Graduate,Nepal,4.1,Facebook,No,7.9,7,Single,2,5
+138,21,Female,Graduate,Pakistan,4.8,Instagram,Yes,6.8,5,In Relationship,4,8
+139,19,Male,Undergraduate,Sri Lanka,5.3,TikTok,Yes,5.3,6,Single,3,7
+140,20,Female,Undergraduate,Maldives,4.0,Instagram,No,8.0,8,In Relationship,2,5
+141,22,Male,Graduate,Bangladesh,4.7,Facebook,Yes,6.9,5,Single,4,8
+142,21,Female,Graduate,India,5.2,Instagram,Yes,5.2,6,In Relationship,3,7
+143,19,Male,Undergraduate,Nepal,3.9,TikTok,No,8.1,7,Single,2,5
+144,20,Female,Undergraduate,Pakistan,4.6,Instagram,Yes,7.0,5,In Relationship,4,8
+145,22,Male,Graduate,Sri Lanka,5.1,Facebook,Yes,5.1,6,Single,3,7
+146,21,Female,Graduate,Maldives,3.8,Instagram,No,8.2,8,In Relationship,2,5
+147,19,Male,Undergraduate,Bangladesh,4.5,TikTok,Yes,7.1,5,Single,4,8
+148,20,Female,Undergraduate,India,5.0,Instagram,Yes,5.0,6,In Relationship,3,7
+149,22,Male,Graduate,Nepal,3.7,Facebook,No,8.3,7,Single,2,5
+150,21,Female,Graduate,Pakistan,4.4,Instagram,Yes,7.2,5,In Relationship,4,8
+151,19,Male,Undergraduate,Sri Lanka,4.9,TikTok,Yes,4.9,6,Single,3,7
+152,20,Female,Undergraduate,Maldives,3.6,Instagram,No,8.4,8,In Relationship,2,5
+153,22,Male,Graduate,Bangladesh,4.3,Facebook,Yes,7.3,5,Single,4,8
+154,21,Female,Graduate,India,4.8,Instagram,Yes,4.8,6,In Relationship,3,7
+155,19,Male,Undergraduate,Nepal,3.5,TikTok,No,8.5,7,Single,2,5
+156,20,Female,Undergraduate,Pakistan,4.2,Instagram,Yes,7.4,5,In Relationship,4,8
+157,22,Male,Graduate,Sri Lanka,4.7,Facebook,Yes,4.7,6,Single,3,7
+158,21,Female,Graduate,Maldives,3.4,Instagram,No,8.6,8,In Relationship,2,5
+159,19,Male,Undergraduate,Bangladesh,4.1,TikTok,Yes,7.5,5,Single,4,8
+160,20,Female,Undergraduate,India,4.6,Instagram,Yes,4.6,6,In Relationship,3,7
+161,19,Female,Undergraduate,Bangladesh,5.3,Instagram,Yes,6.1,5,Single,3,7
+162,21,Male,Graduate,India,4.8,Facebook,No,7.2,7,In Relationship,2,6
+163,20,Female,Undergraduate,Nepal,5.5,TikTok,Yes,5.9,6,Single,4,8
+164,22,Male,Graduate,Pakistan,4.7,Instagram,Yes,6.3,5,In Relationship,3,7
+165,19,Female,Undergraduate,Sri Lanka,5.1,Facebook,No,7.0,7,Single,2,5
+166,21,Male,Graduate,Maldives,5.4,TikTok,Yes,6.0,6,In Relationship,4,8
+167,20,Female,Undergraduate,Bangladesh,4.9,Instagram,Yes,6.4,5,Single,3,7
+168,22,Male,Graduate,India,5.2,Facebook,No,7.1,7,In Relationship,2,6
+169,19,Female,Undergraduate,Nepal,5.6,TikTok,Yes,5.8,6,Single,4,8
+170,21,Male,Graduate,Pakistan,4.6,Instagram,Yes,6.5,5,In Relationship,3,7
+171,20,Female,Undergraduate,Sri Lanka,5.0,Facebook,No,7.3,7,Single,2,5
+172,22,Male,Graduate,Maldives,5.3,TikTok,Yes,5.7,6,In Relationship,4,8
+173,19,Female,Undergraduate,Bangladesh,4.8,Instagram,Yes,6.6,5,Single,3,7
+174,21,Male,Graduate,India,5.1,Facebook,No,7.4,7,In Relationship,2,6
+175,20,Female,Undergraduate,Nepal,5.7,TikTok,Yes,5.6,6,Single,4,8
+176,22,Male,Graduate,Pakistan,4.5,Instagram,Yes,6.7,5,In Relationship,3,7
+177,19,Female,Undergraduate,Sri Lanka,4.9,Facebook,No,7.5,7,Single,2,5
+178,21,Male,Graduate,Maldives,5.2,TikTok,Yes,5.5,6,In Relationship,4,8
+179,20,Female,Undergraduate,Bangladesh,4.7,Instagram,Yes,6.8,5,Single,3,7
+180,22,Male,Graduate,India,5.0,Facebook,No,7.6,7,In Relationship,2,6
+181,19,Female,Undergraduate,Nepal,5.8,TikTok,Yes,5.4,6,Single,4,8
+182,21,Male,Graduate,Pakistan,4.4,Instagram,Yes,6.9,5,In Relationship,3,7
+183,20,Female,Undergraduate,Sri Lanka,4.8,Facebook,No,7.7,7,Single,2,5
+184,22,Male,Graduate,Maldives,5.1,TikTok,Yes,5.3,6,In Relationship,4,8
+185,19,Female,Undergraduate,Bangladesh,4.6,Instagram,Yes,7.0,5,Single,3,7
+186,21,Male,Graduate,India,4.9,Facebook,No,7.8,7,In Relationship,2,6
+187,20,Female,Undergraduate,Nepal,5.9,TikTok,Yes,5.2,6,Single,4,8
+188,22,Male,Graduate,Pakistan,4.3,Instagram,Yes,7.1,5,In Relationship,3,7
+189,19,Female,Undergraduate,Sri Lanka,4.7,Facebook,No,7.9,7,Single,2,5
+190,21,Male,Graduate,Maldives,5.0,TikTok,Yes,5.1,6,In Relationship,4,8
+191,20,Female,Undergraduate,Bangladesh,4.5,Instagram,Yes,7.2,5,Single,3,7
+192,22,Male,Graduate,India,4.8,Facebook,No,8.0,7,In Relationship,2,6
+193,19,Female,Undergraduate,Nepal,6.0,TikTok,Yes,5.0,6,Single,4,8
+194,21,Male,Graduate,Pakistan,4.2,Instagram,Yes,7.3,5,In Relationship,3,7
+195,20,Female,Undergraduate,Sri Lanka,4.6,Facebook,No,8.1,7,Single,2,5
+196,22,Male,Graduate,Maldives,4.9,TikTok,Yes,4.9,6,In Relationship,4,8
+197,19,Female,Undergraduate,Bangladesh,4.4,Instagram,Yes,7.4,5,Single,3,7
+198,21,Male,Graduate,India,4.7,Facebook,No,8.2,7,In Relationship,2,6
+199,20,Female,Undergraduate,Nepal,6.1,TikTok,Yes,4.8,6,Single,4,8
+200,22,Male,Graduate,Pakistan,4.1,Instagram,Yes,7.5,5,In Relationship,3,7
+201,19,Female,Undergraduate,Sri Lanka,4.5,Facebook,No,8.3,7,Single,2,5
+202,21,Male,Graduate,Maldives,4.8,TikTok,Yes,4.7,6,In Relationship,4,8
+203,20,Female,Undergraduate,Bangladesh,4.3,Instagram,Yes,7.6,5,Single,3,7
+204,22,Male,Graduate,India,4.6,Facebook,No,8.4,7,In Relationship,2,6
+205,19,Female,Undergraduate,Nepal,6.2,TikTok,Yes,4.6,6,Single,4,8
+206,21,Male,Graduate,Pakistan,4.0,Instagram,Yes,7.7,5,In Relationship,3,7
+207,20,Female,Undergraduate,Sri Lanka,4.4,Facebook,No,8.5,7,Single,2,5
+208,22,Male,Graduate,Maldives,4.7,TikTok,Yes,4.5,6,In Relationship,4,8
+209,19,Female,Undergraduate,Bangladesh,4.2,Instagram,Yes,7.8,5,Single,3,7
+210,21,Male,Graduate,India,4.5,Facebook,No,8.6,7,In Relationship,2,6
+211,20,Female,Undergraduate,Nepal,6.3,TikTok,Yes,4.4,6,Single,4,8
+212,22,Male,Graduate,Pakistan,3.9,Instagram,Yes,7.9,5,In Relationship,3,7
+213,19,Female,Undergraduate,Sri Lanka,4.3,Facebook,No,8.7,7,Single,2,5
+214,21,Male,Graduate,Maldives,4.6,TikTok,Yes,4.3,6,In Relationship,4,8
+215,20,Female,Undergraduate,Bangladesh,4.1,Instagram,Yes,8.0,5,Single,3,7
+216,22,Male,Graduate,India,4.4,Facebook,No,8.8,7,In Relationship,2,6
+217,19,Female,Undergraduate,Nepal,6.4,TikTok,Yes,4.2,6,Single,4,8
+218,21,Male,Graduate,Pakistan,3.8,Instagram,Yes,8.1,5,In Relationship,3,7
+219,20,Female,Undergraduate,Sri Lanka,4.2,Facebook,No,8.9,7,Single,2,5
+220,22,Male,Graduate,Maldives,4.5,TikTok,Yes,4.1,6,In Relationship,4,8
+221,19,Female,Undergraduate,USA,6.5,Instagram,Yes,6.0,5,Single,4,9
+222,21,Male,Graduate,UK,5.8,TikTok,Yes,6.5,6,In Relationship,3,7
+223,20,Female,Undergraduate,Australia,4.5,Instagram,No,7.5,8,Single,2,5
+224,22,Male,Graduate,Germany,4.2,Facebook,No,7.8,7,In Relationship,2,4
+225,19,Female,Undergraduate,Japan,3.8,LINE,No,7.9,8,Single,1,3
+226,21,Male,Graduate,Italy,5.5,Instagram,Yes,6.8,6,Single,3,7
+227,20,Female,Undergraduate,South Korea,5.2,KakaoTalk,Yes,6.5,6,In Relationship,3,6
+228,22,Male,Graduate,Russia,4.8,VKontakte,No,7.2,7,Single,2,5
+229,19,Female,Undergraduate,USA,7.0,TikTok,Yes,5.8,4,In Relationship,4,9
+230,21,Male,Graduate,UK,5.5,Instagram,Yes,6.7,6,Single,3,7
+231,20,Female,Undergraduate,Australia,4.7,Facebook,No,7.4,7,In Relationship,2,5
+232,22,Male,Graduate,Germany,4.0,Instagram,No,7.9,8,Single,1,4
+233,19,Female,Undergraduate,Japan,3.5,LINE,No,8.0,8,Single,1,3
+234,21,Male,Graduate,Italy,5.7,TikTok,Yes,6.5,5,In Relationship,3,8
+235,20,Female,Undergraduate,South Korea,5.0,KakaoTalk,Yes,6.8,6,Single,3,6
+236,22,Male,Graduate,Russia,4.5,VKontakte,No,7.4,7,In Relationship,2,5
+237,19,Female,Undergraduate,USA,6.8,Instagram,Yes,5.9,4,Single,4,9
+238,21,Male,Graduate,UK,5.6,Facebook,Yes,6.6,6,In Relationship,3,7
+239,20,Female,Undergraduate,Australia,4.6,Instagram,No,7.3,7,Single,2,5
+240,22,Male,Graduate,Germany,4.1,Facebook,No,7.7,8,In Relationship,2,4
+241,19,Female,Undergraduate,Japan,3.7,LINE,No,7.8,8,Single,1,3
+242,21,Male,Graduate,Italy,5.4,Instagram,Yes,6.7,5,Single,3,7
+243,20,Female,Undergraduate,South Korea,5.1,KakaoTalk,Yes,6.6,6,In Relationship,3,6
+244,22,Male,Graduate,Russia,4.7,VKontakte,No,7.3,7,Single,2,5
+245,19,Female,Undergraduate,USA,6.9,TikTok,Yes,5.7,4,In Relationship,4,9
+246,21,Male,Graduate,UK,5.7,Instagram,Yes,6.4,6,Single,3,7
+247,20,Female,Undergraduate,Australia,4.8,Facebook,No,7.2,7,In Relationship,2,5
+248,22,Male,Graduate,Germany,3.9,Instagram,No,7.8,8,Single,1,4
+249,19,Female,Undergraduate,Japan,3.6,LINE,No,8.1,8,Single,1,3
+250,21,Male,Graduate,Italy,5.6,TikTok,Yes,6.6,5,In Relationship,3,8
+251,20,Female,Undergraduate,South Korea,4.9,KakaoTalk,Yes,6.9,6,Single,3,6
+252,22,Male,Graduate,Russia,4.6,VKontakte,No,7.5,7,In Relationship,2,5
+253,19,Female,Undergraduate,USA,6.7,Instagram,Yes,5.8,4,Single,4,9
+254,21,Male,Graduate,UK,5.4,Facebook,Yes,6.5,6,In Relationship,3,7
+255,20,Female,Undergraduate,Australia,4.4,Instagram,No,7.4,7,Single,2,5
+256,22,Male,Graduate,Germany,4.0,Facebook,No,7.6,8,In Relationship,2,4
+257,19,Female,Undergraduate,Japan,3.4,LINE,No,8.2,8,Single,1,3
+258,21,Male,Graduate,Italy,5.3,Instagram,Yes,6.8,5,Single,3,7
+259,20,Female,Undergraduate,South Korea,5.0,KakaoTalk,Yes,6.7,6,In Relationship,3,6
+260,22,Male,Graduate,Russia,4.4,VKontakte,No,7.6,7,Single,2,5
+261,19,Female,Undergraduate,USA,6.6,TikTok,Yes,5.6,4,In Relationship,4,9
+262,21,Male,Graduate,UK,5.3,Instagram,Yes,6.3,6,Single,3,7
+263,20,Female,Undergraduate,Australia,4.3,Facebook,No,7.5,7,In Relationship,2,5
+264,22,Male,Graduate,Germany,3.8,Instagram,No,7.7,8,Single,1,4
+265,19,Female,Undergraduate,Japan,3.3,LINE,No,8.3,8,Single,1,3
+266,21,Male,Graduate,Italy,5.2,TikTok,Yes,6.9,5,In Relationship,3,8
+267,20,Female,Undergraduate,South Korea,4.8,KakaoTalk,Yes,7.0,6,Single,3,6
+268,22,Male,Graduate,Russia,4.3,VKontakte,No,7.7,7,In Relationship,2,5
+269,19,Female,Undergraduate,USA,6.4,Instagram,Yes,5.7,4,Single,4,9
+270,21,Male,Graduate,UK,5.2,Facebook,Yes,6.4,6,In Relationship,3,7
+271,20,Female,Undergraduate,Australia,4.5,Instagram,No,7.3,7,Single,2,5
+272,22,Male,Graduate,Germany,3.7,Facebook,No,7.8,8,In Relationship,1,4
+273,19,Female,Undergraduate,Japan,3.2,LINE,No,8.4,8,Single,1,3
+274,21,Male,Graduate,Italy,5.4,Instagram,Yes,6.7,5,Single,3,7
+275,20,Female,Undergraduate,South Korea,4.7,KakaoTalk,Yes,7.1,6,In Relationship,3,6
+276,22,Male,Graduate,Russia,4.2,VKontakte,No,7.8,7,Single,2,5
+277,19,Female,Undergraduate,USA,6.6,TikTok,Yes,5.5,4,In Relationship,4,9
+278,21,Male,Graduate,UK,5.1,Instagram,Yes,6.5,6,Single,3,7
+279,20,Female,Undergraduate,Australia,4.4,Facebook,No,7.4,7,In Relationship,2,5
+280,22,Male,Graduate,Germany,3.6,Instagram,No,7.9,8,Single,1,4
+281,19,Female,Undergraduate,Japan,3.1,LINE,No,8.5,8,Single,1,3
+282,21,Male,Graduate,Italy,5.3,TikTok,Yes,6.8,5,In Relationship,3,8
+283,20,Female,Undergraduate,South Korea,4.6,KakaoTalk,Yes,7.2,6,Single,3,6
+284,22,Male,Graduate,Russia,4.1,VKontakte,No,7.9,7,In Relationship,2,5
+285,19,Female,Undergraduate,USA,6.7,Instagram,Yes,5.4,4,Single,4,9
+286,21,Male,Graduate,UK,5.0,Facebook,Yes,6.6,6,In Relationship,3,7
+287,20,Female,Undergraduate,Australia,4.3,Instagram,No,7.5,7,Single,2,5
+288,22,Male,Graduate,Germany,3.5,Facebook,No,8.0,8,In Relationship,1,4
+289,19,Female,Undergraduate,Japan,3.0,LINE,No,8.6,8,Single,1,3
+290,21,Male,Graduate,Italy,5.2,Instagram,Yes,6.9,5,Single,3,7
+291,20,Female,Undergraduate,South Korea,4.5,KakaoTalk,Yes,7.3,6,In Relationship,3,6
+292,22,Male,Graduate,Russia,4.0,VKontakte,No,8.0,7,Single,2,5
+293,19,Female,Undergraduate,USA,6.8,TikTok,Yes,5.3,4,In Relationship,4,9
+294,21,Male,Graduate,UK,4.9,Instagram,Yes,6.7,6,Single,3,7
+295,20,Female,Undergraduate,Australia,4.2,Facebook,No,7.6,7,In Relationship,2,5
+296,22,Male,Graduate,Germany,3.4,Instagram,No,8.1,8,Single,1,4
+297,19,Female,Undergraduate,Japan,2.9,LINE,No,8.7,8,Single,1,3
+298,21,Male,Graduate,Italy,5.1,TikTok,Yes,7.0,5,In Relationship,3,8
+299,20,Female,Undergraduate,South Korea,4.4,KakaoTalk,Yes,7.4,6,Single,3,6
+300,22,Male,Graduate,Russia,3.9,VKontakte,No,8.1,7,In Relationship,2,5
+301,19,Female,Undergraduate,USA,6.9,Instagram,Yes,5.2,4,Single,4,9
+302,21,Male,Graduate,UK,4.8,Facebook,Yes,6.8,6,In Relationship,3,7
+303,20,Female,Undergraduate,Australia,4.1,Instagram,No,7.7,7,Single,2,5
+304,22,Male,Graduate,Germany,3.3,Facebook,No,8.2,8,In Relationship,1,4
+305,19,Female,Undergraduate,Japan,2.8,LINE,No,8.8,8,Single,1,3
+306,21,Male,Graduate,Italy,5.0,Instagram,Yes,7.1,5,Single,3,7
+307,20,Female,Undergraduate,South Korea,4.3,KakaoTalk,Yes,7.5,6,In Relationship,3,6
+308,22,Male,Graduate,Russia,3.8,VKontakte,No,8.2,7,Single,2,5
+309,19,Female,Undergraduate,USA,7.0,TikTok,Yes,5.1,4,In Relationship,4,9
+310,21,Male,Graduate,UK,4.7,Instagram,Yes,6.9,6,Single,3,7
+311,20,Female,Undergraduate,Australia,4.0,Facebook,No,7.8,7,In Relationship,2,5
+312,22,Male,Graduate,Germany,3.2,Instagram,No,8.3,8,Single,1,4
+313,19,Female,Undergraduate,Japan,2.7,LINE,No,8.9,8,Single,1,3
+314,21,Male,Graduate,Italy,4.9,TikTok,Yes,7.2,5,In Relationship,3,8
+315,20,Female,Undergraduate,South Korea,4.2,KakaoTalk,Yes,7.6,6,Single,3,6
+316,22,Male,Graduate,Russia,3.7,VKontakte,No,8.3,7,In Relationship,2,5
+317,19,Female,Undergraduate,USA,7.1,Instagram,Yes,5.0,4,Single,4,9
+318,21,Male,Graduate,UK,4.6,Facebook,Yes,7.0,6,In Relationship,3,7
+319,20,Female,Undergraduate,Australia,3.9,Instagram,No,7.9,7,Single,2,5
+320,22,Male,Graduate,Germany,3.1,Facebook,No,8.4,8,In Relationship,1,4
+321,19,Female,Undergraduate,Spain,5.2,Instagram,Yes,6.8,6,Single,3,7
+322,21,Male,Graduate,Denmark,4.1,Facebook,No,7.8,8,In Relationship,2,4
+323,20,Female,Undergraduate,Ireland,5.0,Instagram,Yes,7.0,7,Single,3,6
+324,22,Male,Graduate,India,5.8,WhatsApp,Yes,6.5,5,In Relationship,4,8
+325,19,Female,Undergraduate,Switzerland,4.0,Instagram,No,7.9,8,Single,2,4
+326,21,Male,Graduate,Turkey,5.5,Instagram,Yes,6.7,6,Single,3,7
+327,20,Female,Undergraduate,USA,6.8,TikTok,Yes,5.5,5,In Relationship,4,9
+328,22,Male,Graduate,Mexico,5.6,WhatsApp,Yes,6.6,6,Single,3,7
+329,19,Female,Undergraduate,France,4.5,Instagram,No,7.5,7,In Relationship,2,5
+330,21,Male,Graduate,Canada,5.3,Instagram,Yes,6.9,6,Single,3,7
+331,20,Female,Undergraduate,Spain,5.1,TikTok,Yes,6.7,6,Single,3,7
+332,22,Male,Graduate,Denmark,3.9,Facebook,No,7.9,8,In Relationship,2,4
+333,19,Female,Undergraduate,Ireland,4.8,Instagram,Yes,7.1,7,Single,3,6
+334,21,Male,Graduate,India,5.9,WhatsApp,Yes,6.4,5,In Relationship,4,8
+335,20,Female,Undergraduate,Switzerland,3.8,Instagram,No,8.0,8,Single,2,4
+336,22,Male,Graduate,Turkey,5.4,TikTok,Yes,6.8,6,Single,3,7
+337,19,Female,Undergraduate,USA,6.9,Instagram,Yes,5.4,5,In Relationship,4,9
+338,21,Male,Graduate,Mexico,5.7,WhatsApp,Yes,6.5,6,Single,3,7
+339,20,Female,Undergraduate,France,4.4,Instagram,No,7.6,7,In Relationship,2,5
+340,22,Male,Graduate,Canada,5.2,TikTok,Yes,7.0,6,Single,3,7
+341,19,Female,Undergraduate,Spain,5.0,Instagram,Yes,6.9,6,Single,3,7
+342,21,Male,Graduate,Denmark,3.8,Facebook,No,8.0,8,In Relationship,2,4
+343,20,Female,Undergraduate,Ireland,4.7,TikTok,Yes,7.2,7,Single,3,6
+344,22,Male,Graduate,India,6.0,WhatsApp,Yes,6.3,5,In Relationship,4,8
+345,19,Female,Undergraduate,Switzerland,3.7,Instagram,No,8.1,8,Single,2,4
+346,21,Male,Graduate,Turkey,5.3,Instagram,Yes,6.9,6,Single,3,7
+347,20,Female,Undergraduate,USA,7.0,TikTok,Yes,5.3,5,In Relationship,4,9
+348,22,Male,Graduate,Mexico,5.8,WhatsApp,Yes,6.4,6,Single,3,7
+349,19,Female,Undergraduate,France,4.3,Instagram,No,7.7,7,In Relationship,2,5
+350,21,Male,Graduate,Canada,5.1,Instagram,Yes,7.1,6,Single,3,7
+351,20,Female,Undergraduate,Spain,4.9,TikTok,Yes,7.0,6,Single,3,7
+352,22,Male,Graduate,Denmark,3.7,Facebook,No,8.1,8,In Relationship,2,4
+353,19,Female,Undergraduate,Ireland,4.6,Instagram,Yes,7.3,7,Single,3,6
+354,21,Male,Graduate,India,6.1,WhatsApp,Yes,6.2,5,In Relationship,4,8
+355,20,Female,Undergraduate,Switzerland,3.6,Instagram,No,8.2,8,Single,2,4
+356,22,Male,Graduate,Turkey,5.2,TikTok,Yes,7.0,6,Single,3,7
+357,19,Female,Undergraduate,USA,7.1,Instagram,Yes,5.2,5,In Relationship,4,9
+358,21,Male,Graduate,Mexico,5.9,WhatsApp,Yes,6.3,6,Single,3,7
+359,20,Female,Undergraduate,France,4.2,Instagram,No,7.8,7,In Relationship,2,5
+360,22,Male,Graduate,Canada,5.0,TikTok,Yes,7.2,6,Single,3,7
+361,19,Female,Undergraduate,Spain,4.8,Instagram,Yes,7.1,6,Single,3,7
+362,21,Male,Graduate,Denmark,3.6,Facebook,No,8.2,8,In Relationship,2,4
+363,20,Female,Undergraduate,Ireland,4.5,TikTok,Yes,7.4,7,Single,3,6
+364,22,Male,Graduate,India,6.2,WhatsApp,Yes,6.1,5,In Relationship,4,8
+365,19,Female,Undergraduate,Switzerland,3.5,Instagram,No,8.3,8,Single,2,4
+366,21,Male,Graduate,Turkey,5.1,Instagram,Yes,7.1,6,Single,3,7
+367,20,Female,Undergraduate,USA,7.2,TikTok,Yes,5.1,5,In Relationship,4,9
+368,22,Male,Graduate,Mexico,6.0,WhatsApp,Yes,6.2,6,Single,3,7
+369,19,Female,Undergraduate,France,4.1,Instagram,No,7.9,7,In Relationship,2,5
+370,21,Male,Graduate,Canada,4.9,Instagram,Yes,7.3,6,Single,3,7
+371,20,Female,Undergraduate,Spain,4.7,TikTok,Yes,7.2,6,Single,3,7
+372,22,Male,Graduate,Denmark,3.5,Facebook,No,8.3,8,In Relationship,2,4
+373,19,Female,Undergraduate,Ireland,4.4,Instagram,Yes,7.5,7,Single,3,6
+374,21,Male,Graduate,India,6.3,WhatsApp,Yes,6.0,5,In Relationship,4,8
+375,20,Female,Undergraduate,Switzerland,3.4,Instagram,No,8.4,8,Single,2,4
+376,22,Male,Graduate,Turkey,5.0,TikTok,Yes,7.2,6,Single,3,7
+377,19,Female,Undergraduate,USA,7.3,Instagram,Yes,5.0,5,In Relationship,4,9
+378,21,Male,Graduate,Mexico,6.1,WhatsApp,Yes,6.1,6,Single,3,7
+379,20,Female,Undergraduate,France,4.0,Instagram,No,8.0,7,In Relationship,2,5
+380,22,Male,Graduate,Canada,4.8,TikTok,Yes,7.4,6,Single,3,7
+381,19,Female,Undergraduate,Spain,4.6,Instagram,Yes,7.3,6,Single,3,7
+382,21,Male,Graduate,Denmark,3.4,Facebook,No,8.4,8,In Relationship,2,4
+383,20,Female,Undergraduate,Ireland,4.3,TikTok,Yes,7.6,7,Single,3,6
+384,22,Male,Graduate,India,6.4,WhatsApp,Yes,5.9,5,In Relationship,4,8
+385,19,Female,Undergraduate,Switzerland,3.3,Instagram,No,8.5,8,Single,2,4
+386,21,Male,Graduate,Turkey,4.9,Instagram,Yes,7.3,6,Single,3,7
+387,20,Female,Undergraduate,USA,7.4,TikTok,Yes,4.9,5,In Relationship,4,9
+388,22,Male,Graduate,Mexico,6.2,WhatsApp,Yes,6.0,6,Single,3,7
+389,19,Female,Undergraduate,France,3.9,Instagram,No,8.1,7,In Relationship,2,5
+390,21,Male,Graduate,Canada,4.7,Instagram,Yes,7.5,6,Single,3,7
+391,20,Female,Undergraduate,Spain,4.5,TikTok,Yes,7.4,6,Single,3,7
+392,22,Male,Graduate,Denmark,3.3,Facebook,No,8.5,8,In Relationship,2,4
+393,19,Female,Undergraduate,Ireland,4.2,Instagram,Yes,7.7,7,Single,3,6
+394,21,Male,Graduate,India,6.5,WhatsApp,Yes,5.8,5,In Relationship,4,8
+395,20,Female,Undergraduate,Switzerland,3.2,Instagram,No,8.6,8,Single,2,4
+396,22,Male,Graduate,Turkey,4.8,TikTok,Yes,7.4,6,Single,3,7
+397,19,Female,Undergraduate,USA,7.5,Instagram,Yes,4.8,5,In Relationship,4,9
+398,21,Male,Graduate,Mexico,6.3,WhatsApp,Yes,5.9,6,Single,3,7
+399,20,Female,Undergraduate,France,3.8,Instagram,No,8.2,7,In Relationship,2,5
+400,22,Male,Graduate,Canada,4.6,TikTok,Yes,7.6,6,Single,3,7
+401,19,Female,Undergraduate,Spain,4.4,Instagram,Yes,7.5,6,Single,3,7
+402,21,Male,Graduate,Denmark,3.2,Facebook,No,8.6,8,In Relationship,2,4
+403,20,Female,Undergraduate,Ireland,4.1,TikTok,Yes,7.8,7,Single,3,6
+404,22,Male,Graduate,India,6.6,WhatsApp,Yes,5.7,5,In Relationship,4,8
+405,19,Female,Undergraduate,Switzerland,3.1,Instagram,No,8.7,8,Single,2,4
+406,21,Male,Graduate,Turkey,4.7,Instagram,Yes,7.5,6,Single,3,7
+407,20,Female,Undergraduate,USA,7.6,TikTok,Yes,4.7,5,In Relationship,4,9
+408,22,Male,Graduate,Mexico,6.4,WhatsApp,Yes,5.8,6,Single,3,7
+409,19,Female,Undergraduate,France,3.7,Instagram,No,8.3,7,In Relationship,2,5
+410,21,Male,Graduate,Canada,4.5,Instagram,Yes,7.7,6,Single,3,7
+411,20,Female,Undergraduate,Spain,4.3,TikTok,Yes,7.6,6,Single,3,7
+412,22,Male,Graduate,Denmark,3.1,Facebook,No,8.7,8,In Relationship,2,4
+413,19,Female,Undergraduate,Ireland,4.0,Instagram,Yes,7.9,7,Single,3,6
+414,21,Male,Graduate,India,6.7,WhatsApp,Yes,5.6,5,In Relationship,4,8
+415,20,Female,Undergraduate,Switzerland,3.0,Instagram,No,8.8,8,Single,2,4
+416,22,Male,Graduate,Turkey,4.6,TikTok,Yes,7.6,6,Single,3,7
+417,19,Female,Undergraduate,USA,7.7,Instagram,Yes,4.6,5,In Relationship,4,9
+418,21,Male,Graduate,Mexico,6.5,WhatsApp,Yes,5.7,6,Single,3,7
+419,20,Female,Undergraduate,France,3.6,Instagram,No,8.4,7,In Relationship,2,5
+420,22,Male,Graduate,Canada,4.4,TikTok,Yes,7.8,6,Single,3,7
+421,19,Female,Undergraduate,Spain,4.2,Instagram,Yes,7.7,6,Single,3,7
+422,21,Male,Graduate,Denmark,3.0,Facebook,No,8.8,8,In Relationship,2,4
+423,20,Female,Undergraduate,Ireland,3.9,TikTok,Yes,8.0,7,Single,3,6
+424,22,Male,Graduate,India,6.8,WhatsApp,Yes,5.5,5,In Relationship,4,8
+425,19,Female,Undergraduate,Switzerland,2.9,Instagram,No,8.9,8,Single,2,4
+426,21,Male,Graduate,Turkey,4.5,Instagram,Yes,7.7,6,Single,3,7
+427,20,Female,Undergraduate,USA,7.8,TikTok,Yes,4.5,5,In Relationship,4,9
+428,22,Male,Graduate,Mexico,6.6,WhatsApp,Yes,5.6,6,Single,3,7
+429,19,Female,Undergraduate,France,3.5,Instagram,No,8.5,7,In Relationship,2,5
+430,21,Male,Graduate,Canada,4.3,Instagram,Yes,7.9,6,Single,3,7
+431,20,Female,Undergraduate,Spain,4.1,TikTok,Yes,7.8,6,Single,3,7
+432,22,Male,Graduate,Denmark,2.9,Facebook,No,8.9,8,In Relationship,2,4
+433,19,Female,Undergraduate,Ireland,3.8,Instagram,Yes,8.1,7,Single,3,6
+434,21,Male,Graduate,India,6.9,WhatsApp,Yes,5.4,5,In Relationship,4,8
+435,20,Female,Undergraduate,Switzerland,2.8,Instagram,No,9.0,8,Single,2,4
+436,22,Male,Graduate,Turkey,4.4,TikTok,Yes,7.8,6,Single,3,7
+437,19,Female,Undergraduate,USA,7.9,Instagram,Yes,4.4,5,In Relationship,4,9
+438,21,Male,Graduate,Mexico,6.7,WhatsApp,Yes,5.5,6,Single,3,7
+439,20,Female,Undergraduate,France,3.4,Instagram,No,8.6,7,In Relationship,2,5
+440,22,Male,Graduate,Canada,4.2,TikTok,Yes,8.0,6,Single,3,7
+441,19,Female,Undergraduate,Spain,4.0,Instagram,Yes,7.9,6,Single,3,7
+442,21,Male,Graduate,Denmark,2.8,Facebook,No,9.0,8,In Relationship,2,4
+443,20,Female,Undergraduate,Ireland,3.7,TikTok,Yes,8.2,7,Single,3,6
+444,22,Male,Graduate,India,7.0,WhatsApp,Yes,5.3,5,In Relationship,4,8
+445,19,Female,Undergraduate,Switzerland,2.7,Instagram,No,9.1,8,Single,2,4
+446,21,Male,Graduate,Turkey,4.3,Instagram,Yes,7.9,6,Single,3,7
+447,20,Female,Undergraduate,USA,8.0,TikTok,Yes,4.3,5,In Relationship,4,9
+448,22,Male,Graduate,Mexico,6.8,WhatsApp,Yes,5.4,6,Single,3,7
+449,19,Female,Undergraduate,France,3.3,Instagram,No,8.7,7,In Relationship,2,5
+450,21,Male,Graduate,Canada,4.1,Instagram,Yes,8.1,6,Single,3,7
+451,20,Female,Undergraduate,Spain,3.9,TikTok,Yes,8.0,6,Single,3,7
+452,22,Male,Graduate,Denmark,2.7,Facebook,No,9.1,8,In Relationship,2,4
+453,19,Female,Undergraduate,Ireland,3.6,Instagram,Yes,8.3,7,Single,3,6
+454,21,Male,Graduate,India,7.1,WhatsApp,Yes,5.2,5,In Relationship,4,8
+455,20,Female,Undergraduate,Switzerland,2.6,Instagram,No,9.2,8,Single,2,4
+456,22,Male,Graduate,Turkey,4.2,TikTok,Yes,8.0,6,Single,3,7
+457,19,Female,Undergraduate,USA,8.1,Instagram,Yes,4.2,5,In Relationship,4,9
+458,21,Male,Graduate,Mexico,6.9,WhatsApp,Yes,5.3,6,Single,3,7
+459,20,Female,Undergraduate,France,3.2,Instagram,No,8.8,7,In Relationship,2,5
+460,22,Male,Graduate,Canada,4.0,TikTok,Yes,8.2,6,Single,3,7
+461,19,Female,Undergraduate,Spain,3.8,Instagram,Yes,8.1,6,Single,3,7
+462,21,Male,Graduate,Denmark,2.6,Facebook,No,9.2,8,In Relationship,2,4
+463,20,Female,Undergraduate,Ireland,3.5,TikTok,Yes,8.4,7,Single,3,6
+464,22,Male,Graduate,India,7.2,WhatsApp,Yes,5.1,5,In Relationship,4,8
+465,19,Female,Undergraduate,Switzerland,2.5,Instagram,No,9.3,8,Single,2,4
+466,21,Male,Graduate,Turkey,4.1,Instagram,Yes,8.1,6,Single,3,7
+467,20,Female,Undergraduate,USA,8.2,TikTok,Yes,4.1,5,In Relationship,4,9
+468,22,Male,Graduate,Mexico,7.0,WhatsApp,Yes,5.2,6,Single,3,7
+469,19,Female,Undergraduate,France,3.1,Instagram,No,8.9,7,In Relationship,2,5
+470,21,Male,Graduate,Canada,3.9,Instagram,Yes,8.3,6,Single,3,7
+471,20,Female,Undergraduate,Spain,3.7,TikTok,Yes,8.2,6,Single,3,7
+472,22,Male,Graduate,Denmark,2.5,Facebook,No,9.3,8,In Relationship,2,4
+473,19,Female,Undergraduate,Ireland,3.4,Instagram,Yes,8.5,7,Single,3,6
+474,21,Male,Graduate,India,7.3,WhatsApp,Yes,5.0,5,In Relationship,4,8
+475,20,Female,Undergraduate,Switzerland,2.4,Instagram,No,9.4,8,Single,2,4
+476,22,Male,Graduate,Turkey,4.0,TikTok,Yes,8.2,6,Single,3,7
+477,19,Female,Undergraduate,USA,8.3,Instagram,Yes,4.0,5,In Relationship,4,9
+478,21,Male,Graduate,Mexico,7.1,WhatsApp,Yes,5.1,6,Single,3,7
+479,20,Female,Undergraduate,France,3.0,Instagram,No,9.0,7,In Relationship,2,5
+480,22,Male,Graduate,Canada,3.8,TikTok,Yes,8.4,6,Single,3,7
+481,19,Female,Undergraduate,Spain,3.6,Instagram,Yes,8.3,6,Single,3,7
+482,21,Male,Graduate,Denmark,2.4,Facebook,No,9.4,8,In Relationship,2,4
+483,20,Female,Undergraduate,Ireland,3.3,TikTok,Yes,8.6,7,Single,3,6
+484,22,Male,Graduate,India,7.4,WhatsApp,Yes,4.9,5,In Relationship,4,8
+485,19,Female,Undergraduate,Switzerland,2.3,Instagram,No,9.5,8,Single,2,4
+486,21,Male,Graduate,Turkey,3.9,Instagram,Yes,8.3,6,Single,3,7
+487,20,Female,Undergraduate,USA,8.4,TikTok,Yes,3.9,5,In Relationship,4,9
+488,22,Male,Graduate,Mexico,7.2,WhatsApp,Yes,5.0,6,Single,3,7
+489,19,Female,Undergraduate,France,2.9,Instagram,No,9.1,7,In Relationship,2,5
+490,21,Male,Graduate,Canada,3.7,Instagram,Yes,8.5,6,Single,3,7
+491,20,Female,Undergraduate,Spain,3.5,TikTok,Yes,8.4,6,Single,3,7
+492,22,Male,Graduate,Denmark,2.3,Facebook,No,9.5,8,In Relationship,2,4
+493,19,Female,Undergraduate,Ireland,3.2,Instagram,Yes,8.7,7,Single,3,6
+494,21,Male,Graduate,India,7.5,WhatsApp,Yes,4.8,5,In Relationship,4,8
+495,20,Female,Undergraduate,Switzerland,2.2,Instagram,No,9.6,8,Single,2,4
+496,22,Male,Graduate,Turkey,3.8,TikTok,Yes,8.4,6,Single,3,7
+497,19,Female,Undergraduate,USA,8.5,Instagram,Yes,3.8,5,In Relationship,4,9
+498,21,Male,Graduate,Mexico,7.3,WhatsApp,Yes,4.9,6,Single,3,7
+499,20,Female,Undergraduate,France,2.8,Instagram,No,9.2,7,In Relationship,2,5
+500,22,Male,Graduate,Canada,3.6,TikTok,Yes,8.6,6,Single,3,7
+501,19,Female,Undergraduate,Brazil,6.2,WhatsApp,Yes,6.3,6,Single,3,7
+502,21,Male,Graduate,China,4.5,WeChat,No,7.8,7,In Relationship,2,5
+503,20,Female,Undergraduate,Netherlands,3.8,Instagram,No,8.2,8,Single,2,4
+504,22,Male,Graduate,New Zealand,4.7,Instagram,Yes,7.5,7,In Relationship,3,6
+505,19,Female,Undergraduate,Singapore,5.1,TikTok,Yes,7.0,6,Single,3,7
+506,21,Male,Graduate,Malaysia,5.5,WhatsApp,Yes,6.8,6,Single,3,7
+507,20,Female,Undergraduate,UAE,6.5,Instagram,Yes,6.5,5,In Relationship,4,8
+508,22,Male,Graduate,Poland,4.2,Facebook,No,7.9,7,Single,2,5
+509,19,Female,Undergraduate,India,6.8,WhatsApp,Yes,6.0,5,In Relationship,4,8
+510,21,Male,Graduate,Canada,4.8,Instagram,Yes,7.4,7,Single,3,6
+511,20,Female,Undergraduate,Brazil,6.1,Instagram,Yes,6.4,6,Single,3,7
+512,22,Male,Graduate,China,4.4,WeChat,No,7.9,7,In Relationship,2,5
+513,19,Female,Undergraduate,Netherlands,3.7,TikTok,No,8.3,8,Single,2,4
+514,21,Male,Graduate,New Zealand,4.6,Instagram,Yes,7.6,7,In Relationship,3,6
+515,20,Female,Undergraduate,Singapore,5.2,TikTok,Yes,6.9,6,Single,3,7
+516,22,Male,Graduate,Malaysia,5.6,WhatsApp,Yes,6.7,6,Single,3,7
+517,19,Female,Undergraduate,UAE,6.6,Instagram,Yes,6.4,5,In Relationship,4,8
+518,21,Male,Graduate,Poland,4.1,Facebook,No,8.0,7,Single,2,5
+519,20,Female,Undergraduate,India,6.9,WhatsApp,Yes,5.9,5,In Relationship,4,8
+520,22,Male,Graduate,Canada,4.7,TikTok,Yes,7.5,7,Single,3,6
+521,19,Female,Undergraduate,Brazil,6.0,WhatsApp,Yes,6.5,6,Single,3,7
+522,21,Male,Graduate,China,4.3,WeChat,No,8.0,7,In Relationship,2,5
+523,20,Female,Undergraduate,Netherlands,3.6,Instagram,No,8.4,8,Single,2,4
+524,22,Male,Graduate,New Zealand,4.5,Facebook,Yes,7.7,7,In Relationship,3,6
+525,19,Female,Undergraduate,Singapore,5.3,TikTok,Yes,6.8,6,Single,3,7
+526,21,Male,Graduate,Malaysia,5.7,WhatsApp,Yes,6.6,6,Single,3,7
+527,20,Female,Undergraduate,UAE,6.7,Instagram,Yes,6.3,5,In Relationship,4,8
+528,22,Male,Graduate,Poland,4.0,Facebook,No,8.1,7,Single,2,5
+529,19,Female,Undergraduate,India,7.0,WhatsApp,Yes,5.8,5,In Relationship,4,8
+530,21,Male,Graduate,Canada,4.6,Instagram,Yes,7.6,7,Single,3,6
+531,20,Female,Undergraduate,Brazil,5.9,TikTok,Yes,6.6,6,Single,3,7
+532,22,Male,Graduate,China,4.2,WeChat,No,8.1,7,In Relationship,2,5
+533,19,Female,Undergraduate,Netherlands,3.5,Instagram,No,8.5,8,Single,2,4
+534,21,Male,Graduate,New Zealand,4.4,Facebook,Yes,7.8,7,In Relationship,3,6
+535,20,Female,Undergraduate,Singapore,5.4,TikTok,Yes,6.7,6,Single,3,7
+536,22,Male,Graduate,Malaysia,5.8,WhatsApp,Yes,6.5,6,Single,3,7
+537,19,Female,Undergraduate,UAE,6.8,Instagram,Yes,6.2,5,In Relationship,4,8
+538,21,Male,Graduate,Poland,3.9,Facebook,No,8.2,7,Single,2,5
+539,20,Female,Undergraduate,India,7.1,WhatsApp,Yes,5.7,5,In Relationship,4,8
+540,22,Male,Graduate,Canada,4.5,TikTok,Yes,7.7,7,Single,3,6
+541,19,Female,Undergraduate,Brazil,5.8,WhatsApp,Yes,6.7,6,Single,3,7
+542,21,Male,Graduate,China,4.1,WeChat,No,8.2,7,In Relationship,2,5
+543,20,Female,Undergraduate,Netherlands,3.4,Instagram,No,8.6,8,Single,2,4
+544,22,Male,Graduate,New Zealand,4.3,Instagram,Yes,7.9,7,In Relationship,3,6
+545,19,Female,Undergraduate,Singapore,5.5,TikTok,Yes,6.6,6,Single,3,7
+546,21,Male,Graduate,Malaysia,5.9,WhatsApp,Yes,6.4,6,Single,3,7
+547,20,Female,Undergraduate,UAE,6.9,Instagram,Yes,6.1,5,In Relationship,4,8
+548,22,Male,Graduate,Poland,3.8,Facebook,No,8.3,7,Single,2,5
+549,19,Female,Undergraduate,India,7.2,WhatsApp,Yes,5.6,5,In Relationship,4,8
+550,21,Male,Graduate,Canada,4.4,Instagram,Yes,7.8,7,Single,3,6
+551,20,Female,Undergraduate,Brazil,5.7,TikTok,Yes,6.8,6,Single,3,7
+552,22,Male,Graduate,China,4.0,WeChat,No,8.3,7,In Relationship,2,5
+553,19,Female,Undergraduate,Netherlands,3.3,Instagram,No,8.7,8,Single,2,4
+554,21,Male,Graduate,New Zealand,4.2,Facebook,Yes,8.0,7,In Relationship,3,6
+555,20,Female,Undergraduate,Singapore,5.6,TikTok,Yes,6.5,6,Single,3,7
+556,22,Male,Graduate,Malaysia,6.0,WhatsApp,Yes,6.3,6,Single,3,7
+557,19,Female,Undergraduate,UAE,7.0,Instagram,Yes,6.0,5,In Relationship,4,8
+558,21,Male,Graduate,Poland,3.7,Facebook,No,8.4,7,Single,2,5
+559,20,Female,Undergraduate,India,7.3,WhatsApp,Yes,5.5,5,In Relationship,4,8
+560,22,Male,Graduate,Canada,4.3,TikTok,Yes,7.9,7,Single,3,6
+561,19,Female,Undergraduate,Brazil,5.6,WhatsApp,Yes,6.9,6,Single,3,7
+562,21,Male,Graduate,China,3.9,WeChat,No,8.4,7,In Relationship,2,5
+563,20,Female,Undergraduate,Netherlands,3.2,Instagram,No,8.8,8,Single,2,4
+564,22,Male,Graduate,New Zealand,4.1,Instagram,Yes,8.1,7,In Relationship,3,6
+565,19,Female,Undergraduate,Singapore,5.7,TikTok,Yes,6.4,6,Single,3,7
+566,21,Male,Graduate,Malaysia,6.1,WhatsApp,Yes,6.2,6,Single,3,7
+567,20,Female,Undergraduate,UAE,7.1,Instagram,Yes,5.9,5,In Relationship,4,8
+568,22,Male,Graduate,Poland,3.6,Facebook,No,8.5,7,Single,2,5
+569,19,Female,Undergraduate,India,7.4,WhatsApp,Yes,5.4,5,In Relationship,4,8
+570,21,Male,Graduate,Canada,4.2,Instagram,Yes,8.0,7,Single,3,6
+571,20,Female,Undergraduate,Spain,6.1,Instagram,Yes,7.2,5,Single,4,7
+572,23,Male,Graduate,Denmark,3.8,Twitter,No,7.8,8,In Relationship,2,4
+573,19,Female,Undergraduate,Ireland,5.5,TikTok,Yes,6.8,6,Single,4,8
+574,22,Male,Graduate,India,7.2,Facebook,Yes,5.9,4,Single,5,9
+575,21,Female,Undergraduate,Switzerland,4.2,Instagram,No,7.5,7,In Relationship,2,5
+576,24,Male,Graduate,Turkey,6.8,TikTok,Yes,6.2,5,Single,4,8
+577,20,Female,Undergraduate,USA,5.9,Instagram,Yes,6.7,6,In Relationship,3,7
+578,22,Male,Graduate,Mexico,6.5,Facebook,Yes,6.1,5,Single,4,8
+579,19,Female,Undergraduate,France,4.7,Twitter,No,7.4,7,Single,2,5
+580,23,Male,Graduate,Canada,5.2,Instagram,Yes,7.0,6,In Relationship,3,6
+581,21,Female,Undergraduate,UK,6.3,TikTok,Yes,6.4,5,Single,4,8
+582,24,Male,Graduate,Italy,4.9,Facebook,No,7.3,7,In Relationship,2,5
+583,20,Female,Undergraduate,Russia,6.7,Instagram,Yes,6.0,5,Single,4,8
+584,22,Male,Graduate,China,5.8,WeChat,Yes,6.5,6,In Relationship,3,7
+585,19,Female,Undergraduate,Japan,4.5,Twitter,No,7.6,8,Single,2,4
+586,23,Male,Graduate,Poland,6.4,Facebook,Yes,6.3,5,Single,4,8
+587,21,Female,Undergraduate,Finland,4.1,Instagram,No,7.7,7,In Relationship,2,5
+588,24,Male,Graduate,Spain,6.6,TikTok,Yes,6.2,5,Single,4,8
+589,20,Female,Undergraduate,Denmark,4.4,Instagram,No,7.4,7,In Relationship,2,5
+590,22,Male,Graduate,Ireland,5.7,Twitter,Yes,6.8,6,Single,3,7
+591,19,Female,Undergraduate,India,7.0,Instagram,Yes,5.8,4,Single,5,9
+592,23,Male,Graduate,Switzerland,4.3,Facebook,No,7.5,7,In Relationship,2,5
+593,21,Female,Undergraduate,Turkey,6.9,TikTok,Yes,6.1,5,Single,4,8
+594,24,Male,Graduate,USA,5.6,Instagram,Yes,6.9,6,In Relationship,3,7
+595,20,Female,Undergraduate,Mexico,6.2,Facebook,Yes,6.3,5,Single,4,8
+596,21,Male,Undergraduate,France,5.8,Instagram,Yes,6.7,6,Single,3,7
+597,23,Female,Graduate,Canada,4.9,TikTok,No,7.3,7,In Relationship,2,5
+598,20,Male,Undergraduate,UK,6.4,Facebook,Yes,6.2,5,Single,4,8
+599,22,Female,Graduate,Italy,5.1,Twitter,No,7.1,7,In Relationship,2,5
+600,19,Male,Undergraduate,Russia,6.7,Instagram,Yes,6.0,4,Single,4,8
+601,24,Female,Graduate,China,5.5,WeChat,Yes,6.8,6,In Relationship,3,7
+602,21,Male,Undergraduate,Japan,4.3,Twitter,No,7.6,8,Single,2,4
+603,23,Female,Graduate,Poland,6.2,Instagram,Yes,6.4,5,Single,4,8
+604,20,Male,Undergraduate,Finland,4.5,Facebook,No,7.4,7,In Relationship,2,5
+605,22,Female,Graduate,Spain,6.3,TikTok,Yes,6.3,5,Single,4,8
+606,19,Male,Undergraduate,Denmark,4.7,Instagram,No,7.2,7,In Relationship,2,5
+607,24,Female,Graduate,Ireland,5.9,Twitter,Yes,6.6,6,Single,3,7
+608,21,Male,Undergraduate,India,7.1,Facebook,Yes,5.7,4,Single,5,9
+609,23,Female,Graduate,Switzerland,4.4,Instagram,No,7.4,7,In Relationship,2,5
+610,20,Male,Undergraduate,Turkey,6.6,TikTok,Yes,6.2,5,Single,4,8
+611,22,Female,Graduate,USA,5.4,Instagram,Yes,6.9,6,In Relationship,3,7
+612,19,Male,Undergraduate,Mexico,6.5,Facebook,Yes,6.1,5,Single,4,8
+613,24,Female,Graduate,France,4.8,Twitter,No,7.3,7,In Relationship,2,5
+614,21,Male,Undergraduate,Canada,5.7,Instagram,Yes,6.7,6,Single,3,7
+615,23,Female,Graduate,UK,6.1,TikTok,Yes,6.4,5,Single,4,8
+616,20,Male,Undergraduate,Italy,4.6,Facebook,No,7.2,7,In Relationship,2,5
+617,22,Female,Graduate,Russia,6.8,Instagram,Yes,5.9,4,Single,5,9
+618,19,Male,Undergraduate,China,5.6,WeChat,Yes,6.8,6,In Relationship,3,7
+619,24,Female,Graduate,Japan,4.2,Twitter,No,7.5,8,Single,2,4
+620,21,Male,Undergraduate,Poland,6.3,TikTok,Yes,6.3,5,Single,4,8
+621,23,Female,Graduate,Finland,4.4,Instagram,No,7.4,7,In Relationship,2,5
+622,20,Male,Undergraduate,Spain,6.5,Facebook,Yes,6.2,5,Single,4,8
+623,22,Female,Graduate,Denmark,4.6,Twitter,No,7.3,7,In Relationship,2,5
+624,19,Male,Undergraduate,Ireland,5.8,Instagram,Yes,6.6,6,Single,3,7
+625,24,Female,Graduate,India,7.0,TikTok,Yes,5.8,4,Single,5,9
+626,21,Male,Undergraduate,Switzerland,4.5,Facebook,No,7.3,7,In Relationship,2,5
+627,23,Female,Graduate,Turkey,6.7,Instagram,Yes,6.1,5,Single,4,8
+628,20,Male,Undergraduate,USA,5.5,Twitter,Yes,6.8,6,In Relationship,3,7
+629,22,Female,Graduate,Mexico,6.4,Facebook,Yes,6.2,5,Single,4,8
+630,19,Male,Undergraduate,France,4.7,Instagram,No,7.2,7,In Relationship,2,5
+631,24,Female,Graduate,Canada,5.6,TikTok,Yes,6.7,6,Single,3,7
+632,21,Male,Undergraduate,UK,6.2,Facebook,Yes,6.3,5,Single,4,8
+633,23,Female,Graduate,Italy,4.8,Twitter,No,7.1,7,In Relationship,2,5
+634,20,Male,Undergraduate,Russia,6.9,Instagram,Yes,5.9,4,Single,5,9
+635,22,Female,Graduate,China,5.7,WeChat,Yes,6.7,6,In Relationship,3,7
+636,19,Male,Undergraduate,Japan,4.4,Twitter,No,7.4,8,Single,2,4
+637,24,Female,Graduate,Poland,6.1,TikTok,Yes,6.4,5,Single,4,8
+638,21,Male,Undergraduate,Finland,4.3,Instagram,No,7.5,7,In Relationship,2,5
+639,23,Female,Graduate,Spain,6.4,Facebook,Yes,6.2,5,Single,4,8
+640,20,Male,Undergraduate,Denmark,4.5,Twitter,No,7.3,7,In Relationship,2,5
+641,22,Female,Graduate,Ireland,5.9,Instagram,Yes,6.5,6,Single,3,7
+642,19,Male,Undergraduate,India,7.2,TikTok,Yes,5.7,4,Single,5,9
+643,24,Female,Graduate,Switzerland,4.6,Facebook,No,7.2,7,In Relationship,2,5
+644,21,Male,Undergraduate,Turkey,6.8,Instagram,Yes,6.0,5,Single,4,8
+645,23,Female,Graduate,USA,5.3,Twitter,Yes,6.8,6,In Relationship,3,7
+646,22,Male,Graduate,Mexico,6.3,Facebook,Yes,6.2,5,Single,4,8
+647,20,Female,Undergraduate,France,4.8,Instagram,No,7.1,7,In Relationship,2,5
+648,23,Male,Graduate,Canada,5.7,TikTok,Yes,6.6,6,Single,3,7
+649,21,Female,Undergraduate,UK,6.2,Twitter,Yes,6.3,5,Single,4,8
+650,24,Male,Graduate,Italy,4.7,Facebook,No,7.2,7,In Relationship,2,5
+651,19,Female,Undergraduate,Russia,6.8,Instagram,Yes,5.9,4,Single,5,9
+652,22,Male,Graduate,China,5.6,WeChat,Yes,6.7,6,In Relationship,3,7
+653,20,Female,Undergraduate,Japan,4.3,Twitter,No,7.5,8,Single,2,4
+654,23,Male,Graduate,Poland,6.2,TikTok,Yes,6.3,5,Single,4,8
+655,21,Female,Undergraduate,Finland,4.4,Instagram,No,7.4,7,In Relationship,2,5
+656,24,Male,Graduate,Spain,6.5,Facebook,Yes,6.1,5,Single,4,8
+657,19,Female,Undergraduate,Denmark,4.6,Twitter,No,7.3,7,In Relationship,2,5
+658,22,Male,Graduate,Ireland,5.8,Instagram,Yes,6.6,6,Single,3,7
+659,20,Female,Undergraduate,India,7.1,TikTok,Yes,5.8,4,Single,5,9
+660,23,Male,Graduate,Switzerland,4.5,Facebook,No,7.3,7,In Relationship,2,5
+661,21,Female,Undergraduate,Turkey,6.7,Instagram,Yes,6.0,5,Single,4,8
+662,24,Male,Graduate,USA,5.4,Twitter,Yes,6.8,6,In Relationship,3,7
+663,19,Female,Undergraduate,Mexico,6.4,TikTok,Yes,6.2,5,Single,4,8
+664,22,Male,Graduate,France,4.7,Facebook,No,7.2,7,In Relationship,2,5
+665,20,Female,Undergraduate,Canada,5.6,Instagram,Yes,6.7,6,Single,3,7
+666,23,Male,Graduate,UK,6.3,Twitter,Yes,6.2,5,Single,4,8
+667,21,Female,Undergraduate,Italy,4.8,TikTok,No,7.1,7,In Relationship,2,5
+668,24,Male,Graduate,Russia,6.9,Instagram,Yes,5.9,4,Single,5,9
+669,19,Female,Undergraduate,China,5.7,WeChat,Yes,6.7,6,In Relationship,3,7
+670,22,Male,Graduate,Japan,4.4,Twitter,No,7.4,8,Single,2,4
+671,20,Female,Undergraduate,Poland,6.1,Facebook,Yes,6.4,5,Single,4,8
+672,23,Male,Graduate,Finland,4.3,Instagram,No,7.5,7,In Relationship,2,5
+673,21,Female,Undergraduate,Spain,6.4,TikTok,Yes,6.2,5,Single,4,8
+674,24,Male,Graduate,Denmark,4.5,Twitter,No,7.3,7,In Relationship,2,5
+675,19,Female,Undergraduate,Ireland,5.9,Instagram,Yes,6.5,6,Single,3,7
+676,22,Male,Graduate,India,7.2,Facebook,Yes,5.7,4,Single,5,9
+677,20,Female,Undergraduate,Switzerland,4.6,TikTok,No,7.2,7,In Relationship,2,5
+678,23,Male,Graduate,Turkey,6.8,Instagram,Yes,6.0,5,Single,4,8
+679,21,Female,Undergraduate,USA,5.3,Twitter,Yes,6.8,6,In Relationship,3,7
+680,24,Male,Graduate,Mexico,6.2,Facebook,Yes,6.3,5,Single,4,8
+681,19,Female,Undergraduate,France,4.7,Instagram,No,7.2,7,In Relationship,2,5
+682,22,Male,Graduate,Canada,5.8,TikTok,Yes,6.6,6,Single,3,7
+683,20,Female,Undergraduate,UK,6.1,Twitter,Yes,6.4,5,Single,4,8
+684,23,Male,Graduate,Italy,4.8,Facebook,No,7.1,7,In Relationship,2,5
+685,21,Female,Undergraduate,Russia,6.7,Instagram,Yes,6.0,4,Single,5,9
+686,24,Male,Graduate,China,5.5,WeChat,Yes,6.8,6,In Relationship,3,7
+687,19,Female,Undergraduate,Japan,4.2,Twitter,No,7.5,8,Single,2,4
+688,22,Male,Graduate,Poland,6.3,TikTok,Yes,6.2,5,Single,4,8
+689,20,Female,Undergraduate,Finland,4.4,Instagram,No,7.4,7,In Relationship,2,5
+690,23,Male,Graduate,Spain,6.5,Facebook,Yes,6.1,5,Single,4,8
+691,21,Female,Undergraduate,Denmark,4.6,Twitter,No,7.3,7,In Relationship,2,5
+692,24,Male,Graduate,Ireland,5.9,Instagram,Yes,6.5,6,Single,3,7
+693,19,Female,Undergraduate,India,7.0,TikTok,Yes,5.8,4,Single,5,9
+694,22,Male,Graduate,Switzerland,4.5,Facebook,No,7.3,7,In Relationship,2,5
+695,20,Female,Undergraduate,Turkey,6.6,Instagram,Yes,6.1,5,Single,4,8
+696,23,Male,Graduate,USA,5.5,Twitter,Yes,6.7,6,In Relationship,3,7
+697,21,Female,Undergraduate,Mexico,6.3,TikTok,Yes,6.2,5,Single,4,8
+698,24,Male,Graduate,France,4.8,Facebook,No,7.1,7,In Relationship,2,5
+699,19,Female,Undergraduate,Canada,5.7,Instagram,Yes,6.6,6,Single,3,7
+700,22,Male,Graduate,UK,6.2,Twitter,Yes,6.3,5,Single,4,8
+701,20,Female,Undergraduate,Italy,4.7,TikTok,No,7.2,7,In Relationship,2,5
+702,23,Male,Graduate,Russia,6.8,Instagram,Yes,5.9,4,Single,5,9
+703,21,Female,Undergraduate,China,5.6,WeChat,Yes,6.7,6,In Relationship,3,7
+704,24,Male,Graduate,Japan,4.3,Twitter,No,7.5,8,Single,2,4
+705,19,Female,Undergraduate,Poland,6.2,Facebook,Yes,6.3,5,Single,4,8

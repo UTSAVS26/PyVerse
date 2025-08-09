@@ -86,12 +86,72 @@ class BST:
     def _get_height(self, node: Optional[BSTNode]) -> int:
         return node.height if node else 0
 
+    def find_min(self) -> BSTNode: 
+        """Get the minimum node in the tree"""
+        if self.root is None:
+            raise EmptyTreeError("Cannot find minimum in empty tree")
+        return self._find_min(self.root)
+    
     def _find_min(self, node: BSTNode) -> BSTNode:
         current = node
         while current.leftPtr:
             current = current.leftPtr
         return current
+    
+    def find_max(self) -> BSTNode:
+        """Get the maximum node in the tree"""
+        if self.root is None:
+            raise EmptyTreeError("Cannot find maximum in empty tree")
+        return self._find_max(self.root)
 
+    def _find_max(self, node: BSTNode) -> BSTNode:
+        current = node
+        while current.rightPtr:
+            current = current.rightPtr
+        return current
+    
+    def clone_bst(self) -> 'BST':
+        """Clone the Binary Search Tree"""
+        cloned_bst = BST()
+        cloned_bst.root = self._clone_bst_helper(self.root)
+        cloned_bst.num_nodes = self.num_nodes
+        return cloned_bst
+    
+    def _clone_bst_helper(self, node: BSTNode) -> BSTNode:
+        if not node:
+            return None
+        
+        cloned_root = BSTNode(node.value)
+        cloned_root.count = node.count
+        cloned_root.height = node.height
+        cloned_root.leftPtr = cloned_root.rightPtr = None
+        
+        cloned_root.leftPtr = self._clone_bst_helper(node.leftPtr)
+        cloned_root.rightPtr = self._clone_bst_helper(node.rightPtr)
+        
+        return cloned_root
+
+    def mirror_bst(self) -> 'BST':
+        """Mirror the Binary Search Tree"""
+        mirrored_bst = BST()
+        mirrored_bst.root = self._mirror_bst_helper(self.root)
+        mirrored_bst.num_nodes = self.num_nodes
+        return mirrored_bst
+    
+    def _mirror_bst_helper(self, node: BSTNode) -> BSTNode:
+        if not node:
+            return None
+        
+        mirrored_root = BSTNode(node.value)
+        mirrored_root.count = node.count
+        mirrored_root.height = node.height
+        mirrored_root.leftPtr = mirrored_root.rightPtr = None
+        
+        mirrored_root.leftPtr = self._mirror_bst_helper(node.rightPtr)
+        mirrored_root.rightPtr = self._mirror_bst_helper(node.leftPtr)
+        
+        return mirrored_root
+    
     def get_balance(self, node: Optional[BSTNode]) -> int:
         """Get balance factor of a node"""
         if node is None:
@@ -141,3 +201,46 @@ class BST:
             self._postorder_helper(root.leftPtr, result)
             self._postorder_helper(root.rightPtr, result)
             result.extend([root.value] * root.count)
+            
+    def print_tree(self) -> None:
+        "Pretty print Binary Search Tree"
+        if self.root is None:
+            print("Tree is empty!")
+            return
+        self._print_tree_helper(self.root)
+    def _print_tree_helper(self, node: BSTNode) -> None:
+        nlevels = self._get_height(self.root)
+        width =  pow(2,nlevels+1)
+
+        q=[(node,0,width,'c')]
+        levels=[]
+
+        while(q):
+            node,level,x,align= q.pop(0)
+            if node:            
+                if len(levels)<=level:
+                    levels.append([])
+            
+                levels[level].append([node,level,x,align])
+                seg= width//(pow(2,level+1))
+                q.append((node.leftPtr,level+1,x-seg,'l'))
+                q.append((node.rightPtr,level+1,x+seg,'r'))
+
+        for i, level_nodes in enumerate(levels):
+            pre=0
+            preline=0
+            linestr=''
+            pstr=''
+            seg= width//(pow(2,i+1))
+            for n in level_nodes:
+                valstr= str(n[0].value)
+                if n[3]=='r':
+                    linestr+=' '*(n[2]-preline-1-seg-seg//2)+ '¯'*(seg +seg//2)+'\\'
+                    preline = n[2] 
+                if n[3]=='l':
+                    linestr+=' '*(n[2]-preline-1)+'/' + '¯'*(seg+seg//2)  
+                    preline = n[2] + seg + seg//2
+                pstr+=' '*(n[2]-pre-len(valstr))+valstr
+                pre = n[2]
+            print(linestr)
+            print(pstr)   
