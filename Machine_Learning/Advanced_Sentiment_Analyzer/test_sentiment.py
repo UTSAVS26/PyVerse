@@ -5,7 +5,9 @@ Test script for the sentiment analysis application
 
 import unittest
 import json
+import requests
 from sentiment_analysis import sentiment_analyzer
+from unittest.mock import patch, Mock
 
 class TestSentimentAnalysis(unittest.TestCase):
     """Test cases for sentiment analyzer"""
@@ -46,9 +48,75 @@ class TestSentimentAnalysis(unittest.TestCase):
                     
                     self.assertIsNotNone(label, f"No label found for: {text}")
                     self.assertIsNotNone(score, f"No score found for: {text}")
+                    self.assertIsInstance(score, (int, float), f"Score must be numeric for: {text}")
+                    self.assertGreaterEqual(score, 0.0, f"Score must be >= 0 for: {text}")
+                    self.assertLessEqual(score, 1.0, f"Score must be <= 1 for: {text}")
                     self.assertEqual(label, expected, f"Expected {expected}, got {label} for: {text}")
                 else:
                     self.fail(f"documentSentiment not found in result for: {text}")
+
+    @patch("sentiment_analysis.requests.post")
+    def test_fallback_on_non_200(self, mock_post):
+        """Test fallback when API returns non-200 status"""
+        mock_post.return_value = Mock(status_code=500, text='{"error":"upstream"}')
+        result = sentiment_analyzer("Any text")
+        parsed = json.loads(result)
+        self.assertIn("documentSentiment", parsed)
+        self.assertIn(parsed["documentSentiment"]["label"], {"POSITIVE", "NEGATIVE", "NEUTRAL"})
+
+    @patch("sentiment_analysis.requests.post", side_effect=requests.exceptions.RequestException("timeout"))
+    def test_fallback_on_exception(self, _):
+        """Test fallback when API request raises exception"""
+        result = sentiment_analyzer("Any text")
+        parsed = json.loads(result)
+        self.assertIn("documentSentiment", parsed)
+        self.assertIn(parsed["documentSentiment"]["label"], {"POSITIVE", "NEGATIVE", "NEUTRAL"})
+
+    @patch("sentiment_analysis.requests.post")
+    def test_fallback_on_malformed_json(self, mock_post):
+        """Test fallback when API returns malformed JSON"""
+        mock_post.return_value = Mock(status_code=200, json=Mock(side_effect=ValueError("Invalid JSON")))
+        result = sentiment_analyzer("Any text")
+        parsed = json.loads(result)
+        self.assertIn("documentSentiment", parsed)
+        self.assertIn(parsed["documentSentiment"]["label"], {"POSITIVE", "NEGATIVE", "NEUTRAL"})
+
+    @patch("sentiment_analysis.requests.post")
+    def test_fallback_on_missing_keys(self, mock_post):
+        """Test fallback when API response is missing expected keys"""
+        mock_post.return_value = Mock(status_code=200, json=Mock(return_value={"unexpected": "format"}))
+        result = sentiment_analyzer("Any text")
+        parsed = json.loads(result)
+        self.assertIn("documentSentiment", parsed)
+        self.assertIn(parsed["documentSentiment"]["label"], {"POSITIVE", "NEGATIVE", "NEUTRAL"})
+
+    def test_empty_input_validation(self):
+        """Test input validation for empty and whitespace-only inputs"""
+        test_inputs = ["", "   ", "\t", "\n", None]
+        
+        for test_input in test_inputs:
+            with self.subTest(input=test_input):
+                result = sentiment_analyzer(test_input)
+                parsed = json.loads(result)
+                
+                self.assertIn("documentSentiment", parsed)
+                self.assertEqual(parsed["documentSentiment"]["label"], "NEUTRAL")
+                self.assertEqual(parsed["documentSentiment"]["score"], 0.5)
+
+    def test_non_string_inputs(self):
+        """Test handling of non-string inputs"""
+        test_inputs = [123, [], {}, True, False]
+        
+        for test_input in test_inputs:
+            with self.subTest(input=test_input):
+                try:
+                    result = sentiment_analyzer(test_input)
+                    parsed = json.loads(result)
+                    # Should either handle gracefully or raise appropriate error
+                    self.assertIn("documentSentiment", parsed)
+                except (AttributeError, TypeError):
+                    # Acceptable to raise error for non-string inputs
+                    pass
 
 if __name__ == "__main__":
     unittest.main()

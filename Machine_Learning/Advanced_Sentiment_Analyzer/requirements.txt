@@ -2,3 +2,7 @@ Flask==2.3.3
 ibm-watson==7.0.1
 requests==2.31.0
 python-dotenv==1.0.0
+gunicorn==21.2.0
+scikit-learn==1.3.0
+pandas==2.0.3
+nltk==3.8.1

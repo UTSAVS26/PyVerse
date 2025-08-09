@@ -28,8 +28,8 @@ The app features:
 
 1. **Clone the repository:**
 ```bash
-git clone <your-repo-url>
-cd sentiment-analysis
+git clone https://github.com/UTSAVS26/PyVerse.git
+cd PyVerse/Machine_Learning/Advanced_Sentiment_Analyzer
 ```
 
 2. **Create a virtual environment (recommended):**
