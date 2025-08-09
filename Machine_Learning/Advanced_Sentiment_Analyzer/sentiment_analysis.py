@@ -44,7 +44,7 @@ def simple_sentiment_fallback(text):
 
 def sentiment_analyzer(text_to_analyse):  # Define a function named sentiment_analyzer that takes a string input (text_to_analyse)
     # Input validation
-    if not text_to_analyse or not text_to_analyse.strip():
+    if not isinstance(text_to_analyse, str) or not text_to_analyse.strip():
         return json.dumps({
             "documentSentiment": {
                 "label": "NEUTRAL",
@@ -66,12 +66,27 @@ def sentiment_analyzer(text_to_analyse):  # Define a function named sentiment_an
                 data = response.json()
             except ValueError:
                 data = None
-            if isinstance(data, dict) and isinstance(data.get("documentSentiment"), dict) and "label" in data["documentSentiment"]:
-                # Standardize to JSON string return
-                return json.dumps(data)
-            # Malformed success body — use fallback
-            fallback_result = simple_sentiment_fallback(text_to_analyse)
-            return json.dumps(fallback_result)
+            if isinstance(data, dict) and isinstance(data.get("documentSentiment"), dict):
+                doc = data["documentSentiment"]
+                label = doc.get("label")
+                score = doc.get("score")
+                # Normalize label variants from providers
+                norm_map = {
+                    "positive": "POSITIVE",
+                    "sent_positive": "POSITIVE",
+                    "pos": "POSITIVE",
+                    "negative": "NEGATIVE",
+                    "sent_negative": "NEGATIVE",
+                    "neg": "NEGATIVE",
+                    "neutral": "NEUTRAL",
+                    "sent_neutral": "NEUTRAL",
+                }
+                normalized = norm_map.get(str(label).strip().lower()) if isinstance(label, str) else None
+                if normalized and isinstance(score, (int, float)) and 0.0 <= float(score) <= 1.0:
+                    doc["label"] = normalized
+                    return json.dumps(data)
+            # Malformed or unexpected success body — use fallback
+            return json.dumps(simple_sentiment_fallback(text_to_analyse))
         else:
             # Fall back on non-200 status codes
             fallback_result = simple_sentiment_fallback(text_to_analyse)

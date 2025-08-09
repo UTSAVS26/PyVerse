@@ -23,8 +23,13 @@ class TestSentimentAnalysis(unittest.TestCase):
             ("This is just normal.", "NEUTRAL")
         ]
     
-    def test_sentiment_analyzer_response_format(self):
+    @patch("sentiment_analysis.requests.post")
+    def test_sentiment_analyzer_response_format(self, mock_post):
         """Test that sentiment analyzer returns valid JSON"""
+        mock_post.return_value = Mock(
+            status_code=200,
+            json=Mock(return_value={"documentSentiment": {"label": "neutral", "score": 0.5}})
+        )
         for text, _ in self.test_cases:
             with self.subTest(text=text):
                 result = sentiment_analyzer(text)
@@ -34,8 +39,19 @@ class TestSentimentAnalysis(unittest.TestCase):
                 except json.JSONDecodeError:
                     self.fail(f"Invalid JSON returned for text: {text}")
     
-    def test_sentiment_analysis_results(self):
+    @patch("sentiment_analysis.requests.post")
+    def test_sentiment_analysis_results(self, mock_post):
         """Test sentiment analysis accuracy"""
+        def _mock_json(text):
+            t = text.lower()
+            if any(w in t for w in ["love", "amazing", "fantastic", "great"]):
+                return {"documentSentiment": {"label": "positive", "score": 0.9}}
+            if any(w in t for w in ["terrible", "awful", "hate"]):
+                return {"documentSentiment": {"label": "negative", "score": 0.8}}
+            return {"documentSentiment": {"label": "neutral", "score": 0.5}}
+        def side_effect(url=None, json=None, headers=None, timeout=None):
+            return Mock(status_code=200, json=Mock(return_value=_mock_json(json["raw_document"]["text"])))
+        mock_post.side_effect = side_effect
         for text, expected in self.test_cases:
             with self.subTest(text=text, expected=expected):
                 result = sentiment_analyzer(text)
@@ -109,14 +125,11 @@ class TestSentimentAnalysis(unittest.TestCase):
         
         for test_input in test_inputs:
             with self.subTest(input=test_input):
-                try:
-                    result = sentiment_analyzer(test_input)
-                    parsed = json.loads(result)
-                    # Should either handle gracefully or raise appropriate error
-                    self.assertIn("documentSentiment", parsed)
-                except (AttributeError, TypeError):
-                    # Acceptable to raise error for non-string inputs
-                    pass
+                result = sentiment_analyzer(test_input)
+                parsed = json.loads(result)
+                self.assertIn("documentSentiment", parsed)
+                self.assertEqual(parsed["documentSentiment"]["label"], "NEUTRAL")
+                self.assertEqual(parsed["documentSentiment"]["score"], 0.5)
 
 if __name__ == "__main__":
     unittest.main()
