@@ -44,9 +44,14 @@ def sentiment_analyzer(text_to_analyse):  # Define a function named sentiment_an
     header = {"grpc-metadata-mm-model-id": "sentiment_aggregated-bert-workflow_lang_multi_stock"}  # Set the headers required for the API request
     
     try:
-        response = requests.post(url, json = myobj, headers=header, timeout=10)  # Send a POST request to the API with the text and headers
-        return response.text  # Return the response text from the API
+        response = requests.post(url, json = myobj, headers=header, timeout=5)  # Send a POST request to the API with the text and headers
+        if response.status_code == 200:
+            return response.text
+        else:
+            # Fall back on non-200 status codes
+            fallback_result = simple_sentiment_fallback(text_to_analyse)
+            return json.dumps(fallback_result)
     except (requests.exceptions.RequestException, requests.exceptions.Timeout):
         # If the service is unavailable, use fallback sentiment analysis
         fallback_result = simple_sentiment_fallback(text_to_analyse)
-        return json.dumps(fallback_result)  # Return as JSON string
+        return json.dumps(fallback_result)

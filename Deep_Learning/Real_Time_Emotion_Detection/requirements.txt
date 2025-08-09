@@ -1,3 +1,5 @@
-Flask==2.3.3
-requests==2.31.0
-gunicorn==21.2.0
+Flask==3.1.1
+requests==2.32.4
+gunicorn==23.0.0
+ibm-watson==10.0.0
+ibm-cloud-sdk-core==3.24.2

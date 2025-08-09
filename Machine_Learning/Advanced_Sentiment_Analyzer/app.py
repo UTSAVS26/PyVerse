@@ -12,6 +12,13 @@ def index():
 def analyze():
     text = request.form.get('textToAnalyze')
     
+    if not text or not text.strip():
+        return {
+            "error": "Text input is required",
+            "label": "ERROR",
+            "score": 0.0
+        }
+    
     try:
         # Call the sentiment analyzer function
         result = sentiment_analyzer(text)

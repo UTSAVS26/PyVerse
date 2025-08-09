@@ -284,6 +284,34 @@ body {
     color: #333;
 }
 
+/* Sample text styles */
+.sample-container {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.sample-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.sample-btn {
+    background: #f8f9fa;
+    border: 1px solid #e1e5e9;
+    border-radius: 6px;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.sample-btn:hover {
+    background: #e9ecef;
+    border-color: #667eea;
+}
+
 .error-message {
     background: #ffe6e6;
     color: #d32f2f;

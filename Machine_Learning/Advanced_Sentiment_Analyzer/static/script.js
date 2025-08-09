@@ -182,46 +182,24 @@ function addSampleTexts() {
     const buttonSection = document.querySelector('.button-section');
     const sampleContainer = document.createElement('div');
     sampleContainer.className = 'sample-container';
-    sampleContainer.innerHTML = `
-        <p style="margin-bottom: 1rem; color: #666; font-size: 0.9rem;">Try these sample texts:</p>
-        <div class="sample-buttons">
-            ${samples.map((sample, index) => 
-                `<button class="sample-btn" onclick="setSampleText('${sample.replace(/'/g, "\\'")}')">${sample.substring(0, 30)}...</button>`
-            ).join('')}
-        </div>
-    `;
+    const paragraph = document.createElement('p');
+    paragraph.style.cssText = 'margin-bottom: 1rem; color: #666; font-size: 0.9rem;';
+    paragraph.textContent = 'Try these sample texts:';
     
-    // Add sample styles
-    const sampleStyle = document.createElement('style');
-    sampleStyle.textContent = `
-        .sample-container {
-            margin-top: 1rem;
-            text-align: center;
-        }
-        
-        .sample-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            justify-content: center;
-        }
-        
-        .sample-btn {
-            background: #f8f9fa;
-            border: 1px solid #e1e5e9;
-            border-radius: 6px;
-            padding: 0.5rem 0.75rem;
-            font-size: 0.8rem;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-        
-        .sample-btn:hover {
-            background: #e9ecef;
-            border-color: #667eea;
-        }
-    `;
-    document.head.appendChild(sampleStyle);
+    const buttonsDiv = document.createElement('div');
+    buttonsDiv.className = 'sample-buttons';
+    
+    samples.forEach(sample => {
+        const button = document.createElement('button');
+        button.className = 'sample-btn';
+        button.textContent = sample.substring(0, 30) + '...';
+        button.addEventListener('click', () => setSampleText(sample));
+        buttonsDiv.appendChild(button);
+    });
+    
+    sampleContainer.appendChild(paragraph);
+    sampleContainer.appendChild(buttonsDiv);
+
     
     buttonSection.appendChild(sampleContainer);
 }
