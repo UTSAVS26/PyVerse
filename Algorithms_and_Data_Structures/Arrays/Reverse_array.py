@@ -13,7 +13,16 @@ def reverseArray(arr):
 
 if __name__ == "__main__":
     # Taking user input for array elements
-    arr = list(map(int, input("Enter array elements separated by space: ").split()))
+    try:
+        user_input = input("Enter array elements separated by space: ").strip()
+        if not user_input:
+            print("No elements entered. Using empty array.")
+            arr = []
+        else:
+            arr = list(map(int, user_input.split()))
+    except ValueError:
+        print("Error: Please enter valid integers separated by spaces.")
+        exit(1)
 
     reverseArray(arr)
 
