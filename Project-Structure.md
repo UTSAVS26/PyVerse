@@ -318,6 +318,7 @@
   * [Resume-Analyzer](./Generative-AI/Resume-Analyzer)
   * [Talk-With-Your-Pdf-Reader](./Generative-AI/Talk-with-your-pdf-reader)
   * [Turn Pictures Into Story](./Generative-AI/Turn%20Pictures%20Into%20Story)
+  * [Youtube Rag Chatbot](./Generative-AI/Youtube_Rag_Chatbot)
   * [Image-To-3D Model](./Generative-AI/image-to-3D%20model)
 
 * **Image Processing**
