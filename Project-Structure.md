@@ -376,6 +376,7 @@
   * [Earthquake-Prediction-Using-Machine-Learning-Models](./Machine_Learning/Earthquake-prediction-using-Machine-learning-models)
   * [Economic Regime Detection Project](./Machine_Learning/Economic%20Regime%20Detection%20Project)
   * [Email Spam Classifier](./Machine_Learning/Email%20Spam%20Classifier)
+  * [Eye Strain Predictor](./Machine_Learning/Eye_Strain_Predictor)
   * [Fake News Detection](./Machine_Learning/Fake%20News%20Detection)
   * [Fake News Detection Project](./Machine_Learning/Fake%20news%20detection%20project)
   * [Fire And Smoke Detection](./Machine_Learning/Fire%20And%20Smoke%20Detection)
