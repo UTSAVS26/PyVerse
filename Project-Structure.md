@@ -390,6 +390,7 @@
   * [Hand Game Controller](./Machine_Learning/Hand%20Game%20Controller)
   * [Handwritten Equation Solver](./Machine_Learning/Handwritten%20Equation%20Solver)
   * [Handwritten Text Recognition Model](./Machine_Learning/Handwritten%20Text%20Recognition%20Model)
+  * [Health Classifcation](./Machine_Learning/Health_Classifcation)
   * [Heart Disease Prediction](./Machine_Learning/Heart%20Disease%20Prediction)
   * [Heart Disease Prediction [End 2 End]](./Machine_Learning/Heart%20Disease%20Prediction%20[END%202%20END])
   * [Heart-Disease-Detection-Using-Ml](./Machine_Learning/Heart-Disease-detection-using-ML)
