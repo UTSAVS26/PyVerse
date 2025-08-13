@@ -167,6 +167,8 @@ def plot_model_comparison(comparison_df: pd.DataFrame, save_path: str = 'trainin
                 f'{height:.3f}', ha='center', va='bottom')
     
     plt.tight_layout()
+    plt.tight_layout()
+    os.makedirs(os.path.dirname(save_path), exist_ok=True)
     plt.savefig(save_path, dpi=300, bbox_inches='tight')
     plt.show()
     
