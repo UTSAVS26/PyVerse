@@ -15,7 +15,11 @@ if not api_key:
 together.api_key = api_key
 
 def judge_debate(topic, memory):
-    transcript = memory.get('transcript', '')
+    transcript = memory.get('transcript', '') if isinstance(memory, dict) else ''
+    # Keep prompt concise: use only the recent portion of the debate
+    if transcript:
+        lines = transcript.splitlines()
+        transcript = "\n".join(lines[-80:])  # window of recent lines
 
     prompt = f"""You are the judge of an 8-round debate between a Scientist and a Philosopher on the topic: "{topic}".
 
@@ -59,5 +63,22 @@ Reason: ...
     summary_line = summary_line.split(":", 1)[1].strip() if ":" in summary_line else summary_line.strip()
     winner_line = winner_line.split(":", 1)[1].strip() if ":" in winner_line else winner_line.strip()
     reason_line = reason_line.split(":", 1)[1].strip() if ":" in reason_line else reason_line.strip()
-    
+
+    # Normalize winner to expected values
+    wl = winner_line.lower()
+    if "scientist" in wl:
+        winner_line = "Scientist"
+    elif "philosopher" in wl:
+        winner_line = "Philosopher"
+    elif "tie" in wl or "draw" in wl:
+        winner_line = "Tie"
+    elif not winner_line:
+        winner_line = "Undecided"
+
+    # Provide minimal defaults if the model omits fields
+    if not summary_line:
+        summary_line = "Debate concluded."
+    if not reason_line:
+        reason_line = "Insufficient data to determine a reason."
+
     return summary_line, winner_line, reason_line
