@@ -131,8 +131,23 @@ def main():
             # Get predictions
             with st.spinner("Analyzing password..."):
                 # Model prediction
-                model_result = classifier.predict_with_confidence(password)
-                
+# At the top of your module (assuming PasswordLabeler is already imported)
+@st.cache_resource
+def get_labeler():
+    """Get or create a cached PasswordLabeler instance."""
+    return PasswordLabeler()
+
+# … later in your code …
+
+if password:
+    # Get predictions
+    with st.spinner("Analyzing password..."):
+        # Model prediction
+        model_result = classifier.predict_with_confidence(password)
+        
+        # Labeler analysis
+        labeler = get_labeler()
+        labeler_analysis = labeler.get_detailed_analysis(password)
                 # Labeler analysis
                 labeler = PasswordLabeler()
                 labeler_analysis = labeler.get_detailed_analysis(password)
