@@ -102,11 +102,10 @@ KeyAuthAI/
 ### Programmatic Usage
 
 ```python
-from keyauthai.data.keystroke_logger import KeystrokeLogger
-from keyauthai.features.extractor import FeatureExtractor
-from keyauthai.model.train_model import KeystrokeModelTrainer
-from keyauthai.model.verify_user import UserVerifier
-
+from Deep_Learning.KeyAuthAI.data.keystroke_logger import KeystrokeLogger
+from Deep_Learning.KeyAuthAI.features.extractor import FeatureExtractor
+from Deep_Learning.KeyAuthAI.model.train_model import KeystrokeModelTrainer
+from Deep_Learning.KeyAuthAI.model.verify_user import UserVerifier
 # 1. Collect training data
 logger = KeystrokeLogger()
 logger.start_recording("alice", "my_secret_passphrase")
