@@ -6,10 +6,8 @@ Tests all components including sentiment analysis, clustering, keyword extractio
 
 import pytest
 import pandas as pd
-import numpy as np
 import sys
 import os
-from typing import Dict, List
 
 # Add parent directory to path for imports
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
