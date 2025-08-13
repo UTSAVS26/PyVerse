@@ -1,0 +1,77 @@
+name: Post-Merge Issue Cleanup
+
+on:
+  pull_request_target:
+    types: [closed]
+
+jobs:
+  update-issue-on-merge:
+    # This condition is crucial: it ensures the job only runs when the PR was MERGED,
+    # not just closed without merging.
+    if: github.event.pull_request.merged == true
+    
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write # Permission is needed to change labels on issues.
+
+    steps:
+      - name: Update Labels on Linked Issue
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { repo, owner } = context.repo;
+            const pr = context.payload.pull_request;
+            const body = pr.body;
+
+            console.log("A PR was merged. Searching for a linked issue to update...");
+
+            // Find the issue number from the PR body (e.g., "Closes: #123")
+            const issueRegex = /Closes:?\s*#(\d+)/i;
+            const issueMatch = body.match(issueRegex);
+
+            if (!issueMatch) {
+              console.log("No linked issue found in the PR body. Nothing to update.");
+              return; // Exit gracefully if no "Closes #" keyword is found
+            }
+
+            const issueNumber = parseInt(issueMatch[1], 10);
+            console.log(`Found linked issue #${issueNumber}. Proceeding to update its labels.`);
+
+            // Define the exact label names
+            const reviewLabel = 'Status: Review Ongoing 🔄';
+            const approvedLabel = 'Status: Approved ✔️';
+            
+            try {
+              // First, remove the 'Review Ongoing' label.
+              // We wrap this in a try...catch block to prevent an error if the label
+              // was already removed manually.
+              console.log(`Attempting to remove '${reviewLabel}' from issue #${issueNumber}...`);
+              await github.rest.issues.removeLabel({
+                owner,
+                repo,
+                issue_number: issueNumber,
+                name: reviewLabel
+              });
+              console.log(`'${reviewLabel}' label removed successfully.`);
+            } catch (error) {
+              // If the API returns a 404, it means the label wasn't there, which is fine.
+              if (error.status === 404) {
+                console.log(`Label '${reviewLabel}' was not found on issue #${issueNumber}. Continuing.`);
+              } else {
+                // For any other error, we should fail the job to be notified.
+                console.error("Failed to remove the label due to an unexpected error:", error);
+                throw error;
+              }
+            }
+
+            // Next, add the 'Approved' label.
+            console.log(`Adding '${approvedLabel}' to issue #${issueNumber}...`);
+            await github.rest.issues.addLabels({
+              owner,
+              repo,
+              issue_number: issueNumber,
+              labels: [approvedLabel] // addLabels expects an array of strings
+            });
+
+            console.log("Issue labels updated successfully. Cleanup complete.");
