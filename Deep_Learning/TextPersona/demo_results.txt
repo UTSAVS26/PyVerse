@@ -1,0 +1,33 @@
+TextPersona - Personality Analysis Results
+==================================================
+
+
+🧠 **Your MBTI Type: ISTJ (The Logistician)**
+
+**Confidence:** 45.8% (via rule-based classification)
+
+**Description:** Practical and fact-minded individuals, whose reliability cannot be doubted.
+
+**Strengths:** Practical, Fact-minded, Reliable, Direct
+
+**Possible Careers:** Accountant, Military Officer, Manager, Auditor
+
+**Analysis Method:** Rule-Based
+
+
+**Text Analysis:**
+- Characters: 1016
+- Words: 159
+- Sentences: 11
+
+**Sentiment Analysis:**
+- Positive: 0.169
+- Negative: 0.047
+- Neutral: 0.783
+- Compound: 0.970
+
+**Dimension Analysis:**
+- Introversion Extraversion: I (75.0%)
+- Sensing Intuition: S (80.0%)
+- Thinking Feeling: T (61.5%)
+- Judging Perceiving: J (75.0%)
