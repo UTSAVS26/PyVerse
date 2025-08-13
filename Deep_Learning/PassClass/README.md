@@ -334,23 +334,14 @@ if password:
 
 ## 📊 Performance
 
-### Model Performance
-
-| Model | Accuracy | CV Score | Training Time |
-|-------|----------|----------|---------------|
-| Random Forest | 87.83% | 90.21% | ~30s |
-| Logistic Regression | 84.33% | 83.04% | ~15s |
-| SVM | 84.50% | 82.46% | ~45s |
-
 ### Evaluation Metrics
 
 - **Overall Accuracy**: 94.23%
 - **Mean ROC AUC**: 98.80%
 - **Per-Class Performance**:
-  - Weak: 95.2% precision, 96.8% recall
-  - Medium: 92.1% precision, 89.3% recall
-  - Strong: 95.8% precision, 96.2% recall
-
+  - Weak: 92.44% precision, 92.90% recall
+  - Medium: 91.98% precision, 90.60% recall
+  - Strong: 98.22% precision, 99.20% recall
 ### Test Results
 
 Example password classification accuracy: **82.4%** (14/17 correct)
