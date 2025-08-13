@@ -60,7 +60,8 @@ class MoodTimelineVisualizer:
         # Create hover text
         hover_text = []
         for idx, row in df_copy.iterrows():
-            text = row[text_column][:50] + "..." if len(row[text_column]) > 50 else row[text_column]
+            text = row.get(text_column, '')
+            text = text[:50] + "..." if len(text) > 50 else text
             speaker_info = f"<br>Speaker: {row[speaker_column]}" if speaker_column else ""
             hover_text.append(f"Text: {text}{speaker_info}<br>Sentiment: {row[polarity_column]:.3f}")
         
