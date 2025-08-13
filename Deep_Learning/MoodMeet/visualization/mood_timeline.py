@@ -367,7 +367,10 @@ class StreamlitVisualizer:
                 value=f"{avg_polarity:.3f}",
                 delta=f"{avg_polarity:.3f}"
             )
-        
+st.metric(
+    label="Average Sentiment",
+    value=f"{avg_polarity:.3f}"
+)
         with col3:
             positive_ratio = sentiment_summary.get('positive_ratio', 0)
             st.metric(
