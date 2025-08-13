@@ -324,10 +324,18 @@ if __name__ == "__main__":
     
     # Load or generate sample data
     try:
-        df = pd.read_csv('data/password_dataset.csv')
+    # Load or generate sample data
+    try:
+        data_path = os.path.join(
+            os.path.dirname(__file__),
+            '..',
+            'data',
+            'password_dataset.csv'
+        )
+        df = pd.read_csv(data_path)
         print(f"Loaded dataset with {len(df)} samples")
     except FileNotFoundError:
-        print("Dataset not found. Please run data/generate_passwords.py first.")
+        print(f"Dataset not found at {data_path}. Please run data/generate_passwords.py first.")
         exit(1)
     
     # Train classifier
