@@ -77,6 +77,38 @@ class TransformerSentimentAnalyzer:
             logging.error(f"Error loading model {self.model_name}: {e}")
             raise
     
+class TransformerSentimentAnalyzer:
+    # … existing methods …
+
+    def _map_label_to_polarity(self, label: str) -> float:
+        """
+        Map model-specific labels to a normalized polarity in [-1.0, 1.0].
+        Handles:
+        - positive/negative/neutral (any case)
+        - LABEL_0/LABEL_1/LABEL_2 (common 3-class)
+        - "1 star"..."5 stars" (nlptown 5-class)
+        """
+        if not label:
+            return 0.0
+        norm = label.strip().lower()
+        base = {
+            'positive': 1.0,
+            'negative': -1.0,
+            'neutral': 0.0,
+            'label_0': -1.0,
+            'label_1': 0.0,
+            'label_2': 1.0,
+        }
+        if norm in base:
+            return base[norm]
+        import re
+        m = re.match(r'([1-5])\s*star', norm)
+        if m:
+            stars = int(m.group(1))
+            # scale: 1→-1.0, 3→0.0, 5→+1.0
+            return (stars - 3) / 2.0
+        return 0.0
+
     def analyze_text(self, text: str) -> TransformerResult:
         """
         Analyze sentiment of a single text.
@@ -100,19 +132,11 @@ class TransformerSentimentAnalyzer:
             # Find the highest scoring sentiment
             best_result = max(results[0], key=lambda x: x['score'])
             
-            # Map sentiment labels to polarity
-            label_to_polarity = {
-                'positive': 1.0,
-                'negative': -1.0,
-                'neutral': 0.0,
-                'LABEL_0': -1.0,  # Some models use numeric labels
-                'LABEL_1': 0.0,
-                'LABEL_2': 1.0
-            }
-            
-            polarity = label_to_polarity.get(best_result['label'], 0.0)
+            # Compute polarity via the centralized helper
+            polarity = self._map_label_to_polarity(best_result['label'])
             
             processing_time = time.time() - start_time
+            # … rest of method …
             
             return TransformerResult(
                 text=text,
