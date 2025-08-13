@@ -11,15 +11,15 @@
 This project represents a comprehensive meteorological analysis of John F. Kennedy International Airport's weather patterns, leveraging NOAA's historical climate data to extract actionable insights about New York's aviation weather conditions. The analysis employs data science methodologies to transform raw meteorological observations into meaningful patterns that could impact aviation operations, urban planning, and climate research.
 
 ## 📑 Table of Contents
-- [Project Overview](#-project-overview)
-- [Dataset Information](#-dataset-information)
-- [Project Structure](#-project-structure)
-- [Analysis Contents](#-analysis-contents)
-- [Usage Instructions](#-usage-instructions)
-- [Technical Requirements](#-technical-requirements)
-- [Data Cleaning Process](#-data-cleaning-process)
-- [Future Enhancements](#-future-enhancements)
-- [License & Data Usage](#-license--data-usage)
+- [Project Overview](#project-overview)
+- [Dataset Information](#dataset-information)
+- [Project Structure](#project-structure)
+- [Analysis Contents](#analysis-contents)
+- [Usage Instructions](#usage-instructions)
+- [Technical Requirements](#technical-requirements)
+- [Data Cleaning Process](#data-cleaning-process)
+- [Future Enhancements](#future-enhancements)
+- [License & Data Usage](#license--data-usage)
 
 ---
 
@@ -39,12 +39,10 @@ The goal is to explore **weather patterns, trends, and anomalies** over time usi
 
 ## 📁 Project Structure
 ```plaintext
-JFK_AIRPORT_Analysis/
-├── README.md                              # Project documentation
-├── jfk_weather_cleaned.csv                # Cleaned weather dataset
-├── NOAA weather data analysis.ipynb       # Main analysis notebook
-└── .ipynb_checkpoints/                   
-    └── NOAA weather data analysis-checkpoint.ipynb
+JFK Airport Analysis/
+├── README.md                            # Project documentation
+├── jfk_weather_cleaned.csv              # Cleaned weather dataset 
+├── NOAA weather data analysis.ipynb     # Main analysis notebook
 ```
 ---
 
@@ -110,4 +108,3 @@ The original NOAA data was cleaned to ensure quality:
 ## 📜 License & Data Usage
 This project uses publicly available NOAA weather data.  
 Please refer to NOAA’s official data usage policies for terms and attribution.
-

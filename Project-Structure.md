@@ -180,6 +180,7 @@
   * [Google Search Analysis With Python](./Data_Science/Google%20Search%20Analysis%20with%20python)
   * [Hotel Demand Eda And Forecasting Using Arima Model](./Data_Science/Hotel%20Demand%20EDA%20and%20Forecasting%20Using%20ARIMA%20Model)
   * [Ipl Analysis](./Data_Science/IPL%20Analysis)
+  * [JFK Airport Analysis](./Data_Science/JFK%20Airport%20Analysis)
   * [Lead Conversion Case Study](./Data_Science/Lead%20Conversion%20Case%20Study)
   * [Placement Analysis](./Data_Science/Placement%20Analysis)
   * [Studentperformancevisualisation](./Data_Science/StudentPerformanceVisualisation)
