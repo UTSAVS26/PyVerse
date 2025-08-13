@@ -293,8 +293,19 @@ def main():
         
         for pwd, expected in sample_passwords:
             if st.button(f"Test: {pwd}", key=pwd):
-                st.session_state.test_password = pwd
-                st.rerun()
+     # Password input
+     default_password = st.session_state.get('test_password', '')
+     password = st.text_input(
+         "Enter a password to analyze:",
+         value=default_password,
+         placeholder="Type your password here..." if not default_password else "",
+         type="password",
+         help="Enter any password to see its strength analysis"
+     )
+     
+     # Clear test password after use
+     if 'test_password' in st.session_state:
+         del st.session_state['test_password']
         
         # Model info
         st.markdown("### 🤖 Model Info")
