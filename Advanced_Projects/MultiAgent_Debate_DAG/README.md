@@ -11,6 +11,17 @@ This project uses a `.env` file to securely manage API keys.
 1. Copy the example environment file:
    ```bash
    cp .env.example .env
+   ```
+
+2. Edit .env and set your API key(s):
+   ```env
+   TOGETHER_API_KEY=your_api_key_here
+   ```
+
+3. Install Graphviz (required for DAG image generation):
+   - macOS: `brew install graphviz`
+   - Ubuntu/Debian: `sudo apt-get update && sudo apt-get install -y graphviz`
+   - Windows: `choco install graphviz` (or download from https://graphviz.org)
 
 ## 🚀 How to Run
 

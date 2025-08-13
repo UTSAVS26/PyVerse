@@ -23,8 +23,11 @@ def generate_dag_diagram():
     dag.edge("M", "J")
     dag.edge("J", "End")
 
-    dag.render("debate_dag_diagram", format="png", cleanup=True)
-    print("DAG diagram generated and saved as 'debate_dag_diagram.png'")
+    try:
+        output_path = dag.render("dag_diagram", format="png", cleanup=True)
+        print(f"DAG diagram generated and saved as '{output_path}'")
+    except Exception as e:
+        raise RuntimeError("Failed to render DAG. Ensure Graphviz is installed and on PATH.") from e
 
 if __name__ == "__main__":
     generate_dag_diagram()

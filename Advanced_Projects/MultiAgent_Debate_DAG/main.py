@@ -7,46 +7,52 @@ import time
 import os
 from datetime import datetime
 
-log_lines = []  # to collect all messages
-
 
 def main():
     topic = get_debate_topic()
     memory = {"topic": topic, "transcript": "", "round": 1}
+    log_lines = []  # to collect all messages
 
     
     print(f"\nStarting debate between Scientist and Philosopher...")
 
     # Run exactly 8 rounds (4 each)
     for i in range(8):
-        if i % 2 == 0:
-            speaker = "Scientist"
-            response = scientist_response(topic, memory['round'], memory)
-        else:
-            speaker = "Philosopher"
-            response = philosopher_response(topic, memory['round'], memory)
+        try:
+            if i % 2 == 0:
+                speaker = "Scientist"
+                response = scientist_response(topic, memory['round'], memory)
+            else:
+                speaker = "Philosopher"
+                response = philosopher_response(topic, memory['round'], memory)
+        except Exception as e:
+            speaker = "Unknown"
+            response = f"(error fetching response: {e})"
 
-        # Clean single-line output per round
-        response = response.strip().splitlines()[0]  # Only take first line to avoid "Round X response:"
-        round_str = f"[Round {memory['round']}] {speaker}: {response}"
+        # Clean single-line output per round (avoid IndexError on empty responses)
+        first_line = (response or "").strip().splitlines()[0] if response else ""
+        round_str = f"[Round {memory['round']}] {speaker}: {first_line}"
         print(round_str)
 
         # Log this round
         log_lines.append(round_str)
 
         # Update memory
-        memory = update_memory(memory, round_str, response)
+        memory = update_memory(memory, round_str, first_line)
         memory['round'] += 1
         time.sleep(0.3)
 
     print()  # Single gap before judge output
 
     # Final judgment
-    summary, winner, reason = judge_debate(topic, memory)
+    try:
+        summary, winner, reason = judge_debate(topic, memory)
+    except Exception as e:
+        summary, winner, reason = "", "", f"Judging failed: {e}"
     print(f"[Judge] Summary of debate: {summary.strip()}")
     print(f"[Judge] Winner: {winner.strip()}")
     print(f"Reason: {reason.strip()}")
-
+    
     # Log judge results
     log_lines.append(f"\n[Judge] Summary of debate: {summary.strip()}")
     log_lines.append(f"[Judge] Winner: {winner.strip()}")
