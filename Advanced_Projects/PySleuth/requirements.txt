@@ -1,0 +1,6 @@
+# Platform-specific dependencies
+curses; sys_platform != "win32"
+
+# Optional TUI dependencies
+urwid; extra == "tui"
+textual; extra == "tui"

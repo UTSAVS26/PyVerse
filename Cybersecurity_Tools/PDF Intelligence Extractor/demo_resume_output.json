@@ -1,0 +1,29 @@
+{
+  "document_type": "resume",
+  "name": "John Doe",
+  "email": "john.doe@email.com",
+  "phone": " 5551234567",
+  "skills": [
+    "SQL",
+    "Machine Learning",
+    "Sql",
+    "Python",
+    "Ai",
+    "Aws",
+    "Data Analysis",
+    "AWS"
+  ],
+  "education": [
+    {
+      "institute": "Bachelor of Science in Computer Science\n    XYZ University",
+      "year": "2021"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Data Scientist\n    TechCorp Inc",
+      "role": "Data Scientist",
+      "duration": "Jan 2022 - Present"
+    }
+  ]
+}

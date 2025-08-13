@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 800px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+             #loadingBar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width: 100%;
+                 height: 800px;
+                 background-color:rgba(200,200,200,0.8);
+                 -webkit-transition: all 0.5s ease;
+                 -moz-transition: all 0.5s ease;
+                 -ms-transition: all 0.5s ease;
+                 -o-transition: all 0.5s ease;
+                 transition: all 0.5s ease;
+                 opacity:1;
+             }
+
+             #bar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width:20px;
+                 height:20px;
+                 margin:auto auto auto auto;
+                 border-radius:11px;
+                 border:2px solid rgba(30,30,30,0.05);
+                 background: rgb(0, 173, 246); /* Old browsers */
+                 box-shadow: 2px 0px 4px rgba(0,0,0,0.4);
+             }
+
+             #border {
+                 position:absolute;
+                 top:10px;
+                 left:10px;
+                 width:500px;
+                 height:23px;
+                 margin:auto auto auto auto;
+                 box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+                 border-radius:10px;
+             }
+
+             #text {
+                 position:absolute;
+                 top:8px;
+                 left:530px;
+                 width:30px;
+                 height:50px;
+                 margin:auto auto auto auto;
+                 font-size:22px;
+                 color: #000000;
+             }
+
+             div.outerBorder {
+                 position:relative;
+                 top:400px;
+                 width:600px;
+                 height:44px;
+                 margin:auto auto auto auto;
+                 border:8px solid rgba(0,0,0,0.1);
+                 background: rgb(252,252,252); /* Old browsers */
+                 background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+                 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+                 background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+                 background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+                 background: -ms-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* IE10+ */
+                 background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* W3C */
+                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+                 border-radius:72px;
+                 box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+             }
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+            <div id="loadingBar">
+              <div class="outerBorder">
+                <div id="text">0%</div>
+                <div id="border">
+                  <div id="bar"></div>
+                </div>
+              </div>
+            </div>
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#4CAF50", "font": {"color": "#000000"}, "id": "node_0", "label": "Start", "shape": "ellipse", "title": "Type: start\u003cbr\u003eLine: 1"}, {"color": "#2196F3", "font": {"color": "#000000"}, "id": "node_1", "label": "def safe_division()", "shape": "box", "title": "Type: function\u003cbr\u003eLine: 1"}, {"color": "#E0E0E0", "font": {"color": "#000000"}, "id": "node_2", "label": "Expression: \u0027Perform safe division with exception handling.\u0027", "shape": "box", "title": "Type: expression\u003cbr\u003eLine: 2"}, {"color": "#795548", "font": {"color": "#000000"}, "id": "node_3", "label": "try", "shape": "box", "title": "Type: try\u003cbr\u003eLine: 3"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_4", "label": "Statement: Assign", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 4"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_5", "label": "Statement: Return", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 5"}, {"color": "#FF5722", "font": {"color": "#000000"}, "id": "node_6", "label": "except ZeroDivisionError", "shape": "box", "title": "Type: except\u003cbr\u003eLine: 6"}, {"color": "#00BCD4", "font": {"color": "#000000"}, "id": "node_7", "label": "Call: print()", "shape": "box", "title": "Type: function_call\u003cbr\u003eLine: 7"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_8", "label": "Statement: Return", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 8"}, {"color": "#FF5722", "font": {"color": "#000000"}, "id": "node_9", "label": "except TypeError", "shape": "box", "title": "Type: except\u003cbr\u003eLine: 9"}, {"color": "#00BCD4", "font": {"color": "#000000"}, "id": "node_10", "label": "Call: print()", "shape": "box", "title": "Type: function_call\u003cbr\u003eLine: 10"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_11", "label": "Statement: Return", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 11"}, {"color": "#607D8B", "font": {"color": "#000000"}, "id": "node_12", "label": "finally", "shape": "box", "title": "Type: finally\u003cbr\u003eLine: 13"}, {"color": "#00BCD4", "font": {"color": "#000000"}, "id": "node_13", "label": "Call: print()", "shape": "box", "title": "Type: function_call\u003cbr\u003eLine: 13"}, {"color": "#2196F3", "font": {"color": "#000000"}, "id": "node_14", "label": "def read_file_safely()", "shape": "box", "title": "Type: function\u003cbr\u003eLine: 15"}, {"color": "#E0E0E0", "font": {"color": "#000000"}, "id": "node_15", "label": "Expression: \u0027Read file with comprehensive error handling.\u0027", "shape": "box", "title": "Type: expression\u003cbr\u003eLine: 16"}, {"color": "#795548", "font": {"color": "#000000"}, "id": "node_16", "label": "try", "shape": "box", "title": "Type: try\u003cbr\u003eLine: 17"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_17", "label": "Statement: With", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 18"}, {"color": "#FF5722", "font": {"color": "#000000"}, "id": "node_18", "label": "except FileNotFoundError", "shape": "box", "title": "Type: except\u003cbr\u003eLine: 21"}, {"color": "#00BCD4", "font": {"color": "#000000"}, "id": "node_19", "label": "Call: print()", "shape": "box", "title": "Type: function_call\u003cbr\u003eLine: 22"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_20", "label": "Statement: Return", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 23"}, {"color": "#FF5722", "font": {"color": "#000000"}, "id": "node_21", "label": "except PermissionError", "shape": "box", "title": "Type: except\u003cbr\u003eLine: 24"}, {"color": "#00BCD4", "font": {"color": "#000000"}, "id": "node_22", "label": "Call: print()", "shape": "box", "title": "Type: function_call\u003cbr\u003eLine: 25"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_23", "label": "Statement: Return", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 26"}, {"color": "#FF5722", "font": {"color": "#000000"}, "id": "node_24", "label": "except UnicodeDecodeError", "shape": "box", "title": "Type: except\u003cbr\u003eLine: 27"}, {"color": "#00BCD4", "font": {"color": "#000000"}, "id": "node_25", "label": "Call: print()", "shape": "box", "title": "Type: function_call\u003cbr\u003eLine: 28"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_26", "label": "Statement: Return", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 29"}, {"color": "#FF5722", "font": {"color": "#000000"}, "id": "node_27", "label": "except Exception", "shape": "box", "title": "Type: except\u003cbr\u003eLine: 30"}, {"color": "#00BCD4", "font": {"color": "#000000"}, "id": "node_28", "label": "Call: print()", "shape": "box", "title": "Type: function_call\u003cbr\u003eLine: 31"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_29", "label": "Statement: Return", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 32"}, {"color": "#2196F3", "font": {"color": "#000000"}, "id": "node_30", "label": "def process_data_with_validation()", "shape": "box", "title": "Type: function\u003cbr\u003eLine: 34"}, {"color": "#E0E0E0", "font": {"color": "#000000"}, "id": "node_31", "label": "Expression: \u0027Process data with validation and error handling.\u0027", "shape": "box", "title": "Type: expression\u003cbr\u003eLine: 35"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_32", "label": "Statement: Assign", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 36"}, {"color": "#9C27B0", "font": {"color": "#000000"}, "id": "node_33", "label": "for \u003cTuple\u003e in enumerate(data_list)", "shape": "box", "title": "Type: loop\u003cbr\u003eLine: 38"}, {"color": "#795548", "font": {"color": "#000000"}, "id": "node_34", "label": "try", "shape": "box", "title": "Type: try\u003cbr\u003eLine: 39"}, {"color": "#FF9800", "font": {"color": "#000000"}, "id": "node_35", "label": "if \u003cUnaryOp\u003e", "shape": "diamond", "title": "Type: condition\u003cbr\u003eLine: 41"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_36", "label": "Statement: Raise", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 42"}, {"color": "#FF9800", "font": {"color": "#000000"}, "id": "node_37", "label": "if item Lt 0", "shape": "diamond", "title": "Type: condition\u003cbr\u003eLine: 45"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_38", "label": "Statement: Raise", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 46"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_39", "label": "Statement: Assign", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 48"}, {"color": "#00BCD4", "font": {"color": "#000000"}, "id": "node_40", "label": "Call: results.append()", "shape": "box", "title": "Type: function_call\u003cbr\u003eLine: 49"}, {"color": "#FF5722", "font": {"color": "#000000"}, "id": "node_41", "label": "except ValueError", "shape": "box", "title": "Type: except\u003cbr\u003eLine: 51"}, {"color": "#00BCD4", "font": {"color": "#000000"}, "id": "node_42", "label": "Call: print()", "shape": "box", "title": "Type: function_call\u003cbr\u003eLine: 52"}, {"color": "#00BCD4", "font": {"color": "#000000"}, "id": "node_43", "label": "Call: results.append()", "shape": "box", "title": "Type: function_call\u003cbr\u003eLine: 53"}, {"color": "#FF5722", "font": {"color": "#000000"}, "id": "node_44", "label": "except Exception", "shape": "box", "title": "Type: except\u003cbr\u003eLine: 54"}, {"color": "#00BCD4", "font": {"color": "#000000"}, "id": "node_45", "label": "Call: print()", "shape": "box", "title": "Type: function_call\u003cbr\u003eLine: 55"}, {"color": "#00BCD4", "font": {"color": "#000000"}, "id": "node_46", "label": "Call: results.append()", "shape": "box", "title": "Type: function_call\u003cbr\u003eLine: 56"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_47", "label": "Statement: Return", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 58"}, {"color": "#2196F3", "font": {"color": "#000000"}, "id": "node_48", "label": "def connect_to_database()", "shape": "box", "title": "Type: function\u003cbr\u003eLine: 60"}, {"color": "#E0E0E0", "font": {"color": "#000000"}, "id": "node_49", "label": "Expression: \u0027Simulate database connection with retry logic.\u0027", "shape": "box", "title": "Type: expression\u003cbr\u003eLine: 61"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_50", "label": "Statement: Assign", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 62"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_51", "label": "Statement: Assign", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 63"}, {"color": "#9C27B0", "font": {"color": "#000000"}, "id": "node_52", "label": "while retry_count Lt max_retries", "shape": "box", "title": "Type: loop\u003cbr\u003eLine: 65"}, {"color": "#795548", "font": {"color": "#000000"}, "id": "node_53", "label": "try", "shape": "box", "title": "Type: try\u003cbr\u003eLine: 66"}, {"color": "#FF9800", "font": {"color": "#000000"}, "id": "node_54", "label": "if \u0027invalid\u0027 In connection_string", "shape": "diamond", "title": "Type: condition\u003cbr\u003eLine: 68"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_55", "label": "Statement: Raise", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 69"}, {"color": "#00BCD4", "font": {"color": "#000000"}, "id": "node_56", "label": "Call: print()", "shape": "box", "title": "Type: function_call\u003cbr\u003eLine: 71"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_57", "label": "Statement: Return", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 72"}, {"color": "#FF5722", "font": {"color": "#000000"}, "id": "node_58", "label": "except ConnectionError", "shape": "box", "title": "Type: except\u003cbr\u003eLine: 74"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_59", "label": "Statement: AugAssign", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 75"}, {"color": "#00BCD4", "font": {"color": "#000000"}, "id": "node_60", "label": "Call: print()", "shape": "box", "title": "Type: function_call\u003cbr\u003eLine: 76"}, {"color": "#FF9800", "font": {"color": "#000000"}, "id": "node_61", "label": "if retry_count GtE max_retries", "shape": "diamond", "title": "Type: condition\u003cbr\u003eLine: 78"}, {"color": "#00BCD4", "font": {"color": "#000000"}, "id": "node_62", "label": "Call: print()", "shape": "box", "title": "Type: function_call\u003cbr\u003eLine: 79"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_63", "label": "Statement: Return", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 80"}, {"color": "#00BCD4", "font": {"color": "#000000"}, "id": "node_64", "label": "Call: print()", "shape": "box", "title": "Type: function_call\u003cbr\u003eLine: 82"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_65", "label": "Statement: Return", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 84"}, {"color": "#2196F3", "font": {"color": "#000000"}, "id": "node_66", "label": "def validate_user_input()", "shape": "box", "title": "Type: function\u003cbr\u003eLine: 86"}, {"color": "#E0E0E0", "font": {"color": "#000000"}, "id": "node_67", "label": "Expression: \u0027Validate user input with multiple checks.\u0027", "shape": "box", "title": "Type: expression\u003cbr\u003eLine: 87"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_68", "label": "Statement: Assign", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 88"}, {"color": "#795548", "font": {"color": "#000000"}, "id": "node_69", "label": "try", "shape": "box", "title": "Type: try\u003cbr\u003eLine: 90"}, {"color": "#FF9800", "font": {"color": "#000000"}, "id": "node_70", "label": "if \u003cBoolOp\u003e", "shape": "diamond", "title": "Type: condition\u003cbr\u003eLine: 92"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_71", "label": "Statement: Raise", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 93"}, {"color": "#FF9800", "font": {"color": "#000000"}, "id": "node_72", "label": "if len(user_input) Lt 3", "shape": "diamond", "title": "Type: condition\u003cbr\u003eLine: 96"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_73", "label": "Statement: Raise", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 97"}, {"color": "#FF9800", "font": {"color": "#000000"}, "id": "node_74", "label": "if len(user_input) Gt 100", "shape": "diamond", "title": "Type: condition\u003cbr\u003eLine: 99"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_75", "label": "Statement: Raise", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 100"}, {"color": "#FF9800", "font": {"color": "#000000"}, "id": "node_76", "label": "if any(\u003cGeneratorExp\u003e)", "shape": "diamond", "title": "Type: condition\u003cbr\u003eLine: 103"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_77", "label": "Statement: Raise", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 104"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_78", "label": "Statement: Return", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 106"}, {"color": "#FF5722", "font": {"color": "#000000"}, "id": "node_79", "label": "except ValueError", "shape": "box", "title": "Type: except\u003cbr\u003eLine: 108"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_80", "label": "Statement: Return", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 109"}, {"color": "#FF5722", "font": {"color": "#000000"}, "id": "node_81", "label": "except Exception", "shape": "box", "title": "Type: except\u003cbr\u003eLine: 110"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_82", "label": "Statement: Return", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 111"}, {"color": "#FF9800", "font": {"color": "#000000"}, "id": "node_83", "label": "if __name__ Eq \u0027__main__\u0027", "shape": "diamond", "title": "Type: condition\u003cbr\u003eLine: 114"}, {"color": "#00BCD4", "font": {"color": "#000000"}, "id": "node_84", "label": "Call: print()", "shape": "box", "title": "Type: function_call\u003cbr\u003eLine: 116"}, {"color": "#00BCD4", "font": {"color": "#000000"}, "id": "node_85", "label": "Call: print()", "shape": "box", "title": "Type: function_call\u003cbr\u003eLine: 117"}, {"color": "#00BCD4", "font": {"color": "#000000"}, "id": "node_86", "label": "Call: print()", "shape": "box", "title": "Type: function_call\u003cbr\u003eLine: 118"}, {"color": "#00BCD4", "font": {"color": "#000000"}, "id": "node_87", "label": "Call: print()", "shape": "box", "title": "Type: function_call\u003cbr\u003eLine: 119"}, {"color": "#00BCD4", "font": {"color": "#000000"}, "id": "node_88", "label": "Call: print()", "shape": "box", "title": "Type: function_call\u003cbr\u003eLine: 122"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_89", "label": "Statement: Assign", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 123"}, {"color": "#00BCD4", "font": {"color": "#000000"}, "id": "node_90", "label": "Call: print()", "shape": "box", "title": "Type: function_call\u003cbr\u003eLine: 126"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_91", "label": "Statement: Assign", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 127"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_92", "label": "Statement: Assign", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 128"}, {"color": "#00BCD4", "font": {"color": "#000000"}, "id": "node_93", "label": "Call: print()", "shape": "box", "title": "Type: function_call\u003cbr\u003eLine: 129"}, {"color": "#00BCD4", "font": {"color": "#000000"}, "id": "node_94", "label": "Call: print()", "shape": "box", "title": "Type: function_call\u003cbr\u003eLine: 132"}, {"color": "#00BCD4", "font": {"color": "#000000"}, "id": "node_95", "label": "Call: connect_to_database()", "shape": "box", "title": "Type: function_call\u003cbr\u003eLine: 133"}, {"color": "#00BCD4", "font": {"color": "#000000"}, "id": "node_96", "label": "Call: connect_to_database()", "shape": "box", "title": "Type: function_call\u003cbr\u003eLine: 134"}, {"color": "#00BCD4", "font": {"color": "#000000"}, "id": "node_97", "label": "Call: print()", "shape": "box", "title": "Type: function_call\u003cbr\u003eLine: 137"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_98", "label": "Statement: Assign", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 138"}, {"color": "#9C27B0", "font": {"color": "#000000"}, "id": "node_99", "label": "for test_input in test_inputs", "shape": "box", "title": "Type: loop\u003cbr\u003eLine: 140"}, {"color": "#BDBDBD", "font": {"color": "#000000"}, "id": "node_100", "label": "Statement: Assign", "shape": "box", "title": "Type: statement\u003cbr\u003eLine: 141"}, {"color": "#00BCD4", "font": {"color": "#000000"}, "id": "node_101", "label": "Call: print()", "shape": "box", "title": "Type: function_call\u003cbr\u003eLine: 142"}, {"color": "#F44336", "font": {"color": "#000000"}, "id": "node_102", "label": "End", "shape": "ellipse", "title": "Type: end\u003cbr\u003eLine: 143"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "color": "#000000", "from": "node_0", "title": "Flow", "to": "node_1"}, {"arrows": "to", "color": "#000000", "from": "node_1", "title": "Flow", "to": "node_2"}, {"arrows": "to", "color": "#000000", "from": "node_1", "title": "Flow", "to": "node_3"}, {"arrows": "to", "color": "#000000", "from": "node_3", "title": "Flow", "to": "node_4"}, {"arrows": "to", "color": "#000000", "from": "node_3", "title": "Flow", "to": "node_5"}, {"arrows": "to", "color": "#000000", "from": "node_3", "title": "Flow", "to": "node_6"}, {"arrows": "to", "color": "#000000", "from": "node_6", "title": "Flow", "to": "node_7"}, {"arrows": "to", "color": "#000000", "from": "node_6", "title": "Flow", "to": "node_8"}, {"arrows": "to", "color": "#000000", "from": "node_3", "title": "Flow", "to": "node_9"}, {"arrows": "to", "color": "#000000", "from": "node_9", "title": "Flow", "to": "node_10"}, {"arrows": "to", "color": "#000000", "from": "node_9", "title": "Flow", "to": "node_11"}, {"arrows": "to", "color": "#000000", "from": "node_3", "title": "Flow", "to": "node_12"}, {"arrows": "to", "color": "#000000", "from": "node_12", "title": "Flow", "to": "node_13"}, {"arrows": "to", "color": "#000000", "from": "node_0", "title": "Flow", "to": "node_14"}, {"arrows": "to", "color": "#000000", "from": "node_14", "title": "Flow", "to": "node_15"}, {"arrows": "to", "color": "#000000", "from": "node_14", "title": "Flow", "to": "node_16"}, {"arrows": "to", "color": "#000000", "from": "node_16", "title": "Flow", "to": "node_17"}, {"arrows": "to", "color": "#000000", "from": "node_16", "title": "Flow", "to": "node_18"}, {"arrows": "to", "color": "#000000", "from": "node_18", "title": "Flow", "to": "node_19"}, {"arrows": "to", "color": "#000000", "from": "node_18", "title": "Flow", "to": "node_20"}, {"arrows": "to", "color": "#000000", "from": "node_16", "title": "Flow", "to": "node_21"}, {"arrows": "to", "color": "#000000", "from": "node_21", "title": "Flow", "to": "node_22"}, {"arrows": "to", "color": "#000000", "from": "node_21", "title": "Flow", "to": "node_23"}, {"arrows": "to", "color": "#000000", "from": "node_16", "title": "Flow", "to": "node_24"}, {"arrows": "to", "color": "#000000", "from": "node_24", "title": "Flow", "to": "node_25"}, {"arrows": "to", "color": "#000000", "from": "node_24", "title": "Flow", "to": "node_26"}, {"arrows": "to", "color": "#000000", "from": "node_16", "title": "Flow", "to": "node_27"}, {"arrows": "to", "color": "#000000", "from": "node_27", "title": "Flow", "to": "node_28"}, {"arrows": "to", "color": "#000000", "from": "node_27", "title": "Flow", "to": "node_29"}, {"arrows": "to", "color": "#000000", "from": "node_0", "title": "Flow", "to": "node_30"}, {"arrows": "to", "color": "#000000", "from": "node_30", "title": "Flow", "to": "node_31"}, {"arrows": "to", "color": "#000000", "from": "node_30", "title": "Flow", "to": "node_32"}, {"arrows": "to", "color": "#000000", "from": "node_30", "title": "Flow", "to": "node_33"}, {"arrows": "to", "color": "#000000", "from": "node_33", "title": "Flow", "to": "node_34"}, {"arrows": "to", "color": "#4CAF50", "from": "node_34", "title": "Condition: True", "to": "node_35"}, {"arrows": "to", "color": "#000000", "from": "node_35", "title": "Flow", "to": "node_36"}, {"arrows": "to", "color": "#4CAF50", "from": "node_34", "title": "Condition: True", "to": "node_37"}, {"arrows": "to", "color": "#000000", "from": "node_37", "title": "Flow", "to": "node_38"}, {"arrows": "to", "color": "#000000", "from": "node_34", "title": "Flow", "to": "node_39"}, {"arrows": "to", "color": "#000000", "from": "node_34", "title": "Flow", "to": "node_40"}, {"arrows": "to", "color": "#000000", "from": "node_34", "title": "Flow", "to": "node_41"}, {"arrows": "to", "color": "#000000", "from": "node_41", "title": "Flow", "to": "node_42"}, {"arrows": "to", "color": "#000000", "from": "node_41", "title": "Flow", "to": "node_43"}, {"arrows": "to", "color": "#000000", "from": "node_34", "title": "Flow", "to": "node_44"}, {"arrows": "to", "color": "#000000", "from": "node_44", "title": "Flow", "to": "node_45"}, {"arrows": "to", "color": "#000000", "from": "node_44", "title": "Flow", "to": "node_46"}, {"arrows": "to", "color": "#9C27B0", "from": "node_33", "title": "Condition: next", "to": "node_33"}, {"arrows": "to", "color": "#000000", "from": "node_30", "title": "Flow", "to": "node_47"}, {"arrows": "to", "color": "#000000", "from": "node_0", "title": "Flow", "to": "node_48"}, {"arrows": "to", "color": "#000000", "from": "node_48", "title": "Flow", "to": "node_49"}, {"arrows": "to", "color": "#000000", "from": "node_48", "title": "Flow", "to": "node_50"}, {"arrows": "to", "color": "#000000", "from": "node_48", "title": "Flow", "to": "node_51"}, {"arrows": "to", "color": "#000000", "from": "node_48", "title": "Flow", "to": "node_52"}, {"arrows": "to", "color": "#000000", "from": "node_52", "title": "Flow", "to": "node_53"}, {"arrows": "to", "color": "#4CAF50", "from": "node_53", "title": "Condition: True", "to": "node_54"}, {"arrows": "to", "color": "#000000", "from": "node_54", "title": "Flow", "to": "node_55"}, {"arrows": "to", "color": "#000000", "from": "node_53", "title": "Flow", "to": "node_56"}, {"arrows": "to", "color": "#000000", "from": "node_53", "title": "Flow", "to": "node_57"}, {"arrows": "to", "color": "#000000", "from": "node_53", "title": "Flow", "to": "node_58"}, {"arrows": "to", "color": "#000000", "from": "node_58", "title": "Flow", "to": "node_59"}, {"arrows": "to", "color": "#000000", "from": "node_58", "title": "Flow", "to": "node_60"}, {"arrows": "to", "color": "#4CAF50", "from": "node_58", "title": "Condition: True", "to": "node_61"}, {"arrows": "to", "color": "#000000", "from": "node_61", "title": "Flow", "to": "node_62"}, {"arrows": "to", "color": "#000000", "from": "node_61", "title": "Flow", "to": "node_63"}, {"arrows": "to", "color": "#000000", "from": "node_58", "title": "Flow", "to": "node_64"}, {"arrows": "to", "color": "#4CAF50", "from": "node_52", "title": "Condition: True", "to": "node_52"}, {"arrows": "to", "color": "#000000", "from": "node_48", "title": "Flow", "to": "node_65"}, {"arrows": "to", "color": "#000000", "from": "node_0", "title": "Flow", "to": "node_66"}, {"arrows": "to", "color": "#000000", "from": "node_66", "title": "Flow", "to": "node_67"}, {"arrows": "to", "color": "#000000", "from": "node_66", "title": "Flow", "to": "node_68"}, {"arrows": "to", "color": "#000000", "from": "node_66", "title": "Flow", "to": "node_69"}, {"arrows": "to", "color": "#4CAF50", "from": "node_69", "title": "Condition: True", "to": "node_70"}, {"arrows": "to", "color": "#000000", "from": "node_70", "title": "Flow", "to": "node_71"}, {"arrows": "to", "color": "#4CAF50", "from": "node_69", "title": "Condition: True", "to": "node_72"}, {"arrows": "to", "color": "#000000", "from": "node_72", "title": "Flow", "to": "node_73"}, {"arrows": "to", "color": "#4CAF50", "from": "node_69", "title": "Condition: True", "to": "node_74"}, {"arrows": "to", "color": "#000000", "from": "node_74", "title": "Flow", "to": "node_75"}, {"arrows": "to", "color": "#4CAF50", "from": "node_69", "title": "Condition: True", "to": "node_76"}, {"arrows": "to", "color": "#000000", "from": "node_76", "title": "Flow", "to": "node_77"}, {"arrows": "to", "color": "#000000", "from": "node_69", "title": "Flow", "to": "node_78"}, {"arrows": "to", "color": "#000000", "from": "node_69", "title": "Flow", "to": "node_79"}, {"arrows": "to", "color": "#000000", "from": "node_79", "title": "Flow", "to": "node_80"}, {"arrows": "to", "color": "#000000", "from": "node_69", "title": "Flow", "to": "node_81"}, {"arrows": "to", "color": "#000000", "from": "node_81", "title": "Flow", "to": "node_82"}, {"arrows": "to", "color": "#4CAF50", "from": "node_0", "title": "Condition: True", "to": "node_83"}, {"arrows": "to", "color": "#000000", "from": "node_83", "title": "Flow", "to": "node_84"}, {"arrows": "to", "color": "#000000", "from": "node_83", "title": "Flow", "to": "node_85"}, {"arrows": "to", "color": "#000000", "from": "node_83", "title": "Flow", "to": "node_86"}, {"arrows": "to", "color": "#000000", "from": "node_83", "title": "Flow", "to": "node_87"}, {"arrows": "to", "color": "#000000", "from": "node_83", "title": "Flow", "to": "node_88"}, {"arrows": "to", "color": "#000000", "from": "node_83", "title": "Flow", "to": "node_89"}, {"arrows": "to", "color": "#000000", "from": "node_83", "title": "Flow", "to": "node_90"}, {"arrows": "to", "color": "#000000", "from": "node_83", "title": "Flow", "to": "node_91"}, {"arrows": "to", "color": "#000000", "from": "node_83", "title": "Flow", "to": "node_92"}, {"arrows": "to", "color": "#000000", "from": "node_83", "title": "Flow", "to": "node_93"}, {"arrows": "to", "color": "#000000", "from": "node_83", "title": "Flow", "to": "node_94"}, {"arrows": "to", "color": "#000000", "from": "node_83", "title": "Flow", "to": "node_95"}, {"arrows": "to", "color": "#000000", "from": "node_83", "title": "Flow", "to": "node_96"}, {"arrows": "to", "color": "#000000", "from": "node_83", "title": "Flow", "to": "node_97"}, {"arrows": "to", "color": "#000000", "from": "node_83", "title": "Flow", "to": "node_98"}, {"arrows": "to", "color": "#000000", "from": "node_83", "title": "Flow", "to": "node_99"}, {"arrows": "to", "color": "#000000", "from": "node_99", "title": "Flow", "to": "node_100"}, {"arrows": "to", "color": "#000000", "from": "node_99", "title": "Flow", "to": "node_101"}, {"arrows": "to", "color": "#9C27B0", "from": "node_99", "title": "Condition: next", "to": "node_99"}, {"arrows": "to", "color": "#000000", "from": "node_2", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_4", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_5", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_7", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_8", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_10", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_11", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_13", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_15", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_17", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_19", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_20", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_22", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_23", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_25", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_26", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_28", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_29", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_31", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_32", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_36", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_38", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_39", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_40", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_42", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_43", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_45", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_46", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_47", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_49", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_50", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_51", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_55", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_56", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_57", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_59", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_60", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_62", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_63", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_64", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_65", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_67", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_68", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_71", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_73", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_75", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_77", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_78", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_80", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_82", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_84", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_85", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_86", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_87", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_88", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_89", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_90", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_91", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_92", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_93", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_94", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_95", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_96", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_97", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_98", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_100", "title": "Flow", "to": "node_102"}, {"arrows": "to", "color": "#000000", "from": "node_101", "title": "Flow", "to": "node_102"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"nodes": {"font": {"size": 12, "face": "Arial"}, "borderWidth": 2, "shadow": true}, "edges": {"font": {"size": 10, "face": "Arial"}, "shadow": true, "smooth": {"type": "continuous"}}, "physics": {"enabled": true, "solver": "forceAtlas2Based", "forceAtlas2Based": {"gravitationalConstant": -50, "centralGravity": 0.01, "springLength": 100, "springConstant": 0.08}}, "interaction": {"hover": true, "tooltipDelay": 200}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+                      network.on("stabilizationProgress", function(params) {
+                          document.getElementById('loadingBar').removeAttribute("style");
+                          var maxWidth = 496;
+                          var minWidth = 20;
+                          var widthFactor = params.iterations/params.total;
+                          var width = Math.max(minWidth,maxWidth * widthFactor);
+                          document.getElementById('bar').style.width = width + 'px';
+                          document.getElementById('text').innerHTML = Math.round(widthFactor*100) + '%';
+                      });
+                      network.once("stabilizationIterationsDone", function() {
+                          document.getElementById('text').innerHTML = '100%';
+                          document.getElementById('bar').style.width = '496px';
+                          document.getElementById('loadingBar').style.opacity = 0;
+                          // really clean the dom element
+                          setTimeout(function () {document.getElementById('loadingBar').style.display = 'none';}, 500);
+                      });
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

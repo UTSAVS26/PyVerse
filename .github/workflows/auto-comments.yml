@@ -1,0 +1,77 @@
+name: Auto Comments
+
+# Trigger for Pull Requests
+on:
+  pull_request_target:
+    types: [opened]
+  issues:
+    types: [opened, closed]
+
+jobs:
+  # Job to comment on new Pull Requests
+  comment-on-new-pr:
+    if: github.event_name == 'pull_request_target'
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write # Permission to comment on and edit PRs
+    steps:
+      - name: Add Comment to Opened PR
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: "👋 Thank you for opening this pull request! We're excited to review your contribution. Please give us a moment, and we'll get back to you shortly! \n\nFeel free to join our community on [Discord](https://discord.gg/9mZnkTRFFe) to discuss more!"
+            });
+      - name: Add Reviewers to Pull Request
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            await github.rest.pulls.requestReviewers({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.issue.number,
+              reviewers: ['UTSAVS26', 'TheChaoticor']
+            });
+
+  # Job to comment on new Issues
+  comment-on-new-issue:
+    if: github.event_name == 'issues' && github.event.action == 'opened'
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write # Permission to comment on issues
+    steps:
+      - name: Add Comment to Opened Issue
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: "🙌 Thank you for bringing this to our attention! We appreciate your input and will investigate it as soon as possible. \n\nFeel free to join our community on [Discord](https://discord.gg/9mZnkTRFFe) to discuss more!"
+            });
+
+  # Job to comment on closed Issues
+  comment-on-closed-issue:
+    if: github.event_name == 'issues' && github.event.action == 'closed'
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write # Permission to comment on issues
+    steps:
+      - name: Add Comment to Closed Issue
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: "✅ This issue has been closed. Thank you for your contribution! If you have any further questions, feel free to join our community on [Discord](https://discord.gg/9mZnkTRFFe) to discuss more!"
+            });

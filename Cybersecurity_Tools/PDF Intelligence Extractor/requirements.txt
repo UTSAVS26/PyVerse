@@ -1,0 +1,10 @@
+pdfplumber==0.10.3
+PyMuPDF==1.23.8
+pandas==2.1.4
+transformers==4.36.2
+spacy==3.7.2
+python-dateutil==2.8.2
+regex==2023.10.3
+click==8.1.7
+pytest==7.4.3
+pytest-cov==4.1.0 
