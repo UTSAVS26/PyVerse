@@ -1,3 +1,4 @@
+import re
 import together
 import os
 from dotenv import load_dotenv

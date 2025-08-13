@@ -1,3 +1,4 @@
+import re 
 import together
 import os
 from dotenv import load_dotenv
@@ -15,7 +16,7 @@ def philosopher_response(topic: str, round_num: int, memory: dict) -> str:
 
     prompt = f"""You are a Philosopher in a debate on: "{topic}".
 The debate has 8 rounds. Each round, you and the Scientist take turns.
-Keep responses under 40 words.
+Respond in ONE line (<= 40 words). Do NOT include any role labels (no 'Scientist:' or 'Philosopher:').
 {context_section}
 Round {round_num} response:"""
 

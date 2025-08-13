@@ -12,10 +12,10 @@ def get_debate_topic():
             topic = env_topic.strip()
         else:
             topic = input("Enter topic for debate: ").strip()
-    except (EOFError, KeyboardInterrupt):
+    except (EOFError, KeyboardInterrupt) as e:
         raise RuntimeError(
             "No interactive input available. Set DEBATE_TOPIC to run non-interactively."
-        )
+        ) from e
     if not topic:
         raise ValueError("Debate topic cannot be empty.")
     return topic
