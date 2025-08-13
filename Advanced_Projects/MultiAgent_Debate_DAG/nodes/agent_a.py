@@ -20,7 +20,7 @@ def scientist_response(topic: str, round_num: int, memory: dict) -> str:
         context_section = "Context so far (recent turns):\n" + "\n".join(last_lines) + "\n"
 
     prompt = f"""You are a Scientist in a debate on: "{topic}".
-The debate has 8 rounds. Each round, you and the Scientist take turns.
+The debate has 8 rounds. Each round, you and the Philosopher take turns.
 Respond in ONE line (<= 40 words). Do NOT include any role labels (no 'Scientist:' or 'Philosopher:').
 {context_section}
 Round {round_num} response:"""

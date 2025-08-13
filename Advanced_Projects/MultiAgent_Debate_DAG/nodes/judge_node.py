@@ -5,12 +5,14 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# Fail fast if Together API key is not configured
-if not os.getenv("TOGETHER_API_KEY"):
+# Fail fast and set Together API key explicitly
+api_key = os.getenv("TOGETHER_API_KEY")
+if not api_key:
     raise RuntimeError(
         "TOGETHER_API_KEY not found in environment. "
         "Create a .env with TOGETHER_API_KEY=<your_key> or export it before running."
     )
+together.api_key = api_key
 
 def judge_debate(topic, memory):
     transcript = memory.get('transcript', '')
