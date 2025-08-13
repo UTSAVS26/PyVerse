@@ -175,9 +175,14 @@ class KeystrokeMetrics:
         )
         
         # Calculate additional metrics
-        d_prime = abs(genuine_mean - impostor_mean) / np.sqrt(
-            (genuine_std**2 + impostor_std**2) / 2
-        )
+        # Calculate additional metrics
+        denominator = np.sqrt((genuine_std**2 + impostor_std**2) / 2)
+        if denominator == 0:
+            # If both stds are zero, all scores are identical:
+            # infinite separability only if means differ, else zero
+            d_prime = float('inf') if genuine_mean != impostor_mean else 0.0
+        else:
+            d_prime = abs(genuine_mean - impostor_mean) / denominator
         
         return {
             'genuine_stats': {
