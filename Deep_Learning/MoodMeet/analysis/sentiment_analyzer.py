@@ -163,7 +163,10 @@ class SentimentAnalyzer:
             label_to_polarity = {
                 'positive': 1.0,
                 'negative': -1.0,
-                'neutral': 0.0
+                'neutral': 0.0,
+                'LABEL_0': -1.0,  # Some models use numeric labels
+                'LABEL_1': 0.0,
+                'LABEL_2': 1.0
             }
             
             polarity = label_to_polarity.get(best_result['label'], 0.0)
@@ -182,7 +185,6 @@ class SentimentAnalyzer:
                 polarity=0.0,
                 sentiment_label="neutral"
             )
-    
     def _ensemble_analyze(self, text: str) -> SentimentResult:
         """Analyze using ensemble of available models."""
         results = []
