@@ -300,21 +300,22 @@ import joblib
         return dict(zip(feature_names, importance))
 
 
-def create_and_train_classifier(df: pd.DataFrame, model_type: str = 'random_forest') -> TFIDFPasswordClassifier:
-    """
-    Create and train a classifier.
-    
-    Args:
-        df: Training data
-        model_type: Type of classifier to use
-        
-    Returns:
-        Trained classifier
-    """
-    classifier = TFIDFPasswordClassifier(model_type=model_type)
-    results = classifier.train(df)
-    
-    return classifier, results
+ def create_and_train_classifier(df: pd.DataFrame, model_type: str = 'random_forest') -> Tuple[TFIDFPasswordClassifier, Dict[str, Any]]:
+     """
+     Create and train a classifier.
+     
+     Args:
+         df: Training data
+         model_type: Type of classifier to use
+         
+     Returns:
+-        Trained classifier
++        Tuple of (trained classifier, training results)
+     """
+     classifier = TFIDFPasswordClassifier(model_type=model_type)
+     results = classifier.train(df)
+     
+     return classifier, results
 
 
 if __name__ == "__main__":
