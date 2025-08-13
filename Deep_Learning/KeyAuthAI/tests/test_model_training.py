@@ -67,12 +67,11 @@ class TestModelTrainer(unittest.TestCase):
             if os.path.exists(model_path):
                 os.remove(model_path)
         
-        # Clean up directories
+        # Clean up directories safely
+        import shutil
         if os.path.exists(self.temp_dir):
-            os.rmdir(self.temp_dir)
-        if os.path.exists("model") and not os.listdir("model"):
-            os.rmdir("model")
-    
+            shutil.rmtree(self.temp_dir, ignore_errors=True)
+        # Don't remove the model directory as it may be used by other tests
     def test_initialization(self):
         """Test trainer initialization."""
         self.assertIsNotNone(self.trainer)
