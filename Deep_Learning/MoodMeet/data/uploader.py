@@ -105,9 +105,10 @@ class TranscriptProcessor:
             errors.append("Transcript too short (minimum 10 characters)")
         
         # Check for speaker diversity
+        # Check for speaker diversity
         speakers = set([entry.speaker for entry in entries])
-        if len(speakers) < 1:
-            errors.append("No speakers identified")
+        if len(speakers) < 2:
+            errors.append("Insufficient speaker diversity (minimum 2 speakers required)")
         
         # Check for empty or very short entries
         for entry in entries:
