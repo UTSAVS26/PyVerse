@@ -73,12 +73,9 @@ class PasswordLabeler:
         for word in self.common_words:
             if word in password_lower:
                 # Check if it's a whole word (not part of another word)
-                word_start = password_lower.find(word)
-                word_end = word_start + len(word)
-                
-                # Check if the word is at the beginning, end, or surrounded by non-letters
-                if (word_start == 0 or not password_lower[word_start - 1].isalpha()) and \
-                   (word_end >= len(password_lower) or not password_lower[word_end].isalpha()):
+                # Use regex for proper word boundary detection
+                import re
+                if re.search(r'\b' + re.escape(word) + r'\b', password_lower):
                     return True
         return False
     
