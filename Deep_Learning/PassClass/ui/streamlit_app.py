@@ -23,13 +23,23 @@ def load_model():
     model_types = ['random_forest', 'logistic_regression', 'svm']
     
     for model_type in model_types:
+def load_model():
+    """Load the trained model."""
+    model_types = ['random_forest', 'logistic_regression', 'svm']
+    errors = []
+
+    for model_type in model_types:
         model_path = f'models/{model_type}_password_classifier.pkl'
         try:
             classifier = TFIDFPasswordClassifier()
             classifier.load_model(model_path)
             return classifier, model_type
-        except FileNotFoundError:
+        except FileNotFoundError as e:
+            errors.append(f"{model_type}: {str(e)}")
             continue
+
+    print(f"Failed to load any model. Attempted: {', '.join(errors)}")
+    return None, None
     
     return None, None
 
