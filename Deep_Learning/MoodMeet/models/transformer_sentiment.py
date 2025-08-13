@@ -5,8 +5,7 @@ Provides advanced transformer-based sentiment analysis using HuggingFace models.
 """
 
 import pandas as pd
-import numpy as np
-from typing import Dict, List, Tuple, Optional, Union
+from typing import Dict, List, Tuple
 from dataclasses import dataclass
 import logging
 import torch
@@ -14,7 +13,6 @@ from transformers import (
     pipeline, 
     AutoTokenizer, 
     AutoModelForSequenceClassification,
-    AutoModelForTokenClassification
 )
 from sklearn.metrics import classification_report, confusion_matrix
 import warnings
