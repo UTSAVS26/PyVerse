@@ -200,8 +200,11 @@ else self.vectorizer.get_feature_names() \
             raise ValueError("Model must be trained before making predictions")
         
         proba = self.pipeline.predict_proba([password])[0]
-        classes = self.pipeline.classes_
-        
+        proba = self.pipeline.predict_proba([password])[0]
+        try:
+            classes = self.pipeline.classes_
+        except AttributeError:
+            classes = self.pipeline.named_steps['classifier'].classes_
         return dict(zip(classes, proba))
     
     def predict_with_confidence(self, password: str) -> Dict[str, Any]:
