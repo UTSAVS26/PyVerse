@@ -171,9 +171,11 @@ class TestModelTrainer(unittest.TestCase):
         
         # Create a real model instead of MagicMock for pickling
         from sklearn.svm import SVC
+        from sklearn.preprocessing import StandardScaler
         self.trainer.model = SVC()
-        self.trainer.scaler = MagicMock()
-        
+        self.trainer.scaler = StandardScaler()
+        # Fit the scaler with dummy data to make it valid for pickling
+        self.trainer.scaler.fit([[1, 2], [3, 4]])
         # Save model
         model_path = self.trainer.save_model('testuser')
         
