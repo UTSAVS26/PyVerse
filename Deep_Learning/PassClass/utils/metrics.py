@@ -393,13 +393,17 @@ def create_performance_summary(results: Dict[str, Any]) -> str:
     # Per-class metrics
     summary.append("Per-Class Performance:")
     summary.append("-" * 30)
-    for cls, metrics in results['class_metrics'].items():
-        summary.append(f"{cls.upper()}:")
-        summary.append(f"  Precision: {metrics['precision']:.4f}")
-        summary.append(f"  Recall: {metrics['recall']:.4f}")
-        summary.append(f"  F1-Score: {metrics['f1']:.4f}")
-        summary.append(f"  Support: {metrics['support']}")
-        summary.append("")
+    # Per-class metrics
+    summary.append("Per-Class Performance:")
+    summary.append("-" * 30)
+    if 'class_metrics' in results:
+        for cls, metrics in results['class_metrics'].items():
+            summary.append(f"{cls.upper()}:")
+            summary.append(f"  Precision: {metrics.get('precision', 0):.4f}")
+            summary.append(f"  Recall: {metrics.get('recall', 0):.4f}")
+            summary.append(f"  F1-Score: {metrics.get('f1', 0):.4f}")
+            summary.append(f"  Support: {metrics.get('support', 0)}")
+            summary.append("")
     
     # ROC AUC scores
     if 'roc_auc_scores' in results:
