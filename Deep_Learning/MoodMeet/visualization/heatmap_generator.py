@@ -67,7 +67,7 @@ class HeatmapGenerator:
         else:
             # Use sequence-based grouping
             df_copy = df.copy()
-            df_copy['sequence_bin'] = pd.cut(range(len(df_copy)), bins=10, labels=False)
+            df_copy['sequence_bin'] = pd.cut(df_copy.index, bins=10, labels=False)
             pivot_data = df_copy.pivot_table(
                 values=polarity_column,
                 index=speaker_column,
