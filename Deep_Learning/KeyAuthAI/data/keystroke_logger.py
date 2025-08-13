@@ -84,7 +84,7 @@ class KeystrokeLogger:
         
         print(f"Recording keystroke dynamics for user: {username}")
         print(f"Please type the following passphrase: '{passphrase}'")
-        print("Press Ctrl+C to stop recording")
+        print("Press Enter to stop recording")
         
         # Start keyboard listener
         self.listener = keyboard.Listener(
