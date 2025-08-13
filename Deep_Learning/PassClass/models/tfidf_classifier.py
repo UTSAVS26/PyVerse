@@ -158,7 +158,11 @@ def prepare_data(self, df: pd.DataFrame) -> Tuple[np.ndarray, np.ndarray]:
             'y_test': y_test,
             'y_pred': y_pred,
             'y_pred_proba': y_pred_proba,
-            'feature_names': self.vectorizer.get_feature_names_out() if hasattr(self.vectorizer, 'get_feature_names_out') else []
+             'feature_names': self.vectorizer.get_feature_names_out() \
+if hasattr(self.vectorizer, 'get_feature_names_out') \
+else self.vectorizer.get_feature_names() \
+     if hasattr(self.vectorizer, 'get_feature_names') \
+     else []
         }
         
         print(f"Training completed!")
