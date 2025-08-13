@@ -36,7 +36,10 @@ class KeystrokeLogger:
         self.is_recording = False
         
         # Ensure data directory exists
-        os.makedirs(os.path.dirname(data_file), exist_ok=True)
+        # Ensure data directory exists
+        dir_path = os.path.dirname(data_file)
+        if dir_path:
+            os.makedirs(dir_path, exist_ok=True)
         
         # Load existing data
         self.user_data = self._load_user_data()
