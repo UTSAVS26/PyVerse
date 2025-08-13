@@ -49,11 +49,14 @@ class PasswordLabeler:
         }
         
         # Check for repeating patterns
-        for i in range(2, len(password) // 2 + 1):
+        # Check for repeating patterns
+        max_pattern_len = min(8, len(password) // 2 + 1)
+        for i in range(2, max_pattern_len):
             for j in range(len(password) - i + 1):
                 pattern = password[j:j+i]
                 if password.count(pattern) > 1:
                     score['repeating_patterns'] += 1
+                    break  # Count each pattern only once
         
         # Check for sequential patterns
         for pattern in self.sequential_patterns:
