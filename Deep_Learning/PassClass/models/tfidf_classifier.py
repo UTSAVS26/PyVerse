@@ -87,10 +87,25 @@ class TFIDFPasswordClassifier:
         Returns:
             Tuple of (X, y) for training
         """
-        X = df['password'].values
-        y = df['label'].values
+def prepare_data(self, df: pd.DataFrame) -> Tuple[np.ndarray, np.ndarray]:
+    """
+    Prepare data for training.
+    
+    Args:
+        df: DataFrame with 'password' and 'label' columns
         
-        return X, y
+    Returns:
+        Tuple of (X, y) for training
+    """
+    required_columns = ['password', 'label']
+    missing_columns = [col for col in required_columns if col not in df.columns]
+    if missing_columns:
+        raise ValueError(f"DataFrame missing required columns: {missing_columns}")
+    
+    X = df['password'].values
+    y = df['label'].values
+    
+    return X, y
     
     def train(self, df: pd.DataFrame, test_size: float = 0.2) -> Dict[str, Any]:
         """
