@@ -1,17 +1,20 @@
 import streamlit as st
 import numpy as np
 import librosa
-import pickle
+import joblib
 import os
 import tempfile
 from audio_recorder_streamlit import audio_recorder
+
+# Must be the first Streamlit command in the script
+st.set_page_config(page_title="Speech Emotion Recognition", page_icon="🎤", layout="wide")
 
 # Load the trained model
 @st.cache_resource
 def load_model():
     try:
-        with open('Emotion_Voice_Detection_Model.pkl', 'rb') as f:
-            model = pickle.load(f)
+        model_path = os.path.join(os.path.dirname(__file__), 'Emotion_Voice_Detection_Model.pkl')
+        model = joblib.load(model_path)
         return model
     except Exception as e:
         st.error(f"Error loading model: {e}")
@@ -24,8 +27,9 @@ def extract_feature(file_path):
         X, sample_rate = librosa.load(file_path, sr=22050, duration=30.0)  # Force 22kHz, max 30 seconds
         
         # Check if audio is too short
-        if len(X) < 2048:  # Minimum samples needed
-            st.error("Audio file is too short. Please use audio with at least 2-3 seconds duration.")
+        min_duration_sec = 2.0
+        if len(X) < int(min_duration_sec * sample_rate):
+            st.error(f"Audio file is too short. Please use audio with at least {min_duration_sec:.0f}–3 seconds duration.")
             return None
         
         # Ensure audio is valid (not all zeros/silence)
@@ -75,11 +79,6 @@ emotions_map = {
 }
 
 def main():
-    st.set_page_config(
-        page_title="Speech Emotion Recognition",
-        page_icon="🎤",
-        layout="wide"
-    )
     
     st.title("🎤 Speech Emotion Recognition")
     st.markdown("*Detect emotions from speech using RAVDESS dataset trained MLP model*")

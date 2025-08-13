@@ -21,7 +21,7 @@ A web-based application for detecting emotions in speech using machine learning.
 1. Clone the repository:
 ```bash
 git clone <repository-url>
-cd Speech_Emotion_Recognition
+cd Deep_Learning/Speech_Emotion_Recognition
 ```
 
 2. Install dependencies:
