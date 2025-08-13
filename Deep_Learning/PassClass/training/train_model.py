@@ -85,17 +85,10 @@ def train_multiple_models(df: pd.DataFrame) -> dict:
         print(f"Training {model_type.upper()} model...")
         print(f"{'='*50}")
         
-        # Create and train classifier
-        classifier = TFIDFPasswordClassifier(model_type=model_type)
-        training_results = classifier.train(df)
-        
-        models[model_type] = classifier
-        results[model_type] = training_results
-        
         # Save the model
         model_path = f'models/{model_type}_password_classifier.pkl'
+        os.makedirs(os.path.dirname(model_path), exist_ok=True)
         classifier.save_model(model_path)
-        
         print(f"Model saved to: {model_path}")
     
     return models, results
