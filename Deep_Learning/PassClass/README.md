@@ -61,10 +61,6 @@
 ### Installation Steps
 
 1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/passclass.git
-   cd passclass
-   ```
 
 2. **Install dependencies**
    ```bash
