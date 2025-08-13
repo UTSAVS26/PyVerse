@@ -187,18 +187,7 @@ class TransformerSentimentAnalyzer:
                         result = batch_results[j]
                         best_result = max(result, key=lambda x: x['score'])
                         
-                        # Map sentiment labels to polarity
-                        label_to_polarity = {
-                            'positive': 1.0,
-                            'negative': -1.0,
-                            'neutral': 0.0,
-                            'LABEL_0': -1.0,
-                            'LABEL_1': 0.0,
-                            'LABEL_2': 1.0
-                        }
-                        
-                        polarity = label_to_polarity.get(best_result['label'], 0.0)
-                        
+                        polarity = self._map_label_to_polarity(best_result['label'])
                         transformer_result = TransformerResult(
                             text=text,
                             sentiment_label=best_result['label'],
