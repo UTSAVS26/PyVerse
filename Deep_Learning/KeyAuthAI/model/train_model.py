@@ -117,8 +117,12 @@ class KeystrokeModelTrainer:
             n_synthetic = min(n_samples, 10)  # Create up to 10 synthetic samples
             
             # Generate synthetic negative samples by adding noise
-            noise_factor = 0.1
-            synthetic_X = X[:n_synthetic] + np.random.normal(0, noise_factor, X[:n_synthetic].shape)
+            # Generate synthetic negative samples by adding noise
+            # Use adaptive noise based on feature scale
+            noise_factor = 0.3  # Increased base factor
+            feature_std = np.std(X, axis=0)
+            feature_std[feature_std == 0] = 1.0  # Avoid division by zero
+            synthetic_X = X[:n_synthetic] + np.random.normal(0, noise_factor * feature_std, X[:n_synthetic].shape)
             synthetic_y = np.zeros(n_synthetic)
             
             # Combine real and synthetic data
