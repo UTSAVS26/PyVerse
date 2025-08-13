@@ -170,8 +170,13 @@ class AuthTerminal:
         
         try:
             # Verify user
-            result = self.verifier.verify_user_interactive(username, passphrase)
+             # Verify user
+             result = self.verifier.verify_user_interactive(username, passphrase)
             
+            # Check if verification was successful
+            if 'error' in result and result['error'] and result['error'] != 'None':
+                print(f"{Fore.RED}❌ Verification error: {result['error']}{Style.RESET_ALL}")
+                return {'success': False, 'error': result['error']}
             print(f"\n{Fore.CYAN}🔍 Authentication Results{Style.RESET_ALL}")
             print("=" * 40)
             
