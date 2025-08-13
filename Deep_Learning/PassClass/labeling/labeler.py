@@ -134,7 +134,7 @@ class PasswordLabeler:
         composite_score += char_types * 6
         
         # Uniqueness contribution (0-20 points)
-        uniqueness_ratio = score['unique_chars'] / score['length']
+        uniqueness_ratio = score['unique_chars'] / score['length'] if score['length'] > 0 else 0
         composite_score += int(uniqueness_ratio * 20)
         
         # Bonus for mixed case and special characters
