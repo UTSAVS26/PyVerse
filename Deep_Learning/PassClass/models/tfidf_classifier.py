@@ -260,16 +260,16 @@ else self.vectorizer.get_feature_names() \
             'y_pred_proba': y_pred_proba
         }
     
+import joblib
+
     def save_model(self, filepath: str):
         """Save the trained model to disk."""
         if not self.is_trained:
             raise ValueError("Model must be trained before saving")
         
-        with open(filepath, 'wb') as f:
-            pickle.dump(self.pipeline, f)
+        joblib.dump(self.pipeline, filepath)
         
         print(f"Model saved to: {filepath}")
-    
     def load_model(self, filepath: str):
         """Load a trained model from disk."""
         with open(filepath, 'rb') as f:
