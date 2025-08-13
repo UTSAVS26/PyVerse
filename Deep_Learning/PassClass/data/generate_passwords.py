@@ -241,7 +241,9 @@ def main():
     df = generator.generate_dataset(total_samples=3000)
     
     # Save to CSV
+    # Save to CSV
     output_file = 'data/password_dataset.csv'
+    os.makedirs(os.path.dirname(output_file), exist_ok=True)
     df.to_csv(output_file, index=False)
     print(f"\nDataset saved to: {output_file}")
     
