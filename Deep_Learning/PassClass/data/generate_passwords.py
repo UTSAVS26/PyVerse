@@ -198,10 +198,15 @@ class PasswordGenerator:
                 # If the generated password doesn't match the target label,
                 # try a few more times, then accept it
                 attempts = 0
+                attempts = 0
                 while actual_label != label and attempts < 5:
                     password = self.generate_password_with_target_label(label)
                     actual_label = self.labeler.label_password(password)
                     attempts += 1
+
+                if actual_label != label:
+                    print(f"Warning: Failed to generate {label} password after {attempts} attempts. "
+                          f"Generated '{password}' was labeled as '{actual_label}'")
                 
                 dataset.append({
                     'password': password,
