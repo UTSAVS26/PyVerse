@@ -53,10 +53,14 @@ class MoodTimelineVisualizer:
         if df.empty:
             return go.Figure()
         
+        # Validate required columns
+        missing = [c for c in [text_column, polarity_column] if c not in df.columns]
+        if missing:
+            return go.Figure()
+        
         # Create timeline data
         df_copy = df.copy()
         df_copy['index'] = range(len(df_copy))
-        
         # Create hover text
         hover_text = []
         for idx, row in df_copy.iterrows():
