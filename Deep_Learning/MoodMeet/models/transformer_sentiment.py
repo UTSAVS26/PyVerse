@@ -290,8 +290,14 @@ class TransformerSentimentAnalyzer:
         
         # Get predictions
         results = self.analyze_batch(texts)
-        predicted_labels = [result.sentiment_label for result in results]
-        
+        # Map model-specific outputs to canonical labels via polarity
+        def _polarity_to_label(p: float) -> str:
+            if p > 0.33:
+                return "positive"
+            if p < -0.33:
+                return "negative"
+            return "neutral"
+        predicted_labels = [_polarity_to_label(r.polarity) for r in results]
         # Calculate metrics
         try:
             report = classification_report(expected_labels, predicted_labels, output_dict=True)
