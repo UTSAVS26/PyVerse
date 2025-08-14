@@ -122,7 +122,7 @@ class MoodTimelineVisualizer:
         Returns:
             Plotly figure object
         """
-        if df.empty or speaker_column not in df.columns:
+        if df.empty or speaker_column not in df.columns or polarity_column not in df.columns:
             return go.Figure()
         
         # Group by speaker
