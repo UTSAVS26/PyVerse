@@ -69,7 +69,12 @@ class TransformerSentimentAnalyzer:
                 tokenizer=self.tokenizer,
                 device=0 if self.device == "cuda" else -1,
                 return_all_scores=True,
-                truncation=True
+                # Ensure long inputs don't error out
+                tokenizer_kwargs={
+                    "truncation": True,
+                    "padding": True,
+                    "max_length": self.tokenizer.model_max_length
+                }
             )
 
             logging.info(f"Successfully loaded transformer model: {self.model_name}")
