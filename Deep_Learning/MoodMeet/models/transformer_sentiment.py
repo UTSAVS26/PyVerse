@@ -68,7 +68,8 @@ class TransformerSentimentAnalyzer:
                 model=self.model,
                 tokenizer=self.tokenizer,
                 device=0 if self.device == "cuda" else -1,
-                return_all_scores=True
+                return_all_scores=True,
+                truncation=True
             )
 
             logging.info(f"Successfully loaded transformer model: {self.model_name}")
