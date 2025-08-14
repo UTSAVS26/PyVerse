@@ -1,0 +1,16 @@
+# Python virtual environment
+my_env/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Large data files
+Data/
+data.json
+*.keras
+
+# OS-specific files
+.DS_Store

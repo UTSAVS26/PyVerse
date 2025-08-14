@@ -1,0 +1,97 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyrecon"
+version = "1.0.0"
+description = "High-Speed Port Scanner & Service Fingerprinter"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Shivansh Katiyar", email = "shivansh.katiyar@example.com"}
+]
+maintainers = [
+    {name = "Shivansh Katiyar", email = "shivansh.katiyar@example.com"}
+]
+keywords = ["port-scanner", "network-security", "reconnaissance", "fingerprinting"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: System :: Networking :: Monitoring",
+    "Topic :: Security",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "rich>=13.0.0",
+    "click>=8.0.0",
+    "asyncio-mqtt>=0.16.0",
+    "cryptography>=41.0.0",
+    "requests>=2.31.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-mock>=3.10.0",
+    "black>=22.0.0",
+    "flake8>=4.0.0",
+]
+
+[project.scripts]
+pyrecon = "pyrecon.cli.main:main"
+
+[project.urls]
+Homepage = "https://github.com/shivanshkatiyar/pyrecon"
+Repository = "https://github.com/shivanshkatiyar/pyrecon"
+Documentation = "https://github.com/shivanshkatiyar/pyrecon#readme"
+"Bug Tracker" = "https://github.com/shivanshkatiyar/pyrecon/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pyrecon*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ["E203", "W503"]
+exclude = [
+    ".git",
+    "__pycache__",
+    "build",
+    "dist",
+    ".venv",
+    ".eggs",
+] 
