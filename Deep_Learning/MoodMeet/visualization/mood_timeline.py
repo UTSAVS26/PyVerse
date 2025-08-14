@@ -224,8 +224,10 @@ class MoodTimelineVisualizer:
         Returns:
             Plotly figure object
         """
-        if df.empty:
+        if df.empty or polarity_column not in df.columns:
             return go.Figure()
+        if window_size < 1:
+            raise ValueError("window_size must be >= 1")
         
         df_copy = df.copy()
         df_copy['index'] = range(len(df_copy))
@@ -234,7 +236,6 @@ class MoodTimelineVisualizer:
         df_copy['moving_avg'] = df_copy[polarity_column].rolling(
             window=window_size, center=True
         ).mean()
-        
         # Create figure with subplots
         fig = make_subplots(
             rows=2, cols=1,
