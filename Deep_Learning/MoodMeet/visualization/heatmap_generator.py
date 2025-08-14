@@ -114,11 +114,12 @@ class HeatmapGenerator:
         Returns:
             Plotly figure object
         """
-        if df.empty or speaker_column not in df.columns:
+        if df.empty or speaker_column not in df.columns or sentiment_column not in df.columns:
             return go.Figure()
         
         # Create sentiment distribution by speaker
         sentiment_dist = df.groupby([speaker_column, sentiment_column]).size().unstack(fill_value=0)
+        sentiment_dist_norm = sentiment_dist.div(sentiment_dist.sum(axis=1), axis=0).fillna(0.0)
         
         # Normalize by speaker total
         sentiment_dist_norm = sentiment_dist.div(sentiment_dist.sum(axis=1), axis=0)
