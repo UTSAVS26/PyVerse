@@ -32,11 +32,11 @@ class TransformerResult:
 
 class TransformerSentimentAnalyzer:
     """Advanced transformer-based sentiment analyzer."""
-    
+
     def __init__(self, model_name: str = "cardiffnlp/twitter-roberta-base-sentiment"):
         """
         Initialize transformer sentiment analyzer.
-        
+
         Args:
             model_name: HuggingFace model name
         """
@@ -45,23 +45,23 @@ class TransformerSentimentAnalyzer:
         self.model = None
         self.pipeline = None
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
-        
+
         try:
             self._load_model()
         except Exception as e:
             logging.error(f"Failed to load transformer model: {e}")
             raise
-    
+
     def _load_model(self):
         """Load the transformer model and tokenizer."""
         try:
             # Load tokenizer and model
             self.tokenizer = AutoTokenizer.from_pretrained(self.model_name)
             self.model = AutoModelForSequenceClassification.from_pretrained(self.model_name)
-            
+
             # Move to device
             self.model.to(self.device)
-            
+
             # Create pipeline
             self.pipeline = pipeline(
                 "sentiment-analysis",
@@ -70,16 +70,12 @@ class TransformerSentimentAnalyzer:
                 device=0 if self.device == "cuda" else -1,
                 return_all_scores=True
             )
-            
+
             logging.info(f"Successfully loaded transformer model: {self.model_name}")
-            
+
         except Exception as e:
             logging.error(f"Error loading model {self.model_name}: {e}")
             raise
-    
-class TransformerSentimentAnalyzer:
-    # … existing methods …
-
     def _map_label_to_polarity(self, label: str) -> float:
         """
         Map model-specific labels to a normalized polarity in [-1.0, 1.0].
