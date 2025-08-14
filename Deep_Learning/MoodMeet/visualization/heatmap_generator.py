@@ -200,19 +200,24 @@ class HeatmapGenerator:
         Returns:
             Plotly figure object
         """
-        if df.empty or speaker_column not in df.columns:
+        if df.empty or speaker_column not in df.columns or polarity_column not in df.columns:
             return go.Figure()
         
         # Create intensity bins
         df_copy = df.copy()
+        # Ensure numeric polarity and include exact zeros in the lowest bin
+        polarity_abs = pd.to_numeric(df_copy[polarity_column], errors='coerce').abs()
         df_copy['intensity_bin'] = pd.cut(
-            df_copy[polarity_column].abs(),
+            polarity_abs,
             bins=[0, 0.1, 0.3, 0.5, 1.0],
-            labels=['Low', 'Medium', 'High', 'Very High']
+            labels=['Low', 'Medium', 'High', 'Very High'],
+            include_lowest=True,
         )
         
         # Create pivot table
         intensity_dist = df_copy.groupby([speaker_column, 'intensity_bin']).size().unstack(fill_value=0)
+        # Ensure consistent column order
+        intensity_dist = intensity_dist.reindex(columns=['Low', 'Medium', 'High', 'Very High'], fill_value=0)
         
         # Create heatmap
         fig = go.Figure(data=go.Heatmap(
