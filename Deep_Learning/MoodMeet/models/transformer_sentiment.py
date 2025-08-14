@@ -235,9 +235,11 @@ class TransformerSentimentAnalyzer:
         if df.empty:
             return pd.DataFrame()
         
-        texts = df[text_column].tolist()
+        if text_column not in df.columns:
+            raise ValueError(f"text_column '{text_column}' not found in DataFrame")
+        # Cast to str to be robust to numeric/None entries
+        texts = df[text_column].astype(str).tolist()
         results = self.analyze_batch(texts)
-        
         # Convert to DataFrame
         result_data = []
         for result in results:
