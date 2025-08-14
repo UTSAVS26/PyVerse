@@ -119,11 +119,9 @@ class HeatmapGenerator:
         
         # Create sentiment distribution by speaker
         sentiment_dist = df.groupby([speaker_column, sentiment_column]).size().unstack(fill_value=0)
-        sentiment_dist_norm = sentiment_dist.div(sentiment_dist.sum(axis=1), axis=0).fillna(0.0)
-        
-        # Normalize by speaker total
-        sentiment_dist_norm = sentiment_dist.div(sentiment_dist.sum(axis=1), axis=0)
-        
+        # Normalize by speaker total and guard against division by zero
+        row_sums = sentiment_dist.sum(axis=1).replace(0, 1)
+        sentiment_dist_norm = sentiment_dist.div(row_sums, axis=0)
         # Create heatmap
         fig = go.Figure(data=go.Heatmap(
             z=sentiment_dist_norm.values,
