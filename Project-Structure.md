@@ -9,6 +9,7 @@
   * [Excel To Csv](./Advanced_Projects/Excel%20to%20CSV)
   * [File Organizer Gui](./Advanced_Projects/File_Organizer_GUI)
   * [Gui Based Taskmanager](./Advanced_Projects/GUI%20Based%20TaskManager)
+  * [Multiagent Debate Dag](./Advanced_Projects/MultiAgent_Debate_DAG)
   * [Navibot-Voice-Assistant](./Advanced_Projects/NaviBot-Voice-Assistant)
   * [Pdftextgenie](./Advanced_Projects/PDFTextGenie)
   * [Plagiarism-Checker](./Advanced_Projects/Plagiarism-checker)
