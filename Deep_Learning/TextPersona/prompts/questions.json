@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What drives your decisions more: logic or emotion?",
+      "category": "thinking_feeling",
+      "options": ["Primarily logic", "Primarily emotion", "A balance of both"]
+    },
+    {
+      "id": 2,
+      "question": "Do you prefer routine and structure or spontaneity and flexibility?",
+      "category": "judging_perceiving",
+      "options": ["Routine and structure", "Spontaneity and flexibility", "Depends on the situation"]
+    },
+    {
+      "id": 3,
+      "question": "How do you prefer to spend your free time?",
+      "category": "introversion_extraversion",
+      "options": ["Alone or with close friends", "In social groups and activities", "A mix of both"]
+    },
+    {
+      "id": 4,
+      "question": "When solving problems, do you focus more on concrete details or abstract concepts?",
+      "category": "sensing_intuition",
+      "options": ["Concrete details and facts", "Abstract concepts and possibilities", "Both depending on context"]
+    },
+    {
+      "id": 5,
+      "question": "What motivates you more: achieving goals or helping others?",
+      "category": "thinking_feeling",
+      "options": ["Achieving goals and success", "Helping others and harmony", "Both equally"]
+    },
+    {
+      "id": 6,
+      "question": "How do you make big decisions?",
+      "category": "judging_perceiving",
+      "options": ["Plan carefully and stick to the plan", "Keep options open and adapt", "Consider both approaches"]
+    },
+    {
+      "id": 7,
+      "question": "In social situations, do you prefer to observe or actively participate?",
+      "category": "introversion_extraversion",
+      "options": ["Observe and listen", "Actively participate and engage", "A mix of both"]
+    },
+    {
+      "id": 8,
+      "question": "Do you trust your gut feelings or prefer to analyze situations thoroughly?",
+      "category": "sensing_intuition",
+      "options": ["Analyze thoroughly with facts", "Trust gut feelings and intuition", "Both approaches"]
+    },
+    {
+      "id": 9,
+      "question": "What energizes you more: working alone or collaborating with others?",
+      "category": "introversion_extraversion",
+      "options": ["Working alone", "Collaborating with others", "Both depending on the task"]
+    },
+    {
+      "id": 10,
+      "question": "When learning something new, do you prefer step-by-step instructions or exploring freely?",
+      "category": "sensing_intuition",
+      "options": ["Step-by-step instructions", "Exploring freely and experimenting", "A combination of both"]
+    }
+  ]
+} 
