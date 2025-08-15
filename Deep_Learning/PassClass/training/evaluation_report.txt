@@ -1,0 +1,53 @@
+🔐 PassClass Model Evaluation Report
+==================================================
+
+Overall Accuracy: 0.9423
+
+Per-Class Performance:
+------------------------------
+WEAK:
+  Precision: 0.9244
+  Recall: 0.9290
+  F1-Score: 0.9267
+  Support: 1000
+
+MEDIUM:
+  Precision: 0.9198
+  Recall: 0.9060
+  F1-Score: 0.9128
+  Support: 1000
+
+STRONG:
+  Precision: 0.9822
+  Recall: 0.9920
+  F1-Score: 0.9871
+  Support: 1000
+
+ROC AUC Scores:
+--------------------
+WEAK: 0.9900
+MEDIUM: 0.9742
+STRONG: 0.9998
+
+Mean ROC AUC: 0.9880
+
+Detailed Classification Report:
+-----------------------------------
+              precision    recall  f1-score   support
+
+      medium       0.92      0.91      0.91      1000
+      strong       0.98      0.99      0.99      1000
+        weak       0.92      0.93      0.93      1000
+
+    accuracy                           0.94      3000
+   macro avg       0.94      0.94      0.94      3000
+weighted avg       0.94      0.94      0.94      3000
+
+Confusion Matrix:
+--------------------
+Predicted →
+Actual ↓
+           weak  medium  strong
+weak        906      18      76
+medium        8     992       0
+strong       71       0     929

@@ -1,0 +1,170 @@
+{
+  "sessions": [
+    {
+      "session_id": 1,
+      "grid_size": 4,
+      "total_time": 120.5,
+      "avg_reaction_time": 1.2,
+      "std_reaction_time": 0.5,
+      "total_moves": 20,
+      "mistakes": 3,
+      "completion_percentage": 100.0,
+      "completed": true
+    },
+    {
+      "session_id": 1,
+      "start_time": "2025-08-01T10:53:03.773136",
+      "end_time": "2025-08-01T10:53:03.773227",
+      "grid_size": 3,
+      "mistakes": 0,
+      "completed": true,
+      "total_time": 0.0,
+      "avg_reaction_time": 5.352497100830078e-05,
+      "min_reaction_time": 1.4781951904296875e-05,
+      "max_reaction_time": 9.226799011230469e-05,
+      "std_reaction_time": 5.479090306416224e-05,
+      "total_moves": 2,
+      "moves": 2,
+      "matched_pairs": 4,
+      "total_pairs": 4,
+      "completion_percentage": 100.0
+    },
+    {
+      "session_id": 1,
+      "grid_size": 4,
+      "total_time": 120.0,
+      "avg_reaction_time": 1.5,
+      "std_reaction_time": 0.5,
+      "total_moves": 20,
+      "mistakes": 3,
+      "completion_percentage": 100.0,
+      "completed": true
+    },
+    {
+      "session_id": 2,
+      "grid_size": 4,
+      "total_time": 130.0,
+      "avg_reaction_time": 1.6,
+      "std_reaction_time": 0.5,
+      "total_moves": 21,
+      "mistakes": 4,
+      "completion_percentage": 100.0,
+      "completed": true
+    },
+    {
+      "session_id": 3,
+      "grid_size": 4,
+      "total_time": 140.0,
+      "avg_reaction_time": 1.7,
+      "std_reaction_time": 0.5,
+      "total_moves": 22,
+      "mistakes": 5,
+      "completion_percentage": 100.0,
+      "completed": true
+    },
+    {
+      "session_id": 4,
+      "grid_size": 4,
+      "total_time": 150.0,
+      "avg_reaction_time": 1.8,
+      "std_reaction_time": 0.5,
+      "total_moves": 23,
+      "mistakes": 3,
+      "completion_percentage": 100.0,
+      "completed": true
+    },
+    {
+      "session_id": 5,
+      "grid_size": 4,
+      "total_time": 160.0,
+      "avg_reaction_time": 1.9,
+      "std_reaction_time": 0.5,
+      "total_moves": 24,
+      "mistakes": 4,
+      "completion_percentage": 100.0,
+      "completed": true
+    },
+    {
+      "session_id": 6,
+      "grid_size": 4,
+      "total_time": 170.0,
+      "avg_reaction_time": 2.0,
+      "std_reaction_time": 0.5,
+      "total_moves": 25,
+      "mistakes": 5,
+      "completion_percentage": 100.0,
+      "completed": true
+    },
+    {
+      "session_id": 1,
+      "grid_size": 4,
+      "total_time": 120.0,
+      "avg_reaction_time": 1.5,
+      "std_reaction_time": 0.5,
+      "total_moves": 20,
+      "mistakes": 3,
+      "completion_percentage": 100.0,
+      "completed": true
+    },
+    {
+      "session_id": 2,
+      "grid_size": 4,
+      "total_time": 130.0,
+      "avg_reaction_time": 1.6,
+      "std_reaction_time": 0.5,
+      "total_moves": 21,
+      "mistakes": 4,
+      "completion_percentage": 100.0,
+      "completed": true
+    },
+    {
+      "session_id": 3,
+      "grid_size": 4,
+      "total_time": 140.0,
+      "avg_reaction_time": 1.7,
+      "std_reaction_time": 0.5,
+      "total_moves": 22,
+      "mistakes": 5,
+      "completion_percentage": 100.0,
+      "completed": true
+    },
+    {
+      "session_id": 4,
+      "grid_size": 4,
+      "total_time": 150.0,
+      "avg_reaction_time": 1.8,
+      "std_reaction_time": 0.5,
+      "total_moves": 23,
+      "mistakes": 3,
+      "completion_percentage": 100.0,
+      "completed": true
+    },
+    {
+      "session_id": 5,
+      "grid_size": 4,
+      "total_time": 160.0,
+      "avg_reaction_time": 1.9,
+      "std_reaction_time": 0.5,
+      "total_moves": 24,
+      "mistakes": 4,
+      "completion_percentage": 100.0,
+      "completed": true
+    },
+    {
+      "session_id": 6,
+      "grid_size": 4,
+      "total_time": 170.0,
+      "avg_reaction_time": 2.0,
+      "std_reaction_time": 0.5,
+      "total_moves": 25,
+      "mistakes": 5,
+      "completion_percentage": 100.0,
+      "completed": true
+    }
+  ],
+  "user_profiles": {},
+  "model_data": {
+    "difficulty_predictions": [],
+    "performance_trends": []
+  }
+}
