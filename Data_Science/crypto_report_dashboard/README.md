@@ -121,7 +121,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - **Python libraries:** pandas, requests, smtplib, and others that helped build this project.
 
 ---
-
-![alt text](<Screenshot 2025-08-15 163051.png>)
-![alt text](<Screenshot 2025-08-15 163021-1.png>)
-![alt text](<Screenshot 2025-08-15 163035.png>)
+<img width="1919" height="888" alt="Screenshot 2025-08-15 163051" src="https://github.com/user-attachments/assets/06f0c1a0-c823-43ac-81ad-1906ef895297" />
+<img width="1919" height="887" alt="Screenshot 2025-08-15 163021" src="https://github.com/user-attachments/assets/36aef11a-0568-4e8d-b40e-8a05639f0c02" />
