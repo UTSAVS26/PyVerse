@@ -1,5 +1,6 @@
+
 streamlit
 pandas
 requests
-
+python-dotenv
 
