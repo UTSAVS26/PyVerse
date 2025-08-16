@@ -76,12 +76,6 @@ This will launch the Streamlit app in your default browser.
 
 ## Features Overview
 
-Here’s the updated section with the correct URL for the live crypto dashboard:
-
----
-
-## Features Overview
-
 - **Top 10 Cryptos with Highest Price Increase:** Displays the top 10 cryptocurrencies that have seen the highest increase in their price in the last 24 hours.
 - **Top 10 Cryptos with Highest Price Decrease:** Displays the top 10 cryptocurrencies that have seen the largest decrease in their price in the last 24 hours.
 - **Crypto Dashboard:** A live crypto dashboard provides a real-time view of cryptocurrency market data. Check it out [here](https://crypto-live-dashboard.streamlit.app/).
@@ -92,18 +86,14 @@ This now includes the updated dashboard link. Let me know if you'd like more cha
 ## File Structure
 
 ```
-crypto-report-and-dashboard/
+crypto_report_dashboard/
 │
 ├── crypto_report.py        # Main Streamlit app to run the UI
 ├── .streamlit/             # Contains Streamlit secrets and config files
 │   └── secrets.toml        # Email credentials for Streamlit deployment
-├── requirements.txt        # Python dependencies
-├── LICENSE                 # Project license file
+├── requirements.txt        # Python dependencies             
 ├── README.md               # This readme file
 ```
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Contributing
 
@@ -123,4 +113,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ---
 <img width="1919" height="888" alt="Screenshot 2025-08-15 163051" src="https://github.com/user-attachments/assets/06f0c1a0-c823-43ac-81ad-1906ef895297" />
 <img width="1919" height="887" alt="Screenshot 2025-08-15 163021" src="https://github.com/user-attachments/assets/36aef11a-0568-4e8d-b40e-8a05639f0c02" />
+
 
