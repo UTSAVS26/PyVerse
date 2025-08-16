@@ -1,4 +1,4 @@
 # Machine_Learning/Zomato_Sales_Analysis/requirements.txt
 pandas>=2.2
-scikit-learn>=1.4
+scikit-learn
 matplotlib>=3.8
