@@ -80,12 +80,9 @@ This will launch the Streamlit app in your default browser.
 - **Top 10 Cryptos with Highest Price Decrease:** Displays the top 10 cryptocurrencies that have seen the largest decrease in their price in the last 24 hours.
 - **Crypto Dashboard:** A live crypto dashboard provides a real-time view of cryptocurrency market data. Check it out [here](https://crypto-live-dashboard.streamlit.app/).
 
----
-
-This now includes the updated dashboard link. Let me know if you'd like more changes!
 ## File Structure
 
-```
+```text
 crypto_report_dashboard/
 │
 ├── crypto_report.py        # Main Streamlit app to run the UI
@@ -99,10 +96,25 @@ crypto_report_dashboard/
 
 1. Fork the repository
 2. Clone your fork locally
-3. Create a new branch (`git checkout -b feature-branch`)
-4. Make your changes and commit them (`git commit -am 'Add feature'`)
-5. Push your changes to your fork (`git push origin feature-branch`)
-6. Create a new Pull Request
+   
+```bash
+git clone https://github.com/UTSAVS26/PyVerse.git
+cd PyVerse/Data_Science/crypto_report_dashboard
+```
+4. Create a new branch (`git checkout -b feature-branch`)
+5. Make your changes and commit them (`git commit -am 'Add feature'`)
+6. Push your changes to your fork (`git push origin feature-branch`)
+7. Create a new Pull Request
+
+## Configuration
+
+Create a file at `.streamlit/secrets.toml` with your email credentials:
+
+```toml
+[email]
+EMAIL_USER     = "your_email@gmail.com"       # Gmail address used to send the report
+EMAIL_PASSWORD = "your_app_password"          # Your Gmail app password or account password
+```
 
 ## Acknowledgments
 
@@ -113,5 +125,6 @@ crypto_report_dashboard/
 ---
 <img width="1919" height="888" alt="Screenshot 2025-08-15 163051" src="https://github.com/user-attachments/assets/06f0c1a0-c823-43ac-81ad-1906ef895297" />
 <img width="1919" height="887" alt="Screenshot 2025-08-15 163021" src="https://github.com/user-attachments/assets/36aef11a-0568-4e8d-b40e-8a05639f0c02" />
+
 
 
