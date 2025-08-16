@@ -259,6 +259,7 @@
   * [Srgan For Upscaling Image Resolutions](./Deep_Learning/SRGAN%20for%20upscaling%20image%20resolutions)
   * [Sentimental Analysis Navie](./Deep_Learning/Sentimental_Analysis_navie)
   * [Spam Vs Ham Mail Classification [With Streamlit Gui]](./Deep_Learning/Spam%20Vs%20Ham%20Mail%20Classification%20[With%20Streamlit%20GUI])
+  * [Speech Emotion Recognition](./Deep_Learning/Speech_Emotion_Recognition)
   * [Spoken Language Translator](./Deep_Learning/Spoken%20Language%20Translator)
   * [Spotify Recommendation](./Deep_Learning/Spotify_recommendation)
   * [Sugarcane Disease Prediction](./Deep_Learning/Sugarcane%20Disease%20Prediction)
