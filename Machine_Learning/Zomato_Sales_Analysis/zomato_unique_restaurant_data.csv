@@ -1,0 +1,1001 @@
+restaurant_id,restaurant_name,city,opening_hours
+1,Punjab Grill - Jaipur Branch 3649,Jaipur,10:00 AM-11:00 PM
+2,Leopold Cafe - Chennai Branch 4998,Chennai,11:00 AM-11:00 PM
+3,Barbeque Nation - Pune Branch 3332,Pune,"1:00 PM-4:00 PM, 6:00 PM-9:00 PM"
+4,Paradise Biryani - Delhi Branch 826,Delhi,"12:00 PM-2:00 PM, 6:00 PM-10:00 PM"
+5,Thalassa - Chennai Branch 5667,Chennai,"1:00 PM-3:00 PM, 7:00 PM-11:00 PM"
+6,Peshawri - Delhi Branch 5944,Delhi,11:00 AM-11:00 PM
+7,Annalakshmi - Mumbai Branch 8293,Mumbai,10:00 AM-10:00 PM
+8,Trishna - Kolkata Branch 6271,Kolkata,"11:00 PM-2:00 PM, 6:00 PM-8:00 PM"
+9,Leopold Cafe - Jaipur Branch 4912,Jaipur,"1:00 PM-4:00 PM, 7:00 PM-9:00 PM"
+10,Thalassa - Jaipur Branch 3360,Jaipur,11:00 AM-9:00 PM
+11,The Fisherman's Wharf - Mumbai Branch 7844,Mumbai,"11:00 PM-2:00 PM, 8:00 PM-12:00 PM"
+12,Peshawri - Goa Branch 9196,Goa,10:00 AM-10:00 PM
+13,SodaBottleOpenerWala - Mumbai Branch 4133,Mumbai,11:00 AM-9:00 PM
+14,Indian Accent - Ahmedabad Branch 4645,Ahmedabad,"12:00 PM-3:00 PM, 6:00 PM-8:00 PM"
+15,Peshawri - Hyderabad Branch 5159,Hyderabad,10:00 AM-11:00 PM
+16,Trishna - Kolkata Branch 8599,Kolkata,10:00 AM-11:00 PM
+17,The Black Sheep Bistro - Chennai Branch 5439,Chennai,"1:00 PM-3:00 PM, 8:00 PM-11:00 PM"
+18,The Black Sheep Bistro - Chennai Branch 1496,Chennai,10:00 AM-10:00 PM
+19,The Bombay Canteen - Ahmedabad Branch 9982,Ahmedabad,"1:00 PM-3:00 PM, 8:00 PM-10:00 PM"
+20,Mainland China - Mumbai Branch 8966,Mumbai,"12:00 PM-3:00 PM, 7:00 PM-10:00 PM"
+21,Copper Chimney - Delhi Branch 640,Delhi,10:00 AM-9:00 PM
+22,Bukhara - Chennai Branch 6430,Chennai,10:00 AM-9:00 PM
+23,Indian Accent - Jaipur Branch 806,Jaipur,11:00 AM-10:00 PM
+24,Karavalli - Chennai Branch 4947,Chennai,"1:00 PM-3:00 PM, 8:00 PM-10:00 PM"
+25,The Fisherman's Wharf - Chennai Branch 5060,Chennai,11:00 AM-9:00 PM
+26,Trishna - Mumbai Branch 2288,Mumbai,11:00 AM-9:00 PM
+27,SodaBottleOpenerWala - Delhi Branch 6416,Delhi,"1:00 PM-4:00 PM, 6:00 PM-9:00 PM"
+28,Trishna - Delhi Branch 9612,Delhi,10:00 AM-10:00 PM
+29,Annalakshmi - Kolkata Branch 3713,Kolkata,"11:00 PM-1:00 PM, 8:00 PM-12:00 PM"
+30,Trishna - Chennai Branch 819,Chennai,"12:00 PM-3:00 PM, 8:00 PM-11:00 PM"
+31,Dum Pukht - Delhi Branch 5130,Delhi,10:00 AM-10:00 PM
+32,The Fisherman's Wharf - Pune Branch 3718,Pune,"11:00 PM-2:00 PM, 6:00 PM-10:00 PM"
+33,Copper Chimney - Mumbai Branch 5402,Mumbai,"1:00 PM-4:00 PM, 7:00 PM-10:00 PM"
+34,Bukhara - Hyderabad Branch 8504,Hyderabad,10:00 AM-10:00 PM
+35,Trishna - Hyderabad Branch 9203,Hyderabad,11:00 AM-11:00 PM
+36,SodaBottleOpenerWala - Goa Branch 2814,Goa,11:00 AM-9:00 PM
+37,Punjab Grill - Chennai Branch 7574,Chennai,10:00 AM-10:00 PM
+38,Trishna - Bangalore Branch 8695,Bangalore,10:00 AM-9:00 PM
+39,Mainland China - Pune Branch 8736,Pune,11:00 AM-11:00 PM
+40,Indian Accent - Ahmedabad Branch 7489,Ahmedabad,"11:00 PM-1:00 PM, 8:00 PM-11:00 PM"
+41,Trishna - Kolkata Branch 9885,Kolkata,"11:00 PM-2:00 PM, 8:00 PM-12:00 PM"
+42,Peshawri - Pune Branch 856,Pune,10:00 AM-10:00 PM
+43,Karavalli - Chennai Branch 8534,Chennai,10:00 AM-10:00 PM
+44,Leopold Cafe - Jaipur Branch 8457,Jaipur,10:00 AM-10:00 PM
+45,Annalakshmi - Bangalore Branch 6672,Bangalore,11:00 AM-11:00 PM
+46,Karavalli - Bangalore Branch 383,Bangalore,"12:00 PM-3:00 PM, 6:00 PM-9:00 PM"
+47,Leopold Cafe - Mumbai Branch 2391,Mumbai,"11:00 PM-1:00 PM, 7:00 PM-10:00 PM"
+48,Peshawri - Ahmedabad Branch 1675,Ahmedabad,11:00 AM-10:00 PM
+49,Bukhara - Jaipur Branch 2466,Jaipur,11:00 AM-9:00 PM
+50,Thalassa - Delhi Branch 9128,Delhi,10:00 AM-9:00 PM
+51,The Bombay Canteen - Hyderabad Branch 6553,Hyderabad,10:00 AM-9:00 PM
+52,Mainland China - Pune Branch 2905,Pune,"12:00 PM-2:00 PM, 7:00 PM-11:00 PM"
+53,The Fisherman's Wharf - Kolkata Branch 7391,Kolkata,"11:00 PM-2:00 PM, 8:00 PM-10:00 PM"
+54,Mainland China - Ahmedabad Branch 9186,Ahmedabad,"11:00 PM-1:00 PM, 7:00 PM-10:00 PM"
+55,The Black Sheep Bistro - Chennai Branch 1140,Chennai,"12:00 PM-2:00 PM, 8:00 PM-10:00 PM"
+56,Leopold Cafe - Pune Branch 4085,Pune,10:00 AM-10:00 PM
+57,Punjab Grill - Kolkata Branch 6712,Kolkata,"11:00 PM-1:00 PM, 8:00 PM-12:00 PM"
+58,Trishna - Ahmedabad Branch 8552,Ahmedabad,"12:00 PM-2:00 PM, 8:00 PM-10:00 PM"
+59,Leopold Cafe - Delhi Branch 3861,Delhi,11:00 AM-11:00 PM
+60,Dum Pukht - Bangalore Branch 5515,Bangalore,10:00 AM-9:00 PM
+61,The Fisherman's Wharf - Kolkata Branch 6925,Kolkata,10:00 AM-9:00 PM
+62,SodaBottleOpenerWala - Jaipur Branch 3339,Jaipur,11:00 AM-9:00 PM
+63,Mainland China - Jaipur Branch 7841,Jaipur,"12:00 PM-3:00 PM, 7:00 PM-11:00 PM"
+64,Annalakshmi - Jaipur Branch 2268,Jaipur,11:00 AM-9:00 PM
+65,Punjab Grill - Goa Branch 5850,Goa,10:00 AM-9:00 PM
+66,Oh! Calcutta - Ahmedabad Branch 7592,Ahmedabad,11:00 AM-9:00 PM
+67,Copper Chimney - Hyderabad Branch 638,Hyderabad,"11:00 PM-1:00 PM, 6:00 PM-9:00 PM"
+68,Bukhara - Goa Branch 4700,Goa,"1:00 PM-4:00 PM, 6:00 PM-9:00 PM"
+69,Mainland China - Bangalore Branch 5225,Bangalore,"11:00 PM-1:00 PM, 8:00 PM-12:00 PM"
+70,Thalassa - Chennai Branch 6656,Chennai,11:00 AM-11:00 PM
+71,SodaBottleOpenerWala - Jaipur Branch 2860,Jaipur,11:00 AM-11:00 PM
+72,SodaBottleOpenerWala - Ahmedabad Branch 7448,Ahmedabad,"11:00 PM-2:00 PM, 8:00 PM-10:00 PM"
+73,Indian Accent - Chennai Branch 8836,Chennai,"12:00 PM-3:00 PM, 6:00 PM-8:00 PM"
+74,Copper Chimney - Jaipur Branch 4551,Jaipur,11:00 AM-9:00 PM
+75,Annalakshmi - Delhi Branch 8460,Delhi,"1:00 PM-4:00 PM, 6:00 PM-8:00 PM"
+76,Annalakshmi - Bangalore Branch 9217,Bangalore,"1:00 PM-4:00 PM, 6:00 PM-9:00 PM"
+77,Punjab Grill - Pune Branch 1418,Pune,11:00 AM-10:00 PM
+78,Indian Accent - Pune Branch 3162,Pune,11:00 AM-9:00 PM
+79,Annalakshmi - Kolkata Branch 5397,Kolkata,11:00 AM-11:00 PM
+80,Leopold Cafe - Goa Branch 8782,Goa,11:00 AM-9:00 PM
+81,Peshawri - Delhi Branch 944,Delhi,11:00 AM-9:00 PM
+82,Oh! Calcutta - Jaipur Branch 8673,Jaipur,"1:00 PM-4:00 PM, 8:00 PM-10:00 PM"
+83,Punjab Grill - Jaipur Branch 9195,Jaipur,"12:00 PM-3:00 PM, 8:00 PM-10:00 PM"
+84,Bukhara - Jaipur Branch 5263,Jaipur,10:00 AM-11:00 PM
+85,Thalassa - Ahmedabad Branch 4216,Ahmedabad,"12:00 PM-2:00 PM, 8:00 PM-12:00 PM"
+86,Peshawri - Jaipur Branch 7045,Jaipur,10:00 AM-10:00 PM
+87,The Bombay Canteen - Chennai Branch 797,Chennai,"1:00 PM-3:00 PM, 8:00 PM-10:00 PM"
+88,Annalakshmi - Hyderabad Branch 9538,Hyderabad,11:00 AM-10:00 PM
+89,Oh! Calcutta - Jaipur Branch 108,Jaipur,11:00 AM-11:00 PM
+90,Copper Chimney - Mumbai Branch 2126,Mumbai,11:00 AM-9:00 PM
+91,Annalakshmi - Mumbai Branch 4618,Mumbai,"11:00 PM-1:00 PM, 7:00 PM-10:00 PM"
+92,Bukhara - Pune Branch 312,Pune,10:00 AM-11:00 PM
+93,Fatty Bao - Kolkata Branch 3501,Kolkata,10:00 AM-9:00 PM
+94,Thalassa - Jaipur Branch 2664,Jaipur,10:00 AM-10:00 PM
+95,Punjab Grill - Bangalore Branch 8512,Bangalore,"11:00 PM-2:00 PM, 8:00 PM-10:00 PM"
+96,Leopold Cafe - Ahmedabad Branch 8148,Ahmedabad,"1:00 PM-4:00 PM, 7:00 PM-11:00 PM"
+97,Oh! Calcutta - Mumbai Branch 9686,Mumbai,"12:00 PM-2:00 PM, 6:00 PM-9:00 PM"
+98,The Fisherman's Wharf - Mumbai Branch 7281,Mumbai,10:00 AM-10:00 PM
+99,Trishna - Ahmedabad Branch 5086,Ahmedabad,"11:00 PM-1:00 PM, 6:00 PM-10:00 PM"
+100,Bukhara - Chennai Branch 1267,Chennai,11:00 AM-9:00 PM
+101,Indian Accent - Jaipur Branch 1936,Jaipur,11:00 AM-11:00 PM
+102,Barbeque Nation - Hyderabad Branch 2663,Hyderabad,11:00 AM-10:00 PM
+103,Bukhara - Chennai Branch 1549,Chennai,11:00 AM-11:00 PM
+104,SodaBottleOpenerWala - Bangalore Branch 8705,Bangalore,"11:00 PM-1:00 PM, 7:00 PM-9:00 PM"
+105,Thalassa - Chennai Branch 7940,Chennai,11:00 AM-10:00 PM
+106,Dum Pukht - Goa Branch 9756,Goa,10:00 AM-9:00 PM
+107,Karavalli - Kolkata Branch 7757,Kolkata,10:00 AM-9:00 PM
+108,Trishna - Bangalore Branch 8036,Bangalore,"12:00 PM-3:00 PM, 8:00 PM-10:00 PM"
+109,Dum Pukht - Kolkata Branch 7083,Kolkata,"1:00 PM-4:00 PM, 7:00 PM-10:00 PM"
+110,The Black Sheep Bistro - Hyderabad Branch 8073,Hyderabad,"12:00 PM-3:00 PM, 8:00 PM-10:00 PM"
+111,Leopold Cafe - Jaipur Branch 6435,Jaipur,11:00 AM-9:00 PM
+112,SodaBottleOpenerWala - Kolkata Branch 2603,Kolkata,11:00 AM-11:00 PM
+113,Dum Pukht - Goa Branch 3897,Goa,"1:00 PM-4:00 PM, 6:00 PM-8:00 PM"
+114,Indian Accent - Hyderabad Branch 7980,Hyderabad,"11:00 PM-2:00 PM, 6:00 PM-9:00 PM"
+115,Thalassa - Ahmedabad Branch 4936,Ahmedabad,11:00 AM-10:00 PM
+116,Peshawri - Delhi Branch 5572,Delhi,11:00 AM-10:00 PM
+117,Peshawri - Mumbai Branch 7540,Mumbai,10:00 AM-9:00 PM
+118,Copper Chimney - Chennai Branch 9028,Chennai,10:00 AM-10:00 PM
+119,Bukhara - Goa Branch 5492,Goa,"1:00 PM-3:00 PM, 6:00 PM-10:00 PM"
+120,The Bombay Canteen - Hyderabad Branch 8081,Hyderabad,10:00 AM-9:00 PM
+121,SodaBottleOpenerWala - Pune Branch 7832,Pune,10:00 AM-9:00 PM
+122,Bukhara - Jaipur Branch 1367,Jaipur,"11:00 PM-2:00 PM, 7:00 PM-10:00 PM"
+123,Peshawri - Goa Branch 616,Goa,11:00 AM-9:00 PM
+124,The Fisherman's Wharf - Ahmedabad Branch 3699,Ahmedabad,"1:00 PM-3:00 PM, 8:00 PM-10:00 PM"
+125,Karavalli - Bangalore Branch 9582,Bangalore,"12:00 PM-3:00 PM, 6:00 PM-10:00 PM"
+126,Copper Chimney - Pune Branch 3928,Pune,11:00 AM-11:00 PM
+127,The Bombay Canteen - Chennai Branch 2230,Chennai,"12:00 PM-3:00 PM, 7:00 PM-9:00 PM"
+128,Dum Pukht - Kolkata Branch 9462,Kolkata,"12:00 PM-3:00 PM, 6:00 PM-8:00 PM"
+129,Peshawri - Jaipur Branch 6306,Jaipur,"12:00 PM-2:00 PM, 8:00 PM-11:00 PM"
+130,The Black Sheep Bistro - Pune Branch 8985,Pune,10:00 AM-10:00 PM
+131,The Bombay Canteen - Jaipur Branch 23,Jaipur,"1:00 PM-4:00 PM, 7:00 PM-10:00 PM"
+132,Annalakshmi - Bangalore Branch 77,Bangalore,11:00 AM-11:00 PM
+133,Peshawri - Bangalore Branch 6126,Bangalore,"11:00 PM-1:00 PM, 7:00 PM-10:00 PM"
+134,Trishna - Jaipur Branch 7206,Jaipur,10:00 AM-10:00 PM
+135,Karavalli - Mumbai Branch 5349,Mumbai,11:00 AM-10:00 PM
+136,Karavalli - Chennai Branch 4585,Chennai,"12:00 PM-2:00 PM, 6:00 PM-8:00 PM"
+137,Punjab Grill - Kolkata Branch 3695,Kolkata,11:00 AM-9:00 PM
+138,Karavalli - Goa Branch 9987,Goa,"1:00 PM-4:00 PM, 8:00 PM-10:00 PM"
+139,Thalassa - Jaipur Branch 5728,Jaipur,10:00 AM-10:00 PM
+140,The Black Sheep Bistro - Jaipur Branch 6152,Jaipur,11:00 AM-10:00 PM
+141,Leopold Cafe - Pune Branch 2984,Pune,10:00 AM-10:00 PM
+142,The Fisherman's Wharf - Pune Branch 1913,Pune,"1:00 PM-4:00 PM, 8:00 PM-10:00 PM"
+143,Copper Chimney - Kolkata Branch 9521,Kolkata,"12:00 PM-2:00 PM, 8:00 PM-10:00 PM"
+144,Bukhara - Chennai Branch 7467,Chennai,"1:00 PM-3:00 PM, 7:00 PM-10:00 PM"
+145,Annalakshmi - Mumbai Branch 3316,Mumbai,10:00 AM-9:00 PM
+146,Indian Accent - Goa Branch 3926,Goa,"11:00 PM-1:00 PM, 8:00 PM-10:00 PM"
+147,Punjab Grill - Kolkata Branch 4670,Kolkata,11:00 AM-9:00 PM
+148,Thalassa - Ahmedabad Branch 700,Ahmedabad,"11:00 PM-1:00 PM, 6:00 PM-10:00 PM"
+149,Annalakshmi - Ahmedabad Branch 4331,Ahmedabad,"1:00 PM-3:00 PM, 8:00 PM-10:00 PM"
+150,Mainland China - Jaipur Branch 6460,Jaipur,"12:00 PM-3:00 PM, 8:00 PM-10:00 PM"
+151,Dum Pukht - Pune Branch 7917,Pune,10:00 AM-10:00 PM
+152,Punjab Grill - Delhi Branch 9257,Delhi,11:00 AM-11:00 PM
+153,Peshawri - Kolkata Branch 7844,Kolkata,"11:00 PM-2:00 PM, 7:00 PM-10:00 PM"
+154,Barbeque Nation - Pune Branch 5916,Pune,10:00 AM-9:00 PM
+155,Trishna - Mumbai Branch 3008,Mumbai,"12:00 PM-3:00 PM, 7:00 PM-10:00 PM"
+156,Trishna - Chennai Branch 5433,Chennai,"12:00 PM-3:00 PM, 6:00 PM-8:00 PM"
+157,SodaBottleOpenerWala - Jaipur Branch 5577,Jaipur,10:00 AM-11:00 PM
+158,Punjab Grill - Jaipur Branch 8182,Jaipur,"1:00 PM-3:00 PM, 6:00 PM-9:00 PM"
+159,Trishna - Bangalore Branch 2848,Bangalore,"11:00 PM-1:00 PM, 7:00 PM-10:00 PM"
+160,Karavalli - Hyderabad Branch 2830,Hyderabad,"11:00 PM-2:00 PM, 7:00 PM-9:00 PM"
+161,SodaBottleOpenerWala - Bangalore Branch 578,Bangalore,"1:00 PM-4:00 PM, 7:00 PM-9:00 PM"
+162,Mainland China - Pune Branch 4087,Pune,"12:00 PM-3:00 PM, 7:00 PM-11:00 PM"
+163,SodaBottleOpenerWala - Ahmedabad Branch 2746,Ahmedabad,"12:00 PM-2:00 PM, 8:00 PM-11:00 PM"
+164,Dum Pukht - Hyderabad Branch 4782,Hyderabad,10:00 AM-11:00 PM
+165,Punjab Grill - Ahmedabad Branch 77,Ahmedabad,"11:00 PM-1:00 PM, 8:00 PM-12:00 PM"
+166,The Black Sheep Bistro - Goa Branch 5741,Goa,10:00 AM-11:00 PM
+167,Bukhara - Chennai Branch 7409,Chennai,"1:00 PM-3:00 PM, 6:00 PM-8:00 PM"
+168,Punjab Grill - Delhi Branch 8821,Delhi,11:00 AM-9:00 PM
+169,Punjab Grill - Kolkata Branch 7176,Kolkata,11:00 AM-11:00 PM
+170,Dum Pukht - Mumbai Branch 9175,Mumbai,"11:00 PM-2:00 PM, 6:00 PM-10:00 PM"
+171,The Bombay Canteen - Hyderabad Branch 4718,Hyderabad,10:00 AM-10:00 PM
+172,Dum Pukht - Hyderabad Branch 3973,Hyderabad,"12:00 PM-2:00 PM, 7:00 PM-11:00 PM"
+173,Trishna - Ahmedabad Branch 2622,Ahmedabad,11:00 AM-11:00 PM
+174,The Black Sheep Bistro - Jaipur Branch 2534,Jaipur,11:00 AM-11:00 PM
+175,Trishna - Bangalore Branch 3438,Bangalore,"11:00 PM-1:00 PM, 6:00 PM-9:00 PM"
+176,Indian Accent - Jaipur Branch 6479,Jaipur,10:00 AM-9:00 PM
+177,Oh! Calcutta - Hyderabad Branch 6768,Hyderabad,"12:00 PM-2:00 PM, 6:00 PM-9:00 PM"
+178,Dum Pukht - Mumbai Branch 2999,Mumbai,"11:00 PM-2:00 PM, 8:00 PM-11:00 PM"
+179,The Black Sheep Bistro - Hyderabad Branch 2577,Hyderabad,11:00 AM-9:00 PM
+180,The Bombay Canteen - Kolkata Branch 3899,Kolkata,10:00 AM-10:00 PM
+181,Annalakshmi - Jaipur Branch 732,Jaipur,11:00 AM-10:00 PM
+182,Barbeque Nation - Goa Branch 7093,Goa,"12:00 PM-3:00 PM, 7:00 PM-10:00 PM"
+183,Copper Chimney - Jaipur Branch 1988,Jaipur,11:00 AM-9:00 PM
+184,Oh! Calcutta - Ahmedabad Branch 6345,Ahmedabad,"1:00 PM-3:00 PM, 8:00 PM-11:00 PM"
+185,Bukhara - Goa Branch 3962,Goa,11:00 AM-9:00 PM
+186,Copper Chimney - Delhi Branch 8912,Delhi,"1:00 PM-4:00 PM, 8:00 PM-11:00 PM"
+187,Karavalli - Ahmedabad Branch 9946,Ahmedabad,11:00 AM-9:00 PM
+188,Punjab Grill - Bangalore Branch 648,Bangalore,"12:00 PM-3:00 PM, 6:00 PM-8:00 PM"
+189,Indian Accent - Hyderabad Branch 3011,Hyderabad,"12:00 PM-2:00 PM, 8:00 PM-11:00 PM"
+190,The Black Sheep Bistro - Bangalore Branch 8506,Bangalore,"1:00 PM-4:00 PM, 7:00 PM-10:00 PM"
+191,Karavalli - Mumbai Branch 7580,Mumbai,"11:00 PM-1:00 PM, 7:00 PM-10:00 PM"
+192,Karavalli - Ahmedabad Branch 9976,Ahmedabad,"11:00 PM-2:00 PM, 8:00 PM-11:00 PM"
+193,Fatty Bao - Delhi Branch 6652,Delhi,"1:00 PM-4:00 PM, 7:00 PM-10:00 PM"
+194,Oh! Calcutta - Goa Branch 6216,Goa,10:00 AM-11:00 PM
+195,Fatty Bao - Mumbai Branch 8090,Mumbai,"11:00 PM-1:00 PM, 7:00 PM-10:00 PM"
+196,Fatty Bao - Bangalore Branch 453,Bangalore,11:00 AM-10:00 PM
+197,The Bombay Canteen - Pune Branch 4501,Pune,"12:00 PM-3:00 PM, 7:00 PM-9:00 PM"
+198,Trishna - Hyderabad Branch 1184,Hyderabad,"12:00 PM-2:00 PM, 8:00 PM-10:00 PM"
+199,Mainland China - Kolkata Branch 3216,Kolkata,11:00 AM-9:00 PM
+200,Mainland China - Bangalore Branch 5664,Bangalore,"1:00 PM-3:00 PM, 8:00 PM-12:00 PM"
+201,Thalassa - Mumbai Branch 3979,Mumbai,11:00 AM-9:00 PM
+202,The Fisherman's Wharf - Goa Branch 37,Goa,"1:00 PM-4:00 PM, 8:00 PM-10:00 PM"
+203,Dum Pukht - Jaipur Branch 6210,Jaipur,"11:00 PM-1:00 PM, 6:00 PM-10:00 PM"
+204,Paradise Biryani - Goa Branch 6333,Goa,11:00 AM-10:00 PM
+205,The Fisherman's Wharf - Kolkata Branch 2404,Kolkata,10:00 AM-10:00 PM
+206,Annalakshmi - Ahmedabad Branch 211,Ahmedabad,10:00 AM-11:00 PM
+207,Barbeque Nation - Jaipur Branch 173,Jaipur,"1:00 PM-3:00 PM, 6:00 PM-9:00 PM"
+208,Punjab Grill - Kolkata Branch 259,Kolkata,11:00 AM-9:00 PM
+209,Leopold Cafe - Ahmedabad Branch 8780,Ahmedabad,10:00 AM-11:00 PM
+210,Indian Accent - Hyderabad Branch 708,Hyderabad,11:00 AM-10:00 PM
+211,Punjab Grill - Kolkata Branch 4570,Kolkata,"11:00 PM-1:00 PM, 8:00 PM-10:00 PM"
+212,SodaBottleOpenerWala - Goa Branch 5308,Goa,"12:00 PM-2:00 PM, 6:00 PM-8:00 PM"
+213,Fatty Bao - Chennai Branch 8066,Chennai,"1:00 PM-3:00 PM, 7:00 PM-9:00 PM"
+214,Trishna - Chennai Branch 9818,Chennai,"11:00 PM-2:00 PM, 8:00 PM-12:00 PM"
+215,Oh! Calcutta - Mumbai Branch 8557,Mumbai,"12:00 PM-2:00 PM, 6:00 PM-9:00 PM"
+216,Mainland China - Goa Branch 5018,Goa,"11:00 PM-2:00 PM, 7:00 PM-10:00 PM"
+217,Oh! Calcutta - Bangalore Branch 5565,Bangalore,10:00 AM-11:00 PM
+218,Paradise Biryani - Delhi Branch 7139,Delhi,"12:00 PM-3:00 PM, 6:00 PM-9:00 PM"
+219,The Bombay Canteen - Goa Branch 438,Goa,"1:00 PM-4:00 PM, 8:00 PM-10:00 PM"
+220,Peshawri - Jaipur Branch 7203,Jaipur,11:00 AM-11:00 PM
+221,SodaBottleOpenerWala - Jaipur Branch 6948,Jaipur,11:00 AM-9:00 PM
+222,The Fisherman's Wharf - Chennai Branch 8865,Chennai,11:00 AM-9:00 PM
+223,Paradise Biryani - Goa Branch 5963,Goa,10:00 AM-10:00 PM
+224,Fatty Bao - Mumbai Branch 8048,Mumbai,"1:00 PM-3:00 PM, 7:00 PM-9:00 PM"
+225,Punjab Grill - Jaipur Branch 111,Jaipur,11:00 AM-10:00 PM
+226,Fatty Bao - Mumbai Branch 533,Mumbai,10:00 AM-10:00 PM
+227,Barbeque Nation - Bangalore Branch 9856,Bangalore,"11:00 PM-1:00 PM, 7:00 PM-10:00 PM"
+228,Leopold Cafe - Mumbai Branch 5343,Mumbai,"1:00 PM-3:00 PM, 6:00 PM-8:00 PM"
+229,Thalassa - Jaipur Branch 5846,Jaipur,10:00 AM-11:00 PM
+230,The Bombay Canteen - Hyderabad Branch 4662,Hyderabad,"12:00 PM-2:00 PM, 7:00 PM-9:00 PM"
+231,Indian Accent - Chennai Branch 236,Chennai,"1:00 PM-4:00 PM, 8:00 PM-10:00 PM"
+232,Oh! Calcutta - Jaipur Branch 8619,Jaipur,"12:00 PM-3:00 PM, 7:00 PM-10:00 PM"
+233,Fatty Bao - Ahmedabad Branch 1374,Ahmedabad,11:00 AM-10:00 PM
+234,Oh! Calcutta - Pune Branch 9968,Pune,10:00 AM-10:00 PM
+235,The Black Sheep Bistro - Goa Branch 3244,Goa,11:00 AM-11:00 PM
+236,Copper Chimney - Bangalore Branch 1500,Bangalore,"11:00 PM-2:00 PM, 7:00 PM-10:00 PM"
+237,Fatty Bao - Delhi Branch 2556,Delhi,"12:00 PM-2:00 PM, 7:00 PM-10:00 PM"
+238,Bukhara - Bangalore Branch 6920,Bangalore,10:00 AM-10:00 PM
+239,Bukhara - Bangalore Branch 2964,Bangalore,"11:00 PM-1:00 PM, 7:00 PM-9:00 PM"
+240,Copper Chimney - Jaipur Branch 4371,Jaipur,"11:00 PM-2:00 PM, 7:00 PM-11:00 PM"
+241,SodaBottleOpenerWala - Chennai Branch 6722,Chennai,"12:00 PM-3:00 PM, 8:00 PM-12:00 PM"
+242,Karavalli - Ahmedabad Branch 9265,Ahmedabad,10:00 AM-10:00 PM
+243,Oh! Calcutta - Chennai Branch 6074,Chennai,"11:00 PM-2:00 PM, 6:00 PM-10:00 PM"
+244,Leopold Cafe - Jaipur Branch 1345,Jaipur,"1:00 PM-3:00 PM, 7:00 PM-9:00 PM"
+245,Mainland China - Bangalore Branch 2667,Bangalore,10:00 AM-10:00 PM
+246,The Fisherman's Wharf - Pune Branch 6979,Pune,11:00 AM-11:00 PM
+247,Copper Chimney - Goa Branch 3159,Goa,11:00 AM-9:00 PM
+248,Annalakshmi - Jaipur Branch 3458,Jaipur,11:00 AM-10:00 PM
+249,The Black Sheep Bistro - Jaipur Branch 4205,Jaipur,11:00 AM-10:00 PM
+250,The Fisherman's Wharf - Goa Branch 8949,Goa,10:00 AM-9:00 PM
+251,The Bombay Canteen - Kolkata Branch 3223,Kolkata,"12:00 PM-3:00 PM, 7:00 PM-9:00 PM"
+252,The Fisherman's Wharf - Ahmedabad Branch 1549,Ahmedabad,11:00 AM-11:00 PM
+253,The Black Sheep Bistro - Chennai Branch 8571,Chennai,"11:00 PM-2:00 PM, 6:00 PM-8:00 PM"
+254,Oh! Calcutta - Kolkata Branch 8610,Kolkata,10:00 AM-10:00 PM
+255,The Bombay Canteen - Kolkata Branch 4452,Kolkata,"12:00 PM-3:00 PM, 8:00 PM-12:00 PM"
+256,The Black Sheep Bistro - Jaipur Branch 1101,Jaipur,"1:00 PM-4:00 PM, 6:00 PM-8:00 PM"
+257,Dum Pukht - Goa Branch 220,Goa,"12:00 PM-2:00 PM, 8:00 PM-11:00 PM"
+258,SodaBottleOpenerWala - Jaipur Branch 8402,Jaipur,11:00 AM-10:00 PM
+259,Annalakshmi - Ahmedabad Branch 9061,Ahmedabad,10:00 AM-10:00 PM
+260,Leopold Cafe - Mumbai Branch 6870,Mumbai,"12:00 PM-3:00 PM, 7:00 PM-10:00 PM"
+261,Paradise Biryani - Bangalore Branch 4837,Bangalore,10:00 AM-9:00 PM
+262,Karavalli - Delhi Branch 5504,Delhi,11:00 AM-11:00 PM
+263,The Fisherman's Wharf - Pune Branch 4776,Pune,10:00 AM-9:00 PM
+264,Karavalli - Jaipur Branch 3368,Jaipur,"12:00 PM-2:00 PM, 6:00 PM-9:00 PM"
+265,Punjab Grill - Jaipur Branch 5174,Jaipur,"1:00 PM-3:00 PM, 8:00 PM-10:00 PM"
+266,Indian Accent - Hyderabad Branch 8649,Hyderabad,"11:00 PM-1:00 PM, 7:00 PM-10:00 PM"
+267,Fatty Bao - Kolkata Branch 5649,Kolkata,11:00 AM-11:00 PM
+268,Copper Chimney - Jaipur Branch 6048,Jaipur,"12:00 PM-2:00 PM, 8:00 PM-10:00 PM"
+269,Dum Pukht - Pune Branch 7112,Pune,11:00 AM-11:00 PM
+270,Copper Chimney - Bangalore Branch 7230,Bangalore,11:00 AM-11:00 PM
+271,The Fisherman's Wharf - Kolkata Branch 9030,Kolkata,"12:00 PM-3:00 PM, 8:00 PM-11:00 PM"
+272,The Bombay Canteen - Hyderabad Branch 1749,Hyderabad,"11:00 PM-2:00 PM, 6:00 PM-9:00 PM"
+273,Oh! Calcutta - Pune Branch 7799,Pune,"11:00 PM-2:00 PM, 7:00 PM-9:00 PM"
+274,Paradise Biryani - Pune Branch 1213,Pune,"1:00 PM-4:00 PM, 6:00 PM-8:00 PM"
+275,Trishna - Goa Branch 9822,Goa,11:00 AM-11:00 PM
+276,The Bombay Canteen - Kolkata Branch 3219,Kolkata,11:00 AM-10:00 PM
+277,Fatty Bao - Jaipur Branch 4115,Jaipur,"1:00 PM-4:00 PM, 7:00 PM-11:00 PM"
+278,Paradise Biryani - Pune Branch 2655,Pune,10:00 AM-11:00 PM
+279,Copper Chimney - Kolkata Branch 6472,Kolkata,"1:00 PM-3:00 PM, 8:00 PM-10:00 PM"
+280,Barbeque Nation - Ahmedabad Branch 7537,Ahmedabad,10:00 AM-10:00 PM
+281,Trishna - Mumbai Branch 7288,Mumbai,"1:00 PM-3:00 PM, 6:00 PM-8:00 PM"
+282,SodaBottleOpenerWala - Chennai Branch 9094,Chennai,"1:00 PM-3:00 PM, 7:00 PM-9:00 PM"
+283,SodaBottleOpenerWala - Chennai Branch 9287,Chennai,11:00 AM-9:00 PM
+284,Barbeque Nation - Hyderabad Branch 1835,Hyderabad,10:00 AM-9:00 PM
+285,Copper Chimney - Ahmedabad Branch 1054,Ahmedabad,11:00 AM-10:00 PM
+286,Copper Chimney - Goa Branch 8048,Goa,11:00 AM-11:00 PM
+287,Peshawri - Jaipur Branch 8064,Jaipur,"12:00 PM-3:00 PM, 7:00 PM-9:00 PM"
+288,Dum Pukht - Goa Branch 69,Goa,"12:00 PM-3:00 PM, 8:00 PM-10:00 PM"
+289,Oh! Calcutta - Ahmedabad Branch 3503,Ahmedabad,11:00 AM-9:00 PM
+290,Indian Accent - Goa Branch 3936,Goa,10:00 AM-10:00 PM
+291,Oh! Calcutta - Hyderabad Branch 2265,Hyderabad,"12:00 PM-3:00 PM, 7:00 PM-9:00 PM"
+292,Barbeque Nation - Jaipur Branch 7811,Jaipur,"12:00 PM-3:00 PM, 8:00 PM-10:00 PM"
+293,Leopold Cafe - Pune Branch 5947,Pune,11:00 AM-11:00 PM
+294,Leopold Cafe - Hyderabad Branch 1773,Hyderabad,11:00 AM-10:00 PM
+295,Annalakshmi - Goa Branch 1553,Goa,10:00 AM-10:00 PM
+296,Fatty Bao - Jaipur Branch 3730,Jaipur,11:00 AM-10:00 PM
+297,Fatty Bao - Bangalore Branch 5275,Bangalore,"1:00 PM-3:00 PM, 8:00 PM-12:00 PM"
+298,Punjab Grill - Goa Branch 9538,Goa,"11:00 PM-1:00 PM, 8:00 PM-11:00 PM"
+299,Barbeque Nation - Pune Branch 3860,Pune,11:00 AM-9:00 PM
+300,SodaBottleOpenerWala - Chennai Branch 3315,Chennai,"1:00 PM-4:00 PM, 6:00 PM-8:00 PM"
+301,Trishna - Hyderabad Branch 9882,Hyderabad,11:00 AM-9:00 PM
+302,Bukhara - Kolkata Branch 1178,Kolkata,"11:00 PM-2:00 PM, 6:00 PM-9:00 PM"
+303,The Fisherman's Wharf - Delhi Branch 51,Delhi,11:00 AM-9:00 PM
+304,Peshawri - Goa Branch 5032,Goa,"12:00 PM-2:00 PM, 6:00 PM-9:00 PM"
+305,Peshawri - Kolkata Branch 6308,Kolkata,"11:00 PM-1:00 PM, 8:00 PM-11:00 PM"
+306,The Fisherman's Wharf - Hyderabad Branch 9110,Hyderabad,11:00 AM-11:00 PM
+307,Oh! Calcutta - Pune Branch 2184,Pune,"11:00 PM-1:00 PM, 8:00 PM-11:00 PM"
+308,Copper Chimney - Chennai Branch 9941,Chennai,"1:00 PM-4:00 PM, 6:00 PM-9:00 PM"
+309,Paradise Biryani - Hyderabad Branch 1250,Hyderabad,"11:00 PM-2:00 PM, 8:00 PM-12:00 PM"
+310,Barbeque Nation - Goa Branch 2431,Goa,"12:00 PM-2:00 PM, 8:00 PM-11:00 PM"
+311,Paradise Biryani - Delhi Branch 3625,Delhi,10:00 AM-9:00 PM
+312,Punjab Grill - Bangalore Branch 2234,Bangalore,10:00 AM-9:00 PM
+313,Copper Chimney - Goa Branch 942,Goa,"1:00 PM-4:00 PM, 6:00 PM-10:00 PM"
+314,Barbeque Nation - Chennai Branch 2257,Chennai,"12:00 PM-3:00 PM, 6:00 PM-10:00 PM"
+315,Mainland China - Kolkata Branch 2208,Kolkata,10:00 AM-9:00 PM
+316,SodaBottleOpenerWala - Goa Branch 9942,Goa,"11:00 PM-1:00 PM, 7:00 PM-11:00 PM"
+317,The Fisherman's Wharf - Ahmedabad Branch 5659,Ahmedabad,"1:00 PM-4:00 PM, 7:00 PM-9:00 PM"
+318,Annalakshmi - Bangalore Branch 6327,Bangalore,"11:00 PM-1:00 PM, 8:00 PM-12:00 PM"
+319,SodaBottleOpenerWala - Delhi Branch 164,Delhi,10:00 AM-11:00 PM
+320,Dum Pukht - Ahmedabad Branch 134,Ahmedabad,10:00 AM-10:00 PM
+321,Karavalli - Goa Branch 9953,Goa,"11:00 PM-2:00 PM, 7:00 PM-10:00 PM"
+322,Paradise Biryani - Ahmedabad Branch 9809,Ahmedabad,11:00 AM-10:00 PM
+323,Karavalli - Ahmedabad Branch 1258,Ahmedabad,"11:00 PM-1:00 PM, 7:00 PM-10:00 PM"
+324,The Black Sheep Bistro - Ahmedabad Branch 2311,Ahmedabad,10:00 AM-10:00 PM
+325,Oh! Calcutta - Goa Branch 4634,Goa,10:00 AM-10:00 PM
+326,The Black Sheep Bistro - Goa Branch 5391,Goa,"12:00 PM-2:00 PM, 7:00 PM-11:00 PM"
+327,Dum Pukht - Bangalore Branch 9485,Bangalore,"11:00 PM-1:00 PM, 8:00 PM-12:00 PM"
+328,The Bombay Canteen - Delhi Branch 6362,Delhi,"11:00 PM-2:00 PM, 8:00 PM-12:00 PM"
+329,SodaBottleOpenerWala - Jaipur Branch 5075,Jaipur,11:00 AM-11:00 PM
+330,Paradise Biryani - Mumbai Branch 445,Mumbai,"12:00 PM-3:00 PM, 6:00 PM-10:00 PM"
+331,Trishna - Goa Branch 7167,Goa,"12:00 PM-2:00 PM, 7:00 PM-9:00 PM"
+332,The Bombay Canteen - Hyderabad Branch 8592,Hyderabad,"1:00 PM-4:00 PM, 6:00 PM-9:00 PM"
+333,Annalakshmi - Ahmedabad Branch 1087,Ahmedabad,"1:00 PM-3:00 PM, 7:00 PM-9:00 PM"
+334,Dum Pukht - Pune Branch 5491,Pune,11:00 AM-11:00 PM
+335,Oh! Calcutta - Bangalore Branch 8726,Bangalore,"1:00 PM-3:00 PM, 7:00 PM-10:00 PM"
+336,SodaBottleOpenerWala - Chennai Branch 4246,Chennai,"11:00 PM-2:00 PM, 7:00 PM-10:00 PM"
+337,Trishna - Delhi Branch 4119,Delhi,"11:00 PM-2:00 PM, 6:00 PM-10:00 PM"
+338,SodaBottleOpenerWala - Hyderabad Branch 5623,Hyderabad,11:00 AM-11:00 PM
+339,Paradise Biryani - Bangalore Branch 1812,Bangalore,"1:00 PM-3:00 PM, 7:00 PM-9:00 PM"
+340,Indian Accent - Bangalore Branch 6350,Bangalore,10:00 AM-10:00 PM
+341,Paradise Biryani - Jaipur Branch 8273,Jaipur,"11:00 PM-1:00 PM, 8:00 PM-10:00 PM"
+342,The Fisherman's Wharf - Chennai Branch 6141,Chennai,"1:00 PM-4:00 PM, 7:00 PM-9:00 PM"
+343,Paradise Biryani - Bangalore Branch 2071,Bangalore,"12:00 PM-2:00 PM, 7:00 PM-9:00 PM"
+344,Paradise Biryani - Pune Branch 8003,Pune,11:00 AM-11:00 PM
+345,The Bombay Canteen - Chennai Branch 9780,Chennai,"12:00 PM-2:00 PM, 6:00 PM-9:00 PM"
+346,Mainland China - Bangalore Branch 7279,Bangalore,"12:00 PM-2:00 PM, 8:00 PM-11:00 PM"
+347,Mainland China - Bangalore Branch 3992,Bangalore,"12:00 PM-2:00 PM, 6:00 PM-8:00 PM"
+348,Trishna - Bangalore Branch 7361,Bangalore,10:00 AM-11:00 PM
+349,The Bombay Canteen - Pune Branch 792,Pune,"1:00 PM-3:00 PM, 7:00 PM-9:00 PM"
+350,The Black Sheep Bistro - Kolkata Branch 700,Kolkata,"11:00 PM-1:00 PM, 8:00 PM-12:00 PM"
+351,Punjab Grill - Kolkata Branch 9863,Kolkata,"12:00 PM-2:00 PM, 7:00 PM-11:00 PM"
+352,Copper Chimney - Goa Branch 9481,Goa,10:00 AM-10:00 PM
+353,Leopold Cafe - Chennai Branch 9283,Chennai,10:00 AM-10:00 PM
+354,Bukhara - Kolkata Branch 7858,Kolkata,11:00 AM-10:00 PM
+355,The Black Sheep Bistro - Ahmedabad Branch 6335,Ahmedabad,10:00 AM-9:00 PM
+356,Thalassa - Goa Branch 9825,Goa,10:00 AM-11:00 PM
+357,The Bombay Canteen - Kolkata Branch 1406,Kolkata,11:00 AM-9:00 PM
+358,Copper Chimney - Goa Branch 304,Goa,11:00 AM-9:00 PM
+359,Fatty Bao - Bangalore Branch 9494,Bangalore,10:00 AM-9:00 PM
+360,Trishna - Hyderabad Branch 7400,Hyderabad,"1:00 PM-3:00 PM, 8:00 PM-12:00 PM"
+361,Barbeque Nation - Jaipur Branch 9595,Jaipur,10:00 AM-10:00 PM
+362,Oh! Calcutta - Pune Branch 978,Pune,11:00 AM-9:00 PM
+363,Punjab Grill - Hyderabad Branch 1913,Hyderabad,"12:00 PM-3:00 PM, 8:00 PM-11:00 PM"
+364,Bukhara - Ahmedabad Branch 345,Ahmedabad,"11:00 PM-2:00 PM, 6:00 PM-10:00 PM"
+365,The Black Sheep Bistro - Mumbai Branch 427,Mumbai,"12:00 PM-2:00 PM, 6:00 PM-9:00 PM"
+366,The Bombay Canteen - Mumbai Branch 9882,Mumbai,11:00 AM-11:00 PM
+367,Punjab Grill - Delhi Branch 1708,Delhi,"11:00 PM-2:00 PM, 8:00 PM-11:00 PM"
+368,Dum Pukht - Pune Branch 6155,Pune,"11:00 PM-1:00 PM, 8:00 PM-12:00 PM"
+369,SodaBottleOpenerWala - Hyderabad Branch 7686,Hyderabad,10:00 AM-9:00 PM
+370,Barbeque Nation - Hyderabad Branch 1792,Hyderabad,11:00 AM-11:00 PM
+371,Indian Accent - Pune Branch 6180,Pune,"1:00 PM-4:00 PM, 6:00 PM-9:00 PM"
+372,Copper Chimney - Mumbai Branch 9360,Mumbai,10:00 AM-11:00 PM
+373,Barbeque Nation - Hyderabad Branch 9418,Hyderabad,"11:00 PM-2:00 PM, 7:00 PM-10:00 PM"
+374,The Fisherman's Wharf - Ahmedabad Branch 5241,Ahmedabad,"12:00 PM-3:00 PM, 8:00 PM-11:00 PM"
+375,Copper Chimney - Delhi Branch 454,Delhi,11:00 AM-9:00 PM
+376,Dum Pukht - Bangalore Branch 7586,Bangalore,"1:00 PM-3:00 PM, 7:00 PM-10:00 PM"
+377,The Bombay Canteen - Bangalore Branch 6340,Bangalore,"11:00 PM-1:00 PM, 6:00 PM-10:00 PM"
+378,The Black Sheep Bistro - Bangalore Branch 1527,Bangalore,"11:00 PM-1:00 PM, 6:00 PM-9:00 PM"
+379,Peshawri - Pune Branch 5601,Pune,"1:00 PM-3:00 PM, 7:00 PM-11:00 PM"
+380,Mainland China - Bangalore Branch 8557,Bangalore,11:00 AM-11:00 PM
+381,Trishna - Bangalore Branch 9214,Bangalore,10:00 AM-10:00 PM
+382,The Bombay Canteen - Bangalore Branch 5333,Bangalore,"11:00 PM-1:00 PM, 8:00 PM-11:00 PM"
+383,Paradise Biryani - Pune Branch 1275,Pune,"11:00 PM-2:00 PM, 6:00 PM-10:00 PM"
+384,Peshawri - Pune Branch 122,Pune,"1:00 PM-4:00 PM, 7:00 PM-11:00 PM"
+385,Leopold Cafe - Kolkata Branch 9293,Kolkata,"1:00 PM-3:00 PM, 7:00 PM-9:00 PM"
+386,Karavalli - Mumbai Branch 5235,Mumbai,10:00 AM-10:00 PM
+387,Mainland China - Bangalore Branch 3059,Bangalore,"12:00 PM-3:00 PM, 7:00 PM-9:00 PM"
+388,Indian Accent - Bangalore Branch 2149,Bangalore,"12:00 PM-3:00 PM, 8:00 PM-11:00 PM"
+389,The Black Sheep Bistro - Ahmedabad Branch 5156,Ahmedabad,11:00 AM-9:00 PM
+390,Karavalli - Ahmedabad Branch 6026,Ahmedabad,10:00 AM-10:00 PM
+391,Indian Accent - Bangalore Branch 1039,Bangalore,11:00 AM-9:00 PM
+392,Fatty Bao - Pune Branch 3914,Pune,10:00 AM-10:00 PM
+393,Oh! Calcutta - Delhi Branch 7426,Delhi,10:00 AM-11:00 PM
+394,Oh! Calcutta - Mumbai Branch 201,Mumbai,"12:00 PM-2:00 PM, 7:00 PM-10:00 PM"
+395,Paradise Biryani - Delhi Branch 6664,Delhi,10:00 AM-9:00 PM
+396,Mainland China - Bangalore Branch 7959,Bangalore,11:00 AM-10:00 PM
+397,Bukhara - Pune Branch 7516,Pune,11:00 AM-11:00 PM
+398,Copper Chimney - Delhi Branch 442,Delhi,11:00 AM-11:00 PM
+399,Peshawri - Delhi Branch 1291,Delhi,"1:00 PM-3:00 PM, 7:00 PM-9:00 PM"
+400,Fatty Bao - Ahmedabad Branch 4487,Ahmedabad,"1:00 PM-4:00 PM, 6:00 PM-8:00 PM"
+401,Indian Accent - Goa Branch 8770,Goa,11:00 AM-11:00 PM
+402,Trishna - Jaipur Branch 9532,Jaipur,11:00 AM-11:00 PM
+403,Peshawri - Kolkata Branch 2985,Kolkata,11:00 AM-9:00 PM
+404,The Black Sheep Bistro - Pune Branch 1501,Pune,"1:00 PM-3:00 PM, 6:00 PM-8:00 PM"
+405,The Black Sheep Bistro - Mumbai Branch 9397,Mumbai,"12:00 PM-3:00 PM, 8:00 PM-12:00 PM"
+406,The Fisherman's Wharf - Mumbai Branch 8640,Mumbai,"1:00 PM-3:00 PM, 6:00 PM-9:00 PM"
+407,Peshawri - Mumbai Branch 9268,Mumbai,11:00 AM-11:00 PM
+408,Thalassa - Pune Branch 6252,Pune,"1:00 PM-4:00 PM, 8:00 PM-10:00 PM"
+409,Annalakshmi - Delhi Branch 9617,Delhi,"1:00 PM-4:00 PM, 6:00 PM-10:00 PM"
+410,Bukhara - Mumbai Branch 6703,Mumbai,11:00 AM-11:00 PM
+411,SodaBottleOpenerWala - Pune Branch 7510,Pune,"12:00 PM-3:00 PM, 6:00 PM-10:00 PM"
+412,Thalassa - Delhi Branch 5400,Delhi,10:00 AM-11:00 PM
+413,The Bombay Canteen - Mumbai Branch 5370,Mumbai,"12:00 PM-3:00 PM, 7:00 PM-9:00 PM"
+414,Fatty Bao - Bangalore Branch 4281,Bangalore,11:00 AM-9:00 PM
+415,Trishna - Goa Branch 4253,Goa,10:00 AM-9:00 PM
+416,Trishna - Jaipur Branch 2254,Jaipur,11:00 AM-10:00 PM
+417,Indian Accent - Bangalore Branch 478,Bangalore,11:00 AM-11:00 PM
+418,Fatty Bao - Pune Branch 9419,Pune,11:00 AM-11:00 PM
+419,Fatty Bao - Bangalore Branch 7253,Bangalore,"1:00 PM-4:00 PM, 8:00 PM-10:00 PM"
+420,Trishna - Mumbai Branch 1086,Mumbai,"1:00 PM-4:00 PM, 7:00 PM-10:00 PM"
+421,The Fisherman's Wharf - Pune Branch 6583,Pune,10:00 AM-11:00 PM
+422,Dum Pukht - Hyderabad Branch 1958,Hyderabad,10:00 AM-11:00 PM
+423,Fatty Bao - Pune Branch 1091,Pune,11:00 AM-9:00 PM
+424,Trishna - Pune Branch 8594,Pune,10:00 AM-10:00 PM
+425,Peshawri - Chennai Branch 7592,Chennai,11:00 AM-10:00 PM
+426,The Fisherman's Wharf - Jaipur Branch 7979,Jaipur,"12:00 PM-3:00 PM, 6:00 PM-9:00 PM"
+427,Trishna - Jaipur Branch 6904,Jaipur,11:00 AM-10:00 PM
+428,The Bombay Canteen - Mumbai Branch 9556,Mumbai,11:00 AM-10:00 PM
+429,The Black Sheep Bistro - Delhi Branch 5072,Delhi,"12:00 PM-3:00 PM, 8:00 PM-10:00 PM"
+430,Annalakshmi - Delhi Branch 2154,Delhi,"12:00 PM-3:00 PM, 7:00 PM-10:00 PM"
+431,Leopold Cafe - Chennai Branch 9341,Chennai,"12:00 PM-2:00 PM, 6:00 PM-10:00 PM"
+432,The Fisherman's Wharf - Delhi Branch 2155,Delhi,10:00 AM-9:00 PM
+433,Indian Accent - Mumbai Branch 8708,Mumbai,"1:00 PM-3:00 PM, 7:00 PM-10:00 PM"
+434,Punjab Grill - Kolkata Branch 2912,Kolkata,10:00 AM-10:00 PM
+435,Peshawri - Ahmedabad Branch 4790,Ahmedabad,"1:00 PM-3:00 PM, 8:00 PM-12:00 PM"
+436,The Fisherman's Wharf - Hyderabad Branch 6764,Hyderabad,10:00 AM-9:00 PM
+437,Thalassa - Pune Branch 2194,Pune,11:00 AM-10:00 PM
+438,The Fisherman's Wharf - Delhi Branch 1290,Delhi,"12:00 PM-3:00 PM, 6:00 PM-10:00 PM"
+439,Paradise Biryani - Hyderabad Branch 8209,Hyderabad,"1:00 PM-3:00 PM, 7:00 PM-9:00 PM"
+440,Bukhara - Pune Branch 9426,Pune,10:00 AM-9:00 PM
+441,SodaBottleOpenerWala - Hyderabad Branch 8496,Hyderabad,"1:00 PM-4:00 PM, 8:00 PM-11:00 PM"
+442,The Black Sheep Bistro - Jaipur Branch 2933,Jaipur,11:00 AM-11:00 PM
+443,Indian Accent - Bangalore Branch 563,Bangalore,"12:00 PM-2:00 PM, 6:00 PM-8:00 PM"
+444,SodaBottleOpenerWala - Chennai Branch 1446,Chennai,10:00 AM-11:00 PM
+445,Annalakshmi - Mumbai Branch 6977,Mumbai,"11:00 PM-1:00 PM, 6:00 PM-9:00 PM"
+446,Leopold Cafe - Kolkata Branch 8117,Kolkata,11:00 AM-10:00 PM
+447,Copper Chimney - Ahmedabad Branch 8302,Ahmedabad,"1:00 PM-3:00 PM, 7:00 PM-10:00 PM"
+448,Copper Chimney - Pune Branch 7781,Pune,"11:00 PM-1:00 PM, 6:00 PM-9:00 PM"
+449,Trishna - Mumbai Branch 9913,Mumbai,"1:00 PM-3:00 PM, 6:00 PM-9:00 PM"
+450,Barbeque Nation - Bangalore Branch 6493,Bangalore,11:00 AM-11:00 PM
+451,Thalassa - Ahmedabad Branch 8913,Ahmedabad,"12:00 PM-3:00 PM, 8:00 PM-12:00 PM"
+452,SodaBottleOpenerWala - Kolkata Branch 1922,Kolkata,10:00 AM-9:00 PM
+453,SodaBottleOpenerWala - Mumbai Branch 7041,Mumbai,10:00 AM-9:00 PM
+454,Bukhara - Pune Branch 1166,Pune,11:00 AM-10:00 PM
+455,Dum Pukht - Delhi Branch 7343,Delhi,"1:00 PM-4:00 PM, 6:00 PM-9:00 PM"
+456,The Bombay Canteen - Pune Branch 9272,Pune,"1:00 PM-3:00 PM, 7:00 PM-9:00 PM"
+457,Karavalli - Jaipur Branch 505,Jaipur,"11:00 PM-1:00 PM, 7:00 PM-9:00 PM"
+458,Oh! Calcutta - Hyderabad Branch 2929,Hyderabad,"12:00 PM-2:00 PM, 6:00 PM-10:00 PM"
+459,Leopold Cafe - Jaipur Branch 4861,Jaipur,"1:00 PM-3:00 PM, 7:00 PM-9:00 PM"
+460,Copper Chimney - Goa Branch 3764,Goa,"11:00 PM-2:00 PM, 8:00 PM-12:00 PM"
+461,Thalassa - Kolkata Branch 9371,Kolkata,11:00 AM-9:00 PM
+462,Thalassa - Chennai Branch 4641,Chennai,"11:00 PM-1:00 PM, 8:00 PM-11:00 PM"
+463,Copper Chimney - Kolkata Branch 5565,Kolkata,"11:00 PM-2:00 PM, 6:00 PM-10:00 PM"
+464,The Fisherman's Wharf - Jaipur Branch 4838,Jaipur,"11:00 PM-2:00 PM, 7:00 PM-11:00 PM"
+465,Dum Pukht - Ahmedabad Branch 6245,Ahmedabad,"11:00 PM-1:00 PM, 7:00 PM-9:00 PM"
+466,Bukhara - Goa Branch 231,Goa,10:00 AM-10:00 PM
+467,Bukhara - Goa Branch 7037,Goa,11:00 AM-10:00 PM
+468,Dum Pukht - Goa Branch 9254,Goa,"12:00 PM-3:00 PM, 7:00 PM-11:00 PM"
+469,Paradise Biryani - Jaipur Branch 1234,Jaipur,"12:00 PM-3:00 PM, 7:00 PM-9:00 PM"
+470,Bukhara - Kolkata Branch 6518,Kolkata,"1:00 PM-4:00 PM, 6:00 PM-8:00 PM"
+471,The Fisherman's Wharf - Ahmedabad Branch 8381,Ahmedabad,11:00 AM-10:00 PM
+472,Mainland China - Chennai Branch 3440,Chennai,"12:00 PM-2:00 PM, 8:00 PM-11:00 PM"
+473,The Bombay Canteen - Chennai Branch 8046,Chennai,11:00 AM-10:00 PM
+474,The Fisherman's Wharf - Goa Branch 9663,Goa,10:00 AM-9:00 PM
+475,Oh! Calcutta - Hyderabad Branch 7000,Hyderabad,10:00 AM-10:00 PM
+476,Barbeque Nation - Pune Branch 634,Pune,"12:00 PM-2:00 PM, 7:00 PM-10:00 PM"
+477,Bukhara - Bangalore Branch 9097,Bangalore,11:00 AM-9:00 PM
+478,SodaBottleOpenerWala - Ahmedabad Branch 7757,Ahmedabad,11:00 AM-10:00 PM
+479,Paradise Biryani - Chennai Branch 9168,Chennai,"12:00 PM-2:00 PM, 8:00 PM-11:00 PM"
+480,The Black Sheep Bistro - Delhi Branch 4368,Delhi,"1:00 PM-3:00 PM, 8:00 PM-10:00 PM"
+481,Dum Pukht - Pune Branch 3525,Pune,"1:00 PM-3:00 PM, 8:00 PM-10:00 PM"
+482,Thalassa - Delhi Branch 1981,Delhi,"11:00 PM-1:00 PM, 8:00 PM-12:00 PM"
+483,Thalassa - Delhi Branch 6916,Delhi,11:00 AM-9:00 PM
+484,Dum Pukht - Ahmedabad Branch 1643,Ahmedabad,"12:00 PM-3:00 PM, 7:00 PM-10:00 PM"
+485,Fatty Bao - Chennai Branch 490,Chennai,11:00 AM-10:00 PM
+486,Peshawri - Pune Branch 6424,Pune,11:00 AM-11:00 PM
+487,Bukhara - Mumbai Branch 9424,Mumbai,10:00 AM-10:00 PM
+488,Annalakshmi - Ahmedabad Branch 7214,Ahmedabad,"11:00 PM-1:00 PM, 7:00 PM-10:00 PM"
+489,Thalassa - Delhi Branch 9586,Delhi,10:00 AM-9:00 PM
+490,Oh! Calcutta - Goa Branch 9584,Goa,"12:00 PM-3:00 PM, 6:00 PM-10:00 PM"
+491,Barbeque Nation - Goa Branch 191,Goa,11:00 AM-10:00 PM
+492,Annalakshmi - Bangalore Branch 4476,Bangalore,"11:00 PM-2:00 PM, 6:00 PM-8:00 PM"
+493,Bukhara - Jaipur Branch 5183,Jaipur,11:00 AM-9:00 PM
+494,Leopold Cafe - Ahmedabad Branch 9256,Ahmedabad,"11:00 PM-2:00 PM, 7:00 PM-10:00 PM"
+495,Karavalli - Hyderabad Branch 7266,Hyderabad,11:00 AM-10:00 PM
+496,Annalakshmi - Goa Branch 5230,Goa,11:00 AM-11:00 PM
+497,Karavalli - Mumbai Branch 4439,Mumbai,"11:00 PM-1:00 PM, 6:00 PM-9:00 PM"
+498,Bukhara - Delhi Branch 8936,Delhi,11:00 AM-9:00 PM
+499,Punjab Grill - Goa Branch 9209,Goa,"11:00 PM-1:00 PM, 8:00 PM-11:00 PM"
+500,Peshawri - Jaipur Branch 6790,Jaipur,"1:00 PM-3:00 PM, 8:00 PM-12:00 PM"
+501,Thalassa - Pune Branch 1893,Pune,"11:00 PM-1:00 PM, 8:00 PM-12:00 PM"
+502,The Fisherman's Wharf - Goa Branch 693,Goa,10:00 AM-11:00 PM
+503,Oh! Calcutta - Bangalore Branch 4929,Bangalore,11:00 AM-10:00 PM
+504,Punjab Grill - Bangalore Branch 5107,Bangalore,"1:00 PM-3:00 PM, 6:00 PM-8:00 PM"
+505,Paradise Biryani - Hyderabad Branch 7335,Hyderabad,"1:00 PM-3:00 PM, 8:00 PM-10:00 PM"
+506,The Bombay Canteen - Bangalore Branch 6275,Bangalore,10:00 AM-11:00 PM
+507,Barbeque Nation - Bangalore Branch 6723,Bangalore,11:00 AM-11:00 PM
+508,Barbeque Nation - Kolkata Branch 1300,Kolkata,10:00 AM-10:00 PM
+509,Mainland China - Pune Branch 8635,Pune,"12:00 PM-3:00 PM, 8:00 PM-11:00 PM"
+510,The Bombay Canteen - Pune Branch 8515,Pune,"12:00 PM-2:00 PM, 8:00 PM-12:00 PM"
+511,Dum Pukht - Jaipur Branch 9965,Jaipur,"11:00 PM-2:00 PM, 8:00 PM-12:00 PM"
+512,SodaBottleOpenerWala - Mumbai Branch 6826,Mumbai,"1:00 PM-4:00 PM, 6:00 PM-8:00 PM"
+513,Trishna - Kolkata Branch 9415,Kolkata,11:00 AM-9:00 PM
+514,Indian Accent - Goa Branch 5697,Goa,"11:00 PM-2:00 PM, 8:00 PM-11:00 PM"
+515,Paradise Biryani - Kolkata Branch 7562,Kolkata,"11:00 PM-1:00 PM, 8:00 PM-12:00 PM"
+516,Thalassa - Pune Branch 2027,Pune,"12:00 PM-3:00 PM, 8:00 PM-10:00 PM"
+517,Leopold Cafe - Mumbai Branch 8991,Mumbai,11:00 AM-10:00 PM
+518,Leopold Cafe - Delhi Branch 2487,Delhi,11:00 AM-11:00 PM
+519,Dum Pukht - Kolkata Branch 9583,Kolkata,"11:00 PM-2:00 PM, 8:00 PM-12:00 PM"
+520,Paradise Biryani - Kolkata Branch 2014,Kolkata,"1:00 PM-4:00 PM, 6:00 PM-9:00 PM"
+521,Paradise Biryani - Delhi Branch 5933,Delhi,"1:00 PM-3:00 PM, 8:00 PM-12:00 PM"
+522,Trishna - Goa Branch 7654,Goa,10:00 AM-10:00 PM
+523,Annalakshmi - Jaipur Branch 1644,Jaipur,10:00 AM-11:00 PM
+524,Karavalli - Kolkata Branch 8665,Kolkata,11:00 AM-10:00 PM
+525,Thalassa - Goa Branch 8554,Goa,11:00 AM-9:00 PM
+526,Mainland China - Mumbai Branch 1915,Mumbai,10:00 AM-10:00 PM
+527,SodaBottleOpenerWala - Delhi Branch 7656,Delhi,11:00 AM-11:00 PM
+528,SodaBottleOpenerWala - Mumbai Branch 7470,Mumbai,"11:00 PM-2:00 PM, 6:00 PM-8:00 PM"
+529,Peshawri - Delhi Branch 5076,Delhi,11:00 AM-9:00 PM
+530,Indian Accent - Delhi Branch 7987,Delhi,"12:00 PM-2:00 PM, 6:00 PM-10:00 PM"
+531,Fatty Bao - Bangalore Branch 8895,Bangalore,11:00 AM-9:00 PM
+532,The Bombay Canteen - Pune Branch 405,Pune,10:00 AM-9:00 PM
+533,Karavalli - Goa Branch 1682,Goa,10:00 AM-11:00 PM
+534,Indian Accent - Delhi Branch 730,Delhi,10:00 AM-10:00 PM
+535,The Black Sheep Bistro - Jaipur Branch 9094,Jaipur,11:00 AM-9:00 PM
+536,The Bombay Canteen - Pune Branch 328,Pune,"12:00 PM-2:00 PM, 7:00 PM-11:00 PM"
+537,Copper Chimney - Bangalore Branch 4941,Bangalore,10:00 AM-10:00 PM
+538,Mainland China - Hyderabad Branch 4153,Hyderabad,"12:00 PM-3:00 PM, 6:00 PM-8:00 PM"
+539,Bukhara - Pune Branch 7133,Pune,"12:00 PM-3:00 PM, 8:00 PM-12:00 PM"
+540,Indian Accent - Hyderabad Branch 8512,Hyderabad,10:00 AM-11:00 PM
+541,Indian Accent - Goa Branch 6682,Goa,10:00 AM-10:00 PM
+542,Bukhara - Pune Branch 2720,Pune,"11:00 PM-1:00 PM, 7:00 PM-10:00 PM"
+543,Copper Chimney - Bangalore Branch 152,Bangalore,"11:00 PM-2:00 PM, 7:00 PM-9:00 PM"
+544,Leopold Cafe - Hyderabad Branch 3023,Hyderabad,11:00 AM-10:00 PM
+545,Punjab Grill - Bangalore Branch 178,Bangalore,"11:00 PM-1:00 PM, 8:00 PM-10:00 PM"
+546,Punjab Grill - Kolkata Branch 6249,Kolkata,10:00 AM-10:00 PM
+547,SodaBottleOpenerWala - Hyderabad Branch 4213,Hyderabad,"11:00 PM-1:00 PM, 7:00 PM-11:00 PM"
+548,Paradise Biryani - Hyderabad Branch 9677,Hyderabad,"11:00 PM-1:00 PM, 8:00 PM-10:00 PM"
+549,Punjab Grill - Kolkata Branch 307,Kolkata,10:00 AM-11:00 PM
+550,Dum Pukht - Goa Branch 3856,Goa,"11:00 PM-2:00 PM, 6:00 PM-8:00 PM"
+551,Leopold Cafe - Pune Branch 6934,Pune,10:00 AM-9:00 PM
+552,Trishna - Goa Branch 3712,Goa,10:00 AM-10:00 PM
+553,Annalakshmi - Chennai Branch 2572,Chennai,10:00 AM-11:00 PM
+554,Copper Chimney - Pune Branch 6065,Pune,10:00 AM-11:00 PM
+555,Bukhara - Jaipur Branch 5023,Jaipur,"12:00 PM-3:00 PM, 8:00 PM-10:00 PM"
+556,Oh! Calcutta - Pune Branch 3210,Pune,11:00 AM-10:00 PM
+557,Annalakshmi - Bangalore Branch 1149,Bangalore,"11:00 PM-1:00 PM, 8:00 PM-12:00 PM"
+558,Leopold Cafe - Kolkata Branch 1948,Kolkata,11:00 AM-11:00 PM
+559,Paradise Biryani - Hyderabad Branch 205,Hyderabad,10:00 AM-11:00 PM
+560,The Fisherman's Wharf - Ahmedabad Branch 2708,Ahmedabad,"1:00 PM-4:00 PM, 7:00 PM-11:00 PM"
+561,Indian Accent - Bangalore Branch 9326,Bangalore,"12:00 PM-3:00 PM, 6:00 PM-9:00 PM"
+562,Dum Pukht - Delhi Branch 4397,Delhi,10:00 AM-11:00 PM
+563,Paradise Biryani - Kolkata Branch 1988,Kolkata,"11:00 PM-2:00 PM, 8:00 PM-11:00 PM"
+564,Karavalli - Chennai Branch 946,Chennai,"1:00 PM-3:00 PM, 8:00 PM-12:00 PM"
+565,Barbeque Nation - Hyderabad Branch 5363,Hyderabad,"12:00 PM-2:00 PM, 6:00 PM-8:00 PM"
+566,Trishna - Bangalore Branch 1486,Bangalore,10:00 AM-10:00 PM
+567,Punjab Grill - Jaipur Branch 7228,Jaipur,11:00 AM-11:00 PM
+568,Annalakshmi - Pune Branch 1281,Pune,"1:00 PM-4:00 PM, 8:00 PM-12:00 PM"
+569,SodaBottleOpenerWala - Mumbai Branch 8677,Mumbai,"11:00 PM-2:00 PM, 8:00 PM-11:00 PM"
+570,The Black Sheep Bistro - Bangalore Branch 824,Bangalore,"11:00 PM-2:00 PM, 8:00 PM-12:00 PM"
+571,Dum Pukht - Ahmedabad Branch 3285,Ahmedabad,"12:00 PM-2:00 PM, 6:00 PM-10:00 PM"
+572,Paradise Biryani - Mumbai Branch 348,Mumbai,"1:00 PM-4:00 PM, 6:00 PM-10:00 PM"
+573,Barbeque Nation - Kolkata Branch 6538,Kolkata,11:00 AM-9:00 PM
+574,The Bombay Canteen - Mumbai Branch 4869,Mumbai,"11:00 PM-2:00 PM, 6:00 PM-10:00 PM"
+575,Paradise Biryani - Kolkata Branch 5904,Kolkata,10:00 AM-11:00 PM
+576,Punjab Grill - Mumbai Branch 3655,Mumbai,"11:00 PM-2:00 PM, 7:00 PM-10:00 PM"
+577,Punjab Grill - Delhi Branch 9447,Delhi,"12:00 PM-2:00 PM, 6:00 PM-8:00 PM"
+578,Leopold Cafe - Goa Branch 7248,Goa,10:00 AM-10:00 PM
+579,Trishna - Goa Branch 1910,Goa,10:00 AM-9:00 PM
+580,The Bombay Canteen - Mumbai Branch 627,Mumbai,10:00 AM-11:00 PM
+581,Mainland China - Bangalore Branch 6796,Bangalore,"1:00 PM-3:00 PM, 6:00 PM-8:00 PM"
+582,Leopold Cafe - Hyderabad Branch 1881,Hyderabad,11:00 AM-9:00 PM
+583,The Fisherman's Wharf - Goa Branch 8551,Goa,"12:00 PM-3:00 PM, 7:00 PM-11:00 PM"
+584,Trishna - Ahmedabad Branch 9234,Ahmedabad,"11:00 PM-1:00 PM, 8:00 PM-11:00 PM"
+585,Leopold Cafe - Ahmedabad Branch 6581,Ahmedabad,"1:00 PM-3:00 PM, 8:00 PM-12:00 PM"
+586,Copper Chimney - Jaipur Branch 9804,Jaipur,"1:00 PM-3:00 PM, 6:00 PM-8:00 PM"
+587,Annalakshmi - Pune Branch 1150,Pune,11:00 AM-9:00 PM
+588,Leopold Cafe - Mumbai Branch 7685,Mumbai,"12:00 PM-2:00 PM, 8:00 PM-11:00 PM"
+589,The Fisherman's Wharf - Mumbai Branch 4230,Mumbai,"12:00 PM-3:00 PM, 8:00 PM-11:00 PM"
+590,Paradise Biryani - Ahmedabad Branch 4935,Ahmedabad,"11:00 PM-1:00 PM, 6:00 PM-8:00 PM"
+591,Trishna - Chennai Branch 2390,Chennai,"1:00 PM-3:00 PM, 8:00 PM-11:00 PM"
+592,Annalakshmi - Chennai Branch 7585,Chennai,"11:00 PM-2:00 PM, 7:00 PM-9:00 PM"
+593,Fatty Bao - Chennai Branch 6138,Chennai,11:00 AM-11:00 PM
+594,Punjab Grill - Ahmedabad Branch 8493,Ahmedabad,11:00 AM-11:00 PM
+595,Copper Chimney - Hyderabad Branch 3718,Hyderabad,"1:00 PM-4:00 PM, 8:00 PM-11:00 PM"
+596,Punjab Grill - Hyderabad Branch 4454,Hyderabad,10:00 AM-11:00 PM
+597,The Black Sheep Bistro - Mumbai Branch 2371,Mumbai,"12:00 PM-2:00 PM, 8:00 PM-12:00 PM"
+598,The Black Sheep Bistro - Jaipur Branch 7771,Jaipur,10:00 AM-11:00 PM
+599,Trishna - Jaipur Branch 1621,Jaipur,10:00 AM-11:00 PM
+600,Fatty Bao - Goa Branch 5990,Goa,"1:00 PM-4:00 PM, 6:00 PM-10:00 PM"
+601,Indian Accent - Chennai Branch 2270,Chennai,10:00 AM-9:00 PM
+602,The Black Sheep Bistro - Goa Branch 8949,Goa,"11:00 PM-1:00 PM, 7:00 PM-10:00 PM"
+603,Peshawri - Delhi Branch 1552,Delhi,"11:00 PM-2:00 PM, 8:00 PM-11:00 PM"
+604,Fatty Bao - Pune Branch 1187,Pune,"1:00 PM-3:00 PM, 8:00 PM-10:00 PM"
+605,The Black Sheep Bistro - Mumbai Branch 1317,Mumbai,11:00 AM-11:00 PM
+606,Copper Chimney - Mumbai Branch 5993,Mumbai,11:00 AM-11:00 PM
+607,SodaBottleOpenerWala - Hyderabad Branch 487,Hyderabad,10:00 AM-9:00 PM
+608,The Black Sheep Bistro - Pune Branch 7937,Pune,10:00 AM-9:00 PM
+609,Dum Pukht - Jaipur Branch 707,Jaipur,11:00 AM-10:00 PM
+610,SodaBottleOpenerWala - Bangalore Branch 3490,Bangalore,10:00 AM-11:00 PM
+611,Trishna - Bangalore Branch 8991,Bangalore,11:00 AM-11:00 PM
+612,Dum Pukht - Delhi Branch 683,Delhi,"11:00 PM-1:00 PM, 7:00 PM-10:00 PM"
+613,Punjab Grill - Delhi Branch 4265,Delhi,"12:00 PM-3:00 PM, 8:00 PM-10:00 PM"
+614,Paradise Biryani - Jaipur Branch 2827,Jaipur,11:00 AM-11:00 PM
+615,Barbeque Nation - Goa Branch 5458,Goa,"12:00 PM-3:00 PM, 7:00 PM-10:00 PM"
+616,Fatty Bao - Bangalore Branch 6394,Bangalore,11:00 AM-10:00 PM
+617,Annalakshmi - Chennai Branch 1713,Chennai,10:00 AM-10:00 PM
+618,SodaBottleOpenerWala - Ahmedabad Branch 9096,Ahmedabad,10:00 AM-10:00 PM
+619,Barbeque Nation - Jaipur Branch 9429,Jaipur,"1:00 PM-4:00 PM, 8:00 PM-10:00 PM"
+620,Fatty Bao - Bangalore Branch 2318,Bangalore,10:00 AM-10:00 PM
+621,Indian Accent - Bangalore Branch 7354,Bangalore,11:00 AM-10:00 PM
+622,SodaBottleOpenerWala - Jaipur Branch 52,Jaipur,11:00 AM-10:00 PM
+623,Mainland China - Hyderabad Branch 7434,Hyderabad,"1:00 PM-3:00 PM, 8:00 PM-10:00 PM"
+624,Copper Chimney - Ahmedabad Branch 7560,Ahmedabad,"11:00 PM-2:00 PM, 7:00 PM-10:00 PM"
+625,SodaBottleOpenerWala - Jaipur Branch 6287,Jaipur,"12:00 PM-2:00 PM, 7:00 PM-9:00 PM"
+626,Mainland China - Goa Branch 3620,Goa,"12:00 PM-3:00 PM, 6:00 PM-8:00 PM"
+627,Oh! Calcutta - Goa Branch 5512,Goa,10:00 AM-9:00 PM
+628,Indian Accent - Goa Branch 3438,Goa,"1:00 PM-4:00 PM, 7:00 PM-11:00 PM"
+629,Peshawri - Mumbai Branch 469,Mumbai,11:00 AM-10:00 PM
+630,Punjab Grill - Goa Branch 3396,Goa,11:00 AM-11:00 PM
+631,Fatty Bao - Ahmedabad Branch 1495,Ahmedabad,"12:00 PM-2:00 PM, 7:00 PM-10:00 PM"
+632,Indian Accent - Kolkata Branch 5168,Kolkata,"1:00 PM-4:00 PM, 7:00 PM-11:00 PM"
+633,Annalakshmi - Chennai Branch 1809,Chennai,10:00 AM-11:00 PM
+634,The Black Sheep Bistro - Mumbai Branch 3627,Mumbai,"1:00 PM-3:00 PM, 8:00 PM-10:00 PM"
+635,Fatty Bao - Hyderabad Branch 8622,Hyderabad,11:00 AM-10:00 PM
+636,Copper Chimney - Jaipur Branch 93,Jaipur,10:00 AM-10:00 PM
+637,SodaBottleOpenerWala - Delhi Branch 1134,Delhi,"1:00 PM-4:00 PM, 6:00 PM-10:00 PM"
+638,Fatty Bao - Goa Branch 1625,Goa,10:00 AM-10:00 PM
+639,The Fisherman's Wharf - Hyderabad Branch 9765,Hyderabad,"11:00 PM-2:00 PM, 8:00 PM-11:00 PM"
+640,Dum Pukht - Ahmedabad Branch 6703,Ahmedabad,"1:00 PM-3:00 PM, 8:00 PM-10:00 PM"
+641,Trishna - Kolkata Branch 5938,Kolkata,10:00 AM-10:00 PM
+642,Thalassa - Bangalore Branch 6571,Bangalore,11:00 AM-10:00 PM
+643,Indian Accent - Hyderabad Branch 1873,Hyderabad,"12:00 PM-3:00 PM, 7:00 PM-10:00 PM"
+644,Mainland China - Jaipur Branch 6913,Jaipur,"12:00 PM-2:00 PM, 6:00 PM-10:00 PM"
+645,Indian Accent - Goa Branch 9489,Goa,10:00 AM-11:00 PM
+646,Fatty Bao - Ahmedabad Branch 5451,Ahmedabad,"1:00 PM-3:00 PM, 7:00 PM-9:00 PM"
+647,Oh! Calcutta - Jaipur Branch 3771,Jaipur,"11:00 PM-2:00 PM, 7:00 PM-10:00 PM"
+648,Punjab Grill - Bangalore Branch 8086,Bangalore,"1:00 PM-4:00 PM, 8:00 PM-10:00 PM"
+649,Oh! Calcutta - Ahmedabad Branch 2650,Ahmedabad,10:00 AM-10:00 PM
+650,Indian Accent - Hyderabad Branch 4979,Hyderabad,10:00 AM-9:00 PM
+651,The Bombay Canteen - Kolkata Branch 4643,Kolkata,11:00 AM-10:00 PM
+652,Thalassa - Chennai Branch 4018,Chennai,10:00 AM-10:00 PM
+653,SodaBottleOpenerWala - Ahmedabad Branch 2672,Ahmedabad,"12:00 PM-2:00 PM, 8:00 PM-10:00 PM"
+654,Punjab Grill - Chennai Branch 2303,Chennai,11:00 AM-9:00 PM
+655,Bukhara - Goa Branch 1978,Goa,10:00 AM-9:00 PM
+656,Bukhara - Ahmedabad Branch 4388,Ahmedabad,11:00 AM-10:00 PM
+657,Paradise Biryani - Chennai Branch 1691,Chennai,11:00 AM-10:00 PM
+658,Trishna - Chennai Branch 2,Chennai,11:00 AM-9:00 PM
+659,Oh! Calcutta - Ahmedabad Branch 144,Ahmedabad,"12:00 PM-2:00 PM, 6:00 PM-10:00 PM"
+660,Peshawri - Chennai Branch 6298,Chennai,"1:00 PM-3:00 PM, 6:00 PM-9:00 PM"
+661,Oh! Calcutta - Hyderabad Branch 1932,Hyderabad,10:00 AM-11:00 PM
+662,Paradise Biryani - Chennai Branch 7486,Chennai,"12:00 PM-3:00 PM, 8:00 PM-11:00 PM"
+663,Mainland China - Mumbai Branch 172,Mumbai,10:00 AM-10:00 PM
+664,Dum Pukht - Goa Branch 4911,Goa,"11:00 PM-2:00 PM, 6:00 PM-8:00 PM"
+665,Oh! Calcutta - Mumbai Branch 4543,Mumbai,"11:00 PM-2:00 PM, 7:00 PM-11:00 PM"
+666,Bukhara - Goa Branch 6087,Goa,10:00 AM-10:00 PM
+667,Karavalli - Goa Branch 6904,Goa,10:00 AM-11:00 PM
+668,Peshawri - Ahmedabad Branch 3840,Ahmedabad,"12:00 PM-3:00 PM, 7:00 PM-9:00 PM"
+669,Punjab Grill - Delhi Branch 6844,Delhi,10:00 AM-9:00 PM
+670,Indian Accent - Delhi Branch 1590,Delhi,"11:00 PM-2:00 PM, 6:00 PM-9:00 PM"
+671,Bukhara - Mumbai Branch 2683,Mumbai,"12:00 PM-3:00 PM, 8:00 PM-11:00 PM"
+672,The Bombay Canteen - Mumbai Branch 7970,Mumbai,11:00 AM-11:00 PM
+673,The Bombay Canteen - Jaipur Branch 4140,Jaipur,"1:00 PM-3:00 PM, 6:00 PM-9:00 PM"
+674,Mainland China - Kolkata Branch 9331,Kolkata,10:00 AM-9:00 PM
+675,Copper Chimney - Delhi Branch 1641,Delhi,"12:00 PM-3:00 PM, 7:00 PM-10:00 PM"
+676,Peshawri - Chennai Branch 9271,Chennai,"12:00 PM-3:00 PM, 6:00 PM-10:00 PM"
+677,Bukhara - Jaipur Branch 7003,Jaipur,"11:00 PM-2:00 PM, 6:00 PM-8:00 PM"
+678,Bukhara - Hyderabad Branch 6493,Hyderabad,"1:00 PM-4:00 PM, 7:00 PM-11:00 PM"
+679,Oh! Calcutta - Delhi Branch 5091,Delhi,"11:00 PM-1:00 PM, 7:00 PM-10:00 PM"
+680,Oh! Calcutta - Mumbai Branch 2009,Mumbai,"12:00 PM-2:00 PM, 7:00 PM-9:00 PM"
+681,Karavalli - Jaipur Branch 1999,Jaipur,11:00 AM-11:00 PM
+682,Paradise Biryani - Mumbai Branch 8485,Mumbai,"12:00 PM-2:00 PM, 7:00 PM-10:00 PM"
+683,Bukhara - Kolkata Branch 3737,Kolkata,"1:00 PM-3:00 PM, 7:00 PM-10:00 PM"
+684,Peshawri - Jaipur Branch 4648,Jaipur,11:00 AM-9:00 PM
+685,Thalassa - Ahmedabad Branch 8869,Ahmedabad,10:00 AM-11:00 PM
+686,Annalakshmi - Kolkata Branch 4532,Kolkata,11:00 AM-9:00 PM
+687,Indian Accent - Delhi Branch 2421,Delhi,10:00 AM-11:00 PM
+688,Bukhara - Mumbai Branch 7786,Mumbai,"12:00 PM-3:00 PM, 6:00 PM-8:00 PM"
+689,Leopold Cafe - Hyderabad Branch 6920,Hyderabad,"11:00 PM-1:00 PM, 7:00 PM-11:00 PM"
+690,Karavalli - Kolkata Branch 2785,Kolkata,"11:00 PM-1:00 PM, 6:00 PM-10:00 PM"
+691,Fatty Bao - Jaipur Branch 1074,Jaipur,"1:00 PM-3:00 PM, 7:00 PM-9:00 PM"
+692,The Black Sheep Bistro - Bangalore Branch 3547,Bangalore,10:00 AM-9:00 PM
+693,The Fisherman's Wharf - Kolkata Branch 4878,Kolkata,"11:00 PM-2:00 PM, 6:00 PM-9:00 PM"
+694,Karavalli - Chennai Branch 5841,Chennai,"12:00 PM-3:00 PM, 6:00 PM-10:00 PM"
+695,Mainland China - Bangalore Branch 4000,Bangalore,"12:00 PM-2:00 PM, 7:00 PM-11:00 PM"
+696,Trishna - Delhi Branch 8515,Delhi,10:00 AM-10:00 PM
+697,The Bombay Canteen - Kolkata Branch 9267,Kolkata,11:00 AM-11:00 PM
+698,Bukhara - Goa Branch 8071,Goa,"11:00 PM-2:00 PM, 7:00 PM-10:00 PM"
+699,Annalakshmi - Kolkata Branch 5845,Kolkata,10:00 AM-10:00 PM
+700,Indian Accent - Hyderabad Branch 5578,Hyderabad,10:00 AM-9:00 PM
+701,Fatty Bao - Jaipur Branch 2857,Jaipur,11:00 AM-11:00 PM
+702,Indian Accent - Goa Branch 5366,Goa,"11:00 PM-1:00 PM, 6:00 PM-10:00 PM"
+703,Annalakshmi - Goa Branch 8788,Goa,11:00 AM-11:00 PM
+704,Paradise Biryani - Kolkata Branch 8702,Kolkata,"12:00 PM-2:00 PM, 8:00 PM-12:00 PM"
+705,Thalassa - Kolkata Branch 6497,Kolkata,10:00 AM-11:00 PM
+706,Barbeque Nation - Hyderabad Branch 363,Hyderabad,11:00 AM-11:00 PM
+707,Indian Accent - Chennai Branch 44,Chennai,"12:00 PM-3:00 PM, 7:00 PM-9:00 PM"
+708,Bukhara - Jaipur Branch 5272,Jaipur,10:00 AM-10:00 PM
+709,Barbeque Nation - Bangalore Branch 1058,Bangalore,10:00 AM-10:00 PM
+710,The Bombay Canteen - Jaipur Branch 8537,Jaipur,11:00 AM-11:00 PM
+711,Indian Accent - Chennai Branch 5717,Chennai,10:00 AM-11:00 PM
+712,Paradise Biryani - Hyderabad Branch 1534,Hyderabad,11:00 AM-10:00 PM
+713,Leopold Cafe - Hyderabad Branch 7832,Hyderabad,"12:00 PM-3:00 PM, 7:00 PM-9:00 PM"
+714,Mainland China - Ahmedabad Branch 4916,Ahmedabad,11:00 AM-11:00 PM
+715,Leopold Cafe - Chennai Branch 3680,Chennai,"1:00 PM-3:00 PM, 7:00 PM-9:00 PM"
+716,Copper Chimney - Jaipur Branch 4785,Jaipur,10:00 AM-11:00 PM
+717,The Fisherman's Wharf - Jaipur Branch 3143,Jaipur,11:00 AM-9:00 PM
+718,SodaBottleOpenerWala - Goa Branch 6616,Goa,"11:00 PM-1:00 PM, 6:00 PM-9:00 PM"
+719,Punjab Grill - Chennai Branch 6069,Chennai,"12:00 PM-2:00 PM, 6:00 PM-8:00 PM"
+720,Copper Chimney - Pune Branch 1808,Pune,10:00 AM-10:00 PM
+721,Bukhara - Mumbai Branch 1510,Mumbai,10:00 AM-11:00 PM
+722,SodaBottleOpenerWala - Chennai Branch 4562,Chennai,10:00 AM-9:00 PM
+723,Annalakshmi - Chennai Branch 3635,Chennai,11:00 AM-9:00 PM
+724,Dum Pukht - Goa Branch 9562,Goa,"12:00 PM-3:00 PM, 6:00 PM-8:00 PM"
+725,Thalassa - Chennai Branch 8718,Chennai,"1:00 PM-3:00 PM, 7:00 PM-11:00 PM"
+726,Copper Chimney - Bangalore Branch 7856,Bangalore,"12:00 PM-3:00 PM, 6:00 PM-9:00 PM"
+727,The Bombay Canteen - Goa Branch 6557,Goa,10:00 AM-11:00 PM
+728,Annalakshmi - Kolkata Branch 4604,Kolkata,"1:00 PM-3:00 PM, 7:00 PM-9:00 PM"
+729,Trishna - Jaipur Branch 3966,Jaipur,10:00 AM-11:00 PM
+730,Trishna - Pune Branch 8861,Pune,"11:00 PM-2:00 PM, 7:00 PM-11:00 PM"
+731,Paradise Biryani - Bangalore Branch 8044,Bangalore,"11:00 PM-1:00 PM, 7:00 PM-10:00 PM"
+732,Punjab Grill - Jaipur Branch 9997,Jaipur,10:00 AM-11:00 PM
+733,Leopold Cafe - Pune Branch 8153,Pune,"11:00 PM-2:00 PM, 7:00 PM-10:00 PM"
+734,Annalakshmi - Goa Branch 8231,Goa,11:00 AM-10:00 PM
+735,Karavalli - Bangalore Branch 9896,Bangalore,11:00 AM-9:00 PM
+736,Punjab Grill - Goa Branch 7785,Goa,"1:00 PM-4:00 PM, 8:00 PM-12:00 PM"
+737,Annalakshmi - Ahmedabad Branch 5228,Ahmedabad,"1:00 PM-4:00 PM, 7:00 PM-11:00 PM"
+738,Annalakshmi - Ahmedabad Branch 777,Ahmedabad,11:00 AM-9:00 PM
+739,Fatty Bao - Delhi Branch 2774,Delhi,"12:00 PM-2:00 PM, 8:00 PM-11:00 PM"
+740,The Bombay Canteen - Kolkata Branch 4024,Kolkata,"12:00 PM-3:00 PM, 6:00 PM-9:00 PM"
+741,Mainland China - Mumbai Branch 8729,Mumbai,"1:00 PM-4:00 PM, 7:00 PM-11:00 PM"
+742,Leopold Cafe - Bangalore Branch 4287,Bangalore,"12:00 PM-2:00 PM, 6:00 PM-10:00 PM"
+743,Thalassa - Ahmedabad Branch 4802,Ahmedabad,"1:00 PM-3:00 PM, 8:00 PM-12:00 PM"
+744,Mainland China - Delhi Branch 9866,Delhi,"11:00 PM-1:00 PM, 7:00 PM-11:00 PM"
+745,Barbeque Nation - Jaipur Branch 7156,Jaipur,"1:00 PM-4:00 PM, 6:00 PM-8:00 PM"
+746,Dum Pukht - Pune Branch 4759,Pune,"12:00 PM-3:00 PM, 8:00 PM-10:00 PM"
+747,The Black Sheep Bistro - Hyderabad Branch 696,Hyderabad,"1:00 PM-4:00 PM, 6:00 PM-10:00 PM"
+748,Mainland China - Jaipur Branch 7362,Jaipur,"11:00 PM-1:00 PM, 8:00 PM-11:00 PM"
+749,Peshawri - Hyderabad Branch 4116,Hyderabad,"11:00 PM-1:00 PM, 8:00 PM-10:00 PM"
+750,Fatty Bao - Pune Branch 9008,Pune,"1:00 PM-4:00 PM, 7:00 PM-10:00 PM"
+751,The Fisherman's Wharf - Ahmedabad Branch 9893,Ahmedabad,10:00 AM-10:00 PM
+752,Punjab Grill - Hyderabad Branch 1633,Hyderabad,"11:00 PM-2:00 PM, 8:00 PM-10:00 PM"
+753,Mainland China - Kolkata Branch 4980,Kolkata,11:00 AM-10:00 PM
+754,Indian Accent - Goa Branch 688,Goa,11:00 AM-10:00 PM
+755,Peshawri - Delhi Branch 4657,Delhi,11:00 AM-9:00 PM
+756,Indian Accent - Pune Branch 7366,Pune,11:00 AM-9:00 PM
+757,Trishna - Jaipur Branch 9055,Jaipur,"11:00 PM-2:00 PM, 7:00 PM-10:00 PM"
+758,Leopold Cafe - Kolkata Branch 666,Kolkata,"12:00 PM-2:00 PM, 8:00 PM-12:00 PM"
+759,Indian Accent - Pune Branch 7940,Pune,11:00 AM-10:00 PM
+760,Annalakshmi - Bangalore Branch 4307,Bangalore,10:00 AM-10:00 PM
+761,Fatty Bao - Ahmedabad Branch 1069,Ahmedabad,10:00 AM-10:00 PM
+762,Peshawri - Bangalore Branch 223,Bangalore,"11:00 PM-1:00 PM, 8:00 PM-11:00 PM"
+763,Fatty Bao - Hyderabad Branch 9658,Hyderabad,"12:00 PM-2:00 PM, 8:00 PM-12:00 PM"
+764,Bukhara - Ahmedabad Branch 7244,Ahmedabad,"12:00 PM-2:00 PM, 6:00 PM-9:00 PM"
+765,Punjab Grill - Mumbai Branch 2015,Mumbai,11:00 AM-9:00 PM
+766,Trishna - Pune Branch 5345,Pune,11:00 AM-11:00 PM
+767,Dum Pukht - Goa Branch 5011,Goa,11:00 AM-11:00 PM
+768,The Black Sheep Bistro - Chennai Branch 9291,Chennai,11:00 AM-9:00 PM
+769,The Fisherman's Wharf - Ahmedabad Branch 5279,Ahmedabad,"12:00 PM-3:00 PM, 6:00 PM-8:00 PM"
+770,Fatty Bao - Mumbai Branch 6165,Mumbai,"1:00 PM-3:00 PM, 7:00 PM-10:00 PM"
+771,Annalakshmi - Goa Branch 7756,Goa,10:00 AM-10:00 PM
+772,Fatty Bao - Hyderabad Branch 8298,Hyderabad,"11:00 PM-1:00 PM, 6:00 PM-8:00 PM"
+773,Karavalli - Pune Branch 3782,Pune,"12:00 PM-3:00 PM, 6:00 PM-9:00 PM"
+774,Bukhara - Jaipur Branch 2715,Jaipur,"12:00 PM-2:00 PM, 8:00 PM-10:00 PM"
+775,The Black Sheep Bistro - Kolkata Branch 1424,Kolkata,10:00 AM-11:00 PM
+776,Karavalli - Goa Branch 2583,Goa,10:00 AM-10:00 PM
+777,Annalakshmi - Jaipur Branch 4157,Jaipur,"11:00 PM-1:00 PM, 6:00 PM-10:00 PM"
+778,Dum Pukht - Delhi Branch 1056,Delhi,11:00 AM-10:00 PM
+779,Mainland China - Ahmedabad Branch 7910,Ahmedabad,11:00 AM-11:00 PM
+780,Punjab Grill - Goa Branch 7487,Goa,"11:00 PM-1:00 PM, 8:00 PM-10:00 PM"
+781,Punjab Grill - Chennai Branch 8214,Chennai,11:00 AM-11:00 PM
+782,Trishna - Chennai Branch 9973,Chennai,10:00 AM-10:00 PM
+783,Mainland China - Ahmedabad Branch 5124,Ahmedabad,11:00 AM-11:00 PM
+784,SodaBottleOpenerWala - Delhi Branch 1442,Delhi,11:00 AM-9:00 PM
+785,The Bombay Canteen - Goa Branch 5882,Goa,11:00 AM-10:00 PM
+786,Barbeque Nation - Pune Branch 5579,Pune,11:00 AM-11:00 PM
+787,Karavalli - Mumbai Branch 4277,Mumbai,"11:00 PM-2:00 PM, 8:00 PM-10:00 PM"
+788,SodaBottleOpenerWala - Kolkata Branch 4298,Kolkata,"1:00 PM-4:00 PM, 6:00 PM-10:00 PM"
+789,Peshawri - Goa Branch 7379,Goa,10:00 AM-11:00 PM
+790,Barbeque Nation - Jaipur Branch 2463,Jaipur,11:00 AM-10:00 PM
+791,Peshawri - Mumbai Branch 775,Mumbai,"12:00 PM-3:00 PM, 8:00 PM-11:00 PM"
+792,Mainland China - Bangalore Branch 6745,Bangalore,11:00 AM-10:00 PM
+793,Karavalli - Jaipur Branch 5751,Jaipur,10:00 AM-11:00 PM
+794,Peshawri - Kolkata Branch 9685,Kolkata,"1:00 PM-3:00 PM, 6:00 PM-8:00 PM"
+795,Dum Pukht - Goa Branch 9414,Goa,11:00 AM-10:00 PM
+796,Punjab Grill - Goa Branch 6073,Goa,10:00 AM-9:00 PM
+797,The Bombay Canteen - Bangalore Branch 63,Bangalore,"11:00 PM-2:00 PM, 8:00 PM-11:00 PM"
+798,The Bombay Canteen - Mumbai Branch 3168,Mumbai,"11:00 PM-1:00 PM, 6:00 PM-8:00 PM"
+799,Peshawri - Kolkata Branch 9841,Kolkata,10:00 AM-10:00 PM
+800,Oh! Calcutta - Ahmedabad Branch 8106,Ahmedabad,"1:00 PM-3:00 PM, 8:00 PM-10:00 PM"
+801,Trishna - Goa Branch 7851,Goa,"11:00 PM-1:00 PM, 7:00 PM-11:00 PM"
+802,Karavalli - Bangalore Branch 9745,Bangalore,10:00 AM-9:00 PM
+803,Karavalli - Goa Branch 4449,Goa,"12:00 PM-2:00 PM, 6:00 PM-9:00 PM"
+804,The Black Sheep Bistro - Delhi Branch 4496,Delhi,"1:00 PM-3:00 PM, 7:00 PM-10:00 PM"
+805,Barbeque Nation - Delhi Branch 6441,Delhi,10:00 AM-10:00 PM
+806,The Bombay Canteen - Bangalore Branch 4623,Bangalore,"12:00 PM-3:00 PM, 8:00 PM-12:00 PM"
+807,Bukhara - Jaipur Branch 8779,Jaipur,"1:00 PM-4:00 PM, 8:00 PM-11:00 PM"
+808,Leopold Cafe - Kolkata Branch 4904,Kolkata,11:00 AM-9:00 PM
+809,Trishna - Delhi Branch 222,Delhi,"11:00 PM-2:00 PM, 6:00 PM-10:00 PM"
+810,Karavalli - Bangalore Branch 6067,Bangalore,"1:00 PM-3:00 PM, 8:00 PM-12:00 PM"
+811,The Fisherman's Wharf - Chennai Branch 2704,Chennai,"1:00 PM-3:00 PM, 8:00 PM-10:00 PM"
+812,The Fisherman's Wharf - Ahmedabad Branch 182,Ahmedabad,10:00 AM-11:00 PM
+813,Copper Chimney - Mumbai Branch 3924,Mumbai,10:00 AM-9:00 PM
+814,Annalakshmi - Delhi Branch 743,Delhi,11:00 AM-11:00 PM
+815,Oh! Calcutta - Goa Branch 3873,Goa,"11:00 PM-1:00 PM, 6:00 PM-10:00 PM"
+816,Leopold Cafe - Delhi Branch 2085,Delhi,11:00 AM-9:00 PM
+817,Thalassa - Mumbai Branch 7160,Mumbai,11:00 AM-11:00 PM
+818,Punjab Grill - Hyderabad Branch 8929,Hyderabad,10:00 AM-11:00 PM
+819,Copper Chimney - Goa Branch 8744,Goa,"1:00 PM-4:00 PM, 6:00 PM-10:00 PM"
+820,The Black Sheep Bistro - Ahmedabad Branch 9335,Ahmedabad,10:00 AM-10:00 PM
+821,Copper Chimney - Pune Branch 1813,Pune,10:00 AM-9:00 PM
+822,Annalakshmi - Chennai Branch 9456,Chennai,10:00 AM-11:00 PM
+823,Paradise Biryani - Bangalore Branch 7981,Bangalore,10:00 AM-10:00 PM
+824,Trishna - Chennai Branch 9874,Chennai,11:00 AM-11:00 PM
+825,Karavalli - Kolkata Branch 120,Kolkata,11:00 AM-10:00 PM
+826,Annalakshmi - Chennai Branch 8751,Chennai,10:00 AM-10:00 PM
+827,Karavalli - Kolkata Branch 2262,Kolkata,10:00 AM-9:00 PM
+828,Indian Accent - Delhi Branch 2885,Delhi,10:00 AM-9:00 PM
+829,Annalakshmi - Chennai Branch 8985,Chennai,"12:00 PM-2:00 PM, 8:00 PM-10:00 PM"
+830,Karavalli - Delhi Branch 2198,Delhi,"1:00 PM-3:00 PM, 7:00 PM-11:00 PM"
+831,Thalassa - Mumbai Branch 8838,Mumbai,"1:00 PM-4:00 PM, 7:00 PM-11:00 PM"
+832,Barbeque Nation - Chennai Branch 9733,Chennai,"11:00 PM-2:00 PM, 6:00 PM-9:00 PM"
+833,Mainland China - Chennai Branch 1283,Chennai,10:00 AM-9:00 PM
+834,The Fisherman's Wharf - Goa Branch 205,Goa,"11:00 PM-1:00 PM, 6:00 PM-9:00 PM"
+835,Paradise Biryani - Hyderabad Branch 7923,Hyderabad,10:00 AM-11:00 PM
+836,The Bombay Canteen - Ahmedabad Branch 9670,Ahmedabad,10:00 AM-10:00 PM
+837,Dum Pukht - Delhi Branch 8624,Delhi,10:00 AM-10:00 PM
+838,Bukhara - Hyderabad Branch 5679,Hyderabad,"11:00 PM-1:00 PM, 6:00 PM-8:00 PM"
+839,Fatty Bao - Bangalore Branch 2116,Bangalore,11:00 AM-9:00 PM
+840,Leopold Cafe - Delhi Branch 2705,Delhi,10:00 AM-10:00 PM
+841,The Bombay Canteen - Goa Branch 7006,Goa,"11:00 PM-1:00 PM, 7:00 PM-10:00 PM"
+842,SodaBottleOpenerWala - Pune Branch 8182,Pune,"12:00 PM-3:00 PM, 7:00 PM-10:00 PM"
+843,Indian Accent - Ahmedabad Branch 4118,Ahmedabad,11:00 AM-11:00 PM
+844,Paradise Biryani - Pune Branch 7755,Pune,"11:00 PM-2:00 PM, 8:00 PM-12:00 PM"
+845,Bukhara - Mumbai Branch 7538,Mumbai,"12:00 PM-2:00 PM, 7:00 PM-11:00 PM"
+846,Thalassa - Delhi Branch 2521,Delhi,"11:00 PM-2:00 PM, 6:00 PM-9:00 PM"
+847,The Black Sheep Bistro - Ahmedabad Branch 8889,Ahmedabad,"1:00 PM-4:00 PM, 6:00 PM-10:00 PM"
+848,Indian Accent - Jaipur Branch 5673,Jaipur,10:00 AM-11:00 PM
+849,Thalassa - Ahmedabad Branch 5287,Ahmedabad,10:00 AM-10:00 PM
+850,Dum Pukht - Bangalore Branch 7544,Bangalore,"11:00 PM-2:00 PM, 6:00 PM-10:00 PM"
+851,The Black Sheep Bistro - Bangalore Branch 5137,Bangalore,10:00 AM-10:00 PM
+852,Mainland China - Hyderabad Branch 6078,Hyderabad,"1:00 PM-3:00 PM, 6:00 PM-9:00 PM"
+853,Barbeque Nation - Jaipur Branch 1694,Jaipur,"11:00 PM-1:00 PM, 6:00 PM-10:00 PM"
+854,The Fisherman's Wharf - Ahmedabad Branch 6559,Ahmedabad,"1:00 PM-3:00 PM, 7:00 PM-10:00 PM"
+855,Peshawri - Bangalore Branch 182,Bangalore,10:00 AM-11:00 PM
+856,Karavalli - Ahmedabad Branch 1859,Ahmedabad,11:00 AM-11:00 PM
+857,Oh! Calcutta - Kolkata Branch 4137,Kolkata,10:00 AM-11:00 PM
+858,Karavalli - Kolkata Branch 6463,Kolkata,11:00 AM-10:00 PM
+859,The Bombay Canteen - Kolkata Branch 1,Kolkata,"11:00 PM-1:00 PM, 7:00 PM-9:00 PM"
+860,Paradise Biryani - Bangalore Branch 1137,Bangalore,11:00 AM-11:00 PM
+861,Paradise Biryani - Bangalore Branch 568,Bangalore,11:00 AM-9:00 PM
+862,Punjab Grill - Chennai Branch 5079,Chennai,11:00 AM-10:00 PM
+863,Oh! Calcutta - Goa Branch 9702,Goa,11:00 AM-11:00 PM
+864,Leopold Cafe - Kolkata Branch 8017,Kolkata,"12:00 PM-2:00 PM, 6:00 PM-9:00 PM"
+865,The Black Sheep Bistro - Ahmedabad Branch 286,Ahmedabad,11:00 AM-9:00 PM
+866,Leopold Cafe - Ahmedabad Branch 480,Ahmedabad,11:00 AM-10:00 PM
+867,Peshawri - Ahmedabad Branch 3196,Ahmedabad,"1:00 PM-3:00 PM, 7:00 PM-9:00 PM"
+868,Leopold Cafe - Jaipur Branch 8785,Jaipur,"1:00 PM-4:00 PM, 8:00 PM-10:00 PM"
+869,SodaBottleOpenerWala - Bangalore Branch 2001,Bangalore,11:00 AM-9:00 PM
+870,Leopold Cafe - Goa Branch 7415,Goa,"11:00 PM-1:00 PM, 6:00 PM-10:00 PM"
+871,Fatty Bao - Hyderabad Branch 1264,Hyderabad,"11:00 PM-2:00 PM, 7:00 PM-11:00 PM"
+872,Trishna - Goa Branch 2625,Goa,"1:00 PM-4:00 PM, 7:00 PM-10:00 PM"
+873,Copper Chimney - Delhi Branch 2729,Delhi,"1:00 PM-4:00 PM, 6:00 PM-10:00 PM"
+874,Karavalli - Ahmedabad Branch 581,Ahmedabad,10:00 AM-9:00 PM
+875,Leopold Cafe - Goa Branch 9899,Goa,10:00 AM-11:00 PM
+876,Leopold Cafe - Delhi Branch 9771,Delhi,"11:00 PM-2:00 PM, 6:00 PM-10:00 PM"
+877,SodaBottleOpenerWala - Bangalore Branch 7756,Bangalore,11:00 AM-11:00 PM
+878,Fatty Bao - Mumbai Branch 3994,Mumbai,11:00 AM-11:00 PM
+879,Peshawri - Goa Branch 3787,Goa,10:00 AM-11:00 PM
+880,Bukhara - Hyderabad Branch 197,Hyderabad,"1:00 PM-4:00 PM, 8:00 PM-11:00 PM"
+881,Paradise Biryani - Delhi Branch 2025,Delhi,"1:00 PM-4:00 PM, 6:00 PM-9:00 PM"
+882,Paradise Biryani - Chennai Branch 3035,Chennai,"12:00 PM-2:00 PM, 7:00 PM-10:00 PM"
+883,The Black Sheep Bistro - Bangalore Branch 1934,Bangalore,11:00 AM-11:00 PM
+884,Peshawri - Chennai Branch 7670,Chennai,"11:00 PM-2:00 PM, 6:00 PM-8:00 PM"
+885,Karavalli - Mumbai Branch 9078,Mumbai,11:00 AM-9:00 PM
+886,Indian Accent - Hyderabad Branch 2110,Hyderabad,"12:00 PM-3:00 PM, 7:00 PM-11:00 PM"
+887,Karavalli - Kolkata Branch 8641,Kolkata,10:00 AM-10:00 PM
+888,Annalakshmi - Goa Branch 4152,Goa,"12:00 PM-2:00 PM, 8:00 PM-11:00 PM"
+889,The Fisherman's Wharf - Chennai Branch 397,Chennai,11:00 AM-10:00 PM
+890,Bukhara - Delhi Branch 6074,Delhi,11:00 AM-10:00 PM
+891,Copper Chimney - Kolkata Branch 1542,Kolkata,10:00 AM-10:00 PM
+892,Punjab Grill - Bangalore Branch 7377,Bangalore,10:00 AM-9:00 PM
+893,Dum Pukht - Goa Branch 2329,Goa,"12:00 PM-3:00 PM, 8:00 PM-10:00 PM"
+894,The Bombay Canteen - Goa Branch 2298,Goa,11:00 AM-9:00 PM
+895,Fatty Bao - Ahmedabad Branch 1344,Ahmedabad,10:00 AM-10:00 PM
+896,Annalakshmi - Mumbai Branch 2171,Mumbai,10:00 AM-10:00 PM
+897,The Black Sheep Bistro - Hyderabad Branch 3017,Hyderabad,10:00 AM-9:00 PM
+898,Dum Pukht - Bangalore Branch 6947,Bangalore,10:00 AM-11:00 PM
+899,Barbeque Nation - Goa Branch 7810,Goa,10:00 AM-9:00 PM
+900,Trishna - Pune Branch 1265,Pune,11:00 AM-11:00 PM
+901,Karavalli - Delhi Branch 9577,Delhi,11:00 AM-9:00 PM
+902,Trishna - Kolkata Branch 6816,Kolkata,11:00 AM-10:00 PM
+903,Punjab Grill - Bangalore Branch 688,Bangalore,"12:00 PM-3:00 PM, 7:00 PM-9:00 PM"
+904,Dum Pukht - Bangalore Branch 823,Bangalore,10:00 AM-9:00 PM
+905,The Black Sheep Bistro - Mumbai Branch 3887,Mumbai,"12:00 PM-2:00 PM, 6:00 PM-9:00 PM"
+906,Copper Chimney - Pune Branch 7259,Pune,10:00 AM-11:00 PM
+907,Peshawri - Bangalore Branch 9267,Bangalore,"1:00 PM-3:00 PM, 8:00 PM-12:00 PM"
+908,Indian Accent - Goa Branch 492,Goa,10:00 AM-11:00 PM
+909,Fatty Bao - Chennai Branch 4123,Chennai,10:00 AM-11:00 PM
+910,Leopold Cafe - Bangalore Branch 854,Bangalore,"1:00 PM-4:00 PM, 8:00 PM-10:00 PM"
+911,The Black Sheep Bistro - Hyderabad Branch 7701,Hyderabad,11:00 AM-11:00 PM
+912,Indian Accent - Ahmedabad Branch 6626,Ahmedabad,11:00 AM-9:00 PM
+913,Thalassa - Goa Branch 794,Goa,11:00 AM-11:00 PM
+914,Peshawri - Mumbai Branch 7284,Mumbai,10:00 AM-9:00 PM
+915,Oh! Calcutta - Hyderabad Branch 733,Hyderabad,"11:00 PM-2:00 PM, 7:00 PM-9:00 PM"
+916,Punjab Grill - Goa Branch 9311,Goa,"11:00 PM-1:00 PM, 8:00 PM-11:00 PM"
+917,The Black Sheep Bistro - Hyderabad Branch 5592,Hyderabad,11:00 AM-9:00 PM
+918,Trishna - Kolkata Branch 5454,Kolkata,"1:00 PM-4:00 PM, 8:00 PM-10:00 PM"
+919,Thalassa - Pune Branch 5676,Pune,"11:00 PM-2:00 PM, 7:00 PM-11:00 PM"
+920,Dum Pukht - Hyderabad Branch 2447,Hyderabad,"1:00 PM-3:00 PM, 6:00 PM-9:00 PM"
+921,The Black Sheep Bistro - Bangalore Branch 4663,Bangalore,10:00 AM-9:00 PM
+922,Mainland China - Kolkata Branch 8102,Kolkata,"12:00 PM-3:00 PM, 6:00 PM-10:00 PM"
+923,Bukhara - Ahmedabad Branch 1514,Ahmedabad,11:00 AM-9:00 PM
+924,Thalassa - Jaipur Branch 6011,Jaipur,"11:00 PM-2:00 PM, 7:00 PM-9:00 PM"
+925,Fatty Bao - Pune Branch 9948,Pune,11:00 AM-9:00 PM
+926,Indian Accent - Goa Branch 8357,Goa,10:00 AM-11:00 PM
+927,Indian Accent - Bangalore Branch 7443,Bangalore,"11:00 PM-2:00 PM, 7:00 PM-9:00 PM"
+928,Dum Pukht - Chennai Branch 3748,Chennai,10:00 AM-11:00 PM
+929,The Bombay Canteen - Bangalore Branch 7052,Bangalore,"11:00 PM-1:00 PM, 6:00 PM-9:00 PM"
+930,Bukhara - Pune Branch 4789,Pune,"1:00 PM-4:00 PM, 6:00 PM-9:00 PM"
+931,Annalakshmi - Bangalore Branch 7197,Bangalore,11:00 AM-10:00 PM
+932,The Bombay Canteen - Chennai Branch 8007,Chennai,11:00 AM-10:00 PM
+933,Copper Chimney - Bangalore Branch 1531,Bangalore,10:00 AM-11:00 PM
+934,The Fisherman's Wharf - Chennai Branch 7119,Chennai,"1:00 PM-3:00 PM, 8:00 PM-12:00 PM"
+935,Peshawri - Hyderabad Branch 2375,Hyderabad,11:00 AM-11:00 PM
+936,Trishna - Goa Branch 7934,Goa,11:00 AM-10:00 PM
+937,Trishna - Jaipur Branch 9701,Jaipur,"11:00 PM-2:00 PM, 7:00 PM-11:00 PM"
+938,The Fisherman's Wharf - Ahmedabad Branch 3800,Ahmedabad,11:00 AM-9:00 PM
+939,The Bombay Canteen - Goa Branch 3509,Goa,10:00 AM-9:00 PM
+940,Copper Chimney - Chennai Branch 9786,Chennai,"11:00 PM-1:00 PM, 8:00 PM-11:00 PM"
+941,Mainland China - Delhi Branch 8710,Delhi,"1:00 PM-4:00 PM, 7:00 PM-11:00 PM"
+942,The Bombay Canteen - Bangalore Branch 9323,Bangalore,"1:00 PM-4:00 PM, 8:00 PM-11:00 PM"
+943,Peshawri - Bangalore Branch 914,Bangalore,"1:00 PM-4:00 PM, 6:00 PM-10:00 PM"
+944,Mainland China - Kolkata Branch 3502,Kolkata,"11:00 PM-1:00 PM, 6:00 PM-10:00 PM"
+945,Paradise Biryani - Pune Branch 9979,Pune,10:00 AM-10:00 PM
+946,Copper Chimney - Goa Branch 7792,Goa,10:00 AM-9:00 PM
+947,Paradise Biryani - Bangalore Branch 7365,Bangalore,11:00 AM-10:00 PM
+948,Trishna - Delhi Branch 2866,Delhi,"12:00 PM-3:00 PM, 8:00 PM-10:00 PM"
+949,Leopold Cafe - Pune Branch 6453,Pune,"1:00 PM-4:00 PM, 8:00 PM-10:00 PM"
+950,Thalassa - Pune Branch 9465,Pune,"11:00 PM-2:00 PM, 6:00 PM-10:00 PM"
+951,Bukhara - Chennai Branch 9848,Chennai,10:00 AM-10:00 PM
+952,Punjab Grill - Bangalore Branch 5279,Bangalore,"11:00 PM-1:00 PM, 6:00 PM-9:00 PM"
+953,Annalakshmi - Jaipur Branch 2347,Jaipur,11:00 AM-9:00 PM
+954,Fatty Bao - Mumbai Branch 4302,Mumbai,11:00 AM-11:00 PM
+955,Barbeque Nation - Mumbai Branch 1853,Mumbai,10:00 AM-11:00 PM
+956,Bukhara - Kolkata Branch 7801,Kolkata,"12:00 PM-2:00 PM, 8:00 PM-12:00 PM"
+957,Mainland China - Kolkata Branch 5835,Kolkata,10:00 AM-9:00 PM
+958,Dum Pukht - Pune Branch 5048,Pune,11:00 AM-10:00 PM
+959,Indian Accent - Bangalore Branch 8220,Bangalore,"1:00 PM-3:00 PM, 6:00 PM-9:00 PM"
+960,SodaBottleOpenerWala - Mumbai Branch 4740,Mumbai,11:00 AM-9:00 PM
+961,The Fisherman's Wharf - Chennai Branch 5718,Chennai,11:00 AM-9:00 PM
+962,Trishna - Hyderabad Branch 1505,Hyderabad,11:00 AM-11:00 PM
+963,Barbeque Nation - Hyderabad Branch 6731,Hyderabad,"12:00 PM-2:00 PM, 6:00 PM-9:00 PM"
+964,Indian Accent - Ahmedabad Branch 9379,Ahmedabad,"12:00 PM-3:00 PM, 8:00 PM-12:00 PM"
+965,Copper Chimney - Jaipur Branch 6153,Jaipur,"1:00 PM-3:00 PM, 8:00 PM-10:00 PM"
+966,Trishna - Chennai Branch 456,Chennai,11:00 AM-11:00 PM
+967,Fatty Bao - Jaipur Branch 833,Jaipur,"11:00 PM-1:00 PM, 7:00 PM-11:00 PM"
+968,The Bombay Canteen - Pune Branch 1071,Pune,10:00 AM-11:00 PM
+969,Paradise Biryani - Pune Branch 1218,Pune,10:00 AM-9:00 PM
+970,Annalakshmi - Mumbai Branch 7666,Mumbai,11:00 AM-9:00 PM
+971,Mainland China - Ahmedabad Branch 9295,Ahmedabad,"11:00 PM-2:00 PM, 8:00 PM-10:00 PM"
+972,Barbeque Nation - Pune Branch 9076,Pune,10:00 AM-10:00 PM
+973,Oh! Calcutta - Hyderabad Branch 6632,Hyderabad,10:00 AM-10:00 PM
+974,SodaBottleOpenerWala - Kolkata Branch 3070,Kolkata,10:00 AM-11:00 PM
+975,Barbeque Nation - Hyderabad Branch 4749,Hyderabad,11:00 AM-9:00 PM
+976,Copper Chimney - Chennai Branch 1905,Chennai,11:00 AM-9:00 PM
+977,Mainland China - Hyderabad Branch 962,Hyderabad,"11:00 PM-1:00 PM, 7:00 PM-10:00 PM"
+978,Bukhara - Ahmedabad Branch 6594,Ahmedabad,10:00 AM-9:00 PM
+979,The Bombay Canteen - Delhi Branch 4423,Delhi,10:00 AM-11:00 PM
+980,Barbeque Nation - Delhi Branch 3180,Delhi,"11:00 PM-2:00 PM, 6:00 PM-10:00 PM"
+981,Thalassa - Hyderabad Branch 4960,Hyderabad,"1:00 PM-4:00 PM, 6:00 PM-9:00 PM"
+982,Dum Pukht - Hyderabad Branch 8510,Hyderabad,11:00 AM-9:00 PM
+983,Leopold Cafe - Kolkata Branch 4129,Kolkata,10:00 AM-9:00 PM
+984,Fatty Bao - Delhi Branch 9082,Delhi,"12:00 PM-3:00 PM, 6:00 PM-10:00 PM"
+985,Dum Pukht - Mumbai Branch 1167,Mumbai,"11:00 PM-2:00 PM, 8:00 PM-11:00 PM"
+986,Mainland China - Bangalore Branch 1612,Bangalore,11:00 AM-9:00 PM
+987,Oh! Calcutta - Mumbai Branch 1168,Mumbai,"1:00 PM-3:00 PM, 7:00 PM-10:00 PM"
+988,The Black Sheep Bistro - Kolkata Branch 1990,Kolkata,11:00 AM-11:00 PM
+989,Barbeque Nation - Hyderabad Branch 1126,Hyderabad,10:00 AM-11:00 PM
+990,Oh! Calcutta - Hyderabad Branch 5742,Hyderabad,10:00 AM-10:00 PM
+991,Copper Chimney - Pune Branch 9430,Pune,"12:00 PM-3:00 PM, 8:00 PM-11:00 PM"
+992,Indian Accent - Jaipur Branch 8577,Jaipur,"12:00 PM-3:00 PM, 7:00 PM-11:00 PM"
+993,Fatty Bao - Hyderabad Branch 7736,Hyderabad,11:00 AM-11:00 PM
+994,Dum Pukht - Bangalore Branch 6403,Bangalore,"12:00 PM-2:00 PM, 7:00 PM-9:00 PM"
+995,Peshawri - Kolkata Branch 9078,Kolkata,10:00 AM-9:00 PM
+996,Copper Chimney - Goa Branch 6186,Goa,11:00 AM-10:00 PM
+997,Barbeque Nation - Hyderabad Branch 3359,Hyderabad,10:00 AM-10:00 PM
+998,Oh! Calcutta - Ahmedabad Branch 4041,Ahmedabad,11:00 AM-11:00 PM
+999,SodaBottleOpenerWala - Kolkata Branch 230,Kolkata,11:00 AM-9:00 PM
+1000,SodaBottleOpenerWala - Delhi Branch 1996,Delhi,10:00 AM-11:00 PM
