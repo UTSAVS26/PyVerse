@@ -187,6 +187,7 @@
   * [Unemployment Analysis Due To Covid](./Data_Science/Unemployment%20Analysis%20due%20to%20COVID)
   * [Whatsapp Chat Analyzer](./Data_Science/Whatsapp_Chat_Analyzer)
   * [Analysis Covid Trends](./Data_Science/analysis_covid_trends)
+  * [Crypto Report Dashboard](./Data_Science/crypto_report_dashboard)
   * [Customer Segmentation](./Data_Science/customer_segmentation)
   * [Stock Prediction](./Data_Science/stock_prediction)
   * [Time Series Visualization](./Data_Science/time_series_visualization)
@@ -429,6 +430,7 @@
   * [Sonar Rock  Mine Prediction](./Machine_Learning/SONAR_Rock_%20Mine_Prediction)
   * [Svm](./Machine_Learning/SVM)
   * [Sentiment Analysis Using Machine Learning](./Machine_Learning/Sentiment%20Analysis%20using%20machine%20learning)
+  * [Sentiment Analysis For Whatsapp](./Machine_Learning/Sentiment%20analysis%20for%20Whatsapp)
   * [Sentiment-Analysis-Of-Restaurant-Reviews](./Machine_Learning/Sentiment-Analysis-Of-Restaurant-Reviews)
   * [Signature Verification Portal](./Machine_Learning/Signature_verification_portal)
   * [Stock Market Analysis](./Machine_Learning/Stock_Market_Analysis)
@@ -448,6 +450,7 @@
   * [Jamesweb](./Machine_Learning/jamesweb)
   * [Pokemon-Data-Analysis-And-Legendary-Classification-Main](./Machine_Learning/pokemon-data-analysis-and-legendary-classification-main)
   * [Smartphone Rate Prediction](./Machine_Learning/smartphone_rate_prediction)
+  * [Titanic-Survival-Prediction](./Machine_Learning/titanic-survival-prediction)
 
 * **Optimization Algorithms**
   * [Genetic Algorithms](./Optimization_Algorithms/Genetic_Algorithms)
