@@ -1,5 +1,5 @@
 '''
-display the number of unique substrings present in a string; substrings are contiguous part of a string.
+display the number of unique palindromic substrings present in a string; substrings are contiguous part of a string and palindromic are those that read the same, backward or forward.
 '''
 class PalindromicSubstringCounter:
     def count_and_list_unique_palindromic_substrings(self, s: str):
