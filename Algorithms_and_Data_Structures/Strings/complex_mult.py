@@ -4,17 +4,21 @@ multiply two complex numbers, those with a real and an imaginary part.
 class ComplexNumberMultiplier:
     def multiply(self, num1: str, num2: str) -> str:
         def parse_complex(num: str):
-            # find the position of '+' or '-' (not at start) that splits real and imaginary part
-            # excluding the first character in case the number starts with '-'
-            for i in range(1, len(num)):
-                if num[i] in ['+', '-'] and num[i-1] != 'e':  # avoid splitting on scientific notation accidentally
-                    split_pos = i
-                    break
-            else:
-                raise ValueError("Invalid complex number format")
-
-            real = int(num[:split_pos])
-            imag = int(num[split_pos:-1])  # skip last character 'i'
+             # Validate format: must end with 'i' (e.g., a+bi or a-bi).
++            if not num or num[-1].lower() != 'i':
++                raise ValueError("Invalid complex number format: must end with 'i'")
++            # Find the first '+' or '-' (not at start) that splits real and imaginary parts.
++            # Avoid splitting on scientific notation markers like 'e' or 'E'.
++            split_pos = None
++            for i in range(1, len(num) - 1):  # exclude trailing 'i'
++                if num[i] in ['+', '-'] and num[i - 1] not in ('e', 'E'):
++                    split_pos = i
++                    break
++            if split_pos is None:
++                raise ValueError("Invalid complex number format")
++
++            real = int(num[:split_pos])
++            imag = int(num[split_pos:-1])  # exclude trailing 'i'
             return real, imag
 
         a, b = parse_complex(num1)
