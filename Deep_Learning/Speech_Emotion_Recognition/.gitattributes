@@ -1,2 +1,0 @@
-training_p.ipynb filter=lfs diff=lfs merge=lfs -text
-Emotion_Voice_Detection_Model.pkl filter=lfs diff=lfs merge=lfs -text
