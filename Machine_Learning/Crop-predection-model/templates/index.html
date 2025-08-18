@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CROPTOMIZE</title>
+    <script src="YOUR-GOOGLE-MAPS-API-KEY"></script>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d7eed2;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            color: #27ae60;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #27ae60;
+        }
+
+        /* Navigation Bar Styles */
+        .navbar {
+            width: 30%;
+            background-color: #27ae60;
+            padding: 20px;
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        .navbar a {
+            display: block;
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #219150;
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-left: 30%;
+            width: 70%;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .dashboard {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #d7eed2;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .hero button:hover {
+            background-color: #219150;
+            transform: scale(1.05);
+        }
+
+        /* Card Styles */
+        .card {
+            --input-focus: #2d8cf0;
+            --font-color: #323232;
+            --font-color-sub: #666;
+            --bg-color: #fff;
+            --main-color: #27ae60;
+            padding: 40px;
+            background: var(--bg-color);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 20px;
+            border-radius: 10px;
+            border: 2px solid var(--main-color);
+            box-shadow: 4px 4px var(--main-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 6px 6px var(--main-color);
+        }
+
+        .error {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .result {
+            text-align: left;
+            margin-top: 20px;
+            font-size: 1.1rem;
+            color: var(--font-color);
+        }
+
+        #map {
+            width: 100%;
+            height: 400px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            animation: slideIn 0.5s ease-in-out;
+            border: 2px solid var(--main-color);
+        }
+
+        button {
+            padding: 15px 30px;
+            cursor: pointer;
+            background-color: var(--main-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            animation: fadeIn 0.5s ease-in-out;
+            font-size: 16px;
+            font-weight: 600;
+            box-shadow: 4px 4px var(--main-color);
+        }
+
+        button:hover {
+            background-color: #219150;
+            transform: scale(1.05);
+        }
+
+        input[type="text"], input[type="file"] {
+            width: 100%;
+            padding: 15px;
+            margin: 15px 0;
+            border: 2px solid var(--main-color);
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+            font-size: 16px;
+            background-color: var(--bg-color);
+            box-shadow: 4px 4px var(--main-color);
+        }
+
+        input[type="text"]:focus, input[type="file"]:focus {
+            border: 2px solid var(--input-focus);
+            outline: none;
+        }
+
+        .weather-info, .soil-result {
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            animation: fadeIn 0.5s ease-in-out;
+            font-size: 1.1rem;
+            color: var(--font-color);
+        }
+
+        .soil-result {
+            font-weight: bold;
+            color: #2980b9;
+            font-size: 18px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+
+            .navbar {
+                width: 100%;
+                height: auto;
+                position: relative;
+                padding: 10px;
+            }
+
+            .main-content {
+                margin-left: 0;
+                width: 100%;
+                padding: 10px;
+            }
+
+            .card {
+                padding: 20px;
+                min-height: 60vh;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            button {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+
+            input[type="text"], input[type="file"] {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body onload="initMap()">
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#weather">Weather Insights</a>
+        <a href="#crop-info">Crop Information</a>
+        <a href="#crop-recommendation">Crop Recommendations</a>
+        <a href="#soil-analysis">Soil Analysis</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1>CROPTOMIZE</h1>
+            <button onclick="scrollToDashboard()">Explore Dashboard</button>
+        </div>
+
+        <!-- Dashboard -->
+        <div class="container" id="dashboard">
+            <div class="dashboard">
+                <!-- Weather Section -->
+                <div class="card" id="weather">
+                    <h2>🌤️ Weather Insights</h2>
+                    <p>Select your location on the map to get real-time weather data. Accurate weather information helps you plan your farming activities effectively.</p>
+                    <div id="map"></div>
+                    <input type="hidden" id="latitude">
+                    <input type="hidden" id="longitude">
+                    <button onclick="fetchWeather()">Get Weather Data</button>
+                    <div id="weather-info" class="weather-info"></div>
+                </div>
+
+                <!-- Crop Search Section -->
+                <div class="card" id="crop-info">
+                    <h2>🌾 Crop Information</h2>
+                    <p>Search for any crop to get detailed insights about its cultivation, including fertilizers, costs, and expected revenues. Make informed decisions for better yields.</p>
+                    <form action="/predict_crop" method="post">
+                        <input type="text" name="crop_name" placeholder="Enter Crop Name" required>
+                        <button type="submit">Search Crop</button>
+                    </form>
+
+                    {% if error %}
+                        <p class="error">{{ error }}</p>
+                    {% endif %}
+
+                    {% if data %}
+                        <div class="result">
+                            <h3>Crop Details:</h3>
+                            <p><strong>Fertilizers Required:</strong> {{ data['Fertilisers required'] }}</p>
+                            <p><strong>Cost of Cultivation:</strong> ₹{{ data['Cost of cultivation'] }}</p>
+                            <p><strong>Expected Revenues:</strong> ₹{{ data['Expected revenues'] }}</p>
+                            <p><strong>Quantity of Seeds Per Hectare:</strong> {{ data['Quantity of seeds per hectare'] }} kg</p>
+                            <p><strong>Duration of Cultivation:</strong> {{ data['Duration of cultivation'] }}</p>
+                            <p><strong>Demand of Crop:</strong> {{ data['Demand of crop'] }}</p>
+                            <p><strong>Crops for Mixed Cropping:</strong> {{ data['Crops for mixed cropping'] }}</p>
+                        </div>
+                    {% endif %}
+                </div>
+
+                <!-- Crop Recommendation Section -->
+                <div class="card" id="crop-recommendation">
+                    <h2>🌱 Crop Recommendations</h2>
+                    <p>Provide details like rainfall, temperature, soil type, and season to get personalized crop recommendations. Optimize your farming strategy with data-driven insights.</p>
+                    <form action="/predict" method="post">
+                        <label for="Rainfall">Rainfall (mm):</label>
+                        <input type="text" name="Rainfall" required>
+
+                        <label for="Temperature">Temperature (°C):</label>
+                        <input type="text" name="Temperature" required>
+
+                        <label for="SoilType">Soil Type:</label>
+                        <input type="text" name="SoilType" required placeholder="Enter Soil Type">
+
+                        <label for="Season">Season:</label>
+                        <input type="text" name="Season" required placeholder="Enter Season">
+
+                        <button type="submit">Predict</button>
+                    </form>
+
+                    {% if result %}
+                        <p class="result">Recommended Crops: {{ result }}</p>
+                    {% endif %}
+
+                    {% if error %}
+                        <p class="error">Error: {{ error }}</p>
+                    {% endif %}
+                </div>
+
+                <!-- Soil Type Prediction Section -->
+                <div class="card" id="soil-analysis">
+                    <h2>🌍 Soil Analysis</h2>
+                    <p>Upload an image of your soil to predict its type and get tailored recommendations. Understand your soil better to choose the right crops and fertilizers.</p>
+                    <form id="soil-form">
+                        <input type="file" id="soil-image" name="file" accept="image/*" required>
+                        <button type="button" onclick="predictSoil()">Predict Soil Type</button>
+                    </form>
+                    <p id="soil-result" class="soil-result"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let map, marker;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: 20.59, lng: 78.96 },
+                zoom: 5
+            });
+
+            map.addListener("click", function (event) {
+                placeMarker(event.latLng);
+            });
+        }
+
+        function placeMarker(location) {
+            if (marker) {
+                marker.setPosition(location);
+            } else {
+                marker = new google.maps.Marker({
+                    position: location,
+                    map: map
+                });
+            }
+            document.getElementById("latitude").value = location.lat();
+            document.getElementById("longitude").value = location.lng();
+        }
+
+        function fetchWeather() {
+            const latitude = document.getElementById("latitude").value;
+            const longitude = document.getElementById("longitude").value;
+
+            if (!latitude || !longitude) {
+                alert("Please select a location on the map!");
+                return;
+            }
+
+            fetch('/get_weather', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ latitude, longitude })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    alert("Error fetching weather data.");
+                } else {
+                    displayWeather(data);
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        }
+
+        function displayWeather(data) {
+            document.getElementById("weather-info").innerHTML = `
+                <h3>Weather Data</h3>
+                <p><b>Temperature:</b> ${data.hours[0].airTemperature.sg} °C</p>
+                <p><b>Humidity:</b> ${data.hours[0].humidity.sg} %</p>
+                <p><b>Precipitation:</b> ${data.hours[0].precipitation.sg} mm</p>
+            `;
+        }
+
+        function predictSoil() {
+            const fileInput = document.getElementById("soil-image");
+            if (!fileInput.files.length) {
+                alert("Please upload an image!");
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append("file", fileInput.files[0]);
+
+            fetch('/predict_soil', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    alert("Error predicting soil type.");
+                } else {
+                    document.getElementById("soil-result").innerText = `Predicted Soil Type: ${data.soil_type}`;
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        }
+
+        function scrollToDashboard() {
+            document.getElementById("dashboard").scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+</body>
+</html>
