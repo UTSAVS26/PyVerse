@@ -376,6 +376,7 @@
   * [Credit Card Fraud Detection](./Machine_Learning/Credit%20Card%20Fraud%20Detection)
   * [Creditcardfrauddetection](./Machine_Learning/CreditCardFraudDetection)
   * [Cricket Shots Detection](./Machine_Learning/Cricket%20Shots%20Detection)
+  * [Crop-Predection-Model](./Machine_Learning/Crop-predection-model)
   * [Customer Clust - Customer Segmentation Tool](./Machine_Learning/Customer%20Clust%20-%20Customer%20Segmentation%20Tool)
   * [Customer Churn Prediction](./Machine_Learning/Customer_Churn_Prediction)
   * [Cyclone Detection](./Machine_Learning/Cyclone%20Detection)
