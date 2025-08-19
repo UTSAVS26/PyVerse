@@ -24,9 +24,10 @@ class CartesianTree:
         self.n = len(array)
         self.sparse_table = None
         self.log_table = None
+        self.sparse_table_max = None  # for range_max queries
+        self.index_to_node: Dict[int, CartesianNode] = {}
         self._build_tree()
         self._build_sparse_table()
-    
     def _build_tree(self) -> None:
         """Build Cartesian tree using stack-based algorithm"""
         if not self.array:
