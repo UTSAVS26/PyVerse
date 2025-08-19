@@ -245,15 +245,14 @@ Shivansh/Cartesian_Tree/
 
 ## Complexity Summary
 
-| Operation | Time Complexity | Space Complexity | Description |
-|-----------|----------------|------------------|-------------|
-| Construction | O(n) | O(n) | Build tree from array |
-| Range Min Query | O(1) | O(1) | Find minimum in range |
-| Range Max Query | O(1) | O(1) | Find maximum in range |
-| LCA Query | O(1) | O(1) | Find lowest common ancestor |
-| Inorder Traversal | O(n) | O(n) | Get sorted array |
-| Tree Visualization | O(n) | O(n) | Visualize tree structure |
-
+| Operation            | Time Complexity | Space Complexity | Description                      |
+|----------------------|-----------------|------------------|----------------------------------|
+| Construction         | O(n)            | O(n)             | Build tree from array            |
+| Range Min Query      | O(1)            | O(1)             | Find minimum in range            |
+| Range Max Query      | O(1)            | O(1)             | Find maximum in range            |
+| LCA Query            | O(1)            | O(1)             | Find lowest common ancestor      |
+| Inorder Traversal    | O(n)            | O(n)             | Recover original array order     |
+| Tree Visualization   | O(n)            | O(n)             | Visualize tree structure         |
 ## Applications in Real-World
 
 1. **Database Systems**: Efficient range queries on indexed data
