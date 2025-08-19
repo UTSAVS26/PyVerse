@@ -63,28 +63,42 @@ class CartesianTree:
         """Build sparse table for O(1) range queries"""
         if not self.array:
             return
-        
+
         n = len(self.array)
         log_n = int(np.log2(n)) + 1
-        
-        # Initialize sparse table
-        self.sparse_table = [[0] * log_n for _ in range(n)]
-        self.log_table = [0] * (n + 1)
-        
+
+        # Initialize sparse tables
+        self.sparse_table     = [[0] * log_n for _ in range(n)]  # min indices
+        self.sparse_table_max = [[0] * log_n for _ in range(n)]  # max indices
+        self.log_table        = [0] * (n + 1)
+
         # Fill log table
         for i in range(2, n + 1):
             self.log_table[i] = self.log_table[i // 2] + 1
-        
-        # Fill sparse table
+
+        # Base case for both tables
         for i in range(n):
-            self.sparse_table[i][0] = i
-        
+            self.sparse_table[i][0]     = i
+            self.sparse_table_max[i][0] = i
+
+        # Build both min and max tables
         for j in range(1, log_n):
+            span = 1 << (j - 1)
             for i in range(n - (1 << j) + 1):
-                left = self.sparse_table[i][j - 1]
-                right = self.sparse_table[i + (1 << (j - 1))][j - 1]
-                self.sparse_table[i][j] = (left if self.array[left] <= self.array[right] else right)
-    
+                # Min table
+                left_min  = self.sparse_table[i][j - 1]
+                right_min = self.sparse_table[i + span][j - 1]
+                self.sparse_table[i][j] = (
+                    left_min if self.array[left_min] <= self.array[right_min]
+                    else right_min
+                )
+                # Max table
+                left_max  = self.sparse_table_max[i][j - 1]
+                right_max = self.sparse_table_max[i + span][j - 1]
+                self.sparse_table_max[i][j] = (
+                    left_max if self.array[left_max] >= self.array[right_max]
+                    else right_max
+                )
     def range_min_query(self, left: int, right: int) -> int:
         """Find minimum value in range [left, right]"""
         if left < 0 or right >= self.n or left > right:
