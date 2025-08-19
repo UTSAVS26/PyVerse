@@ -28,6 +28,7 @@ class FenwickTree:
         self.original_array[index - 1] += value
         
         # Update Fenwick Tree
+        original_index = index
         while index <= self.size:
             self.tree[index] += value
             index += self._get_lsb(index)
@@ -35,11 +36,10 @@ class FenwickTree:
         # Log operation
         self.operation_log.append({
             'operation': 'update',
-            'index': index,
+            'index': original_index,
             'value': value,
             'timestamp': time.time()
         })
-    
     def query(self, index: int) -> int:
         """Get sum from index 1 to index (1-based indexing)"""
         if index < 1 or index > self.size:
