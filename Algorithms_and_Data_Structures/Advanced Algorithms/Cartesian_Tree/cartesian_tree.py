@@ -112,11 +112,9 @@ class CartesianTree:
         length = right - left + 1
         k = self.log_table[length]
         
-        left_idx = self.sparse_table[left][k]
-        right_idx = self.sparse_table[right - (1 << k) + 1][k]
-        
+        left_idx = self.sparse_table_max[left][k]
+        right_idx = self.sparse_table_max[right - (1 << k) + 1][k]
         return max(self.array[left_idx], self.array[right_idx])
-    
     def get_lca(self, i: int, j: int) -> Optional[CartesianNode]:
         """Find lowest common ancestor of nodes i and j"""
         if i < 0 or i >= self.n or j < 0 or j >= self.n:
