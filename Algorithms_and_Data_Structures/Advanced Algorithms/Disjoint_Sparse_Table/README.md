@@ -6,8 +6,10 @@ A Disjoint Sparse Table is a data structure that allows efficient range queries 
 ## Theory
 
 ### What is a Disjoint Sparse Table?
-A disjoint sparse table is a data structure that preprocesses an array to answer range queries efficiently. It works by storing the result of queries for all possible ranges that are powers of 2 in length.
-
+A Disjoint Sparse Table preprocesses an array to answer range queries in O(1) for any associative operation. Unlike the classical Sparse Table (which relies on overlapping 2^k ranges and idempotent operations), the disjoint variant, for each level k, partitions the array into blocks of size 2^(k+1) and stores:
+- suffix aggregates on the left half
+- prefix aggregates on the right half
+For a query [l, r], choose k = msb(l ^ r) and combine exactly two disjoint entries: table[k][l] and table[k][r].
 ### Key Properties
 - **Static Data**: Works on arrays that don't change after construction
 - **Associative Operations**: Supports any associative operation (sum, min, max, gcd, etc.)
