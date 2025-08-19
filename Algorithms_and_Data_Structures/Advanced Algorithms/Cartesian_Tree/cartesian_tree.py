@@ -32,31 +32,33 @@ class CartesianTree:
         """Build Cartesian tree using stack-based algorithm"""
         if not self.array:
             return
-        
-        stack = []
-        
+
+        stack: list[CartesianNode] = []
         for i, value in enumerate(self.array):
             node = CartesianNode(value, i)
-            
-            # Pop nodes from stack while they have greater values
+            last_popped = None
+
+            # Pop while maintaining increasing stack (min-heap Cartesian tree)
             while stack and stack[-1].value > value:
-                popped = stack.pop()
-                if stack:
-                    stack[-1].right = popped
-                    popped.parent = stack[-1]
-                else:
-                    node.left = popped
-                    popped.parent = node
-            
-            # Push current node
+                last_popped = stack.pop()
+
+            # Link current node as right child of new stack top (if any)
             if stack:
                 stack[-1].right = node
                 node.parent = stack[-1]
             else:
                 self.root = node
-            
+
+            # Attach last popped chain as left child of current node
+            if last_popped:
+                node.left = last_popped
+                last_popped.parent = node
+
+            # Index map for O(1) lookups
+            if getattr(self, "index_to_node", None) is not None:
+                self.index_to_node[i] = node
+
             stack.append(node)
-    
     def _build_sparse_table(self) -> None:
         """Build sparse table for O(1) range queries"""
         if not self.array:
