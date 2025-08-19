@@ -143,11 +143,13 @@ The implementation includes performance comparison:
 from chinese_remainder_theorem import analyze_performance
 
 metrics = analyze_performance(remainders, moduli)
-print(f"Number of congruences: {metrics['num_congruences']}")
-print(f"Standard CRT time: {metrics['standard_time']:.6f}s")
-print(f"Garner's time: {metrics['garner_time']:.6f}s")
-print(f"Solution: {metrics['solution']}")
-```
+print(f"Number of congruences: {len(remainders)}")
+print(f"Standard CRT time: {metrics['standard']['time']:.6f}s")
+print(f"Garner's time: {metrics['garner']['time']:.6f}s")
+print(f"All solutions time: {metrics['all_solutions']['time']:.6f}s")
+print(f"Standard solution: {metrics['standard']['solution']}")
+print(f"Garner solution: {metrics['garner']['solution']}")
+print(f"All solutions: {metrics['all_solutions']['solution']}")
 
 ## Edge Cases
 
