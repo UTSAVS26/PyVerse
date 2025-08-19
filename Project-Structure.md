@@ -212,6 +212,7 @@
   * [Colour Detection Using Dl](./Deep_Learning/Colour%20Detection%20using%20DL)
   * [Computed Tomography Analysis Using Dl](./Deep_Learning/Computed%20Tomography%20Analysis%20using%20DL)
   * [Cotton Disease Classification Using Dl](./Deep_Learning/Cotton%20Disease%20Classification%20using%20DL)
+  * [Crop Production](./Deep_Learning/Crop%20Production)
   * [Deep-Learning-For-Animal-Identification](./Deep_Learning/Deep-learning-for-Animal-Identification)
   * [Deepfake Images Detector](./Deep_Learning/Deepfake%20Images%20Detector)
   * [Detect Bad Posture Media Pipe](./Deep_Learning/Detect%20Bad%20Posture%20Media%20Pipe)
