@@ -244,7 +244,7 @@ def analyze_performance(operations: List[Tuple[str, int]]) -> Dict[str, Any]:
     return {
         'total_operations': len(operations),
         'total_time': end_time - start_time,
-        'average_time_per_op': (end_time - start_time) / len(operations),
+        'average_time_per_op': ((end_time - start_time) / len(operations)) if operations else 0.0,
         'tree_statistics': ft.get_statistics()
     }
 
