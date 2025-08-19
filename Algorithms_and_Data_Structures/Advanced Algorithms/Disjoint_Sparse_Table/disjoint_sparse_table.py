@@ -38,7 +38,7 @@ class DisjointSparseTable:
         elif self.operation == 'gcd':
             return lambda x, y: math.gcd(x, y)
         elif self.operation == 'lcm':
-            return lambda x, y: (x * y) // math.gcd(x, y)
+            return lambda x, y: 0 if x == 0 or y == 0 else abs(x * y) // math.gcd(x, y)
         elif self.operation == 'and':
             return lambda x, y: x & y
         elif self.operation == 'or':
@@ -46,7 +46,7 @@ class DisjointSparseTable:
         elif self.operation == 'xor':
             return lambda x, y: x ^ y
         else:
-            return lambda x, y: x + y  # Default to sum
+            raise ValueError(f"Unsupported operation: {self.operation}")
     
     def _build_table(self) -> None:
         """Build the disjoint sparse table.
