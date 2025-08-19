@@ -13,7 +13,8 @@ class DisjointSparseTable:
         self.operation = operation
         self.table = []
         self.log_table = []
-        
+        if self.n == 0:
+            raise ValueError("Input array must be non-empty")
         # Precompute logarithms
         self._precompute_logs()
         
