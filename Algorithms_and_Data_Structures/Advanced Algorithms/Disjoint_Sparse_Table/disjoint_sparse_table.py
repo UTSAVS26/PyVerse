@@ -49,34 +49,39 @@ class DisjointSparseTable:
             return lambda x, y: x + y  # Default to sum
     
     def _build_table(self) -> None:
-        """Build the sparse table."""
-        op_func = self._get_operation()
-        
-        # Calculate number of levels needed
-        levels = self.log_table[self.n] + 1
-        
-        # Initialize table
+        """Build the disjoint sparse table.
+        For each level k, within each block of size 2^(k+1), we store:
+        - suffix aggregates on the left half
+        - prefix aggregates on the right half
+        """
+        if self.n == 0:
+            self.table = []
+            return
+        op = self._get_operation()
+        levels = self.n.bit_length()  # sufficient to cover [0, n)
         self.table = [[0] * self.n for _ in range(levels)]
-        
-        # Fill first level with original array
-        for i in range(self.n):
-            self.table[0][i] = self.arr[i]
-        
-        # Fill remaining levels
-        for level in range(1, levels):
-            block_size = 1 << level
-            
-            for i in range(self.n):
-                # Calculate the result for range [i, i + block_size - 1]
-                if i + block_size <= self.n:
-                    # Use the results from previous level
-                    left_half = self.table[level - 1][i]
-                    right_half = self.table[level - 1][i + (block_size // 2)]
-                    self.table[level][i] = op_func(left_half, right_half)
-                else:
-                    # Range extends beyond array
-                    self.table[level][i] = self.table[level - 1][i]
-    
+
+        for k in range(levels):
+            block = 1 << (k + 1)
+            half = 1 << k
+            i = 0
+            while i < self.n:
+                mid = min(i + half, self.n)
+                end = min(i + block, self.n)
+
+                # Left half: suffixes
+                if mid > i:
+                    self.table[k][mid - 1] = self.arr[mid - 1]
+                    for j in range(mid - 2, i - 1, -1):
+                        self.table[k][j] = op(self.arr[j], self.table[k][j + 1])
+
+                # Right half: prefixes
+                if mid < end:
+                    self.table[k][mid] = self.arr[mid]
+                    for j in range(mid + 1, end):
+                        self.table[k][j] = op(self.table[k][j - 1], self.arr[j])
+
+                i += block
     def query(self, left: int, right: int) -> int:
         """Query the range [left, right]."""
         if left > right or left < 0 or right >= self.n:
