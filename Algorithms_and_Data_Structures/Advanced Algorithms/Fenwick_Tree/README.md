@@ -109,11 +109,10 @@ inversions = ft.count_inversions([3, 1, 4, 2])
 - Memory efficient representation
 - Dynamic coordinate mapping
 
-### 4. Advanced Queries
-- Range minimum/maximum queries
-- Range gcd/lcm queries
-- Custom associative operations
-
+### 4. Advanced Queries (scope)
+- Fenwick Trees efficiently support prefix sums and operations with invertible, associative functions.
+- For range minimum/maximum or gcd/lcm, prefer Segment Trees or specialized structures.
+- Custom operations may be supported only if they are invertible and associative.
 ## Performance Analysis
 
 ### Time Complexity
