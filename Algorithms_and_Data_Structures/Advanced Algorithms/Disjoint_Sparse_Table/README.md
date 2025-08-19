@@ -15,11 +15,10 @@ A disjoint sparse table is a data structure that preprocesses an array to answer
 - **Space Efficient**: O(n log n) space complexity
 
 ### Structure
-- **Multiple Levels**: Each level handles different range sizes
-- **Sparse Storage**: Only stores results for specific ranges
-- **Power of 2**: Ranges are powers of 2 in length
-- **Disjoint Coverage**: Ranges are disjoint and cover the entire array
-
+- Multiple Levels: level k uses blocks of size 2^(k+1)
+- Disjoint Storage: left-half suffixes and right-half prefixes per block
+- Power-of-Two Blocks: blocks double each level
+- Disjoint Coverage: any query [l, r] lies across at most one such block and can be answered by combining two disjoint entries
 ## Applications
 
 ### 1. Range Queries
