@@ -122,9 +122,9 @@ class CartesianTree:
         if i < 0 or i >= self.n or j < 0 or j >= self.n:
             return None
         
-        # Find nodes in tree
-        node_i = self._find_node_by_index(self.root, i)
-        node_j = self._find_node_by_index(self.root, j)
+        # Find nodes in O(1) from index map
+        node_i = self.index_to_node.get(i)
+        node_j = self.index_to_node.get(j)
         
         if not node_i or not node_j:
             return None
