@@ -320,7 +320,6 @@ def visualize_cartesian_tree(tree: CartesianTree, show_plot: bool = True) -> Non
            node_color='lightblue', node_size=1000,
            arrows=True, arrowstyle='->', arrowsize=20)
     
-    # Add node labels
     labels = {node: f"{G.nodes[node]['value']}\n({G.nodes[node]['index']})" 
               for node in G.nodes()}
     nx.draw_networkx_labels(G, pos, labels, ax=ax1)
@@ -336,9 +335,7 @@ def visualize_cartesian_tree(tree: CartesianTree, show_plot: bool = True) -> Non
     width = 0.35
     
     ax2.bar(x - width/2, array_values, width, label='Original Array', alpha=0.7)
-    # Use original array values for comparison, not inorder traversal
-    ax2.bar(x + width/2, array_values, width, label='Tree Inorder', alpha=0.7)
-    
+    ax2.bar(x + width/2, tree_values, width, label='Tree Inorder', alpha=0.7)
     ax2.set_xlabel('Index')
     ax2.set_ylabel('Value')
     ax2.set_title('Original Array vs Tree Inorder')
