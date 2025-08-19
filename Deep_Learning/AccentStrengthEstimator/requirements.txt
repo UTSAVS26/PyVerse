@@ -1,0 +1,13 @@
+numpy==1.24.3
+librosa==0.10.1
+sounddevice==0.4.6
+scipy==1.11.1
+matplotlib==3.7.2
+pydub==0.25.1
+phonemizer==3.2.1
+pocketsphinx==0.1.15
+parselmouth==0.4.3
+pytest==7.4.0
+pytest-cov==4.1.0
+streamlit==1.25.0
+tkinter-tooltip==2.0.0
