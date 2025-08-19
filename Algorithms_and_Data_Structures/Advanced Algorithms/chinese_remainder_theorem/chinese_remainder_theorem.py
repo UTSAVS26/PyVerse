@@ -309,9 +309,16 @@ def analyze_performance(remainders: List[int], moduli: List[int]) -> dict:
         'time': time3,
         'success': solution3 is not None
     }
-    
-    return results
 
+    # Top-level summary fields for convenience (aligns with README snippet)
+    results['num_congruences'] = len(moduli)
+    results['standard_time'] = time1
+    results['garner_time'] = time2
+    results['all_solutions_time'] = time3
+    # Prefer standard solution when available
+    results['solution'] = solution1 if solution1 is not None else solution2
+
+    return results
 
 def generate_test_cases() -> List[Tuple[List[int], List[int]]]:
     """Generate various test cases for Chinese Remainder Theorem."""
