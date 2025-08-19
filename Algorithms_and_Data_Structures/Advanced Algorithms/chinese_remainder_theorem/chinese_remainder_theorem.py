@@ -259,10 +259,12 @@ def verify_crt_solution(solution: int, remainders: List[int], moduli: List[int])
         True if solution is correct, False otherwise
     """
     for remainder, modulus in zip(remainders, moduli):
-        if solution % modulus != remainder:
+        # Robust congruence check; works for zero or negative moduli and non-normalized remainders
+        if modulus == 0:
+            return False
+        if (solution - remainder) % modulus != 0:
             return False
     return True
-
 
 def analyze_performance(remainders: List[int], moduli: List[int]) -> dict:
     """
