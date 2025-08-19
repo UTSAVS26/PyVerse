@@ -97,11 +97,11 @@ lca = ct.get_lca(2, 6)
 inorder = ct.inorder_traversal()
 
 # Visualize tree
-ct.visualize_tree()
+from Algorithms_and_Data_Structures.Advanced Algorithms.Cartesian_Tree.cartesian_tree import visualize_cartesian_tree
+visualize_cartesian_tree(ct)
 
 # Performance analysis
 stats = ct.get_statistics()
-```
 
 ## Advanced Features
 
