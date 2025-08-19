@@ -79,14 +79,13 @@ result = query(sparse_table, 2, 5)
 # Returns sum of elements from index 2 to 5
 ```
 
-### Different Operations
-```python
 # Range minimum
-min_result = range_min(sparse_table, 1, 6)
+sparse_table_min = build_sparse_table(arr, 'min')
+min_result = range_min(sparse_table_min, 1, 6)
 
 # Range maximum
-max_result = range_max(sparse_table, 0, 7)
-```
+sparse_table_max = build_sparse_table(arr, 'max')
+max_result = range_max(sparse_table_max, 0, 7)
 
 ## Advanced Features
 
