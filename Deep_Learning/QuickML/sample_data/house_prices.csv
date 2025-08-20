@@ -1,0 +1,1001 @@
+house_id,square_feet,bedrooms,bathrooms,year_built,lot_size,garage_spaces,property_type,neighborhood,condition,heating_type,cooling_type,has_pool,has_fireplace,has_basement,price
+1,2248,2,1.5,2006,11352.0,1,Single Family,Suburban,Excellent,Gas,Central Air,Yes,No,No,744259
+2,1930,2,1.0,1998,6108.0,0,Single Family,Downtown,Fair,Gas,None,No,No,Yes,622674
+3,2323,3,1.0,1994,5693.0,1,Townhouse,Suburban,Good,Gas,Central Air,No,No,No,589341
+4,2761,4,1.5,2015,10274.0,1,Condo,Suburban,Excellent,Electric,None,No,No,Yes,761925
+5,1882,1,2.5,1994,8677.0,1,Single Family,Downtown,Good,Gas,Window Units,Yes,Yes,No,641990
+6,1882,5,2.0,1969,6124.0,1,Single Family,Suburban,Good,Gas,Window Units,No,No,Yes,604402
+7,2789,1,2.0,2013,8433.0,2,Condo,Rural,Fair,Oil,Window Units,No,No,Yes,675001
+8,2383,3,1.5,2016,5948.0,1,Single Family,Rural,Excellent,Gas,Central Air,No,Yes,No,730826
+9,1765,4,2.5,1952,10201.0,1,Single Family,Suburban,Good,Gas,Central Air,No,Yes,Yes,651524
+10,2271,4,1.5,2003,10122.0,1,Single Family,Suburban,Good,Oil,Central Air,No,No,Yes,715856
+11,1768,4,1.0,2013,9064.0,3,Single Family,Downtown,Poor,Electric,Central Air,No,No,No,687222
+12,1767,4,2.0,1989,8723.0,3,Single Family,Downtown,Good,Gas,Central Air,No,Yes,Yes,698709
+13,2120,3,1.0,2008,11522.0,2,Single Family,Suburban,Poor,Electric,Central Air,No,Yes,No,649996
+14,1043,4,1.5,2004,7999.0,1,Single Family,Suburban,Fair,Gas,Central Air,Yes,No,Yes,601536
+15,1137,1,2.0,2011,5636.0,0,Condo,Rural,Good,Electric,None,No,No,Yes,488383
+16,1718,4,2.5,1953,8898.0,1,Single Family,Suburban,Fair,Gas,Window Units,No,No,No,541519
+17,1493,3,1.5,2009,12172.0,1,Townhouse,Suburban,Poor,Oil,Central Air,No,Yes,No,552473
+18,2157,4,2.0,1979,5970.0,1,Single Family,Suburban,Good,Heat Pump,Central Air,Yes,Yes,Yes,680728
+19,1545,3,3.0,1951,,2,Single Family,Rural,Good,Heat Pump,Central Air,No,Yes,Yes,604252
+20,1293,3,1.0,2011,8832.0,2,Single Family,Suburban,Good,Heat Pump,Central Air,No,Yes,No,568392
+21,2732,3,1.5,1998,7892.0,2,Condo,Suburban,Good,Gas,Central Air,No,No,Yes,674897
+22,1887,4,1.5,1958,6035.0,1,Townhouse,Suburban,Excellent,Gas,Central Air,No,No,Yes,592664
+23,2033,1,1.5,1980,10243.0,1,Single Family,Rural,Good,Gas,Central Air,Yes,No,Yes,631332
+24,1287,1,1.5,2010,12640.0,1,Townhouse,Downtown,Good,Electric,Window Units,No,No,Yes,542572
+25,1727,2,2.5,1997,8392.0,0,Single Family,Rural,Good,Oil,Window Units,No,Yes,Yes,613880
+26,2055,2,2.0,1974,6191.0,2,Condo,Suburban,Excellent,Gas,Central Air,No,No,Yes,598849
+27,1424,4,2.0,1985,,0,Townhouse,Suburban,Fair,Heat Pump,Central Air,No,No,Yes,529511
+28,2187,2,1.5,1957,8515.0,1,Condo,Suburban,Fair,Oil,Central Air,No,No,Yes,569697
+29,1699,5,2.5,2022,10207.0,1,Single Family,Suburban,Excellent,Heat Pump,Central Air,No,Yes,Yes,747522
+30,1854,3,3.0,2007,8950.0,1,Single Family,Downtown,Good,Oil,Central Air,No,No,No,712562
+31,1699,2,2.5,1994,7995.0,2,Single Family,Rural,Good,Gas,Central Air,No,Yes,Yes,632582
+32,2926,4,1.0,2011,6821.0,1,Single Family,Suburban,Poor,Gas,Central Air,No,Yes,No,773308
+33,1993,3,2.0,1988,5815.0,2,Single Family,Suburban,Excellent,Gas,Central Air,No,No,No,658532
+34,1471,3,1.0,2007,9669.0,1,Single Family,Downtown,Good,Gas,Central Air,No,No,Yes,586913
+35,2411,3,1.5,2013,9827.0,1,Single Family,Suburban,Fair,Electric,Central Air,No,Yes,No,711278
+36,1389,4,1.0,1993,4908.0,2,Single Family,Suburban,Fair,Oil,Central Air,No,Yes,Yes,596410
+37,2104,2,2.0,1978,11179.0,1,Single Family,Suburban,,Oil,Central Air,No,No,No,624982
+38,1020,5,2.0,2008,9148.0,3,Single Family,Suburban,Fair,Electric,Window Units,No,Yes,No,602895
+39,1335,5,1.0,2020,10799.0,1,Condo,Suburban,Excellent,Gas,Central Air,No,No,Yes,631803
+40,2098,3,1.5,1958,5315.0,1,Single Family,Rural,Good,Gas,Window Units,No,Yes,No,584149
+41,2369,2,1.5,1955,5268.0,1,Single Family,Suburban,Good,Gas,Central Air,No,Yes,Yes,617193
+42,2085,3,1.5,1978,7702.0,2,Townhouse,Rural,Excellent,Gas,Central Air,No,No,Yes,656842
+43,1942,1,1.0,2007,9005.0,0,Single Family,Downtown,Fair,Gas,Central Air,No,No,No,614909
+44,1849,1,1.5,1966,11592.0,2,Single Family,Suburban,Excellent,Gas,Central Air,No,Yes,Yes,671059
+45,1260,2,2.0,1965,9412.0,1,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,533422
+46,1640,3,1.0,1952,7514.0,1,Single Family,Suburban,Fair,Gas,Central Air,No,Yes,Yes,556729
+47,1769,4,1.0,1970,5947.0,1,Condo,Rural,Excellent,Electric,Central Air,No,Yes,No,558565
+48,2528,4,1.5,2013,10460.0,1,Single Family,Downtown,Poor,Gas,Central Air,No,No,Yes,760699
+49,2171,4,2.5,1985,6070.0,1,Single Family,Downtown,Poor,Gas,Central Air,Yes,No,No,641027
+50,1118,3,2.0,2011,11256.0,2,Single Family,Rural,Good,Gas,Central Air,No,No,Yes,592275
+51,2162,3,2.0,1991,7431.0,1,Single Family,Downtown,Excellent,Heat Pump,Central Air,No,No,Yes,737717
+52,1807,3,1.5,1991,11181.0,1,Townhouse,Suburban,Good,Gas,Central Air,No,No,No,573878
+53,1661,5,2.0,2010,9357.0,1,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,662511
+54,2305,1,1.0,1962,7726.0,0,Single Family,Rural,Good,Electric,Central Air,No,Yes,No,588083
+55,2515,4,2.0,1960,6961.0,1,Single Family,Downtown,Good,Gas,Central Air,No,Yes,Yes,677709
+56,2465,3,2.5,2003,7318.0,1,Single Family,Downtown,Poor,Heat Pump,Central Air,No,No,Yes,739953
+57,1580,3,2.0,1965,8856.0,1,Single Family,Suburban,Excellent,Gas,Central Air,No,No,Yes,598689
+58,1845,4,2.5,1957,8154.0,0,Townhouse,Rural,Fair,Gas,Central Air,No,No,No,518103
+59,2165,3,2.0,2008,6812.0,1,Townhouse,Suburban,Excellent,Gas,Central Air,No,No,Yes,669816
+60,2487,4,1.0,2006,7668.0,1,Condo,Suburban,Good,Electric,Central Air,No,No,No,658565
+61,1760,5,2.5,1989,8157.0,1,Townhouse,Suburban,Fair,Gas,Central Air,No,Yes,Yes,633209
+62,1907,3,1.0,2008,3742.0,1,Single Family,Rural,Good,Gas,Central Air,No,No,Yes,612774
+63,1446,2,2.0,1951,8916.0,0,Single Family,Rural,Excellent,Gas,Central Air,Yes,No,Yes,604789
+64,1401,3,1.0,1959,6040.0,2,Townhouse,Rural,Good,Gas,Central Air,No,No,No,450027
+65,2406,5,1.0,1993,5693.0,2,Townhouse,Downtown,Fair,Gas,Central Air,No,Yes,No,661185
+66,2678,2,1.5,1960,4625.0,2,Townhouse,Downtown,Good,Electric,Central Air,No,No,No,619472
+67,1963,3,1.5,1951,4412.0,0,Single Family,Suburban,Good,Electric,Central Air,No,No,Yes,536652
+68,2501,3,1.5,1999,5289.0,2,Single Family,Rural,Good,Gas,Central Air,No,No,Yes,702406
+69,2180,4,2.0,1961,6581.0,2,Townhouse,Downtown,Poor,Gas,Central Air,No,No,Yes,624134
+70,1677,2,1.0,1972,11906.0,2,Townhouse,Downtown,Fair,Electric,Central Air,No,No,No,565741
+71,2180,4,1.0,1967,6948.0,0,Condo,Suburban,Good,Gas,Central Air,No,No,Yes,588961
+72,2769,5,2.0,2011,8355.0,1,Single Family,Downtown,,Gas,Central Air,No,No,Yes,771213
+73,1982,2,1.5,2011,8800.0,2,Single Family,Suburban,Good,Gas,Central Air,No,Yes,Yes,656568
+74,2782,2,2.0,1987,8262.0,1,Single Family,Suburban,Good,Electric,Central Air,Yes,No,Yes,714399
+75,690,5,2.0,2016,7845.0,1,Townhouse,Suburban,Excellent,Heat Pump,Window Units,No,No,Yes,532970
+76,2410,2,2.5,1987,,1,Single Family,Suburban,Good,Electric,Central Air,Yes,No,No,650394
+77,2043,4,2.0,2016,10901.0,1,Single Family,Suburban,Good,Gas,Central Air,No,Yes,Yes,768630
+78,1850,3,1.5,2010,11614.0,0,Condo,Suburban,Excellent,Gas,Central Air,No,No,No,640260
+79,2045,2,2.0,1950,4634.0,1,Single Family,Suburban,Good,Oil,Central Air,No,Yes,No,611015
+80,1006,4,1.5,1994,5951.0,0,Townhouse,Suburban,Fair,Gas,Central Air,No,Yes,Yes,515936
+81,1890,3,1.5,1977,7440.0,1,Single Family,Suburban,Good,Heat Pump,Window Units,No,No,Yes,593363
+82,2178,3,2.0,1970,6070.0,1,Townhouse,Downtown,Good,Heat Pump,Central Air,No,Yes,Yes,620514
+83,2738,3,1.5,1962,9011.0,1,Single Family,Downtown,Fair,Gas,Central Air,No,Yes,No,722623
+84,1740,3,2.0,1976,6543.0,0,Condo,Downtown,Excellent,Heat Pump,Central Air,Yes,No,Yes,651465
+85,1595,2,2.5,1956,12330.0,1,Condo,Downtown,Good,Gas,None,No,Yes,Yes,570603
+86,1749,3,2.5,1971,10381.0,2,Single Family,Suburban,Fair,Oil,Central Air,No,No,Yes,602605
+87,2457,5,2.5,2002,8425.0,0,Single Family,Rural,Good,Gas,Central Air,No,Yes,Yes,815580
+88,2164,2,1.5,1953,10053.0,0,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,596842
+89,1735,3,1.5,1972,10211.0,0,Single Family,Suburban,Excellent,Electric,Central Air,No,No,Yes,635040
+90,2256,3,2.0,2019,6872.0,2,Townhouse,Suburban,Fair,Electric,Central Air,No,No,No,636226
+91,2048,4,1.5,1982,6367.0,1,Single Family,Suburban,Good,Gas,Central Air,No,Yes,No,628780
+92,2484,2,2.0,1977,8156.0,1,Single Family,Suburban,Fair,Gas,Central Air,No,Yes,Yes,683634
+93,1648,5,2.0,1957,9723.0,0,Single Family,Downtown,Good,Gas,Central Air,No,Yes,Yes,676153
+94,1836,3,2.0,1950,8278.0,1,Townhouse,Downtown,Good,Gas,Central Air,No,No,No,547499
+95,1803,2,1.5,1986,4846.0,2,Condo,Suburban,Fair,Gas,Central Air,No,No,Yes,517275
+96,1268,1,1.0,2012,6394.0,2,Single Family,Rural,Good,Gas,Central Air,No,Yes,No,537537
+97,2148,2,1.5,1971,7852.0,1,Single Family,Downtown,Good,Gas,Window Units,No,Yes,Yes,650771
+98,2130,3,1.0,2019,7848.0,0,Single Family,Downtown,Good,Gas,Central Air,No,Yes,No,709717
+99,2002,3,2.5,1970,11945.0,0,Single Family,Suburban,Fair,Gas,None,No,No,Yes,668347
+100,1882,4,1.5,1984,5228.0,0,Single Family,Downtown,Good,Gas,Window Units,No,No,Yes,640490
+101,1292,3,1.0,1954,9011.0,1,Single Family,Rural,Good,Gas,Central Air,No,No,No,477680
+102,1789,2,1.0,2009,10978.0,0,Single Family,Suburban,Excellent,Heat Pump,Central Air,No,No,Yes,638272
+103,1828,3,2.0,1995,12542.0,1,Single Family,Rural,Fair,Gas,Central Air,No,No,Yes,655812
+104,1598,4,2.0,1999,7191.0,1,Single Family,Suburban,Excellent,Heat Pump,Central Air,No,Yes,Yes,696481
+105,1919,2,1.5,1997,8982.0,2,Single Family,Suburban,Good,Electric,Central Air,No,Yes,No,621317
+106,2202,2,1.0,1955,9139.0,1,Single Family,Suburban,Good,Electric,Central Air,No,No,Yes,591291
+107,2943,1,1.5,2005,8390.0,2,Townhouse,Suburban,Good,Electric,Central Air,No,No,No,644394
+108,2087,4,1.5,2008,7802.0,2,Townhouse,Suburban,Good,Oil,Central Air,No,No,Yes,635242
+109,2128,3,2.0,1978,8871.0,0,Single Family,Downtown,Excellent,Gas,Central Air,No,No,Yes,672499
+110,1962,3,2.0,2020,2935.0,2,Single Family,Suburban,Good,Gas,Window Units,No,No,No,613848
+111,1040,4,1.5,1967,9364.0,1,Townhouse,Suburban,Fair,Electric,Central Air,No,No,Yes,475278
+112,1986,4,1.5,1951,8252.0,1,Condo,Rural,Fair,Gas,None,No,No,Yes,585010
+113,2030,3,3.0,1957,7555.0,1,Single Family,Suburban,Excellent,Oil,Central Air,No,No,Yes,666498
+114,3231,4,1.5,2003,12093.0,3,Single Family,Suburban,Fair,Gas,None,No,Yes,Yes,845174
+115,1903,2,2.0,1987,6650.0,1,Single Family,Downtown,Good,Electric,Central Air,No,No,No,625080
+116,2150,2,1.0,1997,7193.0,1,Single Family,Suburban,Fair,Gas,Central Air,No,No,Yes,653923
+117,1982,2,1.5,1976,11983.0,2,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,659366
+118,1415,1,1.0,1969,6335.0,0,Single Family,Rural,Good,Gas,Central Air,No,No,Yes,496024
+119,2571,3,2.0,1961,6899.0,1,Single Family,Rural,Fair,Electric,Window Units,Yes,No,Yes,683085
+120,2375,5,3.0,1992,7705.0,2,Single Family,Downtown,Fair,Oil,Central Air,No,Yes,Yes,774748
+121,2395,1,1.5,2010,9681.0,2,Single Family,Rural,Good,Gas,Window Units,No,No,No,658083
+122,1545,2,1.0,1980,8415.0,3,Single Family,Downtown,Good,Oil,Central Air,No,Yes,No,592894
+123,2701,3,1.0,2010,5414.0,3,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,733242
+124,1299,5,1.5,2016,6935.0,0,Single Family,Suburban,Good,Gas,Window Units,No,No,Yes,613981
+125,2293,3,1.0,1984,6785.0,2,Single Family,Downtown,Good,Gas,Central Air,Yes,Yes,No,714061
+126,3095,3,1.0,1964,7845.0,1,Townhouse,Suburban,Good,Gas,Central Air,No,Yes,Yes,697910
+127,1504,1,2.0,1965,8851.0,1,Single Family,Downtown,Fair,Gas,Window Units,No,No,Yes,611912
+128,1716,2,1.5,1962,8836.0,0,Townhouse,Downtown,Excellent,Gas,Window Units,No,No,No,570273
+129,2049,5,1.5,1984,4447.0,1,Condo,Suburban,Good,Electric,None,No,Yes,Yes,633124
+130,1748,5,2.5,2008,10127.0,3,Single Family,Suburban,Excellent,Electric,Window Units,No,No,Yes,751401
+131,1224,1,1.0,1970,8505.0,2,Single Family,Rural,Good,Gas,Central Air,No,No,No,513625
+132,2034,5,3.0,2003,10769.0,1,Single Family,Suburban,Excellent,Gas,Window Units,No,Yes,No,791475
+133,1468,3,1.5,1979,8888.0,0,Townhouse,Suburban,Good,Gas,Central Air,No,No,Yes,535408
+134,2236,4,2.5,1997,10202.0,1,Condo,Suburban,Fair,Gas,None,No,No,Yes,663491
+135,1540,3,2.0,1984,8933.0,2,Townhouse,Downtown,Fair,Gas,Central Air,No,No,Yes,574297
+136,2774,3,2.5,1987,10692.0,2,Single Family,Downtown,Good,Gas,Central Air,No,No,No,734969
+137,1608,3,3.0,1980,9044.0,1,Single Family,Suburban,Good,Heat Pump,Central Air,No,Yes,Yes,635219
+138,1838,3,1.5,1973,7804.0,0,Single Family,Suburban,Good,Oil,Central Air,No,Yes,Yes,636480
+139,2406,2,3.0,1998,12544.0,1,Single Family,Suburban,Fair,Gas,Central Air,No,Yes,No,710123
+140,1384,1,1.5,1981,9778.0,1,Single Family,Suburban,Fair,Gas,Window Units,Yes,No,Yes,583992
+141,2113,3,1.5,2004,9147.0,2,Single Family,Suburban,Good,Gas,Window Units,No,No,Yes,692914
+142,2653,4,1.5,2007,5447.0,1,Townhouse,Downtown,Good,Electric,Central Air,No,No,Yes,693861
+143,1196,2,2.0,1952,5423.0,1,Single Family,Downtown,Fair,Gas,Central Air,No,No,Yes,555041
+144,2092,3,1.0,2018,8585.0,1,Single Family,Rural,Excellent,Gas,Central Air,No,No,Yes,656951
+145,2129,5,2.0,1959,8291.0,0,Single Family,Suburban,Good,Electric,Central Air,No,No,No,603899
+146,2390,1,2.0,1974,6771.0,3,Townhouse,Rural,Fair,Gas,Central Air,No,No,No,563542
+147,1381,3,2.0,2017,8281.0,1,Townhouse,Downtown,Fair,Gas,Window Units,No,Yes,Yes,590110
+148,1339,3,2.5,2010,11177.0,1,Single Family,Rural,Good,Gas,Central Air,No,Yes,Yes,646510
+149,2260,4,1.5,1978,9390.0,1,Single Family,Downtown,Good,Gas,Central Air,No,No,Yes,706750
+150,2148,2,1.5,1968,5717.0,1,Single Family,Downtown,Good,Gas,Central Air,No,No,Yes,639264
+151,2125,3,1.5,1992,7776.0,1,Condo,Rural,Good,Gas,Central Air,No,No,Yes,610301
+152,2173,4,1.0,2015,6390.0,2,Single Family,Downtown,Good,Gas,Central Air,No,No,No,675247
+153,1659,5,1.0,2010,7224.0,1,Single Family,Suburban,Good,Gas,Central Air,No,Yes,Yes,627656
+154,2116,3,1.5,1992,7172.0,1,Single Family,Downtown,Fair,Electric,Central Air,No,No,Yes,682386
+155,2146,3,1.5,1974,7044.0,0,Single Family,Suburban,Fair,Gas,Central Air,No,No,Yes,606215
+156,1642,3,3.0,1969,5489.0,1,Townhouse,Rural,Excellent,Gas,Window Units,No,No,Yes,564235
+157,2932,4,2.0,1997,7744.0,0,Single Family,Suburban,Good,Electric,Central Air,No,No,Yes,768346
+158,2236,3,1.5,1973,6878.0,1,Single Family,Suburban,Good,Electric,Central Air,No,No,Yes,663892
+159,1404,1,2.0,1960,2141.0,2,Single Family,Downtown,Good,Oil,Central Air,No,No,Yes,567248
+160,2328,5,1.0,2004,12105.0,2,Single Family,Suburban,Good,Gas,Window Units,No,No,No,716065
+161,1512,3,1.5,1977,10177.0,1,Condo,Suburban,Good,Gas,Central Air,Yes,No,Yes,571603
+162,2393,3,2.0,2018,7247.0,1,Single Family,Downtown,Fair,Electric,Window Units,No,No,Yes,765932
+163,2579,2,1.5,2012,8037.0,0,Townhouse,Suburban,Good,Electric,Central Air,No,Yes,Yes,642256
+164,1589,3,1.5,2008,5656.0,1,Townhouse,Downtown,Fair,Gas,Central Air,No,Yes,No,597393
+165,2481,3,3.0,1954,11391.0,2,Single Family,Rural,Poor,Heat Pump,Central Air,No,Yes,Yes,724562
+166,2206,3,2.5,2000,11794.0,1,Single Family,Suburban,Excellent,Gas,Central Air,No,Yes,Yes,787844
+167,2411,2,2.0,1970,8313.0,1,Single Family,Downtown,Good,Heat Pump,Central Air,Yes,No,Yes,711386
+168,2948,3,2.0,1961,10047.0,2,Townhouse,Suburban,Poor,Oil,Central Air,No,No,No,686960
+169,1877,5,2.0,1999,8350.0,2,Single Family,Suburban,Poor,Electric,Window Units,No,Yes,Yes,702920
+170,1623,1,1.5,1953,5326.0,1,Single Family,Suburban,Excellent,Heat Pump,Window Units,Yes,Yes,Yes,577250
+171,1555,5,1.5,1991,,1,Single Family,Rural,Excellent,Electric,Central Air,No,Yes,Yes,711418
+172,1592,3,1.0,1987,8263.0,0,Townhouse,Suburban,Excellent,Gas,Central Air,No,No,Yes,553564
+173,1961,4,1.5,1974,7090.0,0,Single Family,Rural,Poor,Gas,Central Air,No,No,Yes,640611
+174,2170,4,2.0,1963,7562.0,2,Single Family,Suburban,Excellent,Gas,Central Air,No,No,Yes,706005
+175,2138,3,1.5,1981,7817.0,2,Single Family,Downtown,Good,Gas,Central Air,Yes,No,No,707405
+176,2413,4,3.0,1960,7838.0,2,Single Family,Suburban,Fair,Electric,Window Units,Yes,Yes,No,743185
+177,2006,4,2.5,2010,8104.0,0,Townhouse,Suburban,Excellent,Gas,None,No,No,Yes,689722
+178,2726,3,2.0,1967,5878.0,2,Single Family,Suburban,Good,Gas,Central Air,Yes,Yes,Yes,744160
+179,1867,3,2.0,1976,6565.0,1,Townhouse,Rural,Good,Gas,Window Units,No,No,Yes,568977
+180,3360,3,2.5,2004,5430.0,1,Single Family,Suburban,Fair,Oil,Central Air,No,No,Yes,751873
+181,2312,4,1.0,2003,9955.0,1,Single Family,Rural,Good,Gas,Central Air,No,No,No,676341
+182,1571,4,2.0,1970,3788.0,0,Single Family,Suburban,Good,Gas,Central Air,No,No,No,523718
+183,1464,4,1.0,1993,10307.0,2,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,614358
+184,2241,3,2.0,1954,10772.0,1,Single Family,Suburban,Good,Electric,Central Air,No,Yes,Yes,639101
+185,1888,4,1.5,1990,7395.0,0,Single Family,Suburban,Excellent,Gas,Central Air,No,Yes,Yes,667075
+186,2357,2,2.5,2008,2793.0,0,Single Family,Rural,Good,Electric,Central Air,No,No,No,669763
+187,2236,3,2.5,2003,7277.0,0,Single Family,Suburban,Good,Gas,Central Air,No,No,No,679373
+188,1963,1,1.0,1971,7871.0,0,Single Family,Downtown,Fair,Gas,None,No,Yes,No,586572
+189,1576,3,1.5,2014,5978.0,1,Condo,Suburban,Fair,Heat Pump,Central Air,No,No,No,540185
+190,1242,3,3.0,2013,6969.0,2,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,612086
+191,1776,3,1.5,2020,11060.0,0,Single Family,Downtown,Good,Gas,Central Air,No,No,No,669297
+192,2428,3,2.5,1953,9329.0,0,Single Family,Downtown,Good,Gas,Central Air,No,No,No,653923
+193,2107,3,2.0,2014,6150.0,1,Townhouse,Suburban,Fair,Gas,Central Air,No,No,Yes,640324
+194,1377,3,1.5,1964,4804.0,2,Townhouse,Suburban,Good,Gas,Window Units,No,No,Yes,485658
+195,2086,2,1.5,1971,7345.0,1,Single Family,Suburban,Good,Gas,Central Air,No,No,No,577928
+196,2192,3,1.5,1996,7573.0,1,Townhouse,Downtown,Good,Gas,Window Units,No,No,Yes,638499
+197,1558,2,2.0,1995,8992.0,1,Single Family,Downtown,Good,Gas,Central Air,No,No,No,593937
+198,2076,1,1.5,1963,6929.0,1,Single Family,Suburban,Good,Electric,Central Air,No,No,No,566818
+199,2029,3,2.0,1999,9022.0,0,Townhouse,Suburban,Good,Electric,Window Units,No,Yes,No,586262
+200,1428,3,1.5,1969,11870.0,2,Townhouse,Downtown,Excellent,Gas,Window Units,No,Yes,No,620520
+201,2178,3,2.0,1999,9631.0,1,Single Family,Suburban,Fair,Gas,None,Yes,No,Yes,729275
+202,2280,3,2.5,1982,7903.0,1,Townhouse,Suburban,Good,Gas,Central Air,No,No,No,590128
+203,2541,3,3.0,2008,7633.0,2,Single Family,Downtown,Excellent,Gas,Window Units,No,No,Yes,822653
+204,2526,4,1.5,1992,7286.0,1,Townhouse,Downtown,Good,Gas,Window Units,No,Yes,Yes,705256
+205,1311,3,2.5,1961,10361.0,1,Single Family,Downtown,Good,Gas,Window Units,Yes,Yes,Yes,630187
+206,1531,3,2.0,1989,6745.0,1,Single Family,Rural,Good,Gas,Central Air,No,No,Yes,600111
+207,2257,1,2.0,1969,8090.0,0,Single Family,Suburban,Good,Gas,Central Air,No,Yes,Yes,636257
+208,2256,3,3.0,1987,8102.0,0,Single Family,Suburban,Good,Gas,Window Units,No,Yes,No,694775
+209,2257,3,1.5,1952,6996.0,1,Single Family,Suburban,Good,Heat Pump,Central Air,No,No,Yes,605560
+210,3926,3,1.0,1977,5255.0,2,Single Family,Suburban,Good,Gas,Central Air,No,Yes,Yes,797019
+211,2285,3,2.5,2005,8645.0,3,Single Family,Suburban,,Electric,Central Air,No,No,Yes,765573
+212,2567,3,1.5,1962,7877.0,1,Single Family,Suburban,Fair,Oil,Central Air,No,No,Yes,643729
+213,2477,3,2.5,2015,9000.0,0,Single Family,Downtown,Good,Gas,Central Air,No,Yes,No,758989
+214,2325,4,2.5,1986,6932.0,0,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,659924
+215,1842,4,1.0,1998,10441.0,2,Single Family,Suburban,Excellent,Gas,Window Units,No,No,No,731065
+216,2379,4,2.5,2015,6246.0,1,Townhouse,Suburban,Good,Gas,Central Air,No,No,No,680048
+217,1613,5,1.5,1985,11424.0,1,Townhouse,Suburban,Good,Gas,Central Air,No,No,Yes,588671
+218,1881,1,2.0,2003,4504.0,2,Townhouse,Downtown,Good,Electric,Central Air,No,No,No,585967
+219,1757,2,2.0,1975,8869.0,2,Single Family,Suburban,Fair,Gas,Central Air,No,No,Yes,572308
+220,2040,1,2.5,2021,8950.0,2,Townhouse,Suburban,Excellent,Gas,Central Air,No,No,Yes,725217
+221,3157,3,1.0,1989,6408.0,0,Single Family,Rural,Good,Electric,Central Air,No,No,No,689935
+222,1066,4,1.5,1992,8848.0,2,Single Family,Suburban,Fair,Electric,Central Air,Yes,Yes,No,590430
+223,2343,2,2.0,1971,10559.0,2,Single Family,Suburban,Fair,Gas,Window Units,No,Yes,Yes,645976
+224,1193,5,2.0,1969,3566.0,1,Townhouse,Suburban,Excellent,Electric,Central Air,No,Yes,Yes,575855
+225,1764,1,2.0,1957,9005.0,1,Single Family,Rural,Good,Gas,Central Air,No,No,Yes,541298
+226,2544,5,1.0,1978,3013.0,1,Single Family,Suburban,Good,Gas,Central Air,No,Yes,Yes,689498
+227,2032,3,1.5,1989,6068.0,3,Single Family,Suburban,Excellent,Gas,Central Air,Yes,No,No,691654
+228,1461,2,1.5,1979,11258.0,0,Townhouse,Suburban,Good,Gas,Central Air,No,No,Yes,489835
+229,1642,3,2.5,2004,6836.0,1,Single Family,Suburban,Excellent,Heat Pump,Window Units,No,Yes,Yes,676292
+230,2339,2,1.5,1965,5652.0,0,Single Family,Rural,Fair,Gas,Central Air,No,No,No,591675
+231,1634,2,1.5,1995,7604.0,2,Single Family,Downtown,Good,Gas,Central Air,No,No,Yes,600790
+232,2108,3,3.0,2011,12135.0,0,Single Family,Downtown,Excellent,Gas,Central Air,No,Yes,Yes,787498
+233,2022,4,1.0,1956,4336.0,1,Single Family,Rural,Excellent,Gas,Central Air,No,No,No,633145
+234,1674,3,3.0,1994,5897.0,1,Single Family,Suburban,Fair,Gas,None,No,No,No,657934
+235,3071,3,2.0,2008,10994.0,2,Townhouse,Suburban,Excellent,Gas,Central Air,No,No,No,784621
+236,2316,3,2.5,2005,11715.0,1,Single Family,Suburban,Good,Oil,Central Air,No,Yes,Yes,716829
+237,987,4,1.5,1997,7793.0,0,Single Family,Downtown,Good,Gas,Central Air,No,No,No,547322
+238,2093,2,1.0,1976,5521.0,2,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,603536
+239,1669,3,2.0,2002,12191.0,1,Single Family,Suburban,Good,Gas,Central Air,Yes,No,Yes,662866
+240,2426,2,2.5,2022,11188.0,2,Single Family,Suburban,Excellent,Gas,Central Air,No,Yes,No,803601
+241,1603,2,2.0,1984,9357.0,0,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,585434
+242,1942,3,1.0,2000,6375.0,1,Single Family,Rural,Excellent,Oil,Central Air,No,No,No,669232
+243,2252,2,2.0,1986,7901.0,1,Townhouse,Downtown,Good,Heat Pump,Central Air,No,No,Yes,624416
+244,2432,3,2.0,2006,7679.0,0,Single Family,Rural,Good,Gas,Central Air,No,No,Yes,719105
+245,1399,4,2.0,1957,8661.0,1,Single Family,Downtown,Good,Gas,None,No,No,No,576875
+246,1832,2,2.0,1969,10902.0,1,Townhouse,Suburban,Excellent,Oil,Central Air,No,No,Yes,587286
+247,1762,3,2.5,2002,9758.0,2,Single Family,Rural,Good,Gas,Window Units,No,No,No,685536
+248,1673,2,2.0,1961,,1,Townhouse,Suburban,Good,Gas,Window Units,No,No,Yes,471025
+249,2882,5,1.0,1998,10752.0,1,Single Family,Suburban,Poor,Gas,None,No,Yes,No,745185
+250,2202,3,1.5,1966,8626.0,1,Single Family,Suburban,Good,Electric,Central Air,No,No,Yes,621789
+251,1369,4,1.0,2013,9374.0,3,Townhouse,Suburban,Good,Gas,Central Air,No,No,Yes,626936
+252,2458,3,1.5,1991,10933.0,1,Single Family,Downtown,Good,Oil,Central Air,Yes,Yes,Yes,802602
+253,3061,1,1.5,1978,5776.0,1,Single Family,Rural,Fair,Electric,Central Air,No,No,No,697858
+254,2516,3,1.0,1968,7928.0,1,Townhouse,Suburban,Fair,Gas,Central Air,No,Yes,No,592626
+255,1240,5,1.5,1960,6937.0,1,Single Family,Suburban,Good,Electric,Central Air,No,No,No,582208
+256,1757,3,1.0,1999,4864.0,1,Single Family,Suburban,Good,Oil,None,No,No,Yes,601387
+257,2633,4,2.5,2020,8693.0,2,Single Family,Downtown,Good,Gas,Central Air,No,Yes,Yes,841310
+258,1646,4,2.5,2007,13023.0,1,Townhouse,Downtown,Good,Gas,Central Air,No,No,Yes,660308
+259,2221,2,1.0,1983,4319.0,2,Condo,Suburban,Fair,Gas,Central Air,No,Yes,Yes,580705
+260,2387,2,3.0,1969,7935.0,0,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,652339
+261,1536,3,2.0,1999,9281.0,1,Single Family,Suburban,Excellent,Gas,Central Air,No,No,No,639812
+262,1970,3,1.5,1959,8246.0,2,Condo,Rural,Fair,Gas,Central Air,No,No,No,554399
+263,379,4,1.0,1981,7773.0,0,Single Family,Downtown,Fair,Gas,Central Air,No,Yes,Yes,510108
+264,1487,5,2.0,2001,5401.0,3,Single Family,Suburban,Good,Oil,Central Air,No,Yes,Yes,656075
+265,1873,3,2.0,1964,8465.0,1,Townhouse,Downtown,Good,Gas,Window Units,No,No,No,598815
+266,1376,2,2.0,1952,6486.0,2,Townhouse,Suburban,Good,Gas,Central Air,No,No,Yes,422694
+267,2816,4,1.0,1986,3620.0,1,Townhouse,Downtown,Fair,Gas,None,No,Yes,Yes,700897
+268,1284,2,1.0,1989,10389.0,1,Single Family,Rural,Fair,Gas,Central Air,No,Yes,Yes,578699
+269,1779,4,1.5,2021,9916.0,0,Single Family,Downtown,Good,Gas,Central Air,Yes,Yes,Yes,751419
+270,2065,3,1.5,1989,8103.0,1,Single Family,Rural,Good,Gas,Central Air,No,No,No,619717
+271,2720,3,1.5,2005,8458.0,0,Single Family,Suburban,Fair,Gas,Central Air,No,No,Yes,718448
+272,1282,1,1.5,1972,10148.0,0,Single Family,Rural,Good,Electric,Central Air,No,Yes,Yes,550658
+273,2581,3,2.5,1960,8448.0,0,Townhouse,Suburban,Good,Electric,Central Air,No,No,Yes,655163
+274,2005,3,2.5,2013,9808.0,1,Single Family,Rural,Fair,Gas,Central Air,No,Yes,No,676529
+275,1509,3,1.5,1957,7405.0,2,Townhouse,Downtown,,Electric,Central Air,No,No,Yes,545264
+276,2231,2,2.5,2005,10623.0,0,Single Family,Suburban,Good,Electric,Window Units,No,No,Yes,714786
+277,2099,4,1.5,2009,8641.0,0,Single Family,Rural,Fair,Gas,Central Air,No,No,No,609624
+278,1699,4,1.5,1959,8388.0,1,Single Family,Downtown,Fair,Heat Pump,Central Air,No,No,No,587039
+279,2034,2,1.5,1988,5459.0,0,Single Family,Downtown,Good,Oil,Central Air,No,No,No,638011
+280,1807,1,2.0,1977,8573.0,0,Single Family,Suburban,Good,Gas,Central Air,No,No,No,577415
+281,2056,1,3.0,1998,6336.0,0,Condo,Rural,Good,Gas,Central Air,No,No,Yes,590728
+282,2331,3,2.0,1985,6723.0,2,Townhouse,Suburban,Good,Gas,Central Air,No,No,Yes,617743
+283,2793,3,1.5,1962,6369.0,2,Single Family,Suburban,Excellent,Gas,Central Air,No,Yes,Yes,735508
+284,1381,3,2.0,1985,5867.0,1,Single Family,Downtown,Fair,Electric,Window Units,No,No,Yes,585610
+285,3066,2,1.0,1975,12249.0,1,Condo,Downtown,Good,Gas,Central Air,No,No,No,713805
+286,1023,3,2.5,1953,10662.0,1,Single Family,Rural,Good,Electric,Central Air,No,Yes,No,516041
+287,1924,3,2.0,2013,11840.0,1,Single Family,Downtown,Good,Electric,Central Air,No,Yes,No,706628
+288,2294,3,1.5,1987,5554.0,1,Single Family,Suburban,Poor,Electric,Central Air,No,No,Yes,634095
+289,2140,5,2.0,1971,8142.0,1,Condo,Rural,Good,Electric,Central Air,No,Yes,No,632565
+290,1688,2,2.0,1951,5412.0,1,Single Family,Downtown,Excellent,Gas,Central Air,No,No,No,596085
+291,1895,3,1.0,1980,6608.0,0,Single Family,Suburban,Excellent,Gas,Central Air,No,No,Yes,635588
+292,1753,3,2.0,1960,6163.0,1,Condo,Downtown,Good,Electric,Central Air,No,No,No,507447
+293,1705,3,1.5,1995,10479.0,2,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,600627
+294,2424,4,2.0,2011,7207.0,1,Single Family,Downtown,Good,Gas,Central Air,No,No,Yes,749588
+295,2178,3,2.5,2018,10136.0,2,Single Family,Suburban,Good,Oil,Central Air,No,No,No,674976
+296,1653,5,2.5,2013,9208.0,3,Townhouse,Suburban,Excellent,Electric,Central Air,No,Yes,No,736441
+297,2449,2,2.0,1959,12607.0,0,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,615704
+298,2153,2,2.0,1989,5041.0,1,Condo,Suburban,Good,Electric,Central Air,No,Yes,Yes,578501
+299,2406,4,1.0,1973,10518.0,1,Single Family,Downtown,Excellent,Electric,Window Units,Yes,Yes,No,776524
+300,2314,3,2.0,1993,10292.0,3,Single Family,Suburban,Excellent,Gas,Window Units,Yes,No,No,758557
+301,1585,2,1.5,2009,6053.0,3,Condo,Suburban,Excellent,Gas,Central Air,No,Yes,No,580682
+302,1719,1,1.5,2011,10014.0,1,Single Family,Suburban,Excellent,Heat Pump,Central Air,No,No,Yes,638811
+303,2373,1,1.5,1966,8672.0,1,Single Family,Downtown,Good,Gas,Central Air,No,Yes,Yes,646846
+304,2305,4,1.0,2014,7545.0,2,Single Family,Suburban,Excellent,Gas,Central Air,No,Yes,Yes,761490
+305,1989,2,2.0,2006,6352.0,0,Single Family,Downtown,Good,Gas,Central Air,No,Yes,Yes,710698
+306,2058,3,1.0,2004,6561.0,2,Single Family,Suburban,Excellent,Electric,Central Air,No,Yes,Yes,714163
+307,2638,2,2.0,2002,12099.0,2,Single Family,Downtown,Poor,Gas,Central Air,No,No,Yes,789953
+308,1704,3,1.5,2005,8001.0,1,Single Family,Suburban,Fair,Gas,Central Air,No,No,Yes,630544
+309,2273,1,1.0,1958,9564.0,1,Townhouse,Downtown,Good,Gas,Central Air,No,No,Yes,600397
+310,1898,3,2.0,1971,6418.0,1,Single Family,Rural,Good,Heat Pump,Central Air,No,No,No,531890
+311,1891,1,1.0,1962,6440.0,1,Condo,Rural,Good,Gas,Central Air,No,Yes,Yes,507210
+312,2549,4,1.5,1997,10163.0,1,Single Family,Downtown,Good,Gas,Central Air,No,No,Yes,778857
+313,2412,2,2.0,1967,5300.0,2,Single Family,Suburban,Excellent,Heat Pump,Central Air,No,Yes,Yes,698265
+314,2406,3,1.0,1989,7169.0,2,Single Family,Downtown,Good,Gas,Central Air,No,No,Yes,735694
+315,2652,4,2.5,1966,8068.0,2,Single Family,Suburban,Good,Heat Pump,Central Air,No,No,Yes,751217
+316,2010,3,1.0,1964,8222.0,0,Single Family,Suburban,Fair,Heat Pump,Central Air,No,No,No,561727
+317,2340,3,1.5,1964,7641.0,2,Townhouse,Suburban,Excellent,Oil,Central Air,No,No,No,621141
+318,1844,3,2.0,2012,8791.0,2,Condo,Suburban,Fair,Gas,Central Air,No,No,Yes,595082
+319,2162,3,1.5,1988,9385.0,1,Condo,Downtown,Fair,Electric,Central Air,No,No,Yes,623533
+320,1934,3,1.0,1962,9469.0,0,Single Family,Suburban,Excellent,Electric,Central Air,Yes,No,Yes,638093
+321,2048,5,1.5,1981,6028.0,1,Townhouse,Downtown,Good,Heat Pump,Central Air,Yes,Yes,No,659516
+322,2297,3,1.5,1958,7431.0,2,Single Family,Suburban,Excellent,Gas,Central Air,Yes,No,Yes,685734
+323,1590,3,2.5,1989,10389.0,1,Single Family,Suburban,Good,Electric,Central Air,Yes,No,Yes,662019
+324,3046,4,1.5,1969,9789.0,2,Townhouse,Suburban,Good,Gas,Central Air,No,No,No,695106
+325,1496,3,2.0,2022,5254.0,1,Single Family,Downtown,Good,Gas,Central Air,No,Yes,No,604645
+326,1392,1,2.5,2012,8702.0,2,Single Family,Suburban,Good,Gas,Central Air,No,No,No,610706
+327,2579,3,1.5,1993,4043.0,0,Single Family,Suburban,Fair,Electric,Central Air,No,No,No,656387
+328,2395,5,2.5,1987,8093.0,1,Single Family,Downtown,Excellent,Gas,Central Air,No,No,No,796958
+329,2312,2,1.5,2009,11795.0,1,Townhouse,Suburban,Poor,Gas,Central Air,No,Yes,Yes,639001
+330,2314,3,3.0,2020,6104.0,0,Single Family,Rural,Good,Heat Pump,Central Air,No,No,Yes,719367
+331,1993,2,1.0,1997,6331.0,2,Condo,Rural,Fair,Gas,Central Air,No,No,No,570482
+332,1551,3,2.0,1967,9528.0,1,Single Family,Suburban,Good,Electric,Central Air,No,No,No,562767
+333,2037,1,1.5,1965,4914.0,1,Single Family,Suburban,Excellent,Gas,None,No,No,No,638308
+334,1661,3,1.5,2004,,1,Single Family,Downtown,Fair,Gas,Central Air,No,No,Yes,639651
+335,2487,4,2.0,1988,9192.0,1,Single Family,Rural,Good,Electric,Window Units,No,Yes,Yes,750475
+336,1926,3,2.0,2017,6731.0,0,Single Family,Downtown,Good,Heat Pump,Central Air,No,Yes,Yes,699115
+337,1587,3,1.0,2008,7528.0,0,Townhouse,Rural,Good,Gas,Central Air,No,No,Yes,551050
+338,1839,4,1.0,2011,9488.0,2,Townhouse,Suburban,Good,Electric,Central Air,No,No,Yes,578913
+339,2206,5,2.0,1962,8843.0,1,Condo,Suburban,Good,Gas,Central Air,No,Yes,No,624236
+340,1718,2,2.0,1955,8533.0,2,Townhouse,Rural,Fair,Gas,Central Air,No,No,Yes,514765
+341,1588,3,3.0,2009,7321.0,3,Townhouse,Downtown,Excellent,Gas,Central Air,No,No,No,652477
+342,2121,2,2.0,1963,8740.0,1,Single Family,Suburban,Good,Gas,Central Air,No,No,No,633682
+343,2122,5,3.0,2003,7752.0,1,Townhouse,Suburban,Fair,Gas,Central Air,No,Yes,Yes,679684
+344,1746,5,2.0,1953,8915.0,1,Single Family,Downtown,Excellent,Gas,Central Air,Yes,Yes,Yes,717108
+345,1764,3,1.5,1988,7006.0,3,Single Family,Suburban,Excellent,Gas,Window Units,No,No,No,647247
+346,2116,4,1.0,2021,7634.0,2,Single Family,Suburban,Fair,Gas,Central Air,No,No,No,644760
+347,1275,3,2.0,1974,6020.0,1,Single Family,Suburban,Good,Gas,Central Air,No,No,No,555277
+348,1296,3,2.0,1981,7929.0,2,Single Family,Downtown,Good,Gas,Central Air,No,No,No,571331
+349,1640,1,1.0,2008,6377.0,0,Condo,Rural,Excellent,Heat Pump,Central Air,No,No,No,549470
+350,1893,4,1.5,2012,,3,Single Family,Downtown,Good,Electric,Central Air,No,No,Yes,727277
+351,2155,2,3.0,1987,8517.0,3,Single Family,Downtown,Excellent,Gas,Central Air,No,No,No,735081
+352,2737,4,2.0,2002,8425.0,0,Single Family,Downtown,Good,Heat Pump,Central Air,No,No,No,758465
+353,2428,4,1.5,2016,9565.0,1,Single Family,Downtown,Fair,Electric,Central Air,No,No,No,716023
+354,1920,4,1.5,1977,7137.0,0,Single Family,Downtown,Good,Gas,Window Units,No,Yes,Yes,708600
+355,1990,1,1.5,1952,8816.0,1,Single Family,Rural,Good,Gas,Central Air,No,No,No,568807
+356,1498,3,1.5,1971,9101.0,2,Single Family,Suburban,Poor,Electric,Window Units,No,Yes,Yes,592452
+357,1990,2,1.5,1987,8889.0,1,Single Family,Downtown,Good,Gas,None,No,No,No,614988
+358,1855,3,1.0,2021,6348.0,0,Townhouse,Downtown,Fair,Electric,Central Air,No,No,Yes,600960
+359,2161,1,2.0,2021,8298.0,1,Townhouse,Suburban,Good,Electric,Central Air,No,Yes,Yes,621790
+360,1586,5,1.5,2011,8728.0,3,Single Family,Rural,Fair,Electric,Central Air,Yes,No,Yes,732298
+361,2259,3,2.5,2006,8014.0,1,Single Family,Downtown,Excellent,Heat Pump,Central Air,Yes,No,Yes,777459
+362,2766,3,2.5,1955,3827.0,1,Single Family,Downtown,Excellent,Gas,Central Air,No,No,Yes,758431
+363,1945,3,1.5,1981,8320.0,0,Townhouse,Downtown,Good,Gas,Central Air,No,Yes,No,586733
+364,2200,3,2.0,1959,12425.0,3,Single Family,Downtown,Good,Oil,Central Air,No,No,Yes,703776
+365,2345,3,1.5,1952,7279.0,2,Single Family,Downtown,Fair,Gas,Central Air,No,Yes,Yes,680722
+366,1799,3,2.5,2008,6543.0,1,Townhouse,Suburban,Good,Electric,Window Units,No,Yes,Yes,608293
+367,2112,5,1.5,1998,8746.0,0,Single Family,Downtown,Good,Heat Pump,Central Air,No,Yes,Yes,740391
+368,2006,3,2.0,2008,8624.0,0,Single Family,Suburban,,Electric,Central Air,No,Yes,Yes,683899
+369,2048,5,2.0,1980,10385.0,0,Single Family,Downtown,Good,Gas,Window Units,No,No,Yes,710103
+370,1613,4,1.5,2018,5484.0,1,Condo,Rural,Good,Gas,Central Air,No,No,Yes,516040
+371,2012,2,1.0,2011,9462.0,2,Townhouse,Rural,Good,Gas,Central Air,No,No,No,585505
+372,2248,5,2.0,2001,9180.0,1,Townhouse,Suburban,Good,Gas,Central Air,No,No,Yes,633587
+373,2725,2,2.0,1990,7715.0,2,Single Family,Suburban,Excellent,Electric,Central Air,No,Yes,Yes,789001
+374,2479,4,1.5,1980,8677.0,1,Single Family,Suburban,Poor,Electric,Central Air,No,No,Yes,720774
+375,3076,3,2.0,1971,10058.0,2,Condo,Suburban,Excellent,Electric,None,No,Yes,No,730365
+376,1616,4,1.5,1953,9744.0,2,Condo,Suburban,Excellent,Gas,Central Air,No,No,Yes,588084
+377,2436,4,2.0,1962,5713.0,0,Single Family,Suburban,Fair,Gas,Central Air,No,No,Yes,642177
+378,2091,4,1.0,1994,9640.0,1,Townhouse,Rural,Good,Electric,Central Air,No,Yes,Yes,651008
+379,3094,4,2.5,1991,7870.0,1,Single Family,Rural,Good,Gas,Central Air,No,No,Yes,781650
+380,1595,3,1.5,1998,8145.0,0,Single Family,Suburban,Good,Gas,Window Units,No,Yes,Yes,642791
+381,1580,1,1.5,1969,8146.0,1,Single Family,Suburban,Good,Electric,Window Units,No,No,Yes,551005
+382,1700,3,1.0,2003,7699.0,1,Single Family,Downtown,Good,Electric,Central Air,Yes,Yes,Yes,681344
+383,938,2,1.0,1985,10383.0,3,Condo,Downtown,Good,Gas,Central Air,No,No,Yes,512079
+384,1737,3,2.0,1950,7832.0,1,Single Family,Suburban,Good,Oil,Central Air,No,Yes,Yes,609219
+385,1620,3,1.5,1964,5760.0,2,Single Family,Downtown,Fair,Gas,Central Air,No,No,No,545046
+386,2075,5,2.5,1966,7212.0,1,Condo,Rural,Good,Heat Pump,Central Air,No,No,No,596266
+387,2170,3,1.0,1973,8357.0,2,Condo,Downtown,Fair,Gas,Central Air,No,No,Yes,615384
+388,2938,4,1.5,2007,10458.0,1,Single Family,Suburban,Excellent,Gas,None,No,No,No,817598
+389,2475,2,1.5,2021,9206.0,2,Single Family,Suburban,Good,Oil,Central Air,No,No,No,690775
+390,1711,4,1.0,1972,6298.0,1,Single Family,Suburban,Good,Gas,Window Units,No,No,No,543815
+391,1550,5,1.0,1995,12970.0,1,Single Family,Suburban,Fair,Electric,Central Air,Yes,Yes,Yes,679997
+392,2245,3,1.5,2021,8529.0,1,Condo,Rural,Excellent,Oil,Central Air,No,Yes,No,666488
+393,1339,3,1.5,1957,10550.0,1,Condo,Suburban,Good,Oil,Window Units,Yes,No,Yes,485144
+394,2915,4,1.5,2008,7696.0,0,Single Family,Suburban,Fair,Heat Pump,Central Air,No,No,Yes,762522
+395,2589,2,2.0,2008,9066.0,0,Single Family,Downtown,Good,Gas,Window Units,No,No,Yes,743811
+396,1765,3,2.0,1962,9678.0,0,Single Family,Suburban,Fair,Electric,Central Air,No,Yes,Yes,616231
+397,1143,3,1.0,1988,10436.0,2,Condo,Rural,Excellent,Gas,Central Air,No,No,Yes,585538
+398,2676,2,1.5,1977,10114.0,1,Single Family,Suburban,Fair,Gas,Window Units,Yes,Yes,Yes,711869
+399,1942,3,3.0,2010,9744.0,1,Single Family,Rural,Fair,Oil,Central Air,No,No,No,639297
+400,2618,1,2.0,1965,7369.0,2,Single Family,Suburban,Good,Gas,Window Units,No,No,Yes,657244
+401,1202,1,2.0,1951,6856.0,1,Single Family,Downtown,Good,Gas,Window Units,No,Yes,Yes,528529
+402,1700,2,1.5,1966,8665.0,1,Single Family,Downtown,Excellent,Gas,Central Air,No,No,Yes,632479
+403,2002,5,2.0,1979,9866.0,0,Single Family,Suburban,Fair,Electric,Central Air,No,Yes,Yes,676933
+404,2023,3,2.0,1962,7554.0,3,Condo,Suburban,Good,Heat Pump,Central Air,No,No,Yes,574837
+405,1774,5,2.0,1962,10130.0,2,Condo,Suburban,Excellent,Gas,Central Air,No,No,No,588329
+406,2311,3,3.0,1992,10905.0,2,Townhouse,Downtown,Good,Gas,Central Air,No,No,Yes,693801
+407,1466,3,1.0,1970,6167.0,1,Single Family,Suburban,Good,Oil,Central Air,No,No,Yes,519707
+408,1928,3,1.0,2004,6326.0,2,Single Family,Suburban,Excellent,Gas,Central Air,No,Yes,No,683062
+409,2060,3,2.0,1989,7719.0,0,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,625474
+410,2257,2,2.5,1964,8615.0,0,Single Family,Downtown,Excellent,Gas,Central Air,No,No,No,715007
+411,2355,3,1.0,2022,6950.0,0,Condo,Downtown,Good,Gas,Window Units,No,No,Yes,689327
+412,1437,2,1.5,2001,10704.0,1,Single Family,Downtown,Good,Gas,Central Air,No,Yes,Yes,646807
+413,1232,3,1.0,2002,8848.0,1,Single Family,Downtown,Good,Oil,Window Units,No,No,Yes,563419
+414,2638,3,1.5,2001,8078.0,1,Condo,Downtown,Fair,Gas,Central Air,Yes,No,Yes,745293
+415,2166,2,2.0,1979,5128.0,0,Condo,Downtown,Fair,Heat Pump,Central Air,No,No,Yes,622754
+416,1625,1,2.0,1982,5368.0,1,Single Family,Suburban,Good,Oil,Central Air,No,No,No,536715
+417,2775,4,1.5,2006,8562.0,2,Single Family,Suburban,Excellent,Electric,Central Air,No,No,No,812768
+418,2057,3,1.5,2001,3734.0,1,Single Family,Rural,Good,Gas,None,No,No,No,599336
+419,2589,1,1.0,1958,10025.0,2,Single Family,Downtown,Good,Gas,Central Air,Yes,No,No,639700
+420,2033,5,1.5,2003,7683.0,1,Single Family,Suburban,Good,Gas,Central Air,Yes,Yes,Yes,704509
+421,3030,1,2.0,1950,14486.0,2,Single Family,Suburban,Good,Heat Pump,Central Air,No,No,No,735016
+422,2877,3,3.0,1993,12615.0,1,Condo,Downtown,Good,Gas,Central Air,No,No,Yes,728953
+423,1875,5,2.5,1958,7637.0,1,Single Family,Rural,Fair,Gas,Central Air,No,No,No,618675
+424,2485,2,1.0,1981,7787.0,1,Single Family,Downtown,Excellent,Gas,Central Air,No,No,Yes,729117
+425,2322,2,2.5,1964,9991.0,1,Single Family,Rural,Good,Gas,Central Air,No,No,No,625895
+426,2684,2,2.0,1961,11406.0,2,Single Family,Rural,Excellent,Gas,Central Air,No,Yes,No,732559
+427,1517,3,2.0,2006,4723.0,1,Townhouse,Suburban,Fair,Gas,Window Units,No,No,Yes,547759
+428,2343,2,1.5,1957,4427.0,1,Single Family,Suburban,Excellent,Gas,Central Air,No,No,Yes,642191
+429,2529,3,1.5,2021,,2,Single Family,Suburban,Excellent,Gas,Central Air,No,No,Yes,744233
+430,1120,1,1.5,1976,9165.0,1,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,513125
+431,1408,3,1.0,2011,8993.0,1,Townhouse,Suburban,Good,Electric,Central Air,No,No,No,543232
+432,980,5,1.5,1961,10139.0,1,Single Family,Downtown,Good,Gas,Window Units,No,Yes,No,587086
+433,1865,4,1.5,2014,5600.0,1,Townhouse,Downtown,Good,Gas,Central Air,No,No,Yes,612305
+434,2358,3,1.5,1991,3367.0,1,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,623610
+435,2751,3,2.0,2011,9716.0,1,Single Family,Suburban,Excellent,Gas,Central Air,No,No,No,773996
+436,2037,3,1.5,1960,6343.0,3,Single Family,Rural,Good,Heat Pump,Central Air,Yes,No,Yes,676770
+437,2814,3,1.0,1992,3963.0,1,Condo,Downtown,Fair,Gas,Central Air,No,Yes,Yes,696126
+438,1309,3,3.0,1966,,1,Condo,Rural,Good,Electric,Central Air,No,Yes,No,532429
+439,1148,2,2.5,1981,9586.0,1,Single Family,Downtown,Fair,Oil,Central Air,No,No,No,581527
+440,1972,4,2.0,1989,7755.0,2,Single Family,Suburban,Good,Oil,Central Air,No,No,Yes,673390
+441,2192,3,3.0,1972,7084.0,2,Single Family,Suburban,Good,Gas,Window Units,No,No,Yes,674032
+442,1983,2,2.0,2005,7681.0,1,Single Family,Suburban,Excellent,Gas,Central Air,No,No,No,684951
+443,966,3,3.0,1955,7258.0,2,Single Family,Downtown,Good,Electric,Window Units,No,No,No,531966
+444,1955,3,1.0,1999,5303.0,1,Condo,Suburban,Fair,Gas,Central Air,Yes,No,No,542725
+445,1347,4,1.5,1986,,1,Condo,Rural,Poor,Oil,Window Units,No,Yes,Yes,553009
+446,2334,4,1.5,2013,9042.0,0,Single Family,Suburban,Good,Electric,Central Air,No,No,No,706364
+447,2183,4,1.0,2003,8643.0,1,Single Family,Suburban,Excellent,Electric,Central Air,No,No,Yes,702150
+448,1530,1,1.0,2021,8336.0,1,Townhouse,Rural,Excellent,Gas,Central Air,No,Yes,No,592118
+449,1743,3,2.0,1998,6009.0,2,Townhouse,Suburban,Good,Electric,Central Air,Yes,No,Yes,635960
+450,1470,3,2.0,1960,7636.0,1,Single Family,Suburban,Good,Electric,Central Air,No,No,Yes,560135
+451,1968,1,2.0,1998,3645.0,3,Single Family,Downtown,Excellent,Oil,Central Air,No,No,No,661664
+452,2477,2,1.0,1970,8356.0,1,Single Family,Rural,Fair,Gas,Central Air,No,Yes,Yes,656940
+453,1507,4,2.5,2015,10857.0,1,Single Family,Suburban,Good,Gas,Central Air,Yes,No,Yes,673974
+454,2252,2,2.0,2012,5051.0,1,Single Family,Downtown,Fair,Gas,Central Air,No,Yes,No,675120
+455,1734,3,1.5,1977,6828.0,0,Single Family,Downtown,Fair,Gas,Central Air,No,Yes,No,613203
+456,1603,2,2.0,1966,8658.0,1,Single Family,Rural,Fair,Gas,Central Air,No,No,No,517515
+457,1946,1,1.5,1955,10505.0,0,Single Family,Downtown,Good,Heat Pump,Central Air,No,No,Yes,568246
+458,1482,2,1.5,1968,7103.0,1,Single Family,Rural,Good,Gas,Central Air,No,No,Yes,542100
+459,1723,5,2.5,2005,6615.0,1,Single Family,Downtown,Good,Oil,Central Air,No,No,No,674928
+460,1401,4,1.5,1977,4062.0,2,Townhouse,Suburban,Good,Gas,Central Air,No,No,Yes,524281
+461,2982,5,1.5,2015,8206.0,1,Townhouse,Suburban,Good,Gas,Window Units,No,No,No,756734
+462,2017,3,2.5,1987,12084.0,0,Single Family,Suburban,Poor,Gas,Central Air,Yes,No,Yes,691210
+463,1650,2,2.0,1986,8554.0,1,Single Family,Rural,Fair,Gas,Central Air,No,No,No,585733
+464,2106,3,1.0,2017,7955.0,2,Condo,Suburban,Fair,Heat Pump,Central Air,No,No,Yes,602864
+465,1943,3,1.0,1998,8644.0,2,Single Family,Suburban,Fair,Gas,Central Air,No,No,Yes,655878
+466,1889,4,1.0,1992,7977.0,1,Single Family,Downtown,Good,Electric,Window Units,No,Yes,No,645257
+467,2307,1,2.0,1985,6373.0,1,Single Family,Downtown,Excellent,Gas,Window Units,No,No,Yes,713993
+468,2378,3,1.5,2007,9646.0,0,Single Family,Downtown,Good,Heat Pump,Central Air,No,No,No,695853
+469,1734,2,1.0,1962,8451.0,3,Single Family,Suburban,Good,Gas,Central Air,No,No,No,578314
+470,1712,3,3.0,2001,8035.0,1,Condo,Downtown,Fair,Gas,Central Air,No,No,No,581175
+471,1862,4,2.0,2007,6049.0,1,Single Family,Downtown,Good,Gas,Central Air,No,Yes,No,632780
+472,849,3,1.5,1981,10607.0,1,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,519666
+473,1242,3,2.0,2009,9329.0,0,Condo,Suburban,Good,Gas,Central Air,No,No,Yes,544215
+474,2683,3,2.0,2007,6894.0,3,Single Family,Suburban,Excellent,Oil,Central Air,No,Yes,Yes,812815
+475,2822,3,1.0,2005,10003.0,0,Single Family,Downtown,Good,Electric,Central Air,Yes,No,Yes,801859
+476,1875,4,1.5,1977,7004.0,1,Single Family,Downtown,Fair,Electric,Central Air,No,No,Yes,658267
+477,2288,4,2.5,1950,6435.0,1,Single Family,Rural,Excellent,Gas,Central Air,No,No,Yes,689698
+478,2155,5,1.5,1991,6480.0,2,Single Family,Downtown,Good,Gas,Central Air,No,No,Yes,667391
+479,3539,4,2.0,1997,4457.0,2,Single Family,Rural,Good,Gas,Window Units,Yes,No,Yes,833438
+480,2559,3,1.5,1989,8943.0,1,Single Family,Rural,Excellent,Heat Pump,Central Air,Yes,No,Yes,790174
+481,1936,3,1.0,2012,4337.0,1,Single Family,Suburban,Excellent,Oil,Central Air,No,No,No,644444
+482,1522,3,1.0,2021,5543.0,2,Single Family,Downtown,Poor,Oil,Window Units,No,No,Yes,636481
+483,1196,2,1.5,1953,3848.0,0,Single Family,Rural,Good,Oil,Window Units,No,No,Yes,480267
+484,2101,4,1.5,1987,7827.0,1,Single Family,Suburban,Good,Gas,Central Air,No,No,No,615929
+485,1621,1,1.0,1976,7699.0,1,Single Family,Suburban,Excellent,Gas,Central Air,Yes,No,Yes,629059
+486,1288,5,2.5,1958,7346.0,3,Single Family,Suburban,Good,Gas,Central Air,No,No,No,611272
+487,1676,3,3.0,1965,5914.0,1,Condo,Downtown,Good,Gas,Central Air,No,No,No,553713
+488,1459,3,2.0,2005,5655.0,2,Single Family,Downtown,Good,Gas,Central Air,No,No,Yes,611593
+489,2843,3,2.5,1980,8928.0,1,Single Family,Suburban,Excellent,Gas,Window Units,No,No,No,762607
+490,2440,4,1.5,1963,6898.0,1,Townhouse,Suburban,Fair,Electric,Central Air,No,Yes,No,562002
+491,1996,3,3.0,1974,8632.0,1,Single Family,Suburban,Good,Oil,Central Air,Yes,Yes,Yes,698498
+492,2739,3,1.0,1983,6229.0,1,Single Family,Suburban,Good,Electric,Central Air,No,Yes,No,687090
+493,2038,1,3.0,2016,8362.0,1,Townhouse,Suburban,Good,Heat Pump,Central Air,Yes,Yes,Yes,690122
+494,1569,3,3.0,1973,10606.0,1,Townhouse,Suburban,Good,Gas,Central Air,No,No,Yes,564050
+495,2761,2,2.0,2022,9172.0,0,Single Family,Rural,Fair,Gas,Central Air,No,Yes,Yes,757129
+496,2269,4,3.0,1975,7175.0,2,Single Family,Downtown,Fair,Electric,Central Air,No,No,Yes,710549
+497,1481,3,2.0,1969,8514.0,3,Single Family,Suburban,Good,Gas,Central Air,No,Yes,Yes,602541
+498,1904,3,1.5,2013,7518.0,1,Townhouse,Downtown,Fair,Gas,Central Air,No,No,No,575486
+499,1562,1,1.5,1959,8015.0,1,Single Family,Suburban,Fair,Gas,Central Air,No,No,Yes,526379
+500,1308,1,2.0,2016,7348.0,0,Single Family,Suburban,Fair,Gas,Window Units,No,Yes,Yes,567433
+501,2463,4,1.0,1973,7671.0,1,Townhouse,Rural,Good,Gas,Central Air,No,No,Yes,623638
+502,2954,1,2.0,1954,8424.0,2,Single Family,Downtown,Good,Gas,None,No,Yes,No,699048
+503,1300,1,3.0,2016,6013.0,0,Townhouse,Rural,Good,Gas,Central Air,No,No,No,502731
+504,2281,1,1.0,2007,5968.0,0,Single Family,Downtown,Fair,Electric,Central Air,No,No,No,623272
+505,1674,5,2.0,1976,5222.0,2,Single Family,Suburban,Excellent,Gas,Central Air,Yes,No,No,672880
+506,1756,4,2.5,1964,4799.0,1,Single Family,Downtown,Good,Gas,Central Air,No,Yes,No,630202
+507,1703,3,2.5,1984,5565.0,0,Townhouse,Rural,Good,Gas,Window Units,No,No,No,527935
+508,1568,2,3.0,2002,8318.0,1,Single Family,Suburban,Good,Gas,Window Units,No,No,No,615613
+509,2024,3,2.0,1993,6214.0,1,Single Family,Suburban,Good,Electric,Central Air,No,No,Yes,639057
+510,1584,4,3.0,1975,9027.0,1,Single Family,Rural,Fair,Electric,Central Air,No,No,Yes,621537
+511,2135,3,2.0,1996,8069.0,2,Townhouse,Downtown,Good,Electric,Central Air,No,No,No,631228
+512,1974,2,1.0,1983,4062.0,2,Condo,Downtown,Fair,Gas,Window Units,No,No,Yes,556416
+513,1880,2,1.5,1999,,1,Single Family,Rural,Good,Gas,Central Air,No,Yes,Yes,631346
+514,1546,1,2.0,1961,9621.0,2,Single Family,Suburban,Good,Gas,Central Air,No,Yes,Yes,614328
+515,1711,3,1.5,1953,6012.0,1,Condo,Downtown,Good,Gas,Central Air,No,No,No,500906
+516,2377,4,2.0,1997,8840.0,2,Single Family,Suburban,Excellent,Gas,Central Air,No,Yes,Yes,778326
+517,2250,2,2.0,2004,,1,Single Family,Suburban,Good,Gas,Window Units,No,Yes,No,647685
+518,1511,1,1.0,1950,8195.0,2,Single Family,Downtown,Good,Gas,Central Air,No,Yes,No,537131
+519,2049,1,2.0,2015,5471.0,2,Townhouse,Downtown,Good,Electric,Central Air,No,No,No,595630
+520,2375,5,2.0,1979,4413.0,0,Single Family,Downtown,Fair,Gas,Central Air,No,No,No,689149
+521,1165,2,1.5,1952,,2,Single Family,Suburban,Good,Electric,Central Air,No,No,No,450466
+522,2271,4,1.0,1970,7752.0,2,Single Family,Rural,Excellent,Gas,Central Air,No,Yes,Yes,741603
+523,1668,3,1.0,1998,7204.0,2,Single Family,Rural,Excellent,Gas,Central Air,Yes,No,Yes,693471
+524,2285,3,1.5,2011,5631.0,1,Single Family,Suburban,Good,Heat Pump,Window Units,No,No,Yes,647797
+525,1618,2,2.5,1987,7200.0,2,Single Family,Downtown,Good,Heat Pump,Central Air,No,No,No,569418
+526,1097,2,1.5,1964,8538.0,2,Single Family,Rural,Excellent,Gas,Central Air,No,No,No,526848
+527,1186,3,2.0,2001,7910.0,1,Single Family,Suburban,Good,Gas,Central Air,No,No,No,549296
+528,2024,4,1.5,1995,8365.0,3,Single Family,Downtown,Good,Gas,Central Air,No,No,Yes,760830
+529,2129,3,1.5,1974,6659.0,0,Townhouse,Rural,Good,Gas,Window Units,No,Yes,Yes,591060
+530,1547,3,2.5,1970,10343.0,0,Townhouse,Suburban,Fair,Oil,Central Air,No,Yes,Yes,520263
+531,2319,1,2.0,1954,5647.0,1,Townhouse,Suburban,Good,Heat Pump,Central Air,No,Yes,Yes,550341
+532,1169,5,1.0,2019,8975.0,1,Single Family,Suburban,Good,Electric,Central Air,No,No,Yes,604710
+533,1966,4,1.5,1996,10363.0,1,Single Family,Downtown,Fair,Gas,Central Air,No,Yes,Yes,714488
+534,1394,2,1.0,2017,8961.0,0,Single Family,Downtown,Good,Electric,Central Air,Yes,No,No,579910
+535,1674,5,1.5,1967,7594.0,3,Condo,Suburban,Good,Gas,Window Units,No,Yes,Yes,589670
+536,2023,3,2.0,1970,6943.0,0,Townhouse,Downtown,Good,Heat Pump,Central Air,No,No,Yes,577662
+537,1569,3,1.0,1972,10072.0,0,Townhouse,Suburban,Excellent,Oil,Central Air,No,No,No,522184
+538,1807,4,1.5,2013,,0,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,634661
+539,2503,4,1.5,2016,6059.0,1,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,732072
+540,1711,3,2.5,1989,7204.0,2,Single Family,Suburban,Fair,Gas,Central Air,No,Yes,Yes,662940
+541,2417,2,3.0,1959,10475.0,1,Single Family,Suburban,Fair,Gas,Window Units,No,No,Yes,684562
+542,1435,3,1.0,2001,8759.0,2,Single Family,Rural,Good,Oil,Central Air,No,Yes,Yes,598347
+543,2264,5,2.0,2021,6063.0,0,Condo,Suburban,Good,Gas,Central Air,No,No,Yes,677005
+544,2720,2,1.5,2010,7379.0,1,Single Family,Downtown,Good,Gas,Central Air,No,No,Yes,745076
+545,764,3,1.5,2013,6771.0,1,Single Family,Downtown,Good,Gas,Window Units,No,Yes,Yes,575933
+546,1601,3,2.0,1954,6580.0,1,Single Family,Suburban,Good,Oil,Central Air,Yes,Yes,Yes,589766
+547,2288,3,2.5,2002,,0,Condo,Downtown,Good,Gas,Window Units,No,No,No,645647
+548,1898,3,3.0,2004,5256.0,1,Single Family,Downtown,Good,Oil,Central Air,Yes,No,Yes,711557
+549,2185,5,2.0,1986,11217.0,1,Single Family,Downtown,Excellent,Oil,Window Units,No,No,No,814382
+550,1698,2,1.5,2005,9656.0,2,Condo,Suburban,Poor,Heat Pump,Central Air,No,No,Yes,579104
+551,2043,2,2.0,2008,10181.0,1,Single Family,Rural,Excellent,Gas,Central Air,No,No,Yes,700981
+552,1922,2,1.5,2018,7074.0,0,Single Family,Downtown,Fair,Gas,Central Air,No,Yes,No,633922
+553,2583,4,2.0,2022,7700.0,1,Single Family,Suburban,Fair,Gas,Central Air,No,No,Yes,738964
+554,2127,3,1.5,2008,5133.0,0,Single Family,Suburban,Good,Gas,Central Air,Yes,Yes,Yes,724910
+555,2168,2,2.0,1951,6950.0,2,Townhouse,Downtown,Fair,Gas,Central Air,No,No,No,564564
+556,1794,4,1.5,2014,8987.0,1,Townhouse,Rural,Good,Electric,Central Air,No,No,Yes,626472
+557,1756,4,1.0,2009,10592.0,0,Single Family,Suburban,Good,Gas,Central Air,No,Yes,No,625041
+558,1783,4,2.5,2000,5785.0,3,Single Family,Suburban,Good,Oil,Window Units,No,No,No,652448
+559,2197,5,1.0,1979,7268.0,1,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,675874
+560,1789,2,2.0,1960,7697.0,0,Single Family,Downtown,Good,Electric,Window Units,No,No,Yes,585946
+561,2144,4,1.5,1988,5208.0,1,Single Family,Suburban,Good,Electric,Central Air,No,Yes,Yes,650617
+562,3037,3,1.0,2021,9182.0,1,Single Family,Downtown,Good,Electric,Central Air,No,Yes,No,823787
+563,2435,4,1.0,2012,6552.0,2,Single Family,Rural,Good,Oil,Central Air,No,No,No,707951
+564,1836,4,1.0,2013,7609.0,2,Townhouse,Suburban,Good,Electric,Central Air,No,No,No,600458
+565,2600,4,2.5,2010,7096.0,3,Single Family,Suburban,Excellent,Heat Pump,None,No,No,Yes,831225
+566,1795,3,1.5,2003,6421.0,1,Single Family,Downtown,Excellent,Gas,Central Air,No,Yes,No,703796
+567,980,2,3.0,2022,7985.0,1,Single Family,Suburban,Good,Gas,Window Units,No,No,Yes,620280
+568,1495,3,2.0,2007,7568.0,2,Townhouse,Suburban,Excellent,Gas,Window Units,No,No,Yes,620218
+569,1064,5,1.5,2005,7256.0,0,Single Family,Suburban,Excellent,Gas,Central Air,Yes,No,No,639225
+570,1824,5,2.0,1983,6543.0,1,Single Family,Suburban,Fair,Gas,Window Units,No,No,Yes,614096
+571,2009,1,2.0,1980,8639.0,1,Single Family,Suburban,Excellent,Gas,Central Air,No,No,No,622595
+572,2838,2,2.0,2001,11307.0,0,Townhouse,Rural,Good,Gas,None,Yes,No,Yes,682318
+573,2163,2,1.5,1950,8279.0,1,Single Family,Suburban,Good,Gas,Central Air,No,No,No,603176
+574,1890,4,1.5,2004,9992.0,2,Townhouse,Rural,Fair,Gas,Central Air,No,No,Yes,571909
+575,2414,4,2.5,1971,5219.0,2,Condo,Rural,Good,Heat Pump,Window Units,No,No,Yes,630448
+576,894,2,2.5,1989,8315.0,0,Townhouse,Suburban,Good,Gas,Central Air,No,No,Yes,410100
+577,2117,3,2.5,1950,5805.0,0,Single Family,Downtown,Good,Electric,Central Air,No,No,Yes,619099
+578,2385,4,1.5,2014,5046.0,1,Single Family,Suburban,Good,Gas,Central Air,Yes,Yes,Yes,727911
+579,1260,4,2.0,2012,6521.0,2,Single Family,Rural,Good,Heat Pump,Central Air,No,Yes,No,633302
+580,2571,3,1.5,2003,10383.0,0,Condo,Downtown,Excellent,Oil,Central Air,No,Yes,Yes,759947
+581,2169,3,1.5,1991,9900.0,2,Single Family,Suburban,Poor,Electric,Window Units,No,Yes,Yes,670737
+582,1792,3,1.5,1970,8486.0,0,Single Family,Rural,Good,Electric,Central Air,No,Yes,Yes,622949
+583,2316,2,2.0,1971,,1,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,627626
+584,3135,3,1.0,1987,7607.0,1,Single Family,Suburban,Fair,Heat Pump,Central Air,No,No,No,714286
+585,2090,3,1.5,1957,8603.0,2,Single Family,Downtown,Good,Oil,Central Air,No,No,No,609961
+586,2124,4,2.5,2011,8351.0,1,Single Family,Downtown,Fair,Oil,Central Air,No,Yes,Yes,730354
+587,1770,3,1.5,1996,4312.0,1,Single Family,Suburban,Good,Electric,Central Air,No,Yes,Yes,598058
+588,1575,4,1.0,1966,6219.0,1,Townhouse,Downtown,Fair,Gas,Window Units,No,No,No,525524
+589,2415,2,1.0,1966,7871.0,2,Single Family,Downtown,Excellent,Oil,Central Air,No,No,Yes,718412
+590,1571,3,2.5,1962,9072.0,2,Single Family,Rural,Fair,Gas,Central Air,No,No,Yes,630341
+591,2035,1,2.0,1966,3607.0,0,Single Family,Suburban,Fair,Gas,Window Units,No,No,Yes,570236
+592,1761,2,1.5,1987,7675.0,2,Single Family,Rural,Good,Gas,Central Air,No,No,Yes,547323
+593,2239,4,2.5,1994,8286.0,1,Townhouse,Rural,Excellent,Heat Pump,Central Air,No,No,Yes,704582
+594,2166,5,2.5,1955,9699.0,0,Single Family,Downtown,Good,Gas,Central Air,No,No,Yes,666094
+595,2518,1,1.5,1984,9385.0,1,Single Family,Downtown,Poor,Gas,Window Units,No,No,No,648405
+596,1744,3,2.0,1963,9165.0,0,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,571981
+597,1865,4,2.0,2021,6400.0,2,Condo,Suburban,Good,Electric,Central Air,No,No,Yes,616233
+598,1510,2,2.0,2010,4183.0,2,Single Family,Downtown,Excellent,Electric,Central Air,Yes,No,Yes,669412
+599,1777,3,1.0,1964,7213.0,0,Townhouse,Suburban,Good,Gas,Central Air,No,Yes,Yes,531834
+600,2188,4,2.5,2003,10003.0,1,Single Family,Downtown,Good,Gas,Central Air,No,No,Yes,713598
+601,2378,3,2.0,1976,10786.0,2,Single Family,Rural,Poor,Electric,Central Air,No,No,No,679863
+602,1538,2,1.5,1962,9421.0,2,Single Family,Downtown,Good,Heat Pump,Central Air,No,No,Yes,637644
+603,2434,3,1.5,1980,8858.0,1,Townhouse,Downtown,Fair,Oil,Central Air,No,No,No,606102
+604,2677,4,1.0,1984,8759.0,3,Single Family,Downtown,Good,Gas,Central Air,No,No,Yes,749804
+605,2206,3,1.0,2009,6887.0,1,Condo,Rural,Excellent,Heat Pump,Central Air,No,No,No,588565
+606,2938,1,2.0,1955,7739.0,1,Single Family,Suburban,Good,Gas,Window Units,No,No,Yes,666476
+607,1613,4,1.0,2018,11338.0,2,Single Family,Rural,Good,Gas,None,No,Yes,Yes,683844
+608,1377,1,1.5,2007,6114.0,1,Single Family,Suburban,Poor,Gas,Central Air,No,No,No,544682
+609,1110,4,2.0,1998,11229.0,1,Townhouse,Suburban,Fair,Gas,Central Air,No,Yes,Yes,561692
+610,2748,2,1.0,1972,7355.0,1,Single Family,Downtown,Good,Electric,Window Units,No,Yes,No,706360
+611,2327,5,3.0,1983,10650.0,2,Townhouse,Suburban,Good,Gas,Central Air,No,No,Yes,744871
+612,1972,3,1.5,1975,5186.0,2,Condo,Suburban,Good,Gas,Central Air,No,Yes,No,592376
+613,2139,3,1.5,1996,9171.0,1,Condo,Suburban,Fair,Gas,Central Air,No,No,No,580304
+614,1437,2,1.5,1954,6526.0,1,Single Family,Downtown,Fair,Gas,Central Air,No,Yes,No,516307
+615,3222,3,1.5,1969,5169.0,1,Single Family,Rural,Fair,Gas,Window Units,No,Yes,Yes,728921
+616,2064,4,1.0,1955,8437.0,1,Townhouse,Downtown,Good,Gas,Window Units,No,No,Yes,574645
+617,2054,5,2.0,2019,10018.0,1,Single Family,Rural,Good,Gas,Central Air,No,No,No,708516
+618,2362,3,3.0,2008,6310.0,2,Single Family,Downtown,Good,Electric,Central Air,No,No,No,707126
+619,2240,3,1.5,2013,5001.0,1,Single Family,Suburban,Good,Electric,Central Air,No,No,No,645548
+620,2111,4,2.0,1967,7816.0,1,Single Family,Suburban,Good,Electric,Central Air,No,No,Yes,663940
+621,1604,4,2.0,1953,7825.0,0,Single Family,Suburban,Excellent,Gas,Central Air,No,No,No,600511
+622,2235,3,2.5,1966,9096.0,1,Single Family,Suburban,Excellent,Oil,Central Air,No,No,Yes,691053
+623,2941,3,1.5,1963,9899.0,2,Single Family,Suburban,Fair,Heat Pump,Central Air,No,No,Yes,745091
+624,2672,3,1.5,1962,7881.0,1,Single Family,Suburban,Fair,Oil,Window Units,No,No,Yes,636025
+625,2796,3,1.5,1956,11711.0,0,Single Family,Suburban,Good,Electric,Central Air,No,Yes,Yes,697599
+626,1744,1,2.0,1993,8448.0,1,Single Family,Suburban,Good,Gas,Central Air,No,No,No,573806
+627,1505,3,2.5,1964,7307.0,1,Single Family,Rural,Good,Heat Pump,Central Air,No,No,Yes,576353
+628,1937,3,1.0,1968,4776.0,0,Single Family,Downtown,Fair,Gas,Central Air,No,No,No,584189
+629,2027,4,1.5,2012,7474.0,1,Single Family,Suburban,Fair,Gas,Central Air,No,No,Yes,684278
+630,2547,1,2.5,1984,7327.0,1,Single Family,Suburban,Fair,Gas,Central Air,No,No,Yes,669626
+631,1153,3,2.5,1984,9920.0,1,Single Family,Suburban,Fair,Gas,Central Air,Yes,No,Yes,591538
+632,2764,3,3.0,1968,8924.0,1,Townhouse,Suburban,Good,Heat Pump,Window Units,No,No,Yes,665868
+633,1920,3,2.0,1969,5641.0,1,Single Family,Suburban,Good,Gas,None,No,Yes,Yes,606974
+634,1786,1,1.5,1984,8344.0,3,Townhouse,Downtown,Good,Gas,Central Air,No,Yes,No,590070
+635,1493,3,2.0,1981,9343.0,1,Single Family,Downtown,Good,Electric,Central Air,Yes,No,No,614084
+636,1172,3,2.0,1997,,1,Single Family,Downtown,Fair,Gas,Central Air,No,No,Yes,631415
+637,2411,3,1.0,1993,9775.0,1,Single Family,Suburban,Good,Gas,Central Air,Yes,Yes,Yes,718354
+638,2036,3,2.0,1973,9521.0,1,Single Family,Suburban,Excellent,Electric,Central Air,No,Yes,Yes,693779
+639,1355,3,2.0,2010,8120.0,2,Single Family,Rural,Good,Electric,Window Units,No,No,No,603468
+640,1352,4,1.0,1966,8776.0,1,Single Family,Suburban,Poor,Gas,Central Air,No,No,Yes,540530
+641,1832,2,2.0,2020,10499.0,2,Single Family,Downtown,Good,Electric,Central Air,No,No,Yes,708458
+642,2834,4,2.0,1999,5334.0,0,Single Family,Rural,Good,Gas,Central Air,No,No,Yes,733324
+643,1870,3,3.0,2014,7301.0,1,Single Family,Rural,Good,Gas,None,No,Yes,No,655578
+644,1248,1,1.0,1981,6454.0,2,Condo,Suburban,Excellent,Gas,Central Air,No,No,Yes,523642
+645,1877,1,1.5,1985,8758.0,1,Single Family,Suburban,Good,Gas,Central Air,No,Yes,Yes,617421
+646,1863,3,2.0,1962,10460.0,1,Single Family,Rural,Fair,Oil,Central Air,No,Yes,No,633750
+647,651,4,1.5,2019,6806.0,1,Single Family,Suburban,Good,Oil,Central Air,No,No,No,537452
+648,1972,4,2.0,2007,3219.0,2,Single Family,Rural,Fair,Gas,Central Air,No,No,No,650120
+649,1884,4,2.0,1963,7175.0,0,Townhouse,Downtown,Good,Gas,Central Air,No,Yes,Yes,579723
+650,2348,3,1.0,1986,9826.0,2,Single Family,Downtown,Excellent,Electric,Window Units,No,Yes,No,798901
+651,2924,3,2.0,2017,9075.0,0,Single Family,Suburban,Fair,Gas,Central Air,No,No,No,711702
+652,2563,2,2.0,1989,8856.0,2,Townhouse,Suburban,Good,Gas,None,No,No,No,648565
+653,1865,3,1.5,2008,7440.0,1,Single Family,Rural,Good,Heat Pump,Central Air,No,Yes,No,640325
+654,1446,3,2.5,1965,5441.0,2,Single Family,Rural,Fair,Electric,Window Units,No,No,No,528322
+655,3286,1,2.5,2011,,1,Condo,Suburban,Good,Heat Pump,Central Air,No,Yes,Yes,742263
+656,2029,2,2.0,1953,6331.0,2,Single Family,Downtown,Fair,Gas,Central Air,No,No,Yes,625979
+657,2006,3,2.0,1994,12368.0,0,Single Family,Rural,Excellent,Electric,Central Air,No,No,No,717551
+658,1987,4,1.5,1977,9141.0,0,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,617138
+659,2099,5,2.5,2015,6838.0,1,Single Family,Downtown,Excellent,Gas,Central Air,No,No,Yes,788851
+660,1927,5,2.0,1980,6777.0,0,Single Family,Suburban,Fair,Gas,Central Air,No,No,Yes,594863
+661,1713,3,2.0,1952,7814.0,0,Townhouse,Suburban,Good,Gas,Central Air,No,No,No,532065
+662,1726,3,2.5,1957,7520.0,2,Single Family,Suburban,Fair,Gas,Central Air,No,Yes,Yes,595790
+663,1983,3,1.5,1973,10233.0,3,Townhouse,Suburban,Fair,Gas,Central Air,No,Yes,No,599003
+664,1728,4,2.5,1964,8372.0,1,Condo,Suburban,Good,Gas,Central Air,No,No,No,546631
+665,1643,2,1.0,1992,6536.0,2,Single Family,Rural,Good,Electric,Central Air,No,Yes,Yes,592019
+666,2053,3,1.5,1980,11780.0,1,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,665397
+667,1872,4,1.5,2022,8098.0,1,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,703115
+668,2751,3,3.0,1994,9537.0,2,Condo,Downtown,Good,Gas,Window Units,Yes,No,Yes,771814
+669,674,3,2.5,2015,6783.0,1,Townhouse,Suburban,Good,Gas,Window Units,No,No,Yes,504416
+670,2545,3,2.0,1957,8726.0,3,Single Family,Downtown,Poor,Electric,Central Air,No,No,Yes,726707
+671,2623,2,2.0,2020,8622.0,1,Single Family,Downtown,Fair,Gas,Central Air,No,No,No,755760
+672,963,3,2.0,2006,4220.0,1,Single Family,Suburban,Fair,Electric,Central Air,No,Yes,Yes,544141
+673,1828,3,2.5,1979,12030.0,0,Condo,Downtown,Fair,Gas,Central Air,No,No,No,618457
+674,1814,1,1.5,1967,10581.0,0,Single Family,Suburban,Good,Gas,Central Air,No,Yes,Yes,603514
+675,1296,1,1.5,2018,7205.0,0,Single Family,Downtown,Good,Oil,Central Air,No,Yes,No,595275
+676,1611,4,1.0,1988,5795.0,3,Townhouse,Suburban,Fair,Electric,Central Air,No,No,Yes,544872
+677,1444,2,2.0,2009,8695.0,2,Single Family,Downtown,Good,Gas,Central Air,No,Yes,No,628508
+678,2876,3,2.0,1992,,2,Single Family,Downtown,Poor,Oil,Central Air,No,Yes,No,775254
+679,2467,2,1.5,1994,8711.0,1,Single Family,Downtown,Good,Gas,Window Units,No,Yes,No,671838
+680,2635,5,1.0,1972,8383.0,1,Single Family,Rural,Good,Oil,Central Air,No,No,Yes,734313
+681,2360,2,2.5,2018,9012.0,0,Single Family,Rural,Fair,Electric,Central Air,No,No,No,678814
+682,1435,3,1.0,1955,10894.0,1,Condo,Downtown,Poor,Electric,Window Units,No,Yes,Yes,548648
+683,1737,4,2.0,2005,9136.0,1,Single Family,Suburban,Good,Heat Pump,Central Air,No,No,Yes,642839
+684,2244,4,3.0,1953,5900.0,2,Single Family,Suburban,Fair,Gas,Central Air,No,Yes,Yes,655362
+685,1388,2,1.5,1972,10725.0,1,Single Family,Rural,Good,Electric,Central Air,No,No,Yes,542344
+686,2356,4,1.5,1955,11281.0,0,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,661389
+687,1879,3,2.0,1981,14304.0,0,Single Family,Suburban,Fair,Gas,Central Air,No,No,No,638888
+688,1812,3,2.5,1967,5753.0,0,Townhouse,Downtown,Good,Gas,Central Air,No,No,Yes,575200
+689,2355,2,2.0,1964,8485.0,1,Townhouse,Suburban,Good,Gas,Central Air,No,No,Yes,598859
+690,2222,1,3.0,1989,3835.0,2,Single Family,Rural,Good,Electric,Window Units,No,Yes,Yes,653634
+691,1819,4,1.0,2022,9106.0,1,Single Family,Suburban,Good,Gas,Central Air,No,No,No,649354
+692,2579,3,2.0,1955,6903.0,2,Single Family,Downtown,Good,Gas,None,No,Yes,Yes,747071
+693,1459,3,2.0,2012,11846.0,1,Condo,Downtown,Good,Gas,Central Air,No,No,Yes,626225
+694,2307,4,2.5,2016,6450.0,1,Single Family,Suburban,Excellent,Gas,Window Units,No,Yes,No,780140
+695,2296,4,1.0,1960,4621.0,0,Townhouse,Suburban,Poor,Heat Pump,Central Air,No,No,Yes,568585
+696,1845,2,2.5,1992,7057.0,2,Single Family,Suburban,Good,Gas,Central Air,No,Yes,Yes,616721
+697,2163,3,2.0,1966,4049.0,2,Condo,Rural,Fair,Electric,Central Air,No,Yes,Yes,571651
+698,1374,2,1.5,1953,9502.0,0,Townhouse,Downtown,Good,Electric,Central Air,No,No,No,487007
+699,2462,4,1.0,2012,3869.0,1,Townhouse,Suburban,Good,Electric,Central Air,Yes,No,No,642326
+700,1907,3,2.5,2017,8056.0,1,Single Family,Rural,Good,Gas,Central Air,Yes,No,Yes,706776
+701,1738,5,1.0,1990,,1,Single Family,Suburban,Good,Oil,Window Units,No,No,Yes,641548
+702,2524,1,1.5,1954,7359.0,2,Single Family,Downtown,Good,Gas,Window Units,No,No,Yes,672715
+703,1647,1,1.5,1981,,1,Townhouse,Suburban,Good,Oil,Central Air,No,Yes,No,547307
+704,1295,2,2.5,2019,8721.0,1,Single Family,Rural,Good,Gas,Central Air,No,Yes,No,598998
+705,1221,2,2.0,1984,6273.0,0,Condo,Downtown,Excellent,Gas,Central Air,No,Yes,Yes,556320
+706,2303,2,2.0,1971,7937.0,0,Townhouse,Rural,Good,Gas,Central Air,No,No,Yes,579827
+707,1359,5,1.5,2014,8036.0,0,Single Family,Suburban,Excellent,Electric,Window Units,No,Yes,No,643984
+708,2877,2,2.0,1971,8945.0,0,Townhouse,Downtown,Excellent,Gas,Central Air,No,Yes,No,749590
+709,959,2,2.0,1960,5266.0,2,Single Family,Suburban,Fair,Gas,Window Units,Yes,Yes,No,528037
+710,2848,4,2.5,1952,9185.0,2,Single Family,Suburban,Good,Gas,Central Air,Yes,Yes,No,763135
+711,2105,3,2.5,1958,2591.0,0,Single Family,Suburban,Good,Heat Pump,Central Air,No,No,No,601173
+712,1951,4,1.0,2009,6740.0,2,Single Family,Suburban,Good,Oil,Central Air,No,Yes,Yes,632398
+713,1727,1,2.0,1963,7023.0,0,Townhouse,Rural,Fair,Gas,Central Air,No,No,Yes,507577
+714,2199,3,1.0,1967,9266.0,1,Single Family,Downtown,Good,Electric,Central Air,No,No,Yes,632017
+715,1981,1,2.0,2022,8045.0,1,Single Family,Suburban,Fair,Gas,Window Units,No,No,No,625179
+716,2551,1,1.5,1972,5188.0,1,Single Family,Suburban,Good,Gas,Central Air,No,Yes,Yes,636805
+717,2057,5,1.5,1996,6030.0,1,Townhouse,Suburban,Poor,Heat Pump,Central Air,No,No,Yes,630084
+718,2075,2,1.5,2018,,1,Single Family,Suburban,Fair,Gas,Central Air,No,Yes,Yes,677048
+719,1818,3,2.0,1996,7841.0,1,Townhouse,Downtown,,Gas,Central Air,No,No,Yes,638907
+720,1971,3,1.5,1979,6841.0,3,Single Family,Suburban,Excellent,Gas,Central Air,No,Yes,No,668267
+721,2153,3,2.0,1974,7038.0,0,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,643672
+722,1144,4,1.5,1977,9392.0,0,Single Family,Downtown,Good,Gas,Central Air,No,No,Yes,581604
+723,1325,1,1.0,1974,6964.0,0,Single Family,Rural,Good,Gas,Window Units,No,No,No,443614
+724,2371,3,2.0,2007,7823.0,1,Townhouse,Rural,Fair,Gas,Central Air,No,No,Yes,629842
+725,2085,5,1.5,1990,12339.0,0,Single Family,Suburban,Excellent,Gas,Window Units,Yes,No,No,737197
+726,1908,3,1.5,1974,5152.0,2,Townhouse,Downtown,Excellent,Gas,Central Air,No,No,No,637805
+727,2009,5,2.0,1997,4296.0,1,Single Family,Suburban,Good,Gas,Window Units,No,Yes,No,668654
+728,2173,1,1.5,1959,9567.0,1,Single Family,Downtown,Excellent,Gas,Central Air,No,No,No,635784
+729,1730,3,1.0,1960,6642.0,1,Condo,Downtown,Good,Electric,Central Air,Yes,No,Yes,563403
+730,1610,2,1.5,1970,7363.0,0,Townhouse,Suburban,Fair,Gas,None,No,No,Yes,538171
+731,2097,4,2.5,1994,6437.0,0,Single Family,Downtown,Good,Electric,Central Air,No,Yes,Yes,713109
+732,1510,5,2.0,1956,7480.0,1,Single Family,Downtown,Excellent,Electric,Central Air,No,No,Yes,662853
+733,2204,2,2.0,2013,11197.0,1,Single Family,Downtown,Good,Electric,Central Air,No,Yes,Yes,744219
+734,1148,3,2.0,2013,9604.0,1,Single Family,Downtown,Good,Gas,Window Units,No,Yes,Yes,651087
+735,2514,2,1.0,1951,9724.0,0,Townhouse,Downtown,Excellent,Gas,Central Air,No,Yes,No,636896
+736,2236,3,1.5,1991,5167.0,3,Townhouse,Rural,Good,Gas,Central Air,No,Yes,Yes,640486
+737,2128,3,2.0,2003,5697.0,0,Single Family,Downtown,Fair,Electric,Central Air,Yes,No,Yes,697707
+738,2491,5,1.0,1965,2321.0,2,Condo,Downtown,Fair,Gas,None,No,No,Yes,655091
+739,2832,3,1.5,1967,6381.0,2,Single Family,Downtown,Fair,Oil,Central Air,No,Yes,Yes,745498
+740,2507,3,1.5,2008,9913.0,1,Single Family,Rural,Excellent,Oil,Central Air,No,No,No,752904
+741,1079,2,1.5,1965,9033.0,0,Single Family,Suburban,Poor,Gas,Central Air,No,No,Yes,482881
+742,1360,2,3.0,1955,7556.0,0,Single Family,Suburban,Fair,Gas,Central Air,No,No,No,502354
+743,1687,2,1.0,2006,7955.0,1,Single Family,Rural,Fair,Electric,Central Air,No,No,Yes,613384
+744,2013,2,2.0,1996,6622.0,1,Single Family,Suburban,Excellent,Gas,Central Air,No,No,Yes,678822
+745,2258,4,1.0,1997,8409.0,2,Single Family,Suburban,Fair,Gas,Central Air,No,Yes,Yes,705545
+746,1637,3,3.0,1991,9531.0,2,Single Family,Downtown,Fair,Oil,Central Air,No,No,No,651227
+747,2093,3,1.0,2009,4768.0,1,Townhouse,Suburban,Fair,Gas,Central Air,No,No,Yes,605114
+748,1622,2,1.5,1953,8599.0,0,Single Family,Suburban,Excellent,Heat Pump,Central Air,No,No,Yes,576038
+749,1694,4,2.0,1951,9864.0,1,Single Family,Suburban,Fair,Electric,Window Units,No,No,Yes,597007
+750,1296,4,2.0,2008,7169.0,2,Townhouse,Downtown,Poor,Electric,Central Air,No,No,No,589164
+751,1538,1,1.5,1976,9401.0,1,Condo,Suburban,Good,Gas,Central Air,No,No,No,505264
+752,1324,4,1.5,1976,13629.0,0,Condo,Downtown,Good,Gas,Window Units,No,Yes,Yes,571069
+753,1512,3,1.5,2021,7791.0,2,Single Family,Downtown,Fair,Gas,Central Air,No,Yes,Yes,710348
+754,2526,1,1.5,1956,8786.0,1,Single Family,Suburban,Good,Gas,Central Air,No,No,No,613794
+755,1525,3,1.5,2012,6523.0,2,Single Family,Rural,Good,Gas,Central Air,No,No,No,571256
+756,3316,3,1.5,1995,8362.0,1,Single Family,Suburban,Good,Gas,Central Air,No,No,No,760791
+757,2246,2,1.5,2012,8920.0,0,Condo,Suburban,Fair,Gas,Window Units,Yes,No,No,608540
+758,2092,5,1.5,1961,8389.0,2,Single Family,Downtown,Excellent,Gas,Window Units,Yes,No,No,750826
+759,1570,4,2.0,1962,5960.0,1,Single Family,Downtown,,Electric,Central Air,No,No,Yes,607942
+760,2350,3,3.0,1992,8412.0,1,Single Family,Downtown,Good,Gas,Central Air,No,No,No,715545
+761,1712,3,2.0,1966,10924.0,1,Single Family,Suburban,Fair,Gas,Central Air,No,Yes,No,583588
+762,2061,3,1.0,2012,8897.0,0,Townhouse,Downtown,Good,Electric,Central Air,No,No,Yes,647386
+763,3280,3,1.0,1985,9923.0,1,Single Family,Downtown,Fair,Heat Pump,Central Air,No,No,Yes,764492
+764,1951,3,3.0,1957,7525.0,0,Single Family,Suburban,Fair,Gas,Central Air,No,Yes,No,587549
+765,2574,1,1.5,2018,9499.0,1,Single Family,Downtown,Excellent,Gas,Central Air,No,Yes,Yes,800242
+766,1648,3,1.0,1985,8558.0,1,Single Family,Suburban,Good,Gas,Central Air,No,No,No,599646
+767,1982,4,2.0,1977,6098.0,2,Single Family,Suburban,Excellent,Heat Pump,Window Units,No,Yes,Yes,703638
+768,2885,3,2.0,1996,8637.0,2,Single Family,Suburban,Good,Electric,Central Air,No,No,Yes,766704
+769,1686,1,2.0,1979,6016.0,0,Single Family,Suburban,Good,Electric,Central Air,No,No,Yes,574146
+770,2906,4,1.5,1972,6734.0,1,Townhouse,Suburban,Fair,Gas,Central Air,No,No,Yes,682563
+771,2353,2,1.0,1965,8378.0,1,Condo,Downtown,Fair,Gas,Central Air,No,No,Yes,595965
+772,1718,2,3.0,1963,8594.0,0,Condo,Suburban,Excellent,Gas,Central Air,No,No,Yes,565949
+773,2316,2,1.5,2020,5621.0,2,Condo,Rural,Excellent,Electric,Central Air,Yes,No,No,640554
+774,2486,3,2.0,2001,10107.0,2,Single Family,Downtown,Good,Electric,Central Air,Yes,No,No,754878
+775,2310,4,2.0,1986,9144.0,0,Single Family,Downtown,Good,Heat Pump,Central Air,No,No,Yes,736281
+776,1214,3,2.0,1978,6590.0,1,Single Family,Rural,Good,Gas,Window Units,No,No,Yes,524866
+777,1636,2,1.5,2016,4924.0,0,Townhouse,Suburban,Fair,Gas,Central Air,No,No,Yes,548224
+778,1876,4,1.5,1964,7710.0,1,Condo,Suburban,Fair,Gas,Central Air,No,Yes,Yes,556146
+779,1962,4,2.0,1996,7108.0,0,Townhouse,Suburban,Good,Electric,Central Air,No,No,Yes,599861
+780,2310,4,2.5,1995,8226.0,3,Single Family,Downtown,Fair,Electric,Window Units,Yes,No,Yes,796285
+781,2088,2,2.5,2001,7273.0,2,Condo,Suburban,Good,Gas,Central Air,No,Yes,Yes,617975
+782,1332,3,1.0,1968,3985.0,1,Single Family,Suburban,Fair,Gas,Central Air,No,Yes,Yes,534534
+783,2190,5,1.0,1970,7223.0,1,Single Family,Downtown,Good,Gas,Central Air,No,Yes,Yes,686813
+784,2305,4,2.5,2013,7388.0,2,Single Family,Suburban,Excellent,Gas,Central Air,No,No,No,774542
+785,2279,1,2.0,1986,9267.0,1,Single Family,Suburban,Fair,Oil,Central Air,No,No,Yes,649941
+786,2540,1,2.5,1976,6603.0,0,Single Family,Suburban,Good,Gas,Central Air,No,Yes,No,644145
+787,2416,3,1.5,2004,11357.0,1,Single Family,Downtown,Fair,Electric,Central Air,No,No,No,748551
+788,2229,5,2.0,1978,4176.0,2,Single Family,Suburban,Good,Gas,Central Air,No,No,No,670026
+789,1964,3,2.0,1969,10622.0,1,Single Family,Suburban,Excellent,Electric,Central Air,No,Yes,No,664702
+790,1169,3,2.0,1974,7551.0,1,Townhouse,Suburban,Excellent,Gas,Window Units,No,No,Yes,541937
+791,2214,2,1.5,2019,9719.0,2,Single Family,Suburban,Good,Oil,Central Air,No,No,Yes,687477
+792,2103,3,1.0,2012,8159.0,2,Single Family,Downtown,Good,Gas,Central Air,No,No,Yes,699701
+793,2135,4,2.0,1985,10279.0,2,Townhouse,Suburban,Good,Gas,Central Air,No,Yes,No,685385
+794,1361,3,1.5,1951,7225.0,0,Condo,Suburban,Good,Gas,Window Units,Yes,Yes,No,495642
+795,1459,4,1.5,1971,5802.0,1,Single Family,Downtown,Good,Gas,Central Air,No,Yes,No,550191
+796,2526,5,3.0,1965,10841.0,2,Single Family,Suburban,Fair,Gas,Central Air,No,No,Yes,735949
+797,1980,2,1.5,1967,7773.0,2,Single Family,Suburban,Good,Gas,Central Air,Yes,No,No,570217
+798,2340,3,2.5,2018,8443.0,1,Single Family,Suburban,Fair,Heat Pump,Central Air,No,No,Yes,712619
+799,2014,2,1.0,2003,,0,Single Family,Downtown,Good,Gas,Central Air,Yes,No,Yes,641998
+800,2014,4,2.0,1979,5936.0,2,Townhouse,Suburban,Good,Electric,Central Air,No,Yes,No,577648
+801,2469,3,3.0,1994,9190.0,2,Single Family,Rural,Excellent,Heat Pump,Central Air,No,No,Yes,751435
+802,1741,3,1.0,1968,6820.0,0,Townhouse,Suburban,Good,Gas,Window Units,No,No,No,498883
+803,2048,4,1.0,1983,7735.0,1,Townhouse,Rural,Excellent,Electric,Central Air,No,No,Yes,636485
+804,1768,3,1.5,1962,8144.0,0,Condo,Rural,Good,Gas,Central Air,No,No,No,510579
+805,1782,5,1.0,1992,4999.0,1,Single Family,Downtown,Good,Gas,Window Units,No,No,Yes,648103
+806,1845,3,2.0,2011,6442.0,0,Condo,Suburban,Good,Gas,Window Units,No,Yes,No,549824
+807,2111,2,2.5,1971,,1,Single Family,Suburban,Fair,Heat Pump,Central Air,No,Yes,No,650880
+808,1760,3,1.5,2001,9772.0,1,Single Family,Rural,Good,Gas,None,No,Yes,No,664304
+809,2627,4,1.5,2001,7874.0,1,Single Family,Downtown,Good,Gas,Central Air,No,Yes,Yes,776254
+810,1552,3,1.5,1985,8486.0,1,Single Family,Rural,Excellent,Gas,Central Air,No,No,No,609111
+811,1906,4,2.0,2022,7411.0,2,Townhouse,Suburban,Fair,Oil,Window Units,No,Yes,Yes,626093
+812,1780,5,1.0,1968,10713.0,1,Single Family,Suburban,Excellent,Gas,Central Air,No,Yes,Yes,671403
+813,2723,2,2.0,1987,7599.0,0,Single Family,Downtown,Good,Electric,Central Air,No,No,Yes,726355
+814,2098,5,2.0,2019,8463.0,2,Single Family,Downtown,Good,Electric,Central Air,No,No,No,757577
+815,2515,2,2.0,2006,10292.0,0,Single Family,Suburban,Good,Electric,Central Air,No,No,Yes,704177
+816,1257,2,1.5,1969,6445.0,3,Single Family,Downtown,Good,Heat Pump,Central Air,Yes,No,No,587922
+817,2133,2,2.0,1958,11117.0,2,Townhouse,Rural,Fair,Oil,Central Air,No,No,No,581038
+818,2444,4,1.0,1981,4939.0,1,Single Family,Downtown,Excellent,Gas,Window Units,No,No,Yes,750225
+819,2041,3,1.0,1953,11259.0,3,Single Family,Suburban,Good,Gas,Central Air,Yes,Yes,No,635225
+820,2532,2,2.5,1999,7254.0,0,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,691948
+821,1741,3,2.0,1954,7514.0,1,Single Family,Suburban,Excellent,Gas,Window Units,No,No,No,593702
+822,2704,3,1.0,1969,4219.0,1,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,655843
+823,3149,1,1.5,1986,7090.0,1,Single Family,Suburban,Good,Gas,Central Air,No,Yes,Yes,732967
+824,1818,4,1.5,1971,5920.0,2,Condo,Downtown,Good,Gas,Central Air,Yes,No,Yes,650975
+825,1777,4,1.5,2007,6784.0,0,Single Family,Downtown,Good,Heat Pump,Central Air,No,Yes,Yes,647425
+826,2726,3,1.5,2017,7725.0,1,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,742855
+827,2789,5,1.0,1993,9915.0,1,Single Family,Suburban,Fair,Heat Pump,Central Air,No,No,Yes,776099
+828,1738,3,1.5,1983,8415.0,1,Townhouse,Suburban,Good,Gas,Central Air,No,No,Yes,569051
+829,1789,5,2.0,1991,8615.0,1,Single Family,Suburban,Good,Electric,Central Air,No,No,Yes,674633
+830,1859,3,2.0,1958,5808.0,1,Single Family,Suburban,Good,Oil,Central Air,No,No,Yes,599693
+831,1327,3,2.0,1956,6238.0,2,Townhouse,Suburban,Excellent,Gas,Window Units,No,No,No,550856
+832,1540,2,1.0,2017,11597.0,0,Single Family,Downtown,Excellent,Gas,Central Air,No,No,Yes,657235
+833,1497,4,3.0,1968,6529.0,2,Single Family,Suburban,Good,Gas,Central Air,No,No,No,562626
+834,1616,3,2.5,1980,11312.0,1,Single Family,Rural,Fair,Gas,Central Air,No,Yes,No,618033
+835,1982,2,2.5,1984,7513.0,2,Single Family,Rural,Fair,Heat Pump,None,No,No,No,576541
+836,2117,1,2.5,2006,8004.0,2,Single Family,Suburban,Excellent,Oil,Central Air,No,Yes,No,732332
+837,2775,3,2.5,2010,10140.0,1,Single Family,Suburban,Fair,Gas,Window Units,No,No,Yes,787614
+838,1500,3,2.0,1980,10543.0,1,Single Family,Rural,Fair,Gas,Central Air,No,No,No,569047
+839,2492,4,1.5,2002,7778.0,2,Single Family,Suburban,Good,Gas,Window Units,No,No,Yes,712674
+840,1893,4,2.0,1981,7223.0,1,Single Family,Downtown,Fair,Gas,Central Air,No,No,No,644968
+841,1975,1,2.0,2015,,3,Condo,Downtown,Good,Electric,Central Air,Yes,Yes,No,657980
+842,2337,4,2.0,2008,8675.0,1,Townhouse,Suburban,Good,Gas,Central Air,Yes,Yes,Yes,707618
+843,1438,2,2.0,1959,9782.0,0,Townhouse,Rural,Good,Gas,Central Air,No,No,No,482874
+844,2191,4,1.0,1951,8008.0,1,Single Family,Suburban,Good,Gas,Central Air,No,Yes,Yes,631687
+845,2083,4,1.5,2015,9237.0,3,Single Family,Downtown,Good,Gas,Central Air,No,No,Yes,758348
+846,2246,3,2.5,2009,11276.0,1,Single Family,Downtown,Good,Electric,Central Air,No,Yes,Yes,768898
+847,2144,4,2.0,1966,8762.0,2,Single Family,Suburban,Fair,Gas,Central Air,No,No,No,632070
+848,3227,3,2.0,1965,8623.0,2,Condo,Rural,Fair,Heat Pump,Central Air,No,Yes,No,727517
+849,1681,3,1.5,1965,4962.0,1,Single Family,Suburban,Fair,Oil,Central Air,No,No,No,515744
+850,1734,4,1.5,1995,2738.0,0,Single Family,Suburban,Fair,Gas,Central Air,No,No,Yes,590246
+851,1688,3,2.5,1988,8776.0,2,Single Family,Downtown,Fair,Gas,Central Air,Yes,No,Yes,710018
+852,1722,3,2.0,1980,7810.0,1,Single Family,Rural,Excellent,Oil,Central Air,No,Yes,No,636788
+853,1681,3,2.0,1950,6970.0,2,Single Family,Suburban,Good,Heat Pump,Central Air,No,No,Yes,584141
+854,2594,4,1.5,1960,8487.0,1,Single Family,Downtown,Good,Oil,Central Air,No,Yes,No,717701
+855,2710,3,2.0,1953,7879.0,1,Single Family,Suburban,Fair,Gas,Central Air,No,No,Yes,661184
+856,1714,2,1.5,2020,10255.0,2,Townhouse,Downtown,Good,Heat Pump,Central Air,No,No,Yes,621225
+857,1583,4,2.0,1975,8172.0,1,Single Family,Downtown,Fair,Gas,Central Air,No,No,Yes,631029
+858,2235,4,1.5,1999,6506.0,1,Condo,Downtown,Excellent,Electric,Central Air,No,No,No,673995
+859,1723,2,1.5,1961,9980.0,1,Townhouse,Downtown,Good,Heat Pump,None,No,No,Yes,599233
+860,2316,2,2.0,2014,7565.0,1,Single Family,Suburban,Fair,Gas,Central Air,No,No,Yes,668162
+861,2101,2,2.5,1996,9053.0,1,Townhouse,Suburban,Excellent,Heat Pump,Central Air,No,No,Yes,681463
+862,1242,3,1.0,2002,7045.0,2,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,558568
+863,2773,3,2.5,2020,6700.0,1,Condo,Suburban,Good,Heat Pump,Central Air,No,No,Yes,684067
+864,2897,4,1.5,1951,8168.0,1,Single Family,Downtown,Good,Gas,Central Air,No,No,Yes,733596
+865,1693,3,1.5,1973,8025.0,1,Single Family,Downtown,Fair,Heat Pump,Central Air,No,Yes,No,625406
+866,1806,3,1.0,1953,8959.0,1,Single Family,Suburban,Good,Gas,None,No,No,Yes,591805
+867,2142,3,1.5,1968,7462.0,1,Single Family,Suburban,Good,Electric,Window Units,No,No,No,635755
+868,2167,4,2.0,1975,4327.0,2,Condo,Downtown,Excellent,Gas,Central Air,No,Yes,No,737239
+869,2329,3,1.0,1989,7134.0,2,Single Family,Rural,Fair,Gas,Central Air,No,Yes,Yes,682580
+870,3005,5,1.5,1999,9587.0,1,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,769173
+871,1911,3,2.5,1992,7405.0,1,Single Family,Rural,Good,Electric,Central Air,Yes,No,No,659182
+872,1600,2,1.0,2016,7507.0,0,Condo,Suburban,Fair,Gas,Window Units,No,No,Yes,528210
+873,1310,3,2.0,1961,9972.0,1,Single Family,Downtown,Good,Gas,Central Air,No,No,Yes,605379
+874,1634,3,1.5,2016,6576.0,1,Single Family,Suburban,Fair,Gas,Central Air,No,No,Yes,591336
+875,1983,3,2.0,1976,4914.0,1,Single Family,Downtown,Good,Heat Pump,Central Air,No,No,No,671236
+876,2897,1,1.5,2003,7678.0,1,Townhouse,Suburban,Good,Gas,Central Air,No,No,Yes,673210
+877,1741,2,1.0,2015,7031.0,0,Single Family,Downtown,Excellent,Gas,Window Units,No,No,No,620574
+878,2111,4,1.0,1998,6067.0,0,Single Family,Rural,Fair,Gas,Central Air,No,Yes,No,620254
+879,1991,2,1.0,1965,7649.0,3,Single Family,Downtown,Fair,Gas,Central Air,No,No,Yes,648666
+880,2594,4,1.0,1951,8983.0,1,Townhouse,Rural,Good,Gas,Central Air,No,Yes,Yes,653841
+881,3263,2,2.0,2009,7981.0,1,Single Family,Rural,Good,Gas,Window Units,No,No,Yes,749760
+882,1734,3,2.5,2003,8613.0,0,Single Family,Suburban,Fair,Oil,Central Air,No,No,Yes,648725
+883,1755,3,2.5,1979,11626.0,0,Single Family,Suburban,Good,Electric,Window Units,No,Yes,Yes,603683
+884,2522,3,2.0,1987,7314.0,2,Townhouse,Suburban,Fair,Gas,Central Air,No,No,Yes,648983
+885,2340,3,1.0,1977,8556.0,1,Condo,Rural,Good,Gas,Window Units,No,No,Yes,621020
+886,2923,2,1.5,1974,,1,Single Family,Suburban,Fair,Electric,Central Air,No,No,Yes,680174
+887,2291,1,1.5,1959,6307.0,1,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,564496
+888,1820,3,1.5,2009,6830.0,2,Single Family,Suburban,Good,Electric,Central Air,No,No,No,623074
+889,2295,3,2.0,1991,7042.0,0,Single Family,Rural,Good,Gas,Central Air,No,No,Yes,648615
+890,2554,5,2.0,1989,8718.0,0,Single Family,Suburban,Poor,Gas,Central Air,No,No,No,715581
+891,2410,4,1.5,1991,12698.0,1,Single Family,Suburban,Good,Gas,Window Units,No,No,Yes,697783
+892,2253,4,1.5,1996,6567.0,1,Single Family,Suburban,Good,Oil,Central Air,No,No,Yes,658682
+893,2533,4,2.5,1986,7166.0,1,Condo,Rural,Good,Gas,Central Air,No,No,Yes,624709
+894,2584,3,2.0,1971,7873.0,1,Single Family,Suburban,Good,Gas,Central Air,No,Yes,Yes,702163
+895,2691,2,1.5,2006,8791.0,1,Single Family,Downtown,Fair,Gas,Central Air,No,No,Yes,735836
+896,2324,5,2.5,1976,8527.0,2,Single Family,Suburban,Fair,Electric,Window Units,No,No,No,672267
+897,1916,3,3.0,1990,10568.0,1,Single Family,Rural,Excellent,Heat Pump,Central Air,No,No,No,703315
+898,2073,3,1.5,1983,3147.0,0,Single Family,Suburban,Poor,Gas,None,No,No,Yes,621576
+899,2603,2,1.5,1981,3226.0,1,Single Family,Rural,Fair,Gas,Window Units,No,No,Yes,643118
+900,1591,3,2.0,2015,7008.0,3,Single Family,Downtown,Fair,Heat Pump,Central Air,No,Yes,Yes,694503
+901,2184,3,2.5,1961,10194.0,1,Townhouse,Suburban,Good,Gas,Central Air,Yes,No,Yes,635836
+902,1803,4,2.5,1989,4868.0,2,Condo,Suburban,Fair,Gas,Window Units,No,No,Yes,569553
+903,2014,3,1.0,2022,1984.0,0,Single Family,Rural,Excellent,Gas,Central Air,No,No,Yes,709451
+904,2639,3,1.5,2022,9142.0,1,Single Family,Downtown,Good,Electric,Central Air,No,Yes,Yes,772193
+905,2095,5,2.0,1959,8487.0,0,Single Family,Rural,Fair,Gas,Central Air,No,No,Yes,659057
+906,2023,2,2.0,1997,5819.0,1,Single Family,Suburban,Good,Oil,Central Air,No,No,Yes,643779
+907,1320,3,1.0,1969,6028.0,2,Single Family,Downtown,Excellent,Gas,Central Air,No,Yes,Yes,628348
+908,2373,1,2.5,1988,,3,Townhouse,Suburban,Fair,Gas,Central Air,No,No,Yes,632735
+909,2322,4,2.0,2009,8221.0,1,Condo,Downtown,Fair,Electric,Central Air,No,Yes,No,692221
+910,3081,5,2.5,2015,6747.0,1,Condo,Suburban,Excellent,Gas,Window Units,No,No,Yes,783482
+911,1846,2,2.5,2014,8988.0,2,Single Family,Downtown,Fair,Gas,Central Air,No,No,No,666894
+912,2109,4,2.0,2000,2290.0,1,Townhouse,Downtown,Good,Electric,Central Air,No,Yes,No,615098
+913,2124,2,1.5,1985,6286.0,0,Townhouse,Rural,Good,Oil,Central Air,No,Yes,No,544595
+914,2788,5,2.0,1973,5747.0,1,Single Family,Downtown,,Oil,Central Air,No,No,No,709454
+915,1952,4,1.0,1976,7487.0,1,Single Family,Downtown,Good,Heat Pump,Central Air,No,No,No,651163
+916,2139,4,2.0,1951,,1,Townhouse,Suburban,Excellent,Oil,Central Air,Yes,No,No,666554
+917,2303,1,1.0,1980,9595.0,1,Single Family,Suburban,,Gas,Central Air,No,No,Yes,642835
+918,2093,5,2.0,2006,4281.0,1,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,707115
+919,1776,4,1.5,2015,8090.0,1,Single Family,Suburban,Good,Oil,Central Air,No,Yes,No,641157
+920,2097,3,1.0,1978,9116.0,0,Single Family,Suburban,Fair,Gas,None,No,No,No,585554
+921,2536,4,1.0,1964,11713.0,1,Single Family,Suburban,Fair,Electric,Central Air,No,No,No,650593
+922,1486,2,1.0,1961,7036.0,2,Condo,Downtown,Good,Electric,Window Units,No,No,No,507661
+923,2066,4,2.0,1977,,1,Single Family,Downtown,Fair,Gas,Window Units,Yes,No,No,696381
+924,1649,2,2.0,1973,4392.0,1,Single Family,Suburban,Excellent,Heat Pump,Central Air,No,Yes,No,603315
+925,2597,4,2.0,1970,3216.0,2,Single Family,Suburban,Excellent,Gas,Central Air,No,Yes,No,756682
+926,1238,3,1.0,1959,9689.0,2,Single Family,Suburban,Fair,Gas,Central Air,No,No,Yes,544343
+927,1720,1,1.0,1967,7988.0,1,Single Family,Suburban,Excellent,Heat Pump,Window Units,No,No,No,557166
+928,2188,2,1.0,1963,10357.0,0,Single Family,Suburban,Good,Gas,Central Air,No,No,No,569966
+929,2782,1,1.0,1983,5253.0,2,Single Family,Downtown,Good,Gas,Central Air,Yes,No,No,711104
+930,1967,3,2.5,2007,9039.0,2,Single Family,Downtown,Good,Gas,Central Air,No,No,No,714729
+931,1722,3,1.5,1971,11737.0,3,Single Family,Suburban,Fair,Oil,Central Air,No,No,Yes,637918
+932,2940,3,1.5,2019,8839.0,2,Single Family,Suburban,Good,Electric,Central Air,No,No,Yes,810132
+933,1275,2,1.0,1985,8553.0,1,Single Family,Suburban,Excellent,Electric,Central Air,No,Yes,No,612965
+934,900,2,1.5,1994,8017.0,1,Single Family,Downtown,Good,Electric,Central Air,No,Yes,Yes,567905
+935,2220,4,2.0,1985,4858.0,0,Condo,Suburban,Good,Gas,Central Air,No,No,Yes,584518
+936,1748,1,2.0,1971,10711.0,1,Single Family,Rural,Good,Oil,Central Air,No,No,Yes,558155
+937,1489,5,1.5,2010,6778.0,1,Single Family,Downtown,Good,Oil,Central Air,No,No,No,630042
+938,2354,4,1.0,2005,9008.0,1,Single Family,Suburban,Fair,Gas,Central Air,No,No,No,690504
+939,2121,3,1.5,1982,4873.0,1,Single Family,Rural,Fair,Gas,Central Air,No,No,No,639997
+940,1717,3,1.5,1994,5641.0,2,Condo,Suburban,Good,Heat Pump,Window Units,No,Yes,No,562253
+941,1359,4,1.5,1985,10870.0,1,Single Family,Suburban,Good,Oil,None,No,No,Yes,618624
+942,2436,2,3.0,1969,7305.0,1,Single Family,Downtown,Good,Oil,Central Air,No,Yes,Yes,709218
+943,2325,1,2.0,1967,10906.0,0,Single Family,Suburban,Fair,Oil,Central Air,No,Yes,Yes,656485
+944,1950,2,2.0,1987,7843.0,1,Single Family,Downtown,Poor,Gas,Central Air,No,No,No,647682
+945,2923,4,1.5,2016,4316.0,2,Townhouse,Rural,Good,Electric,Central Air,No,Yes,Yes,685288
+946,1464,1,1.5,1972,9784.0,1,Single Family,Suburban,Fair,Gas,Central Air,No,No,No,514051
+947,1237,3,2.0,1965,6820.0,3,Single Family,Suburban,Good,Gas,Central Air,No,Yes,Yes,591794
+948,1654,5,2.0,2008,9397.0,1,Single Family,Suburban,Excellent,Electric,Central Air,No,Yes,Yes,735874
+949,1977,4,2.0,2018,8050.0,1,Single Family,Suburban,Excellent,Gas,Central Air,No,No,No,692019
+950,2121,3,1.0,2017,4913.0,1,Townhouse,Suburban,Good,Electric,Central Air,No,No,Yes,550062
+951,1879,1,2.0,1970,8328.0,1,Single Family,Rural,Good,Gas,Central Air,No,Yes,No,572224
+952,2176,4,1.5,2019,12392.0,2,Single Family,Rural,Excellent,Gas,Central Air,No,Yes,Yes,792128
+953,1374,3,2.5,1961,8985.0,1,Single Family,Suburban,Good,Gas,Central Air,No,No,Yes,550646
+954,2721,2,2.0,1965,7884.0,2,Single Family,Rural,Good,Gas,Central Air,No,No,Yes,689381
+955,1958,1,2.0,1963,10150.0,1,Single Family,Suburban,Good,Gas,Window Units,No,No,Yes,604677
+956,2558,5,1.0,2010,8421.0,2,Single Family,Suburban,Good,Gas,Central Air,No,No,No,736318
+957,2171,3,2.0,2020,8419.0,0,Single Family,Suburban,Excellent,Heat Pump,Window Units,No,Yes,Yes,702076
+958,2228,4,1.0,1995,5816.0,2,Single Family,Downtown,Good,Gas,Central Air,Yes,No,Yes,695594
+959,2284,4,1.5,1981,8467.0,1,Single Family,Downtown,Good,Gas,Central Air,Yes,No,Yes,720642
+960,2223,3,1.0,1964,10070.0,1,Condo,Downtown,Good,Gas,Central Air,No,No,No,603093
+961,2321,3,2.0,1993,6327.0,1,Single Family,Suburban,Excellent,Electric,Central Air,No,Yes,No,726519
+962,2664,3,1.5,1966,10848.0,2,Single Family,Suburban,,Gas,Central Air,No,No,Yes,711077
+963,2098,3,1.5,1990,7816.0,0,Single Family,Suburban,Excellent,Electric,Central Air,No,Yes,Yes,691211
+964,2354,3,2.5,2003,6224.0,1,Single Family,Rural,Good,Electric,Central Air,No,Yes,No,682967
+965,1955,4,1.5,1993,9995.0,2,Single Family,Suburban,Fair,Gas,Central Air,No,Yes,No,648908
+966,2720,3,2.0,1954,7426.0,1,Townhouse,Suburban,Excellent,Gas,Central Air,No,Yes,Yes,708493
+967,1661,4,1.5,1976,9519.0,0,Single Family,Downtown,Good,Heat Pump,Central Air,No,No,No,591285
+968,2900,3,1.0,1992,7416.0,1,Single Family,Downtown,Excellent,Oil,Central Air,No,No,No,791080
+969,1979,3,2.0,1980,7880.0,1,Single Family,Suburban,Good,Electric,Window Units,No,Yes,No,631457
+970,1284,3,1.0,1966,8987.0,2,Single Family,Suburban,Good,Gas,Central Air,No,No,No,523434
+971,2064,3,1.5,2003,8581.0,2,Single Family,Suburban,Good,Gas,Central Air,No,No,No,634170
+972,1659,4,2.0,2011,4008.0,1,Townhouse,Downtown,Good,Gas,Central Air,No,No,Yes,579829
+973,2420,2,2.0,1981,5757.0,3,Single Family,Suburban,Fair,Gas,Central Air,No,No,No,638831
+974,1673,3,2.0,1989,9858.0,1,Single Family,Downtown,Good,Gas,Central Air,No,Yes,Yes,658989
+975,1776,2,1.5,1962,7735.0,0,Single Family,Downtown,Good,Electric,Window Units,No,No,No,520894
+976,1055,3,1.0,1984,6952.0,1,Single Family,Downtown,Good,Gas,Central Air,No,No,Yes,545312
+977,1773,3,2.0,1954,5282.0,1,Single Family,Downtown,Fair,Electric,Window Units,No,No,Yes,621197
+978,788,3,2.0,2022,5840.0,0,Single Family,Suburban,Fair,Oil,Central Air,No,No,No,526344
+979,1208,5,2.5,1978,3956.0,2,Single Family,Downtown,Good,Gas,Central Air,No,No,No,583655
+980,2380,3,2.5,2019,7797.0,2,Single Family,Rural,Fair,Oil,Central Air,No,No,Yes,731923
+981,2392,4,2.5,1974,6803.0,1,Single Family,Suburban,Good,Gas,Central Air,No,Yes,Yes,691091
+982,2212,3,1.5,1971,6066.0,1,Single Family,Downtown,Fair,Oil,Central Air,No,No,Yes,660505
+983,1516,3,1.5,2015,,2,Single Family,Downtown,Fair,Gas,Central Air,No,Yes,No,676717
+984,1976,1,2.0,1994,8727.0,2,Single Family,Suburban,Excellent,Gas,Central Air,Yes,No,No,704604
+985,1998,2,1.5,2018,12186.0,2,Single Family,Downtown,Fair,Electric,None,No,Yes,Yes,734145
+986,1420,3,1.0,2021,4976.0,1,Single Family,Rural,Good,Gas,Central Air,No,No,No,553022
+987,2751,3,2.5,1950,10318.0,2,Single Family,Rural,Good,Heat Pump,Window Units,No,No,No,706688
+988,2438,1,2.5,1993,9946.0,1,Townhouse,Downtown,Good,Gas,Central Air,No,No,Yes,627792
+989,1889,2,1.5,1988,6441.0,1,Single Family,Suburban,Fair,Gas,Central Air,No,No,No,574057
+990,2013,2,1.0,2003,8406.0,0,Single Family,Downtown,Good,Gas,Window Units,No,No,Yes,658004
+991,2104,5,1.5,1978,7084.0,0,Single Family,Suburban,Excellent,Gas,Window Units,No,No,No,693628
+992,979,3,2.5,2003,8371.0,1,Single Family,Suburban,Fair,Gas,Central Air,No,No,Yes,581152
+993,1876,3,2.5,1965,11018.0,1,Single Family,Downtown,Excellent,Electric,Central Air,No,No,Yes,718586
+994,1659,2,1.5,1969,9211.0,0,Single Family,Downtown,Excellent,Electric,Central Air,No,No,Yes,637040
+995,1499,3,1.0,1995,9017.0,2,Single Family,Suburban,Good,Oil,Central Air,No,No,Yes,605744
+996,1859,2,2.5,2016,7139.0,0,Single Family,Suburban,Good,Heat Pump,Central Air,No,No,No,598537
+997,2898,2,1.5,2014,5031.0,1,Single Family,Downtown,Good,Gas,Central Air,No,Yes,Yes,747061
+998,2320,3,2.0,2007,7583.0,1,Townhouse,Suburban,Excellent,Electric,Window Units,Yes,No,Yes,718149
+999,1714,1,3.0,2002,10413.0,3,Single Family,Suburban,Poor,Gas,Window Units,No,No,No,633928
+1000,2286,1,1.0,1950,4945.0,1,Single Family,Rural,Fair,Electric,Central Air,No,No,Yes,531812
