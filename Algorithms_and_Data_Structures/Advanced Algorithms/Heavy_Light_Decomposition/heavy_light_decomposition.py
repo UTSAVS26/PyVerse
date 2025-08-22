@@ -213,30 +213,16 @@ class HLD:
             return result_u + result_v + self.values[lca]
     
     def path_update(self, u: int, v: int, value: int) -> None:
-        """Update all nodes on the path from u to v."""
-        lca = self._get_lca(u, v)
-        
-        # Update from u to LCA
-        while u != lca:
-            if self.chain_head[u] == self.chain_head[lca]:
-                self._update_chain(lca, u, value)
-                break
-            else:
-                self._update_chain(self.chain_head[u], u, value)
-                u = self.parent[self.chain_head[u]]
-        
-        # Update from v to LCA
-        while v != lca:
-            if self.chain_head[v] == self.chain_head[lca]:
-                self._update_chain(lca, v, value)
-                break
-            else:
-                self._update_chain(self.chain_head[v], v, value)
-                v = self.parent[self.chain_head[v]]
-        
-        # Update LCA
-        self.values[lca] += value
-    
+        """Add `value` to all nodes on the path u..v (inclusive)."""
+        while self.chain_head[u] != self.chain_head[v]:
+            if self.depth[self.chain_head[u]] < self.depth[self.chain_head[v]]:
+                u, v = v, u
+            head_u = self.chain_head[u]
+            self._update_chain(head_u, u, value)
+            u = self.parent[head_u]
+        if self.depth[u] > self.depth[v]:
+            u, v = v, u
+        self._update_chain(u, v, value)
     def subtree_query(self, node: int, operation: str = 'sum') -> int:
         """Query the subtree rooted at node."""
         # For simplicity, we'll use a different approach
