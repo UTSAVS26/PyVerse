@@ -42,7 +42,7 @@ def generate_conditions():
         (lambda p: p[10].islower() if len(p) >= 11 else False, "11th character must be lowercase"),
         (lambda p: p[15].isalpha() if len(p) >= 16 else False, "16th character must be a letter"),
         (lambda p: p[-2].isalpha() if len(p) >= 2 else False, "Second-to-last character must be a letter"),
-        (lambda p: p[-1].isdigit(), "Must end with a digit"),
+        (lambda p: p[-1].isdigit() if len(p) >= 1 else False, "Must end with a digit"),
 
         # DIGIT COMPOSITION (20–29)
         (lambda p: p.count('1') == 3, "Must contain exactly three '1' digits"),
@@ -100,8 +100,8 @@ def generate_conditions():
         # VOWEL RULES (65–69)
         (lambda p: len([c for c in p if c.lower() in 'aeiou']) >= 4, "Must contain at least 4 vowels total"),
         (lambda p: len([c for c in p if c.lower() in 'aeiou']) <= 7, "Must contain at most 7 vowels total"),
-        (lambda p: p.count('e') >= 1, "Must contain at least one 'e'"),
-        (lambda p: p.count('e') <= 2, "Must contain at most two 'e' letters"),
+        (lambda p: p.lower().count('e') >= 1, "Must contain at least one 'e'"),
+        (lambda p: p.count('e') <= 2, "Must contain at most two lowercase 'e' letters"),
         (lambda p: len(set(c.lower() for c in p if c.lower() in 'aeiou')) >= 3, "Must contain at least 3 different vowel types"),
 
         # SUBSTRING REQUIREMENTS (70–82)
@@ -121,8 +121,8 @@ def generate_conditions():
 
         # PATTERN RESTRICTIONS (83–91)
         (no_run(r"[0-9]{4}"), "No four consecutive digits"),
-        (no_run(r"[A-Z]{7}"), "No four consecutive uppercase letters"),
-        (no_run(r"[aeiouAEIOU]{6}"), "No three consecutive vowels"),
+        (no_run(r"[A-Z]{4}"), "No four consecutive uppercase letters"),
+        (no_run(r"[aeiouAEIOU]{4}"), "No four consecutive vowels"),
         (no_run(r"[!#*$]{2}"), "No two consecutive special characters"),
         (no_run(r"(.)\1{2}"), "No character can appear three times in a row"),
         (no_run(r"[!#*$][0-9]"), "No special character immediately followed by a digit"),
@@ -146,9 +146,19 @@ def generate_conditions():
     
     return conditions
 
+# def check_password(password, conditions):
+#     failed = [msg for cond, msg in conditions if not cond(password)]
+#     passed_count = 100 - len(failed)
+#     return len(failed) == 0, failed, passed_count
 def check_password(password, conditions):
-    failed = [msg for cond, msg in conditions if not cond(password)]
-    passed_count = 100 - len(failed)
+    failed = []
+    for idx, (cond, msg) in enumerate(conditions, start=1):
+        try:
+            if not cond(password):
+                failed.append(f"[{idx}] {msg}")
+        except Exception:
+            failed.append(f"[{idx}] Internal error while checking: {msg}")
+    passed_count = len(conditions) - len(failed)
     return len(failed) == 0, failed, passed_count
 
 def password_game():

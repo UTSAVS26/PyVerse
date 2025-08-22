@@ -1,6 +1,6 @@
-# Password Challenge
+# Password Odyssey
 
-A Python-based game where players create a password.
+A Python-based game where players try to create a password following several conditions.
 
 ## Overview
 The Password Challenge is an interactive game that tests your ability to craft a password satisfying specific rules. These rules cover length, character types, specific sequences, and patterns. The game provides feedback on failed conditions to guide improvement.
@@ -50,6 +50,7 @@ baf1gSUNhiejklmopr5stu$w9c#w!d101b*w934ww0w2
 - **Substrings**: Must include 'SUN', '101'; exclude 'love', 'pass', etc.
 - **Patterns**: No consecutive digits, vowels, or special characters; no palindromes.
 - **Math**: ASCII sum of letters even, digit sum divisible by 5.
+- **and many such hidden rule**
 
 ## Notes
 - The game stops at the first failed condition for feedback.
