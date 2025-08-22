@@ -369,13 +369,52 @@ class HeavyPathDecomposition:
         if not self.operation_log:
             return {}
         
-        operations = [op for op in self.operation_log]
-        timestamps = list(range(len(operations)))
-        
-        # Calculate operation frequencies
-        op_counts = defaultdict(int)
-        for op in operations:
-            op_counts[type(op).__name__] += 1
+++ b/Algorithms_and_Data_Structures/Advanced Algorithms/Heavy_Path_Decomposition_Enhanced/heavy_path_decomposition.py
+@@ class HeavyPathDecomposition:
+     def __init__(self, ...):
+        # Track actual query/update operations instead of node IDs
+        self.query_count = 0
+        self.update_count = 0
+        self.operation_log = []
+@@
+    def path_query(self, u: int, v: int, operation: str = 'sum') -> int:
+        """Query operation on path from u to v"""
+        self.query_count += 1
+        # ... rest of implementation ...
+
+    def update_node(self, u: int, value: int) -> None:
+        """Update value at node u"""
+        self.update_count += 1
+        # ... rest of implementation ...
+@@
+     def analyze_performance(self) -> Dict[str, Any]:
+         """Analyze performance metrics"""
+-        if not self.operation_log:
+-            return {}
+-        
+-        operations = [op for op in self.operation_log]
+-        timestamps = list(range(len(operations)))
+-        
+-        # Calculate operation frequencies
+-        op_counts = defaultdict(int)
+-        for op in operations:
+-            op_counts[type(op).__name__] += 1
+-        
+-        return {
+-            'total_operations': len(self.operation_log),
+-            'operation_counts': dict(op_counts),
+-            'average_interval': np.mean(timestamps) if timestamps else 0,
+-            'total_time': timestamps[-1] - timestamps[0] if len(timestamps) > 1 else 0,
+-            'decomposition_statistics': self.get_statistics()
+        # Return counts of the two actual operations
+        return {
+            'total_operations': self.query_count + self.update_count,
+            'operation_counts': {
+                'queries': self.query_count,
+                'updates': self.update_count
+            },
+            'decomposition_statistics': self.get_statistics()
+        }
         
         return {
             'total_operations': len(self.operation_log),
