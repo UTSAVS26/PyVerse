@@ -225,19 +225,14 @@ class HLD:
         self._update_chain(u, v, value)
     def subtree_query(self, node: int, operation: str = 'sum') -> int:
         """Query the subtree rooted at node."""
-        # For simplicity, we'll use a different approach
-        # In practice, you might want to maintain subtree sizes
-        result = self.values[node]
-        
         def dfs_subtree(u: int) -> int:
             total = self.values[u]
             for v in self.tree[u]:
                 if v != self.parent[u]:
                     total += dfs_subtree(v)
             return total
-        
+
         return dfs_subtree(node)
-    
     def point_update(self, node: int, value: int) -> None:
         """Update a single node."""
         self.values[node] = value
