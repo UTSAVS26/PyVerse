@@ -285,8 +285,13 @@ class HeavyPathDecomposition:
         # Update segment tree if node is in a chain
         head = self.chain_head[u]
         if head in self.segment_trees:
-            pos = self.pos[u]
-            self.segment_trees[head].update(pos, value)
+         # Update segment tree if node is in a chain
+         head = self.chain_head[u]
+         if head in self.segment_trees:
+             chain_nodes = [node for node in range(self.n) if self.chain_head[node] == head]
+             chain_nodes.sort(key=lambda x: self.pos[x])
+             pos = chain_nodes.index(u)
+             self.segment_trees[head].update(pos, value)
     
     def update_path(self, u: int, v: int, value: int) -> None:
         """Update values on path from u to v"""
