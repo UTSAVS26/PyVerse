@@ -165,13 +165,16 @@ class HeavyPathDecomposition:
         
         # Combine results based on operation
         if operation == 'sum':
-            return result_u + result_v + self.values[lca]
+        # Combine results based on operation
+        if operation == 'sum':
+            # result_u and result_v each include values[lca], so subtract one copy
+            return result_u + result_v - self.values[lca]
         elif operation == 'min':
             return min(result_u, result_v, self.values[lca])
         elif operation == 'max':
             return max(result_u, result_v, self.values[lca])
         else:
-            return result_u + result_v + self.values[lca]
+            raise ValueError(f"Unsupported operation: {operation}")
     
     def _path_query_to_lca(self, u: int, lca: int, operation: str) -> int:
         """Query path from u to LCA"""
