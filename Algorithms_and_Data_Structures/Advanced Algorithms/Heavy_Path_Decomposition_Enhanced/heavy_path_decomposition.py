@@ -94,8 +94,17 @@ class HeavyPathDecomposition:
     def _dfs_decompose(self, u: int, head: int) -> None:
         """DFS to decompose tree into heavy paths"""
         self.chain_head[u] = head
-        self.pos[u] = len(self.operation_log)
-        self.operation_log.append(u)
+    # In __init__ (or wherever operation_log is initialized):
+        self.position_counter = 0
+        self.operation_log = []
+
+    def _dfs_decompose(self, u: int, head: int) -> None:
+        """DFS to decompose tree into heavy paths"""
+        self.chain_head[u] = head
+-       self.pos[u] = len(self.operation_log)
+       self.pos[u] = self.position_counter
+       self.position_counter += 1
+       self.operation_log.append(u)
         
         # Find heavy child
         heavy_child = -1
