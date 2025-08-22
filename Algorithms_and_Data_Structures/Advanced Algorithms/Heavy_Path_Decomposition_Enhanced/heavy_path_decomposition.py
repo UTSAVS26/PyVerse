@@ -443,7 +443,7 @@ def generate_test_cases() -> List[Dict[str, Any]]:
         'tree': tree1,
         'values': values1,
         'expected_path_queries': {
-            (0, 5): 21,  # Sum of path 0->1->3->5
+            (0, 5): 13,  # Sum of path 0->1->3->5 = 1+2+4+6
             (2, 4): 10   # Sum of path 2->0->1->4
         }
     })
