@@ -104,10 +104,9 @@ for op in operations:
     result = hpd.path_query(0, 5, op)
     print(f"{op}: {result}")
 
-# Dynamic tree modifications
-hpd.add_edge(6, 2)  # Add edge
-hpd.remove_edge(1, 3)  # Remove edge
-```
+# Dynamic tree modifications (future enhancement)
+# hpd.add_edge(6, 2)  # Add edge (not yet implemented)
+# hpd.remove_edge(1, 3)  # Remove edge (not yet implemented)
 
 ## Advanced Features
 
