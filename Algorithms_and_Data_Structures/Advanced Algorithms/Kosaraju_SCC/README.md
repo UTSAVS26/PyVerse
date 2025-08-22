@@ -23,8 +23,7 @@ The finishing order from the first DFS ensures that when we process vertices in 
 ## Time Complexity
 
 - **Time**: O(V + E) where V is vertices, E is edges
-- **Space**: O(V) for recursion stack and arrays
-
+- **Space**: O(V + E) due to the stored transpose and recursion stack
 ## Implementations
 
 ### 1. Standard Kosaraju's Algorithm
