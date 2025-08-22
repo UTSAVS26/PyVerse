@@ -43,19 +43,19 @@ class FenwickTree:
     def __init__(self, size):
         self.size = size
         self.tree = [0] * (size + 1)
-    
+  
     def update(self, index, value):
         """Add value to element at index"""
-        
+      
     def query(self, index):
         """Get sum from index 1 to index"""
-        
+      
     def range_query(self, left, right):
         """Get sum from left to right inclusive"""
-        
+      
     def get_array(self):
         """Get the original array from the tree"""
-        
+      
     def set_value(self, index, value):
         """Set value at index (not add)"""
 ```
@@ -95,37 +95,45 @@ inversions = ft.count_inversions([3, 1, 4, 2])
 ## Advanced Features
 
 ### 1. Range Updates
+
 - Support for range add operations
 - Lazy propagation techniques
 - Efficient bulk updates
 
 ### 2. 2D Fenwick Tree
+
 - Extension to 2D arrays
 - Matrix range queries
 - Image processing applications
 
 ### 3. Coordinate Compression
+
 - Handle large coordinate values
 - Memory efficient representation
 - Dynamic coordinate mapping
 
 ### 4. Advanced Queries (scope)
+
 - Fenwick Trees efficiently support prefix sums and operations with invertible, associative functions.
 - For range minimum/maximum or gcd/lcm, prefer Segment Trees or specialized structures.
 - Custom operations may be supported only if they are invertible and associative.
+
 ## Performance Analysis
 
 ### Time Complexity
+
 - **Construction**: O(n log n)
 - **Point Update**: O(log n)
 - **Range Query**: O(log n)
 - **Range Update**: O(log n) per element
 
 ### Space Complexity
+
 - **Storage**: O(n) additional space
 - **Memory Overhead**: Minimal compared to segment trees
 
 ### Memory Usage
+
 - **Efficient**: Only stores necessary information
 - **Cache Friendly**: Good locality of reference
 - **Compact**: Minimal memory overhead
@@ -133,16 +141,19 @@ inversions = ft.count_inversions([3, 1, 4, 2])
 ## Visualization
 
 ### Tree Structure
+
 - Visual representation of the tree
 - Show parent-child relationships
 - Highlight update paths
 
 ### Update Process
+
 - Animate update operations
 - Show propagation to parent nodes
 - Visualize LSB calculations
 
 ### Query Process
+
 - Show query decomposition
 - Highlight nodes involved in sum
 - Visualize range calculations
@@ -150,10 +161,11 @@ inversions = ft.count_inversions([3, 1, 4, 2])
 ## Test Cases
 
 ### Basic Functionality
+
 ```python
 def test_basic_operations():
     ft = FenwickTree(5)
-    
+  
     # Test updates and queries
     ft.update(1, 5)
     ft.update(2, 3)
@@ -162,28 +174,30 @@ def test_basic_operations():
 ```
 
 ### Advanced Scenarios
+
 ```python
 def test_range_operations():
     ft = FenwickTree(10)
-    
+  
     # Test range updates
     ft.range_update(1, 5, 2)
     assert ft.range_query(1, 5) == 10
-    
+  
     # Test coordinate compression
     compressed = ft.compress_coordinates([1000, 2000, 3000])
     assert len(compressed) == 3
 ```
 
 ### Edge Cases
+
 ```python
 def test_edge_cases():
     ft = FenwickTree(1)
-    
+  
     # Test single element
     ft.update(1, 5)
     assert ft.query(1) == 5
-    
+  
     # Test empty queries
     assert ft.range_query(2, 1) == 0
 ```
@@ -191,6 +205,7 @@ def test_edge_cases():
 ## Dependencies
 
 ### Required Libraries
+
 ```python
 import time
 import numpy as np
@@ -200,6 +215,7 @@ import networkx as nx
 ```
 
 ### Optional Dependencies
+
 ```python
 # For advanced visualizations
 import seaborn as sns
@@ -217,14 +233,14 @@ Shivansh/Fenwick_Tree/
 
 ## Complexity Summary
 
-| Operation | Time Complexity | Space Complexity | Description |
-|-----------|----------------|------------------|-------------|
-| Construction | O(n log n) | O(n) | Build tree from array |
-| Point Update | O(log n) | O(1) | Add value to index |
-| Range Query | O(log n) | O(1) | Sum from 1 to index |
-| Range Update | O(n log n) | O(1) | Add to range |
-| Get Array | O(n log n) | O(n) | Reconstruct original array |
-| Inversion Count | O(n log n) | O(n) | Count inversions |
+| Operation       | Time Complexity | Space Complexity | Description                |
+| --------------- | --------------- | ---------------- | -------------------------- |
+| Construction    | O(n log n)      | O(n)             | Build tree from array      |
+| Point Update    | O(log n)        | O(1)             | Add value to index         |
+| Range Query     | O(log n)        | O(1)             | Sum from 1 to index        |
+| Range Update    | O(n log n)      | O(1)             | Add to range               |
+| Get Array       | O(n log n)      | O(n)             | Reconstruct original array |
+| Inversion Count | O(n log n)      | O(n)             | Count inversions           |
 
 ## Applications in Real-World
 
@@ -238,21 +254,25 @@ Shivansh/Fenwick_Tree/
 ## Advanced Topics
 
 ### 1. 2D Fenwick Tree
+
 - Extension to matrices
 - 2D range queries and updates
 - Image processing applications
 
 ### 2. Range Updates
+
 - Lazy propagation techniques
 - Efficient bulk operations
 - Advanced update strategies
 
 ### 3. Coordinate Compression
+
 - Handle large coordinate values
 - Dynamic coordinate mapping
 - Memory efficient representation
 
 ### 4. Custom Operations
+
 - Non-additive operations
 - Custom associative functions
 - Specialized query types
@@ -271,4 +291,6 @@ Shivansh/Fenwick_Tree/
 2. **Dynamic Sizing**: Automatic resizing capabilities
 3. **Parallel Processing**: Multi-threaded operations
 4. **GPU Acceleration**: CUDA/OpenCL implementations
-5. **Persistent Version**: Version control for the tree 
+5. **Persistent Version**: Version control for the tree
+
+resolve conflicts
