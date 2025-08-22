@@ -48,12 +48,11 @@ Constructs the Heavy Light Decomposition of the given tree.
 **Time Complexity**: O(n) where n is the number of nodes
 **Space Complexity**: O(n)
 
-#### `path_query(hld: HLD, u: int, v: int, operation: str = 'sum') -> int`
-Performs a query on the path from u to v.
+#### `HLD.path_query(u: int, v: int, operation: str = 'sum') -> int`
+Performs a query on the path from u to v using the HLD instance.
 
 **Time Complexity**: O(log²n) for most operations
 **Space Complexity**: O(1)
-
 #### `path_update(hld: HLD, u: int, v: int, value: int) -> None`
 Updates all nodes on the path from u to v.
 
