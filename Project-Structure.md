@@ -26,6 +26,7 @@
 
 * **Algorithms And Data Structures**
   * [Ai Search Algorithms](./Algorithms_and_Data_Structures/AI%20Search%20Algorithms)
+  * [Advanced Algorithms](./Algorithms_and_Data_Structures/Advanced%20Algorithms)
   * [Arrays](./Algorithms_and_Data_Structures/Arrays)
   * [Binarysearchtree](./Algorithms_and_Data_Structures/BinarySearchTree)
   * [Design And Analysis Of Algorithms](./Algorithms_and_Data_Structures/Design_and_Analysis_of_Algorithms)
@@ -195,6 +196,8 @@
 
 * **Deep Learning**
   * [Ai Dicemaster](./Deep_Learning/AI%20DiceMaster)
+  * [Aihabittracker](./Deep_Learning/AIHabitTracker)
+  * [Accentstrengthestimator](./Deep_Learning/AccentStrengthEstimator)
   * [Age Detection](./Deep_Learning/Age%20Detection)
   * [Alzheimers Detection](./Deep_Learning/Alzheimers%20Detection)
   * [Anomaly Detection In Time Series](./Deep_Learning/Anomaly%20Detection%20in%20Time%20Series)
@@ -232,6 +235,7 @@
   * [Feedflash](./Deep_Learning/FeedFlash)
   * [File-Locking-Mechanism](./Deep_Learning/File-Locking-Mechanism)
   * [Flapai](./Deep_Learning/FlapAI)
+  * [Flashginie](./Deep_Learning/FlashGinie)
   * [Gan-Based Art Generator Using Deep Learning](./Deep_Learning/GAN-based%20Art%20Generator%20using%20Deep%20learning)
   * [Gender Classification Using Dl](./Deep_Learning/Gender%20Classification%20using%20DL)
   * [Glass Bangle Defects Detection Using Dl](./Deep_Learning/Glass%20Bangle%20Defects%20Detection%20using%20DL)
@@ -258,6 +262,8 @@
   * [Passclass](./Deep_Learning/PassClass)
   * [Plant Disease Detection](./Deep_Learning/Plant%20Disease%20Detection)
   * [Pneumonia Detection](./Deep_Learning/Pneumonia_Detection)
+  * [Quickml](./Deep_Learning/QuickML)
+  * [Riddlemind](./Deep_Learning/RiddleMind)
   * [Srgan For Upscaling Image Resolutions](./Deep_Learning/SRGAN%20for%20upscaling%20image%20resolutions)
   * [Sentimental Analysis Navie](./Deep_Learning/Sentimental_Analysis_navie)
   * [Spam Vs Ham Mail Classification [With Streamlit Gui]](./Deep_Learning/Spam%20Vs%20Ham%20Mail%20Classification%20[With%20Streamlit%20GUI])
@@ -271,9 +277,11 @@
   * [Tictacrl](./Deep_Learning/TicTacRL)
   * [Traffic Accident Prediction Model Using Deep Learning](./Deep_Learning/Traffic%20Accident%20Prediction%20Model%20using%20Deep%20Learning)
   * [Tweet Classificaion Dl](./Deep_Learning/Tweet_Classificaion_DL)
+  * [Voicemoodmirror](./Deep_Learning/VoiceMoodMirror)
   * [Waste Classification](./Deep_Learning/Waste%20Classification)
   * [Yolo-Drowsiness-Detection-Main](./Deep_Learning/YOLO-Drowsiness-Detection-main)
   * [Emotion Based Music Player Using Deep Learning](./Deep_Learning/emotion%20based%20music%20player%20using%20deep%20learning)
+  * [Pypolish](./Deep_Learning/pypolish)
   * [Smart Attendance System](./Deep_Learning/smart_attendance_system)
   * [Toxicity Insult Analyser](./Deep_Learning/toxicity%20insult%20analyser)
 
@@ -448,6 +456,7 @@
   * [Wecare](./Machine_Learning/WeCare)
   * [Web Page Phishing Detection](./Machine_Learning/Web%20Page%20Phishing%20Detection)
   * [Zomato Restaurant Clustering And Sentiment Analysis](./Machine_Learning/Zomato%20Restaurant%20Clustering%20and%20Sentiment%20Analysis)
+  * [Zomato Sales Analysis](./Machine_Learning/Zomato_Sales_Analysis)
   * [Assets](./Machine_Learning/assets)
   * [Jamesweb](./Machine_Learning/jamesweb)
   * [Pokemon-Data-Analysis-And-Legendary-Classification-Main](./Machine_Learning/pokemon-data-analysis-and-legendary-classification-main)

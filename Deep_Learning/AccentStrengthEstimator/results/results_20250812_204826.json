@@ -1,0 +1,8 @@
+{
+  "phoneme_accuracy": 0.8544942986782471,
+  "pitch_similarity": 0.7172568181827834,
+  "duration_similarity": 0.7307414480576391,
+  "stress_pattern_accuracy": 0.7802510466240593,
+  "overall_score": 0.7842978706221315,
+  "accent_level": "Mild accent"
+}
