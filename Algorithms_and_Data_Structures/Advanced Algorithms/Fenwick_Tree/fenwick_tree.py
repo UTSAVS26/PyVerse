@@ -1,4 +1,3 @@
-#resolve conflicts
 
 import time
 import numpy as np
