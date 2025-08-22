@@ -164,34 +164,20 @@ class HLD:
         return u if self.depth[u] < self.depth[v] else v
     
     def _query_chain(self, u: int, v: int) -> int:
-        """Query the chain from u to v (u is ancestor of v)."""
-        if u == v:
-            return self.values[u]
-        
+        """Query the chain segment [u..v], where u is ancestor of v (same chain)."""
         chain_id = self.chain_id[u]
         st = self.segment_trees[chain_id]
-        
-        # Get positions in chain
-        pos_u = self.pos_in_chain[u]
-        pos_v = self.pos_in_chain[v]
-        
-        return st.query_range(pos_v, pos_u)
-    
+        left = self.pos_in_chain[u]
+        right = self.pos_in_chain[v]
+        return st.query_range(left, right)
+
     def _update_chain(self, u: int, v: int, value: int) -> None:
-        """Update the chain from u to v (u is ancestor of v)."""
-        if u == v:
-            self.values[u] += value
-            return
-        
+        """Add `value` over the chain segment [u..v], where u is ancestor of v (same chain)."""
         chain_id = self.chain_id[u]
         st = self.segment_trees[chain_id]
-        
-        # Get positions in chain
-        pos_u = self.pos_in_chain[u]
-        pos_v = self.pos_in_chain[v]
-        
-        st.update_range(pos_v, pos_u, value)
-    
+        left = self.pos_in_chain[u]
+        right = self.pos_in_chain[v]
+        st.update_range(left, right, value)
     def path_query(self, u: int, v: int, operation: str = 'sum') -> int:
         """Query the path from u to v."""
         lca = self._get_lca(u, v)
