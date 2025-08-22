@@ -9,11 +9,7 @@ Date: 2024
 """
 
 import time
-import numpy as np
-from typing import Dict, List, Set, Tuple, Optional
-import matplotlib.pyplot as plt
-import networkx as nx
-
+from typing import Dict, List
 
 def kosaraju_scc(graph: Dict[int, List[int]]) -> List[List[int]]:
     """
