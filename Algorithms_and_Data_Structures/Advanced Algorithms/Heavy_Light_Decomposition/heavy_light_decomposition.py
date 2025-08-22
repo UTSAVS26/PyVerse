@@ -234,9 +234,13 @@ class HLD:
 
         return dfs_subtree(node)
     def point_update(self, node: int, value: int) -> None:
-        """Update a single node."""
+        """Set a single node's value to `value`."""
+        cid = self.chain_id[node]
+        st = self.segment_trees[cid]
+        idx = self.pos_in_chain[node]
+        current = st.query_point(idx)
+        st.update_point(idx, value - current)  # apply delta to reach target
         self.values[node] = value
-    
     def get_heavy_paths(self) -> List[List[int]]:
         """Get all heavy paths."""
         return self.chains
