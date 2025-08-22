@@ -209,12 +209,22 @@ class HeavyPathDecomposition:
         if head not in self.segment_trees:
             return 0
         
-        # Get positions in chain
-        pos_u = self.pos[u]
-        pos_v = self.pos[v]
-        
-        # Query segment tree
-        return self.segment_trees[head].query(min(pos_u, pos_v), max(pos_u, pos_v))
+     def _query_chain(self, u: int, v: int) -> int:
+         """Query sum in chain from u to v"""
+         head = self.chain_head[u]
+         if head not in self.segment_trees:
+             return 0
+         
+-        # Get positions in chain
+-        pos_u = self.pos[u]
+        # Get positions relative to chain
+        chain_nodes = [node for node in range(self.n) if self.chain_head[node] == head]
+        chain_nodes.sort(key=lambda x: self.pos[x])
+        pos_u = chain_nodes.index(u)
+        pos_v = chain_nodes.index(v)
+         
+         # Query segment tree
+         return self.segment_trees[head].query(min(pos_u, pos_v), max(pos_u, pos_v))
     
     def _query_chain_min(self, u: int, v: int) -> int:
         """Query minimum in chain from u to v"""
