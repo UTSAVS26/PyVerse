@@ -127,12 +127,11 @@ class FenwickTree:
         return {
             'size': self.size,
             'total_operations': len(self.operation_log),
-            'current_sum': self.query(self.size),
+            'current_sum': self.query(self.size) if self.size > 0 else 0,
             'array_sum': sum(self.original_array),
             'max_value': max(self.original_array) if self.original_array else 0,
             'min_value': min(self.original_array) if self.original_array else 0
         }
-    
     def analyze_performance(self) -> Dict[str, Any]:
         """Analyze performance metrics"""
         if not self.operation_log:
