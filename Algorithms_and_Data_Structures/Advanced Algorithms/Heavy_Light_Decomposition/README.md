@@ -66,18 +66,13 @@ Performs a query on the subtree rooted at node.
 **Time Complexity**: O(log n)
 **Space Complexity**: O(1)
 
-## Usage Examples
-
-### Basic Path Query
-```python
 # Build HLD
 tree = {0: [1, 2], 1: [3, 4], 2: [5], 3: [], 4: [], 5: []}
 hld = build_hld(tree)
 
 # Query path sum
-result = path_query(hld, 3, 5, 'sum')
+result = hld.path_query(3, 5, 'sum')
 # Returns sum of values on path from node 3 to node 5
-```
 
 ### Path Update
 ```python
