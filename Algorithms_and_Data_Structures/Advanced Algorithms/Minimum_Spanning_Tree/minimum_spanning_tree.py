@@ -94,9 +94,13 @@ def prim_mst(graph: Dict[int, List[Tuple[int, int]]]) -> List[Tuple[int, int, in
     Returns:
         List of MST edges as (u, v, weight) tuples
     """
-    mst = []
+    mst: List[Tuple[int, int, int]] = []
     visited = set()
-    pq = [(0, 0, -1)]  # (weight, vertex, parent)
+    # Pick an arbitrary start vertex
+    start = next(iter(graph)) if graph else None
+    if start is None:
+        return mst
+    pq = [(0, start, None)]  # (weight, vertex, parent)
     
     while pq and len(visited) < len(graph):
         weight, u, parent = heapq.heappop(pq)
@@ -105,8 +109,10 @@ def prim_mst(graph: Dict[int, List[Tuple[int, int]]]) -> List[Tuple[int, int, in
             continue
         
         visited.add(u)
-        if parent != -1:
-            mst.append((parent, u, weight))
+        if parent is not None:
+            # normalize edge orientation so comparisons aren’t order-dependent
+            a, b = (parent, u) if parent <= u else (u, parent)
+            mst.append((a, b, weight))
         
         for v, w in graph[u]:
             if v not in visited:
