@@ -1,0 +1,33 @@
+Biology Chapter 3: Cell Biology
+
+The cell is the basic unit of life. All living organisms are composed of cells, which are the smallest units that can carry out all the processes necessary for life.
+
+The mitochondria is the powerhouse of the cell. It generates ATP through cellular respiration, which is the process by which cells convert glucose and oxygen into energy. The mitochondria has a double membrane structure and contains its own DNA.
+
+DNA, or deoxyribonucleic acid, is the genetic material that contains the instructions for building and maintaining an organism. It is composed of nucleotides containing bases, phosphate, and a sugar. The structure of DNA is a double helix, with two strands twisted around each other.
+
+Photosynthesis is the process by which plants convert sunlight into energy. This process takes place in the chloroplasts, which contain the green pigment chlorophyll. During photosynthesis, plants use carbon dioxide and water to produce glucose and oxygen.
+
+The cell membrane is a selectively permeable barrier that surrounds the cell. It controls what enters and exits the cell, allowing nutrients to enter and waste products to leave. The membrane is composed of a phospholipid bilayer with embedded proteins.
+
+The nucleus is the control center of the cell. It contains the cell's DNA and controls all cellular activities. The nucleus is surrounded by a nuclear membrane and contains the nucleolus, which is involved in the production of ribosomes.
+
+Ribosomes are the protein factories of the cell. They read the genetic code from messenger RNA and assemble amino acids into proteins. Ribosomes can be found floating in the cytoplasm or attached to the endoplasmic reticulum.
+
+The endoplasmic reticulum is a network of membranes that extends throughout the cell. There are two types: rough ER, which has ribosomes attached and is involved in protein synthesis, and smooth ER, which is involved in lipid synthesis and detoxification.
+
+The Golgi apparatus is responsible for packaging and shipping proteins and lipids. It receives materials from the endoplasmic reticulum, modifies them, and packages them into vesicles for transport to their final destination.
+
+Lysosomes are the recycling centers of the cell. They contain digestive enzymes that break down waste materials, cellular debris, and foreign substances. Lysosomes are important for maintaining cellular health and removing damaged organelles.
+
+Vacuoles are storage compartments in the cell. In plant cells, the central vacuole stores water, nutrients, and waste products. It also helps maintain the cell's shape and turgor pressure.
+
+The cytoskeleton is a network of protein fibers that provides structure and support to the cell. It is involved in cell movement, cell division, and the transport of materials within the cell. The cytoskeleton is composed of microtubules, microfilaments, and intermediate filaments.
+
+Cell division is the process by which cells reproduce. There are two types: mitosis, which produces identical daughter cells, and meiosis, which produces gametes with half the number of chromosomes. Both processes are essential for growth, development, and reproduction.
+
+The cell cycle is the series of events that occur as a cell grows and divides. It consists of interphase, during which the cell grows and prepares for division, and the mitotic phase, during which the cell actually divides. The cell cycle is tightly regulated to ensure proper cell division.
+
+Cellular respiration is the process by which cells break down glucose to produce ATP. It occurs in three stages: glycolysis, the Krebs cycle, and the electron transport chain. Cellular respiration requires oxygen and produces carbon dioxide as a waste product.
+
+Enzymes are biological catalysts that speed up chemical reactions in the cell. They are proteins that have a specific three-dimensional shape that allows them to bind to specific substrates. Enzymes are essential for all cellular processes and are highly specific in their function.

@@ -1,0 +1,78 @@
+Crops,Fertilisers required,Cost of cultivation,Expected revenues,Quantity of seeds per hectare,Duration of cultivation,Demand of crop,Crops for mixed cropping
+Paddy IGKVR-2 (IET 19795),"Potassium,Urea",22810,63851.8391,25kg,105-123,High,"Gram, Groundnut"
+Paddy CR Dhan 501 (IET 19189),"Potassium,Urea",22810,63851.8391,25kg,105-126,High,"Gram, Groundnut"
+Wheat VL Gehun 907 (VL 907),"Phosphorus,Nitrogen",17714,50166.54,112kg,60-154,High,"Horse Gram, Black Gram, Mustard"
+Wheat WHD 943,"Phosphorus,Nitrogen",17714,50166.54,112kg,60-157,High,"Horse Gram, Black Gram, Mustard"
+Millet Nandi-65 (MH-1549),"Nitrogen,Magnesium,Potassium,Phosphorus",21570,59556.38316,5kg,65-70,Moderate,"Black gram, Moong, Cowpea, Sorghum"
+Lentil Pant Lentil-8(Pant L-063),"Phosphate,Nitrogen","15, 824","21,136",60kg,45-60,Moderate,"Barley, Wheat, Oats, Linseed"
+Bajra,"Nitrogen,Phosphorus,Potash",8000,70414.47817,4.5kg,45-50,Moderate,"Black gram, Moong, Cowpea, Sorghum"
+Cardamom,NPK,"50,000","1,45,000",625g,730-735,Low,"Black Pepper, Arecanut, Coffee"
+Urad,NPK,"15, 136","24,764",17.5kg,70-85,Moderate,Maize
+Jowar,"Nitrogen,O2P5",8000,10974.06918,38kg,65-75,Moderate,"Black gram, Moong, Cowpea, Sorghum"
+Paddy CR Dhan 401 (REETA),"Potassium,Urea",22810,63851.8391,25kg,105-124,High,"Gram, Groundnut"
+Millet MH 1540 (86M64) (Hybrid),"Nitrogen,Magnesium,Potassium,Phosphorus",21570,59556.38316,2.5kg,65-73,Moderate,"Black gram, Moong, Cowpea, Sorghum"
+Sugarcane Karan 5 (Co 0124),Nitrogen,24538,893130.4967,40qq,300-451,High,"Moong, Cowpea, Urad"
+Clove,NPK,"1,90,300","4,38,800",2kg,120-180,Low,"Coffee, Coconut, Arecanut"
+Banana,NPK,61 592,89485,5000 plants,365-370,Moderate,Tumeric
+Moong,"Phosphorus,Nitrogen,Rhizobium","5,954","40,000",22kg,60-65,Moderate,Cotton
+Arhar,"NPK,Rhizobium","40,000","42,700",15kg,120-200,Moderate,"Red gram, Tur Daal"
+Oilseed,"Magnesium, Calcium, Potassium",30448,"38,250",4kg,110-115,High,"Groundnut, Castor, Sesame, Chick pea"
+Tea,"UT 752,Dolomite","5,023",353763,1650kg,60-65,High,"Cocoa, Coffee, Rubber"
+Coffee,"Nitrogen,Ammonium Nitrate",442513,"2, 49,600",4500 seeds,240-270,Moderate,"Arecanut, Orange, Cardamom, Pepper, Oil palm"
+Turmeric,"Nitrogen,Potassium,Phosphorus","43, 441",80548,2500kg Rhizomes,210-270,Moderate,"Coconut, Arecanut"
+Cashewnut,"Manure,NPK","10,369",91548.76,625 seedlings,1030-1035,Low,"Groundnut, Horse gram, Cowpea"
+Ragi,NPK,10000,50636.3761,12kg,5.0-7.0,Moderate,"Black gram, Moong, Cowpea, Sorghum"
+Soyabean,"MAP,Phosphorus",21000,70632.15286,75kg,45-65,Moderate,"Soyabean, Sesame"
+Black Gram,NPK,16610,50058.97238,22kg,70-85,Moderate,Wheat
+Khesari,Basal dose,"5,954",28000,70kg,125-130,Moderate,"Pigeon pea, Gram "
+Wheat MACS 6222,"Phosphorus,Nitrogen",17714,50166.54,112kg,60-151,High,"Horse Gram, Black Gram, Mustard"
+Black Pepper,"Lime,Dolomite","416,024","1,65,000",4.5kg,120-150,Low,Arecanut
+Chillies,"Compost,Nitrogen,Phosphorus",122935,"3,00,440.00",1kg,40-45,Low,"Maize, Brinjal, Garlic"
+Garlic,NPK,"27,500",400000,250kg,120-150,Low,Chillies
+Wheat MPO(JW) 1215 (MPO 1215),"Phosphorus,Nitrogen",17714,50166.54,112kg,60-150,High,"Horse Gram, Black Gram, Mustard"
+Maize PMH 5 (JH 3110),Nitrogen,16000,31369.83628,20kg,95-105,Moderate,"Gram, Beans"
+Groundnut Kadiri Harithandhra (K 1319),"Superphosphate,Potassium",22507,100177.469,40kg,110-121,High,"Sorghum, Millet"
+Groundnut GPBD 5,"Superphosphate,Potassium",22507,100177.469,40kg,110-122,High,"Sorghum, Millet"
+Lentil Pant Lentil-7(Pant L-024),"Phosphate,Nitrogen","15, 824","21,136",60kg,45-61,Moderate,"Barley, Wheat, Oats, Linseed"
+Tobacco,Nitrogen,"1,6,0918","3,60,709",3.5kg,90-120,High,"Groundnut, Pigeonpea"
+Tomato,Phosphorus,29233,79126.7,50g,50-60,High,"Spinach, Radish"
+Cocoa,"Nitrogen,Potassium,Phosphorus,Sulphur,Calcium,Magnesium,Boron,Zinc","20,000",80000,1.5kg,150-180,Moderate,"Oil palm, Coconut"
+Rubber,"Urea,Phosphate,Potash",37936,140000,1500 seedlings,120-130,Low,"Coffee, Cocoa"
+Masoor,"Rhizobium,Nitrogen","15, 824","21,136",42kg,120-130,Moderate,"Linseed, Sugarcane, Wheat, Mustard"
+Sunhemp,Nitrogen,10091,30000,140kg,60-90,Low,Cowpea
+Varagu,NPK,"31,900","40,000",10kg,160-165,Moderate,Millet
+Paddy CR Dhan 601 (IET 18558),"Potassium,Urea",22810,63851.8391,25kg,105-125,High,"Gram, Groundnut"
+Wheat Netravati (NIAW 1415),"Phosphorus,Nitrogen",17714,50166.54,112kg,95-100,High,"Horse Gram, Black Gram, Mustard"
+Maize HSC1,Nitrogen,16000,31369.83628,17kg,95-100,High,"Beans, Weeds"
+Millet Nandi-61 (MH-1548),"Nitrogen,Magnesium,Potassium,Phosphorus",21570,59556.38316,2.5kg,65-71,Moderate,"Black gram, Moong, Cowpea, Sorghum"
+Millet 86M64 (MSH 203) (Hybrid),"Nitrogen,Magnesium,Potassium,Phosphorus",21570,59556.38316,2.5kg,65-72,Moderate,"Black gram, Moong, Cowpea, Sorghum"
+Barley Pusa Losar (BH- 380),NPK,12000,43500,3kg,60-72,High,Wheat
+Maize DHM 119 (BH 4062),Nitrogen,16000,31369.83628,,95-103,High,"Beans, Weeds"
+Millet HHB 226 (MH 1479),"Nitrogen,Magnesium,Potassium,Phosphorus",21570,59556.38316,2.5kg,65-76,Moderate,"Black gram, Moong, Cowpea, Sorghum"
+Jute,NPK,21900,"89,500",5kg,120-150,High,Chillies
+Paddy Chinsurah Rice (IET 19140),"Potassium,Urea",22810,63851.8391,25kg,105-120,High,"Gram, Groundnut"
+Paddy (CNI 383-5-11),"Potassium,Urea",22810,63851.8391,25kg,105-121,High,"Gram, Groundnut"
+Paddy IGKVR-1 (IET 19569),"Potassium,Urea",22810,63851.8391,25kg,105-122,High,"Gram, Groundnut"
+Onion,NPK,77850,"1,00,000",15kg,80-150,High,Cabbage
+Cotton CNH012,NPK,28286,"63,000",3kg,80-150,High,"Lentil, Gram, pea"
+Cotton CICR-3 (CISA 614),NPK,28286,"63,000",3kg,105-120,High,"Lentil, Gram, pea"
+Rice,Urea,22810,63851.8391,25kg,105-120,Rice,"Gram, Groundnut"
+Flax,"NPK,Sulfur",,,35kg,120-140,Moderate,"Linseed, Legumes"
+Barley BH-902,NPK,12000,43500,,60-70,Moderate,Wheat
+Sunflower,"Calcium,Sulfur",21000,90739.71847,9kg,90-100,High,"Groundnut, Maize"
+Maize HQPM-4,Nitrogen,16000,31369.83628,,95-101,High,"Beans, Weeds"
+Groundnut Girnar - 3 (PBS 12160),"Superphosphate,Potassium",22507,100177.469,40kg,175-180,High,"Maize, Sunflower, Oilseed"
+Dry Ginger,NPK,"1,20,155.00","4,32,600.00",500kg,175-180,Moderate,"Potato, Chillies, Brinjal"
+Horse Gram,"Manure,NPK",16610,50058.97238,37kg,120-180,Moderate,Wheat
+Castor Seed,"Phosphorus,Calcium,Sulfur",,,12kg,7.0-10,Moderate,Oil palm seeds
+Sesame,NPK,,,5kg,40-45,Low,Sunflower. Groundnut
+Sugarcane Karan 6 (Co 0239),Nitrogen,24538,893130.4967,40qq,300-450,High,"Maize, Potato"
+Peas,NPK,,,35kg,50-100,Low,Barley
+Paddy RC Maniphou 11 (IET 20193),"Potassium,Urea",22810,63851.8391,25kg,105-127,High,"Gram, Groundnut"
+Cowpea,NPK,,,25kg,45-90,Low,Maize
+Maize MCH 36 (Hybrid) (DKC 9099),Nitrogen,16000,31369.83628,,95-102,Moderate,"Beans, Weeds"
+Pulses,"Phosphorus,Calcium,Sulfur,Molybdenum",,,60kg,95-102,High,Miaze
+Sugarcane Co-0218,Nitrogen,24538,893130.4967,40qq,"300-452",High,"Maize, Potato"
+Wheat PDW 314,"Phosphorus,Nitrogen",17714,50166.54,112kg,60-152,Hgh,"Horse Gram, Black Gram, Mustard"
+Sweet potato,NPK(low),,,37kg,120-125,Low,"Legumes, Chickpea"
+Cotton VBCH 2231,NPK,28286,"63,000",3kg,,High,"Lentil, Gram, pea"

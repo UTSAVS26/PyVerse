@@ -1,0 +1,28 @@
+# Core PDF processing
+pdfplumber==0.11.7
+pdfminer.six==20221105
+
+# NLP and ML
+transformers==4.35.2
+torch==2.1.1
+sentence-transformers==2.2.2
+keybert==0.7.0
+spacy==3.7.2
+nltk==3.8.1
+rake-nltk==1.0.6
+
+# Text processing
+numpy==1.24.3
+pandas==2.0.3
+scikit-learn==1.3.0
+
+# Web interface
+streamlit==1.28.1
+
+# Testing
+pytest==7.4.3
+pytest-cov==4.1.0
+
+# Utilities
+python-dotenv==1.0.0
+tqdm==4.66.1

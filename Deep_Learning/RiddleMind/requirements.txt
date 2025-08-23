@@ -1,0 +1,7 @@
+spacy==3.7.2
+pyDatalog==0.17.0
+sympy==1.12
+streamlit==1.28.1
+pytest==7.4.3
+pytest-cov==4.1.0
+python-dotenv==1.0.0

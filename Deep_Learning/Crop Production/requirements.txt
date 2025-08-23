@@ -1,0 +1,7 @@
+numpy==1.26.4
+pandas==2.2.3
+scikit-learn==1.6.1
+matplotlib==3.9.2
+tensorflow==2.17.0
+keras==3.6.0
+keras-tuner==1.4.7
