@@ -51,29 +51,6 @@ A minimum spanning tree (MST) is a subset of the edges of a connected, undirecte
 
 ## Usage
 
-```python
-from minimum_spanning_tree import kruskal_mst, prim_mst
-
-# Basic usage
-graph = {
-    0: [(1, 4), (2, 3)],
-    1: [(0, 4), (2, 1), (3, 2)],
-    2: [(0, 3), (1, 1), (3, 4)],
-    3: [(1, 2), (2, 4)]
-}
-
-# Using Kruskal's algorithm
-mst_kruskal = kruskal_mst(graph)
-print(f"Kruskal MST: {mst_kruskal}")
-
-# Using Prim's algorithm
-mst_prim = prim_mst(graph)
-print(f"Prim MST: {mst_prim}")
-
-# With visualization
-from minimum_spanning_tree import visualize_mst
-visualize_mst(graph, mst_kruskal, algorithm="Kruskal", show_plot=True)
-```
 
 ## Mathematical Background
 
