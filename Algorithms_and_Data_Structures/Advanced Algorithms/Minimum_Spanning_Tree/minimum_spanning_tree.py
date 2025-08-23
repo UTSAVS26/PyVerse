@@ -339,7 +339,8 @@ def compare_mst_algorithms(graph: Dict[int, List[Tuple[int, int]]]) -> Dict:
         'kruskal_mst': metrics['kruskal_mst'],
         'prim_mst': metrics['prim_mst'],
         'weights_match': metrics['kruskal_weight'] == metrics['prim_weight'],
-        'edges_match': sorted(metrics['kruskal_mst']) == sorted(metrics['prim_mst'])
+        'edges_match': sorted((min(u, v), max(u, v), w) for u, v, w in metrics['kruskal_mst']) ==
+                       sorted((min(u, v), max(u, v), w) for u, v, w in metrics['prim_mst'])
     }
 
 
