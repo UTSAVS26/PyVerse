@@ -195,7 +195,7 @@ def generate_test_cases() -> List[Dict[str, Any]]:
         'algorithm': ma1,
         'text': text1,
         'expected_longest': "bab",  # or "aba"
-        'expected_count': 3
+        'expected_count': 5
     })
     
     # Test case 2: Multiple palindromes
