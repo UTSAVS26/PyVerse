@@ -1,7 +1,7 @@
 <div align="center">
-<img src="Datasciecne-poster.jpg">
+<img src="Data_science.jpg">
 
-# 🎓 **Beginner's Guide to Data Science** 🚀
+# Beginner's Guide to Data Science
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) 
 ![Pandas](https://img.shields.io/badge/-Pandas-150458?style=flat-square&logo=pandas&logoColor=white) 
@@ -23,34 +23,44 @@
 
 ---
 
-## ✨ **Introduction**
+## ✨ Introduction
 
-Data Science is an interdisciplinary field that leverages **scientific methods**, **algorithms**, and **systems** to extract actionable insights from **structured** and **unstructured** data. 💡 It combines the best of **statistics**, **computer science**, and **domain knowledge** to analyze complex datasets.
+### Data, Information and Knowledge
 
----
+- Data is just raw, unprocessed facts.
+- Information is the processed form of data. 
+- Knowledge is an entity that comes from utilisation of data and helps us to make predictions or take decisions.
 
-### 💡 **Why Data Science?**
+### What is Data Science? 
 
-✨ **Data Science** transforms the way we understand data by helping us:
+Data Science is an interdisciplinary field that leverages **scientific methods**, **algorithms**, and **systems** to extract actionable insights from **structured** and **unstructured** data. It combines the best of **statistics**, **computer science**, and **domain knowledge** to analyze complex datasets.
 
-1. 🔍 **Decision Making**: Make smarter, data-driven decisions.
-2. 📈 **Predictive Analysis**: Forecast trends and future behavior.
-3. 🤖 **Automation**: Streamline repetitive tasks with smart automation.
-4. 💡 **Innovation**: Discover hidden patterns to foster innovation.
-
----
-
-### 🧰 **Key Components** 🛠️
-
-1. 🗂️ **Data Collection**: Gather data from multiple sources (APIs, databases, web scraping).
-2. 🧹 **Data Cleaning**: Tidy up data by removing noise, errors, and inconsistencies.
-3. 📊 **Data Analysis**: Apply statistical and computational techniques to draw insights.
-4. 📉 **Data Visualization**: Create compelling graphs and charts for easy understanding.
-5. 🤖 **Machine Learning**: Build predictive models that learn from the data. 
+📌 Structured data is the one that has a fixed schema or is arranged in rows and columns; Unstructured data is the one that doesn't have a format and is therefore hard to process and analyse. 
 
 ---
 
-### 🔧 **Tools and Technologies**
+## ✨ Why Data Science?
+
+**Data Science** transforms the way we understand data by helping us:
+
+1. **Decision Making**: Make smarter, data-driven decisions.
+2. **Predictive Analysis**: Forecast trends and future behavior.
+3. **Automation**: Streamline repetitive tasks with smart automation.
+4. **Innovation**: Discover hidden patterns to foster innovation.
+
+---
+
+## ✨ Key Components
+
+1. **Data Collection**: Gather data from multiple sources (APIs, databases, web scraping).
+2. **Data Cleaning**: Tidy up data by removing noise, errors, and inconsistencies.
+3. **Data Analysis**: Apply statistical and computational techniques to draw insights.
+4. **Data Visualization**: Create compelling graphs and charts for easy understanding. Understand patterns. 
+5. **Machine Learning**: Build predictive models that learn from data. 
+
+---
+
+## ✨ Tools and Technologies
 
 | **Tool**         | **Badge**  |
 |------------------|------------|
@@ -71,31 +81,31 @@ Data Science is an interdisciplinary field that leverages **scientific methods**
 
 ---
 
-### 🚀 **Getting Started**
+### ✨ Getting Started
 
 To kick off your **Data Science** journey: 
 
-1. 📘 **Learn Programming**: Start with **Python** 🐍 or **R** 📊.
-2. 📊 **Understand Statistics**: Grasp basic statistics like mean, median, and probability.
-3. 📂 **Practice with Data Sets**: Visit **Kaggle** to explore fun datasets!
-4. 🛠️ **Build Projects**: Tackle real-world problems and build a portfolio!
+1. **Learn Programming**: Start with **Python** or **R**.
+2. **Understand Statistics**: Grasp basic statistics like measures of central tendency, measures of dispersion and probability.
+3. **Practice with Data Sets**: Visit **Kaggle** to explore fun datasets.
+4. **Build Projects**: Tackle real-world problems and build a portfolio.
 
 ---
 
-### 🛠️ **Resources**
+## ✨ Resources
 
-- 📖 **Books**: *"Python for Data Analysis"* by **Wes McKinney**
-- 💻 **Online Courses**: Available on **Coursera**, **edX**, **Udacity**
-- 🌍 **Communities**: Join **Stack Overflow**, **Reddit**, or **Data Science Meetups**
-
----
-
-### 🎯 **Next Steps**
-
-🎯 Data Science opens up a world of endless possibilities! Start today, practice regularly, and unlock the potential hidden in data. 📊✨ 
+- **Books**: *"Python for Data Analysis"* by **Wes McKinney**
+- **Online Courses**: Available on **Coursera**, **edX**, **Udacity**
+- **Communities**: Join **Stack Overflow**, **Reddit**, or **Data Science Meetups**
 
 ---
 
-💡 **Note**: Data Science is evolving fast—keep learning and experimenting! Happy coding! 😎
+## ✨ Next Steps
+
+Data Science opens up a world of endless possibilities! Start today, practice regularly, and unlock the potential hidden in data. Discover pattern, gain insights and use it to build.
+
+---
+
+**Note**: Data Science is evolving fast—keep learning and experimenting! Happy coding! 😎
 
 ---
