@@ -10,10 +10,22 @@ Date: 2024
 
 import time
 import heapq
-import numpy as np
-from typing import Dict, List, Set, Tuple, Optional
-import matplotlib.pyplot as plt
-import networkx as nx
+# Replace top-level imports
+- import numpy as np
+- from typing import Dict, List, Set, Tuple, Optional
+- import matplotlib.pyplot as plt
+ from typing import Dict, List, Tuple
+
+# Inside the visualization function
+ def visualize_mst(...):
+-    try:
+    try:
+        import matplotlib.pyplot as plt
+        import networkx as nx
+        G = nx.Graph()
+     except ImportError:
+         print("Visualization dependencies not installed; skipping visualization.")
+     # …rest of visualization logic…
 
 
 class UnionFind:
