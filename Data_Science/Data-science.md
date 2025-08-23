@@ -39,26 +39,23 @@
 In data science, data can be classified based on structure into three main categories:
 
 1. **Structured Data**: Organized in a predefined way—usually tabular (rows and columns)—with a fixed schema. Sources are Relational databases, spreadsheets, online forms, OLTP systems, sensor logs.  It's easy to search, analyze, and process. It offers clear data lineage and security.
-
-  Examples: Customer databases, sales records, inventories.
+    Examples: Customer databases, sales records, inventories.
 
 2. **Unstructured Data**: No fixed or easily identifiable structure; does not fit neat tables or defined schemas. Sources are Documents (PDFs, Word), multimedia files (images, videos, audio), emails, social media posts.
-
-  Examples: Chat transcripts, videos, scanned documents.
+    Examples: Chat transcripts, videos, scanned documents.
 
 3. **Semi-Structured Data**: Partially organized—contains structural markers (e.g., tags, keys), but does not conform strictly to a tabular model. Sources are JSON, XML files, NoSQL databases, HTML documents, metadata within multimedia.
-
-  Examples: Email (body unstructured, headers structured), web pages, XML-based config files.
+    Examples: Email (body unstructured, headers structured), web pages, XML-based config files.
 
 #### ➡️ Based on Measurement Scale
 
-1. Nominal: Categories without order (e.g., gender, eye color).
+1. **Nominal**: Categories without order (e.g., gender, eye color).
 
-2. Ordinal: Categories with order but no uniform difference between categories (e.g., education level, rankings).
+2. **Ordinal**: Categories with order but no uniform difference between categories (e.g., education level, rankings).
 
-3. Interval: Ordered data with equal intervals, but no absolute zero (e.g., temperature in Celsius).
+3. **Interval**: Ordered data with equal intervals, but no absolute zero (e.g., temperature in Celsius).
 
-4. Ratio: Interval-scale data with an absolute zero (e.g., salary, age, height).
+4. **Ratio**: Interval-scale data with an absolute zero (e.g., salary, age, height).
 
 
 ### What is Data Science? 
@@ -107,7 +104,37 @@ Data science is an interdisciplinary field focused on extracting meaningful insi
 | Power BI         | ![Power BI](https://img.shields.io/badge/-Power%20BI-F25028?style=flat-square&logo=powerbi&logoColor=white) |
 
 
+## ⭐️ Key Statistical Techniques in Data Science
 
+1. **Descriptive Statistics**: Summarizes and describes the main features of a dataset (e.g., mean, median, mode, standard deviation).
+
+2. **Inferential Statistics**: Techniques that allow conclusions about populations based on sample data, including hypothesis testing.
+
+3. **Regression Analysis**: Examines relationships between dependent and independent variables; predicts outcomes.
+
+4. **Decision Trees**: Tree-like models for classification and regression that outline possible outcomes based on decisions.
+
+## ⭐️ EDA: Exploratory Data Analysis
+
+Exploratory Data Analysis (EDA) is a fundamental process in data science used to understand and summarize the main characteristics of a dataset before applying more complex modeling or analysis. It helps uncover patterns, spot anomalies, test hypotheses, and gain insights through statistical and visualization techniques.
+
+### Steps in EDA: 
+
+1. Understand the problem and dataset.
+2. Clean and preprocess data (handle missing values, correct data types).
+3. Perform univariate, bivariate, and multivariate analyses.
+4. Visualize data to reveal insights.
+5. Identify outliers and anomalies.
+6. Test hypotheses and assumptions.
+7. Summarize findings and document insights.
+
+### Importance: 
+
+1. Provides a clear understanding of data quality and structure.
+2. Reveals hidden patterns and relationships.
+3. Helps select appropriate modeling and statistical techniques.
+4. Enhances accuracy and transparency of models and analysis.
+   
 ## ⭐️ Getting Started
 
 To kick off your *Data Science* journey: 
