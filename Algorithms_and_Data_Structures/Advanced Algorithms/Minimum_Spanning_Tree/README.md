@@ -208,10 +208,8 @@ def prim_mst(graph):
 ## Edge Cases
 
 ### Disconnected Graph
-- Handles graphs with multiple components
-- Returns forest of minimum spanning trees
-- Warns about disconnected components
-
+Functions return a minimum spanning forest (one MST per connected component) without emitting warnings.
+To detect or warn about disconnected inputs, use the provided `verify_mst` helper or extend these functions with explicit connectivity checks.
 ### Negative Weights
 - Works correctly with negative weights
 - MST definition remains valid
