@@ -32,11 +32,38 @@
 - Information is the processed form of data. 
 - Knowledge is an entity that comes from utilisation of data and helps us to make predictions or take decisions.
 
+### Types of Data 
+
+#### ➡️ Based on structure
+
+In data science, data can be classified based on structure into three main categories:
+
+1. **Structured Data**: Organized in a predefined way—usually tabular (rows and columns)—with a fixed schema. Sources are Relational databases, spreadsheets, online forms, OLTP systems, sensor logs.  It's easy to search, analyze, and process. It offers clear data lineage and security.
+
+  Examples: Customer databases, sales records, inventories.
+
+2. **Unstructured Data**: No fixed or easily identifiable structure; does not fit neat tables or defined schemas. Sources are Documents (PDFs, Word), multimedia files (images, videos, audio), emails, social media posts.
+
+  Examples: Chat transcripts, videos, scanned documents.
+
+3. **Semi-Structured Data**: Partially organized—contains structural markers (e.g., tags, keys), but does not conform strictly to a tabular model. Sources are JSON, XML files, NoSQL databases, HTML documents, metadata within multimedia.
+
+  Examples: Email (body unstructured, headers structured), web pages, XML-based config files.
+
+#### ➡️ Based on Measurement Scale
+
+1. Nominal: Categories without order (e.g., gender, eye color).
+
+2. Ordinal: Categories with order but no uniform difference between categories (e.g., education level, rankings).
+
+3. Interval: Ordered data with equal intervals, but no absolute zero (e.g., temperature in Celsius).
+
+4. Ratio: Interval-scale data with an absolute zero (e.g., salary, age, height).
+
+
 ### What is Data Science? 
 
-Data Science is an interdisciplinary field that leverages *scientific methods*, *algorithms*, and *systems* to extract actionable insights from *structured* and *unstructured* data. It combines the best of *statistics*, *computer science*, and *domain knowledge* to analyze complex datasets.
-
-📌 Structured data is the one that has a fixed schema or is arranged in rows and columns; Unstructured data is the one that doesn't have a format and is therefore hard to process and analyse. 
+Data science is an interdisciplinary field focused on extracting meaningful insights and knowledge from data to support decision-making and solve problems. It integrates principles and techniques from various domains such as mathematics, statistics, computer science, artificial intelligence, and domain-specific knowledge.
 
 
 ## ⭐️ Why Data Science?
