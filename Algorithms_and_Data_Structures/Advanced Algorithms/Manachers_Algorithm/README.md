@@ -83,7 +83,8 @@ longest = ma.get_longest_palindrome()  # Returns "bab" or "aba"
 count = ma.count_palindromes()  # Returns total count
 
 # Check specific substring
-is_pal = ma.is_palindrome(0, 2)  # Check if "bab" is palindrome
+# Check specific substring
+is_pal = ma.is_palindrome(0, 3)  # Check if "bab" is palindrome
 ```
 
 ### Advanced Operations
