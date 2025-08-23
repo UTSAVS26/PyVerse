@@ -94,9 +94,9 @@ To kick off your **Data Science** journey:
 
 ## ✨ Resources
 
-- **Books**: *"Python for Data Analysis"* by **Wes McKinney**
-- **Online Courses**: Available on **Coursera**, **edX**, **Udacity**
-- **Communities**: Join **Stack Overflow**, **Reddit**, or **Data Science Meetups**
+- **Books**: *"Python for Data Analysis"* by Wes McKinney or *"Data Science from Scratch"* by Joel Grus.
+- **Online Courses**: Available on Coursera, edX, Udacity.
+- **Communities**: Join Stack Overflow, Reddit, or Data Science Meetups.
 
 ---
 
