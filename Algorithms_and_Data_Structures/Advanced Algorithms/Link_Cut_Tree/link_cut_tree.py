@@ -33,9 +33,10 @@ class LinkCutTree:
         return self.nodes.get(node_id)
     
     def _is_root(self, node: LinkCutNode) -> bool:
-        """Check if node is a root in its splay tree."""
-        return node.parent is None
-    
+        """Check if node is a root in its auxiliary splay tree."""
+        return (node.parent is None) or (
+            node.parent.left is not node and node.parent.right is not node
+        )
     def _is_left_child(self, node: LinkCutNode) -> bool:
         """Check if node is a left child."""
         return node.parent and node.parent.left == node
