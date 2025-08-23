@@ -92,11 +92,11 @@ class ManachersAlgorithm:
         return palindromes
     
     def count_palindromes(self) -> int:
+    def count_palindromes(self) -> int:
         """Count total number of palindromic substrings"""
         count = 0
         for radius in self.palindrome_radius:
-            if radius > 0:
-                count += radius // 2
+            count += (radius + 1) // 2
         return count
     
     def is_palindrome(self, start: int, end: int) -> bool:
