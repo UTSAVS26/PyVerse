@@ -81,10 +81,10 @@ Data science is an interdisciplinary field focused on extracting meaningful insi
 
 1. **Data Collection**: Gather data from multiple sources (APIs, databases, web scraping).
 2. **Data Cleaning**: Tidy up data by removing noise, errors, and inconsistencies.
-3. **Data Analysis**: Apply statistical and computational techniques to draw insights.
-4. **Data Visualization**: Create compelling graphs and charts for easy understanding. Understand patterns. 
-5. **Machine Learning**: Build predictive models that learn from data. 
-
+3. **Exploratory Data Analysis (EDA)**: Profile, summarize, and visualize data to understand distributions, spot anomalies, and form hypotheses.
+4. **Analysis/Modeling**: Apply statistical and computational techniques to test hypotheses and extract insights.
+5. **Visualization**: Communicate findings with clear charts/dashboards.
+6. **Machine Learning**: Build predictive models that learn from data.
 
 
 ## ⭐️ Tools and Technologies
