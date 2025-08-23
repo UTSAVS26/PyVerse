@@ -1,7 +1,7 @@
 # Beginner's Guide to Data Science
 
 <div align="center">
-<img src="Data_science.jpg">
+<img src="Data_science.jpg" alt="High-level overview of the Data Science lifecycle" width="80%" loading="lazy">
 
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) 
