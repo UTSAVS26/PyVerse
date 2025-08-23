@@ -65,22 +65,26 @@ def kruskal_mst(graph: Dict[int, List[Tuple[int, int]]]) -> List[Tuple[int, int,
     Returns:
         List of MST edges as (u, v, weight) tuples
     """
-    edges = []
-    for u in graph:
+    # Map arbitrary vertex IDs to 0..n-1
+    vertices = list(graph.keys())
+    idx = {v: i for i, v in enumerate(vertices)}
+
+    edges: List[Tuple[int, int, int]] = []
+    for u in vertices:
         for v, weight in graph[u]:
             if u < v:  # Avoid duplicate edges in undirected graph
                 edges.append((weight, u, v))
-    
+
     edges.sort()  # Sort by weight
     mst = []
-    uf = UnionFind(len(graph))
-    
+    uf = UnionFind(len(vertices))
+
     for weight, u, v in edges:
-        if uf.union(u, v):
+        if uf.union(idx[u], idx[v]):
             mst.append((u, v, weight))
             if len(mst) == len(graph) - 1:
                 break
-    
+
     return mst
 
 
