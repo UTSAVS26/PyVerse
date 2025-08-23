@@ -231,11 +231,10 @@ from matplotlib.animation import FuncAnimation
 ## File Structure
 
 ```
-Shivansh/Manachers_Algorithm/
+Algorithms_and_Data_Structures/Advanced Algorithms/Manachers_Algorithm/
 ├── README.md
 ├── manachers_algorithm.py
 └── test_manachers_algorithm.py
-```
 
 ## Complexity Summary
 
