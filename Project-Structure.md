@@ -439,6 +439,7 @@
   * [Predicting Exam Score Using Linear Regression](./Machine_Learning/Predicting%20Exam%20Score%20Using%20linear%20Regression)
   * [Red Wine Quality Detection](./Machine_Learning/Red%20Wine%20Quality%20Detection)
   * [Resume Screning Model](./Machine_Learning/Resume%20Screning%20Model)
+  * [Sms Spam Classifier](./Machine_Learning/SMS%20Spam%20Classifier)
   * [Sonar Rock  Mine Prediction](./Machine_Learning/SONAR_Rock_%20Mine_Prediction)
   * [Svm](./Machine_Learning/SVM)
   * [Sentiment Analysis Using Machine Learning](./Machine_Learning/Sentiment%20Analysis%20using%20machine%20learning)
