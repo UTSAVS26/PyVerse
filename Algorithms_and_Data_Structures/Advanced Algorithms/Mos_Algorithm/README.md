@@ -139,11 +139,9 @@ freq_results = mos.count_frequencies(freq_queries)
 ## Performance Analysis
 
 ### Time Complexity
-- **Query Processing**: O((n + q) * sqrt(n))
-- **Add/Remove**: O(1) per operation
-- **Sorting**: O(q log q) for q queries
-- **Total Time**: O((n + q) * sqrt(n))
-
+- **Query Processing (sum/frequency)**: O((n + q) * sqrt(n)) with O(1) add/remove.  
+- **Query Processing (min/max)**: Using the naive recomputation in this repo, removals may trigger O(window_size) scans. For scalable min/max, use an ordered structure (e.g., heap + lazy deletions) for O(log n) updates, giving O((n + q) * sqrt(n) + updates·log n).  
+- **Sorting**: O(q log q) for q queries.
 ### Space Complexity
 - **Storage**: O(n + q) for array and queries
 - **Results**: O(q) for query results
