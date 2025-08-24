@@ -97,16 +97,6 @@ result2 = tree.search(2, version="v1")  # Found in v1
 
 ### Advanced Operations
 
-```python
-# Version comparison
-diff = tree.compare_versions("v1", "v2")
-
-# Undo operations
-tree.undo_to_version("v1")
-
-# Branch creation
-tree.create_branch("v1", "branch1")
-```
 
 ## Advanced Features
 
