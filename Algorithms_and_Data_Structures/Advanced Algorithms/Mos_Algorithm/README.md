@@ -254,15 +254,14 @@ Shivansh/Mos_Algorithm/
 
 ## Complexity Summary
 
-| Operation | Time Complexity | Space Complexity | Description |
-|-----------|----------------|------------------|-------------|
-| Query Processing | O((n+q)*sqrt(n)) | O(n+q) | Process q queries on array of size n |
-| Add Element | O(1) | O(1) | Add element to current range |
-| Remove Element | O(1) | O(1) | Remove element from current range |
-| Range Sum | O((n+q)*sqrt(n)) | O(n+q) | Range sum queries |
-| Range Min/Max | O((n+q)*sqrt(n)) | O(n+q) | Range min/max queries |
-| Frequency Count | O((n+q)*sqrt(n)) | O(n+q) | Count element frequencies |
-
+| Operation        | Time Complexity             | Space Complexity | Description                                                         |
+|------------------|-----------------------------|------------------|---------------------------------------------------------------------|
+| Query Processing | O((n+q)*√n)                 | O(n+q)           | Process q queries on array of size n                                |
+| Add Element      | O(1)                        | O(1)             | Add element to current range                                        |
+| Remove Element   | O(1)                        | O(1)             | Remove element from current range                                   |
+| Range Sum        | O((n+q)*√n)                 | O(n+q)           | Range sum queries                                                   |
+| Range Min/Max    | See note                    | O(n+q)           | Naive removal causes scans; use ordered structure for scalable performance |
+| Frequency Count  | O((n+q)*√n)                 | O(n+q)           | Count element frequencies                                           |
 ## Applications in Real-World
 
 1. **Competitive Programming**: Fast range query solutions
