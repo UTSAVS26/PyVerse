@@ -19,9 +19,9 @@ class MosAlgorithm:
     def __init__(self, array: List[int]):
         self.array = array
         self.n = len(array)
-        self.block_size = int(self.n ** 0.5)
+        # Ensure block size is at least 1 to prevent division by zero.
+        self.block_size = max(1, int(self.n ** 0.5))
         self.operation_log = []
-    
     def process_queries(self, queries: List[Query]) -> List[int]:
         """Process range queries using Mo's algorithm"""
         if not queries:
