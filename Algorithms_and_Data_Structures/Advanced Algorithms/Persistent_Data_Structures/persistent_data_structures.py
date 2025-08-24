@@ -211,23 +211,21 @@ class PersistentTree:
         """Create a new version based on existing version"""
         if base_version is None:
             base_version = self.current_version
-        
+
         if base_version not in self.versions:
             raise ValueError(f"Base version {base_version} does not exist")
-        
+        if version_id in self.versions:
+            raise ValueError(f"Version {version_id} already exists")
+
         # Copy the root from base version
         root = self.versions[base_version]
-        if root:
-            new_root = self._create_node(root.value, root.left, root.right, 
-                                       self.next_version_id)
-        else:
-            new_root = None
-        
+        new_root = root  # no-op copy; full structural sharing
+
         # Store new version
         self.versions[version_id] = new_root
         self.version_history[version_id] = base_version
         self.current_version = version_id
-        
+
         # Log operation
         self.operation_log.append({
             'operation': 'create_version',
@@ -235,9 +233,8 @@ class PersistentTree:
             'base_version': base_version,
             'timestamp': time.time()
         })
-        
-        return version_id
 
+        return version_id
     def get_all_versions(self) -> List[str]:
         """Get all available versions"""
         return list(self.versions.keys())
