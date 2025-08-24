@@ -9,7 +9,7 @@
 ![NumPy](https://img.shields.io/badge/-NumPy-013243?style=flat-square&logo=numpy&logoColor=white) 
 ![TensorFlow](https://img.shields.io/badge/-TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white) 
 ![Keras](https://img.shields.io/badge/-Keras-D00000?style=flat-square&logo=keras&logoColor=white) 
-![Matplotlib](https://img.shields.io/badge/-Matplotlib-11557C?style=flat-square&logo=plotly&logoColor=white) 
+![Matplotlib](https://img.shields.io/badge/-Matplotlib-11557C?style=flat-square&logo=matplotlib&logoColor=white)
 ![R](https://img.shields.io/badge/-R-276DC3?style=flat-square&logo=r&logoColor=white) 
 ![SQL](https://img.shields.io/badge/-SQL-4479A1?style=flat-square&logo=mysql&logoColor=white) 
 ![NoSQL](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) 
@@ -28,9 +28,9 @@
 
 ### Data, Information and Knowledge
 
-- Data is just raw, unprocessed facts.
-- Information is the processed form of data. 
-- Knowledge is an entity that comes from utilisation of data and helps us to make predictions or take decisions.
+- Data: raw, unprocessed facts.
+- Information: processed form of data. 
+- Knowledge: entity that comes from utilisation of data; helps us to make predictions or take decisions.
 
 ### Types of Data 
 
@@ -38,14 +38,14 @@
 
 In data science, data can be classified based on structure into three main categories:
 
-1. **Structured Data**: Organized in a predefined way—usually tabular (rows and columns)—with a fixed schema. Sources are Relational databases, spreadsheets, online forms, OLTP systems, sensor logs.  It's easy to search, analyze, and process. It offers clear data lineage and security.
-    Examples: Customer databases, sales records, inventories.
+1. **Structured Data**: Organized in a predefined way—usually tabular (rows and columns)—with a fixed schema. Sources: relational databases, spreadsheets, online forms, OLTP systems, sensor logs. It’s easy to search, analyze, and process; offers clear data lineage and security.
+   Examples: customer databases, sales records, inventories.
 
-2. **Unstructured Data**: No fixed or easily identifiable structure; does not fit neat tables or defined schemas. Sources are Documents (PDFs, Word), multimedia files (images, videos, audio), emails, social media posts.
-    Examples: Chat transcripts, videos, scanned documents.
+2. **Unstructured Data**: No fixed or easily identifiable structure; does not fit neat tables or defined schemas. Sources: documents (PDFs, Word), multimedia (images, video, audio), email, social media posts.
+   Examples: chat transcripts, videos, scanned documents.
 
-3. **Semi-Structured Data**: Partially organized—contains structural markers (e.g., tags, keys), but does not conform strictly to a tabular model. Sources are JSON, XML files, NoSQL databases, HTML documents, metadata within multimedia.
-    Examples: Email (body unstructured, headers structured), web pages, XML-based config files.
+3. **Semi-Structured Data**: Partially organized—contains structural markers (e.g., tags, keys)—but does not strictly conform to a tabular model. Sources: JSON and XML files, NoSQL databases, HTML documents, and metadata in multimedia.
+   Examples: email (body unstructured; headers structured), web pages, XML-based config files.
 
 #### ➡️ Based on Measurement Scale
 
@@ -58,7 +58,7 @@ In data science, data can be classified based on structure into three main categ
 4. **Ratio**: Interval-scale data with an absolute zero (e.g., salary, age, height).
 
 
-### What is Data Science? 
+### What is Data Science?
 
 Data science is an interdisciplinary field focused on extracting meaningful insights and knowledge from data to support decision-making and solve problems. It integrates principles and techniques from various domains such as mathematics, statistics, computer science, artificial intelligence, and domain-specific knowledge.
 
@@ -94,8 +94,8 @@ Data science is an interdisciplinary field focused on extracting meaningful insi
 | NumPy            | ![NumPy](https://img.shields.io/badge/-NumPy-013243?style=flat-square&logo=numpy&logoColor=white) |
 | TensorFlow       | ![TensorFlow](https://img.shields.io/badge/-TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white) |
 | Keras            | ![Keras](https://img.shields.io/badge/-Keras-D00000?style=flat-square&logo=keras&logoColor=white) |
-| Matplotlib       | ![Matplotlib](https://img.shields.io/badge/-Matplotlib-11557C?style=flat-square&logo=plotly&logoColor=white) |
-| SQL              | ![MySQL](https://img.shields.io/badge/-SQL-4479A1?style=flat-square&logo=mysql&logoColor=white) |
+| Matplotlib       | ![Matplotlib](https://img.shields.io/badge/-Matplotlib-11557C?style=flat-square&logo=matplotlib&logoColor=white) |
+| SQL              | ![SQL](https://img.shields.io/badge/-SQL-4479A1?style=flat-square&logo=mysql&logoColor=white) |
 | NoSQL            | ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) |
 | Scikit-Learn     | ![Scikit-Learn](https://img.shields.io/badge/-Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white) |
 | Seaborn          | ![Seaborn](https://img.shields.io/badge/-Seaborn-FF5A5F?style=flat-square&logo=seaborn&logoColor=white) |
@@ -106,19 +106,19 @@ Data science is an interdisciplinary field focused on extracting meaningful insi
 
 ## ⭐️ Key Statistical Techniques in Data Science
 
-1. **Descriptive Statistics**: Summarizes and describes the main features of a dataset (e.g., mean, median, mode, standard deviation).
+1. **Descriptive Statistics**: Summarizes dataset features (mean, median, mode, SD); used in reporting/EDA dashboards.
 
-2. **Inferential Statistics**: Techniques that allow conclusions about populations based on sample data, including hypothesis testing.
+2. **Inferential Statistics**: Generalize from samples to populations (confidence intervals, hypothesis tests); used in A/B testing and experiments.
 
-3. **Regression Analysis**: Examines relationships between dependent and independent variables; predicts outcomes.
+3. **Regression Analysis**: Models relationships and predicts outcomes; used for forecasting (sales, demand) and feature effect estimation.
 
-4. **Decision Trees**: Tree-like models for classification and regression that outline possible outcomes based on decisions.
+4. **Decision Trees**: Interpretable models for classification/regression; used for churn detection, credit risk, and rule extraction.
 
 ## ⭐️ EDA: Exploratory Data Analysis
 
 Exploratory Data Analysis (EDA) is a fundamental process in data science used to understand and summarize the main characteristics of a dataset before applying more complex modeling or analysis. It helps uncover patterns, spot anomalies, test hypotheses, and gain insights through statistical and visualization techniques.
 
-### Steps in EDA: 
+### Steps in EDA
 
 1. Understand the problem and dataset.
 2. Clean and preprocess data (handle missing values, correct data types).
@@ -128,20 +128,28 @@ Exploratory Data Analysis (EDA) is a fundamental process in data science used to
 6. Test hypotheses and assumptions.
 7. Summarize findings and document insights.
 
-### Importance: 
+### Importance
 
 1. Provides a clear understanding of data quality and structure.
 2. Reveals hidden patterns and relationships.
 3. Helps select appropriate modeling and statistical techniques.
 4. Enhances accuracy and transparency of models and analysis.
-   
+
+### Mini‑Case: Customer Churn
+- Goal: predict which customers are likely to cancel next month.
+- EDA: inspect churn rates by tenure, contract type, and support tickets; visualize distributions and missing data.
+- Features: engineer tenure buckets, average monthly charges, last‑contact recency.
+- Modeling: baseline logistic regression → compare with tree‑based models.
+- Evaluation: AUC/ROC, precision@k for retention campaigns.
+- Action: target top‑risk deciles with tailored offers; measure uplift via A/B test.
+
 ## ⭐️ Getting Started
 
 To kick off your *Data Science* journey: 
 
 1. **Learn Programming**: Start with *Python* or *R*.
-2. **Understand Statistics**: Grasp basic statistics like *measures of central tendency*, *measures of dispersion* and *probability*.
-3. **Practice with Data Sets**: Visit *Kaggle* to explore fun datasets.
+2. **Understand Statistics**: Grasp basics like *measures of central tendency*, *measures of dispersion*, and *probability*.
+3. **Practice with Datasets**: Explore datasets on *Kaggle* (also try *UCI ML Repo* and *data.gov*).
 4. **Build Projects**: Tackle real-world problems and build a portfolio.
 
 
@@ -149,15 +157,14 @@ To kick off your *Data Science* journey:
 ## ⭐️ Resources
 
 - **Books**: *"Python for Data Analysis"* by Wes McKinney or *"Data Science from Scratch"* by Joel Grus.
-- **Online Courses**: Available on *Coursera*, *edX*, *Udacity*.
+- **Online Courses**: Available on *Coursera*, *edX*, and *Udacity*.
 - **Communities**: Join *Stack Overflow*, *Reddit*, or *Data Science Meetups*.
 
 
 
 ## ⭐️ Next Steps
 
-Data Science opens up a world of endless possibilities! Start today, practice regularly, and unlock the potential hidden in data. Discover patterns, gain insights and use it to build.
-
+Data science opens a world of possibilities. Start today, practice regularly, and unlock the potential hidden in data. Discover patterns, gain insights, and use them to build solutions.
 
 
 **📌 Data Science is evolving fast—keep learning and experimenting! Happy coding!**
