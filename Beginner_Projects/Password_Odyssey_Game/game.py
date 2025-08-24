@@ -1,8 +1,10 @@
 import string
-import re 
+import re
+import tkinter as tk
+from tkinter import scrolledtext, ttk
+
 
 def generate_conditions():
-    # Precompute functions for conditions
     def no_run(regex):
         return lambda p: re.search(regex, p) is None
 
@@ -21,7 +23,7 @@ def generate_conditions():
         )
 
     conditions = [
-        # LENGTH / BASIC STRUCTURE (1–9)
+        # LENGTH / BASIC STRUCTURE
         (lambda p: len(p) >= 32, "Password must be at least 32 characters long"),
         (lambda p: len(p) <= 64, "Password must be at most 64 characters long"),
         (lambda p: len(p) % 2 == 0, "Length must be divisible by 2"),
@@ -32,7 +34,7 @@ def generate_conditions():
         (lambda p: len([c for c in p if c.isdigit()]) >= 8, "Must contain at least 8 digits"),
         (lambda p: len([c for c in p if c in string.punctuation]) == 4, "Must contain exactly 4 special characters"),
 
-        # POSITIONAL REQUIREMENTS (10–19)
+        # POSITIONAL REQUIREMENTS
         (starts_with_consonant_lower(), "Must start with a lowercase consonant"),
         (lambda p: p[1].islower() if len(p) >= 2 else False, "Second character must be lowercase"),
         (lambda p: p[2].isalpha() if len(p) >= 3 else False, "Third character must be a letter"),
@@ -44,7 +46,7 @@ def generate_conditions():
         (lambda p: p[-2].isalpha() if len(p) >= 2 else False, "Second-to-last character must be a letter"),
         (lambda p: p[-1].isdigit() if len(p) >= 1 else False, "Must end with a digit"),
 
-        # DIGIT COMPOSITION (20–29)
+        # DIGIT COMPOSITION
         (lambda p: p.count('1') == 3, "Must contain exactly three '1' digits"),
         (lambda p: p.count('0') == 2, "Must contain exactly two '0' digits"),
         (lambda p: p.count('3') == 1, "Must contain exactly one '3' digit"),
@@ -56,7 +58,7 @@ def generate_conditions():
         (lambda p: p.count('8') == 0, "Must not contain the digit '8'"),
         (lambda p: p.count('6') == 0, "Must not contain the digit '6'"),
 
-        # SPECIAL CHARACTERS (30–39)
+        # SPECIAL CHARACTERS
         (exactly_once('#'), "Must contain exactly one '#' symbol"),
         (exactly_once('!'), "Must contain exactly one '!' symbol"),
         (exactly_once('*'), "Must contain exactly one '*' symbol"),
@@ -68,7 +70,7 @@ def generate_conditions():
         (lambda p: p.count('^') == 0, "Must not contain the '^' symbol"),
         (lambda p: p.count('~') == 0, "Must not contain the '~' symbol"),
 
-        # REQUIRED LETTERS (40–59)
+        # REQUIRED LETTERS
         (lambda p: 'a' in p.lower(), "Must contain the letter 'a'"),
         (lambda p: 'b' in p.lower(), "Must contain the letter 'b'"),
         (lambda p: 'c' in p.lower(), "Must contain the letter 'c'"),
@@ -90,21 +92,21 @@ def generate_conditions():
         (lambda p: 'u' in p.lower(), "Must contain the letter 'u'"),
         (lambda p: 'w' in p.lower(), "Must contain the letter 'w'"),
 
-        # FORBIDDEN LETTERS (60–64)
+        # FORBIDDEN LETTERS
         (lambda p: 'q' not in p.lower(), "Must not contain the letter 'q'"),
         (lambda p: 'v' not in p.lower(), "Must not contain the letter 'v'"),
         (lambda p: 'x' not in p.lower(), "Must not contain the letter 'x'"),
         (lambda p: 'y' not in p.lower(), "Must not contain the letter 'y'"),
         (lambda p: 'z' not in p.lower(), "Must not contain the letter 'z'"),
 
-        # VOWEL RULES (65–69)
+        # VOWEL RULES
         (lambda p: len([c for c in p if c.lower() in 'aeiou']) >= 4, "Must contain at least 4 vowels total"),
         (lambda p: len([c for c in p if c.lower() in 'aeiou']) <= 7, "Must contain at most 7 vowels total"),
         (lambda p: p.lower().count('e') >= 1, "Must contain at least one 'e'"),
         (lambda p: p.count('e') <= 2, "Must contain at most two lowercase 'e' letters"),
         (lambda p: len(set(c.lower() for c in p if c.lower() in 'aeiou')) >= 3, "Must contain at least 3 different vowel types"),
 
-        # SUBSTRING REQUIREMENTS (70–82)
+        # SUBSTRING REQUIREMENTS
         (contains_exact_once("SUN"), "Must contain 'SUN' exactly once"),
         (contains_exact_once("101"), "Must contain '101' exactly once"),
         (lambda p: "love" not in p.lower(), "Must not contain the word 'love'"),
@@ -119,7 +121,7 @@ def generate_conditions():
         (lambda p: "098" not in p, "Must not contain '098' sequence"),
         (lambda p: p != p[::-1], "Must not be a palindrome"),
 
-        # PATTERN RESTRICTIONS (83–91)
+        # PATTERN RESTRICTIONS
         (no_run(r"[0-9]{4}"), "No four consecutive digits"),
         (no_run(r"[A-Z]{4}"), "No four consecutive uppercase letters"),
         (no_run(r"[aeiouAEIOU]{4}"), "No four consecutive vowels"),
@@ -130,26 +132,22 @@ def generate_conditions():
         (no_run(r"[A-Z][0-9][A-Z]"), "No uppercase-digit-uppercase sequence"),
         (no_run(r"\s"), "Must not contain spaces or whitespace"),
 
-        # CHARACTER FREQUENCY LIMITS (92–95)
+        # CHARACTER FREQUENCY LIMITS
         (lambda p: p.count('a') <= 2, "Letter 'a' can appear at most twice"),
         (lambda p: p.count('o') <= 2, "Letter 'o' can appear at most twice"),
         (lambda p: p.count('i') <= 2, "Letter 'i' can appear at most twice"),
         (lambda p: p.count('u') <= 2, "Letter 'u' can appear at most twice"),
 
-        # MATHEMATICAL CONDITIONS (96–100)
+        # MATHEMATICAL CONDITIONS
         (lambda p: sum(ord(c) for c in p if c.isalpha()) % 2 == 0, "Sum of letter ASCII values must be even"),
         (lambda p: len([c for c in p if c.isupper()]) % 2 == 1, "Number of uppercase letters must be odd"),
         (lambda p: len([c for c in p if c.islower()]) % 2 == 0, "Number of lowercase letters must be even"),
         (lambda p: sum(int(c) for c in p if c.isdigit()) % 5 == 0, "Sum of all digits must be divisible by 5"),
         (lambda p: 'SUN' in p and '101' in p and p.index('SUN') < p.index('101'), "Must contain both 'SUN' and '101', with 'SUN' appearing before '101'"),
     ]
-    
     return conditions
 
-# def check_password(password, conditions):
-#     failed = [msg for cond, msg in conditions if not cond(password)]
-#     passed_count = 100 - len(failed)
-#     return len(failed) == 0, failed, passed_count
+
 def check_password(password, conditions):
     failed = []
     for idx, (cond, msg) in enumerate(conditions, start=1):
@@ -161,37 +159,76 @@ def check_password(password, conditions):
     passed_count = len(conditions) - len(failed)
     return len(failed) == 0, failed, passed_count
 
-def password_game():
-    print("Welcome to the Password Challenge!")
-    print("Your password must satisfy 100 unique conditions.")
-    print("Enter a password, and I'll tell you which conditions you failed.")
-    print("Type 'quit' to exit.")
-    
-    conditions = generate_conditions()
-    
-    while True:
-        print("\n" + "="*50)
-        password = input("\nEnter your password: ")
-        if password.lower() == 'quit':
-            print("Game ended.")
-            break
-        
-        is_valid, failed_conditions, passed_count = check_password(password, conditions)
-        if is_valid:
-            print()
-            print(f"SUCCESS !")
-            print(f"Your password meets all requirements! (All {passed_count}/100 checks passed)")
-            print("\n" + "="*50 + "\n")
-            break
-        else:
-            print()
-            print(f"Progress: {passed_count}/100 checks passed.")
-            for i, failure in enumerate(failed_conditions):
-                print(f"NOTE: {failure}")
-                break
-            
 # baf1gSUNhiejklmopr5stu$w9c#w!d101b*w934ww0w2
+# ---------------- GUI ----------------
+def run_gui(conditions=None):
+   # Build conditions if not supplied
+    if conditions is None:
+        conditions = generate_conditions()
+    def on_check():
+        pwd = entry.get()
+        is_valid, failed_conditions, passed_count = check_password(pwd, conditions)
+        text_area.configure(state="normal")
+        text_area.delete(1.0, tk.END)
+
+        if is_valid:
+            text_area.insert(tk.END, f"✅ Your password meets all {len(conditions)} conditions!\n", "success")
+        else:
+            text_area.insert(tk.END, f"Progress: {passed_count}/{len(conditions)} checks passed\n\n", "info")
+            for failure in failed_conditions[:1]:
+                text_area.insert(tk.END, f"⚠ {failure}\n", "fail")
+            if len(failed_conditions) > 1:
+                text_area.insert(tk.END, f"... and {len(failed_conditions)-1} more issues.\n", "fail")
+
+        text_area.configure(state="disabled")
+
+    root = tk.Tk()
+    root.title("🔐 Password Odyssey Game")
+    root.geometry("450x450")
+    root.configure(bg="#e9eff6")
+
+    # Header bar
+    header = tk.Frame(root, bg="#0078D7", height=60)
+    header.pack(fill="x")
+    tk.Label(header, text="🔐 Password Odyssey Game",
+             fg="white", bg="#0078D7", font=("Segoe UI", 16, "bold")).pack(pady=10)
+
+    # Style
+    style = ttk.Style()
+    style.theme_use("clam")
+    style.configure("TButton", font=("Segoe UI", 12, "bold"), padding=10,
+                    relief="flat", background="#0078D7", foreground="white")
+    style.map("TButton", background=[("active", "#005a9e")])
+    style.configure("TEntry", padding=8, font=("Consolas", 12))
+    style.configure("TLabel", font=("Segoe UI", 12), background="#e9eff6")
+
+    # Frame for content
+    main_frame = tk.Frame(root, bg="white", bd=2, relief="groove")
+    main_frame.pack(padx=20, pady=20, fill="both", expand=True)
+
+    # Title
+    ttk.Label(main_frame, text="Enter your password:", font=("Segoe UI", 20, "bold"), background="white").pack(pady=(20, 10))
+
+    # Entry
+    entry = ttk.Entry(main_frame, width=50, show="*")
+    entry.pack(pady=10, ipady=6)
+
+    # Button
+    ttk.Button(main_frame, text="Check Password", command=on_check).pack(pady=10)
+
+    # Results area
+    text_area = scrolledtext.ScrolledText(
+        main_frame, width=70, height=15, wrap=tk.WORD,
+        font=("Consolas", 11), relief="flat", bd=5, bg="#fdfdfd"
+    )
+    text_area.tag_configure("success", foreground="green", font=("Segoe UI", 12, "bold"))
+    text_area.tag_configure("fail", foreground="red")
+    text_area.tag_configure("info", foreground="#0078D7")
+    text_area.configure(state="disabled")
+    text_area.pack(padx=20, pady=20, fill=tk.BOTH, expand=True)
+
+    root.mainloop()
+
 
 if __name__ == "__main__":
-    print("\n" + "="*50 + "\n")
-    password_game()
+    run_gui(generate_conditions())
