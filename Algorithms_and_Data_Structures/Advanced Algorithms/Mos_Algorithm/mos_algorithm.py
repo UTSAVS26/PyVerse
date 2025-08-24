@@ -162,20 +162,23 @@ class MosAlgorithm:
             
             while current_left < query.left:
                 if self.array[current_left] == current_max:
-                    # Recalculate max
-                    current_max = max(self.array[current_left + 1:current_right + 1])
+                    if current_left + 1 <= current_right:
+                        current_max = max(self.array[current_left + 1:current_right + 1])
+                    else:
+                        current_max = float('-inf')
                 current_left += 1
             
             while current_right > query.right:
                 if self.array[current_right] == current_max:
-                    # Recalculate max
-                    current_max = max(self.array[current_left:current_right])
+                    if current_left <= current_right - 1:
+                        current_max = max(self.array[current_left:current_right])
+                    else:
+                        current_max = float('-inf')
                 current_right -= 1
             
             results[query.index] = current_max
         
         return results
-    
     def count_frequencies(self, queries: List[Query]) -> List[Dict[int, int]]:
         """Count element frequencies in ranges"""
         if not queries:
