@@ -359,16 +359,18 @@ class PersistentTree:
         tree.insert(5)
         tree.insert(3)
         tree.insert(7)
-        tree.create_version("v1")
-        tree.insert(2, version="v1")
+-        tree.create_version("v1")
+        tree.create_version("branch1")
+        tree.insert(2, version="branch1")
         
         test_cases.append({
             'name': 'Basic Operations',
             'tree': tree,
             'expected_versions': ['v0', 'v1', 'v2', 'v3', 'v4'],
             'expected_search': {
-                'v0': [5, 3, 7],
-                'v1': [5, 3, 7, 2]
+-                'v0': [5, 3, 7],
+                'v3': [5, 3, 7],     # after three inserts
+                'v4': [5, 3, 7, 2]   # version created from 'branch1' insert
             }
         })
         
@@ -390,7 +392,6 @@ class PersistentTree:
         })
         
         return test_cases
-
 def visualize_persistent_tree(tree: PersistentTree, show_plot: bool = True) -> None:
     """Visualize the persistent tree with all versions"""
     if not tree.versions:
