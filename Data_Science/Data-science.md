@@ -26,11 +26,11 @@
 
 ## ⭐️ Introduction
 
-### Data, Information and Knowledge
+### Data, Information, and Knowledge
 
-- Data: raw, unprocessed facts.
-- Information: processed form of data. 
-- Knowledge: entity that comes from utilisation of data; helps us to make predictions or take decisions.
+- Data: raw observations (numbers, text, events) without context.
+- Information: processed and contextualized data that answers who/what/when/where.
+- Knowledge: validated understanding derived from information and experience; enables explanation, prediction, and decision‑making.
 
 ### Types of Data 
 
@@ -47,16 +47,12 @@ In data science, data can be classified based on structure into three main categ
 3. **Semi-Structured Data**: Partially organized—contains structural markers (e.g., tags, keys)—but does not strictly conform to a tabular model. Sources: JSON and XML files, NoSQL databases, HTML documents, and metadata in multimedia.
    Examples: email (body unstructured; headers structured), web pages, XML-based config files.
 
-#### ➡️ Based on Measurement Scale
+#### ➡️ Based on Measurement Scales
 
 1. **Nominal**: Categories without order (e.g., gender, eye color).
-
 2. **Ordinal**: Categories with order but no uniform difference between categories (e.g., education level, rankings).
-
-3. **Interval**: Ordered data with equal intervals, but no absolute zero (e.g., temperature in Celsius).
-
-4. **Ratio**: Interval-scale data with an absolute zero (e.g., salary, age, height).
-
+3. **Interval**: Ordered with equal intervals but no true zero (e.g., temperature in Celsius/Fahrenheit).
+4. **Ratio**: Equal intervals with a meaningful zero that implies absence (e.g., temperature in Kelvin, salary, age, height).
 
 ### What is Data Science?
 
@@ -95,8 +91,9 @@ Data science is an interdisciplinary field focused on extracting meaningful insi
 | TensorFlow       | ![TensorFlow](https://img.shields.io/badge/-TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white) |
 | Keras            | ![Keras](https://img.shields.io/badge/-Keras-D00000?style=flat-square&logo=keras&logoColor=white) |
 | Matplotlib       | ![Matplotlib](https://img.shields.io/badge/-Matplotlib-11557C?style=flat-square&logo=matplotlib&logoColor=white) |
-| SQL              | ![SQL](https://img.shields.io/badge/-SQL-4479A1?style=flat-square&logo=mysql&logoColor=white) |
-| NoSQL            | ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) |
+| PostgreSQL       | ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) |
+| MySQL            | ![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white) |
+| MongoDB (NoSQL)  | ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) |
 | Scikit-Learn     | ![Scikit-Learn](https://img.shields.io/badge/-Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white) |
 | Seaborn          | ![Seaborn](https://img.shields.io/badge/-Seaborn-FF5A5F?style=flat-square&logo=seaborn&logoColor=white) |
 | Jupyter          | ![Jupyter](https://img.shields.io/badge/-Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white) |
@@ -107,12 +104,12 @@ Data science is an interdisciplinary field focused on extracting meaningful insi
 ## ⭐️ Key Statistical Techniques in Data Science
 
 1. **Descriptive Statistics**: Summarizes dataset features (mean, median, mode, SD); used in reporting/EDA dashboards.
-
 2. **Inferential Statistics**: Generalize from samples to populations (confidence intervals, hypothesis tests); used in A/B testing and experiments.
-
 3. **Regression Analysis**: Models relationships and predicts outcomes; used for forecasting (sales, demand) and feature effect estimation.
-
 4. **Decision Trees**: Interpretable models for classification/regression; used for churn detection, credit risk, and rule extraction.
+5. **Classification & Clustering**: Supervised/unsupervised pattern discovery (e.g., logistic regression, SVM; k‑means, DBSCAN) for fraud detection and customer segmentation.
+6. **Time Series Analysis**: Trend/seasonality modeling (ARIMA, ETS, Prophet) for demand/metric forecasting.
+7. **Dimensionality Reduction**: PCA/t‑SNE/UMAP to compress features and visualize high‑dimensional data; often used before modeling.
 
 ## ⭐️ EDA: Exploratory Data Analysis
 
@@ -120,13 +117,14 @@ Exploratory Data Analysis (EDA) is a fundamental process in data science used to
 
 ### Steps in EDA
 
-1. Understand the problem and dataset.
-2. Clean and preprocess data (handle missing values, correct data types).
-3. Perform univariate, bivariate, and multivariate analyses.
-4. Visualize data to reveal insights.
-5. Identify outliers and anomalies.
-6. Test hypotheses and assumptions.
-7. Summarize findings and document insights.
+1. Understand the problem and dataset; define success metrics and target (if any).
+2. Create train/validation/test splits before any target‑aware EDA to avoid leakage.
+3. Clean and preprocess data (handle missing values, correct data types).
+4. Perform univariate, bivariate, and multivariate analyses.
+5. Visualize data to reveal insights.
+6. Identify outliers and anomalies.
+7. Test hypotheses and assumptions.
+8. Summarize findings and document insights.
 
 ### Importance
 
@@ -151,13 +149,13 @@ To kick off your *Data Science* journey:
 2. **Understand Statistics**: Grasp basics like *measures of central tendency*, *measures of dispersion*, and *probability*.
 3. **Practice with Datasets**: Explore datasets on *Kaggle* (also try *UCI ML Repo* and *data.gov*).
 4. **Build Projects**: Tackle real-world problems and build a portfolio.
-
+5. **Learn SQL + Git**: Query data in warehouses (SQL) and manage work reproducibly (Git).
 
 
 ## ⭐️ Resources
 
 - **Books**: *"Python for Data Analysis"* by Wes McKinney or *"Data Science from Scratch"* by Joel Grus.
-- **Online Courses**: Available on *Coursera*, *edX*, and *Udacity*.
+- **Online Courses**: *Coursera – IBM Data Science Professional Certificate*, *edX – MITx Statistics and Data Science MicroMasters*.
 - **Communities**: Join *Stack Overflow*, *Reddit*, or *Data Science Meetups*.
 
 
