@@ -6,8 +6,13 @@ Multiple optimized variants are implemented.
 """
 
 import math
-import numpy as np
-from typing import List, Set
+from typing import List, Dict, Any
+try:
+    import numpy as np  # type: ignore
+    HAVE_NUMPY = True
+except Exception:
+    np = None  # type: ignore[assignment]
+    HAVE_NUMPY = False
 import time
 
 
