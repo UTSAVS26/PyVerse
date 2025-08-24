@@ -117,20 +117,25 @@ class MosAlgorithm:
             
             while current_left < query.left:
                 if self.array[current_left] == current_min:
-                    # Recalculate min
-                    current_min = min(self.array[current_left + 1:current_right + 1])
+                    # Recalculate min safely for the new window
+                    if current_left + 1 <= current_right:
+                        current_min = min(self.array[current_left + 1:current_right + 1])
+                    else:
+                        current_min = float('inf')
                 current_left += 1
             
             while current_right > query.right:
                 if self.array[current_right] == current_min:
-                    # Recalculate min
-                    current_min = min(self.array[current_left:current_right])
+                    # Recalculate min safely for the new window
+                    if current_left <= current_right - 1:
+                        current_min = min(self.array[current_left:current_right])
+                    else:
+                        current_min = float('inf')
                 current_right -= 1
             
             results[query.index] = current_min
         
         return results
-    
     def range_max_query(self, queries: List[Query]) -> List[int]:
         """Process range maximum queries"""
         if not queries:
