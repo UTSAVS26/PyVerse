@@ -19,9 +19,9 @@ The game challenges you to craft a password that satisfies unique and tricky rul
 ## Installation
 
 ```bash
-git clone <repo-url>
-cd Beginner_Projects\\Password_Odyssey_Game
-python game.py
+git clone https://github.com/UTSAVS26/PyVerse.git
+cd Beginner_Projects/Password_Odyssey_Game
+python3 game.py  # use 'python' on Windows
 ```
 
 ## How to Play

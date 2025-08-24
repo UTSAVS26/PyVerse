@@ -161,7 +161,10 @@ def check_password(password, conditions):
 
 # baf1gSUNhiejklmopr5stu$w9c#w!d101b*w934ww0w2
 # ---------------- GUI ----------------
-def run_gui():
+def run_gui(conditions=None):
+   # Build conditions if not supplied
+    if conditions is None:
+        conditions = generate_conditions()
     def on_check():
         pwd = entry.get()
         is_valid, failed_conditions, passed_count = check_password(pwd, conditions)
@@ -228,5 +231,4 @@ def run_gui():
 
 
 if __name__ == "__main__":
-    conditions = generate_conditions()
-    run_gui()
+    run_gui(generate_conditions())
