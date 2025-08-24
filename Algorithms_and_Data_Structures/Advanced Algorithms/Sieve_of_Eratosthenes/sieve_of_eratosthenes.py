@@ -254,22 +254,21 @@ def analyze_performance(n: int) -> dict:
     }
     
     # Test NumPy implementation
-    try:
+    if HAVE_NUMPY:
         start_time = time.time()
         numpy_primes = sieve_of_eratosthenes_numpy(n)
         numpy_time = time.time() - start_time
-        results['numpy'] = {
-            'time': numpy_time,
-            'count': len(numpy_primes),
-            'complexity': 'O(n log log n)'
+        results["numpy"] = {
+            "time": numpy_time,
+            "count": len(numpy_primes),
+            "complexity": "O(n log log n)",
         }
-    except ImportError:
-        results['numpy'] = {
-            'time': None,
-            'count': None,
-            'complexity': 'NumPy not available'
+    else:
+        results["numpy"] = {
+            "time": None,
+            "count": None,
+            "complexity": "NumPy not available",
         }
-    
     return results
 
 
