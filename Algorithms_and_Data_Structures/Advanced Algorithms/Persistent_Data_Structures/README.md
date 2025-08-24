@@ -133,16 +133,17 @@ tree.create_branch("v1", "branch1")
 ## Performance Analysis
 
 ### Time Complexity
-- **Insert**: O(log n) per version
-- **Delete**: O(log n) per version
-- **Search**: O(log n) per version
+- For the current unbalanced BST:
+  - Insert: O(h) (worst-case O(n))
+  - Delete: O(h) (worst-case O(n))
+  - Search: O(h) (worst-case O(n))
+- With a balanced persistent tree (future enhancement), these become O(log n).
 - **Version Creation**: O(1)
 
 ### Space Complexity
 - **Worst Case**: O(n * v) where v is number of versions
 - **Average Case**: O(n + m) where m is total modifications
 - **Optimized**: O(n + log v) with structural sharing
-
 ### Memory Usage
 - **Node Sharing**: Reduces memory by sharing unchanged subtrees
 - **Version Storage**: Each version stores only modified path
