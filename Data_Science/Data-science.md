@@ -12,7 +12,7 @@
 ![Matplotlib](https://img.shields.io/badge/-Matplotlib-11557C?style=flat-square&logo=matplotlib&logoColor=white)
 ![R](https://img.shields.io/badge/-R-276DC3?style=flat-square&logo=r&logoColor=white) 
 ![SQL](https://img.shields.io/badge/-SQL-4479A1?style=flat-square&logo=mysql&logoColor=white) 
-![NoSQL](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) 
+![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) 
 ![Scikit-Learn](https://img.shields.io/badge/-Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white) 
 ![Seaborn](https://img.shields.io/badge/-Seaborn-FF5A5F?style=flat-square&logo=seaborn&logoColor=white) 
 ![Apache Spark](https://img.shields.io/badge/-Apache%20Spark-E25A1C?style=flat-square&logo=apache-spark&logoColor=white) 
@@ -93,7 +93,7 @@ Data science is an interdisciplinary field focused on extracting meaningful insi
 | Matplotlib       | ![Matplotlib](https://img.shields.io/badge/-Matplotlib-11557C?style=flat-square&logo=matplotlib&logoColor=white) |
 | PostgreSQL       | ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) |
 | MySQL            | ![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white) |
-| MongoDB (NoSQL)  | ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) |
+| MongoDB          | ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) |
 | Scikit-Learn     | ![Scikit-Learn](https://img.shields.io/badge/-Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white) |
 | Seaborn          | ![Seaborn](https://img.shields.io/badge/-Seaborn-FF5A5F?style=flat-square&logo=seaborn&logoColor=white) |
 | Jupyter          | ![Jupyter](https://img.shields.io/badge/-Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white) |
@@ -118,14 +118,15 @@ Exploratory Data Analysis (EDA) is a fundamental process in data science used to
 ### Steps in EDA
 
 1. Understand the problem and dataset; define success metrics and target (if any).
-2. Create train/validation/test splits before any target‑aware EDA to avoid leakage.
+2. Create train/validation/test splits (with fixed random seeds) before any target‑aware EDA to avoid leakage; keep a hold‑out test set untouched.
 3. Clean and preprocess data (handle missing values, correct data types).
-4. Perform univariate, bivariate, and multivariate analyses.
+4. Perform univariate, bivariate, and multivariate analyses (consider log transforms, scaling, and encoding).
 5. Visualize data to reveal insights.
 6. Identify outliers and anomalies.
 7. Test hypotheses and assumptions.
 8. Summarize findings and document insights.
-
+9.  Save EDA notebooks/reports with environment details for reproducibility (package versions, data snapshot hash).
+    
 ### Importance
 
 1. Provides a clear understanding of data quality and structure.
@@ -137,17 +138,24 @@ Exploratory Data Analysis (EDA) is a fundamental process in data science used to
 - Goal: predict which customers are likely to cancel next month.
 - EDA: inspect churn rates by tenure, contract type, and support tickets; visualize distributions and missing data.
 - Features: engineer tenure buckets, average monthly charges, last‑contact recency.
-- Modeling: baseline logistic regression → compare with tree‑based models.
-- Evaluation: AUC/ROC, precision@k for retention campaigns.
+- Modeling: baseline logistic regression → compare with tree‑based models; address class imbalance (stratified split, class weights, or resampling).
+- Evaluation: AUC/ROC, PR‑AUC, precision@k, and calibration (reliability curves); optimize for campaign capacity (top‑k uplift).
 - Action: target top‑risk deciles with tailored offers; measure uplift via A/B test.
 
+## ⭐️ Ethics and Responsible AI
+
+- Privacy and consent: collect and process data with explicit consent and minimal retention; anonymize or pseudonymize where possible.
+- Fairness and bias: audit datasets and models for representation gaps; track disparate impact across groups.
+- Transparency and reproducibility: document data sources, transformations, and model decisions; version data and code.
+- Governance: adhere to organizational and legal policies (PII handling, data residency, model monitoring).
+  
 ## ⭐️ Getting Started
 
 To kick off your *Data Science* journey: 
 
 1. **Learn Programming**: Start with *Python* or *R*.
-2. **Understand Statistics**: Grasp basics like *measures of central tendency*, *measures of dispersion*, and *probability*.
-3. **Practice with Datasets**: Explore datasets on *Kaggle* (also try *UCI ML Repo* and *data.gov*).
+2. **Understand Math/Stats**: Basics of *probability*, *measures of central tendency/dispersion*, and *linear algebra* (vectors, matrices).
+3. **Practice with Datasets**: Explore datasets on *Kaggle* (also try *UCI ML Repo*, *data.gov*, and *Hugging Face Datasets*).
 4. **Build Projects**: Tackle real-world problems and build a portfolio.
 5. **Learn SQL + Git**: Query data in warehouses (SQL) and manage work reproducibly (Git).
 
@@ -155,7 +163,7 @@ To kick off your *Data Science* journey:
 ## ⭐️ Resources
 
 - **Books**: *"Python for Data Analysis"* by Wes McKinney or *"Data Science from Scratch"* by Joel Grus.
-- **Online Courses**: *Coursera – IBM Data Science Professional Certificate*, *edX – MITx Statistics and Data Science MicroMasters*.
+- **Online Courses**: *Coursera – IBM Data Science Professional Certificate*, *edX – MITx Statistics and Data Science MicroMasters*, and the free *scikit‑learn* tutorials.
 - **Communities**: Join *Stack Overflow*, *Reddit*, or *Data Science Meetups*.
 
 
@@ -165,6 +173,6 @@ To kick off your *Data Science* journey:
 Data science opens a world of possibilities. Start today, practice regularly, and unlock the potential hidden in data. Discover patterns, gain insights, and use them to build solutions.
 
 
-**📌 Data Science is evolving fast—keep learning and experimenting! Happy coding!**
+**📌 Data Science is evolving fast—keep learning and experimenting!**
 
 
