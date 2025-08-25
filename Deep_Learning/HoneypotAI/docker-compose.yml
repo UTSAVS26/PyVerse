@@ -1,0 +1,129 @@
+version: '3.8'
+
+services:
+  honeypotai:
+    build: .
+    container_name: honeypotai-platform
+    restart: unless-stopped
+    ports:
+      - "8501:8501"  # Streamlit Dashboard
+      - "2222:2222"  # SSH Honeypot
+      - "8080:8080"  # HTTP Honeypot
+      - "2121:2121"  # FTP Honeypot
+    volumes:
+      - ./config:/app/config
+      - ./models:/app/models
+      - ./logs:/app/logs
+      - ./data:/app/data
+    environment:
+      - HONEYPOT_LOG_LEVEL=INFO
+      - HONEYPOT_CONFIG_PATH=/app/config/honeypot.yaml
+      - HONEYPOT_MODEL_PATH=/app/models
+      - PYTHONPATH=/app
+    networks:
+      - honeypotai-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.honeypotai.rule=Host(`honeypotai.local`)"
+      - "traefik.http.services.honeypotai.loadbalancer.server.port=8501"
+
+  # Optional: Redis for caching and session management
+  redis:
+    image: redis:7-alpine
+    container_name: honeypotai-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - honeypotai-network
+    command: redis-server --appendonly yes
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Optional: PostgreSQL for persistent data storage
+  postgres:
+    image: postgres:15-alpine
+    container_name: honeypotai-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: honeypotai
+      POSTGRES_USER: honeypotai
+      POSTGRES_PASSWORD: honeypotai_secure_password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+    networks:
+      - honeypotai-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U honeypotai -d honeypotai"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Optional: Prometheus for metrics collection
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: honeypotai-prometheus
+    restart: unless-stopped
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--storage.tsdb.retention.time=200h'
+      - '--web.enable-lifecycle'
+    networks:
+      - honeypotai-network
+
+  # Optional: Grafana for visualization
+  grafana:
+    image: grafana/grafana:latest
+    container_name: honeypotai-grafana
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=honeypotai_admin
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./monitoring/grafana/dashboards:/etc/grafana/provisioning/dashboards
+      - ./monitoring/grafana/datasources:/etc/grafana/provisioning/datasources
+    networks:
+      - honeypotai-network
+    depends_on:
+      - prometheus
+
+networks:
+  honeypotai-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+
+volumes:
+  redis_data:
+    driver: local
+  postgres_data:
+    driver: local
+  prometheus_data:
+    driver: local
+  grafana_data:
+    driver: local
