@@ -19,8 +19,7 @@ pip install -r requirements.txt
 python -m explaindoku.cli solve --grid "530070000600195000098000060800060003400803001700020006060000280000419005000080079" --explain
 
 # Interactive step-by-step solving
-python -m explaindoku.cli step --file examples/medium.txt
-
+python -m explaindoku.cli step --file examples/easy_medium_hard.txt
 # Web UI
 streamlit run explaindoku/ui/streamlit_app.py
 ```
