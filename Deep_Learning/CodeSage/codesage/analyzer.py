@@ -125,8 +125,7 @@ class CodeAnalyzer:
         try:
             tree = ast.parse(source_code)
         except SyntaxError as e:
-            raise ValueError(f"Syntax error in {file_path}: {e}")
-        
+            raise ValueError(f"Syntax error in {file_path}: {e}") from e
         return self.metrics_calculator.analyze_file(tree, file_path, source_lines)
     
     def _find_python_files(self, project_path: Path) -> List[Path]:
