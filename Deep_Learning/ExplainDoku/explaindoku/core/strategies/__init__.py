@@ -1,0 +1,3 @@
+"""
+Solving strategies for ExplainDoku
+"""
