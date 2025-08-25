@@ -237,8 +237,15 @@ class ComplexityMetrics:
         # Calculate metrics
         cyclomatic_complexity = self.calculate_cyclomatic_complexity(func_node)
         nesting_depth = self.calculate_nesting_depth(func_node)
-        parameters = len(func_node.args.args) + len(func_node.args.kwonlyargs)
-        
+        # Count all parameter kinds (positional-only, positional/keyword, varargs, kw-only, kwargs)
+        args = func_node.args
+        parameters = (
+            len(getattr(args, "posonlyargs", [])) +
+            len(args.args) +
+            (1 if args.vararg else 0) +
+            len(args.kwonlyargs) +
+            (1 if args.kwarg else 0)
+        )
         # Count return statements
         return_statements = sum(1 for node in ast.walk(func_node) if isinstance(node, ast.Return))
         
