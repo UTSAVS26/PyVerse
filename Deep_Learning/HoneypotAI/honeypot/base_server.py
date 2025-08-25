@@ -180,10 +180,26 @@ class BaseServer(ABC):
     def get_stats(self) -> Dict[str, Any]:
         """Get current server statistics"""
         stats = self.stats.copy()
-        if stats["start_time"]:
-            stats["uptime"] = (datetime.now() - stats["start_time"]).total_seconds()
-        stats["active_connections"] = len([c for c in self.connections if c.is_alive()])
-        stats["total_logs"] = len(self.logs)
+     def get_stats(self) -> Dict[str, Any]:
+         """Get current server statistics"""
+         stats = self.stats.copy()
+-        if stats["start_time"]:
+        # Ensure start_time is ISO-serialized for transport, but still compute uptime if it's a real datetime
+        if self.stats["start_time"]:
+            # Convert datetime to ISO string (or leave it unchanged if already serialized)
+            stats["start_time"] = (
+                self.stats["start_time"].isoformat()
+                if isinstance(self.stats["start_time"], datetime)
+                else self.stats["start_time"]
+            )
+            # Compute uptime only when start_time is a datetime; otherwise default to 0
+            stats["uptime"] = (
+                (datetime.now() - self.stats["start_time"]).total_seconds()
+                if isinstance(self.stats["start_time"], datetime)
+                else 0
+            )
+         stats["active_connections"] = len([c for c in self.connections if c.is_alive()])
+         stats["total_logs"] = len(self.logs)
         return stats
     
     def get_logs(self, limit: Optional[int] = None) -> list:
