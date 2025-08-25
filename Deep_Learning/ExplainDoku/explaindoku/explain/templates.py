@@ -180,43 +180,20 @@ class ExplanationTemplates:
             return f"{', '.join(parts[:-1])}, and {parts[-1]}"
     
     @classmethod
-    def generate_explanation(cls, technique: str, **kwargs) -> str:
-        """Generate explanation using template and parameters"""
-        template_info = cls.get_template(technique)
-        template = template_info["template"]
-        
-        # Format special parameters
-        if "unit_name" in kwargs and "unit_type" in kwargs and "unit_index" in kwargs:
-            kwargs["unit_name"] = cls.format_unit_name(
-                kwargs["unit_type"], kwargs["unit_index"]
-            )
-        
-        if "cell_positions" in kwargs:
-            kwargs["cell_positions"] = cls.format_positions(kwargs["cell_positions"])
-        
-        if "locked_positions" in kwargs:
-            kwargs["locked_positions"] = cls.format_positions(kwargs["locked_positions"])
-        
-        if "elimination_positions" in kwargs:
-            kwargs["elimination_positions"] = cls.format_positions(kwargs["elimination_positions"])
-        
-        if "digits" in kwargs:
-            kwargs["digits"] = cls.format_digits(kwargs["digits"])
-        
-        if "base_units" in kwargs:
-            kwargs["base_units"] = cls.format_digits(kwargs["base_units"])
-        
-        if "cover_units" in kwargs:
-            kwargs["cover_units"] = cls.format_digits(kwargs["cover_units"])
-        
-        if "eliminations" in kwargs:
-            kwargs["elimination_positions"] = cls.format_eliminations(kwargs["eliminations"])
-        
-        # Handle special cases
-        if "status" in kwargs:
-            kwargs["status"] = "successful" if kwargs.get("success", False) else "failed"
-        
-        return template.format(**kwargs)
+    # Build params including unit_name and status for proper template formatting
+    unit_name = self.templates.format_unit_name(event.unit_type, event.unit_index)
+    success_flag = event.metadata.get("success", False)
+    params = {
+        "technique": event.technique,
+        "cell_position": event.cell_position,
+        "value": event.value,
+        "unit_type": event.unit_type,
+        "unit_index": event.unit_index,
+        "unit_name": unit_name,
+        "backtrack_count": event.metadata.get("backtrack_count", 0),
+        "success": success_flag,
+        "status": success_flag
+    }
     
     @classmethod
     def get_technique_description(cls, technique: str) -> str:
