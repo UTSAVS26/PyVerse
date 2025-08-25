@@ -1,7 +1,7 @@
 # 🧩 CodeSage – AI-Enhanced Code Complexity Estimator
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Tests](https://img.shields.io/badge/tests-85%20passed-brightgreen.svg)](https://github.com/yourusername/codesage)
+<!-- TODO: Add project CI badge here once configured for UTSAVS26/PyVerse -->
 
 **CodeSage** is an intelligent Python tool that analyzes code complexity using Abstract Syntax Tree (AST) analysis and machine learning to provide actionable insights for code quality improvement.
 
