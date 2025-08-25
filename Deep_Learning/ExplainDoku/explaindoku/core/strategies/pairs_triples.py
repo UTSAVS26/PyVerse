@@ -179,10 +179,10 @@ class PairsTriplesStrategy:
             return False
         
         # Apply all eliminations
+        any_removed = False
         for (row, col), digit in result.eliminations:
-            self.cm.remove_candidate(row, col, digit)
-        
-        return True
+            any_removed = self.cm.remove_candidate(row, col, digit) or any_removed
+        return any_removed
     
     def find_all_pairs_triples(self) -> List[PairTripleResult]:
         """Find all pairs and triples (naked and hidden)"""
