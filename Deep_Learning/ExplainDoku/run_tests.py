@@ -12,13 +12,10 @@ def run_tests():
     print("🧩 Running ExplainDoku Tests")
     print("=" * 50)
     
-    # Check if pytest is available
-    try:
-        import pytest
-    except ImportError:
+    # Check if pytest is available (without importing it)
+    if importlib.util.find_spec("pytest") is None:
         print("❌ pytest not found. Installing...")
         subprocess.check_call([sys.executable, "-m", "pip", "install", "pytest", "pytest-cov"])
-    
     # Run tests with coverage
     test_args = [
         sys.executable, "-m", "pytest",
