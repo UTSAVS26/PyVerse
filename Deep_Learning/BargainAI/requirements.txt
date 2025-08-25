@@ -1,0 +1,7 @@
+numpy==1.24.3
+torch==2.0.1
+matplotlib==3.7.2
+pytest==7.4.0
+streamlit==1.25.0
+pandas==2.0.3
+seaborn==0.12.2
