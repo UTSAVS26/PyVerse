@@ -325,22 +325,19 @@ class Solver:
         )
     
     def get_difficulty_estimate(self) -> str:
-        """Estimate the difficulty of the puzzle based on techniques needed"""
-        # This is a simplified difficulty estimator
-        # In practice, you'd want to analyze the puzzle more thoroughly
-        
-        # Try solving with only basic strategies
-        basic_solver = Solver(self.original_grid)
-        basic_result = basic_solver.solve(use_search=False)
-        
-        if basic_result.success:
-            return "Easy"
-        
-        # Try with intermediate strategies
-        intermediate_solver = Solver(self.original_grid)
-        intermediate_result = intermediate_solver.solve(use_search=False)
-        
-        if intermediate_result.success:
+        """Estimate difficulty from the strongest technique used (no search)."""
+        result = Solver(self.original_grid).solve(use_search=False)
+        if not result.success:
+            return "Hard"
+        techniques = {step.technique for step in result.steps}
+        # If any fish is used → Hard
+        if any(t in {"x_wing", "swordfish", "jellyfish"} for t in techniques):
+            return "Hard"
+        # If any subsets/locked-candidates are used → Medium
+        if any(t in {
+            "pointing_row", "pointing_col", "claiming_row", "claiming_col",
+            "naked_pair", "hidden_pair", "naked_triple", "hidden_triple"
+        } for t in techniques):
             return "Medium"
-        
-        return "Hard"
+        # Otherwise singles only → Easy
+        return "Easy"
