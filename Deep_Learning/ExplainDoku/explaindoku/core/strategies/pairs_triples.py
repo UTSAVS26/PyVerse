@@ -104,36 +104,31 @@ class PairsTriplesStrategy:
                 
                 # Check all combinations of digits
                 for digit_combo in combinations(range(1, 10), size):
-                    # Find cells that have any of these digits as candidates
-                    cells_with_digits = set()
-                    for row, col in empty_cells:
-                        candidates = self.cm.get_candidates(row, col)
-                        if any(digit in candidates for digit in digit_combo):
-                            cells_with_digits.add((row, col))
-                    
-                    # Check if exactly 'size' cells have these digits
-                    if len(cells_with_digits) == size:
-                        # Check if these cells only have these digits as candidates
-                        all_candidates = set()
-                        for row, col in cells_with_digits:
-                            candidates = self.cm.get_candidates(row, col)
-                            all_candidates.update(candidates)
-                        
-                        if all_candidates.issubset(set(digit_combo)):
-                            # Find eliminations
-                            eliminations = self._get_hidden_subset_eliminations(
-                                unit_type, unit_index, cells_with_digits, set(digit_combo)
-                            )
-                            
-                            if eliminations:
-                                results.append(PairTripleResult(
-                                    technique=f"hidden_{self._get_size_name(size)}",
-                                    digits=set(digit_combo),
-                                    unit_type=unit_type,
-                                    unit_index=unit_index,
-                                    cells=list(cells_with_digits),
-                                    eliminations=eliminations
-                                ))
+                    # For each digit, collect cells in this unit that contain it
+                    per_digit_cells = [
+                        set(self.cm.get_cells_with_candidate(d, unit_type, unit_index))
+                        for d in digit_combo
+                    ]
+                    # Each digit must appear in at least one cell
+                    if any(len(cells) == 0 for cells in per_digit_cells):
+                        continue
+                    # Union of these cells must be exactly 'size'
+                    union_cells = set().union(*per_digit_cells)
+                    if len(union_cells) != size:
+                        continue
+                    # Now we have a hidden subset: restrict those cells to the subset digits
+                    eliminations = self._get_hidden_subset_eliminations(
+                        unit_type, unit_index, union_cells, set(digit_combo)
+                    )
+                    if eliminations:
+                        results.append(PairTripleResult(
+                            technique=f"hidden_{self._get_size_name(size)}",
+                            digits=set(digit_combo),
+                            unit_type=unit_type,
+                            unit_index=unit_index,
+                            cells=list(union_cells),
+                            eliminations=eliminations
+                        ))
         
         return results
     
