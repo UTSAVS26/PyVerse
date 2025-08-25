@@ -95,7 +95,7 @@ class Solver:
                     final_grid=search_result.final_grid,
                     total_steps=len(steps),
                     human_steps=len(human_steps),
-                    search_steps=len(search_result.steps),
+                    search_steps=search_result.search_steps,
                     backtrack_count=search_result.backtrack_count
                 )
         
