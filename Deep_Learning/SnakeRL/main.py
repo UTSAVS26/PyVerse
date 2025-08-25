@@ -233,8 +233,7 @@ def main():
                 print("Error: Model path required for play mode")
                 return
             
-            play_game(env, agent, episodes=5)
-    
+            play_game(env, agent, episodes=args.episodes)
     except KeyboardInterrupt:
         print("\nTraining interrupted by user")
     except Exception as e:
