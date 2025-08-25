@@ -110,15 +110,16 @@ def complex_data_analysis(data: List[Dict], filters: Dict, sort_by: str, limit: 
             filtered_data.append(item)
     
     # Sort data
-    if sort_by in filtered_data[0] if filtered_data else False:
+    # Sort data
+    if filtered_data:
         reverse = sort_by.startswith('-')
         sort_key = sort_by[1:] if reverse else sort_by
-        
-        filtered_data.sort(
-            key=lambda x: x.get(sort_key, 0),
-            reverse=reverse
-        )
-    
+        # Only sort if the key exists in at least one item
+        if any(sort_key in item for item in filtered_data):
+            filtered_data.sort(
+                key=lambda x: x.get(sort_key, 0),
+                reverse=reverse
+            )
     # Apply limit
     if limit > 0:
         filtered_data = filtered_data[:limit]
