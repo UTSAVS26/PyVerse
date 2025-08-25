@@ -303,14 +303,9 @@ class ComplexityMetrics:
             sum(f.comments_ratio for f in functions) / total_functions
         ]
         
-        if self.is_trained:
-            file_features_array = np.array([file_features])
-            scaled_features = self.scaler.transform(file_features_array)
-            anomaly_score = self.ml_model.decision_function(scaled_features)[0]
-            ai_anomaly_score = max(0, min(100, (1 - anomaly_score) * 100))
-        else:
-            ai_anomaly_score = self._calculate_file_anomaly_score(functions, total_lines)
-        
+        # NOTE: Keep file-level scoring rule-based to avoid reusing the function-trained model
+        # which has incompatible feature semantics for file aggregates.
+        ai_anomaly_score = self._calculate_file_anomaly_score(functions, total_lines)
         return FileMetrics(
             filename=filename,
             functions=functions,
