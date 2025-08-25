@@ -52,6 +52,18 @@ setup(
     ],
     python_requires=">=3.8",
     install_requires=requirements,
+    extras_require={
+        "dev": [
+            "pytest>=7.0.0",
+            "pytest-cov>=4.0.0",
+            "black>=22.0.0",
+            "flake8>=5.0.0",
+        ],
+        "viz": [
+            # Optional visualization backends
+            "graphviz>=0.20.1",
+        ],
+    },
     entry_points={
         "console_scripts": [
             "codesage=codesage.cli:main",
