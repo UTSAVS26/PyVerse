@@ -30,7 +30,7 @@ def run_tests():
     ]
     
     try:
-        result = subprocess.run(test_args, check=True)
+        subprocess.run(test_args, check=True, cwd=str(script_dir), env=env)
         print("\n✅ All tests passed!")
         return True
     except subprocess.CalledProcessError as e:
