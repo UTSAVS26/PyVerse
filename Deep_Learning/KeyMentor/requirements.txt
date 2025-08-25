@@ -1,0 +1,31 @@
+# KeyMentor - Typing Coach Dependencies
+# Core dependencies for the typing coach application
+
+# Database
+# SQLite3 is included with Python standard library
+
+# GUI Framework
+# Tkinter is included with Python standard library
+
+# Testing Framework
+pytest>=7.0.0
+pytest-cov>=4.0.0
+pytest-mock>=3.10.0
+
+# Development Tools
+black>=22.0.0
+flake8>=5.0.0
+mypy>=1.0.0
+
+# Optional: For enhanced GUI (if needed)
+# pillow>=9.0.0  # For image processing in GUI
+# matplotlib>=3.5.0  # For progress charts and graphs
+
+# Optional: For data analysis and export
+# pandas>=1.5.0  # For advanced data manipulation
+# numpy>=1.21.0  # For numerical operations
+
+# Optional: For web interface (future enhancement)
+# flask>=2.0.0  # For web API
+# streamlit>=1.20.0  # For web dashboard
+
