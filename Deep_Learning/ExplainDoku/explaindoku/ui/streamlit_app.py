@@ -306,7 +306,9 @@ def solve_all_puzzle():
         return
     
     with st.spinner("Solving puzzle..."):
-        result = solver.solve(use_search=True)
+        # Create a new solver from the current UI grid to preserve manual progress
+        temp_solver = Solver(st.session_state.current_grid.copy())
+        result = temp_solver.solve(use_search=True)
         
         if result.success:
             st.session_state.current_grid = result.final_grid
