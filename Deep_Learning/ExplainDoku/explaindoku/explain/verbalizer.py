@@ -74,28 +74,35 @@ class Verbalizer:
             "technique": event.technique,
             "cell_position": event.cell_position,
             "value": event.value,
-            "unit_type": event.unit_type,
-            "unit_index": event.unit_index,
             "backtrack_count": event.metadata.get("backtrack_count", 0),
             "success": event.metadata.get("success", False)
         }
-        
+
+        # Add unit info and pre-formatted unit name if available
+        if event.unit_type is not None and event.unit_index is not None:
+            params["unit_type"] = event.unit_type
+            params["unit_index"] = event.unit_index
+            params["unit_name"] = self.templates.format_unit_name(event.unit_type, event.unit_index)
+
         # Add eliminations if present
         if event.eliminations:
             eliminations = []
             for elim in event.eliminations:
                 eliminations.append((
-                    (elim["row"], elim["col"]), 
+                    (elim["row"], elim["col"]),
                     elim["digit"]
                 ))
             params["eliminations"] = eliminations
-        
+
         # Add evidence if present
         if event.evidence:
             params["evidence"] = event.evidence
-        
-        return self.templates.generate_explanation(event.technique, **params)
-    
+
+        try:
+            return self.templates.generate_explanation(event.technique, **params)
+        except KeyError:
+            # Fallback to recorded description if templates need fields we don't have
+            return event.description or f"Applied {event.technique.replace('_', ' ').title()}."
     def _verbalize_unknown_technique(self, event: TraceEvent) -> str:
         """Verbalize an unknown technique"""
         base_explanation = f"Applied {event.technique} technique"
