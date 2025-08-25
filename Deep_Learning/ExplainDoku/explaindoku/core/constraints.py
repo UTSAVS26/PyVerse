@@ -223,27 +223,30 @@ class ConstraintManager:
         return True
     
     def _revise(self, row1: int, col1: int, row2: int, col2: int) -> bool:
-        """Revise the domain of cell1 with respect to cell2"""
+        """Revise Dom(X1) wrt Dom(X2) for the constraint X1 != X2."""
         cell1 = self.grid.get_cell(row1, col1)
         cell2 = self.grid.get_cell(row2, col2)
-        
-        if cell1.is_filled or cell2.is_filled:
-            return False
-        
+
         revised = False
-        candidates_to_remove = set()
-        
-        for digit in cell1.candidates:
-            # Check if digit can be supported by cell2
-            if digit not in cell2.candidates:
-                candidates_to_remove.add(digit)
+
+        # If X2 is filled with v, remove v from Dom(X1)
+        if cell2.is_filled:
+            v = cell2.value
+            if v in cell1.candidates and not cell1.is_filled:
+                cell1.remove_candidate(v)
+                return True
+
+        if cell1.is_filled or cell2.is_filled:
+            return revised
+
+        # Otherwise, if Dom(X2) == {d}, remove d from Dom(X1)
+        if len(cell2.candidates) == 1:
+            (d,) = tuple(cell2.candidates)
+            if d in cell1.candidates:
+                cell1.remove_candidate(d)
                 revised = True
-        
-        for digit in candidates_to_remove:
-            cell1.remove_candidate(digit)
-        
+
         return revised
-    
     def get_conflicts(self) -> List[Tuple[int, int]]:
         """Get all cells that have conflicts (no candidates but not filled)"""
         conflicts = []
