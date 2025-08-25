@@ -31,15 +31,11 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/codesage.git
-cd codesage
+git clone https://github.com/UTSAVS26/PyVerse.git
+cd PyVerse/Deep_Learning/CodeSage
 
-# Install dependencies
-pip install -r requirements.txt
-
-# Install the package
+# Install in editable mode (installs console script `codesage`)
 pip install -e .
-```
 
 ### Basic Usage
 
