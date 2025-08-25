@@ -1,0 +1,8 @@
+Pillow==10.0.1
+matplotlib==3.7.2
+numpy==1.24.3
+torch==2.0.1
+streamlit==1.25.0
+pytest==7.4.0
+pytest-cov==4.1.0
+cairosvg==2.7.1
