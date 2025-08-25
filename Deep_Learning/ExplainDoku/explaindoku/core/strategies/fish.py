@@ -62,22 +62,49 @@ class FishStrategy:
         for base_units in combinations(range(9), size):
             # For each digit, check if it forms a fish pattern
             for digit in range(1, 10):
-                # Find which cover units contain this digit in the base units
-                cover_units = self._find_cover_units_for_digit(digit, base_units, base_unit_type)
-                
-                # Check if we have a valid fish pattern
-                if len(cover_units) == size:
-                    # Find eliminations
-                    eliminations = self._get_fish_eliminations(digit, cover_units, cover_unit_type, base_units)
-                    
-                    if eliminations:
-                        results.append(FishResult(
-                            technique=technique,
-                            digit=digit,
-                            base_units=list(base_units),
-                            cover_units=list(cover_units),
-                            eliminations=eliminations
-                        ))
+                # Collect candidate positions in each base unit
+                base_unit_covers: List[Set[int]] = []
+                valid_base = True
+                for u in base_units:
+                    cells = self.cm.get_cells_with_candidate(digit, base_unit_type, u)
+                    # cardinality constraints per base unit
+                    cnt = len(cells)
+                    if size == 2:
+                        # X-Wing requires exactly 2 candidates per base unit
+                        if cnt != 2:
+                            valid_base = False
+                            break
+                    else:
+                        # For larger fish, 2..size candidates per base unit
+                        if cnt < 2 or cnt > size:
+                            valid_base = False
+                            break
+                    # map to cover indices (columns if base units are cols, else rows)
+                    covers = {c if base_unit_type == 'col' else r for r, c in cells}
+                    base_unit_covers.append(covers)
+                if not valid_base:
+                    continue
+
+                # Union of all cover indices must be exactly `size`
+                cover_units = set().union(*base_unit_covers)
+                if len(cover_units) != size:
+                    continue
+                # Ensure each base unit's candidates lie within those cover units
+                if any(not covers.issubset(cover_units) for covers in base_unit_covers):
+                    continue
+
+                # Find eliminations based on these strictly validated fish units
+                eliminations = self._get_fish_eliminations(
+                    digit, cover_units, cover_unit_type, base_units
+                )
+                if eliminations:
+                    results.append(FishResult(
+                        technique=technique,
+                        digit=digit,
+                        base_units=list(base_units),
+                        cover_units=list(cover_units),
+                        eliminations=eliminations
+                    ))
         
         return results
     
