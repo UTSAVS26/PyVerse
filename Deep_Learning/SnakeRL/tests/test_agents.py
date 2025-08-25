@@ -327,10 +327,14 @@ class TestDQNAgent:
         """Test neural network architecture"""
         # Test forward pass
         state = np.random.random(self.state_size).astype(np.float32)
-        state_tensor = torch.FloatTensor(state).unsqueeze(0)
-        
-        q_values = self.agent.q_network(state_tensor)
-        
+        state_tensor = torch.as_tensor(
+            state,
+            dtype=torch.float32,
+            device=self.agent.device
+        ).unsqueeze(0)
+
+        q_values = self.agent.q_network(state_tensor).detach().to('cpu')
+
         # Check output shape
         assert q_values.shape == (1, self.action_size)
         assert q_values.dtype == torch.float32
