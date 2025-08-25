@@ -3,8 +3,29 @@ from setuptools import setup, find_packages
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
-with open("requirements.txt", "r", encoding="utf-8") as fh:
-    requirements = [line.strip() for line in fh if line.strip() and not line.startswith("#")]
+from setuptools import setup, find_packages
+from pathlib import Path
+
+base_dir = Path(__file__).parent.resolve()
+with (base_dir / "README.md").open("r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
+with (base_dir / "requirements.txt").open("r", encoding="utf-8") as fh:
+    raw_reqs = [
+        line.strip()
+        for line in fh
+        if line.strip() and not line.startswith("#")
+    ]
+    # Exclude dev/test tools from runtime requirements
+    _dev_prefixes = ("pytest", "pytest-cov", "black", "flake8")
+    requirements = [r for r in raw_reqs if not r.startswith(_dev_prefixes)]
+
+setup(
+    # ...
+    install_requires=requirements,
+    packages=find_packages(),
+    # ...
+)
 
 setup(
     name="codesage",
