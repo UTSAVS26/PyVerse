@@ -6,7 +6,7 @@ import random
 from collections import deque
 from typing import Dict, Any, List, Tuple
 from .base_agent import BaseAgent
-from src.models.dqn_model import DQNModel
+from models.dqn_model import DQNModel
 
 class DQNAgent(BaseAgent):
     """
