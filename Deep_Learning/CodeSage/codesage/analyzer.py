@@ -174,9 +174,10 @@ class CodeAnalyzer:
         total_functions = sum(f.total_functions for f in file_metrics)
         
         # Calculate averages
-        avg_complexity = np.mean([f.average_complexity for f in file_metrics if f.total_functions > 0])
-        avg_maintainability = np.mean([f.maintainability_index for f in file_metrics])
-        avg_ai_anomaly = np.mean([f.ai_anomaly_score for f in file_metrics])
+        complexity_values = [f.average_complexity for f in file_metrics if f.total_functions > 0]
+        avg_complexity = float(np.mean(complexity_values)) if complexity_values else 0.0
+        avg_maintainability = float(np.mean([f.maintainability_index for f in file_metrics]))
+        avg_ai_anomaly = float(np.mean([f.ai_anomaly_score for f in file_metrics]))
         
         # Calculate distributions
         complexity_distribution = self._calculate_complexity_distribution(file_metrics)
@@ -191,7 +192,6 @@ class CodeAnalyzer:
             'complexity_distribution': complexity_distribution,
             'risk_level': self._calculate_project_risk_level(avg_complexity, avg_maintainability, avg_ai_anomaly)
         }
-    
     def _calculate_complexity_distribution(self, file_metrics: List[FileMetrics]) -> Dict:
         """Calculate distribution of complexity levels across the project."""
         all_complexities = []
