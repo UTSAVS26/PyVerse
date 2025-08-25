@@ -216,7 +216,9 @@ def main():
             
             # Save model
             if args.model_path:
-                os.makedirs(os.path.dirname(args.model_path), exist_ok=True)
+                dir_name = os.path.dirname(args.model_path)
+                if dir_name:
+                    os.makedirs(dir_name, exist_ok=True)
                 agent.save(args.model_path)
                 print(f"Model saved to {args.model_path}")
             
