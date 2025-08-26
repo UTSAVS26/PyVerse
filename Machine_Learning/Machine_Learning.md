@@ -2,6 +2,7 @@
 
 <div align="center">
 <img src="machine-learning.jpg"  width="80%" loading="lazy">
+</div>
 
 ## About Machine Learning
 
@@ -18,6 +19,7 @@ Let's see how machine learning differs from traditional programming techniques.
 
 <div align="center">
 <img src="difference-traditional-software-machine-learning.jpg"  width="60%" loading="lazy">
+</div>
 
 ### ➡️ Traditional Programming
 
