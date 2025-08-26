@@ -92,6 +92,7 @@ def receipt(orders,quantities,amounts,has_coupon,value):
         total = calculate_total(amounts, has_coupon)
     print(f"{'TOTAL':<20} {round(total,2):>50}")
 
+
 def time_date():
      
     date=datetime.date.today()
