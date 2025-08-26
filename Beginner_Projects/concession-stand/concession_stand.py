@@ -68,6 +68,15 @@ def coupon():
     return False
     
 
+def calculate_discount(amounts):
+    return sum(amounts) * 0.10
+
+
+def calculate_total(amounts, has_coupon):
+    if has_coupon:
+        return sum(amounts) - calculate_discount(amounts)
+    return sum(amounts)
+
 def receipt(orders,quantities,amounts,has_coupon,value):
     print(f"{'item':<20} {'quantity':<20} {'unit price':<20} {'price':>10}")
     print('-'*75)
@@ -76,12 +85,11 @@ def receipt(orders,quantities,amounts,has_coupon,value):
         print(f"{ite:<20} {quantitie:<20} {val:<20} {amt:>10}")
     print('-' * 75)
     if has_coupon:
-        discount = round(sum(amounts) * 0.10,2)
-        
-        total =sum(amounts) - discount
+        discount = calculate_discount(amounts)
+        total = calculate_total(amounts, has_coupon)
         print(f"{'discount':<20} {'10%':<20} {discount:>20}")
     else:
-        total=sum(amounts)
+        total = calculate_total(amounts, has_coupon)
     print(f"{'TOTAL':<20} {round(total,2):>50}")
 
 def time_date():
@@ -95,11 +103,7 @@ def time_date():
 
 def save_receipt( orders, quantities, amounts, has_coupon, value, date, now):
     file_path="concession_stand_receipt.json"
-    if has_coupon:
-        discount = sum(amounts) * 10/100
-        total =sum(amounts) - discount
-    else:
-        total=sum(amounts)
+    total = calculate_total(amounts, has_coupon)
     receipt_data={"items":orders,"quantity":quantities,"unit price":value,"price":amounts,"coupon":has_coupon,"date":str(date),"time":now.strftime("%H:%M:%S"),"total":total}
 
     with open(file_path,"w") as file:
