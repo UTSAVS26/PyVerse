@@ -79,17 +79,17 @@ TOTAL                                                              1210
 
 1. Make sure you have Python installed on your system.
 2. Clone this repo:
-  ```bash
    git clone https://github.com/HARSHIDS-4/concession-stand.git
-   ```
    
 3.Navigate into the folder:
   ```bash
-  cd folder_name.
+  cd concession-stand.
   ```
   
 4.Run the program:
-  python: concession_stand_program.py.
+  ```bash
+  python: concession_stand.py.
+  ```
   
 You’ll be greeted with a welcome message and the menu. From there, just type in your order and let the program do the rest!
 
