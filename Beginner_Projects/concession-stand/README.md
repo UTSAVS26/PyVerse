@@ -79,10 +79,14 @@ TOTAL                                                              1210
 
 1. Make sure you have Python installed on your system.
 2. Clone this repo:
+  ```bash
    git clone https://github.com/HARSHIDS-4/concession-stand.git
+   ```
    
 3.Navigate into the folder:
+  ```bash
   cd folder_name.
+  ```
   
 4.Run the program:
   python: concession_stand_program.py.
