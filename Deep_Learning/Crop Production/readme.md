@@ -26,12 +26,14 @@ The target variable is:
 The ANN is built with **Keras** and uses hyperparameter tuning.  
 Best model parameters obtained:
 
- Hidden layers (`num_layers`): **4**
-`units0`: **178**, `activation0`: **selu**, `dropout`: **0.1**
-`units1`: **198**, `activation1`: **relu**
-`units2`: **88**, `activation2`: **tanh**
-`units3`: **18**, `activation3`: **relu**
-- Output layer: `units`: **1**, `activation`: **linear**
+**Input Layer**: 158 neurons (SELU)  
+**Hidden Layer 1**: 18 neurons (Tanh)  
+**Hidden Layer 2**: 28 neurons (ReLU)  
+Dropouts applied for regularization  
+**Output Layer**: 1 neuron (Regression Output)  
+**Optimizer**: RMSprop (lr=0.001)  
+
+ 
 
 ## ⚙️ Training & Evaluation
 - **Optimizer:** rmsprop  
@@ -39,8 +41,8 @@ Best model parameters obtained:
 - **Metric:** R² Score  
 
 ### 📊 Results
-- **Training R² Score:** `0.9297`  
-- **Testing R² Score:** `0.9231`  
+- **Training R² Score:** `0.90`  
+- **Testing R² Score:** `0.89`  
 
 These results indicate that the ANN model generalizes well and provides high prediction accuracy.
 
@@ -48,11 +50,10 @@ These results indicate that the ANN model generalizes well and provides high pre
 
 ## 🚀 Installation & Usage
 ### 1️⃣ Clone Repository
+```bash
 git clone https://github.com/UTSAVS26/PyVerse
-cd PyVerse
+
+cd Crop Production
 
 # Install Dependencies
-pip install -r "Deep_Learning/Crop Production/requirements.txt"
-
-# Model Loss Image
-[alt text](image.png)
+pip install -r requirements.txt

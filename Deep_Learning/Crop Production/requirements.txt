@@ -5,3 +5,5 @@ matplotlib==3.9.2
 tensorflow==2.17.0
 keras==3.6.0
 keras-tuner==1.4.7
+streamlit==1.26.1
+joblib==1.3.2
