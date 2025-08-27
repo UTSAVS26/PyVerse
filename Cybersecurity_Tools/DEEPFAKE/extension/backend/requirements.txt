@@ -1,0 +1,10 @@
+fastapi==0.104.1
+uvicorn==0.24.0
+pydantic==2.5.0
+pillow==10.1.0
+numpy==1.26.2
+librosa==0.10.1
+tensorflow==2.15.0
+opencv-python==4.8.1.78
+huggingface-hub==0.19.4
+soundfile==0.12.1

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeepTrace Detector</title>
+  <link rel="stylesheet" href="popup.css"/>
+</head>
+<body>
+  <header>
+    <h1>DeepTrace</h1>
+    <div id="status" class="status">Checking connection...</div>
+  </header>
+  
+  <main>
+    <div class="card">
+      <h2>🖼️ Image Analysis</h2>
+      <button id="detectImg">Detect Page Image</button>
+      <div class="result" id="imgRes">Ready to analyze</div>
+    </div>
+
+    <div class="card">
+      <h2>🎵 Audio Analysis</h2>
+      <button id="startAudio">Detect Page Audio</button>
+      <div class="file-upload">
+        <label for="audioInput">Or upload audio file:</label>
+        <input type="file" id="audioInput" accept="audio/*">
+        <button id="uploadAudio">Analyze Upload</button>
+      </div>
+      <div class="result" id="audioRes">Ready to analyze</div>
+    </div>
+
+    <div class="card">
+      <h2>🎥 Video Analysis</h2>
+      <button id="detectVid">Detect Page Video</button>
+      <div class="file-upload">
+        <label for="videoInput">Or upload video file:</label>
+        <input type="file" id="videoInput" accept="video/*"/>
+        <button id="uploadVid">Analyze Upload</button>
+      </div>
+      <div class="result" id="vidRes">Ready to analyze</div>
+      <div class="result" id="uploadRes"></div>
+    </div>
+  </main>
+  
+  <footer>
+    <button id="reconnect">Recheck Connection</button>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
