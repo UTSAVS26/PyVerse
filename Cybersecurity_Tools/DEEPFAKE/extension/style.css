@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; padding: 0;
+  background: #353840;
+  color: #eee;
+  width: 300px;
+}
+h1 {
+  margin: 0;
+  background: #4cd137;
+  color: #1e1f26;
+  padding: 10px;
+  text-align: center;
+}
+.card {
+  background: #43454A;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 8px;
+}
+.card h2 {
+  margin: 5px 0;
+}
+button {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  background: #4cd137;
+  border: none;
+  color: #1e1f26;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background: #40c637;
+}
+.result {
+  margin-top: 8px;
+  font-weight: bold;
+}
+input[type="file"] {
+  margin-top: 5px;
+}
