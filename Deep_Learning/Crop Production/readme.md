@@ -26,12 +26,11 @@ The target variable is:
 The ANN is built with **Keras** and uses hyperparameter tuning.  
 Best model parameters obtained:
 
-**Input Layer**: 158 neurons (SELU)  
-**Hidden Layer 1**: 18 neurons (Tanh)  
-**Hidden Layer 2**: 28 neurons (ReLU)  
-Dropouts applied for regularization  
-**Output Layer**: 1 neuron (Regression Output)  
-**Optimizer**: RMSprop (lr=0.001)  
+**Dense Layer 1**: 158 units (SELU)  
+**Dense Layer 2**: 18 units (Tanh)  
+**Dense Layer 3**: 28 units (ReLU)  
+Dropout applied for regularization  
+**Output Layer**: 1 unit (regression)   
 
  
 
