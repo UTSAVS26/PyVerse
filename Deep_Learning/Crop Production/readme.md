@@ -53,7 +53,10 @@ These results indicate that the ANN model generalizes well and provides high pre
 ```bash
 git clone https://github.com/UTSAVS26/PyVerse
 
-cd Crop Production
-
-# Install Dependencies
+### Install dependencies for this project
+cd "Deep_Learning/Crop Production"
 pip install -r requirements.txt
+
+###Run the web app
+streamlit run page.py
+```
