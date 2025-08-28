@@ -122,6 +122,7 @@
   * [Background-Remover](./Beginner_Projects/background-remover)
   * [Captiontags](./Beginner_Projects/captionTags)
   * [Chess Game](./Beginner_Projects/chess_game)
+  * [Concession-Stand](./Beginner_Projects/concession-stand)
   * [Pomodoro Clock](./Beginner_Projects/pomodoro_Clock)
 
 * **Blockchain Development**
