@@ -7,7 +7,7 @@ from PIL import Image
 import numpy as np
 import librosa
 import tensorflow as tf
-from keras.applications.efficientnet_v2 import preprocess_input
+from tensorflow.keras.applications.efficientnet_v2 import preprocess_input
 import cv2
 import tempfile
 import os
