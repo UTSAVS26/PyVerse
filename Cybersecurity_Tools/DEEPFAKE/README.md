@@ -84,8 +84,8 @@ Result is shown inside Chrome extension popup.
 
 ⚙️ Installation
 # Clone repo
-git clone https://github.com/sindhugattigoppula/deepfake-detector-extension.git
-cd deeptrace-extension/backend
+git clone https://github.com/UTSAVS26/PyVerse.git
+cd PyVerse/Cybersecurity_Tools/DEEPFAKE/extension/backend
 
 # Setup virtual environment
 python -m venv venv
@@ -98,7 +98,7 @@ venv\Scripts\activate
 pip install -r requirements.txt
 
 # Run FastAPI server
-uvicorn main:app --reload
+uvicorn main:app --host 127.0.0.1 --port 8000 --reload
 
 API runs at → http://localhost:8000
 
@@ -106,7 +106,7 @@ API runs at → http://localhost:8000
 Open Chrome → chrome://extensions/
 Enable Developer Mode
 Click Load Unpacked
-Select deeptrace-extension/extension/ folder
+Select PyVerse/Cybersecurity_Tools/DEEPFAKE/extension folder
 Click the extension icon → Start detecting!
 🖱️ Popup Interface
 Click the extension icon → upload or detect page media.
