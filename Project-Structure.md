@@ -437,6 +437,7 @@
   * [Landmark Detection](./Machine_Learning/Landmark_Detection)
   * [Leaf Disease Analyzer Using Ml](./Machine_Learning/Leaf%20disease%20analyzer%20using%20ML)
   * [Linear Regression Using Gradient Decent](./Machine_Learning/Linear%20regression%20using%20gradient%20decent)
+  * [Logistic-Regression](./Machine_Learning/Logistic-Regression)
   * [Lungcancerdetection](./Machine_Learning/LungCancerDetection)
   * [Malaria Cell Image Classification](./Machine_Learning/Malaria%20Cell%20Image%20Classification)
   * [Movie Classification](./Machine_Learning/Movie%20Classification)
