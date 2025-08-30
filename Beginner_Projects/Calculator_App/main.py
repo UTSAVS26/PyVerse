@@ -1,4 +1,6 @@
 import math
+import ast
+import operator as op
 import tkinter as tk
 from tkinter import ttk
 from math import factorial, log
@@ -146,10 +148,11 @@ class ScientificCalculatorGUI:
 
 
     def calculate_result(self):
+        expr = self.result_var.get()
         try:
-            result = eval(self.result_var.get())
+            result = self.safe_eval(expr)
             self.result_var.set(f"{result:.10g}")
-        except:
+        except (ZeroDivisionError, ValueError, SyntaxError, OverflowError):
             self.result_var.set("Error")
 
 
