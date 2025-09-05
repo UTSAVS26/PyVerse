@@ -1,6 +1,5 @@
-def input_array(arr, n):  # Not needed for single integer, but keeping format
-    num = int(input("Enter integer x: "))
-    arr.append(num)
+def input_value() -> int:
+    return int(input("Enter integer x: "))
 
 def display_array(arr):
     print(f"\nInput integer is: {arr}")
@@ -21,10 +20,9 @@ def reverse_integer(x):
     return sign * rev if INT_MIN <= sign * rev <= INT_MAX else 0
 
 if __name__ == "__main__":
-    nums = []
-    input_array(nums, 1)
-    display_array(nums)
-    x = nums[0]  # Extract integer from list
-    result = reverse_integer(x)  # Pass the integer, not the list
+    x = input_value()
+    display_array([x])
+    result = reverse_integer(x)
     print(f"Reversed integer is: {result}")
+
 
