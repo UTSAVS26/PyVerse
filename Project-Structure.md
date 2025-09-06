@@ -35,6 +35,7 @@
   * [Graph](./Algorithms_and_Data_Structures/Graph)
   * [Heapsort](./Algorithms_and_Data_Structures/HeapSort)
   * [Linked List](./Algorithms_and_Data_Structures/Linked%20List)
+  * [Maths](./Algorithms_and_Data_Structures/Maths)
   * [Pattern Search](./Algorithms_and_Data_Structures/Pattern%20Search)
   * [Prefix Sum](./Algorithms_and_Data_Structures/Prefix_Sum)
   * [Queue](./Algorithms_and_Data_Structures/Queue)
