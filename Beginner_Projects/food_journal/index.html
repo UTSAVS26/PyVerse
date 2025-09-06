@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meal Logger & Nutrition Chart – Advanced</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <style>
+    /* App fills the whole window */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: linear-gradient(135deg, #d7b899, #b8926b);
+  color: #111827;
+}
+
+/* Panels */
+.panel {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+#welcome, #main {
+  background: #fffaf3; /* soft cream instead of pure white */
+  box-shadow: 0 8px 24px rgba(16,24,40,0.08);
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 12px;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+/* Layout */
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+}
+
+/* Inputs & Buttons */
+input, select, button {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+button {
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #ff5e62, #ff9966);
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th, td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+th {
+  background: #a7d7c5; /* soft pastel green */
+  color: #064e3b;      /* dark green text */
+  font-weight: 600;
+}
+
+td {
+  background: #f0fdf4; /* very light green */
+}
+/* Utility */
+.actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.muted {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+  </style>
+</head>
+<body>
+  <!-- WELCOME -->
+  <section id="welcome" class="panel" style="display:flex; align-items:center;">
+    <div class="container" style="max-width:560px;">
+      <h1>Welcome to Meal Logger</h1>
+      <p class="muted">Enter your name to begin.</p>
+      <div class="actions">
+        <input id="username" type="text" placeholder="Your name" />
+        <button id="startBtn">Start</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN APP -->
+  <section id="main" class="panel" style="display:none; overflow:auto;">
+    <div class="container">
+      <header>
+        <h1>Hello, <span id="displayName"></span> 👋</h1>
+        <div class="actions">
+          <label class="muted">Date
+            <input id="logDate" type="date" />
+          </label>
+          <button id="logoutBtn" style="background:#ef4444">Reset User</button>
+        </div>
+      </header>
+
+      <div class="row">
+        <!-- LEFT: selections + ingredient table -->
+        <div class="card">
+          <h3>Log Your Meal</h3>
+          <div class="actions" style="margin-bottom:12px;">
+            <select id="mealType">
+              <option value="Breakfast">Breakfast</option>
+              <option value="Lunch">Lunch</option>
+              <option value="Dinner">Dinner</option>
+            </select>
+            <select id="foodItem"></select>
+            <button id="addToLogBtn">Add to Day Log</button>
+          </div>
+          <div>
+            <h3 style="margin-top:0">Ingredients & Nutrients</h3>
+            <table id="ingredientsTable">
+              <thead>
+                <tr>
+                  <th>Ingredient</th>
+                  <th>Carbs (g)</th>
+                  <th>Protein (g)</th>
+                  <th>Fat (g)</th>
+                  <th>Calories</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+              <tfoot>
+                <tr>
+                  <th>Total</th>
+                  <th id="tCarbs">0</th>
+                  <th id="tProtein">0</th>
+                  <th id="tFat">0</th>
+                  <th id="tCal">0</th>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+
+        <!-- RIGHT: chart -->
+        <div class="card">
+          <h3>Totals (Pie)</h3>
+          <canvas id="pieChart" height="280"></canvas>
+          <p class="muted" id="caloriesNote" style="margin-top:8px"></p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>Day Log (by date)</h3>
+        <table id="dayLogTable">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Meal</th>
+              <th>Food</th>
+              <th>Carbs (g)</th>
+              <th>Protein (g)</th>
+              <th>Fat (g)</th>
+              <th>Calories (kcal)</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+          <tfoot>
+            <tr>
+              <th colspan="3" style="text-align:right;">Daily Total</th>
+              <th id="dCarbs">0</th>
+              <th id="dProtein">0</th>
+              <th id="dFat">0</th>
+              <th id="dCal">0</th>
+              <th></th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    /****************************
+     * Sample dataset
+     ****************************/
+    const MEAL_OPTIONS = {
+      Breakfast: [
+        "Masala Dosa", "Idli Sambar", "Omelette", "Poha", "Upma",
+        "Rava Upma", "Aloo Paratha", "Pesarattu", "Lemon Rice", "Kheer"
+      ],
+      Lunch: [
+        "Veg Fried Rice", "Vegetable Biryani", "Rajma Chawal", "Palak Paneer", "Paneer Butter Masala",
+        "Dal Tadka", "Chole Bhature", "Gobi Manchurian", "Pasta Alfredo", "Chicken Biryani"
+      ],
+      Dinner: [
+        "Grilled Chicken", "Chicken Tikka", "Fish Fry", "Vada Pav",
+        "Momos", "Samosa", "Pav Bhaji", "Lemon Rice"
+      ]
+    };
+
+    // Ingredient breakdowns (approximate demo values per serving)
+    // Each dish maps to an array of {ingredient, carbs, protein, fat, calories}
+    const DISH_RECIPES = 
+    {
+      // Breakfast (10)
+      "Masala Dosa":  [
+            {ingredient: "Dosa Batter(150g)",carbs: 38 , protein : 6,fat: 2,calories :210},
+            {ingredient: "Potato Masala(100g)",carbs : 18 ,protein :2,fat:4,calories:120},
+            {ingredient: "Oil/ghee (1 tsp)", carbs: 0, protein: 0, fat: 5, calories: 45}
+      ],
+      "Idli Sambar": [
+          {ingredient: "Idli Batter(120g)",carbs : 28 ,protein:5,fat: 1,calories: 145},
+          {ingredient: "toor dal+tamarind+veggies+spices", carbs : 12 , protein :4,fat: 3,calories : 95}
+      ],
+      "Omelette": [
+          {ingredient: "Eggs (2)", carbs: 1, protein: 12, fat: 10, calories: 140},
+          {ingredient: "Onion+chilli", carbs: 2, protein: 0, fat: 0, calories: 10}
+      ],
+      "Poha": [
+          {ingredient: "Flattened rice (60g)", carbs: 46, protein: 4, fat: 1, calories: 210},
+          {ingredient: "Peanuts (10g)", carbs: 2, protein: 3, fat: 5, calories: 57}
+      ],
+      "Upma": [
+          {ingredient: "Rava (60g)", carbs: 44, protein: 7,fat: 1, calories: 220},
+          {ingredient: "Oil/ghee (1 tsp)", carbs: 0, protein: 0, fat: 5, calories: 45}
+      ],
+      "Rava Upma": [
+          {ingredient: "Rava (60g)", carbs: 44, protein: 7, fat: 1, calories: 220},
+          {ingredient: "Veg mix", carbs: 5, protein: 1, fat: 0, calories: 25},
+          {ingredient: "Oil (1 tsp)", carbs: 0, protein: 0, fat: 5, calories: 45}
+      ],
+      "Aloo Paratha": [
+          {ingredient: "Wheat dough (80g)", carbs: 45,protein: 8, fat: 2, calories: 250},
+          {ingredient: "Potato filling", carbs: 20, protein: 3, fat: 4, calories: 130},
+          {ingredient: "Ghee (1 tsp)", carbs: 0, protein: 0, fat: 5, calories: 45}
+      ],
+      "Pesarattu": [
+          {ingredient: "Moong batter (120g)", carbs: 30, protein: 12, fat: 2, calories: 210},
+          {ingredient: "Oil (1 tsp)", carbs: 0, protein: 0, fat: 5, calories: 45}
+      ],
+      "Lemon Rice": [
+          {ingredient: "Cooked rice (180g)", carbs: 50, protein: 4, fat: 1, calories: 230},
+          {ingredient: "Lemon+peanuts", carbs: 2, protein: 3, fat: 10, calories: 100}
+      ],
+      "Kheer": [
+          {ingredient: "Milk (200ml)", carbs: 10, protein: 6, fat: 6, calories: 120},
+          {ingredient: "Rice+sugar", carbs: 45, protein: 2, fat: 2, calories: 220}
+      ],
+      // Lunch (10)
+      "Veg Fried Rice": [
+        {ingredient:"Cooked rice (200g)", carbs:58, protein:5, fat:1, calories:260},
+        {ingredient:"Vegies+soy sauce", carbs:7, protein:2, fat:2, calories:50},
+        {ingredient:"Oil (2 tsp)", carbs:0, protein:0, fat:10, calories:90}
+      ],
+      "Vegetable Biryani": [
+        {ingredient:"Basmati (200g)", carbs:60, protein:6, fat:1, calories:280},
+        {ingredient:"Veg+spices", carbs:6, protein:2, fat:2, calories:60},
+        {ingredient:"Oil/ghee (1 tbsp)", carbs:0, protein:0, fat:14, calories:125}
+      ],
+      "Rajma Chawal": [
+        {ingredient:"Cooked rice (180g)", carbs:50, protein:4, fat:1, calories:230},
+        {ingredient:"Rajma curry (150g)", carbs:30, protein:10, fat:5, calories:170}
+      ],
+      "Palak Paneer": [
+        {ingredient:"Spinach gravy", carbs:8, protein:4, fat:4, calories:90},
+        {ingredient:"Paneer (120g)", carbs:10, protein:21, fat:24, calories:318}
+      ],
+      "Paneer Butter Masala": [
+        {ingredient:"Paneer (120g)", carbs:10, protein:16, fat:12, calories:200},
+        {ingredient:"Tomato gravy+butter", carbs:10, protein:2, fat:12, calories:180}
+      ],
+      "Dal Tadka": [
+        {ingredient:"Cooked dal (200g)", carbs:35, protein:14, fat:6, calories:260},
+        {ingredient:"Tadka (1 tsp ghee)", carbs:0, protein:0, fat:5, calories:45}
+      ],
+      "Chole Bhature": [
+        {ingredient:"Chole (200g)", carbs:40, protein:12, fat:6, calories:260},
+        {ingredient:"Bhature (1 pc)", carbs:35, protein:6, fat:12, calories:240}
+      ],
+     "Mutton Curry": [
+        {ingredient:"Mutton (150g)", carbs:0, protein:28, fat:18, calories:300},
+        {ingredient:"Gravy", carbs:4, protein:2, fat:4, calories:60}
+      ],
+      "Pasta Alfredo": [
+        {ingredient:"Pasta (180g)", carbs:50, protein:9, fat:3, calories:260},
+        {ingredient:"Alfredo sauce", carbs:1, protein:1, fat:15, calories:150}
+      ],
+      "Chicken Biryani": [
+        {ingredient:"Basmati (200g)", carbs:58, protein:6, fat:1, calories:270},
+        {ingredient:"Chicken (120g)", carbs:0, protein:27, fat:8, calories:200},
+        {ingredient:"Ghee/oil (1 tbsp)", carbs:0, protein:0, fat:14, calories:125}
+      ],
+
+      // Dinner (10)
+      "Grilled Chicken": [
+        {ingredient:"Chicken (180g)", carbs:0, protein:33, fat:6, calories:240},
+        {ingredient:"Marinade", carbs:0, protein:0, fat:2, calories:20}
+      ],
+      "Chicken Tikka": [
+        {ingredient:"Chicken (150g)", carbs:2, protein:27, fat:8, calories:230},
+        {ingredient:"Yogurt+spices", carbs:2, protein:2, fat:2, calories:30}
+      ],
+      "Fish Fry": [
+        {ingredient:"Fish (150g)", carbs:0, protein:25, fat:8, calories:200},
+        {ingredient:"Coating+oil", carbs:0, protein:0, fat:7, calories:70}
+      ],
+      "Gobi Manchurian": [
+        {ingredient:"Cauliflower", carbs:10, protein:3, fat:3, calories:90},
+        {ingredient:"Sauce+fry", carbs:8, protein:2, fat:14, calories:150}
+      ],
+      "Vada Pav": [
+        {ingredient:"Pav (1)", carbs:25, protein:5, fat:3, calories:150},
+        {ingredient:"Batata vada", carbs:20, protein:3, fat:10, calories:180}
+      ],
+      "Momos": [
+        {ingredient:"Dumplings (6)", carbs:35, protein:8, fat:6, calories:220}
+      ],
+      "Samosa": [
+        {ingredient:"Samosa(1)", carbs:25, protein:4, fat:15, calories:250}
+      ],
+      "Pav Bhaji": [
+        {ingredient:"Bhaji", carbs:28, protein:6, fat:10, calories:220},
+        {ingredient:"Pav (1)", carbs:25, protein:5, fat:3, calories:150}
+      ],
+    };
+    const $ = (q) => document.querySelector(q);
+    let pieChartInstance = null;
+
+    const STORAGE_KEYS = {
+      USER: 'username',
+      LOGS: 'meal_logs_v2' // array of {date, timeISO, mealType, foodName, totals}
+    };
+
+    function todayStr() {
+      const d = new Date();
+      const y = d.getFullYear();
+      const m = String(d.getMonth()+1).padStart(2,'0');
+      const day = String(d.getDate()).padStart(2,'0');
+      return `${y}-${m}-${day}`;
+    }
+
+    function computeTotals(ingredients) {
+      return ingredients.reduce((acc, it) => {
+        acc.carbs += it.carbs || 0;
+        acc.protein += it.protein || 0;
+        acc.fat += it.fat || 0;
+        acc.calories += it.calories || 0;
+        return acc;
+      }, {carbs:0, protein:0, fat:0, calories:0});
+    }
+
+    function renderIngredientsTable(dishName) {
+      const tbody = $('#ingredientsTable tbody');
+      tbody.innerHTML = '';
+      const ingredients = DISH_RECIPES[dishName] || [];
+      ingredients.forEach(row => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `<td>${row.ingredient}</td>
+                        <td>${row.carbs}</td>
+                        <td>${row.protein}</td>
+                        <td>${row.fat}</td>
+                        <td>${row.calories}</td>`;
+        tbody.appendChild(tr);
+      });
+      const totals = computeTotals(ingredients);
+      $('#tCarbs').textContent = totals.carbs.toFixed(1);
+      $('#tProtein').textContent = totals.protein.toFixed(1);
+      $('#tFat').textContent = totals.fat.toFixed(1);
+      $('#tCal').textContent = totals.calories.toFixed(0);
+      $('#caloriesNote').textContent = `Total Calories: ${totals.calories.toFixed(0)} kcal`;
+      renderPie(totals);
+    }
+
+    function renderPie(totals) {
+      const data = [totals.carbs, totals.protein, totals.fat, totals.calories];
+      const labels = ['Carbs (g)', 'Protein (g)', 'Fat (g)', 'Calories'];
+      const ctx = document.getElementById('pieChart');
+      if (pieChartInstance) pieChartInstance.destroy();
+      pieChartInstance = new Chart(ctx, {
+        type: 'pie',
+        data: {
+          labels,
+          datasets: [{ data }]
+        },
+        options: {
+          responsive: true,
+          plugins: { legend: { position: 'bottom' } }
+        }
+      });
+    }
+
+    function populateFoodOptions(mealType) {
+  const select = $('#foodItem');
+  const foods = MEAL_OPTIONS[mealType] || [];
+  select.innerHTML = `<option value="">-- Select Food --</option>` + 
+    foods.map(f => `<option value="${f}">${f}</option>`).join('');
+  clearIngredientsAndChart();
+}
+
+  function clearIngredientsAndChart() {
+  const tbody = $('#ingredientsTable tbody');
+  tbody.innerHTML = '';
+  $('#tCarbs').textContent = '0';
+  $('#tProtein').textContent = '0';
+  $('#tFat').textContent = '0';
+  $('#tCal').textContent = '0';
+  $('#caloriesNote').textContent = '';
+  if (pieChartInstance) pieChartInstance.destroy();
+  pieChartInstance = null;
+}
+
+
+    function addToDayLog() {
+      const date = $('#logDate').value || todayStr();
+      const mealType = $('#mealType').value;
+      const foodName = $('#foodItem').value;
+      const ingredients = DISH_RECIPES[foodName] || [];
+      const totals = computeTotals(ingredients);
+
+      const logs = JSON.parse(localStorage.getItem(STORAGE_KEYS.LOGS) || '[]');
+      logs.push({
+        date,
+        timeISO: new Date().toISOString(),
+        mealType,
+        foodName,
+        totals
+      });
+      localStorage.setItem(STORAGE_KEYS.LOGS, JSON.stringify(logs));
+      renderDayLog();
+    }
+
+    function renderDayLog() {
+      const date = $('#logDate').value || todayStr();
+      const logs = JSON.parse(localStorage.getItem(STORAGE_KEYS.LOGS) || '[]')
+        .filter(x => x.date === date);
+
+      const tbody = document.querySelector('#dayLogTable tbody');
+      tbody.innerHTML = '';
+      let dTotals = {carbs:0, protein:0, fat:0, calories:0};
+      logs.forEach((entry, idx) => {
+        const t = new Date(entry.timeISO);
+        const timeStr = t.toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'});
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td>${timeStr}</td>
+          <td>${entry.mealType}</td>
+          <td>${entry.foodName}</td>
+          <td>${entry.totals.carbs.toFixed(1)}</td>
+          <td>${entry.totals.protein.toFixed(1)}</td>
+          <td>${entry.totals.fat.toFixed(1)}</td>
+          <td>${entry.totals.calories.toFixed(0)}</td>
+          <td><button data-idx="${idx}" class="delBtn" style="background:#f43f5e">Delete</button></td>
+        `;
+        tbody.appendChild(tr);
+        dTotals.carbs += entry.totals.carbs;
+        dTotals.protein += entry.totals.protein;
+        dTotals.fat += entry.totals.fat;
+        dTotals.calories += entry.totals.calories;
+      });
+      $('#dCarbs').textContent = dTotals.carbs.toFixed(1);
+      $('#dProtein').textContent = dTotals.protein.toFixed(1);
+      $('#dFat').textContent = dTotals.fat.toFixed(1);
+      $('#dCal').textContent = dTotals.calories.toFixed(0);
+
+      // hook up delete buttons
+      document.querySelectorAll('.delBtn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const idx = Number(e.currentTarget.getAttribute('data-idx'));
+          const all = JSON.parse(localStorage.getItem(STORAGE_KEYS.LOGS) || '[]');
+          const filteredForDay = all.filter(x => x.date === date);
+          const others = all.filter(x => x.date !== date);
+          // remove idx-th from filteredForDay
+          filteredForDay.splice(idx, 1);
+          const next = [...others, ...filteredForDay];
+          localStorage.setItem(STORAGE_KEYS.LOGS, JSON.stringify(next));
+          renderDayLog();
+        });
+      });
+    }
+
+    // User/session handlers
+    function initUser() {
+      const savedUser = localStorage.getItem(STORAGE_KEYS.USER) || '';
+      if (savedUser) {
+        $('#displayName').textContent = savedUser;
+        $('#welcome').style.display = 'none';
+        $('#main').style.display = 'block';
+      }
+    }
+
+    // Event wiring
+    window.addEventListener('DOMContentLoaded', () => {
+      // date default
+      $('#logDate').value = todayStr();
+
+      // start button
+      document.getElementById('startBtn').addEventListener('click', () => {
+        const name = document.getElementById('username').value.trim();
+        if (!name) return alert('Please enter your name');
+        localStorage.setItem(STORAGE_KEYS.USER, name);
+        $('#displayName').textContent = name;
+        $('#welcome').style.display = 'none';
+        $('#main').style.display = 'block';
+        // init selects
+        populateFoodOptions($('#mealType').value);
+        renderDayLog();
+      });
+
+      // logout/reset
+      document.getElementById('logoutBtn').addEventListener('click', () => {
+        if (confirm('This will clear your username (logs remain). Continue?')) {
+          localStorage.removeItem(STORAGE_KEYS.USER);
+          location.reload();
+        }
+      });
+
+      // meal type change → refresh foods
+      document.getElementById('mealType').addEventListener('change', (e) => {
+        populateFoodOptions(e.target.value);
+      });
+
+      document.getElementById('foodItem').addEventListener('change', (e) => {
+  const food = e.target.value;
+  if (food) {
+    renderIngredientsTable(food);
+  } else {
+    clearIngredientsAndChart();
+  }
+});
+
+      // add to log
+      document.getElementById('addToLogBtn').addEventListener('click', addToDayLog);
+
+      // date change → re-render
+      document.getElementById('logDate').addEventListener('change', renderDayLog);
+
+      // if user exists, jump straight in
+      initUser();
+      if (localStorage.getItem(STORAGE_KEYS.USER)) {
+        populateFoodOptions($('#mealType').value);
+        const firstFood = $('#foodItem').value;
+        if (firstFood) renderIngredientsTable(firstFood);
+        renderDayLog();
+      }
+    });
+  </script>
+</body>
+</html>
