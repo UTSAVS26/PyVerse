@@ -9,12 +9,12 @@ The repository includes the dashboard file (`.twbx`), a preview image of the das
 
 ## Key Features of the Dashboard
 1. **Total Metrics**:
-   - Summarizes overall channel performance, including:
-     - **Total Videos**: 86 (50 Shorts, 36 Regular Videos)
-     - **Total Views**: 5,85,587
-     - **Total Likes**: 28,680
-     - **Total Comments**: 302
-     - **Total Dislikes**: 302
+   - Summarizes overall channel performance (examples shown in the dashboard). Metrics include:
+     - **Total Videos** (Shorts and Regular)
+     - **Total Views**
+     - **Total Likes**
+     - **Total Comments**
+     - (Optional) **Dislikes** — include only if your dataset provides this field; otherwise omit.
 
 2. **Highest Views**:
    - Highlights the top-performing videos based on total view count.
@@ -49,11 +49,11 @@ The repository includes the dashboard file (`.twbx`), a preview image of the das
 ---
 
 ## Files in the Repository
-- **`YOUTUBE CHANNEL DATA ANALYSIS.twbx`**:
+- **``youtube-channel-dashboard.twbx``**:
    - Tableau Packaged Workbook containing the dashboard.
-- **`dashboard_preview.png`**:
+- **`dashboard-preview.png`**:
    - A visual preview of the dashboard for quick reference.
-- **`yt.png`**:
+- **`youtube-logo.png`**:
    - YouTube logo.
 
 ---
@@ -77,6 +77,7 @@ The repository includes the dashboard file (`.twbx`), a preview image of the das
 - Perform sentiment analysis on video comments for deeper audience insights.
 
 ---
+
 
 
 
