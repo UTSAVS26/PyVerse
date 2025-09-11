@@ -1,0 +1,2833 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <VizInTooltipHideWorksheet />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='backup yt (Lore So What YouTube Channel Data)' inline='true' name='federated.0lmlmld1rdf1yk14q09kk1lzklj8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Lore So What YouTube Channel Data' name='cloudfile:googledrive-excel-direct.13cpkbx0vz7kmm13n3f2i14042hv'>
+            <connection class='cloudfile:googledrive-excel-direct' cleaning='no' cloudFileExtension='xlsx' cloudFileId='1hV4H7rd2KDEJ6DTCvMeW6cbivB8GLXdE' cloudFileMetadata_-_folder='1IM7AqUk6m4a4Gq6vQ8xqZ-WbC16Cy3dg' cloudFileName='Lore So What YouTube Channel Data.xlsx' cloudFileProvider='googledrive' cloudFileRequestURL='https://www.googleapis.com/drive/v3/files/1hV4H7rd2KDEJ6DTCvMeW6cbivB8GLXdE?alt=media' compat='no' dataRefreshTime='' filename='Lore So What YouTube Channel Data.xlsx' interpretationMode='0' server='' username='abinayagoud23@gmail.com' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='cloudfile:googledrive-excel-direct.13cpkbx0vz7kmm13n3f2i14042hv' name='backup yt' table='[&apos;backup yt$&apos;]' type='table'>
+          <columns gridOrigin='A1:R88:no:A1:R88:0' header='yes' outcome='2'>
+            <column datatype='string' name='Video Id' ordinal='0' />
+            <column datatype='string' name='Channel Id' ordinal='1' />
+            <column datatype='string' name='Title' ordinal='2' />
+            <column datatype='string' name='Tags' ordinal='3' />
+            <column datatype='string' name='Description' ordinal='4' />
+            <column datatype='string' name='Privacy' ordinal='5' />
+            <column datatype='date' name='Date Published' ordinal='6' />
+            <column datatype='integer' name='Category Id' ordinal='7' />
+            <column datatype='string' name='Category Name' ordinal='8' />
+            <column datatype='string' name='Thumbnail Url' ordinal='9' />
+            <column datatype='string' name='Watch Url' ordinal='10' />
+            <column datatype='string' name='FileName' ordinal='11' />
+            <column datatype='date' name='Date Backed Up' ordinal='12' />
+            <column datatype='integer' name='View Count' ordinal='13' />
+            <column datatype='integer' name='Comment Count' ordinal='14' />
+            <column datatype='integer' name='Like Count' ordinal='15' />
+            <column datatype='integer' name='Dislike Count' ordinal='16' />
+            <column datatype='integer' name='Length (seconds)' ordinal='17' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[backup yt]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:R88:no:A1:R88:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Video Id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Video Id]</local-name>
+            <parent-name>[backup yt]</parent-name>
+            <remote-alias>Video Id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Channel Id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Channel Id]</local-name>
+            <parent-name>[backup yt]</parent-name>
+            <remote-alias>Channel Id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Title]</local-name>
+            <parent-name>[backup yt]</parent-name>
+            <remote-alias>Title</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tags</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Tags]</local-name>
+            <parent-name>[backup yt]</parent-name>
+            <remote-alias>Tags</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Description]</local-name>
+            <parent-name>[backup yt]</parent-name>
+            <remote-alias>Description</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Privacy</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Privacy]</local-name>
+            <parent-name>[backup yt]</parent-name>
+            <remote-alias>Privacy</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date Published</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date Published]</local-name>
+            <parent-name>[backup yt]</parent-name>
+            <remote-alias>Date Published</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Category Id]</local-name>
+            <parent-name>[backup yt]</parent-name>
+            <remote-alias>Category Id</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Category Name]</local-name>
+            <parent-name>[backup yt]</parent-name>
+            <remote-alias>Category Name</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Thumbnail Url</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Thumbnail Url]</local-name>
+            <parent-name>[backup yt]</parent-name>
+            <remote-alias>Thumbnail Url</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Watch Url</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Watch Url]</local-name>
+            <parent-name>[backup yt]</parent-name>
+            <remote-alias>Watch Url</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FileName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[FileName]</local-name>
+            <parent-name>[backup yt]</parent-name>
+            <remote-alias>FileName</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date Backed Up</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date Backed Up]</local-name>
+            <parent-name>[backup yt]</parent-name>
+            <remote-alias>Date Backed Up</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>View Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[View Count]</local-name>
+            <parent-name>[backup yt]</parent-name>
+            <remote-alias>View Count</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Comment Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Comment Count]</local-name>
+            <parent-name>[backup yt]</parent-name>
+            <remote-alias>Comment Count</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Like Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Like Count]</local-name>
+            <parent-name>[backup yt]</parent-name>
+            <remote-alias>Like Count</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dislike Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Dislike Count]</local-name>
+            <parent-name>[backup yt]</parent-name>
+            <remote-alias>Dislike Count</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Length (seconds)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Length (seconds)]</local-name>
+            <parent-name>[backup yt]</parent-name>
+            <remote-alias>Length (seconds)</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='video type' datatype='string' name='[Calculation_1442559282786344960]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='if [Length (seconds)] &lt;=60 THEN &quot;Shorts&quot;&#13;&#10;ELSE &quot;Regular&quot;&#13;&#10;END' />
+      </column>
+      <column caption='(positive) Engagement Rule' datatype='real' name='[Calculation_1442559282801729543]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{{ [Like Count] + [Comment Count]}/ [View Count]}*100' />
+      </column>
+      <column caption='length (minutes)' datatype='real' name='[Calculation_1442559282804740106]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Length (seconds)] /60' />
+      </column>
+      <column caption='dislikes&gt;likes' datatype='boolean' name='[Calculation_1442559282806546443]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Dislike Count]&gt;[Like Count]' />
+      </column>
+      <column datatype='integer' name='[Category Id]' role='dimension' type='ordinal' />
+      <column caption='File Name' datatype='string' name='[FileName]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Privacy]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Title]' role='dimension' type='nominal' />
+      <column caption='backup yt' datatype='table' name='[__tableau_internal_object_id__].[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_1442559282786344960]' derivation='None' name='[none:Calculation_1442559282786344960:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Privacy]' derivation='None' name='[none:Privacy:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Title]' derivation='None' name='[none:Title:nk]' pivot='key' type='nominal' />
+      <group hidden='true' name='[Exclusions (Privacy,Title)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Privacy:nk]' />
+          <groupfilter function='level-members' level='[none:Title:nk]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/shara/AppData/Local/Temp/TableauTemp/#TableauTemp_0wqagcf1hxg7yo116zg2e04q87ju.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/20/2024 06:29:14 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Video Id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Video Id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Video Id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>backup yt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>87</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Channel Id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Channel Id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Channel Id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>backup yt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Title</remote-alias>
+              <ordinal>2</ordinal>
+              <family>backup yt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>87</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Tags</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Tags]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Tags</remote-alias>
+              <ordinal>3</ordinal>
+              <family>backup yt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>74</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Description</remote-alias>
+              <ordinal>4</ordinal>
+              <family>backup yt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>76</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Privacy</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Privacy]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Privacy</remote-alias>
+              <ordinal>5</ordinal>
+              <family>backup yt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date Published</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date Published]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date Published</remote-alias>
+              <ordinal>6</ordinal>
+              <family>backup yt</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>85</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Category Id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Category Id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Category Id</remote-alias>
+              <ordinal>7</ordinal>
+              <family>backup yt</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Category Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Category Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Category Name</remote-alias>
+              <ordinal>8</ordinal>
+              <family>backup yt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Thumbnail Url</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Thumbnail Url]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Thumbnail Url</remote-alias>
+              <ordinal>9</ordinal>
+              <family>backup yt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>87</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Watch Url</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Watch Url]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Watch Url</remote-alias>
+              <ordinal>10</ordinal>
+              <family>backup yt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>87</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FileName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[FileName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FileName</remote-alias>
+              <ordinal>11</ordinal>
+              <family>backup yt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>87</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date Backed Up</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date Backed Up]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date Backed Up</remote-alias>
+              <ordinal>12</ordinal>
+              <family>backup yt</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>View Count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[View Count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>View Count</remote-alias>
+              <ordinal>13</ordinal>
+              <family>backup yt</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>86</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Comment Count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Comment Count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Comment Count</remote-alias>
+              <ordinal>14</ordinal>
+              <family>backup yt</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>37</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Like Count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Like Count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Like Count</remote-alias>
+              <ordinal>15</ordinal>
+              <family>backup yt</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>72</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Dislike Count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Dislike Count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Dislike Count</remote-alias>
+              <ordinal>16</ordinal>
+              <family>backup yt</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Length (seconds)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Length (seconds)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Length (seconds)</remote-alias>
+              <ordinal>17</ordinal>
+              <family>backup yt</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>69</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[backup yt_6240C3FBE9114F4088A2D1EF4B0681F9]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_1442559282786344960:nk]' type='palette'>
+            <map to='#5c6068'>
+              <bucket>&quot;Regular&quot;</bucket>
+            </map>
+            <map to='#ae123a'>
+              <bucket>&quot;Shorts&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Video Id' />
+        <field-sort-custom-order field='Channel Id' />
+        <field-sort-custom-order field='Title' />
+        <field-sort-custom-order field='Tags' />
+        <field-sort-custom-order field='Description' />
+        <field-sort-custom-order field='Privacy' />
+        <field-sort-custom-order field='Date Published' />
+        <field-sort-custom-order field='Category Id' />
+        <field-sort-custom-order field='Category Name' />
+        <field-sort-custom-order field='Thumbnail Url' />
+        <field-sort-custom-order field='Watch Url' />
+        <field-sort-custom-order field='FileName' />
+        <field-sort-custom-order field='Date Backed Up' />
+        <field-sort-custom-order field='View Count' />
+        <field-sort-custom-order field='Comment Count' />
+        <field-sort-custom-order field='Like Count' />
+        <field-sort-custom-order field='Dislike Count' />
+        <field-sort-custom-order field='Calculation_1442559282806546443' />
+        <field-sort-custom-order field='Length (seconds)' />
+        <field-sort-custom-order field='Calculation_1442559282804740106' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field='Calculation_1442559282786344960' />
+        <field-sort-custom-order field='Calculation_1442559282801729543' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='backup yt' id='backup yt_6240C3FBE9114F4088A2D1EF4B0681F9'>
+            <properties context=''>
+              <relation connection='cloudfile:googledrive-excel-direct.13cpkbx0vz7kmm13n3f2i14042hv' name='backup yt' table='[&apos;backup yt$&apos;]' type='table'>
+                <columns gridOrigin='A1:R88:no:A1:R88:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Video Id' ordinal='0' />
+                  <column datatype='string' name='Channel Id' ordinal='1' />
+                  <column datatype='string' name='Title' ordinal='2' />
+                  <column datatype='string' name='Tags' ordinal='3' />
+                  <column datatype='string' name='Description' ordinal='4' />
+                  <column datatype='string' name='Privacy' ordinal='5' />
+                  <column datatype='date' name='Date Published' ordinal='6' />
+                  <column datatype='integer' name='Category Id' ordinal='7' />
+                  <column datatype='string' name='Category Name' ordinal='8' />
+                  <column datatype='string' name='Thumbnail Url' ordinal='9' />
+                  <column datatype='string' name='Watch Url' ordinal='10' />
+                  <column datatype='string' name='FileName' ordinal='11' />
+                  <column datatype='date' name='Date Backed Up' ordinal='12' />
+                  <column datatype='integer' name='View Count' ordinal='13' />
+                  <column datatype='integer' name='Comment Count' ordinal='14' />
+                  <column datatype='integer' name='Like Count' ordinal='15' />
+                  <column datatype='integer' name='Dislike Count' ordinal='16' />
+                  <column datatype='integer' name='Length (seconds)' ordinal='17' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_22A5CDD727C84B4B93726F8168B90DA1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='KPI1 Total videos uploaded (tooltip)' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Highlight 1 (generated)' name='[Action2_FA68E6486A2D4AA49A4923756520BCB6]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Title' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Corelation views and video length'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#e15759'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='backup yt (Lore So What YouTube Channel Data)' name='federated.0lmlmld1rdf1yk14q09kk1lzklj8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lmlmld1rdf1yk14q09kk1lzklj8'>
+            <column caption='video type' datatype='string' name='[Calculation_1442559282786344960]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='if [Length (seconds)] &lt;=60 THEN &quot;Shorts&quot;&#13;&#10;ELSE &quot;Regular&quot;&#13;&#10;END' />
+            </column>
+            <column caption='length (minutes)' datatype='real' name='[Calculation_1442559282804740106]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Length (seconds)] /60' />
+            </column>
+            <column datatype='integer' name='[Length (seconds)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Title]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[View Count]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1442559282786344960]' derivation='None' name='[none:Calculation_1442559282786344960:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Title]' derivation='None' name='[none:Title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1442559282804740106]' derivation='Sum' name='[sum:Calculation_1442559282804740106:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[View Count]' derivation='Sum' name='[sum:View Count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:View Count:qk]' included-values='in-range-or-null'>
+            <min>0</min>
+          </filter>
+          <slices>
+            <column>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:View Count:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:Calculation_1442559282804740106:qk]' field-type='quantitative' scale='log' scope='cols' type='space' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:View Count:qk]' field-type='quantitative' scale='log' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Title:nk]' />
+              <lod column='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='log' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1' />
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:View Count:qk]</rows>
+        <cols>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:Calculation_1442559282804740106:qk]</cols>
+      </table>
+      <simple-id uuid='{193C77EC-F629-4DDA-ACE9-30460B0471C9}' />
+    </worksheet>
+    <worksheet name='KPI1 Total videos uploaded'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='backup yt (Lore So What YouTube Channel Data)' name='federated.0lmlmld1rdf1yk14q09kk1lzklj8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lmlmld1rdf1yk14q09kk1lzklj8'>
+            <column datatype='string' name='[Video Id]' role='dimension' type='nominal' />
+            <column-instance column='[Video Id]' derivation='CountD' name='[ctd:Video Id:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[ctd:Video Id:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'><![CDATA[<Sheet name="KPI1 Total videos uploaded (tooltip)" maxwidth="300" maxheight="300" filter="<All Fields>">]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Distinct count of Video Id:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[ctd:Video Id:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#e15759' fontsize='18'><![CDATA[<[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[ctd:Video Id:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#e15759' fontsize='18'>Total videos </run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DD19FAB0-B3F4-4C89-B391-0C176F42FA8F}' />
+    </worksheet>
+    <worksheet name='KPI1 Total videos uploaded (tooltip)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#e15759'>Total videos </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='backup yt (Lore So What YouTube Channel Data)' name='federated.0lmlmld1rdf1yk14q09kk1lzklj8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lmlmld1rdf1yk14q09kk1lzklj8'>
+            <column caption='video type' datatype='string' name='[Calculation_1442559282786344960]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='if [Length (seconds)] &lt;=60 THEN &quot;Shorts&quot;&#13;&#10;ELSE &quot;Regular&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='integer' name='[Length (seconds)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Video Id]' role='dimension' type='nominal' />
+            <column-instance column='[Video Id]' derivation='CountD' name='[ctd:Video Id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1442559282786344960]' derivation='None' name='[none:Calculation_1442559282786344960:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[ctd:Video Id:qk]' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]' />
+              <text column='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[ctd:Video Id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='right' />
+                <format attr='wrap' value='off' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='mark-transparency' value='188' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]</rows>
+        <cols>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[ctd:Video Id:qk]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[ctd:Video Id:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[ctd:Video Id:qk]</field>
+                  <field>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>36</value>
+                <value>&quot;Regular&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{8EE55534-C726-439B-B54D-C86A3860C714}' />
+    </worksheet>
+    <worksheet name='KPI2 Total View count'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='backup yt (Lore So What YouTube Channel Data)' name='federated.0lmlmld1rdf1yk14q09kk1lzklj8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lmlmld1rdf1yk14q09kk1lzklj8'>
+            <column datatype='integer' name='[View Count]' role='measure' type='quantitative' />
+            <column-instance column='[View Count]' derivation='Sum' name='[sum:View Count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:View Count:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>&lt;</run>
+                <run fontcolor='#787878'><![CDATA[Sheet name="KPI2 Total views (tooltip) " maxwidth="300" maxheight="300" filter="<All Fields>"]]></run>
+                <run fontcolor='#787878'>&gt;</run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#e15759' fontsize='18'><![CDATA[<[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:View Count:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#e15759' fontsize='18'>Total views </run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{AD0E953E-13CB-456F-8784-1DF681230D4C}' />
+    </worksheet>
+    <worksheet name='KPI2 Total views (tooltip) '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#e15759'>Total Views</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='backup yt (Lore So What YouTube Channel Data)' name='federated.0lmlmld1rdf1yk14q09kk1lzklj8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lmlmld1rdf1yk14q09kk1lzklj8'>
+            <column caption='video type' datatype='string' name='[Calculation_1442559282786344960]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='if [Length (seconds)] &lt;=60 THEN &quot;Shorts&quot;&#13;&#10;ELSE &quot;Regular&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='integer' name='[Length (seconds)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[View Count]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1442559282786344960]' derivation='None' name='[none:Calculation_1442559282786344960:nk]' pivot='key' type='nominal' />
+            <column-instance column='[View Count]' derivation='Sum' name='[sum:View Count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:View Count:qk]' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]' />
+              <text column='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:View Count:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='right' />
+                <format attr='wrap' value='off' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='mark-transparency' value='188' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]</rows>
+        <cols>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:View Count:qk]</cols>
+      </table>
+      <simple-id uuid='{1392D90B-B48D-474F-9EFC-412284914EE2}' />
+    </worksheet>
+    <worksheet name='KPI3 Total Like count '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='backup yt (Lore So What YouTube Channel Data)' name='federated.0lmlmld1rdf1yk14q09kk1lzklj8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lmlmld1rdf1yk14q09kk1lzklj8'>
+            <column datatype='integer' name='[Like Count]' role='measure' type='quantitative' />
+            <column-instance column='[Like Count]' derivation='Sum' name='[sum:Like Count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:Like Count:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'><![CDATA[<Sheet name="KPI3 Total Likes (tooltip) " maxwidth="300" maxheight="300" filter="<All Fields>">]]></run>
+                <run>Æ&#10;&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#e15759' fontsize='18'><![CDATA[<[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:Like Count:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#e15759' fontsize='18'>Total Likes</run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{47DC3F9D-BFD3-44BC-A0C2-3C44C2DAD4EF}' />
+    </worksheet>
+    <worksheet name='KPI3 Total Likes (tooltip) '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#e15759'>Total Likes</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='backup yt (Lore So What YouTube Channel Data)' name='federated.0lmlmld1rdf1yk14q09kk1lzklj8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lmlmld1rdf1yk14q09kk1lzklj8'>
+            <column caption='video type' datatype='string' name='[Calculation_1442559282786344960]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='if [Length (seconds)] &lt;=60 THEN &quot;Shorts&quot;&#13;&#10;ELSE &quot;Regular&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='integer' name='[Length (seconds)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Like Count]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1442559282786344960]' derivation='None' name='[none:Calculation_1442559282786344960:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Like Count]' derivation='Sum' name='[sum:Like Count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:Like Count:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]' />
+              <text column='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:Like Count:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='right' />
+                <format attr='wrap' value='off' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='mark-transparency' value='188' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]</rows>
+        <cols>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:Like Count:qk]</cols>
+      </table>
+      <simple-id uuid='{22517E3D-57D0-4C2E-B759-E1F04A50CEF8}' />
+    </worksheet>
+    <worksheet name='KPI4 Total Dislike count '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='backup yt (Lore So What YouTube Channel Data)' name='federated.0lmlmld1rdf1yk14q09kk1lzklj8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lmlmld1rdf1yk14q09kk1lzklj8'>
+            <column datatype='integer' name='[Dislike Count]' role='measure' type='quantitative' />
+            <column-instance column='[Dislike Count]' derivation='Sum' name='[sum:Dislike Count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:Dislike Count:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'><![CDATA[<Sheet name="KPI4Total Disikes (tooltip) " maxwidth="300" maxheight="300" filter="<All Fields>">]]></run>
+                <run>Æ&#10;&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#e15759' fontsize='18'><![CDATA[<[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:Dislike Count:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#e15759' fontsize='18'>Total Dislikes</run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{15F45324-28E0-41A3-A703-57A2930842DC}' />
+    </worksheet>
+    <worksheet name='KPI4Total Disikes (tooltip) '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#e15759'>Total Dislikes</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='backup yt (Lore So What YouTube Channel Data)' name='federated.0lmlmld1rdf1yk14q09kk1lzklj8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lmlmld1rdf1yk14q09kk1lzklj8'>
+            <column caption='video type' datatype='string' name='[Calculation_1442559282786344960]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='if [Length (seconds)] &lt;=60 THEN &quot;Shorts&quot;&#13;&#10;ELSE &quot;Regular&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='integer' name='[Dislike Count]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Length (seconds)]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1442559282786344960]' derivation='None' name='[none:Calculation_1442559282786344960:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Dislike Count]' derivation='Sum' name='[sum:Dislike Count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:Dislike Count:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]' />
+              <text column='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:Dislike Count:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='right' />
+                <format attr='wrap' value='off' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='mark-transparency' value='188' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]</rows>
+        <cols>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:Dislike Count:qk]</cols>
+        <mark-labels>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:Dislike Count:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]</field>
+                  <field>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:Dislike Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Regular&quot;</value>
+                <value>131</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{64C04D03-9D4C-4F57-9316-9D4983B0136B}' />
+    </worksheet>
+    <worksheet name='KPI5 Total Comments (tooltip) '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#e15759'>Total Comments</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='backup yt (Lore So What YouTube Channel Data)' name='federated.0lmlmld1rdf1yk14q09kk1lzklj8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lmlmld1rdf1yk14q09kk1lzklj8'>
+            <column caption='video type' datatype='string' name='[Calculation_1442559282786344960]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='if [Length (seconds)] &lt;=60 THEN &quot;Shorts&quot;&#13;&#10;ELSE &quot;Regular&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='integer' name='[Comment Count]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Length (seconds)]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1442559282786344960]' derivation='None' name='[none:Calculation_1442559282786344960:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Comment Count]' derivation='Sum' name='[sum:Comment Count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:Comment Count:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]' />
+              <lod column='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:Comment Count:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='right' />
+                <format attr='wrap' value='off' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='mark-transparency' value='188' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]</rows>
+        <cols>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:Comment Count:qk]</cols>
+        <mark-labels>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:Comment Count:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]</field>
+                  <field>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:Comment Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Regular&quot;</value>
+                <value>1350</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:Comment Count:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]</field>
+                  <field>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:Comment Count:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Shorts&quot;</value>
+                <value>448</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{AA0F4D89-77FA-4A0B-AD21-FD76AF84FB21}' />
+    </worksheet>
+    <worksheet name='KPI5 Total Comments count '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='backup yt (Lore So What YouTube Channel Data)' name='federated.0lmlmld1rdf1yk14q09kk1lzklj8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lmlmld1rdf1yk14q09kk1lzklj8'>
+            <column datatype='integer' name='[Dislike Count]' role='measure' type='quantitative' />
+            <column-instance column='[Dislike Count]' derivation='Sum' name='[sum:Dislike Count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:Dislike Count:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'><![CDATA[<Sheet name="KPI4Total Disikes (tooltip) " maxwidth="300" maxheight="300" filter="<All Fields>">]]></run>
+                <run>Æ&#10;&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#e15759' fontsize='18'><![CDATA[<[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:Dislike Count:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#e15759' fontsize='18'>Total Comments Count</run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3FF3331A-C2C5-4F1B-8E52-E0C07DEDD4A8}' />
+    </worksheet>
+    <worksheet name='identify outliers'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#e15759'>Higgest Views</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='backup yt (Lore So What YouTube Channel Data)' name='federated.0lmlmld1rdf1yk14q09kk1lzklj8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lmlmld1rdf1yk14q09kk1lzklj8'>
+            <column datatype='string' name='[Title]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[View Count]' role='measure' type='quantitative' />
+            <column-instance column='[Title]' derivation='None' name='[none:Title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[View Count]' derivation='Sum' name='[sum:View Count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Title:nk]' direction='DESC' using='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:View Count:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:View Count:qk]' field-type='quantitative' max='285012' min='-5066' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Title:nk]</rows>
+        <cols>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:View Count:qk]</cols>
+      </table>
+      <simple-id uuid='{D9EAE8B0-FBD7-414B-BC9E-5B1333EA46DC}' />
+    </worksheet>
+    <worksheet name='least performing videos'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#e15759'>Least performance</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='backup yt (Lore So What YouTube Channel Data)' name='federated.0lmlmld1rdf1yk14q09kk1lzklj8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lmlmld1rdf1yk14q09kk1lzklj8'>
+            <column caption='video type' datatype='string' name='[Calculation_1442559282786344960]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='if [Length (seconds)] &lt;=60 THEN &quot;Shorts&quot;&#13;&#10;ELSE &quot;Regular&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='integer' name='[Length (seconds)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Title]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[View Count]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1442559282786344960]' derivation='None' name='[none:Calculation_1442559282786344960:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Title]' derivation='None' name='[none:Title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[View Count]' derivation='Sum' name='[sum:View Count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]' direction='ASC' using='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:View Count:qk]' />
+          <filter class='categorical' column='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Title:nk]'>
+            <groupfilter count='2' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([View Count])' function='order' user:ui-marker='order'>
+                <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='level-members' level='[none:Title:nk]' />
+                  <groupfilter function='member' level='[none:Title:nk]' member='&quot;1.68017e+15&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Title:nk]' direction='ASC' using='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:View Count:qk]' />
+          <slices>
+            <column>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Title:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Title:nk]' value='40' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]' value='144' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[sum:View Count:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk] / [federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Title:nk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{9EF7E8D0-E1AB-4541-8DB9-654E1B69D33C}' />
+    </worksheet>
+    <worksheet name='video vs short 1 views'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#e15759'>video vs short-views</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='backup yt (Lore So What YouTube Channel Data)' name='federated.0lmlmld1rdf1yk14q09kk1lzklj8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lmlmld1rdf1yk14q09kk1lzklj8'>
+            <column caption='video type' datatype='string' name='[Calculation_1442559282786344960]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='if [Length (seconds)] &lt;=60 THEN &quot;Shorts&quot;&#13;&#10;ELSE &quot;Regular&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='integer' name='[Length (seconds)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[View Count]' role='measure' type='quantitative' />
+            <column-instance column='[View Count]' derivation='Avg' name='[avg:View Count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1442559282786344960]' derivation='None' name='[none:Calculation_1442559282786344960:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[avg:View Count:qk]</rows>
+        <cols>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]</cols>
+      </table>
+      <simple-id uuid='{71DAF44C-03FA-4A03-A900-349C3394DC15}' />
+    </worksheet>
+    <worksheet name='video vs short 2 likes'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#e15759'>video vs short -Likes</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='backup yt (Lore So What YouTube Channel Data)' name='federated.0lmlmld1rdf1yk14q09kk1lzklj8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lmlmld1rdf1yk14q09kk1lzklj8'>
+            <column caption='video type' datatype='string' name='[Calculation_1442559282786344960]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='if [Length (seconds)] &lt;=60 THEN &quot;Shorts&quot;&#13;&#10;ELSE &quot;Regular&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='integer' name='[Length (seconds)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Like Count]' role='measure' type='quantitative' />
+            <column-instance column='[Like Count]' derivation='Avg' name='[avg:Like Count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1442559282786344960]' derivation='None' name='[none:Calculation_1442559282786344960:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[avg:Like Count:qk]</rows>
+        <cols>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]</cols>
+      </table>
+      <simple-id uuid='{83FDAF34-B455-4E00-8EAB-AA42D1046BA4}' />
+    </worksheet>
+    <worksheet name='video vs short 3 comments'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#e15759'>Video vs short - Comments</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='backup yt (Lore So What YouTube Channel Data)' name='federated.0lmlmld1rdf1yk14q09kk1lzklj8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lmlmld1rdf1yk14q09kk1lzklj8'>
+            <column caption='video type' datatype='string' name='[Calculation_1442559282786344960]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='if [Length (seconds)] &lt;=60 THEN &quot;Shorts&quot;&#13;&#10;ELSE &quot;Regular&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='integer' name='[Comment Count]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Length (seconds)]' role='measure' type='quantitative' />
+            <column-instance column='[Comment Count]' derivation='Avg' name='[avg:Comment Count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1442559282786344960]' derivation='None' name='[none:Calculation_1442559282786344960:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[avg:Comment Count:qk]</rows>
+        <cols>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]</cols>
+      </table>
+      <simple-id uuid='{00B4CACA-AFA4-418F-B270-73034858AB61}' />
+    </worksheet>
+    <worksheet name='video vs shorts 4 Dislike'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#e15759'>video vs short -Dislikes</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='backup yt (Lore So What YouTube Channel Data)' name='federated.0lmlmld1rdf1yk14q09kk1lzklj8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lmlmld1rdf1yk14q09kk1lzklj8'>
+            <column caption='video type' datatype='string' name='[Calculation_1442559282786344960]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='if [Length (seconds)] &lt;=60 THEN &quot;Shorts&quot;&#13;&#10;ELSE &quot;Regular&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='integer' name='[Dislike Count]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Length (seconds)]' role='measure' type='quantitative' />
+            <column-instance column='[Dislike Count]' derivation='Avg' name='[avg:Dislike Count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1442559282786344960]' derivation='None' name='[none:Calculation_1442559282786344960:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]' value='video type'>
+              <formatted-text>
+                <run bold='true' fontcolor='#e15759' fontsize='10'>video type</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[avg:Dislike Count:qk]</rows>
+        <cols>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]</cols>
+      </table>
+      <simple-id uuid='{99899A0C-EBD6-4737-92C5-9347B72FF8E8}' />
+    </worksheet>
+    <worksheet name='video with dislikes&gt;likes'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='backup yt (Lore So What YouTube Channel Data)' name='federated.0lmlmld1rdf1yk14q09kk1lzklj8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lmlmld1rdf1yk14q09kk1lzklj8'>
+            <column caption='dislikes&gt;likes' datatype='boolean' name='[Calculation_1442559282806546443]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Dislike Count]&gt;[Like Count]' />
+            </column>
+            <column datatype='integer' name='[Dislike Count]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Like Count]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1442559282806546443]' derivation='None' name='[none:Calculation_1442559282806546443:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282806546443:nk]'>
+            <groupfilter function='empty-level' member='[none:Calculation_1442559282806546443:nk]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282806546443:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F15FDBD6-B617-4852-A58F-F3894B08164D}' />
+    </worksheet>
+    <worksheet name='video with no tags'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#e15759'>video with No Tags</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='backup yt (Lore So What YouTube Channel Data)' name='federated.0lmlmld1rdf1yk14q09kk1lzklj8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lmlmld1rdf1yk14q09kk1lzklj8'>
+            <column datatype='string' name='[Privacy]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Tags]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Title]' role='dimension' type='nominal' />
+            <column-instance column='[Privacy]' derivation='None' name='[none:Privacy:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Tags]' derivation='None' name='[none:Tags:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Title]' derivation='None' name='[none:Title:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[Exclusions (Privacy,Title)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='level-members' level='[none:Privacy:nk]' />
+                <groupfilter function='level-members' level='[none:Title:nk]' />
+              </groupfilter>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[none:Privacy:nk]' member='&quot;Private&quot;' />
+                <groupfilter function='member' level='[none:Title:nk]' member='&quot;1.68017e+15&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Tags:nk]'>
+            <groupfilter function='member' level='[none:Tags:nk]' member='%null%' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Tags:nk]</column>
+            <column>[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[Exclusions (Privacy,Title)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='496' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Title:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F97ACD75-DBFB-48BA-B56A-C1E08B447A78}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='24'>YOUTUBE CHANNEL DATA ANALYSIS</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#fbf7fb' />
+        </style-rule>
+        <style-rule element='dash-title'>
+          <format attr='border-style' value='solid' />
+          <format attr='background-color' value='#ff0000' />
+          <format attr='text-align' value='center' />
+          <format attr='font-weight' value='bold' />
+        </style-rule>
+        <style-rule element='dash-subtitle'>
+          <format attr='font-weight' value='bold' />
+        </style-rule>
+        <style-rule element='dash-text'>
+          <format attr='text-align' value='center' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98002' id='36' param='vert' type-v2='layout-flow' w='99062' x='469' y='999'>
+            <zone fixed-size='55' h='7865' id='37' is-fixed='true' type-v2='title' w='99062' x='469' y='999'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='90137' id='34' type-v2='layout-basic' w='99062' x='469' y='8864'>
+              <zone h='27385' id='10' param='horz' type-v2='layout-flow' w='99062' x='469' y='56745'>
+                <zone h='27385' id='8' type-v2='layout-basic' w='80374' x='469' y='56745'>
+                  <zone h='27385' id='7' name='video vs shorts 4 Dislike' w='23655' x='469' y='56745'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='27385' id='12' name='video vs short 3 comments' w='19863' x='24124' y='56745'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='27385' id='13' name='video vs short 2 likes' w='19924' x='43987' y='56745'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='27385' id='14' name='video vs short 1 views' w='16932' x='63911' y='56745'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone fixed-size='319' h='27385' id='9' is-fixed='true' param='vert' type-v2='layout-flow' w='18688' x='80843' y='56745'>
+                  <zone fixed-size='167' h='13692' id='3' is-fixed='true' name='least performing videos' w='18688' x='80843' y='56745'>
+                    <layout-cache cell-count-w='1' non-cell-size-w='245' type-h='cell' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='142' h='13693' id='5' is-fixed='true' name='video with no tags' w='18688' x='80843' y='70437'>
+                    <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='28247' id='16' name='identify outliers' w='39057' x='469' y='28498'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='28247' id='23' name='Corelation views and video length' w='32901' x='66630' y='28498'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='19634' id='11' name='video vs shorts 4 Dislike' pane-specification-id='0' param='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]' type-v2='color' w='11832' x='87699' y='8864'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='19634' id='24' name='KPI5 Total Comments count ' show-title='false' w='18412' x='69287' y='8864'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='19634' id='25' name='KPI4 Total Dislike count ' show-title='false' w='17748' x='51539' y='8864'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='19634' id='26' name='KPI3 Total Like count ' show-title='false' w='15635' x='35904' y='8864'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='19634' id='27' name='KPI2 Total View count' show-title='false' w='16039' x='19865' y='8864'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='19634' id='28' name='KPI1 Total videos uploaded' show-title='false' w='19396' x='469' y='8864'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='14871' id='29' name='KPI1 Total videos uploaded (tooltip)' w='21067' x='469' y='84130'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='14871' id='30' name='KPI2 Total views (tooltip) ' w='23785' x='21536' y='84130'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='14871' id='31' name='KPI3 Total Likes (tooltip) ' w='20585' x='45321' y='84130'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='14871' id='32' name='KPI4Total Disikes (tooltip) ' w='17446' x='65906' y='84130'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='14871' id='33' name='KPI5 Total Comments (tooltip) ' w='16179' x='83352' y='84130'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='28247' id='17' is-centered='0' param='C:/Users/shara/OneDrive/Desktop/yt.jpg' type-v2='bitmap' w='1931' x='64699' y='28498'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='28247' id='42' is-centered='0' is-scaled='1' param='C:/Users/shara/OneDrive/Desktop/Youtube Analysis/yt.jpg' type-v2='bitmap' w='25173' x='39526' y='28498'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='24'>YOUTUBE CHANNEL DATA ANALYSIS</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='3300' minheight='3300' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='41' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98002' id='40' param='vert' type-v2='layout-flow' w='99034' x='483' y='999'>
+                <zone fixed-size='55' h='7865' id='37' type-v2='title' w='99034' x='483' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='149' h='19634' id='28' is-fixed='true' name='KPI1 Total videos uploaded' show-title='false' w='19391' x='483' y='8864'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='149' h='19634' id='27' is-fixed='true' name='KPI2 Total View count' show-title='false' w='16034' x='19874' y='8864'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='149' h='19634' id='26' is-fixed='true' name='KPI3 Total Like count ' show-title='false' w='15631' x='35908' y='8864'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='149' h='19634' id='25' is-fixed='true' name='KPI4 Total Dislike count ' show-title='false' w='17743' x='51539' y='8864'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='149' h='19634' id='24' is-fixed='true' name='KPI5 Total Comments count ' show-title='false' w='18407' x='69282' y='8864'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='218' h='28247' id='16' is-fixed='true' name='identify outliers' w='33011' x='483' y='28498'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='218' h='28247' id='17' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/shara/OneDrive/Desktop/yt.jpg' type-v2='bitmap' w='33012' x='33494' y='28498'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='218' h='28247' id='23' is-fixed='true' name='Corelation views and video length' w='33011' x='66506' y='28498'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='211' h='27385' id='7' is-fixed='true' name='video vs shorts 4 Dislike' w='23482' x='483' y='56745'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='19634' id='11' name='video vs shorts 4 Dislike' pane-specification-id='0' param='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]' type-v2='color' w='11828' x='87689' y='8864'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='211' h='27385' id='12' is-fixed='true' name='video vs short 3 comments' w='19717' x='23965' y='56745'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='211' h='27385' id='13' is-fixed='true' name='video vs short 2 likes' w='19777' x='43682' y='56745'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='211' h='27385' id='14' is-fixed='true' name='video vs short 1 views' w='16806' x='63459' y='56745'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='101' h='13692' id='3' is-fixed='true' name='least performing videos' w='19252' x='80265' y='56745'>
+                  <layout-cache cell-count-w='1' non-cell-size-w='245' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='102' h='13693' id='5' is-fixed='true' name='video with no tags' w='19252' x='80265' y='70437'>
+                  <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='111' h='14871' id='29' is-fixed='true' name='KPI1 Total videos uploaded (tooltip)' w='21062' x='483' y='84130'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='111' h='14871' id='30' is-fixed='true' name='KPI2 Total views (tooltip) ' w='23778' x='21545' y='84130'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='111' h='14871' id='31' is-fixed='true' name='KPI3 Total Likes (tooltip) ' w='20579' x='45323' y='84130'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='111' h='14871' id='32' is-fixed='true' name='KPI4Total Disikes (tooltip) ' w='17441' x='65902' y='84130'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='111' h='14871' id='33' is-fixed='true' name='KPI5 Total Comments (tooltip) ' w='16174' x='83343' y='84130'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{6894B604-5F5C-4BF1-84F4-14EECA005172}' />
+    </dashboard>
+  </dashboards>
+  <windows pres-mode='true' saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='KPI1 Total videos uploaded'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{041F44F8-1933-40EB-85AE-8DE80B9A9438}' />
+    </window>
+    <window class='worksheet' name='KPI2 Total View count'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C6B956B6-DFAD-46C0-AD2E-C8A56BAB4B8A}' />
+    </window>
+    <window class='worksheet' name='KPI3 Total Like count '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{455663D8-7876-49B7-844A-DC3500687FED}' />
+    </window>
+    <window class='worksheet' name='KPI4 Total Dislike count '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{20DEDAB4-BDF2-4AC5-9904-C6471A135D09}' />
+    </window>
+    <window class='worksheet' name='KPI5 Total Comments count '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2F8C8ADD-FA23-4406-91A5-D0DF46A4CAE8}' />
+    </window>
+    <window class='worksheet' name='KPI1 Total videos uploaded (tooltip)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C0DF648E-FC2B-44D3-A055-DD7782B666DC}' />
+    </window>
+    <window class='worksheet' name='KPI2 Total views (tooltip) '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3E1D048E-4060-4C4A-89AE-F7DC11B8F589}' />
+    </window>
+    <window class='worksheet' name='KPI3 Total Likes (tooltip) '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DD81C6DD-0C96-48E2-A6F3-FD51A1838F8B}' />
+    </window>
+    <window class='worksheet' name='KPI4Total Disikes (tooltip) '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{91460BCD-549C-4A2A-9B82-752B53A22DA3}' />
+    </window>
+    <window class='worksheet' name='KPI5 Total Comments (tooltip) '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DA6AE614-95DD-4C24-B3BC-022A01684C2A}' />
+    </window>
+    <window class='worksheet' name='identify outliers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{899FCABA-25D3-4E09-9855-F03C258084F2}' />
+    </window>
+    <window class='worksheet' name='video vs short 1 views'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5DC0388E-68E2-49EA-BF0C-8DA351776FFD}' />
+    </window>
+    <window class='worksheet' name='video vs short 2 likes'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D06F7950-156F-413C-9B35-F61E89A6145F}' />
+    </window>
+    <window class='worksheet' name='video vs short 3 comments'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AD8551DD-51E9-4C44-A884-1D7389FD6755}' />
+    </window>
+    <window class='worksheet' name='video vs shorts 4 Dislike'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0lmlmld1rdf1yk14q09kk1lzklj8].[none:Calculation_1442559282786344960:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7936551D-6FB4-40BC-B66A-5D1B8F5A43F8}' />
+    </window>
+    <window class='worksheet' name='Corelation views and video length'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{215BCCB0-31E7-4D9C-9903-9ACFFD151B8A}' />
+    </window>
+    <window class='worksheet' maximized='true' name='video with no tags'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0B9AB63C-84B0-4553-8E18-4F32AD9EEA4F}' />
+    </window>
+    <window class='worksheet' name='video with dislikes&gt;likes'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7A5D52BD-CF07-4DCD-B6E7-4453E7F20E6D}' />
+    </window>
+    <window class='worksheet' name='least performing videos'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{29AA9CEC-16DF-46BF-8E34-04919173C1B9}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Corelation views and video length'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI1 Total videos uploaded'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI1 Total videos uploaded (tooltip)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI2 Total View count'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI2 Total views (tooltip) ' />
+        <viewpoint name='KPI3 Total Like count '>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI3 Total Likes (tooltip) ' />
+        <viewpoint name='KPI4 Total Dislike count '>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI4Total Disikes (tooltip) ' />
+        <viewpoint name='KPI5 Total Comments (tooltip) ' />
+        <viewpoint name='KPI5 Total Comments count '>
+          <zoom type='fit-height' />
+        </viewpoint>
+        <viewpoint name='identify outliers' />
+        <viewpoint name='least performing videos'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='video vs short 1 views'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='video vs short 2 likes'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='video vs short 3 comments'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='video vs shorts 4 Dislike'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='video with no tags'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='28' />
+      <simple-id uuid='{730D66AF-81A2-489D-AA73-13C8BE5F09AA}' />
+    </window>
+  </windows>
+</workbook>
