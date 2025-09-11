@@ -191,10 +191,12 @@
   * [Studentperformancevisualisation](./Data_Science/StudentPerformanceVisualisation)
   * [Unemployment Analysis Due To Covid](./Data_Science/Unemployment%20Analysis%20due%20to%20COVID)
   * [Whatsapp Chat Analyzer](./Data_Science/Whatsapp_Chat_Analyzer)
+  * [Youtube Analysis](./Data_Science/Youtube%20Analysis)
   * [Analysis Covid Trends](./Data_Science/analysis_covid_trends)
   * [Crypto Report Dashboard](./Data_Science/crypto_report_dashboard)
   * [Customer Segmentation](./Data_Science/customer_segmentation)
   * [Stock Prediction](./Data_Science/stock_prediction)
+  * [Supply Chain](./Data_Science/supply%20chain)
   * [Time Series Visualization](./Data_Science/time_series_visualization)
   * [Traffic Vs Zombie Game](./Data_Science/traffic_vs_zombie_game)
 
