@@ -31,13 +31,13 @@ The project is designed for beginners who want to practice **file handling, data
    ```
 
 2. Navigate to the project folder.
-    ```
+    ```bash
     cd PyVerse/beginner_projects/ecommerce
     ```
 
 3. Run the script.
-    ```
-    python ecommerce.py
+    ```bash
+    python e-commerce.py
     ```
 
 ---

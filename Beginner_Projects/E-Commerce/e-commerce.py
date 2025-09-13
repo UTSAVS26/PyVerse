@@ -3,16 +3,19 @@ import matplotlib.pyplot as plt
 import datetime as date
 
 class E_COMMERCE:
-    def __init__(self,customer_path="C:\\Users\\hp\\Downloads\\customers.csv",product_path="C:\\Users\\hp\\Downloads\\products_messy.csv",order_path="C:\\Users\\hp\\Downloads\\orders.csv"):
+    def __init__(self,customer_path="data/customers.csv", product_path="data/products.csv", order_path="data/orders.csv"):
         self.customers=pd.read_csv(customer_path)
         self.product=pd.read_csv(product_path)
         self.orders=pd.read_csv(order_path)
     
     def calculate_revenue(self):
-        self.orders['quantity'].fillna(self.orders['quantity'].mean(),inplace=True)
-        merge=pd.merge(self.product,self.orders,on='product_id',how='inner')
-        merge['revenue']=merge['quantity']*merge['price']
-        return merge
+       self.orders['quantity'] = pd.to_numeric(self.orders['quantity'], errors="coerce")
+       self.product['price'] = pd.to_numeric(self.product['price'], errors="coerce")
+       self.orders['quantity'].fillna(self.orders['quantity'].mean(), inplace=True)
+       self.product['price'].fillna(self.product['price'].median(), inplace=True)
+       merge = pd.merge(self.product, self.orders, on='product_id', how='inner')
+       merge['revenue'] = merge['quantity'] * merge['price']
+       return merge
 
 
 class DATA_CLEANING(E_COMMERCE):
@@ -23,7 +26,7 @@ class DATA_CLEANING(E_COMMERCE):
         return f"{null_vales1}\n \n{null_values2} \n \n {null_values3}"
     
     def missing_values(self):
-        self.product['category'].fillna(self.product['category'].value_counts().idxmax())
+        self.product['category'].fillna(self.product['category'].value_counts().idxmax(),inplace=True)
         self.orders['quantity'].fillna(self.orders['quantity'].mean(),inplace=True)
         return f"{self.product} \n \n {self.orders}"
     
@@ -70,6 +73,7 @@ class FEATURE_ENGINEERING(E_COMMERCE):
         return CLV
     
     def purchase_date(self): 
+        self.orders['order_date'] = pd.to_datetime(self.orders['order_date'], errors='coerce')
         date=self.orders.groupby('customer_id')['order_date'].agg(first_purchase='min',last_purchase='max')
         return date
     
@@ -124,7 +128,7 @@ class VISUALIZATION(E_COMMERCE):
 
 
 class EXPORT(E_COMMERCE):
-   def export_cleaned_csv(self, path="C:\\Users\\hp\\Downloads\\E_COMMERCE_CLEANED.csv"):
+    def export_cleaned_csv(self, path="E_COMMERCE_CLEANED.csv"):    
         merged = pd.merge(self.orders, self.customers, on='customer_id', how='inner')
         merged = pd.merge(merged, self.product, on='product_id', how='inner')
         merged.to_csv(path, index=False)
