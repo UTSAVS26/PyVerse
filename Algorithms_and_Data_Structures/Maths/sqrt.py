@@ -1,8 +1,10 @@
-def input_value():
+ def input_value() -> int:
     x = int(input("Enter non-negative integer x: "))
     return x
 
-def sqrt_floor(x):
+def sqrt_floor(x: int) -> int:
+    if x < 0:
+        raise ValueError("x must be non-negative")
     if x < 2:
         return x  # sqrt(0)=0, sqrt(1)=1
 
