@@ -44,7 +44,7 @@ def atm_interface():
     balance = 5000.00  # Initial balance
     while True:
         display_menu()
-        choice = input("\nEnter your choice (1-4): ")
+        choice = int(input("\nEnter your choice (1-4): "))
 
         if choice == '1':
             check_balance(balance)
