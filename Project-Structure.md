@@ -73,6 +73,7 @@
 
 * **Beginner Projects**
   * [Atm Interface](./Beginner_Projects/ATM%20Interface)
+  * [Amazon Product Availability Checker](./Beginner_Projects/Amazon%20product%20availability%20checker)
   * [Amazon Product Availbility Checker](./Beginner_Projects/Amazon%20product%20availbility%20checker)
   * [Anime Manga Tracker](./Beginner_Projects/Anime_Manga_Tracker)
   * [Bmi Calculator](./Beginner_Projects/BMI%20Calculator)
@@ -84,6 +85,7 @@
   * [Coach](./Beginner_Projects/Coach)
   * [Currency  Convertor](./Beginner_Projects/Currency%20_Convertor)
   * [Digital Clock](./Beginner_Projects/Digital%20Clock)
+  * [E-Commerce](./Beginner_Projects/E-Commerce)
   * [E-Certificate Generator](./Beginner_Projects/E-certificate%20Generator)
   * [Email Automation](./Beginner_Projects/Email_Automation)
   * [Escape The Maze](./Beginner_Projects/Escape%20the%20Maze)
