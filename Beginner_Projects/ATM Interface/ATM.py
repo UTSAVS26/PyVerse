@@ -7,6 +7,9 @@ def display_menu():
     print("3. Withdraw Money")
     print("4. Exit")
 
+def account_number():
+    account_number=input("enter your account number:")
+    return account_number
 
 def check_balance(balance):
     print(f"\nYour current balance is: ${balance}")
@@ -44,7 +47,7 @@ def atm_interface():
     balance = 5000.00  # Initial balance
     while True:
         display_menu()
-        choice = input("\nEnter your choice (1-4): ")
+        choice = int(input("\nEnter your choice (1-4): "))
 
         if choice == '1':
             check_balance(balance)
@@ -60,4 +63,5 @@ def atm_interface():
 
 
 # Run the ATM interface
+print(account_number())
 atm_interface()

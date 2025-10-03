@@ -35,6 +35,7 @@
   * [Graph](./Algorithms_and_Data_Structures/Graph)
   * [Heapsort](./Algorithms_and_Data_Structures/HeapSort)
   * [Linked List](./Algorithms_and_Data_Structures/Linked%20List)
+  * [Maths](./Algorithms_and_Data_Structures/Maths)
   * [Pattern Search](./Algorithms_and_Data_Structures/Pattern%20Search)
   * [Prefix Sum](./Algorithms_and_Data_Structures/Prefix_Sum)
   * [Queue](./Algorithms_and_Data_Structures/Queue)
@@ -72,6 +73,7 @@
 
 * **Beginner Projects**
   * [Atm Interface](./Beginner_Projects/ATM%20Interface)
+  * [Amazon Product Availability Checker](./Beginner_Projects/Amazon%20product%20availability%20checker)
   * [Amazon Product Availbility Checker](./Beginner_Projects/Amazon%20product%20availbility%20checker)
   * [Anime Manga Tracker](./Beginner_Projects/Anime_Manga_Tracker)
   * [Bmi Calculator](./Beginner_Projects/BMI%20Calculator)
@@ -83,6 +85,7 @@
   * [Coach](./Beginner_Projects/Coach)
   * [Currency  Convertor](./Beginner_Projects/Currency%20_Convertor)
   * [Digital Clock](./Beginner_Projects/Digital%20Clock)
+  * [E-Commerce](./Beginner_Projects/E-Commerce)
   * [E-Certificate Generator](./Beginner_Projects/E-certificate%20Generator)
   * [Email Automation](./Beginner_Projects/Email_Automation)
   * [Escape The Maze](./Beginner_Projects/Escape%20the%20Maze)
@@ -190,10 +193,12 @@
   * [Studentperformancevisualisation](./Data_Science/StudentPerformanceVisualisation)
   * [Unemployment Analysis Due To Covid](./Data_Science/Unemployment%20Analysis%20due%20to%20COVID)
   * [Whatsapp Chat Analyzer](./Data_Science/Whatsapp_Chat_Analyzer)
+  * [Youtube Analysis](./Data_Science/Youtube%20Analysis)
   * [Analysis Covid Trends](./Data_Science/analysis_covid_trends)
   * [Crypto Report Dashboard](./Data_Science/crypto_report_dashboard)
   * [Customer Segmentation](./Data_Science/customer_segmentation)
   * [Stock Prediction](./Data_Science/stock_prediction)
+  * [Supply Chain](./Data_Science/supply%20chain)
   * [Time Series Visualization](./Data_Science/time_series_visualization)
   * [Traffic Vs Zombie Game](./Data_Science/traffic_vs_zombie_game)
 
