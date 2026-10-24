@@ -257,10 +257,23 @@ class URLFeatureExtractor:
             self.features['DNSRecord'] = -1
 
     def check_web_traffic(self):
-        """Check web traffic (simplified)"""
+        """Check web traffic: position of the domain in the NetAPI Top 1M (the Alexa ranking was retired in 2022).
+        Same scale as the training data: 1 = rank up to 100,000, 0 = ranked lower in the Top 1M, -1 = not ranked."""
         try:
-            response = requests.get(f"https://data.alexa.com/data?cli=10&url={self.domain}")
-            self.features['web_traffic'] = 1 if response.status_code == 200 else -1
+            ext = tldextract.extract(self.url)
+            registered_domain = f"{ext.domain}.{ext.suffix}" if ext.suffix else self.domain
+            response = requests.get(
+                "https://netapi.com/api-json/",
+                params={"method": "domain-rank", "domain": registered_domain},
+                timeout=10,
+            )
+            rank = response.json().get("rank") if response.status_code == 200 else None
+            if rank is None:
+                self.features['web_traffic'] = -1
+            elif rank <= 100000:
+                self.features['web_traffic'] = 1
+            else:
+                self.features['web_traffic'] = 0
         except:
             self.features['web_traffic'] = -1
 
